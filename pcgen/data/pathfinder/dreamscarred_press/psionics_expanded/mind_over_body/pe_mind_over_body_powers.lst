@@ -63,6 +63,9 @@ Body Adjustment.MOD
 Body Equilibrium.MOD
 	CLASSES:Vitalist=2
 
+Cleanse Body.MOD
+	CLASSES:Vitalist=2
+
 Delay Poison.MOD
 	CLASSES:Vitalist=2
 

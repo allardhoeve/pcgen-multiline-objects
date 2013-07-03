@@ -171,7 +171,7 @@ Guardian
 	ABILITY:Special Ability|AUTOMATIC|Swift Aid ~ Guardian|PREVARGT:MethodLVL,7
 	ABILITY:Special Ability|AUTOMATIC|Guardian's Expertise|PREVARGT:MethodLVL,10
 	ABILITY:Special Ability|AUTOMATIC|Master Guardian|PREVARGT:MethodLVL,19
-	BONUS:ABILITYPOOL|Guardian Knack|1
+	BONUS:ABILITYPOOL|Guardian Knack|1!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistKnacks
 	SOURCEPAGE:p.6
 	SPELLKNOWN:CLASS|Vitalist=1|Biofeedback
 
@@ -184,7 +184,7 @@ Mender
 	ABILITY:Special Ability|AUTOMATIC|Swift Aid ~ Mender|PREVARGT:MethodLVL,7
 	ABILITY:Special Ability|AUTOMATIC|Mender's Expertise|PREVARGT:MethodLVL,10
 	ABILITY:Special Ability|AUTOMATIC|Master Mender|PREVARGT:MethodLVL,19
-	BONUS:ABILITYPOOL|Mender Knack|1
+	BONUS:ABILITYPOOL|Mender Knack|1!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistKnacks
 	SOURCEPAGE:p.6
 	SPELLKNOWN:CLASS|Vitalist=1|Natural Healing
 
@@ -197,7 +197,7 @@ Soulthief
 	ABILITY:Special Ability|AUTOMATIC|Swift Aid ~ Soulthief|PREVARGT:MethodLVL,7
 	ABILITY:Special Ability|AUTOMATIC|Soulthief's Expertise|PREVARGT:MethodLVL,10
 	ABILITY:Special Ability|AUTOMATIC|Master Soulthief|PREVARGT:MethodLVL,19
-	BONUS:ABILITYPOOL|Soulthief Knack|1
+	BONUS:ABILITYPOOL|Soulthief Knack|1!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistKnacks
 	SOURCEPAGE:p.7
 	SPELLKNOWN:CLASS|Vitalist=1|Collapse
 
