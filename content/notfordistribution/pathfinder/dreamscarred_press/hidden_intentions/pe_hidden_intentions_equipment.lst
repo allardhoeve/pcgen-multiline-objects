@@ -47,3 +47,22 @@ Astral Warrior Weapon (Slashing)
 	SIZE:M
 	SOURCEPAGE:p.12
 
+
+
+###Block: Meditant's flurry of strikes
+Flurry of Strikes
+	PROFICIENCY:WEAPON|Unarmed Strike
+	TYPE:Weapon.Melee.Special.Unarmed.Monk.Bludgeoning.Finesseable.Close
+	COST:0
+	WT:0
+	CRITMULT:x2
+	CRITRANGE:1
+	DAMAGE:1d3
+	WIELD:Light
+	MODS:NO
+	SIZE:M
+	SOURCEPAGE:p.19
+	BONUS:WEAPON|WEAPONBAB|MeditantFlurryBABBonus
+	BONUS:WEAPON|ATTACKS|MeditantFlurryExtraAttacks
+	BONUS:WEAPON|TOHIT|-2
+
