@@ -12,18 +12,6 @@ SOURCELONG:Ultimate Equipment
 # ORIGINAL ENTRY DATE: 2013-06-18
 
 
-###Block:Base Materials
-Horn
-	KEY:HORN
-	NAMEOPT:NORMAL
-	TYPE:BaseMaterial.Mundane.Ammunition.Armor.Shield.Weapon.Instruments.Tools.Goods
-	COST:0
-	VISIBLE:QUALIFY
-	!PRETYPE:1,EQMODTYPE=Mundane
-	!PRETYPE:1,Metal,Wooden
-
-
-
 ###Block: Ancient Base Materials
 # Modifier Name	Unique Key	Naming Option	Type														Cost		Visible		Prohibited Type
 Bone
@@ -488,6 +476,24 @@ Holy Symbol Flask
 	SOURCEPAGE:p.66
 	COST:10
 	CONTAINS:1|Liquid=1|SpellComponent=1|Poison=1
+
+
+
+###Block: Clothing Options
+Tear-Away
+	KEY:TAWAY
+	TYPE:Clothing
+	SOURCEPAGE:p.91
+	COST:5
+
+
+
+###Block: Lantern Modifications
+Waterproof
+	KEY:WPROOF
+	TYPE:LightSource
+	SOURCEPAGE:p.75
+	COST:5
 
 #
 # End

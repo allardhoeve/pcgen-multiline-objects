@@ -42,10 +42,6 @@ Backpack.MOD
 	OUTPUTNAME:Backpack, Common
 	SOURCEPAGE:p.58
 
-Backpack.COPY=Backpack (Small)
-	OUTPUTNAME:Backpack, Common/Small
-	WT:0.5
-
 Backpack (Masterwork)
 	OUTPUTNAME:Backpack, Masterwork
 	TYPE:Goods.General.Container.Resizable
@@ -54,10 +50,6 @@ Backpack (Masterwork)
 	WT:4
 	SOURCEPAGE:p.58
 	BONUS:VAR|LOADSCORE|1
-
-Backpack (Masterwork).COPY=Backpack (Masterwork/Small)
-	OUTPUTNAME:Backpack, Masterwork/Small
-	WT:1
 
 Bandolier
 	TYPE:Goods.Clothing.Resizable
@@ -124,10 +116,6 @@ Pouch (Belt).MOD
 	OUTPUTNAME:Belt Pouch
 	SOURCEPAGE:p.59
 
-Pouch (Belt).COPY=Pouch (Belt/Small)
-	OUTPUTNAME:Belt Pouch, Small
-	WT:0.125
-
 Blanket
 	TYPE:Goods.General.Resizable
 	COST:0.5
@@ -184,14 +172,10 @@ Buoy (Superior)
 	SOURCEPAGE:p.60
 
 Butterfly Net
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:5
 	WT:2
 	SOURCEPAGE:p.60
-
-Butterfly Net.COPY=Butterfly Net (Small)
-	OUTPUTNAME:Butterfly Net, Small
-	WT:0.5
 
 Caltrops.MOD
 	SOURCEPAGE:p.60
@@ -284,31 +268,22 @@ Coffee Pot
 	SOURCEPAGE:p.62
 
 Coffin (Common)
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:10
 	WT:30
 	SOURCEPAGE:p.62
 
-Coffin (Common).COPY=Coffin (Common/Small)
-	WT:7.5
-
 Coffin (Ornate)
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:100
 	WT:50
 	SOURCEPAGE:p.62
 
-Coffin (Ornate).COPY=Coffin (Ornate/Small)
-	WT:12.5
-
 Collapsible Bathtub
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:15
 	WT:20
 	SOURCEPAGE:p.62
-
-Collapsible Bathtub.COPY=Collapsible Bathtub (Small)
-	WT:5
 
 Collapsible Plank
 	TYPE:Goods.General
@@ -330,13 +305,10 @@ Copy of a Key
 	SPROP:An artisan can make a working copy of a key in an hour.
 
 Cot
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:1
 	WT:30
 	SOURCEPAGE:p.63
-
-Cot.COPY=Cot (Small)
-	WT:7.5
 
 Crowbar.MOD
 	SOURCEPAGE:p.63
@@ -409,7 +381,7 @@ Familiar Satchel
 	SPROP:Provides total cover to any Tiny or smaller creature contained within it.
 
 Filter Hood
-	TYPE:Goods.Tools.Headgear
+	TYPE:Goods.Tools.Headgear.Resizable
 	COST:10
 	WT:4
 	SOURCEPAGE:p.64
@@ -432,13 +404,10 @@ Flint and Steel.MOD
 	SOURCEPAGE:p.64
 
 Folding Chair
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:2
 	WT:10
 	SOURCEPAGE:p.64
-
-Folding Chair.COPY=Folding Chair (Small)
-	WT:2.5
 
 Folding Ladder
 	TYPE:Goods.General
@@ -501,13 +470,10 @@ Grappling Hook (Mithral)
 	SOURCEPAGE:p.65
 
 Grooming Kit
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:1
 	WT:2
 	SOURCEPAGE:p.65
-
-Grooming Kit.COPY=Grooming Kit (Small)
-	WT:0.5
 
 Gunsmith’s Kit
 	TYPE:Goods.General
@@ -519,13 +485,10 @@ Hammer.MOD
 	SOURCEPAGE:p.65
 
 Hammock
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:0.1
 	WT:3
 	SOURCEPAGE:p.65
-
-Hammock.COPY=Hammock (Small)
-	WT:0.75
 
 Harrow Deck
 	TYPE:Goods.General
@@ -547,14 +510,11 @@ Heritage Book
 	SPROP:Consulting this book grants a +2 circumstance bonus on Knowledge (nobility) checks.
 
 Hip Flask
-	TYPE:Goods.Container.General.Flask
+	TYPE:Goods.Container.General.Flask.Resizable
 	COST:1
 	WT:0.5
 	SOURCEPAGE:p.66
 	CONTAINS:1|Liquid=1|SpellComponent=1|Poison=1
-
-Hip Flask.COPY=Hip Flask (Small)
-	WT:0.125
 
 Hollowed Pommel
 	TYPE:Goods.General
@@ -765,14 +725,11 @@ Mirror (Small/Steel).MOD
 	SOURCEPAGE:p.68
 
 Mock Armor
-	TYPE:Goods.Clothing.Armor
+	TYPE:Goods.Clothing.Armor.Resizable
 	COST:90
 	WT:10
 	SOURCEPAGE:p.68
 	BONUS:SKILL|Bluff (Conceal Identity)|4|TYPE=Circumstance
-
-Mock Armor.COPY=Mock Armor (Small)
-	WT:2.5
 
 Mug or Tankard (Clay).MOD
 	SOURCEPAGE:p.68
@@ -812,13 +769,10 @@ Ring (Poison Pill)
 	SOURCEPAGE:p.69
 
 Poisoning Sheath
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:50
 	WT:1
 	SOURCEPAGE:p.69
-
-Poisoning Sheath.COPY=Poisoning Sheath (Small)
-	WT:0.25
 
 Pole (10 Ft).MOD
 	SOURCEPAGE:p.69
@@ -857,44 +811,32 @@ Powder Horn
 	SOURCEPAGE:p.70
 
 Prosthetic (Arm)
-	TYPE:Goods.General.Container
+	TYPE:Goods.General.Container.Resizable
 	COST:10
 	WT:3
 	SOURCEPAGE:p.70
 	CONTAINS:2|ANY
 
 Prosthetic (Foot)
-	TYPE:Goods.General.Container
+	TYPE:Goods.General.Container.Resizable
 	COST:1
 	WT:2
 	SOURCEPAGE:p.70
 	CONTAINS:1|ANY
 
 Prosthetic (Hand)
-	TYPE:Goods.General.Container
+	TYPE:Goods.General.Container.Resizable
 	COST:1
 	WT:1
 	SOURCEPAGE:p.70
 	CONTAINS:1|ANY
 
 Prosthetic (Leg)
-	TYPE:Goods.General.Container
+	TYPE:Goods.General.Container.Resizable
 	COST:20
 	WT:6
 	SOURCEPAGE:p.70
 	CONTAINS:2|ANY
-
-Prosthetic (Arm).COPY=Prosthetic (Arm/Small)
-	WT:0.75
-
-Prosthetic (Foot).COPY=Prosthetic (Foot/Small)
-	WT:0.5
-
-Prosthetic (Hand).COPY=Prosthetic (Hand/Small)
-	WT:0.25
-
-Prosthetic (Leg).COPY=Prosthetic (Leg/Small)
-	WT:1.5
 
 Pyrography Kit
 	TYPE:Goods.General
@@ -914,9 +856,6 @@ Rope (Hemp/50 ft).MOD
 
 Sack.MOD
 	SOURCEPAGE:p.70
-
-Sack.COPY=Sack (Small)
-	WT:0.125
 
 Saw
 	TYPE:Goods.General
@@ -939,13 +878,10 @@ Sealing Wax.MOD
 	SOURCEPAGE:p.71
 
 Sentry Mannequin
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:30
 	WT:35
 	SOURCEPAGE:p.71
-
-Sentry Mannequin.COPY=Sentry Mannequin (Small)
-	WT:8.75
 
 Sewing Needle.MOD
 	SOURCEPAGE:p.71
@@ -981,13 +917,10 @@ Shovel (Folding)
 	SOURCEPAGE:p.71
 
 Signal Horn
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:1
 	WT:2
 	SOURCEPAGE:p.71
-
-Signal Horn.COPY=Signal Horn (Small)
-	WT:0.5
 
 Signal Whistle.MOD
 	SOURCEPAGE:p.71
@@ -1061,22 +994,16 @@ Stationery
 	SOURCEPAGE:p.73
 
 Stilts (Common)
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:0.2
 	WT:10
 	SOURCEPAGE:p.73
 
-Stilts (Common).MOD=Stilts (Common/Small)
-	WT:2.5
-
 Stilts (Masterwork)
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:5
 	WT:10
 	SOURCEPAGE:p.73
-
-Stilts (Masterwork).MOD=Stilts (Masterwork/Small)
-	WT:2.5
 
 Stove Can
 	TYPE:Goods.General
@@ -1104,13 +1031,10 @@ Survival Kit (Masterwork)
 	BONUS:SKILL|Survival|2|TYPE=Circumstance
 
 Swarmsuit
-	TYPE:Goods.General
+	TYPE:Goods.General.Resizable
 	COST:20
 	WT:10
 	SOURCEPAGE:p.73
-
-Swarmsuit.COPY=Swarmsuit (Small)
-	WT:2.5
 
 #Tattoo 1 cp–20 gp —
 Teapot
@@ -1119,16 +1043,30 @@ Teapot
 	WT:1
 	SOURCEPAGE:p.74
 
-Tent (Small).MOD
+Tent.MOD
+	OUTPUTNAME:Tent, Small
+	TYPE:Goods.General.Resizable
 	SOURCEPAGE:p.74
 
-Tent (Medium).MOD
+Tent (Medium)
+	OUTPUTNAME:Tent, Medium
+	TYPE:Goods.General.Resizable
+	COST:15
+	WT:30
 	SOURCEPAGE:p.74
 
-Tent (Large).MOD
+Tent (Large)
+	OUTPUTNAME:Tent, Large
+	TYPE:Goods.General.Resizable
+	COST:30
+	WT:40
 	SOURCEPAGE:p.74
 
-Tent (Pavilion).MOD
+Tent (Pavilion)
+	OUTPUTNAME:Tent, Pavilion
+	TYPE:Goods.General.Resizable
+	COST:100
+	WT:50
 	SOURCEPAGE:p.74
 
 Thurible
@@ -1175,9 +1113,6 @@ Waterproof Bag
 Waterskin.MOD
 	SOURCEPAGE:p.75
 
-Waterskin.COPY=Waterskin (Small)
-	WT:1
-
 Wax Key Blank
 	TYPE:Goods.General
 	COST:15
@@ -1216,124 +1151,121 @@ Wrist Sheath
 	WT:1
 	SOURCEPAGE:p.75
 
-Wrist Sheath.COPY=Wrist Sheath (Small)
-	WT:0.25
 
 
-
-###Block: Adventuring Kits
-Alchemist's Kit
-	TYPE:Goods.Kits
+###Block: Starting Kits
+Alchemist's Kit.MOD
+	TYPE:Goods.Tools.Kits
 	COST:40
 	WT:24
 	SOURCEPAGE:p.58
 	
 
 Alchemist's Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:40
 	WT:18
 	SOURCEPAGE:p.58
 	
 
 Barbarian's Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:9
 	WT:26
 	SOURCEPAGE:p.59
 	
 
 Barbarian's Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:9
 	WT:19.5
 	SOURCEPAGE:p.59
 	
 
 Bard's Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:41
 	WT:33.5
 	SOURCEPAGE:p.59
 	
 
 Bard's Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:41
 	WT:25.1
 	SOURCEPAGE:p.59
 	
 
 Campsite Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:12
 	WT:80
 	SOURCEPAGE:p.61
 	
 
 Cavalier's Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:23
 	WT:112
 	SOURCEPAGE:p.61
 	
 
 Cavalier's Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:23
 	WT:84
 	SOURCEPAGE:p.61
 	
 
 Chirurgeon's Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:400
 	WT:4
 	SOURCEPAGE:p.62
 	
 
 Chronicler's Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:40
 	WT:4.5
 	SOURCEPAGE:p.62
 	
 
 Cleric's Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:16
 	WT:32
 	SOURCEPAGE:p.62
 	
 
 Cleric's Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:16
 	WT:24
 	SOURCEPAGE:p.62
 	
 
 Cooking Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:3
 	WT:16
 	SOURCEPAGE:p.62
 	
 
 Dragonslayer's Kit (Fire)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:485
 	WT:64
 	
 
 Dragonslayer's Kit (Acid)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:435
 	WT:64
 	
 
 Druid's Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:14
 	WT:44
 	SOURCEPAGE:p.63
@@ -1341,62 +1273,62 @@ Druid's Kit
 
 Druid's Kit
 	 (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:14
 	WT:33
 	SOURCEPAGE:p.63
 	
 
 Dungeoneering Kit (Common)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:15
 	WT:25
 	SOURCEPAGE:p.63
 	
 
 Dungeoneering Kit (Deluxe)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:130
 	WT:15
 	SOURCEPAGE:p.63
 	
 
 Entertainer's Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:0.5
 	WT:3
 	SOURCEPAGE:p.63
 	
 
 Fighter's Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:9
 	WT:29
 	SOURCEPAGE:p.64
 	
 
 Fighter's Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:9
 	WT:21.75
 	SOURCEPAGE:p.64
 	
 
 Fishing Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:0.5
 	WT:3
 	SOURCEPAGE:p.64
 	
 
 Gambler's Kit (Common)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:75
 	WT:5
 	SOURCEPAGE:p.65
 
 Gambler's Kit (Cheating)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:300
 	WT:5
 	SOURCEPAGE:p.65
@@ -1404,116 +1336,116 @@ Gambler's Kit (Cheating)
 	SPROP:Grants a +4 circumstance bonus on Profession (gambler) checks when using these materials.
 
 Gunslinger’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:26
 	WT:31
 	SOURCEPAGE:p.65
 	
 
 Gunslinger’s Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:26
 	WT:23.25
 	SOURCEPAGE:p.65
 	
 
 Inquisitor’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:30
 	WT:34
 	SOURCEPAGE:p.67
 	
 
 Inquisitor’s Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:30
 	WT:25.5
 	SOURCEPAGE:p.67
 	
 
 Magus’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:22
 	WT:31
 	SOURCEPAGE:p.68
 	
 
 Magus’s Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:22
 	WT:23.25
 	SOURCEPAGE:p.68
 	
 
 Monk’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:8
 	WT:22
 	SOURCEPAGE:p.68
 	
 
 Monk’s Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:8
 	WT:16.5
 	SOURCEPAGE:p.68
 	
 
 Oracle’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:9
 	WT:29
 	SOURCEPAGE:p.p.69
 	
 
 Oracle’s Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:9
 	WT:21.75
 	SOURCEPAGE:p.p.69
 	
 
 Paladin’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:11
 	WT:30
 	SOURCEPAGE:p.p.69
 	
 
 Paladin’s Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:11
 	WT:22.5
 	SOURCEPAGE:p.p.69
 	
 
 Pathfinder’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:12
 	WT:22
 	SOURCEPAGE:p.69
 	
 
 Ranger’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:9
 	WT:28
 	SOURCEPAGE:p.70
 
 Ranger’s Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:9
 	WT:21
 	SOURCEPAGE:p.70
 
 Riding Kit (Common)
-	TYPE:Goods.Kits.Mount
+	TYPE:Goods.Tools.Kits.Mount
 	COST:16
 	WT:54
 	SOURCEPAGE:p.70
 
 Riding Kit (Exotic Mount)
-	TYPE:Goods.Kits.Mount
+	TYPE:Goods.Tools.Kits.Mount
 	COST:36
 	WT:59
 	SOURCEPAGE:p.70
@@ -1537,13 +1469,13 @@ Scrivener’s Kit
 	SOURCEPAGE:p.71
 
 Sorcerer’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:8
 	WT:19
 	SOURCEPAGE:p.72
 
 Sorcerer’s Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:8
 	WT:14.25
 	SOURCEPAGE:p.72
@@ -1555,51 +1487,51 @@ Spelunking Kit
 	SOURCEPAGE:p.72
 
 Summoner’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:8
 	WT:19
 	SOURCEPAGE:p.73
 
 Summoner’s Kit (Small)
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:8
 	WT:14.25
 	SOURCEPAGE:p.73
 
 Troll Slayer’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:30
 	WT:17
 	SOURCEPAGE:p.74
 
 Undead Slayer’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:402
 	WT:7
 	SOURCEPAGE:p.74
 
 Witch’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:21
 	WT:21
 	SOURCEPAGE:p.75
 
 Witch’s Kit (Small)
-	TYPE:Goods.Kits
-	COST:15.75
-	WT:21
+	TYPE:Goods.Tools.Kits
+	COST:21
+	WT:15.75
 	SOURCEPAGE:p.75
 
 Wizard’s Kit
-	TYPE:Goods.Kits
+	TYPE:Goods.Tools.Kits
 	COST:21
 	WT:21
 	SOURCEPAGE:p.75
 
 Wizard’s Kit (Small)
-	TYPE:Goods.Kits
-	COST:15.75
-	WT:21
+	TYPE:Goods.Tools.Kits
+	COST:21
+	WT:15.75
 	SOURCEPAGE:p.75
 
 
@@ -1615,10 +1547,10 @@ Abacus
 Alchemist’s Lab.MOD
 	SOURCEPAGE:p.76
 
-Alchemist's Kit
+Alchemy Crafting Kit
 	TYPE:Goods.Tools.CraftToolsAlchemist
 	COST:25
-	WT:5
+	WT:50
 	SOURCEPAGE:p.76
 
 Antidote Kit
@@ -1709,88 +1641,87 @@ Artisan's Tools (Weaponsmithing).MOD
 	SOURCEPAGE:p.76
 
 Artisan's Tools (Armor).COPY=Artisan's Tools (Armor/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Armor)|2|TYPE=Circumstance
 
 Artisan's Tools (Baskets).COPY=Artisan's Tools (Baskets/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Baskets)|2|TYPE=Circumstance
 
 Artisan's Tools (Books).COPY=Artisan's Tools (Books/Masterwork)
-	  
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Books)|2|TYPE=Circumstance
 
 Artisan's Tools (Bows).COPY=Artisan's Tools (Bows/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Bows)|2|TYPE=Circumstance
 
 Artisan's Tools (Calligraphy).COPY=Artisan's Tools (Calligraphy/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Calligraphy)|2|TYPE=Circumstance
 
 Artisan's Tools (Carpentry).COPY=Artisan's Tools (Carpentry/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Carpentry)|2|TYPE=Circumstance
 
 Artisan's Tools (Cloth).COPY=Artisan's Tools (Cloth/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Cloth)|2|TYPE=Circumstance
 
 Artisan's Tools (Clothing).COPY=Artisan's Tools (Clothing/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Clothing)|2|TYPE=Circumstance
 
 Artisan's Tools (Gemcutting).COPY=Artisan's Tools (Gemcutting/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Gemcutting)|2|TYPE=Circumstance
 
 Artisan's Tools (Glass).COPY=Artisan's Tools (Glass/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Glass)|2|TYPE=Circumstance
 
 Artisan's Tools (Jewelry).COPY=Artisan's Tools (Jewelry/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Jewelry)|2|TYPE=Circumstance
 
 Artisan's Tools (Leather).COPY=Artisan's Tools (Leather/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Leather)|2|TYPE=Circumstance
 
 Artisan's Tools (Locks).COPY=Artisan's Tools (Locks/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Locks)|2|TYPE=Circumstance
 
 Artisan's Tools (Paintings).COPY=Artisan's Tools (Paintings/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Paintings)|2|TYPE=Circumstance
 
 Artisan's Tools (Pottery).COPY=Artisan's Tools (Pottery/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Pottery/)|2|TYPE=Circumstance
 
 Artisan's Tools (Sculptures).COPY=Artisan's Tools (Sculptures/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Sculptures)|2|TYPE=Circumstance
 
 Artisan's Tools (Ships).COPY=Artisan's Tools (Ships/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Ships)|2|TYPE=Circumstance
 
 Artisan's Tools (Shoes).COPY=Artisan's Tools (Shoes/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Shoes)|2|TYPE=Circumstance
 
 Artisan's Tools (Stonemasonry).COPY=Artisan's Tools (Stonemasonry/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Stonemasonry)|2|TYPE=Circumstance
 
 Artisan's Tools (Traps).COPY=Artisan's Tools (Traps/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Traps)|2|TYPE=Circumstance
 
 Artisan's Tools (Weaponsmithing).COPY=Artisan's Tools (Weaponsmithing/Masterwork)
-	      COST:55
+	COST:55
 	BONUS:SKILL|Craft (Weaponsmithing)|2|TYPE=Circumstance
 
 Balancing Pole
@@ -1939,66 +1870,6 @@ Musical Instrument (Recorder).MOD
 Musical Instrument (Trumpet).MOD
 	SOURCEPAGE:p.78
 
-Musical Instrument (Harpsichord).COPY=Musical Instrument (Harpsichord/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Piano).COPY=Musical Instrument (Piano/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Pipe Organ).COPY=Musical Instrument (Pipe Organ/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Bells).COPY=Musical Instrument (Bells/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Chimes).COPY=Musical Instrument (Chimes/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Drums).COPY=Musical Instrument (Drums/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Gong).COPY=Musical Instrument (Gong/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Fiddle).COPY=Musical Instrument (Fiddle/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Harp).COPY=Musical Instrument (Harp/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Lute).COPY=Musical Instrument (Lute/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Mandolin).COPY=Musical Instrument (Mandolin/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Flute).COPY=Musical Instrument (Flute/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Pan Pipes).COPY=Musical Instrument (Pan Pipes/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Recorder).COPY=Musical Instrument (Recorder/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
-Musical Instrument (Trumpet).COPY=Musical Instrument (Trumpet/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-
 Musical Instrument (Harpsichord).COPY=Musical Instrument (Harpsichord/Masterwork
 	SOURCEPAGE:p.78
 	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
@@ -2056,81 +1927,6 @@ Musical Instrument (Recorder).COPY=Musical Instrument (Recorder/Masterwork)
 	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
 
 Musical Instrument (Trumpet).COPY=Musical Instrument (Trumpet/Masterwork)
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Harpsichord).COPY=Musical Instrument (Harpsichord/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Piano).COPY=Musical Instrument (Piano/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Pipe Organ).COPY=Musical Instrument (Pipe Organ/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Bells).COPY=Musical Instrument (Bells/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Chimes).COPY=Musical Instrument (Chimes/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Drums).COPY=Musical Instrument (Drums/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Gong).COPY=Musical Instrument (Gong/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Fiddle).COPY=Musical Instrument (Fiddle/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Harp).COPY=Musical Instrument (Harp/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Lute).COPY=Musical Instrument (Lute/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Mandolin).COPY=Musical Instrument (Mandolin/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Flute).COPY=Musical Instrument (Flute/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Pan Pipes).COPY=Musical Instrument (Pan Pipes/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Recorder).COPY=Musical Instrument (Recorder/Masterwork/Small)
-	WT:0.75
-	SOURCEPAGE:p.78
-	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
-
-Musical Instrument (Trumpet).COPY=Musical Instrument (Trumpet/Masterwork/Small)
-	WT:0.75
 	SOURCEPAGE:p.78
 	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
 
@@ -2374,6 +2170,12 @@ Owl (Large)
 	COST:10
 	WT:3
 	SOURCEPAGE:p.84
+
+Ox
+	TYPE:Goods.Trade.Pets.Transportation.Container
+	COST:15
+	WT:1500
+	SOURCEPAGE:p.93
 
 Parrot
 	TYPE:Goods.Pets
@@ -2736,27 +2538,33 @@ Stabling (Per Day).MOD
 
 ###Block: Transport
 Carriage.MOD
+	SOURCEPAGE:p.86
 
 Cart.MOD
+	SOURCEPAGE:p.86
 
 Chariot (Light)
 	TYPE:Goods.Transportation.Container
 	COST:50
+	CONTAINS:UNLIM|Any
 	SOURCEPAGE:p.86
 
 Chariot (Medium)
 	TYPE:Goods.Transportation.Container
 	COST:100
+	CONTAINS:UNLIM|Any
 	SOURCEPAGE:p.86
 
 Chariot (Heavy)
 	TYPE:Goods.Transportation.Container
 	COST:200
+	CONTAINS:UNLIM|Any
 	SOURCEPAGE:p.86
 
 Dog Sled
 	TYPE:Goods.Transportation.Container
 	COST:20
+	CONTAINS:UNLIM|Any
 	SOURCEPAGE:p.86
 
 Sled.MOD
@@ -2769,11 +2577,13 @@ Wagon.MOD
 Wagon (Medium)
 	TYPE:Goods.Transportation.Container
 	COST:75
+	CONTAINS:UNLIM|Any
 	SOURCEPAGE:p.86
 
 Wagon (Heavy)
 	TYPE:Goods.Transportation.Container
 	COST:100
+	CONTAINS:UNLIM|Any
 	SOURCEPAGE:p.86
 
 Galley.MOD
@@ -2782,6 +2592,7 @@ Galley.MOD
 Junk
 	TYPE:Goods.Transportation.Ships.Container
 	COST:15000
+	CONTAINS:UNLIM|Any
 	SOURCEPAGE:p.87
 
 Keelboat.MOD
@@ -2792,6 +2603,7 @@ Longship.MOD
 
 Raft
 	TYPE:Goods.Transportation.Ships.Container
+	CONTAINS:UNLIM|Any
 	SOURCEPAGE:p.87
 
 Rowboat.MOD
@@ -2803,6 +2615,7 @@ Sailing Ship.MOD
 Ship’s Boat
 	TYPE:Goods.Transportation.Ships.Container
 	COST:500
+	CONTAINS:UNLIM|Any
 	SOURCEPAGE:p.87
 
 Warship.MOD
@@ -2812,10 +2625,130 @@ Warship.MOD
 
 ###Block: Clothing
 # Equipment Name	Type							Contains			Cost		Weight	Source Page
+Outfit (Artisan’s).MOD
+	SOURCEPAGE:88
+
+Brooch 
+	TYPE:Goods.Clothing.Resizable.Amulet
+	COST:0
+	SOURCEPAGE:88
+
+Caul (Common)
+	TYPE:Goods.Clothing.Resizable.Headgear
+	COST:10
+	SOURCEPAGE:88
+
+Cleats
+	TYPE:Goods.Clothing.Resizable.Boot
+	COST:5
+	WT:2
+	SOURCEPAGE:88
+
+Vestments (Cleric’s).MOD
+	SOURCEPAGE:88
+
+Outfit (Cold-Weather).MOD
+	SOURCEPAGE:88
+
+Outfit (Courtier’s).MOD
+	SOURCEPAGE:88
+
+Decorative Trim (Common)
+	TYPE:Goods.Clothing.Resizable
+	COST:0.1
+	SOURCEPAGE:88
+
+Diving Suit
+	TYPE:Goods.Clothing.Resizable
+	COST:10
+	WT:2
+	SOURCEPAGE:88
+
+Outfit (Entertainer’s).MOD
+	SOURCEPAGE:88
+
+Outfit (Explorer’s).MOD
+	SOURCEPAGE:89
+
+Boots (Fire-Resistant)
+	TYPE:Goods.Clothing.Resizable.Boot
+	COST:20
+	WT:2
+	SOURCEPAGE:89
+
+Furs
+	TYPE:Goods.Clothing.Resizable
+	COST:12
+	WT:5
+	SOURCEPAGE:89
+
+Hat (Common)
+	TYPE:Goods.Clothing.Resizable.Headgear
+	COST:0.2
+	WT:0.5
+	SOURCEPAGE:89
+
+Hennin (Common)
+	TYPE:Goods.Clothing.Resizable.Headgear
+	Cost:10
+	WT:1
+	SOURCEPAGE:89
+
+Outfit (Hot Weather)
+	TYPE:Goods.Clothing.Resizable.Starting
+	COST:8
+	WT:4
+	SOURCEPAGE:89
+
+Ice Skates
+	TYPE:Goods.Clothing.Resizable.Boot
+	COST:1
+	WT:2
+	SOURCEPAGE:89
+
 Jewelry
 	TYPE:Goods.Clothing
 	COST:0
 	WT:0
+	SOURCEPAGE:p.90
+
+Kilt
+	TYPE:Goods.Clothing.Resizable.Leggings
+	COST:0.2
+	WT:1
+	SOURCEPAGE:p.90
+
+Mask (Common)
+	TYPE:Goods.Clothing.Resizable.Headgear
+	COST:0.1
+	WT:1
+	SOURCEPAGE:p.90
+
+Outfit (Monk’s).MOD
+	SOURCEPAGE:p.90
+
+Monster Mask (Common)
+	TYPE:Goods.Clothing.Resizable.Headgear
+	COST:5
+	WT:1
+	SOURCEPAGE:p.90
+
+Outfit (Noble’s).MOD
+	SOURCEPAGE:p.90
+
+Patchwork Cloak
+	TYPE:Goods.Clothing.Resizable
+	COST:5
+	WT:0.5
+	SOURCEPAGE:p.90
+
+Outfit (Peasant’s).MOD
+	SOURCEPAGE:p.90
+
+Outfit (Pickpocket’s)
+	TYPE:Goods.Clothing.Resizable.Starting
+	COST:5
+	WT:3
 	SOURCEPAGE:p.90
 
 Pocketed Scarf
@@ -2825,11 +2758,1166 @@ Pocketed Scarf
 	WT:0.5
 	SOURCEPAGE:p.90
 
+Poncho
+	TYPE:Goods.Clothing.Resizable
+	COST:0.5
+	WT:2
+	SOURCEPAGE:p.90
+
 Reinforced Scarf
 	TYPE:Goods.Clothing.Resizable
 	COST:10
 	WT:1
 	SOURCEPAGE:p.91
+
+Reversible Cloak (Common)
+	TYPE:Goods.Clothing.Resizable.Cloak
+	COST:0.2
+	WT:1
+	SOURCEPAGE:p.91
+
+Outfit (Royal).MOD
+	SOURCEPAGE:p.91
+
+Scarf (Common)
+	TYPE:Goods.Clothing.Resizable
+	COST:0.1
+	WT:0.5
+	SOURCEPAGE:p.91
+
+Outfit (Scholar’s).MOD
+	SOURCEPAGE:p.91
+
+Skis
+	TYPE:Goods.Clothing.Resizable.Boot
+	COST:5
+	WT:20
+	SOURCEPAGE:p.91
+
+Snowshoes
+	TYPE:Goods.Clothing.Resizable.Boot
+	COST:5
+	WT:4
+	SOURCEPAGE:p.91
+
+Uniform (Soldier’s)
+	TYPE:Goods.Clothing.Resizable.Starting
+	COST:1
+	WT:5
+	SOURCEPAGE:p.91
+
+Tabard
+	TYPE:Goods.Clothing.Resizable
+	COST:5
+	WT:1
+	SOURCEPAGE:p.91
+
+Outfit (Traveler’s).MOD
+	SOURCEPAGE:p.91
+
+Wig (Common)
+	TYPE:Goods.Clothing.Resizable.Headgear
+	COST:5
+	WT:0.5
+	SOURCEPAGE:p.91
+
+
+
+###Block: Entertainment
+Ball (2 in)
+	TYPE:Goods.General
+	COST:0.08
+	SOURCEPAGE:p.92
+
+Ball (5 in)
+	TYPE:Goods.General
+	COST:0.2
+	SOURCEPAGE:p.92
+
+Ball (10 in)
+	TYPE:Goods.General
+	COST:6
+	WT:1
+	SOURCEPAGE:p.92
+
+Billiards Gear
+	TYPE:Goods.General
+	COST:0.5
+	WT:8
+	SOURCEPAGE:p.92
+
+Board Game (Common)
+	COST:0.1
+	WT:2
+	SOURCEPAGE:p.92
+
+Bowling Set (Common)
+	COST:0.5
+	WT:15
+	SOURCEPAGE:p.92
+
+Cards (Common)
+	COST:0.1
+	WT:1
+	SOURCEPAGE:p.92
+
+Croquet Set
+	TYPE:Goods.General
+	COST:0.5
+	WT:10
+	SOURCEPAGE:p.92
+
+Crossword (Common)
+	COST:0.01
+	SOURCEPAGE:p.92
+
+Dartboard Set
+	TYPE:Goods.General
+	COST:0.5
+	WT:10
+	SOURCEPAGE:p.92
+
+Dice
+	TYPE:Goods.General
+	COST:0.1
+	SOURCEPAGE:p.92
+
+Dominos (Common)
+	COST:0.1
+	WT:1
+	SOURCEPAGE:p.92
+
+Horseshoes Game
+	TYPE:Goods.General
+	COST:0.5
+	WT:3
+	SOURCEPAGE:p.92
+
+Kite (Common)
+	COST:0.1
+	WT:1
+	SOURCEPAGE:p.92
+
+Loaded Dice (Average)
+	TYPE:Goods.General
+	COST:10
+	SOURCEPAGE:p.92
+
+Loaded Dice (Superior)
+	TYPE:Goods.General
+	COST:50
+	SOURCEPAGE:p.92
+
+Marked Cards
+	TYPE:Goods.General
+	COST:1
+	WT:1
+	SOURCEPAGE:p.92
+
+Polo Gear
+	TYPE:Goods.General
+	COST:0.5
+	WT:5
+	SOURCEPAGE:p.93
+
+Puzzle Box (Common)
+	COST:1
+	WT:1
+	SOURCEPAGE:p.93
+
+Rounders Gear
+	TYPE:Goods.General
+	COST:0.1
+	WT:0.5
+	SOURCEPAGE:p.93
+
+Tennis Gear
+	TYPE:Goods.General
+	COST:0.3
+	WT:3
+	SOURCEPAGE:p.93
+
+
+
+###Block: Trade Goods
+Guinea Pig
+	TYPE:Goods.Trade
+	COST:0.01
+	SOURCEPAGE:p.93
+
+Rat
+	TYPE:Goods.Trade
+	COST:0.01
+	SOURCEPAGE:p.93
+
+Wheat(per lb).MOD
+	OUTPUTNAME:Wheat (per lb.)
+	TYPE:Goods.Trade
+	COST:0.01
+	WT:1
+	SOURCEPAGE:p.93
+
+Beans (per lb)
+	OUTPUTNAME:Beans (per lb.)
+	TYPE:Goods.Trade
+	COST:0.02
+	WT:1
+	SOURCEPAGE:p.93
+
+Cheese (per lb)
+	OUTPUTNAME:Cheese (per lb.)
+	TYPE:Goods.Trade
+	COST:0.02
+	WT:1
+	SOURCEPAGE:p.93
+
+Flour (per lb).MOD
+	OUTPUTNAME:Flour (per lb.)
+	TYPE:Goods.Trade
+	COST:0.02
+	WT:1
+	SOURCEPAGE:p.93
+
+Potatoes (per lb)
+	OUTPUTNAME:Potatoes (per lb.)
+	TYPE:Goods.Trade
+	COST:0.02
+	WT:1
+	SOURCEPAGE:p.93
+
+Turnips (per lb)
+	OUTPUTNAME:Turnips (per lb.)
+	TYPE:Goods.Trade
+	COST:0.02
+	WT:1
+	SOURCEPAGE:p.93
+
+Charcoal (per 20 lbs)
+	OUTPUTNAME: (per 20 lbs.)
+	TYPE:Goods.Trade
+	COST:0.03
+	WT:20
+	SOURCEPAGE:p.93
+
+Citrus (per lb)
+	OUTPUTNAME:Citrus (per lb.)
+	TYPE:Goods.Trade
+	COST:0.03
+	WT:1
+	SOURCEPAGE:p.93
+
+Nuts (per lb)
+	OUTPUTNAME:Nuts (per lb.)
+	TYPE:Goods.Trade
+	COST:0.03
+	WT:1
+	SOURCEPAGE:p.93
+
+Peat (per 20 lbs)
+	OUTPUTNAME:Peat (per 20 lbs.)
+	TYPE:Goods.Trade
+	COST:0.03
+	WT:20
+	SOURCEPAGE:p.93
+
+Coffee Beans (per lb)
+	OUTPUTNAME:Coffee Beans (per lb.)
+	TYPE:Goods.Trade
+	COST:0.05
+	WT:1
+	SOURCEPAGE:p.93
+
+Coal (per 20 lbs)
+	OUTPUTNAME:Coal (per 20 lbs.)
+	TYPE:Goods.Trade
+	COST:0.05
+	WT:1
+	SOURCEPAGE:p.93
+
+Masonry Stone (per lb)
+	OUTPUTNAME:Masonry Stone (per lb.)
+	TYPE:Goods.Trade
+	COST:0.05
+	WT:1
+	SOURCEPAGE:p.93
+
+Sugar (per lb)
+	OUTPUTNAME:Sugar (per lb.)
+	TYPE:Goods.Trade
+	COST:0.05
+	WT:1
+	SOURCEPAGE:p.93
+
+Iron (per lb).MOD
+	OUTPUTNAME:Iron (per lb.)
+	TYPE:Goods.Trade
+	COST:0.1
+	WT:1
+	SOURCEPAGE:p.93
+
+Copper (per lb).MOD
+	OUTPUTNAME:Copper (per lb.)
+	TYPE:Goods.Trade
+	COST:0.5
+	WT:1
+	SOURCEPAGE:p.93
+
+Garlic (per lb)
+	OUTPUTNAME:Garlic (per lb.)
+	TYPE:Goods.Trade
+	COST:0.5
+	WT:1
+	SOURCEPAGE:p.93
+
+Mint (per lb)
+	OUTPUTNAME:Mint (per lb.)
+	TYPE:Goods.Trade
+	COST:0.5
+	WT:1
+	SOURCEPAGE:p.93
+
+Mustard (per lb)
+	OUTPUTNAME:Mustard (per lb.)
+	TYPE:Goods.Trade
+	COST:0.5
+	WT:1
+	SOURCEPAGE:p.93
+
+Oregano (per lb)
+	OUTPUTNAME:Oregano (per lb.)
+	TYPE:Goods.Trade
+	COST:0.5
+	WT:1
+	SOURCEPAGE:p.93
+
+Thin Leather (per sq yd)
+	OUTPUTNAME: (per sq. yd.)
+	TYPE:Goods.Trade
+	COST:0.5
+	WT:1
+	SOURCEPAGE:p.93
+
+Tobacco (per lb).MOD
+	OUTPUTNAME:Tobacco (per lb.)
+	TYPE:Goods.Trade
+	COST:0.5
+	WT:1
+	SOURCEPAGE:p.93
+
+Allspice (per lb)
+	OUTPUTNAME:Allspice (per lb.)
+	TYPE:Goods.Trade
+	COST:1
+	WT:1
+	SOURCEPAGE:p.93
+
+Basil (per lb)
+	OUTPUTNAME:Basil (per lb.)
+	TYPE:Goods.Trade
+	COST:1
+	WT:1
+	SOURCEPAGE:p.93
+
+Cinnamon (per lb).MOD
+	OUTPUTNAME:Cinnamon (per lb.)
+	TYPE:Goods.Trade
+	COST:1
+	WT:1
+	SOURCEPAGE:p.93
+
+Cloves (per lb)
+	OUTPUTNAME:Cloves (per lb.)
+	TYPE:Goods.Trade
+	COST:1
+	WT:1
+	SOURCEPAGE:p.93
+
+Dill (per lb)
+	OUTPUTNAME:Dill (per lb.)
+	TYPE:Goods.Trade
+	COST:1
+	WT:1
+	SOURCEPAGE:p.93
+
+Glass (per lb)
+	OUTPUTNAME:Glass (per lb.)
+	TYPE:Goods.Trade
+	COST:1
+	WT:1
+	SOURCEPAGE:p.93
+
+Honey (per lb)
+	OUTPUTNAME:Honey (per lb.)
+	TYPE:Goods.Trade
+	COST:1
+	WT:1
+	SOURCEPAGE:p.93
+
+Maple Syrup (per lb)
+	OUTPUTNAME:Maple Syrup (per lb.)
+	TYPE:Goods.Trade
+	COST:1
+	WT:1
+	SOURCEPAGE:p.93
+
+Nutmeg (per lb)
+	OUTPUTNAME:Nutmeg (per lb.)
+	TYPE:Goods.Trade
+	COST:1
+	WT:1
+	SOURCEPAGE:p.93
+
+Rosemary (per lb)
+	OUTPUTNAME:Rosemary (per lb.)
+	TYPE:Goods.Trade
+	COST:1
+	WT:1
+	SOURCEPAGE:p.93
+
+Beaver Pelt
+	TYPE:Goods.Trade
+	COST:2
+	SOURCEPAGE:p.93
+
+Chilies (per lb)
+	OUTPUTNAME:Chilies (per lb.)
+	TYPE:Goods.Trade
+	COST:2
+	WT:1
+	SOURCEPAGE:p.93
+
+Cardamom (per lb)
+	OUTPUTNAME:Cardamom (per lb.)
+	TYPE:Goods.Trade
+	COST:2
+	WT:1
+	SOURCEPAGE:p.93
+
+Cumin (per lb)
+	OUTPUTNAME:Cumin (per lb.)
+	TYPE:Goods.Trade
+	COST:2
+	WT:1
+	SOURCEPAGE:p.93
+
+Fennel (per lb)
+	OUTPUTNAME:Fennel (per lb.)
+	TYPE:Goods.Trade
+	COST:2
+	WT:1
+	SOURCEPAGE:p.93
+
+Ginger (per lb).MOD
+	OUTPUTNAME:Ginger (per lb.)
+	TYPE:Goods.Trade
+	COST:2
+	WT:1
+	SOURCEPAGE:p.93
+
+Pepper (per lb).MOD
+	OUTPUTNAME:Pepper (per lb.)
+	TYPE:Goods.Trade
+	COST:2
+	WT:1
+	SOURCEPAGE:p.93
+
+Vanilla (per lb)
+	OUTPUTNAME:Vanilla (per lb.)
+	TYPE:Goods.Trade
+	COST:2
+	WT:1
+	SOURCEPAGE:p.93
+
+Fox Pelt
+	TYPE:Goods.Trade
+	COST:3
+	SOURCEPAGE:p.93
+
+Mink Pelt
+	TYPE:Goods.Trade
+	COST:3
+	SOURCEPAGE:p.93
+
+Thick Leather (per sq yd)
+	OUTPUTNAME:Thick Leather (per sq. yd.)
+	TYPE:Goods.Trade
+	COST:3
+	SOURCEPAGE:p.93
+
+Ermine Pelt
+	TYPE:Goods.Trade
+	COST:4
+	SOURCEPAGE:p.93
+
+Linen (per sq yd).MOD
+	OUTPUTNAME:Linen (per sq. yd.)
+	TYPE:Goods.Trade
+	COST:4
+	SOURCEPAGE:p.93
+
+Marble (per lb)
+	OUTPUTNAME:Marble (per lb.)
+	TYPE:Goods.Trade
+	COST:5
+	WT:1
+	SOURCEPAGE:p.93
+
+Salt (per lb).MOD
+	OUTPUTNAME:Salt (per lb.)
+	TYPE:Goods.Trade
+	COST:5
+	WT:1
+	SOURCEPAGE:p.93
+
+Seal Pelt
+	TYPE:Goods.Trade
+	COST:5
+	SOURCEPAGE:p.93
+
+Silver (per lb).MOD
+	OUTPUTNAME:Silver (per lb.)
+	TYPE:Goods.Trade
+	COST:5
+	WT:1
+	SOURCEPAGE:p.93
+
+Wool (per lb)
+	OUTPUTNAME: (per lb.)
+	TYPE:Goods.Trade
+	COST:6
+	WT:1
+	SOURCEPAGE:p.93
+
+Cotton (per lb)
+	OUTPUTNAME: (per lb.)
+	TYPE:Goods.Trade
+	COST:8
+	WT:1
+	SOURCEPAGE:p.93
+
+Chocolate (per lb)
+	OUTPUTNAME:Chocolate (per lb.)
+	TYPE:Goods.Trade
+	COST:10
+	WT:1
+	SOURCEPAGE:p.93
+
+Darkwood (per lb)
+	OUTPUTNAME:Darkwood (per lb.)
+	TYPE:Goods.Trade
+	COST:10
+	WT:1
+	SOURCEPAGE:p.93
+
+Silk (per sq yd).MOD
+	OUTPUTNAME:Silk (per sq. yd.)
+	TYPE:Goods.Trade
+	COST:10
+	WT:1
+	SOURCEPAGE:p.93
+
+Cloves (per lb).MOD
+	OUTPUTNAME:Cloves (per lb.)
+	TYPE:Goods.Trade
+	COST:15
+	WT:1
+	SOURCEPAGE:p.93
+
+Saffron (per lb).MOD
+	OUTPUTNAME:Saffron (per lb.)
+	TYPE:Goods.Trade
+	COST:15
+	WT:1
+	SOURCEPAGE:p.93
+
+Cold Iron (per lb)
+	OUTPUTNAME:Cold Iron (per lb.)
+	TYPE:Goods.Trade
+	COST:50
+	WT:1
+	SOURCEPAGE:p.93
+
+Gold (per lb).MOD
+	OUTPUTNAME:Gold (per lb.)
+	TYPE:Goods.Trade
+	COST:50
+	WT:1
+	SOURCEPAGE:p.93
+
+Adamantine (per lb)
+	OUTPUTNAME:Adamantine (per lb.)
+	TYPE:Goods.Trade
+	COST:300
+	WT:1
+	SOURCEPAGE:p.93
+
+Mithral (per lb)
+	OUTPUTNAME:Mithral (per lb.)
+	TYPE:Goods.Trade
+	COST:500
+	WT:1
+	SOURCEPAGE:p.93
+
+Platinum (per lb).MOD
+	OUTPUTNAME:Platinum (per lb.)
+	TYPE:Goods.Trade
+	COST:500
+	WT:1
+	SOURCEPAGE:p.93
+
+
+
+###Block: Food and Drink
+Absinthe (Glass)
+	TYPE:Goods.Liquid.Food
+	COST:3
+	SOURCEPAGE:p.94
+
+Absinthe (Bottle)
+	TYPE:Goods.Liquid.Food
+	COST:30
+	WT:1.5
+	SOURCEPAGE:p.94
+
+Ale (Mug).MOD
+	TYPE:Goods.Liquid.Food
+	COST:0.04
+	WT:1
+	SOURCEPAGE:p.94
+
+Ale (Gallon).MOD
+	TYPE:Goods.Liquid.Food
+	COST:0.2
+	WT:8
+	SOURCEPAGE:p.94
+
+Applejack (Mug)
+	TYPE:Goods.Liquid.Food
+	COST:0.08
+	WT:1
+	SOURCEPAGE:p.94
+
+Applejack (Gallon)
+	TYPE:Goods.Liquid.Food
+	COST:0.4
+	WT:8
+	SOURCEPAGE:p.94
+
+Baijiu (Bottle)
+	TYPE:Goods.Liquid.Food
+	COST:10
+	WT:2
+	SOURCEPAGE:p.94
+
+Banquet (Per Person).MOD
+	SOURCEPAGE:p.94
+
+Bread (Loaf).MOD
+	SOURCEPAGE:p.94
+
+Bufo (Jug)
+	TYPE:Goods.Liquid.Food
+	COST:1
+	WT:2
+	SOURCEPAGE:p.94
+
+Cauim (Gourd)
+	TYPE:Goods.Liquid.Food
+	COST:1
+	WT:2
+	SOURCEPAGE:p.94
+
+Caviar
+	TYPE:Goods.Food
+	COST:50
+	SOURCEPAGE:p.94
+
+Cheese (Hunk).MOD
+	SOURCEPAGE:p.94
+
+Chocolate (Bar)
+	TYPE:Goods.Food
+	COST:5
+	WT:0.5
+	SOURCEPAGE:p.94
+
+Coffee (Cup)
+	TYPE:Goods.Liquid.Food
+	COST:0.01
+	WT:0.5
+	SOURCEPAGE:p.94
+
+Dwarven Stout (Mug)
+	TYPE:Goods.Liquid.Food
+	COST:0.04
+	WT:0.5
+	SOURCEPAGE:p.94
+
+Dwarven Trail Rations
+	TYPE:Goods.Food.Resizable
+	COST:2
+	WT:1.5
+	SOURCEPAGE:p.95
+
+Elven Trail Rations
+	TYPE:Goods.Food.Resizable
+	COST:2
+	WT:1
+	SOURCEPAGE:p.95
+
+Fortune Cookie
+	TYPE:Goods.Food
+	COST:0.01
+	SOURCEPAGE:p.95
+
+Gnome Trail Rations
+	TYPE:Goods.Food.Resizable
+	COST:2
+	WT:1
+	SOURCEPAGE:p.95
+
+Grog (Mug)
+	TYPE:Goods.Liquid.Food
+	COST:0.02
+	WT:0.5
+	SOURCEPAGE:p.95
+
+Haggis
+	TYPE:Goods.Food
+	0.1
+	WT:1.5
+	SOURCEPAGE:p.95
+
+Halfling Trail Rations
+	TYPE:Goods.Food.Resizable
+	COST:2
+	WT:0.5
+	SOURCEPAGE:p.96
+
+Honey (Jar)
+	TYPE:Goods.Liquid.Food
+	COST:1
+	WT:0.5
+	SOURCEPAGE:p.96
+
+Ice Cream
+	TYPE:Goods.Food
+	COST:0.1
+	SOURCEPAGE:p.96
+
+Jungle Coffee (Cup)
+	TYPE:Goods.Liquid.Food
+	COST:0.03
+	WT:0.5
+	SOURCEPAGE:p.96
+
+Kahve (Cup)
+	TYPE:Goods.Liquid.Food
+	COST:0.02
+	WT:0.5
+	SOURCEPAGE:p.96
+
+Kumis (Wineskin)
+	TYPE:Goods.Liquid.Food
+	COST:0.5
+	WT:1.5
+	SOURCEPAGE:p.96
+
+Maple Syrup (Jar)
+	TYPE:Goods.Liquid.Food
+	COST:1
+	WT:0.5
+	SOURCEPAGE:p.96
+
+Mead (Mug)
+	TYPE:Goods.Liquid.Food
+	COST:0.05
+	WT:0.5
+	SOURCEPAGE:p.96
+
+Mead (Gallon)
+	TYPE:Goods.Liquid.Food
+	COST:2
+	WT:8
+	SOURCEPAGE:p.96
+
+Meals (Poor/Per Day).MOD
+	TYPE:Goods.Food
+	COST:0.1
+	SOURCEPAGE:p.96
+
+Meals (Common/Per Day).MOD
+	TYPE:Goods.Food
+	COST:0.3
+	SOURCEPAGE:p.96
+
+Meals (Good/Per Day).MOD
+	TYPE:Goods.Food
+	COST:0.5
+	SOURCEPAGE:p.96
+
+Meat (Chunk).MOD
+	TYPE:Goods.Food
+	COST:0.3
+	WT:0.5
+	SOURCEPAGE:p.96
+
+Milk
+	TYPE:Goods.Liquid.Food
+	COST:0.05
+	WT:0.5
+	SOURCEPAGE:p.96
+
+Oldlaw Whiskey (Bottle)
+	TYPE:Goods.Liquid.Food
+	COST:20
+	WT:1
+	SOURCEPAGE:p.96
+
+Orc Trail Rations
+	TYPE:Goods.Food.Resizable
+	COST:1
+	WT:1
+	SOURCEPAGE:p.96
+
+Powdered Milk
+	TYPE:Goods.Food
+	COST:0.1
+	WT:1
+	SOURCEPAGE:p.97
+
+Pulque (Cup)
+	TYPE:Goods.Liquid.Food
+	COST:0.1
+	WT:0.5
+	SOURCEPAGE:p.97
+
+Pulque (Wineskin)
+	TYPE:Goods.Liquid.Food
+	COST:0.4
+	WT:2
+	SOURCEPAGE:p.97
+
+Rumboozle (Cup)
+	TYPE:Goods.Liquid.Food
+	COST:0.1
+	WT:0.5
+	SOURCEPAGE:p.97
+
+Sealord Wine (Bottle)
+	TYPE:Goods.Liquid.Food
+	COST:15
+	WT:0.5
+	SOURCEPAGE:p.97
+
+Street Meat
+	TYPE:Goods.Food
+	COST:0.01
+	WT:0.5
+	SOURCEPAGE:p.97
+
+Tea (Cup)
+	TYPE:Goods.Liquid.Food
+	COST:0.02
+	WT:0.5
+	SOURCEPAGE:p.97
+
+Tea (Ceremonial/Cup)
+	TYPE:Goods.Liquid.Food
+	COST:0.04
+	WT:0.5
+	SOURCEPAGE:p.97
+
+Tea Ceremony Set
+	TYPE:Goods.General
+	COST:25
+	WT:5
+	SOURCEPAGE:p.97
+
+Tepache (Cup)
+	TYPE:Goods.Liquid.Food
+	COST:0.05
+	WT:0.5
+	SOURCEPAGE:p.97
+
+Rations (Trail/Per Day).MOD
+	SOURCEPAGE:p.97
+
+Travel Cake Mix
+	TYPE:Goods.Food
+	COST:0.1
+	WT:1
+	SOURCEPAGE:p.97
+
+Wandermeal (Per Day)
+	TYPE:Goods.Food.Resizable
+	COST:0.01
+	WT:0.5
+	SOURCEPAGE:p.97
+
+Whiskey (Cup)
+	TYPE:Goods.Liquid.Food
+	COST:0.1
+	WT:0.5
+	SOURCEPAGE:p.97
+
+Wine (Common/Pitcher).MOD
+	TYPE:Goods.Liquid.Food
+	COST:0.2
+	WT:6
+	SOURCEPAGE:p.97
+
+Wine (Fine/Bottle).MOD
+	TYPE:Goods.Liquid.Food
+	COST:10
+	WT:1.5
+	SOURCEPAGE:p.97
+
+Yogurt
+	COST:0.1
+	TYPE:Goods.Food
+	WT:0.5
+	SOURCEPAGE:p.97
+
+
+
+###Block: Lodging and Services
+Bath (Cold)
+	TYPE:Service
+	COST:0.02
+	SOURCEPAGE:p.98
+
+Bath (Hot)
+	TYPE:Service
+	COST:0.06
+	SOURCEPAGE:p.98
+
+Bath (Public/Cheap)
+	TYPE:Service
+	COST:0.2
+	SOURCEPAGE:p.98
+
+Bath (Public/Expensive)
+	TYPE:Service
+	COST:1
+	SOURCEPAGE:p.98
+
+Companion (Cheap)
+	TYPE:Service
+	COST:0.05
+	SOURCEPAGE:p.98
+
+Companion (Expensive)
+	TYPE:Service
+	COST:10
+	SOURCEPAGE:p.98
+
+Doctor
+	TYPE:Service
+	COST:1
+	SOURCEPAGE:p.98
+
+Footman
+	TYPE:Service
+	COST:0.5
+	SOURCEPAGE:p.98
+
+Hireling (Untrained).MOD
+	SOURCEPAGE:p.98
+
+Hireling (Trained).MOD
+	SOURCEPAGE:p.98
+
+Inn Stay (Poor/Per Day).MOD
+	SOURCEPAGE:p.98
+
+Inn Stay (Common/Per Day).MOD
+	SOURCEPAGE:p.98
+
+Inn Stay (Good/Per Day).MOD
+	SOURCEPAGE:p.98
+
+Inn Suite (Small)
+	TYPE:Service.Lodging
+	COST:4
+	SOURCEPAGE:p.98
+
+Inn Suite (Average)
+	TYPE:Service.Lodging
+	COST:16
+	SOURCEPAGE:p.98
+
+Inn Suite (Luxurious)
+	TYPE:Service.Lodging
+	COST:32
+	SOURCEPAGE:p.98
+
+Laundry (up to 4 Items)
+	TYPE:Service
+	COST:0.1
+	SOURCEPAGE:p.98
+
+Laundry (Extra Items)
+	TYPE:Service
+	COST:0.03
+	SOURCEPAGE:p.98
+
+Laundry (Magic)
+	TYPE:Service
+	COST:1
+	SOURCEPAGE:p.98
+
+Lawyer (Novice/Per Day)
+	TYPE:Service
+	COST:0.5
+	SOURCEPAGE:p.98
+
+Lawyer (Competent/Per Day)
+	TYPE:Service
+	COST:3
+	SOURCEPAGE:p.98
+
+Lawyer (Experienced/Per Day)
+	TYPE:Service
+	COST:10
+	SOURCEPAGE:p.98
+
+Messenger (Per Mile).MOD
+	SOURCEPAGE:p.98
+
+Nurse (Per Day)
+	TYPE:Service
+	COST:0.7
+	SOURCEPAGE:p.99
+
+Road Toll
+	TYPE:Service
+	COST:0.01
+	SOURCEPAGE:p.99
+
+Gate Toll
+	TYPE:Service
+	COST:0.01
+	SOURCEPAGE:p.99
+
+Scribe (Text)
+	TYPE:Service
+	COST:1
+	SOURCEPAGE:p.99
+
+Scribe (Map)
+	TYPE:Service
+	COST:10
+	SOURCEPAGE:p.99
+
+#Spellcasting		caster level x spell level × 10 gp		SOURCEPAGE:p.99
+Valet (Per Day)
+	TYPE:Service
+	COST:1
+	SOURCEPAGE:p.99
+
+
+
+###Block: Alchemical Remedies
+Alchemical Grease
+	TYPE:Goods.Alchemical.Consumable
+	COST:5
+	WT:1
+	SOURCEPAGE:p.100
+	BONUS:SKILL|Escape Artist|5|TYPE=Alchemical
+	BONUS:VAR|CMD_Grapple|5|TYPE=Alchemical
+
+Alchemist’s Kindness
+	TYPE:Goods.Alchemical.Consumable
+	COST:1
+	SOURCEPAGE:p.100
+	SPROP:Eliminates the effects of a hangover.
+
+Antiplague
+	TYPE:Goods.Alchemical.Consumable
+	COST:50
+	SOURCEPAGE:p.100
+	SPROP:Gain a +5 alchemical bonus on Fortitude saving throws against disease for the next hour. If already infected, you may also make two saving throws (without the +5 bonus) that day and use the better result.
+
+Antitoxin
+	TYPE:Goods.Alchemical.Consumable
+	COST:50
+	SOURCEPAGE:p.100
+	SPROP:gain a +5 alchemical bonus on Fortitude saving throws against poison for 1 hour.
+
+Bladeguard
+	TYPE:Goods.Alchemical.Consumable
+	COST:40
+	SOURCEPAGE:p.100
+	SPROP:Protects a weapon from harmful attacks made by oozes and rust monsters, as well as from similar effects that corrode or melt weapons, rendering the weapon immune for 24 hours.
+
+Fire Ward Gel
+	TYPE:Goods.Alchemical.Consumable
+	COST:150
+	SOURCEPAGE:p.100
+	SPROP:Gain fire resistance 5 until 20 points of fire damage have been absorbed.
+
+Frost Ward Gel
+	TYPE:Goods.Alchemical.Consumable
+	COST:150
+	SOURCEPAGE:p.100
+	SPROP:Gain cold resistance 5 until 20 points of cold damage have been absorbed.
+
+Meditation Tea
+	TYPE:Goods.Alchemical.Consumable
+	COST:30
+	SOURCEPAGE:p.100
+	SPROP:For ten minutes after drinking gain a +2 alchemical bonus against mind affecting effects.
+
+Padzahr
+	TYPE:Goods.Alchemical.Consumable
+	COST:80
+	SOURCEPAGE:p.100
+	SPROP:Resting 1 hour after drinking a vial heals 1 point of CON damage.
+
+Smelling Salts
+	TYPE:Goods.Alchemical.Consumable
+	COST:25
+	SOURCEPAGE:p.101
+	SPROP:Grants new saving throw against unconscious or staggerd conditions. If dying, become conscious and staggered but still make stabilization checks each round.
+
+Soothe Syrup
+	TYPE:Goods.Alchemical.Consumable
+	COST:25
+	WT:0.5
+	SOURCEPAGE:p.101
+	SPROP:Gain +5 alchemical bonus against nauseated or sickened conditions for 1 hour.
+
+Soul Stimulant
+	TYPE:Goods.Alchemical.Consumable
+	COST:300
+	SOURCEPAGE:p.101
+	SPROP:Negates negative level penalties for 12 hours.
+
+Troll Oil
+	TYPE:Goods.Alchemical.Consumable
+	COST:50
+	WT:1
+	SOURCEPAGE:p.101
+	SPROP:For 1 hour, automatically stabilize when reduced to negative hit points, gain 50% chance to end any bleed effect.
+
+Twitch Tonic
+	TYPE:Goods.Alchemical.Consumable
+	COST:45
+	SOURCEPAGE:p.101
+	SPROP:Gain +2 alchemical bonus against sleep, paralysis and the staggered condition for 1 hour.
+
+Vermin Repellent
+	TYPE:Goods.Alchemical.Consumable
+	COST:5
+	SOURCEPAGE:p.101
+	SPROP:Swarms of vermin smaller than Tiny must make a successful DC 15 Fortitude saving throwin order to enter your square.
+
+Wismuth Salix
+	TYPE:Goods.Alchemical.Consumable
+	COST:30
+	SOURCEPAGE:p.101
+	SPROP:Gain +2 alchemical bonus against nauseated or sickened condition for 1 hour.
 
 
 
@@ -3032,6 +4120,1019 @@ Weapon Blanch (Silver)
 
 
 
-#
-# End
-#
+#Block: Alchemical Weapons
+Liquid Blade
+	WIELD:OneHanded
+	PROFICIENCY:WEAPON|Sword (Short)
+	OUTPUTNAME:Liquid Blade
+	COST:40
+	DAMAGE:1d6
+	CRITMULT:x2
+	CRITRANGE:2
+	WT:2
+	SIZE:M
+	TYPE:Weapon.Melee.Light.Finesseable.Martial.Standard.Piercing.Sword.Fragile.Consumable
+	SPROP:Lasts for 10 minutes.|PRERULE:1,DisplayWeaponDetails
+	SOURCEPAGE:p.108
+
+Flame Fountain Firework
+	WIELD:OneHanded
+	PROFICIENCY:WEAPON|Mace (Heavy)
+	OUTPUTNAME:Flame Fountain Firework
+	COST:100
+	DAMAGE:1d8
+	CRITMULT:x2
+	CRITRANGE:1
+	SIZE:M
+	TYPE:Weapon.Melee.OneHanded.Fire.Consumable
+	SPROP:Attacks are melee touch attacks. Lasts 1 min. Move action to light fuse. STR does not apply to Dam.|PRERULE:1,DisplayWeaponDetails
+	SOURCEPAGE:p.106
+
+Acid (Flask).MOD
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:10
+
+
+	DAMAGE:1d6
+
+
+	CRITMULT:x2
+
+
+	CRITRANGE:1
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Acid.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.106
+
+Alchemist's Fire (Flask).MOD
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:20
+
+
+	DAMAGE:1d6
+
+
+	CRITMULT:x2
+
+
+	CRITRANGE:1
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Fire.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.106
+
+Alkali (Flask)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:15
+
+
+	DAMAGE:1d6
+
+
+	CRITMULT:x2
+
+
+	CRITRANGE:1
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Acid.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.106
+
+Banshee Ballerina (Firework)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:75
+
+
+	RANGE:10
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Sonic.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.106
+
+Bottled Lightning (Flask)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:40
+
+
+	DAMAGE:1d8/1
+
+
+	CRITMULT:x2
+
+
+	CRITRANGE:1
+
+
+	RANGE:20
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Electricity.Sonic.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.106
+
+Burst Jar
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:35
+
+
+	DAMAGE:1
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Sonic.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.106
+
+Flash Poweder
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:50
+
+
+	RANGE:10
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.106
+
+Fuse Grenade
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:100
+
+
+	DAMAGE:2d6/1d6
+
+
+	CRITMULT:x2
+
+
+	CRITRANGE:1
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Bludgeoning.Fire.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.107
+
+Ghast Retch (Flask)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:50
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Poison.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.107
+
+Holy Water (Flask).MOD
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:25
+
+
+	DAMAGE:2d4
+
+
+	CRITMULT:x2
+
+
+	CRITRANGE:1
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.107
+
+Itching Powder
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:60
+
+
+	RANGE:10
+
+
+	WT:2
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Poison.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.108
+
+Keros Oil (Flask)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:5
+
+
+	DAMAGE:1d3
+
+
+	CRITMULT:x2
+
+
+	CRITRANGE:1
+
+
+	RANGE:5
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Fire.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.108
+
+Liquid Ice (Flask)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:40
+
+
+	DAMAGE:1d6
+
+
+	CRITMULT:x2
+
+
+	CRITRANGE:1
+
+
+	RANGE:10
+
+
+	WT:2
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Cold.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.108
+
+Paper Candle (Firework)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:1
+
+
+	RANGE:10
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.108
+
+Pellet Grenade (Iron)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	OUTPUTNAME:Pellet Grenade, Iron
+
+
+	COST:50
+
+
+	DAMAGE:1d6/1d6/1d6
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Piercing.Bludgeoning.Fire.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.108
+
+Pellet Grenade (Silver)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	OUTPUTNAME:Pellet Grenade, Silver
+
+
+	COST:70
+
+
+	DAMAGE:1d6/1d6/1d6
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Piercing.Bludgeoning.Fire.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.108
+
+Pellet Grenade (Cold Iron)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	OUTPUTNAME:Pellet Grenade, Cold Iron
+
+
+	COST:100
+
+
+	DAMAGE:1d6/1d6/1d6
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Piercing.Bludgeoning.Fire.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.108
+
+Pellet Grenade (Adamantine)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	OUTPUTNAME:Pellet Grenade, Adamantine
+
+
+	COST:150
+
+
+	DAMAGE:1d6/1d6/1d6
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Piercing.Bludgeoning.Fire.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.108
+
+Shard Gel (Flask)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:25
+
+
+	DAMAGE:1d4
+
+
+	CRITMULT:x2
+
+
+	CRITRANGE:1
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Piercing.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.108
+
+Skyrocket (Firework)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:50
+
+
+	DAMAGE:2d6
+
+
+	RANGE:10
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Fire.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.109
+
+Sneezing Powder
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:60
+
+
+	RANGE:10
+
+
+	WT:2
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Poison.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.109
+
+Star Candle (Firework)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:5
+
+
+	DAMAGE:1/1
+
+
+	CRITMULT:Blindness
+
+
+	CRITRANGE:1
+
+
+	RANGE:5
+
+
+	EQMOD:NONLETHAL
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Fire.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.109
+
+Starfountain (Firework)
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:500
+
+
+	DAMAGE:1d6
+
+
+	RANGE:10
+
+
+	WT:100
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Fire.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.109
+
+Tangleburn Bag
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:150
+
+
+	DAMAGE:1d6
+
+
+	RANGE:10
+
+
+	WT:5
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Fire.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.109
+
+Tanglefoot Bag.MOD
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:50
+
+
+	RANGE:10
+
+
+	WT:4
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.109
+
+Thunderstone.MOD
+
+
+	PROFICIENCY:WEAPON|
+
+
+	COST:30
+
+
+	RANGE:20
+
+
+	WT:1
+
+
+	EQMOD:
+
+
+	SIZE:M
+
+
+	TYPE:Weapon.Ranged.Thrown.Sonic.Consumable
+
+
+	SPROP:|PRERULE:1,DisplayWeaponDetails
+
+
+	SOURCEPAGE:p.109
+
+
+
+#Block: Poisons
+Poison (Indigo Dreams)
+	TYPE:Goods.Poison.Consumable
+	COST:150
+	SOURCEPAGE:p.111
+	SPROP:Ingested; Fort DC 13; Onset 10 min; Freq 1 min (6); Effect 1d3 Wis dmg; Cure 2 consecutive saves
+
+Poison (Swampseer Poison)
+	TYPE:Goods.Poison.Consumable
+	COST:180
+	SOURCEPAGE:p.111
+	SPROP:Ingested; Fort DC 11; Onset 10 min; Freq 1 min (4); Effect 1d3 Wis and 1 Int dmg; Cure 1 save
+
+Poison (Azure Lily Pollen)
+	TYPE:Goods.Poison.Consumable
+	COST:1500
+	SOURCEPAGE:p.111
+	SPROP:Inhaled; Fort DC 15; Freq 1 min (2); Effect nauseated 1 min, paralyzed 2d4 hours; Cure 1 save
+
+Poison (Arsenic).MOD
+	SOURCEPAGE:p.111
+
+Poison (Belladonna).MOD
+	SOURCEPAGE:p.111
+
+Poison (Black Adder Venom).MOD
+	SOURCEPAGE:p.111
+
+Poison (Black Lotus Extract).MOD
+	SOURCEPAGE:p.111
+
+Poison (Bloodroot).MOD
+	SOURCEPAGE:p.111
+
+Poison (Blue Whinnis).MOD
+	SOURCEPAGE:p.111
+
+Poison (Burnt Othur Fumes).MOD
+	SOURCEPAGE:p.111
+
+Poison (Dark Reaver Powder).MOD
+	SOURCEPAGE:p.111
+
+Poison (Deathblade).MOD
+	SOURCEPAGE:p.111
+
+Poison (Dragon Bile).MOD
+	SOURCEPAGE:p.111
+
+Poison (Drow Poison).MOD
+	SOURCEPAGE:p.111
+
+Poison (Giant Wasp Poison).MOD
+	SOURCEPAGE:p.111
+
+Poison (Greenblood Oil).MOD
+	SOURCEPAGE:p.111
+
+Poison (Hemlock).MOD
+	SOURCEPAGE:p.111
+
+Poison (Id Moss).MOD
+	SOURCEPAGE:p.111
+
+Poison (Insanity Mist).MOD
+	SOURCEPAGE:p.111
+
+Poison (King's Sleep).MOD
+	SOURCEPAGE:p.111
+
+Poison (Large Scorpion Venom).MOD
+	SOURCEPAGE:p.111
+
+Poison (Lich Dust).MOD
+	SOURCEPAGE:p.111
+
+Poison (Malyass Root Paste).MOD
+	SOURCEPAGE:p.111
+
+Poison (Medium Spider Venom).MOD
+	SOURCEPAGE:p.111
+
+Poison (Nightmare Vapor).MOD
+	SOURCEPAGE:p.111
+
+Poison (Nitharit).MOD
+	SOURCEPAGE:p.111
+
+Poison (Oil of Taggit).MOD
+	SOURCEPAGE:p.111
+
+Poison (Purple Worm Poison).MOD
+	SOURCEPAGE:p.111
+
+Poison (Sassone Leaf Residue).MOD
+	SOURCEPAGE:p.111
+
+Poison (Shadow Essence).MOD
+	SOURCEPAGE:p.111
+
+Poison (Small Centipede Poison).MOD
+	SOURCEPAGE:p.111
+
+Poison (Striped Toadstool).MOD
+	SOURCEPAGE:p.111
+
+Poison (Tears of Death).MOD
+	SOURCEPAGE:p.111
+
+Poison (Terinav Root).MOD
+	SOURCEPAGE:p.111
+
+Poison (Ungol Dust).MOD
+	SOURCEPAGE:p.111
+
+Poison (Wolfsbane).MOD
+	SOURCEPAGE:p.111
+
+Poison (Wyvern Poison).MOD
+	SOURCEPAGE:p.111
+
