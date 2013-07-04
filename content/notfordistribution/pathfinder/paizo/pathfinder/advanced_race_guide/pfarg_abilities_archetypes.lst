@@ -3522,12 +3522,12 @@ Scarred Witch Doctor
 	SOURCEPAGE:p.140
 
 #
-# Implement: uses Con instead of Int for determining spell bonuses
 Constitution Dependent
 	KEY:Constitution Dependent ~ Scarred Witch Doctor
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:A scarred witch doctor uses Constitution instead of Intelligence when determining the highest level of spells she can cast, her spell save DCs, number of spells known at 1st level, and any effects of her hexes normally determined by her Intelligence.
+	BONUS:STAT|BASESPELLSTAT;Class=Witch|CON-INT
 	SOURCEPAGE:p.140
 
 Hex Scar
