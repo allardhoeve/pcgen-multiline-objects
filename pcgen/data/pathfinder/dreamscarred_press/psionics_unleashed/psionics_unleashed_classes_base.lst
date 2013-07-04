@@ -576,16 +576,25 @@ CLASS:Wilder
 ###Block: Class Info
 1
 	KNOWN:0,1
-	BONUS:ABILITYPOOL|Surge Type|1
 	BONUS:VAR|PsychicEnervation|1
 	BONUS:VAR|WildSurge|1
 	BONUS:VAR|SurgeLVL|WilderML
-	ABILITY:Special Ability|AUTOMATIC|Psychic Enervation|Surge Blast|Surge Bond|Wild Surge
+	ABILITY:Special Ability|AUTOMATIC|Psychic Enervation|!PREABILITY:1,CATEGORY=Archetype,TYPE.WilderPsychicEnervation
+
+1
+	ABILITY:Special Ability|AUTOMATIC|Surge Blast|!PREABILITY:1,CATEGORY=Archetype,TYPE.WilderSurgeBlast
+
+1
+	ABILITY:Special Ability|AUTOMATIC|Surge Bond|!PREABILITY:1,CATEGORY=Archetype,TYPE.WilderSurgeBond
+
+1
+	BONUS:ABILITYPOOL|Surge Type|1|!PREABILITY:1,CATEGORY=Archetype,TYPE.WilderWildSurge
+	ABILITY:Special Ability|AUTOMATIC|Wild Surge|!PREABILITY:1,CATEGORY=Archetype,TYPE.WilderWildSurge
 
 2
 	KNOWN:0,2
 	BONUS:VAR|EludeAttack|1
-	ABILITY:Special Ability|AUTOMATIC|Elude Attack
+	ABILITY:Special Ability|AUTOMATIC|Elude Attack|!PREABILITY:1,CATEGORY=Archetype,TYPE.WilderEludeAttack
 
 3
 	KNOWN:0,2
@@ -594,12 +603,12 @@ CLASS:Wilder
 4
 	KNOWN:0,2,1
 	BONUS:VAR|SurgingEuphoria|1
-	ABILITY:Special Ability|AUTOMATIC|Surging Euphoria
+	ABILITY:Special Ability|AUTOMATIC|Surging Euphoria|!PREABILITY:1,CATEGORY=Archetype,TYPE.WilderSurgingEuphoria
 
 5
 	KNOWN:0,2,1
 	BONUS:VAR|ImpSurgeBond|1
-	ABILITY:Special Ability|AUTOMATIC|Improved Surge Bond
+	ABILITY:Special Ability|AUTOMATIC|Improved Surge Bond|!PREABILITY:1,CATEGORY=Archetype,TYPE.WilderImprovedSurgeBond
 
 6
 	KNOWN:0,2,1,1
@@ -658,5 +667,5 @@ CLASS:Wilder
 20
 	KNOWN:0,2,1,1,1,1,1,1,1,2
 	BONUS:VAR|SurgingEuphoria|1
-	ABILITY:Special Ability|AUTOMATIC|Perfect Surge
+	ABILITY:Special Ability|AUTOMATIC|Perfect Surge|!PREABILITY:1,CATEGORY=Archetype,TYPE.WilderPerfectSurge
 
