@@ -324,6 +324,7 @@ Endorphin Surge
 	CHOOSE:NUMBER|MIN=0|MAX=1|TITLE=Number of 6-pt augmentations
 	SOURCEPAGE:p.16
 
+### COMMENT:Don't know how to change armor type in a spell.
 Graft Armor
 	CLASSES:Psychic Warrior=3
 	SCHOOL:Psychometabolism
@@ -341,7 +342,6 @@ Graft Armor
 	BONUS:MISC|SPELLFAILURE|-10|PREAPPLY:PC
 	SOURCEPAGE:p.16
 
-###COMMENT:Don't know how to change armor type in a spell.
 Heal Injuries
 	CLASSES:Vitalist=6
 	SCHOOL:Psychometabolism
