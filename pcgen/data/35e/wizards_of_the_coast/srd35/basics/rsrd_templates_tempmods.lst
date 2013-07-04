@@ -22,6 +22,7 @@ SOURCELONG:Revised (v.3.5) System Reference Document
 #	7  => Huge Elemental
 
 
+# Homebrew Support - BONUS:HP|CURRENTMAX|-TL*(WildShapeConsititution/2) needs to be placed to negate HP change
 
 
 ###Block: Normal Animals
@@ -38,7 +39,8 @@ Wild Shape (Ape)
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|21-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|14-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|14-CONSCORE.BASE
 	MOVE:Climb,30
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d6|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d6
 
@@ -53,7 +55,8 @@ Wild Shape (Baboon)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|11-STRSCORE.BASE
 	BONUS:STAT|DEX|14-DEXSCORE.BASE
-	BONUS:STAT|CON|12-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|12-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	MOVE:Climb,30
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d6
@@ -70,14 +73,15 @@ Wild Shape (Badger)
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|8-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|15-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|15-CONSCORE.BASE
 	BONUS:VAR|RageTimes,RageDuration|1
 	ABILITY:Special Ability|AUTOMATIC|Rage
 	AUTO:FEAT|Weapon Finesse
 	MOVE:Burrow,10
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d2|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d3
 
-#Wild Shape (Bat)													SIZE:D	SOURCEPAGE:MonstersAnimals.rtf											PREVARGTEQ:WildShapeProgression,1,DruidWildShape,1									BONUS:MOVEADD|TYPE.Walk|5-MOVEBASE	BONUS:STAT|STR|1-STRSCORE.BASE	BONUS:STAT|DEX|15-DEXSCORE.BASE	BONUS:STAT|CON|10-CONSCORE.BASE																		MOVE:Fly,40																																		FACE:1			LEGS:2	REACH:0
+#Wild Shape (Bat)													SIZE:D	SOURCEPAGE:MonstersAnimals.rtf											PREVARGTEQ:WildShapeProgression,1,DruidWildShape,1									BONUS:MOVEADD|TYPE.Walk|5-MOVEBASE	BONUS:STAT|STR|1-STRSCORE.BASE	BONUS:STAT|DEX|15-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|10-CONSCORE.BASE																		MOVE:Fly,40																																		FACE:1			LEGS:2	REACH:0
 Wild Shape (Bear (Black))
 	OUTPUTNAME:Wild Shape (Black Bear)
 	SIZE:M
@@ -91,7 +95,8 @@ Wild Shape (Bear (Black))
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|19-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|15-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|15-CONSCORE.BASE
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d4|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d6
 
 Wild Shape (Bear (Brown))
@@ -108,7 +113,8 @@ Wild Shape (Bear (Brown))
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|27-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|19-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|19-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d8|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d6
 
@@ -126,7 +132,8 @@ Wild Shape (Bear (Polar))
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|27-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|19-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|19-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab
 	MOVE:Swim,30
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d8|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d6
@@ -143,7 +150,8 @@ Wild Shape (Bison)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|22-STRSCORE.BASE
 	BONUS:STAT|DEX|10-DEXSCORE.BASE
-	BONUS:STAT|CON|16-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|16-CONSCORE.BASE
 	BONUS:WEAPONPROF=Gore|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Stampede
 	NATURALATTACKS:Gore,Weapon.Natural.Melee.Finesseable.Piercing,*1,1d8
@@ -159,7 +167,8 @@ Wild Shape (Boar)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|15-STRSCORE.BASE
 	BONUS:STAT|DEX|10-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	BONUS:WEAPONPROF=Gore|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Ferocity
 	NATURALATTACKS:Gore,Weapon.Natural.Melee.Finesseable.Piercing,*1,1d8
@@ -176,7 +185,8 @@ Wild Shape (Camel)
 	BONUS:MOVEADD|TYPE.Walk|50-MOVEBASE
 	BONUS:STAT|STR|18-STRSCORE.BASE
 	BONUS:STAT|DEX|16-DEXSCORE.BASE
-	BONUS:STAT|CON|14-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|14-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d4
 
@@ -191,7 +201,8 @@ Wild Shape (Cat)
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|3-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|10-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|10-CONSCORE.BASE
 	AUTO:FEAT|Weapon Finesse
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d2|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d3
 
@@ -207,7 +218,8 @@ Wild Shape (Cheetah)
 	BONUS:MOVEADD|TYPE.Walk|50-MOVEBASE
 	BONUS:STAT|STR|16-STRSCORE.BASE
 	BONUS:STAT|DEX|19-DEXSCORE.BASE
-	BONUS:STAT|CON|15-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|15-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Trip
 	AUTO:FEAT|Weapon Finesse
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d6|Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,1d2
@@ -223,7 +235,8 @@ Wild Shape (Crocodile)
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|19-STRSCORE.BASE
 	BONUS:STAT|DEX|12-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab
 	MOVE:Swim,30
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d8|Tail,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d12
@@ -240,7 +253,8 @@ Wild Shape (Crocodile (Giant))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|27-STRSCORE.BASE
 	BONUS:STAT|DEX|12-DEXSCORE.BASE
-	BONUS:STAT|CON|19-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|19-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab
 	MOVE:Swim,30
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d8|Tail,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d12
@@ -256,7 +270,8 @@ Wild Shape (Dog)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|13-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|15-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|15-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d4
 
@@ -272,7 +287,8 @@ Wild Shape (Dog (Riding))
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|15-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|15-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|15-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d6
 
@@ -287,7 +303,8 @@ Wild Shape (Donkey)
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|10-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|12-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|12-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d2
 
@@ -303,7 +320,8 @@ Wild Shape (Eagle)
 	BONUS:MOVEADD|TYPE.Walk|10-MOVEBASE
 	BONUS:STAT|STR|10-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|12-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|12-CONSCORE.BASE
 	BONUS:VAR|Maneuverability|3
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability
 	AUTO:FEAT|Weapon Finesse
@@ -322,7 +340,8 @@ Wild Shape (Elephant)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|30-STRSCORE.BASE
 	BONUS:STAT|DEX|10-DEXSCORE.BASE
-	BONUS:STAT|CON|21-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|21-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Trample
 	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,2d6|Stamp,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,2d6|Gore,Weapon.Natural.Melee.Finesseable.Piercing,*1,2d8
 
@@ -337,7 +356,8 @@ Wild Shape (Hawk)
 	BONUS:MOVEADD|TYPE.Walk|10-MOVEBASE
 	BONUS:STAT|STR|6-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|10-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|10-CONSCORE.BASE
 	BONUS:VAR|Maneuverability|3
 	BONUS:WEAPONPROF=Talons|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability
@@ -358,7 +378,8 @@ Wild Shape (Horse (Heavy))
 	BONUS:MOVEADD|TYPE.Walk|50-MOVEBASE
 	BONUS:STAT|STR|16-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|15-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|15-CONSCORE.BASE
 	NATURALATTACKS:Hoof,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,1d6
 
 Wild Shape (Horse (Light))
@@ -374,7 +395,8 @@ Wild Shape (Horse (Light))
 	BONUS:MOVEADD|TYPE.Walk|60-MOVEBASE
 	BONUS:STAT|STR|14-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|15-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|15-CONSCORE.BASE
 	NATURALATTACKS:Hoof,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,1d4
 
 Wild Shape (Horse (Warhorse Heavy))
@@ -391,7 +413,8 @@ Wild Shape (Horse (Warhorse Heavy))
 	BONUS:MOVEADD|TYPE.Walk|50-MOVEBASE
 	BONUS:STAT|STR|18-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	NATURALATTACKS:Hoof,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,1d6|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d4
 
 Wild Shape (Horse (Warhorse Light))
@@ -408,7 +431,8 @@ Wild Shape (Horse (Warhorse Light))
 	BONUS:MOVEADD|TYPE.Walk|60-MOVEBASE
 	BONUS:STAT|STR|16-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	NATURALATTACKS:Hoof,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,1d4|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d3
 
 Wild Shape (Hyena)
@@ -422,7 +446,8 @@ Wild Shape (Hyena)
 	BONUS:MOVEADD|TYPE.Walk|50-MOVEBASE
 	BONUS:STAT|STR|14-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|15-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|15-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Trip
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d6
@@ -439,7 +464,8 @@ Wild Shape (Leopard)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|16-STRSCORE.BASE
 	BONUS:STAT|DEX|19-DEXSCORE.BASE
-	BONUS:STAT|CON|15-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|15-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab|Pounce|Rake
 	AUTO:FEAT|Weapon Finesse
 	MOVE:Climb,20
@@ -458,7 +484,8 @@ Wild Shape (Lion)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|21-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|15-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|15-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab|Pounce|Rake
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d4|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d8
 
@@ -472,7 +499,8 @@ Wild Shape (Lizard)
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|3-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|10-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|10-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	AUTO:FEAT|Weapon Finesse
 	MOVE:Climb,20
@@ -490,7 +518,8 @@ Wild Shape (Lizard (Monitor))
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|17-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	MOVE:Swim,30
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d8
@@ -506,7 +535,8 @@ Wild Shape (Manta Ray)
 	BONUS:COMBAT|AC|3|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|15-STRSCORE.BASE
 	BONUS:STAT|DEX|11-DEXSCORE.BASE
-	BONUS:STAT|CON|10-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|10-CONSCORE.BASE
 	MOVE:Swim,30
 
 Wild Shape (Monkey)
@@ -519,7 +549,8 @@ Wild Shape (Monkey)
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|3-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|10-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|10-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	AUTO:FEAT|Weapon Finesse
 	MOVE:Climb,30
@@ -537,7 +568,8 @@ Wild Shape (Mule)
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|16-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	NATURALATTACKS:Hoof,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,1d4
 
 Wild Shape (Octopus)
@@ -552,7 +584,8 @@ Wild Shape (Octopus)
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|12-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|11-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|11-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab
 	AUTO:FEAT|Weapon Finesse
 	MOVE:Swim,30
@@ -571,7 +604,8 @@ Wild Shape (Octopus (Giant))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|20-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|13-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|13-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Constrict|Improved Grab
 	MOVE:Swim,30
 	NATURALATTACKS:Tentacle,Weapon.Natural.Melee.Finesseable.Bludgeoning,*8,1d4|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d8
@@ -587,7 +621,8 @@ Wild Shape (Owl)
 	BONUS:MOVEADD|TYPE.Walk|10-MOVEBASE
 	BONUS:STAT|STR|4-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|10-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|10-CONSCORE.BASE
 	BONUS:VAR|Maneuverability|3
 	BONUS:WEAPONPROF=Talons|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability
@@ -606,7 +641,8 @@ Wild Shape (Pony)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|13-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|12-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|12-CONSCORE.BASE
 	NATURALATTACKS:Hoof,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,1d3
 
 Wild Shape (Pony (War))
@@ -621,7 +657,8 @@ Wild Shape (Pony (War))
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|15-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|14-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|14-CONSCORE.BASE
 	NATURALATTACKS:Hoof,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,1d3
 
 Wild Shape (Porpoise)
@@ -634,7 +671,8 @@ Wild Shape (Porpoise)
 	BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|11-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|13-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|13-CONSCORE.BASE
 	BONUS:WEAPONPROF=Slam|DAMAGE|max(0,(STR/2))
 	AUTO:FEAT|Weapon Finesse
 	MOVE:Swim,80
@@ -650,7 +688,8 @@ Wild Shape (Rat)
 	BONUS:MOVEADD|TYPE.Walk|15-MOVEBASE
 	BONUS:STAT|STR|2-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|10-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|10-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	AUTO:FEAT|Weapon Finesse
 	MOVE:Climb,15,Swim,15
@@ -666,7 +705,8 @@ Wild Shape (Raven)
 	BONUS:MOVEADD|TYPE.Walk|10-MOVEBASE
 	BONUS:STAT|STR|1-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|10-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|10-CONSCORE.BASE
 	BONUS:VAR|Maneuverability|3
 	BONUS:WEAPONPROF=Claw|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability
@@ -686,7 +726,8 @@ Wild Shape (Rhinoceros)
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|26-STRSCORE.BASE
 	BONUS:STAT|DEX|10-DEXSCORE.BASE
-	BONUS:STAT|CON|21-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|21-CONSCORE.BASE
 	BONUS:WEAPONPROF=Gore|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Powerful Charge
 	NATURALATTACKS:Gore,Weapon.Natural.Melee.Finesseable.Piercing,*1,1d8
@@ -702,7 +743,8 @@ Wild Shape (Shark (Medium))
 	BONUS:COMBAT|AC|3|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|13-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|13-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|13-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	AUTO:FEAT|Weapon Finesse
 	MOVE:Swim,60
@@ -720,7 +762,8 @@ Wild Shape (Shark (Large))
 	BONUS:COMBAT|AC|4|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|17-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|13-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|13-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	MOVE:Swim,60
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d8
@@ -736,7 +779,8 @@ Wild Shape (Shark (Huge))
 	BONUS:COMBAT|AC|5|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|21-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|15-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|15-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	MOVE:Swim,60
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d6
@@ -753,7 +797,8 @@ Wild Shape (Snake (Constrictor))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|17-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|13-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|13-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Constrict|Improved Grab
 	MOVE:Climb,20,Swim,20
@@ -771,7 +816,8 @@ Wild Shape (Snake (Constrictor/Giant))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|25-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|13-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|13-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Constrict|Improved Grab
 	MOVE:Climb,20,Swim,20
@@ -789,7 +835,8 @@ Wild Shape (Snake (Viper/Tiny))
 	BONUS:MOVEADD|TYPE.Walk|15-MOVEBASE
 	BONUS:STAT|STR|4-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|11-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|11-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Poison
 	AUTO:FEAT|Weapon Finesse
@@ -808,7 +855,8 @@ Wild Shape (Snake (Viper/Small))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|6-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|11-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|11-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Poison
 	AUTO:FEAT|Weapon Finesse
@@ -827,7 +875,8 @@ Wild Shape (Snake (Viper/Medium))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|8-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|11-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|11-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Poison
 	AUTO:FEAT|Weapon Finesse
@@ -847,7 +896,8 @@ Wild Shape (Snake (Viper/Large))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|10-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|11-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|11-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Poison
 	AUTO:FEAT|Weapon Finesse
@@ -866,7 +916,8 @@ Wild Shape (Snake (Viper/Huge))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|16-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|13-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|13-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Poison
 	MOVE:Climb,20,Swim,20
@@ -883,7 +934,8 @@ Wild Shape (Squid)
 	BONUS:COMBAT|AC|3|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|14-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|11-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|11-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab
 	MOVE:Swim,60
 	NATURALATTACKS:Arms,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,0|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d6
@@ -900,7 +952,8 @@ Wild Shape (Squid (Giant))
 	BONUS:COMBAT|AC|6|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|26-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|13-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|13-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Constrict|Improved Grab
 	MOVE:Swim,80
 	NATURALATTACKS:Tentacle,Weapon.Natural.Melee.Finesseable.Bludgeoning,*10,1d6|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d8
@@ -918,11 +971,12 @@ Wild Shape (Tiger)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|23-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab|Pounce|Rake
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d6|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d6
 
-#Wild Shape (Toad)												SIZE:D	SOURCEPAGE:MonstersAnimals.rtf											PREVARGTEQ:WildShapeProgression,1,DruidWildShape,1									BONUS:MOVEADD|TYPE.Walk|5-MOVEBASE	BONUS:STAT|STR|1-STRSCORE.BASE	BONUS:STAT|DEX|12-DEXSCORE.BASE	BONUS:STAT|CON|11-CONSCORE.BASE																																																FACE:1			LEGS:4	REACH:0
+#Wild Shape (Toad)												SIZE:D	SOURCEPAGE:MonstersAnimals.rtf											PREVARGTEQ:WildShapeProgression,1,DruidWildShape,1									BONUS:MOVEADD|TYPE.Walk|5-MOVEBASE	BONUS:STAT|STR|1-STRSCORE.BASE	BONUS:STAT|DEX|12-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|11-CONSCORE.BASE																																																FACE:1			LEGS:4	REACH:0
 Wild Shape (Weasel)
 	SIZE:T
 	FACE:2.5
@@ -933,15 +987,16 @@ Wild Shape (Weasel)
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|3-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|10-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|10-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Attach
 	AUTO:FEAT|Weapon Finesse
 	MOVE:Climb,20
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d3
 
-#Wild Shape (Whale (Baleen))			OUTPUTNAME:Wild Shape (Baleen Whale)		SIZE:G	SOURCEPAGE:MonstersAnimals.rtf	ABILITY:Special Ability|AUTOMATIC|Blind								PREVARGTEQ:WildShapeProgression,1,DruidWildShape,12	BONUS:COMBAT|AC|9|TYPE=NaturalArmor.STACK							BONUS:STAT|STR|35-STRSCORE.BASE	BONUS:STAT|DEX|13-DEXSCORE.BASE	BONUS:STAT|CON|22-CONSCORE.BASE	BONUS:WEAPONPROF=Tail|DAMAGE|max(0,(STR/2))					MOVE:Swim,40		NATURALATTACKS:Tail,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d8																				FACE:20			LEGS:0	REACH:15
-#Wild Shape (Whale (Cachalot))		OUTPUTNAME:Wild Shape (Cachalot Whale)		SIZE:G	SOURCEPAGE:MonstersAnimals.rtf	ABILITY:Special Ability|AUTOMATIC|Blind								PREVARGTEQ:WildShapeProgression,1,DruidWildShape,12	BONUS:COMBAT|AC|9|TYPE=NaturalArmor.STACK							BONUS:STAT|STR|35-STRSCORE.BASE	BONUS:STAT|DEX|12-DEXSCORE.BASE	BONUS:STAT|CON|25-CONSCORE.BASE													MOVE:Swim,40		NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,3d6|Tail,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d8							FACE:20			LEGS:0	REACH:15
+#Wild Shape (Whale (Baleen))			OUTPUTNAME:Wild Shape (Baleen Whale)		SIZE:G	SOURCEPAGE:MonstersAnimals.rtf	ABILITY:Special Ability|AUTOMATIC|Blind								PREVARGTEQ:WildShapeProgression,1,DruidWildShape,12	BONUS:COMBAT|AC|9|TYPE=NaturalArmor.STACK							BONUS:STAT|STR|35-STRSCORE.BASE	BONUS:STAT|DEX|13-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|22-CONSCORE.BASE	BONUS:WEAPONPROF=Tail|DAMAGE|max(0,(STR/2))					MOVE:Swim,40		NATURALATTACKS:Tail,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d8																				FACE:20			LEGS:0	REACH:15
+#Wild Shape (Whale (Cachalot))		OUTPUTNAME:Wild Shape (Cachalot Whale)		SIZE:G	SOURCEPAGE:MonstersAnimals.rtf	ABILITY:Special Ability|AUTOMATIC|Blind								PREVARGTEQ:WildShapeProgression,1,DruidWildShape,12	BONUS:COMBAT|AC|9|TYPE=NaturalArmor.STACK							BONUS:STAT|STR|35-STRSCORE.BASE	BONUS:STAT|DEX|12-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|25-CONSCORE.BASE													MOVE:Swim,40		NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,3d6|Tail,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d8							FACE:20			LEGS:0	REACH:15
 Wild Shape (Whale (Orca))
 	OUTPUTNAME:Wild Shape (Orca Whale)
 	SIZE:H
@@ -953,7 +1008,8 @@ Wild Shape (Whale (Orca))
 	BONUS:COMBAT|AC|6|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|27-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|21-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|21-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Blind
 	MOVE:Swim,50
@@ -970,7 +1026,8 @@ Wild Shape (Wolf)
 	BONUS:MOVEADD|TYPE.Walk|50-MOVEBASE
 	BONUS:STAT|STR|13-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|15-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|15-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Trip
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d6
@@ -987,7 +1044,8 @@ Wild Shape (Wolverine)
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|14-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|19-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|19-CONSCORE.BASE
 	BONUS:VAR|RageTimes,RageDuration|1
 	ABILITY:Special Ability|AUTOMATIC|Rage
 	MOVE:Burrow,10,Climb,10
@@ -1011,7 +1069,8 @@ Wild Shape (Dinosaur (Deinonychus))
 	BONUS:MOVEADD|TYPE.Walk|60-MOVEBASE
 	BONUS:STAT|STR|19-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|19-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|19-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Pounce
 	NATURALATTACKS:Talons,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,2d6|Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,1d3|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d4
 
@@ -1027,7 +1086,8 @@ Wild Shape (Dinosaur (Elasmosaurus))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|26-STRSCORE.BASE
 	BONUS:STAT|DEX|14-DEXSCORE.BASE
-	BONUS:STAT|CON|22-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|22-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	MOVE:Swim,50
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d8
@@ -1045,7 +1105,8 @@ Wild Shape (Dinosaur (Megaraptor))
 	BONUS:MOVEADD|TYPE.Walk|60-MOVEBASE
 	BONUS:STAT|STR|21-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|21-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|21-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Pounce
 	NATURALATTACKS:Talons,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,2d8|Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,1d4|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d6
 
@@ -1061,7 +1122,8 @@ Wild Shape (Dinosaur (Triceratops))
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|30-STRSCORE.BASE
 	BONUS:STAT|DEX|9-DEXSCORE.BASE
-	BONUS:STAT|CON|25-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|25-CONSCORE.BASE
 	BONUS:WEAPONPROF=Gore|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Powerful Charge|Trample
 	NATURALATTACKS:Gore,Weapon.Natural.Melee.Finesseable.Piercing,*1,2d8
@@ -1078,7 +1140,8 @@ Wild Shape (Dinosaur (Tyrannosaurus))
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|28-STRSCORE.BASE
 	BONUS:STAT|DEX|12-DEXSCORE.BASE
-	BONUS:STAT|CON|21-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|21-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab|Swallow Whole
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d12
@@ -1096,7 +1159,8 @@ Wild Shape (Dire Ape)
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|22-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|14-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|14-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Rend
 	MOVE:Climb,15
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d6|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d8
@@ -1114,7 +1178,8 @@ Wild Shape (Dire Badger)
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|14-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|19-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|19-CONSCORE.BASE
 	BONUS:VAR|RageTimes,RageDuration|1
 	ABILITY:Special Ability|AUTOMATIC|Rage
 	MOVE:Burrow,10
@@ -1133,7 +1198,8 @@ Wild Shape (Dire Bat)
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|17-STRSCORE.BASE
 	BONUS:STAT|DEX|22-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	BONUS:VAR|Maneuverability|4
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability
@@ -1154,7 +1220,8 @@ Wild Shape (Dire Bear)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|31-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|19-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|19-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,2d4|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d8
 
@@ -1171,7 +1238,8 @@ Wild Shape (Dire Boar)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|27-STRSCORE.BASE
 	BONUS:STAT|DEX|10-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	BONUS:WEAPONPROF=Gore|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Ferocity
 	NATURALATTACKS:Gore,Weapon.Natural.Melee.Finesseable.Piercing,*1,1d8
@@ -1190,7 +1258,8 @@ Wild Shape (Dire Lion)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|25-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab|Pounce|Rake
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d6|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d8
 
@@ -1206,7 +1275,8 @@ Wild Shape (Dire Rat)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|10-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|12-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|12-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Disease|Scent
 	AUTO:FEAT|Weapon Finesse
@@ -1225,7 +1295,8 @@ Wild Shape (Dire Shark)
 	BONUS:MOVEADD|TYPE.Swim|60-MOVEBASE
 	BONUS:STAT|STR|23-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab|Swallow Whole
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d10
@@ -1244,7 +1315,8 @@ Wild Shape (Dire Tiger)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|27-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab|Pounce|Rake
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d6|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d4
 
@@ -1260,7 +1332,8 @@ Wild Shape (Dire Weasel)
 	BONUS:MOVEADD|TYPE.Walk|40-MOVEBASE
 	BONUS:STAT|STR|14-STRSCORE.BASE
 	BONUS:STAT|DEX|19-DEXSCORE.BASE
-	BONUS:STAT|CON|10-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|10-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Attach|Blood Drain
 	AUTO:FEAT|Weapon Finesse
@@ -1279,7 +1352,8 @@ Wild Shape (Dire Wolf)
 	BONUS:MOVEADD|TYPE.Walk|50-MOVEBASE
 	BONUS:STAT|STR|25-STRSCORE.BASE
 	BONUS:STAT|DEX|15-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Trip
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d8
@@ -1298,15 +1372,16 @@ Wild Shape (Dire Wolverine)
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|22-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|19-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|19-CONSCORE.BASE
 	BONUS:VAR|RageTimes,RageDuration|1
 	ABILITY:Special Ability|AUTOMATIC|Rage
 	MOVE:Climb,10
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d6|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d8
 
-#Wild Shape (Roc)												SIZE:G	SOURCEPAGE:MonstersO-R.rtf											PREVARGTEQ:WildShapeProgression,1,DruidWildShape,18	BONUS:COMBAT|AC|9|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE	BONUS:STAT|STR|34-STRSCORE.BASE	BONUS:STAT|DEX|15-DEXSCORE.BASE	BONUS:STAT|CON|24-CONSCORE.BASE													MOVE:Fly,80		NATURALATTACKS:Talons,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,2d6|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d8												FACE:20	HANDS:3	LEGS:2	REACH:15
-#Wild Shape (Swarm (Bat))			OUTPUTNAME:Wild Shape (Bat Swarm)		SIZE:D	SOURCEPAGE:MonstersS.rtf	ABILITY:Special Ability|AUTOMATIC|Distraction|Wounding				PREVARGTEQ:WildShapeProgression,1,DruidWildShape,3									BONUS:MOVEADD|TYPE.Walk|5-MOVEBASE	BONUS:STAT|STR|3-STRSCORE.BASE	BONUS:STAT|DEX|15-DEXSCORE.BASE	BONUS:STAT|CON|10-CONSCORE.BASE	BONUS:WEAPONPROF=Arm|DAMAGE|max(0,(STR/2))					MOVE:Fly,40		NATURALATTACKS:Arm,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d6																										FACE:1			LEGS:0	REACH:0
-#Wild Shape (Swarm (Rat))			OUTPUTNAME:Wild Shape (Rat Swarm)		SIZE:T	SOURCEPAGE:MonstersS.rtf	ABILITY:Special Ability|AUTOMATIC|Disease|Distraction				PREVARGTEQ:WildShapeProgression,3,DruidWildShape,4									BONUS:MOVEADD|TYPE.Walk|15-MOVEBASE	BONUS:STAT|STR|2-STRSCORE.BASE	BONUS:STAT|DEX|15-DEXSCORE.BASE	BONUS:STAT|CON|10-CONSCORE.BASE	BONUS:WEAPONPROF=Arm|DAMAGE|max(0,(STR/2))	AUTO:FEAT|Weapon Finesse	MOVE:Climb,15	NATURALATTACKS:Arm,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d6																										FACE:2.5			LEGS:0	REACH:0
+#Wild Shape (Roc)												SIZE:G	SOURCEPAGE:MonstersO-R.rtf											PREVARGTEQ:WildShapeProgression,1,DruidWildShape,18	BONUS:COMBAT|AC|9|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE	BONUS:STAT|STR|34-STRSCORE.BASE	BONUS:STAT|DEX|15-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|24-CONSCORE.BASE													MOVE:Fly,80		NATURALATTACKS:Talons,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,2d6|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d8												FACE:20	HANDS:3	LEGS:2	REACH:15
+#Wild Shape (Swarm (Bat))			OUTPUTNAME:Wild Shape (Bat Swarm)		SIZE:D	SOURCEPAGE:MonstersS.rtf	ABILITY:Special Ability|AUTOMATIC|Distraction|Wounding				PREVARGTEQ:WildShapeProgression,1,DruidWildShape,3									BONUS:MOVEADD|TYPE.Walk|5-MOVEBASE	BONUS:STAT|STR|3-STRSCORE.BASE	BONUS:STAT|DEX|15-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|10-CONSCORE.BASE	BONUS:WEAPONPROF=Arm|DAMAGE|max(0,(STR/2))					MOVE:Fly,40		NATURALATTACKS:Arm,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d6																										FACE:1			LEGS:0	REACH:0
+#Wild Shape (Swarm (Rat))			OUTPUTNAME:Wild Shape (Rat Swarm)		SIZE:T	SOURCEPAGE:MonstersS.rtf	ABILITY:Special Ability|AUTOMATIC|Disease|Distraction				PREVARGTEQ:WildShapeProgression,3,DruidWildShape,4									BONUS:MOVEADD|TYPE.Walk|15-MOVEBASE	BONUS:STAT|STR|2-STRSCORE.BASE	BONUS:STAT|DEX|15-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|10-CONSCORE.BASE	BONUS:WEAPONPROF=Arm|DAMAGE|max(0,(STR/2))	AUTO:FEAT|Weapon Finesse	MOVE:Climb,15	NATURALATTACKS:Arm,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d6																										FACE:2.5			LEGS:0	REACH:0
 
 
 ###Block: Plant creatures
@@ -1321,7 +1396,8 @@ Wild Shape (Assassin Vine)
 	BONUS:COMBAT|AC|6|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|20-STRSCORE.BASE
 	BONUS:STAT|DEX|10-DEXSCORE.BASE
-	BONUS:STAT|CON|16-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|16-CONSCORE.BASE
 	BONUS:WEAPONPROF=Slam|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Blind|Constrict|Entangle|Improved Grab
 	MOVE:Walk,5
@@ -1338,7 +1414,8 @@ Wild Shape (Fungus (Shrieker)
 	BONUS:COMBAT|AC|3|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|10-STRSCORE.BASE
 	BONUS:STAT|DEX|10-DEXSCORE.BASE
-	BONUS:STAT|CON|13-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|13-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Shriek
 	MOVE:Walk,0
 
@@ -1354,7 +1431,8 @@ Wild Shape (Fungus (Violet)
 	BONUS:COMBAT|AC|4|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|14-STRSCORE.BASE
 	BONUS:STAT|DEX|8-DEXSCORE.BASE
-	BONUS:STAT|CON|16-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|16-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Poison
 	MOVE:Walk,10
 	NATURALATTACKS:Tentacle,Weapon.Natural.Melee.Finesseable.Bludgeoning.Poison,*4,1d6
@@ -1369,7 +1447,8 @@ Wild Shape (Phantom Fungus)
 	BONUS:COMBAT|AC|4|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|14-STRSCORE.BASE
 	BONUS:STAT|DEX|10-DEXSCORE.BASE
-	BONUS:STAT|CON|16-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|16-CONSCORE.BASE
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))
 	MOVE:Walk,20
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d6
@@ -1384,7 +1463,8 @@ Wild Shape (Shambling Mound)
 	BONUS:COMBAT|AC|11|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|21-STRSCORE.BASE
 	BONUS:STAT|DEX|10-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Constrict|Improved Grab
 	MOVE:Walk,20,Swim,20
 	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d6
@@ -1400,7 +1480,8 @@ Wild Shape (Tendriculos)
 	BONUS:COMBAT|AC|9|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|28-STRSCORE.BASE
 	BONUS:STAT|DEX|9-DEXSCORE.BASE
-	BONUS:STAT|CON|22-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|22-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Improved Grab|Paralysis (Ex)|Swallow Whole
 	MOVE:Walk,20
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,2d8|Tendril,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,1d6
@@ -1415,7 +1496,8 @@ Wild Shape (Treant)
 	BONUS:COMBAT|AC|13|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|29-STRSCORE.BASE
 	BONUS:STAT|DEX|8-DEXSCORE.BASE
-	BONUS:STAT|CON|21-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|21-CONSCORE.BASE
 	ABILITY:Special Ability|AUTOMATIC|Double Damage Against Objects|Trample
 	MOVE:Walk,30
 	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d6
@@ -1434,7 +1516,8 @@ Wild Shape (Elemental (Air Small))
 	BONUS:COMBAT|AC|3|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|10-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|10-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|10-CONSCORE.BASE
 	BONUS:VAR|Maneuverability|5
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	BONUS:WEAPONPROF=Slam|DAMAGE|max(0,(STR/2))
@@ -1454,7 +1537,8 @@ Wild Shape (Elemental (Air Medium))
 	BONUS:COMBAT|AC|3|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|12-STRSCORE.BASE
 	BONUS:STAT|DEX|21-DEXSCORE.BASE
-	BONUS:STAT|CON|14-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|14-CONSCORE.BASE
 	BONUS:VAR|Maneuverability|5
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	BONUS:WEAPONPROF=Slam|DAMAGE|max(0,(STR/2))
@@ -1475,7 +1559,8 @@ Wild Shape (Elemental (Air Large))
 	BONUS:COMBAT|AC|4|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|14-STRSCORE.BASE
 	BONUS:STAT|DEX|25-DEXSCORE.BASE
-	BONUS:STAT|CON|16-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|16-CONSCORE.BASE
 	BONUS:VAR|Maneuverability|5
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	ABILITY:Special Ability|AUTOMATIC|Air Mastery|Flight Maneuverability|Whirlwind
@@ -1495,7 +1580,8 @@ Wild Shape (Elemental (Air Huge))
 	BONUS:COMBAT|AC|4|TYPE=NaturalArmor.STACK
 	BONUS:STAT|STR|18-STRSCORE.BASE
 	BONUS:STAT|DEX|29-DEXSCORE.BASE
-	BONUS:STAT|CON|18-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|18-CONSCORE.BASE
 	BONUS:VAR|Maneuverability|5
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	ABILITY:Special Ability|AUTOMATIC|Air Mastery|Flight Maneuverability|Whirlwind
@@ -1504,8 +1590,8 @@ Wild Shape (Elemental (Air Huge))
 	MOVE:Fly,100
 	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d8
 
-#Wild Shape (Elemental (Air Greater))	OUTPUTNAME:Wild Shape (Greater Air Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Air Mastery|Whirlwind								PREVARGTEQ:WildShapeProgression,7,DruidWildshape,21	BONUS:COMBAT|AC|8|TYPE=NaturalArmor.STACK							BONUS:STAT|STR|20-STRSCORE.BASE	BONUS:STAT|DEX|31-DEXSCORE.BASE	BONUS:STAT|CON|18-CONSCORE.BASE									AUTO:FEAT|Alertness|Blind Fight|Combat Reflexes|Flyby Attack|Improved Initiative|Iron Will|Mobility|Power Attack|Spring Attack			AUTO:FEAT|Weapon Finesse	MOVE:Fly,100		BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d8		FACE:15	LEGS:0	REACH:15
-#Wild Shape (Elemental (Air Elder))		OUTPUTNAME:Wild Shape (Elder Air Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Air Mastery|Whirlwind								PREVARGTEQ:WildShapeProgression,7,DruidWildshape,24	BONUS:COMBAT|AC|8|TYPE=NaturalArmor.STACK							BONUS:STAT|STR|22-STRSCORE.BASE	BONUS:STAT|DEX|33-DEXSCORE.BASE	BONUS:STAT|CON|18-CONSCORE.BASE									AUTO:FEAT|Alertness|Blind Fight|Cleave|Combat Reflexes|Flyby Attack|Improved Initiative|Iron Will|Mobility|Power Attack|Spring Attack		AUTO:FEAT|Weapon Finesse	MOVE:Fly,100		BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d8		FACE:15	LEGS:0	REACH:15
+#Wild Shape (Elemental (Air Greater))	OUTPUTNAME:Wild Shape (Greater Air Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Air Mastery|Whirlwind								PREVARGTEQ:WildShapeProgression,7,DruidWildshape,21	BONUS:COMBAT|AC|8|TYPE=NaturalArmor.STACK							BONUS:STAT|STR|20-STRSCORE.BASE	BONUS:STAT|DEX|31-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|18-CONSCORE.BASE									AUTO:FEAT|Alertness|Blind Fight|Combat Reflexes|Flyby Attack|Improved Initiative|Iron Will|Mobility|Power Attack|Spring Attack			AUTO:FEAT|Weapon Finesse	MOVE:Fly,100		BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d8		FACE:15	LEGS:0	REACH:15
+#Wild Shape (Elemental (Air Elder))		OUTPUTNAME:Wild Shape (Elder Air Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Air Mastery|Whirlwind								PREVARGTEQ:WildShapeProgression,7,DruidWildshape,24	BONUS:COMBAT|AC|8|TYPE=NaturalArmor.STACK							BONUS:STAT|STR|22-STRSCORE.BASE	BONUS:STAT|DEX|33-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|18-CONSCORE.BASE									AUTO:FEAT|Alertness|Blind Fight|Cleave|Combat Reflexes|Flyby Attack|Improved Initiative|Iron Will|Mobility|Power Attack|Spring Attack		AUTO:FEAT|Weapon Finesse	MOVE:Fly,100		BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d8		FACE:15	LEGS:0	REACH:15
 Wild Shape (Elemental (Earth Small))
 	OUTPUTNAME:Wild Shape (Small Earth Elemental)
 	SIZE:S
@@ -1517,7 +1603,8 @@ Wild Shape (Elemental (Earth Small))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|17-STRSCORE.BASE
 	BONUS:STAT|DEX|8-DEXSCORE.BASE
-	BONUS:STAT|CON|13-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|13-CONSCORE.BASE
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	BONUS:WEAPONPROF=Slam|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Earth Glide|Earth Mastery|Push
@@ -1535,7 +1622,8 @@ Wild Shape (Elemental (Earth Medium))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|21-STRSCORE.BASE
 	BONUS:STAT|DEX|8-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	BONUS:WEAPONPROF=Slam|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Earth Glide|Earth Mastery|Push
@@ -1554,7 +1642,8 @@ Wild Shape (Elemental (Earth Large))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|25-STRSCORE.BASE
 	BONUS:STAT|DEX|8-DEXSCORE.BASE
-	BONUS:STAT|CON|19-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|19-CONSCORE.BASE
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	ABILITY:Special Ability|AUTOMATIC|Earth Glide|Earth Mastery|Push
 	AUTO:FEAT|Cleave|Great Cleave|Power Attack
@@ -1572,14 +1661,15 @@ Wild Shape (Elemental (Earth Huge))
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|29-STRSCORE.BASE
 	BONUS:STAT|DEX|8-DEXSCORE.BASE
-	BONUS:STAT|CON|21-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|21-CONSCORE.BASE
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	ABILITY:Special Ability|AUTOMATIC|Earth Glide|Earth Mastery|Push
 	AUTO:FEAT|Awesome Blow|Cleave|Great Cleave|Improved Bull Rush|Iron Will|Power Attack
 	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d10
 
-#Wild Shape (Elemental (Earth Greater))	OUTPUTNAME:Wild Shape (Greater Earth Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Earth Mastery|Push|Earth Glide			PREVARGTEQ:WildShapeProgression,7,DruidWildshape,21	BONUS:COMBAT|AC|13|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE	BONUS:STAT|STR|31-STRSCORE.BASE	BONUS:STAT|DEX|8-DEXSCORE.BASE	BONUS:STAT|CON|21-CONSCORE.BASE									AUTO:FEAT|Alertness|Awesome Blow|Cleave|Great Cleave|Improved Bull Rush|Improved Sunder|Iron Will|Power Attack														BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d10	FACE:15	LEGS:0	REACH:15
-#Wild Shape (Elemental (Earth Elder))	OUTPUTNAME:Wild Shape (Elder Earth Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Earth Mastery|Push|Earth Glide			PREVARGTEQ:WildShapeProgression,7,DruidWildshape,24	BONUS:COMBAT|AC|15|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE	BONUS:STAT|STR|33-STRSCORE.BASE	BONUS:STAT|DEX|8-DEXSCORE.BASE	BONUS:STAT|CON|21-CONSCORE.BASE	BONUS:WEAPONPROF=Slam|DAMAGE|max(0,(STR/2))	AUTO:FEAT|Alertness|Awesome Blow|Cleave|Great Cleave|Improved Bull Rush|Improved Critical(Slam)|Improved Sunder|Iron Will|Power Attack										BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,2d10	FACE:15	LEGS:0	REACH:15
+#Wild Shape (Elemental (Earth Greater))	OUTPUTNAME:Wild Shape (Greater Earth Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Earth Mastery|Push|Earth Glide			PREVARGTEQ:WildShapeProgression,7,DruidWildshape,21	BONUS:COMBAT|AC|13|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE	BONUS:STAT|STR|31-STRSCORE.BASE	BONUS:STAT|DEX|8-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|21-CONSCORE.BASE									AUTO:FEAT|Alertness|Awesome Blow|Cleave|Great Cleave|Improved Bull Rush|Improved Sunder|Iron Will|Power Attack														BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d10	FACE:15	LEGS:0	REACH:15
+#Wild Shape (Elemental (Earth Elder))	OUTPUTNAME:Wild Shape (Elder Earth Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Earth Mastery|Push|Earth Glide			PREVARGTEQ:WildShapeProgression,7,DruidWildshape,24	BONUS:COMBAT|AC|15|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE	BONUS:STAT|STR|33-STRSCORE.BASE	BONUS:STAT|DEX|8-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|21-CONSCORE.BASE	BONUS:WEAPONPROF=Slam|DAMAGE|max(0,(STR/2))	AUTO:FEAT|Alertness|Awesome Blow|Cleave|Great Cleave|Improved Bull Rush|Improved Critical(Slam)|Improved Sunder|Iron Will|Power Attack										BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,2d10	FACE:15	LEGS:0	REACH:15
 Wild Shape (Elemental (Fire Small))
 	OUTPUTNAME:Wild Shape (Small Fire Elemental)
 	SIZE:S
@@ -1591,7 +1681,8 @@ Wild Shape (Elemental (Fire Small))
 	BONUS:MOVEADD|TYPE.Walk|50-MOVEBASE
 	BONUS:STAT|STR|10-STRSCORE.BASE
 	BONUS:STAT|DEX|13-DEXSCORE.BASE
-	BONUS:STAT|CON|10-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|10-CONSCORE.BASE
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	BONUS:WEAPONPROF=Slam|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Burn|Immunity To Fire|Vulnerability To Cold
@@ -1610,7 +1701,8 @@ Wild Shape (Elemental (Fire Medium))
 	BONUS:MOVEADD|TYPE.Walk|50-MOVEBASE
 	BONUS:STAT|STR|12-STRSCORE.BASE
 	BONUS:STAT|DEX|17-DEXSCORE.BASE
-	BONUS:STAT|CON|14-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|14-CONSCORE.BASE
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	BONUS:WEAPONPROF=Slam|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Burn|Immunity To Fire|Vulnerability To Cold
@@ -1630,7 +1722,8 @@ Wild Shape (Elemental (Fire Large))
 	BONUS:MOVEADD|TYPE.Walk|50-MOVEBASE
 	BONUS:STAT|STR|14-STRSCORE.BASE
 	BONUS:STAT|DEX|21-DEXSCORE.BASE
-	BONUS:STAT|CON|16-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|16-CONSCORE.BASE
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	ABILITY:Special Ability|AUTOMATIC|Burn|Immunity To Fire|Vulnerability To Cold
 	AUTO:FEAT|Dodge|Improved Initiative|Mobility|Spring Attack
@@ -1649,15 +1742,16 @@ Wild Shape (Elemental (Fire Huge))
 	BONUS:MOVEADD|TYPE.Walk|60-MOVEBASE
 	BONUS:STAT|STR|18-STRSCORE.BASE
 	BONUS:STAT|DEX|25-DEXSCORE.BASE
-	BONUS:STAT|CON|18-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|18-CONSCORE.BASE
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	ABILITY:Special Ability|AUTOMATIC|Burn|Immunity To Fire|Vulnerability To Cold
 	AUTO:FEAT|Alertness|Combat Reflexes|Dodge|Improved Initiative|Iron Will|Mobility|Spring Attack
 	AUTO:FEAT|Weapon Finesse
 	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning.Fire,*2,2d8
 
-#Wild Shape (Elemental (Fire Greater))	OUTPUTNAME:Wild Shape (Greater Fire Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Vulnerability To Cold|Immunity To Fire|Burn		PREVARGTEQ:WildShapeProgression,7,DruidWildshape,21	BONUS:COMBAT|AC|8|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|60-MOVEBASE	BONUS:STAT|STR|20-STRSCORE.BASE	BONUS:STAT|DEX|27-DEXSCORE.BASE	BONUS:STAT|CON|18-CONSCORE.BASE									AUTO:FEAT|Alertness|Blind Fight|Combat Reflexes|Dodge|Improved Initiative|Iron Will|Mobility|Spring Attack|Weapon Focus(Slam)			AUTO:FEAT|Weapon Finesse					BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning.Fire,*2,2d8	FACE:15	LEGS:0	REACH:15
-#Wild Shape (Elemental (Fire Elder))	OUTPUTNAME:Wild Shape (Elder Fire Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Vulnerability To Cold|Immunity To Fire|Burn		PREVARGTEQ:WildShapeProgression,7,DruidWildshape,24	BONUS:COMBAT|AC|8|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|60-MOVEBASE	BONUS:STAT|STR|22-STRSCORE.BASE	BONUS:STAT|DEX|29-DEXSCORE.BASE	BONUS:STAT|CON|18-CONSCORE.BASE									AUTO:FEAT|Alertness|Blind Fight|Combat Reflexes|Dodge|Great Fortitude|Improved Initiative|Iron Will|Mobility|Spring Attack|Weapon Focus(Slam)	AUTO:FEAT|Weapon Finesse					BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning.Fire,*2,2d8	FACE:15	LEGS:0	REACH:15
+#Wild Shape (Elemental (Fire Greater))	OUTPUTNAME:Wild Shape (Greater Fire Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Vulnerability To Cold|Immunity To Fire|Burn		PREVARGTEQ:WildShapeProgression,7,DruidWildshape,21	BONUS:COMBAT|AC|8|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|60-MOVEBASE	BONUS:STAT|STR|20-STRSCORE.BASE	BONUS:STAT|DEX|27-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|18-CONSCORE.BASE									AUTO:FEAT|Alertness|Blind Fight|Combat Reflexes|Dodge|Improved Initiative|Iron Will|Mobility|Spring Attack|Weapon Focus(Slam)			AUTO:FEAT|Weapon Finesse					BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning.Fire,*2,2d8	FACE:15	LEGS:0	REACH:15
+#Wild Shape (Elemental (Fire Elder))	OUTPUTNAME:Wild Shape (Elder Fire Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Vulnerability To Cold|Immunity To Fire|Burn		PREVARGTEQ:WildShapeProgression,7,DruidWildshape,24	BONUS:COMBAT|AC|8|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|60-MOVEBASE	BONUS:STAT|STR|22-STRSCORE.BASE	BONUS:STAT|DEX|29-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|18-CONSCORE.BASE									AUTO:FEAT|Alertness|Blind Fight|Combat Reflexes|Dodge|Great Fortitude|Improved Initiative|Iron Will|Mobility|Spring Attack|Weapon Focus(Slam)	AUTO:FEAT|Weapon Finesse					BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning.Fire,*2,2d8	FACE:15	LEGS:0	REACH:15
 Wild Shape (Elemental (Water Small))
 	OUTPUTNAME:Wild Shape (Small Water Elemental)
 	SIZE:S
@@ -1669,7 +1763,8 @@ Wild Shape (Elemental (Water Small))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|14-STRSCORE.BASE
 	BONUS:STAT|DEX|10-DEXSCORE.BASE
-	BONUS:STAT|CON|13-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|13-CONSCORE.BASE
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	BONUS:WEAPONPROF=Slam|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Drench|Vortex|Water Mastery
@@ -1688,7 +1783,8 @@ Wild Shape (Elemental (Water Medium))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|16-STRSCORE.BASE
 	BONUS:STAT|DEX|12-DEXSCORE.BASE
-	BONUS:STAT|CON|17-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|17-CONSCORE.BASE
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	BONUS:WEAPONPROF=Slam|DAMAGE|max(0,(STR/2))
 	ABILITY:Special Ability|AUTOMATIC|Drench|Vortex|Water Mastery
@@ -1708,7 +1804,8 @@ Wild Shape (Elemental (Water Large))
 	BONUS:MOVEADD|TYPE.Walk|20-MOVEBASE
 	BONUS:STAT|STR|20-STRSCORE.BASE
 	BONUS:STAT|DEX|14-DEXSCORE.BASE
-	BONUS:STAT|CON|19-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|19-CONSCORE.BASE
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	ABILITY:Special Ability|AUTOMATIC|Drench|Vortex|Water Mastery
 	AUTO:FEAT|Cleave|Great Cleave|Power Attack
@@ -1727,15 +1824,16 @@ Wild Shape (Elemental (Water Huge))
 	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE
 	BONUS:STAT|STR|24-STRSCORE.BASE
 	BONUS:STAT|DEX|18-DEXSCORE.BASE
-	BONUS:STAT|CON|21-CONSCORE.BASE
+	BONUS:STAT|CON|WildShapeConstitution
+	DEFINE:WildshapeConsititution|21-CONSCORE.BASE
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
 	ABILITY:Special Ability|AUTOMATIC|Drench|Vortex|Water Mastery
 	AUTO:FEAT|Alertness|Cleave|Great Cleave|Improved Bull Rush|Iron Will|Power Attack
 	MOVE:Swim,120
 	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d10
 
-#Wild Shape (Elemental (Water Greater))	OUTPUTNAME:Wild Shape (Greater Water Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Water Mastery|Drench|Vortex					PREVARGTEQ:WildShapeProgression,7,DruidWildshape,21	BONUS:COMBAT|AC|9|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE	BONUS:STAT|STR|26-STRSCORE.BASE	BONUS:STAT|DEX|20-DEXSCORE.BASE	BONUS:STAT|CON|21-CONSCORE.BASE									AUTO:FEAT|Alertness|Cleave|Great Cleave|Improved Bull Rush|Improved Sunder|Iron Will|Lightning Reflexes|Power Attack									MOVE:Swim,120		BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d10	FACE:15	LEGS:0	REACH:15
-#Wild Shape (Elemental (Water Elder))	OUTPUTNAME:Wild Shape (Elder Water Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Water Mastery|Drench|Vortex					PREVARGTEQ:WildShapeProgression,7,DruidWildshape,24	BONUS:COMBAT|AC|9|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE	BONUS:STAT|STR|28-STRSCORE.BASE	BONUS:STAT|DEX|22-DEXSCORE.BASE	BONUS:STAT|CON|21-CONSCORE.BASE									AUTO:FEAT|Alertness|Cleave|Great Cleave|Improved Bull Rush|Improved Critical(Slam)|Improved Sunder|Iron Will|Lightning Reflexes|Power Attack					MOVE:Swim,120		BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d10	FACE:15	LEGS:0	REACH:15
+#Wild Shape (Elemental (Water Greater))	OUTPUTNAME:Wild Shape (Greater Water Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Water Mastery|Drench|Vortex					PREVARGTEQ:WildShapeProgression,7,DruidWildshape,21	BONUS:COMBAT|AC|9|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE	BONUS:STAT|STR|26-STRSCORE.BASE	BONUS:STAT|DEX|20-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|21-CONSCORE.BASE									AUTO:FEAT|Alertness|Cleave|Great Cleave|Improved Bull Rush|Improved Sunder|Iron Will|Lightning Reflexes|Power Attack									MOVE:Swim,120		BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d10	FACE:15	LEGS:0	REACH:15
+#Wild Shape (Elemental (Water Elder))	OUTPUTNAME:Wild Shape (Elder Water Elemental)	SIZE:H	DR:10/-		ABILITY:Special Ability|AUTOMATIC|Water Mastery|Drench|Vortex					PREVARGTEQ:WildShapeProgression,7,DruidWildshape,24	BONUS:COMBAT|AC|9|TYPE=NaturalArmor.STACK	BONUS:MOVEADD|TYPE.Walk|30-MOVEBASE	BONUS:STAT|STR|28-STRSCORE.BASE	BONUS:STAT|DEX|22-DEXSCORE.BASE	BONUS:STAT|CON|WildShapeConstitution	DEFINE:WildshapeConsititution|21-CONSCORE.BASE									AUTO:FEAT|Alertness|Cleave|Great Cleave|Improved Bull Rush|Improved Critical(Slam)|Improved Sunder|Iron Will|Lightning Reflexes|Power Attack					MOVE:Swim,120		BONUS:VAR|DarkvisionRange|60|TYPE=Base	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,2d10	FACE:15	LEGS:0	REACH:15
 
 
 ###Block: Racial Skill Mods
