@@ -2207,7 +2207,7 @@ Weapon Finesse
 Mind Blade Finesse
 	KEY:Mind Blade Finesse ~ Nimble Blade
 	CATEGORY:Internal
-	AUTO:FEAT|Mind Blade Finesse
+	ABILITY:Blade Skill|AUTOMATIC|Mind Blade Finesse ~ Blade Skill
 
 Piranha Strike
 	KEY:Piranha Strike ~ Nimble Blade
@@ -2285,6 +2285,17 @@ Trapfinder
 	BONUS:VAR|TrapfindingLVL|classlevel("Soulknife")
 	PREABILITY:1,CATEGORY=Special Ability,Covert Training ~ Cutthroat
 
+# COMMENT: This blade skill was accidentally left out.
+Mind Blade Finesse
+	KEY:Mind Blade Finesse ~ Blade Skill
+	CATEGORY:Special Ability
+	TYPE:BladeSkill.SpecialQuality
+	DESC:The benefits of the Weapon Finesse feat apply to the mind blade even when it is in forms that cannot normally be the subject of Weapon Finesse (including two-handed forms).
+	SOURCEPAGE:None
+	BONUS:COMBAT|TOHIT.MindBlade|((max(STR,DEX)-STR)+SHIELDACCHECK)|TYPE=NotRanged
+
+
+
 
 
 ###Block: Battle Medic Tactician Archetype
@@ -2311,7 +2322,7 @@ Battle Medic
 # COMMENT: New powers are added to power lists with new releases, so a static list of additional powers is less than ideal.
 Battle Medic Powers Known
 	CATEGORY:Internal
-	SPELLLEVEL:CLASS|Tactician=1|Natural Healing|Tactician=2|Body Adjustment,Empathic Condition Relief,Resist Toxin|Tactician=3|Body Purification,Mend Body|Tactician=5|Psionic Revivify,Restore Extremity|Tactician=6|Cleanse Spirit,Heal Injuries|Tactician=8|True Metabolism|Tactician=9|Regenerative Aura
+	SPELLLEVEL:CLASS|Tactician=1|Natural Healing|Tactician=2|Body Adjustment,Cleanse Body,Empathic Condition Relief,Resist Toxin|Tactician=3|Body Purification,Mend Body|Tactician=5|Psionic Revivify,Restore Extremity|Tactician=6|Cleanse Spirit,Heal Injuries|Tactician=8|True Metabolism|Tactician=9|Regenerative Aura
 	BONUS:SPELLKNOWN|CLASS=Tactician;LEVEL=0|-3
 
 Medic Tricks ~ Battle Medic
@@ -2348,8 +2359,8 @@ Cushion the Blow
 	KEY:Cushion the Blow ~ Battle Medic
 	CATEGORY:Internal
 	AUTO:FEAT|Cushion the Blow
-	AUTO:FEAT|Cushion the Blow (Improved)|PRECLASS:1,Tactician=12
-	AUTO:FEAT|Cushion the Blow (Greater)|PRECLASS:1,Tactician=18
+	AUTO:FEAT|Improved Cushion the Blow|PRECLASS:1,Tactician=12
+	AUTO:FEAT|Greater Cushion the Blow|PRECLASS:1,Tactician=18
 
 
 
@@ -2692,7 +2703,6 @@ Enlightened Monk
 	COST:0
 	SOURCEPAGE:p.25
 	CSKILL:Autohypnosis
-	BONUS:ABILITYPOOL|Monk Bonus Feat|-1
 
 Psionic Training
 	KEY:Psionic Training ~ Enlightened Monk
@@ -2780,6 +2790,7 @@ Major Psionics
 	PRESTAT:1,INT=11
 	DEFINE:MajorPsionicsDC|0
 	BONUS:VAR|MajorPsionicsDC|11+INT
+	PREVARGTEQ:IsPsionic,1
 
 Minor Psionics
 	KEY:Minor Psionics ~ Psionic Rogue Talent
@@ -2794,6 +2805,7 @@ Minor Psionics
 	SOURCEPAGE:p.27
 	DEFINE:MinorPsionicsDC|0
 	BONUS:VAR|MinorPsionicsDC|10+INT
+	PREVARGTEQ:IsPsionic,1
 
 Psionic Feat
 	KEY:Psionic Feat ~ Psionic Rogue Talent
@@ -2801,6 +2813,7 @@ Psionic Feat
 	TYPE:RogueClassAbility.RogueTalent
 	VISIBLE:DISPLAY
 	BONUS:ABILITYPOOL|Psionic Feat|1
+	PREVARGTEQ:IsPsionic,1
 
 
 
@@ -2813,6 +2826,7 @@ Dazing Shot
 	DESC:You can expend your psionic focus to daze the target when you make a successful sneak attack on a ranged attack.
 	SOURCEPAGE:p.27
 	PREFEAT:1,Psionic Shot
+	PREVARGTEQ:IsPsionic,1
 
 Vanish
 	KEY:Vanish ~ Psionic Advanced Rogue Talent
@@ -2823,6 +2837,7 @@ Vanish
 	SOURCEPAGE:p.27
 	DEFINE:VanishRounds|0
 	BONUS:VAR|VanishRounds|RogueTalentLVL
+	PREVARGTEQ:IsPsionic,1
 
 
 
