@@ -1,0 +1,64 @@
+# CVS $Revision$ $Author$ 
+SOURCELONG:Ultimate Equipment
+	SOURCESHORT:UE
+	SOURCEWEB:http://paizo.com/products/btpy8tmc
+	SOURCEDATE:2012-08
+
+# Original RSRD Entry by: PCGen Data Team
+# Pathfinder RPG Entry by: Stefan Radermacher
+# UE Entry by: James Dempsey
+
+
+#Light
+# Armor Name
+#------light---------
+Haramaki
+
+Quilted Cloth
+
+Silken Ceremonial
+
+Lamellar Cuirass
+
+Parade
+
+Wooden
+
+Lamellar (Leather)
+
+
+
+#------medium--------
+Armored Coat
+
+Do-Maru
+
+Kikko
+
+Lamellar (Horn)
+
+Agile Breastplate
+
+Four-Mirror
+
+Lamellar (Steel)
+
+Mountain Pattern
+
+
+
+#------heavy---------
+Kusari Gusoku
+
+Lamellar (Iron)
+
+Tatami-Do
+
+Agile Half-Plate
+
+Lamellar (Stone)
+
+O-Yoroi
+
+Stoneplate
+
