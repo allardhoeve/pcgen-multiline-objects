@@ -467,6 +467,7 @@ Holy Symbol Compartment
 	TYPE:DivineFocus
 	SOURCEPAGE:p.66
 	COST:5
+	VISIBLE:QUALIFY
 	CONTAINS:1|Vial=1|Flask=1
 
 Holy Symbol Flask
@@ -475,6 +476,7 @@ Holy Symbol Flask
 	TYPE:DivineFocus
 	SOURCEPAGE:p.66
 	COST:10
+	VISIBLE:QUALIFY
 	CONTAINS:1|Liquid=1|SpellComponent=1|Poison=1
 
 
@@ -485,6 +487,7 @@ Tear-Away
 	TYPE:Clothing
 	SOURCEPAGE:p.91
 	COST:5
+	VISIBLE:QUALIFY
 
 
 
@@ -494,6 +497,7 @@ Waterproof
 	TYPE:LightSource
 	SOURCEPAGE:p.75
 	COST:5
+	VISIBLE:QUALIFY
 
 #
 # End
