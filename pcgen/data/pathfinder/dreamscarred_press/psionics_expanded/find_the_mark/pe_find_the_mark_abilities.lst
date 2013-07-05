@@ -440,7 +440,7 @@ Maneuver ~ Archer
 Soulbolt
 	KEY:Soulknife Archetype ~ Soulbolt
 	CATEGORY:Archetype
-	TYPE:Archetype.SoulknifeBonusFeat.SoulknifeFormMindBlade.SoulknifeShapeMindBlade.SoulknifeThrowMindBlade.SoulknifeEnhancedMindBlade
+	TYPE:Archetype.SoulknifeArchetype.SoulknifeBonusFeat.SoulknifeFormMindBlade.SoulknifeShapeMindBlade.SoulknifeThrowMindBlade.SoulknifeEnhancedMindBlade
 	PRECLASS:1,Soulknife=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Soulknife Archetype ~ Soulbolt],[!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifeBonusFeat,TYPE.SoulknifeFormMindBlade,TYPE.SoulknifeShapeMindBlade,TYPE.SoulknifeThrowMindBlade.SoulknifeEnhancedMindBlade]
 	DESC:Some soulknives choose to focus on ranged attacks, launching a mind bolt at their enemies instead of wielding a blade of energy.
