@@ -1,3 +1,10 @@
+SOURCELONG:Psionics Expanded - Hidden Intentions
+	SOURCESHORT:PEHI
+	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
+	SOURCEDATE:2012-05
+
+# ORIGINAL ENTRY: Douglas Limmer
+# ORIGINAL ENTRY DATE: 2013/06/24
 
 
 ###Block: Strengthened By Fear stat choices
@@ -43,3 +50,8 @@ Strengthened By Fear (Con/Dex/Str)
 	BONUS:STAT|DEX|StrengthenedByFearStatBonus2|TYPE=Insight
 	BONUS:STAT|STR|StrengthenedByFearStatBonus3|TYPE=Insight
 
+
+
+###Block: Activate High Psionics
+High Psionics
+	DESC:Add this to activate high psionics options.
