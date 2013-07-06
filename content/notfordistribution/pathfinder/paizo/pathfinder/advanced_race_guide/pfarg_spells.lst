@@ -1319,7 +1319,7 @@ Nixie's Lure
 	SOURCEPAGE:p.179
 
 Undine's Curse
-	CLASSES:orceror,Wizard,Witch=1
+	CLASSES:Sorceror,Wizard,Witch=1
 	SCHOOL:Necromancy
 	DESCRIPTOR:Evil
 	TYPE:Arcane

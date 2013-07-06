@@ -14,7 +14,7 @@ SOURCELONG:Advanced Race Guide
 ###Block: Core Race Feats
 ###
 ##Block: Dwarven Feats
-# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										PRERACE=1,Elf,Half-Elf	PRERACE=1,Orc,Half-Orc	SOUREPAGE		creature while falling. You also gain a +4 bonus on saving throws against effects that would cause you to fall prone (such as earthquakes). This bonus does not apply to your CMD against bull rush or trip attacks.	surfaces, and you gain a +4 bonus on Climb checks to catch yourself or another
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										
 Brewmaster
 	TYPE:General
 	PRERACE:1,Dwarf%
@@ -86,9 +86,7 @@ Ledge Walker
 	PRESTAT:1,DEX=13
 	DESC:You negotiate tiny ledges like a mountain goat.
 	SOURCEPAGE:p.18
-	BENEFIT:You can move at full speed while using Acrobatics to balance on narrow
-	creature while falling. You also gain a +4 bonus on saving throws against effects that would cause you to fall prone (such as earthquakes). This bonus does not apply to your CMD against bull rush or trip attacks.:
-	surfaces, and you gain a +4 bonus on Climb checks to catch yourself or another:
+	BENEFIT:You can move at full speed while using Acrobatics to balance on narrow surfaces, and you gain a +4 bonus on Climb checks to catch yourself or another creature while falling. You also gain a +4 bonus on saving throws against effects that would cause you to fall prone (such as earthquakes). This bonus does not apply to your CMD against bull rush or trip attacks.
 
 Orc Hewer
 	TYPE:Combat
@@ -120,7 +118,7 @@ Toxic Recovery
 
 ###
 ##Block: Elven Feats
-# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										PRERACE=1,Elf,Half-Elf	PRERACE=1,Orc,Half-Orc	SOUREPAGE		creature while falling. You also gain a +4 bonus on saving throws against effects that would cause you to fall prone (such as earthquakes). This bonus does not apply to your CMD against bull rush or trip attacks.	surfaces, and you gain a +4 bonus on Climb checks to catch yourself or another
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																									
 Attuned to the Wild
 	TYPE:General
 	PRERACE:1,Elf
@@ -167,7 +165,7 @@ Spirit of the Wild
 
 ###
 ##Block: Gnome Feats
-# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										PRERACE=1,Elf,Half-Elf	PRERACE=1,Orc,Half-Orc	SOUREPAGE		creature while falling. You also gain a +4 bonus on saving throws against effects that would cause you to fall prone (such as earthquakes). This bonus does not apply to your CMD against bull rush or trip attacks.	surfaces, and you gain a +4 bonus on Climb checks to catch yourself or another
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										
 Casual Illusionist
 	TYPE:General
 	PREABILITY:1,CATEGORY=Special Ability,Gnome Magic
@@ -187,7 +185,7 @@ Expanded Resistance
 	MULT:YES
 	CHOOSE:SCHOOLS|Abjuration|Conjuration|Divination|Enchantment|Evocation|Necromancy|Transmutation
 	BENEFIT:Select one school of magic other than illusion. You gain a +2 racial bonus on saving throws against spells or effects from the school of %1.|%CHOICE
-	SOUREPAGE:p.37
+	SOURCEPAGE:p.37
 
 Gnome Weapon Focus
 	TYPE:Combat
@@ -218,20 +216,20 @@ Vast Hatred
 	CHOOSE:STRING|Aberration|Animal|Construct|Dragon|Fey|Humanoid (Aquatic)|Humanoid (Dwarf)|Humanoid (Elf)|Humanoid (Giant)|Humanoid (Gnoll)|Humanoid (Gnome)|Humanoid (Halfling)|Humanoid (Human)|Humanoid (Orc)|Magical Beast|Monstrous Humanoid|Ooze|Outsider (Air)|Outsider (Chaotic)|Outsider (Earth)|Outsider (Evil)|Outsider (Fire)|Outsider (Good)|Outsider (Lawful)|Outsider (Native)|Outsider (Water)|Plant|Undead|Vermin
 	SELECT:2
 	SOURCEPAGE:p.37
-	BENEFIT:Select two creature types (and subtypes where appropriate) from the list of potential favored enemies from the ranger class ability. Your +%1 attack bonus from the hatred racial trait applies to creatures of the %LIST type. You may take this feat more than once. Its benefits do not stack. Each time you select this feat, you select two additional creature types to which your hatred racial trait applies.|GnomeHatredBonus
+	BENEFIT:Select two creature types (and subtypes where appropriate) from the list of potential favored enemies from the ranger class ability. Your +%1 attack bonus from the hatred racial trait applies to creatures of the %2 type. You may take this feat more than once. Its benefits do not stack. Each time you select this feat, you select two additional creature types to which your hatred racial trait applies.|GnomeHatredBonus|LIST
 
 
 
 ###
 ##Block: Half-Elven Feats
-# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										PRERACE=1,Elf,Half-Elf	PRERACE=1,Orc,Half-Orc	SOUREPAGE		creature while falling. You also gain a +4 bonus on saving throws against effects that would cause you to fall prone (such as earthquakes). This bonus does not apply to your CMD against bull rush or trip attacks.	surfaces, and you gain a +4 bonus on Climb checks to catch yourself or another
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										
 Discerning Eye
 	TYPE:General
 	PREABILITY:1,CATEGORY=Special Ability,Keen Senses
 	DESC:You are not easily fooled by illusions and forgeries.
 	SOURCEPAGE:p.46
 	BENEFIT:You receive a +2 racial bonus on saving throws against illusion spells and effects and a +2 bonus on Linguistic checks to detect forgeries. You can use the Linguistic skill to detect forgeries untrained.
-	PRERACE=1,Elf,Half-Elf:
+	PRERACE:1,Elf,Half-Elf
 
 #  Implement: will adding the Elven Magic elf racial ability also make available those abilities that can be exchanged for it?
 Elven Spirit
@@ -240,7 +238,7 @@ Elven Spirit
 	PREPCLEVEL:MAX=1
 	PRERACE:1,Half-elf
 	DESC:Although you are of mixed heritage, you are closer to your elven relatives and the magic in their blood flows freely in your veins.
-	ABILITY:Special Ability|AUTOMATIC|Elven Magic
+	ABILITY:Special Ability|AUTOMATIC|Elven Magic ~ Elf
 	SOURCEPAGE:p.46
 	BENEFIT:You possess the elven magic racial trait of the elves, granting you a +2 racial bonus on caster level checks made to overcome spell resistance. In addition, you receive a +2 racial bonus on Spellcraft checks made to identify the properties of magic items. Alternatively, you can instead gain any one racial trait that elves can exchange for the elven magic racial trait.
 
@@ -324,7 +322,7 @@ Beast Rider
 	COMPANIONLIST:Special Mount|Elephant,Pteranodon,Rhinoceros,Stegosaurus,Triceratops|PREABILITY:1,CATEGORY=Special Ability,Special Mount
 	SOURCEPAGE:p.56
 	BENEFIT:Select one of the following creature types: elephant, pteranodon, rhinoceros, stegosaurus, or triceratops. Add this creature type to your list of possible animal companions or mounts. When summoning a creature of the selected type to serve as a mount or companion, treat your effective druid level as if it were two levels higher (to a maximum of your character level). If the creature is large enough for you to ride, it gains the combat training general purpose (see Handle Animal) at no cost.
-	PRERACE=1,Orc,Half-Orc
+	PRERACE:1,Orc,Half-Orc
 
 Blood Vengeance
 	TYPE:General
@@ -332,7 +330,7 @@ Blood Vengeance
 	DESC:Seeing an ally fall in combat fills you with a raging and murderous fury.
 	SOURCEPAGE:p.56
 	BENEFIT:Whenever one of your allies is reduced to negative hit points or killed, you may enter a state similar to but less powerful than a barbarian's rage as a free action on your next turn. If you have the rage class feature and are already raging, your morale bonuses to Strength and Constitution increase by +2 for the duration of your rage. If you do not have the rage class feature, or you have no more rage rounds left, this weaker rage gives you all the benefits and penalties of a barbarian's rage, except your morale bonus to Strength and Constitution is only +2. In either case, this state lasts for 4 rounds.
-	PRERACE=1,Orc,Half-Orc
+	PRERACE:1,Orc,Half-Orc
 
 Destroyer's Blessing
 	TYPE:Combat
@@ -340,7 +338,7 @@ Destroyer's Blessing
 	DESC:Breaking things adds to your power.
 	SOURCEPAGE:p.56
 	BENEFIT:When you are raging and you succeed at a sunder combat maneuver, you regain 1 round of rage. If the sunder attempt causes the object to gain the broken condition, you heal 1 hit point. You can only gain these benefits once per round.
-	PRERACE=1,Orc,Half-Orc
+	PRERACE:1,Orc,Half-Orc
 
 Ferocious Resolve
 	TYPE:General
@@ -358,7 +356,7 @@ Ferocious Summons
 	DESC:Your summoned creatures gain your ferocity.
 	SOURCEPAGE:p.57
 	BENEFIT:Creatures you summon gain the ferocity universal monster ability.
-	PRERACE=1,Orc,Half-Orc
+	PRERACE:1,Orc,Half-Orc
 
 Ferocious Tenacity
 	TYPE:Combat
@@ -366,7 +364,7 @@ Ferocious Tenacity
 	DESC:You spit in the face of death.
 	SOURCEPAGE:p.57
 	BENEFIT:Once per day when raging, if you are hit by an attack that would deal enough hit points of damage to kill you (negative hit points equal to your Constitution score), as an immediate action you may expend 1 or more rounds of rage to negate some of this damage and keep yourself alive. Each round of rage you spend reduces the attack's damage by 1 point, but cannot reduce the damage taken below 1 hit point.
-	PRERACE=1,Orc,Half-Orc
+	PRERACE:1,Orc,Half-Orc
 
 Gore Fiend
 	TYPE:General
@@ -374,7 +372,7 @@ Gore Fiend
 	DESC:Horrible wounds, whether on yourself or your enemies, make your blood sing.
 	SOURCEPAGE:p.57
 	BENEFIT:When you are raging and you confirm a critical hit with a melee weapon or a critical hit is confirmed on you (whether by a melee weapon, spell, or ranged weapon), you regain 1 round of rage (up to your maximum for the day). You can only gain this benefit once per round.
-	PRERACE=1,Orc,Half-Orc
+	PRERACE:1,Orc,Half-Orc
 
 Horde Charge
 	TYPE:Teamwork
@@ -382,7 +380,7 @@ Horde Charge
 	DESC:When you charge with an ally, you are more deadly.
 	SOURCEPAGE:p.57
 	BENEFIT:When charging during the same round as an ally with this feat, you gain a +2 bonus on attack and damage rolls in addition to the normal bonus for charging. If you can make multiple attacks on a charge, this bonus only applies to the first attack.
-	PRERACE=1,Orc,Half-Orc
+	PRERACE:1,Orc,Half-Orc
 
 Improved Surprise Follow-Through
 	TYPE:Combat
@@ -398,7 +396,7 @@ Resilient Brute
 	DESC:You absorb punishment others find deadly.
 	SOURCEPAGE:p.57
 	BENEFIT:%1/day, when a creature confirms a critical hit against you, you may treat half the damage as nonlethal damage. You cannot use this ability if you are immune to nonlethal damage.|1+if(BAB>=10,1,0)
-	PRERACE=1,Orc,Half-Orc
+	PRERACE:1,Orc,Half-Orc
 
 Surprise Follow-Through
 	TYPE:Combat
@@ -415,7 +413,7 @@ Sympathetic Rage
 	DESC:Seeing an ally rage fills you with your own fury.
 	SOURCEPAGE:p.57
 	BENEFIT:Whenever you are adjacent to an ally who is raging, you may choose to enter a similar but less powerful rage as a free action on your turn. This weaker rage gives you all the benefits and penalties of a barbarian's rage, except your morale bonus to Strength and Constitution is only +2. There is no limit to how long you can rage, as long as you remain adjacent to a raging ally (for example, you could take a 5-foot step away from one raging ally toward another raging ally and maintain your rage). As with a barbarian's rage, when this weaker rage ends, you are fatigued. You cannot use this feat if you are fatigued.
-	PRERACE=1,Orc,Half-Orc
+	PRERACE:1,Orc,Half-Orc
 
 Tenacious Survivor
 	TYPE:General
@@ -424,7 +422,7 @@ Tenacious Survivor
 	DESC:Your spirit lingers long after any other's would have passed on.
 	SOURCEPAGE:p.58
 	BENEFIT:When you are killed by hit point damage, your soul lingers in your body for a number of rounds equal to your Constitution bonus. You are still dead, but a creature can make a DC 10 Heal check as a standard action to realize that you can still be saved. You can be healed by magic as if you were alive. If you are healed enough hit points that you would no longer be dead, you are alive again, but you gain one permanent negative level.
-	PRERACE=1,Orc,Half-Orc
+	PRERACE:1,Orc,Half-Orc
 
 Thrill of the Kill
 	TYPE:General
@@ -432,13 +430,13 @@ Thrill of the Kill
 	DESC:Killing fuels your rage.
 	SOURCEPAGE:p.58
 	BENEFIT:When you are raging and your attack reduces an enemy to negative hit points or kills it, you regain 1 round of rage. You may only use this feat if the fallen enemy had at least as many Hit Dice as you. You can only gain this benefit once per round.
-	PRERACE=1,Orc,Half-Orc
+	PRERACE:1,Orc,Half-Orc
 
 
 
 ###
 ##Block: Halfling Feats
-# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										PRERACE=1,Elf,Half-Elf	PRERACE=1,Orc,Half-Orc	SOUREPAGE		creature while falling. You also gain a +4 bonus on saving throws against effects that would cause you to fall prone (such as earthquakes). This bonus does not apply to your CMD against bull rush or trip attacks.	surfaces, and you gain a +4 bonus on Climb checks to catch yourself or another
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										
 Adaptive Fortune
 	TYPE:General
 	PREABILITY:1,CATEGORY=Special Ability,Adaptable Luck
@@ -559,7 +557,7 @@ Uncanny Defense
 
 ###
 ##Block: Human Feats
-# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										PRERACE=1,Elf,Half-Elf	PRERACE=1,Orc,Half-Orc	SOUREPAGE		creature while falling. You also gain a +4 bonus on saving throws against effects that would cause you to fall prone (such as earthquakes). This bonus does not apply to your CMD against bull rush or trip attacks.	surfaces, and you gain a +4 bonus on Climb checks to catch yourself or another
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										
 Bestow Luck
 	TYPE:General
 	PREFEAT:2,Defiant Luck,Inexplicable Luck
@@ -628,7 +626,6 @@ Huntmaster
 	PRERACE:1,Human
 	PRESKILL:1,Handle Animal=1
 	DESC:You are an expert trainer of horses, hounds, falcons, or hunting cats.
-	MULT:NO
 	CHOOSE:STRING|Bird|Dog|Small Cat|Horse
 	SELECT:1
 	BONUS:SKILL|Handle Animal (%LIST),Knowledge (%LIST)|2

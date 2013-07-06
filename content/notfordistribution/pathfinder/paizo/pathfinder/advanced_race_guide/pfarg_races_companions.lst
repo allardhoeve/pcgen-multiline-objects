@@ -113,7 +113,7 @@ Companion (Sapling Treant)
 	VISION:Low-Light
 	PREVARGTEQ:NotAllowed,1
 	BONUS:COMBAT|AC|1|TYPE=NaturalArmor
-	NATURALATTACKS:Slam,Weapon,Natural.Melee.Bludgeoning,*2,1d6
+	NATURALATTACKS:Slam,Weapon.Natural.Melee.Bludgeoning,*2,1d6
 	ABILITY:Special Ability|AUTOMATIC|Double Damage ~ Sapling Treant
 	MONSTERCLASS:Plant:1
 	RACETYPE:Plant
@@ -151,11 +151,11 @@ Shaitan Binder Eidolon (Biped)
 	LEGS:2
 	HANDS:7
 	DEFINE:EidHeads|1
-	MONSTERCLASS:ShaitanBinderEidolon (Fort/Will):1
+	MONSTERCLASS:Eidolon (Fort/Will):1
 	RACETYPE:ShaitanBinderEidolon
 	SOURCEPAGE:p.56
 	CHOOSE:PCSTAT|ALL
-	KIT:1|ShaitanBinderEidolon (Biped)
+	KIT:1|Eidolon (Biped)
 
 Shaitan Binder Eidolon (Quadruped)
 	STARTFEATS:1
@@ -174,10 +174,10 @@ Shaitan Binder Eidolon (Quadruped)
 	LEGS:4
 	HANDS:7
 	DEFINE:EidHeads|1
-	MONSTERCLASS:ShaitanBinderEidolon (Fort/Ref):1
+	MONSTERCLASS:Eidolon (Fort/Ref):1
 	RACETYPE:ShaitanBinderEidolon
 	SOURCEPAGE:p.56
-	KIT:1|ShaitanBinderEidolon (Quadruped)
+	KIT:1|Eidolon (Quadruped)
 
 Shaitan Binder Eidolon (Serpentine)
 	STARTFEATS:1
@@ -196,8 +196,8 @@ Shaitan Binder Eidolon (Serpentine)
 	LEGS:0
 	HANDS:7
 	DEFINE:EidHeads|1
-	MONSTERCLASS:ShaitanBinderEidolon (Ref/Will):1
+	MONSTERCLASS:Eidolon (Ref/Will):1
 	RACETYPE:ShaitanBinderEidolon
 	SOURCEPAGE:p.56
-	KIT:1|ShaitanBinderEidolon (Serpentine)
+	KIT:1|Eidolon (Serpentine)
 
