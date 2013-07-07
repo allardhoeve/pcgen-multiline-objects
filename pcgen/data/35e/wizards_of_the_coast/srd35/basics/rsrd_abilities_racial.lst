@@ -265,9 +265,7 @@ CATEGORY=Internal|Dwarf Racial Trait Default.MOD
 
 #
 #
-CATEGORY=Internal|Dwarf Racial Trait Default.MOD
-	ABILITY:Dwarf Racial Trait|AUTOMATIC|Racial Traits ~ Dwarf
-
+#CATEGORY=Internal|Dwarf Racial Trait Default.MOD	ABILITY:Dwarf Racial Trait|AUTOMATIC|Racial Traits ~ Dwarf
 
 
 
@@ -290,9 +288,7 @@ CATEGORY=Internal|Elf Racial Trait Default.MOD
 
 
 
-CATEGORY=Internal|Elf Racial Trait Default.MOD
-	ABILITY:Elf Racial Trait|AUTOMATIC|Racial Traits ~ Elf
-
+#CATEGORY=Internal|Elf Racial Trait Default.MOD		ABILITY:Elf Racial Trait|AUTOMATIC|Racial Traits ~ Elf
 
 
 # Gnome
@@ -305,9 +301,6 @@ CATEGORY=Internal|Gnome Racial Trait Default.MOD
 #CATEGORY=Internal|Gnome Racial Trait Default.MOD	ABILITY:Gnome Racial Trait|AUTOMATIC|Gnome Speak with Animals|!PREABILITY:1,CATEGORY=Special Ability,TYPE.GnomeSpeakWithAnimals
 CATEGORY=Internal|Gnome Racial Trait Default.MOD
 	ABILITY:Gnome Racial Trait|AUTOMATIC|Low-Light Vision ~ Gnome|!PREABILITY:1,CATEGORY=Special Ability,TYPE.GnomeRacialVision
-
-CATEGORY=Internal|Gnome Racial Trait Default.MOD
-	ABILITY:Gnome Racial Trait|AUTOMATIC|Racial Traits ~ Gnome
 
 CATEGORY=Internal|Gnome Racial Trait Default.MOD
 	ABILITY:Gnome Racial Trait|AUTOMATIC|Weapon Familiarity ~ Gnome|!PREABILITY:1,CATEGORY=Special Ability,TYPE.GnomeWeaponFamiliarity
@@ -327,6 +320,7 @@ CATEGORY=Internal|Gnome Racial Trait Default.MOD
 CATEGORY=Internal|Gnome Racial Trait Default.MOD
 	ABILITY:Gnome Racial Trait|AUTOMATIC|Gnome Spell-Like Abilities|!PREABILITY:1,CATEGORY=Special Ability,TYPE.GnomeSpellLikeAbilities
 
+#CATEGORY=Internal|Gnome Racial Trait Default.MOD	ABILITY:Gnome Racial Trait|AUTOMATIC|Racial Traits ~ Gnome
 
 
 # Half-Elf
@@ -375,9 +369,7 @@ CATEGORY=Internal|Halfling Racial Trait Default.MOD
 CATEGORY=Internal|Halfling Racial Trait Default.MOD
 	ABILITY:Halfling Racial Trait|AUTOMATIC|Halfling Skills|!PREABILITY:1,CATEGORY=Special Ability,TYPE.HalflingSkills
 
-CATEGORY=Internal|Halfling Racial Trait Default.MOD
-	ABILITY:Halfling Racial Trait|AUTOMATIC|Racial Traits ~ Halfling
-
+#CATEGORY=Internal|Halfling Racial Trait Default.MOD	ABILITY:Halfling Racial Trait|AUTOMATIC|Racial Traits ~ Halfling
 
 
 ###Block:
@@ -425,25 +417,29 @@ Weapon Familiarity
 	BONUS:WEAPONPROF=Waraxe (Dwarven)|WIELDCATEGORY|-1
 	CHANGEPROF:Urgrosh (Dwarven),Waraxe (Dwarven)=Martial
 
+# Placed new Var StonecunningSearchBonus - still using DwarfSearchSkillBonus for backwards compatibility
 Stonecunning
 	CATEGORY:Special Ability
-	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault
+	TYPE:RacialTraits.SpecialQuality.DwarfRacialTrait.DwarfRacialDefault
 	VISIBLE:YES
+	DEFINE:StonecunningSearchBonus|0
+	DESC:This ability grants a dwarf a +%1 racial bonus on Search checks to notice unusual stonework, such as sliding walls, stonework traps, new construction (even when built to match the old), unsafe stone surfaces, shaky stone ceilings, and the like. Something that isn't stone but that is disguised as stone also counts as unusual stonework. A dwarf who merely comes within 10 feet of unusual stonework can make a Search check as if he were actively searching, and a dwarf can use the Search skill to find stonework traps as a rogue can. A dwarf can also intuit depth, sensing his approximate depth underground as naturally as a human can sense which way is up.|StonecunningSearchBonus
+	BONUS:SKILL|Search (Notice unusual stonework)|StonecunningSearchBonus|TYPE=Racial
 	DEFINE:DwarfSearchSkillBonus|2
-	DESC:This ability grants a dwarf a +%1 racial bonus on Search checks to notice unusual stonework, such as sliding walls, stonework traps, new construction (even when built to match the old), unsafe stone surfaces, shaky stone ceilings, and the like. Something that isn't stone but that is disguised as stone also counts as unusual stonework. A dwarf who merely comes within 10 feet of unusual stonework can make a Search check as if he were actively searching, and a dwarf can use the Search skill to find stonework traps as a rogue can. A dwarf can also intuit depth, sensing his approximate depth underground as naturally as a human can sense which way is up.|DwarfSearchSkillBonus
-	BONUS:SKILL|Search (Notice unusual stonework)|DwarfSearchSkillBonus|TYPE=Racial
+	BONUS:VAR|StonecunningSearchBonus|DwarfSearchSkillBonus|TYPE=Base
 
 Stability
 	CATEGORY:Special Ability
-	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault
+	TYPE:RacialTraits.SpecialQuality.DwarfRacialTrait.DwarfRacialDefault
 	VISIBLE:YES
 	DESC:+4 bonus on ability checks made to resist being bull rushed or tripped when standing on the ground (but not when climbing, flying, riding, or otherwise not standing firmly on the ground).
 
 # COMMENT: These get displayed in the Racial Traits Ability
 +2 racial bonus on saving throws against poison
+	ASPECT:Name|+%1 racial bonus on saving throws against poison|DwarfPoisonSaveBonus
 	KEY:Dwarf Poison Resistance
 	CATEGORY:Special Ability
-	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault
+	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault.SpecialQuality
 	VISIBLE:YES
 	DEFINE:DwarfPoisonSaveBonus|0
 	DESC:+%1 racial bonus on saving throws against poison|DwarfPoisonSaveBonus
@@ -451,34 +447,38 @@ Stability
 	ASPECT:SaveBonus|+%1 racial bonus on saving throws against poison|DwarfPoisonSaveBonus
 
 +2 racial bonus on saving throws against spells and spell-like effects
+	ASPECT:Name|+%1 racial bonus on saving throws against spells and spell-like effects|DwarfSpellSaveBonus
 	KEY:Dwarf Spell Resistance
 	CATEGORY:Special Ability
-	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault
+	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault.SpecialQuality
 	VISIBLE:YES
 	DEFINE:DwarfSpellSaveBonus|2
 	DESC:+%1 racial bonus on saving throws against spells and spell-like effects|DwarfSpellSaveBonus
 	ASPECT:SaveBonus|+%1 racial bonus on saving throws against spells and spell-like effects|DwarfSpellSaveBonus
 
 +1 racial bonus on attack rolls against orcs and goblinoids
+	ASPECT:Name|+%1 racial bonus on attack rolls against orcs and goblinoids|DwarfRacialCombatBonus
 	KEY:Dwarf Attacks
 	CATEGORY:Special Ability
-	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault
+	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault.SpecialQuality
 	VISIBLE:YES
 	DEFINE:DwarfRacialCombatBonus|1
 	DESC:+%1 racial bonus on attack rolls against orcs and goblinoids|DwarfRacialCombatBonus
 
 +4 Dodge bonus to Armor Class against monsters of the giant type
+	ASPECT:Name|+%1 Dodge bonus to Armor Class against monsters of the giant type|DwarfDodgeGiantBonus
 	KEY:Dodge Giant
 	CATEGORY:Special Ability
-	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault.ModifyAC
+	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault.SpecialQuality.ModifyAC
 	VISIBLE:YES
 	DEFINE:DwarfDodgeGiantBonus|4
 	DESC:+%1 Dodge bonus to Armor Class against monsters of the giant type|DwarfDodgeGiantBonus
 
 +2 racial bonus on Appraise checks that are related to stone or metal items.
+	ASPECT:Name|+%1 racial bonus on Appraise checks that are related to stone or metal items.|DwarfAppraiseSkillBonus
 	KEY:Dwarf Appraise
 	CATEGORY:Special Ability
-	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault
+	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault.SpecialQuality
 	VISIBLE:YES
 	DEFINE:DwarfAppraiseSkillBonus|2
 	DESC:+%1 racial bonus on Appraise checks that are related to stone or metal items.|DwarfAppraiseSkillBonus
@@ -486,9 +486,10 @@ Stability
 	BONUS:SKILL|Appraise|DwarfAppraiseSkillBonus|TYPE=Racial|PREAPPLY:PC
 
 +2 racial bonus on Craft checks that are related to stone or metal.
+	ASPECT:Name|+%1 racial bonus on Craft checks that are related to stone or metal.|DwarfCraftSkillBonus
 	KEY:Dwarf Craft
 	CATEGORY:Special Ability
-	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault
+	TYPE:RacialTraits.DwarfRacialTrait.DwarfRacialDefault.SpecialQuality
 	VISIBLE:YES
 	DEFINE:DwarfCraftSkillBonus|2
 	DESC:+%1 racial bonus on Craft checks that are related to stone or metal.|DwarfCraftSkillBonus
@@ -532,6 +533,7 @@ CATEGORY=Special Ability|Racial Traits ~ Dwarf.MOD
 ###Block: Elf
 # Ability Name																						Unique Key				Category of Ability		Type									Visible		Description																																					Automatically Gained Weapon Prof.				Bonus to skill						Modify VAR				Aspects
 Immunity to magic sleep effects, and a +2 racial saving throw bonus against enchantment spells or effects.
+	ASPECT:Name|Immunity to magic sleep effects, and a +%1 racial saving throw bonus against enchantment spells or effects.|ElfSaveBonus
 	KEY:Elf Resistance
 	CATEGORY:Special Ability
 	TYPE:ElfRacialTrait.SpecialQuality.Immunity
@@ -551,11 +553,12 @@ Low-Light Vision
 	KEY:Low-Light Vision ~ Elf
 	CATEGORY:Special Ability
 	TYPE:ElfRacialTrait
-	VISIBLE:DISPLAY
+	VISIBLE:YES
 	DESC:An elf can see twice as far as a human in starlight, moonlight, torchlight, and similar conditions of poor illumination. She retains the ability to distinguish color and detail under these conditions.
 	BONUS:VAR|HasLowLightVision|1
 
 +2 racial bonus on Listen, Search, and Spot checks.
+	ASPECT:Name|+%1 racial bonus on Listen, Search, and Spot checks.|ElfSkillBonus
 	KEY:Elf Perception
 	CATEGORY:Special Ability
 	TYPE:ElfRacialTrait.SpecialQuality
@@ -591,6 +594,8 @@ Weapon Familiarity
 	CHANGEPROF:Hammer (Gnome Hooked)=Martial
 
 +2 racial bonus on saving throws against illusions
+	ASPECT:Name|+%1 racial bonus on saving throws against illusions|GnomeIllusionSaveBonus
+	DEFINE:GnomeIllusionSaveBonus|2
 	KEY:Gnome Save Bonus
 	CATEGORY:Special Ability
 	TYPE:GnomeRacialTrait.SpecialQuality
@@ -599,6 +604,8 @@ Weapon Familiarity
 	ASPECT:SaveBonus|+2 racial bonus on saving throws against illusions
 
 +1 racial bonus on attack rolls against kobolds and goblinoids
+	ASPECT:Name|+%1 racial bonus on attack rolls against kobolds and goblinoids|GnomeAttackBonus
+	DEFINE:GnomeAttackBonus|1
 	KEY:Gnome Attacks
 	CATEGORY:Special Ability
 	TYPE:GnomeRacialTrait.SpecialQuality
@@ -610,11 +617,13 @@ Low-Light Vision
 	KEY:Low-Light Vision ~ Gnome
 	CATEGORY:Special Ability
 	TYPE:GnomeRacialTrait.RacialTrait
-	VISIBLE:DISPLAY
+	VISIBLE:YES
 	DESC:A gnome can see twice as far as a human in starlight, moonlight, torchlight, and similar conditions of poor illumination. He retains the ability to distinguish color and detail under these conditions.
 	BONUS:VAR|HasLowLightVision|1
 
 Add +1 to the Difficulty Class for all saving throws against illusion spells cast by gnomes. This adjustment stacks with those from similar effects.
+	ASPECT:Name|Add +%1 to the Difficulty Class for all saving throws against illusion spells cast by gnomes. This adjustment stacks with those from similar effects.|GnomeIllusionDCBonus
+	DEFINE:GnomeIllusionDCBonus|1
 	KEY:Gnome Illusion DC
 	CATEGORY:Special Ability
 	TYPE:GnomeRacialTrait.RacialTrait
@@ -622,12 +631,16 @@ Add +1 to the Difficulty Class for all saving throws against illusion spells cas
 	BONUS:DC|SCHOOL.Illusion|1
 
 +4 dodge bonus to Armor Class against monsters of the giant type. Any time a creature loses its Dexterity bonus (if any) to Armor Class, such as when it's caught flat-footed, it loses its dodge bonus, too.
+	ASPECT:Name|+%1 dodge bonus to Armor Class against monsters of the giant type. Any time a creature loses its Dexterity bonus (if any) to Armor Class, such as when it's caught flat-footed, it loses its dodge bonus, too.|DodgeGiantBonus
+	DEFINE:DodgeGiantBonus|4
 	KEY:Gnome Dodge
 	CATEGORY:Special Ability
 	TYPE:GnomeRacialTrait.RacialTrait
 	DESC:+4 dodge bonus to Armor Class against monsters of the giant type. Any time a creature loses its Dexterity bonus (if any) to Armor Class, such as when it's caught flat-footed, it loses its dodge bonus, too.
 
 +2 racial bonus on Listen checks.
+	ASPECT:Name|+%1 racial bonus on Listen checks.|GnomeListenSkillBonus
+	DEFINE:GnomeListenSkillBonus|2
 	KEY:Gnome Listen Skill
 	CATEGORY:Special Ability
 	TYPE:GnomeRacialTrait.RacialTrait
@@ -635,6 +648,8 @@ Add +1 to the Difficulty Class for all saving throws against illusion spells cas
 	BONUS:SKILL|Listen|2|TYPE=Racial
 
 +2 racial bonus on Craft (alchemy) checks.
+	ASPECT:Name|+%1 racial bonus on Craft (alchemy) checks.|GnomeCraftAlchemySkillBonus
+	DEFINE:GnomeCraftAlchemySkillBonus|2
 	KEY:Gnome Alchemy Skill
 	CATEGORY:Special Ability
 	TYPE:GnomeRacialTrait.RacialTrait
@@ -680,7 +695,7 @@ Low-Light Vision
 	KEY:Low-Light Vision ~ Half-Elf
 	CATEGORY:Special Ability
 	TYPE:HalfElfRacialTrait
-	VISIBLE:DISPLAY
+	VISIBLE:YES
 	DESC:A half-elf can see twice as far as a human in starlight, moonlight, torchlight, and similar conditions of poor illumination. She retains the ability to distinguish color and detail under these conditions.
 	BONUS:VAR|HasLowLightVision|1
 
@@ -689,6 +704,8 @@ Low-Light Vision
 	CATEGORY:Special Ability
 	TYPE:HalfElfRacialTrait
 	DESC:+1 racial bonus on Listen, Search, and Spot checks.
+	ASPECT:Name|+%1 racial bonus on Listen, Search, and Spot checks.|SkillBonus
+	DEFINE:SkillBonus|1
 	BONUS:SKILL|Listen,Search,Spot|1|TYPE=Racial
 
 +2 racial bonus on Diplomacy and Gather Information checks.
@@ -696,21 +713,25 @@ Low-Light Vision
 	CATEGORY:Special Ability
 	TYPE:HalfElfRacialTrait
 	DESC:+2 racial bonus on Diplomacy and Gather Information checks.
+	ASPECT:Name|+%1 racial bonus on Diplomacy and Gather Information checks.|DiplomacyGatherInformationSkillBonus
+	DEFINE:DiplomacyGatherInformationSkillBonus|2
 	BONUS:SKILL|Diplomacy,Gather Information|2|TYPE=Racial
 
 Immunity to magic sleep effects
 	KEY:Half-Elf Immunity
 	CATEGORY:Special Ability
 	TYPE:HalfElfRacialTrait.SpecialQuality.Immunity
-	VISIBLE:DISPLAY
+	VISIBLE:YES
 	DESC:Immunity to magic sleep effects
 
 +2 racial saving throw bonus against enchantment spells or effects
 	KEY:Half-Elf Resistance
 	CATEGORY:Special Ability
 	TYPE:HalfElfRacialTrait.SpecialQuality
-	VISIBLE:DISPLAY
+	VISIBLE:YES
 	DESC:+2 racial saving throw bonus against enchantment spells or effects
+	ASPECT:Name|+%1 racial saving throw bonus against enchantment spells or effects|HalfElfSaveBonus
+	DEFINE:HalfElfSaveBonus|2
 	ASPECT:SaveBonus|+2 racial saving throw bonus against enchantment spells or effects
 
 #
@@ -753,7 +774,9 @@ Darkvision
 	CATEGORY:Special Ability
 	TYPE:HalflingRacialTrait
 	VISIBLE:YES
+	DEFINE:HalflingFearBonus|2
 	DESC:+2 morale bonus on saving throws against fear
+	ASPECT:Name|+%1 morale bonus on saving throws against fear|HalflingFearBonus
 	ASPECT:SaveBonus|+2 morale bonus on saving throws against fear
 
 +1 racial bonus on all saving throws.
@@ -762,20 +785,25 @@ Darkvision
 	TYPE:HalflingRacialTrait
 	DEFINE:HalflingSaveBonus|0
 	DESC:+1 racial bonus on all saving throws.
+	ASPECT:Name|+%1 racial bonus on all saving throws.|HalflingSaveBonus
 	BONUS:VAR|HalflingSaveBonus|1|TYPE=Racial
 
 +1 racial bonus on attack rolls with thrown weapons and slings.
 	KEY:Halfling Thrown Attacks
 	CATEGORY:Special Ability
 	TYPE:HalflingRacialTrait
+	DEFINE:HalflingAttackBonus|1
 	DESC:+1 racial bonus on attack rolls with thrown weapons and slings.
+	ASPECT:Name|+%1 racial bonus on attack rolls with thrown weapons and slings.|HalflingAttackBonus
 	BONUS:COMBAT|TOHIT.Thrown,TOHIT.Sling|1|TYPE=Racial
 
 +2 racial bonus on Climb, Jump, Listen, and Move Silently checks.
 	KEY:Halfling Skills
 	CATEGORY:Special Ability
 	TYPE:HalflingRacialTrait
+	DEFINE:HalflingSkillBonus|2
 	DESC:+2 racial bonus on Climb, Jump, Listen, and Move Silently checks.
+	ASPECT:Name|+%1 racial bonus on Climb, Jump, Listen, and Move Silently checks.|HalflingSkillBonus
 	BONUS:SKILL|Climb,Jump,Listen,Move Silently|2|TYPE=Racial
 
 #
