@@ -4,7 +4,7 @@ SOURCELONG:Ultimate Equipment
 	SOURCEWEB:http://paizo.com/products/btpy8tmc?Pathfinder-Roleplaying-Game-Ultimate-Equipment
 	SOURCEDATE:2012-08
 
-# Pathfinder RPG Entry by: Stefan Radermacher
+# Pathfinder RPG Entry by: Stefan Radermacher and Scott Meyer
 
 
 ###Block: Adventuring Gear
@@ -130,7 +130,7 @@ Blue Book
 	COST:5
 	WT:1
 	SOURCEPAGE:p.60
-	SPROP:By consulting the book for 1 hour, for the next 24 hours you gain a +2 circumstance bonus on Knowledge (local), Bluff, and Diplomacy checks to gather or use information in that city. At the GM’s discretion, you can use it in settlements near that city for a +1 bonus.
+	SPROP:By consulting the book for 1 hour, for the next 24 hours you gain a +2 circumstance bonus on Knowledge (local), Bluff, and Diplomacy checks to gather or use information in that city. At the GM's discretion, you can use it in settlements near that city for a +1 bonus.
 
 Book of Letters
 	TYPE:Goods.Tools.Book
@@ -350,7 +350,7 @@ Fake Footprint Shoes
 	SPROP:Each pair creates a specific type of footprint, such as tiger, orc, goblin, or ogre. When walking with these shoes, you may make a Survival check; the check result is the Survival DC for anyone trying to determine whether the tracks are what they appear to be.
 
 False Manacles
-	TYPE:Good.General.Masterwork
+	TYPE:Goods.General.Masterwork
 	COST:65
 	WT:2
 	SOURCEPAGE:p.64
@@ -475,7 +475,7 @@ Grooming Kit
 	WT:2
 	SOURCEPAGE:p.65
 
-Gunsmith’s Kit
+Gunsmith's Kit
 	TYPE:Goods.General
 	COST:15
 	WT:2
@@ -761,7 +761,8 @@ Mess Kit
 	WT:1
 	SOURCEPAGE:p.68
 
-Miner’s Pick
+Miner's Pick
+	TYPE:Goods.General
 	COST:3
 	WT:10
 	SOURCEPAGE:p.68
@@ -792,7 +793,7 @@ Perfume/Cologne
 	TYPE:Goods.General.Vial
 	COST:5
 	SOURCEPAGE:p.69
-	SPROP:Perfume or cologne may (at the GM’s discretion) provide a +1 circumstance bonus on several Charisma-based skill checks.
+	SPROP:Perfume or cologne may (at the GM's discretion) provide a +1 circumstance bonus on several Charisma-based skill checks.
 
 Periscope.MOD
 	TYPE:Goods.General
@@ -1122,7 +1123,7 @@ Thurible
 Torch.MOD
 	SOURCEPAGE:p.74
 
-Traveler’s Dictionary
+Traveler's Dictionary
 	TYPE:Goods.Tools.Book
 	COST:50
 	WT:2
@@ -1273,7 +1274,7 @@ Chronicler's Kit
 	COST:40
 	WT:4.5
 	SOURCEPAGE:p.62
-	KIT:1|Chronicle Equipment
+	KIT:1|Chronicler Equipment
 
 Cleric's Kit
 	TYPE:Goods.Tools.Kits
@@ -1378,112 +1379,112 @@ Gambler's Kit (Cheating)
 	BONUS:SKILL|Profession (Gambler)|4|TYPE=Circumstance
 	SPROP:Grants a +4 circumstance bonus on Profession (gambler) checks when using these materials.
 
-Gunslinger’s Kit
+Gunslinger's Kit
 	TYPE:Goods.Tools.Kits
 	COST:26
 	WT:31
 	SOURCEPAGE:p.65
 	KIT:1|Gunslinger Equipment
 
-Gunslinger’s Kit (Small)
+Gunslinger's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:26
 	WT:23.25
 	SOURCEPAGE:p.65
 	KIT:1|Gunslinger Equipment
 
-Inquisitor’s Kit
+Inquisitor's Kit
 	TYPE:Goods.Tools.Kits
 	COST:30
 	WT:34
 	SOURCEPAGE:p.67
 	KIT:1|Inquisitor Equipment
 
-Inquisitor’s Kit (Small)
+Inquisitor's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:30
 	WT:25.5
 	SOURCEPAGE:p.67
 	KIT:1|Inquisitor Equipment
 
-Magus’s Kit
+Magus's Kit
 	TYPE:Goods.Tools.Kits
 	COST:22
 	WT:31
 	SOURCEPAGE:p.68
 	KIT:1|Magus Equipment
 
-Magus’s Kit (Small)
+Magus's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:22
 	WT:23.25
 	SOURCEPAGE:p.68
 	KIT:1|Magus Equipment
 
-Monk’s Kit
+Monk's Kit
 	TYPE:Goods.Tools.Kits
 	COST:8
 	WT:22
 	SOURCEPAGE:p.68
 	KIT:1|Monk Equipment
 
-Monk’s Kit (Small)
+Monk's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:8
 	WT:16.5
 	SOURCEPAGE:p.68
 	KIT:1|Monk Equipment
 
-Oracle’s Kit
+Oracle's Kit
 	TYPE:Goods.Tools.Kits
 	COST:9
 	WT:29
 	SOURCEPAGE:p.p.69
 	KIT:1|Oracle Equipment
 
-Oracle’s Kit (Small)
+Oracle's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:9
 	WT:21.75
 	SOURCEPAGE:p.p.69
 	KIT:1|Oracle Equipment
 
-Paladin’s Kit
+Paladin's Kit
 	TYPE:Goods.Tools.Kits
 	COST:11
 	WT:30
 	SOURCEPAGE:p.p.69
 	KIT:1|Paladin Equipment
 
-Paladin’s Kit (Small)
+Paladin's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:11
 	WT:22.5
 	SOURCEPAGE:p.p.69
 	KIT:1|Paladin Equipment
 
-Pathfinder’s Kit
+Pathfinder's Kit
 	TYPE:Goods.Tools.Kits
 	COST:12
 	WT:22
 	SOURCEPAGE:p.69
 	KIT:1|Pathfinder Equipment
 
-Pathfinder’s Kit (Small)
+Pathfinder's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:12
 	WT:7.5
 	SOURCEPAGE:p.69
 	KIT:1|Pathfinder Equipment
 
-Ranger’s Kit
+Ranger's Kit
 	TYPE:Goods.Tools.Kits
 	COST:9
 	WT:28
 	SOURCEPAGE:p.70
 	KIT:1|Ranger Equipment
 
-Ranger’s Kit (Small)
+Ranger's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:9
 	WT:21
@@ -1504,34 +1505,34 @@ Riding Kit (Exotic Mount)
 	SOURCEPAGE:p.70
 	KIT:1|Riding Equipment
 
-Rogue’s Kit
+Rogue's Kit
 	TYPE:Goods.Kit
 	COST:50
 	WT:37
 	SOURCEPAGE:p.70
 	KIT:1|Rogue Equipment
 
-Rogue’s Kit (Small)
+Rogue's Kit (Small)
 	TYPE:Goods.Kit
 	COST:50
 	WT:27.75
 	SOURCEPAGE:p.70
 	KIT:1|Rogue Equipment
 
-Scrivener’s Kit
+Scrivener's Kit
 	TYPE:Goods.General
 	COST:2
 	WT:1
 	SOURCEPAGE:p.71
 
-Sorcerer’s Kit
+Sorcerer's Kit
 	TYPE:Goods.Tools.Kits
 	COST:8
 	WT:19
 	SOURCEPAGE:p.72
 	KIT:1|Sorcerer Equipment
 
-Sorcerer’s Kit (Small)
+Sorcerer's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:8
 	WT:14.25
@@ -1545,56 +1546,56 @@ Spelunking Kit
 	SOURCEPAGE:p.72
 	KIT:1|Spelunking Equipment
 
-Summoner’s Kit
+Summoner's Kit
 	TYPE:Goods.Tools.Kits
 	COST:8
 	WT:19
 	SOURCEPAGE:p.73
 	KIT:1|Summoner Equipment
 
-Summoner’s Kit (Small)
+Summoner's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:8
 	WT:14.25
 	SOURCEPAGE:p.73
 	KIT:1|Summoner Equipment
 
-Troll Slayer’s Kit
+Troll Slayer's Kit
 	TYPE:Goods.Tools.Kits
 	COST:30
 	WT:17
 	SOURCEPAGE:p.74
 	KIT:1|Troll Slayer Equipment
 
-Undead Slayer’s Kit
+Undead Slayer's Kit
 	TYPE:Goods.Tools.Kits
 	COST:402
 	WT:7
 	SOURCEPAGE:p.74
 	KIT:1|Undead Slayer Equipment
 
-Witch’s Kit
+Witch's Kit
 	TYPE:Goods.Tools.Kits
 	COST:21
 	WT:21
 	SOURCEPAGE:p.75
 	KIT:1|Witch Equipment
 
-Witch’s Kit (Small)
+Witch's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:21
 	WT:15.75
 	SOURCEPAGE:p.75
 	KIT:1|Witch Equipment
 
-Wizard’s Kit
+Wizard's Kit
 	TYPE:Goods.Tools.Kits
 	COST:21
 	WT:21
 	SOURCEPAGE:p.75
 	KIT:1|Wizard Equipment
 
-Wizard’s Kit (Small)
+Wizard's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:21
 	WT:15.75
@@ -1877,6 +1878,7 @@ Scale (Merchant's).MOD
 	SOURCEPAGE:p.78
 
 Midwife's Kit
+	TYPE:Goods.Tools
 	COST:10
 	WT:2
 	SOURCEPAGE:p.78
@@ -1987,11 +1989,13 @@ Musical Instrument (Trumpet).COPY=Musical Instrument (Trumpet/Masterwork)
 	BONUS:SKILL|TYPE=Perform|2|TYPE=Circumstance
 
 Parasol
+	TYPE:Goods.Tools
 	COST:1
 	WT:2
 	SOURCEPAGE:p.78
 
 Parasol (Umbrella)
+	TYPE:Goods.Tools
 	COST:2
 	WT:3
 	SOURCEPAGE:p.78
@@ -2063,7 +2067,7 @@ Traveling Spellbook (Blank).MOD
 	SOURCEPAGE:p.79
 
 Veterinarian's Kit
-	TYPE=Goods.Tools
+	TYPE:Goods.Tools
 	COST:10
 	WT:20
 	SOURCEPAGE:p.79
@@ -2903,16 +2907,19 @@ Billiards Gear
 	SOURCEPAGE:p.92
 
 Board Game (Common)
+	TYPE:Goods.General
 	COST:0.1
 	WT:2
 	SOURCEPAGE:p.92
 
 Bowling Set (Common)
+	TYPE:Goods.General
 	COST:0.5
 	WT:15
 	SOURCEPAGE:p.92
 
 Cards (Common)
+	TYPE:Goods.General
 	COST:0.1
 	WT:1
 	SOURCEPAGE:p.92
@@ -2924,6 +2931,7 @@ Croquet Set
 	SOURCEPAGE:p.92
 
 Crossword (Common)
+	TYPE:Goods.General
 	COST:0.01
 	SOURCEPAGE:p.92
 
@@ -2939,6 +2947,7 @@ Dice
 	SOURCEPAGE:p.92
 
 Dominos (Common)
+	TYPE:Goods.General
 	COST:0.1
 	WT:1
 	SOURCEPAGE:p.92
@@ -2950,6 +2959,7 @@ Horseshoes Game
 	SOURCEPAGE:p.92
 
 Kite (Common)
+	TYPE:Goods.General
 	COST:0.1
 	WT:1
 	SOURCEPAGE:p.92
@@ -2977,6 +2987,7 @@ Polo Gear
 	SOURCEPAGE:p.93
 
 Puzzle Box (Common)
+	TYPE:Goods.General
 	COST:1
 	WT:1
 	SOURCEPAGE:p.93
@@ -3883,7 +3894,7 @@ Alchemical Grease.MOD
 	BONUS:SKILL|Escape Artist|5|TYPE=Alchemical
 	BONUS:VAR|CMD_Grapple|5|TYPE=Alchemical
 
-Alchemist’s Kindness
+Alchemist's Kindness
 	TYPE:Goods.Alchemical.Consumable
 	COST:1
 	SOURCEPAGE:p.100
@@ -4188,7 +4199,7 @@ Liquid Blade
 	WT:2
 	SIZE:M
 	TYPE:Weapon.Melee.Light.Finesseable.Martial.Standard.Piercing.Sword.Fragile.Consumable
-	SPROP:Lasts for 10 minutes.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Lasts for 10 minutes. Fragile.
 	SOURCEPAGE:p.108
 
 Flame Fountain Firework
@@ -4201,7 +4212,7 @@ Flame Fountain Firework
 	CRITRANGE:1
 	SIZE:M
 	TYPE:Weapon.Melee.OneHanded.Fire.Consumable
-	SPROP:Attacks are melee touch attacks. Lasts 1 min. Move action to light fuse. STR does not apply to Dam.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Attacks are melee touch attacks. Lasts 1 min. Move action to light fuse.
 	SOURCEPAGE:p.106
 
 Acid (Flask).MOD
@@ -4214,7 +4225,7 @@ Acid (Flask).MOD
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Acid.Splash.Alchemical.Consumable
-	SPROP:Every creature within 5 feet of the point where the acid hits takes 1 point of acid damage from the splash.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Every creature within 5 feet of the point where the acid hits takes 1 point of acid damage from the splash.
 	SOURCEPAGE:p.106
 
 Alchemist's Fire (Flask).MOD
@@ -4227,7 +4238,7 @@ Alchemist's Fire (Flask).MOD
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Fire.Splash.Alchemical.Consumable
-	SPROP:Every creature within 5 feet of the point where the flask hits takes 1 point of fire damage from the splash. On the round following a direct hit, the target takes an additional 1d6 points of damage.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Every creature within 5 feet of the point where the flask hits takes 1 point of fire damage from the splash. On the round following a direct hit, the target takes an additional 1d6 points of damage.
 	SOURCEPAGE:p.106
 
 Alkali (Flask).MOD
@@ -4240,7 +4251,7 @@ Alkali (Flask).MOD
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Acid.Splash.Alchemical.Consumable
-	SPROP:Every creature within 5 feet of the point where the alkali flask hits takes 1 point of acid damage from the splash. Against oozes and other acid-based creatures, the alkali flask inflicts double damage.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Every creature within 5 feet of the point where the alkali flask hits takes 1 point of acid damage from the splash. Against oozes and other acid-based creatures, the alkali flask inflicts double damage.
 	SOURCEPAGE:p.106
 
 Banshee Ballerina (Firework)
@@ -4249,7 +4260,7 @@ Banshee Ballerina (Firework)
 	RANGE:10
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Sonic.Splash.Alchemical.Consumable
-	SPROP:Any creatures within 5 feet of the noise are effectively deafened while they remain in the area. Burns for 1d4+1 rounds.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Any creatures within 5 feet of the noise are effectively deafened while they remain in the area. Burns for 1d4+1 rounds.
 	SOURCEPAGE:p.106
 
 Bottled Lightning
@@ -4262,7 +4273,7 @@ Bottled Lightning
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Electricity.Sonic.Splash.Alchemical.Consumable
-	SPROP:Any creature in a line between you and the target (including the target) takes 1 point of sonic damage.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Any creature in a line between you and the target (including the target) takes 1 point of sonic damage.
 	SOURCEPAGE:p.106
 
 Burst Jar
@@ -4273,7 +4284,7 @@ Burst Jar
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Sonic.Splash.Alchemical.Consumable
-	SPROP:One round later on the turn the jar was thrown, the target takes 1 point of sonic damage, is deafened for 1d4 rounds, and must make a DC 12 Fortitude save or be stunned for 1 round. Creatures within 5 feet of the explosion take 1 point of sonic damage.|PRERULE:1,DisplayWeaponDetails
+	SPROP:One round later on the turn the jar was thrown, the target takes 1 point of sonic damage, is deafened for 1d4 rounds, and must make a DC 12 Fortitude save or be stunned for 1 round. Creatures within 5 feet of the explosion take 1 point of sonic damage.
 	SOURCEPAGE:p.106
 
 Flash Poweder
@@ -4282,7 +4293,7 @@ Flash Poweder
 	RANGE:10
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Splash.Alchemical.Consumable
-	SPROP:Creatures within a 10-foot-radius burst are blinded for 1 round (Fortitude DC 13 negates).|PRERULE:1,DisplayWeaponDetails
+	SPROP:Creatures within a 10-foot-radius burst are blinded for 1 round (Fortitude DC 13 negates).
 	SOURCEPAGE:p.106
 
 Fuse Grenade
@@ -4295,7 +4306,7 @@ Fuse Grenade
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Bludgeoning.Fire.Splash.Alchemical.Consumable
-	SPROP:Lighting the fuse is a move action; 1d3 rounds later the grenade explodes, dealing 2d6 points of bludgeoning damage and 1d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves).|PRERULE:1,DisplayWeaponDetails
+	SPROP:Lighting the fuse is a move action; 1d3 rounds later the grenade explodes, dealing 2d6 points of bludgeoning damage and 1d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves).
 	SOURCEPAGE:p.107
 
 Ghast Retch (Flask)
@@ -4305,7 +4316,7 @@ Ghast Retch (Flask)
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Poison.Splash.Alchemical.Consumable
-	SPROP:The target is nauseated for 1 round and sickened for 3 rounds after that. A successful DC 12 Fortitude save prevents the nauseated condition, but not the sickened condition. Creatures within 5 feet of where the flank hits are sickened for 1 round|PRERULE:1,DisplayWeaponDetails
+	SPROP:The target is nauseated for 1 round and sickened for 3 rounds after that. A successful DC 12 Fortitude save prevents the nauseated condition, but not the sickened condition. Creatures within 5 feet of where the flank hits are sickened for 1 round
 	SOURCEPAGE:p.107
 
 Holy Water (Flask).MOD
@@ -4318,7 +4329,7 @@ Holy Water (Flask).MOD
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Splash.Alchemical.Consumable
-	SPROP:Each undead creature or evil outsider within 5 feet of the point where the flask hits takes 1 point of damage from the splash.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Each undead creature or evil outsider within 5 feet of the point where the flask hits takes 1 point of damage from the splash.
 	SOURCEPAGE:p.107
 
 Itching Powder
@@ -4328,7 +4339,7 @@ Itching Powder
 	WT:2
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Poison.Splash.Alchemical.Consumable
-	SPROP:Anyone standing on the square of impact must succeed at a DC 12 Fortitude save to resist the powder, while those in adjacent squares must make a DC 8 Fortitude save. Creatures that fail the save take a –2 penalty on attack rolls, saving throws, skill checks, and ability checks until they wash the powder off.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Anyone standing on the square of impact must succeed at a DC 12 Fortitude save to resist the powder, while those in adjacent squares must make a DC 8 Fortitude save. Creatures that fail the save take a –2 penalty on attack rolls, saving throws, skill checks, and ability checks until they wash the powder off.
 	SOURCEPAGE:p.108
 
 Keros Oil (Flask)
@@ -4341,7 +4352,7 @@ Keros Oil (Flask)
 	SIZE:M
 	BASEQTY:10
 	TYPE:Weapon.Ranged.Fire.Alchemical.Consumable
-	SPROP:Taking a mouthful from the bottle is a standard action|PRERULE:1,DisplayWeaponDetails
+	SPROP:Taking a mouthful from the bottle is a standard action.
 	SOURCEPAGE:p.108
 
 Liquid Ice (Flask).MOD
@@ -4354,7 +4365,7 @@ Liquid Ice (Flask).MOD
 	WT:2
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Cold.Splash.Alchemical.Consumable
-	SPROP:Creatures within 5 feet of where it hits take 1 point of cold damage from the splash.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Creatures within 5 feet of where it hits take 1 point of cold damage from the splash.
 	SOURCEPAGE:p.108
 
 Paper Candle (Firework)
@@ -4363,7 +4374,7 @@ Paper Candle (Firework)
 	RANGE:10
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Splash.Alchemical.Consumable
-	SPROP:Anyone in the same square when it explodes must make a DC 15 Fortitude save or be dazzled for 1d4 rounds.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Anyone in the same square when it explodes must make a DC 15 Fortitude save or be dazzled for 1d4 rounds.
 	SOURCEPAGE:p.108
 
 Pellet Grenade (Iron)
@@ -4375,7 +4386,7 @@ Pellet Grenade (Iron)
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Piercing.Bludgeoning.Fire.Splash.Alchemical.Consumable
-	SPROP:Lighting the fuse is a move action; 1d3 rounds later the grenade explodes, dealing 1d6 points of bludgeoning damage, 1d6 points of piercing damage and 1d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves).|PRERULE:1,DisplayWeaponDetails
+	SPROP:Lighting the fuse is a move action; 1d3 rounds later the grenade explodes, dealing 1d6 points of bludgeoning damage, 1d6 points of piercing damage and 1d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves).
 	SOURCEPAGE:p.108
 
 Pellet Grenade (Silver)
@@ -4387,7 +4398,7 @@ Pellet Grenade (Silver)
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Piercing.Bludgeoning.Fire.Splash.Alchemical.Consumable
-	SPROP:Lighting the fuse is a move action; 1d3 rounds later the grenade explodes, dealing 1d6 points of bludgeoning damage, 1d6 points of piercing damage and 1d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves).|PRERULE:1,DisplayWeaponDetails
+	SPROP:Lighting the fuse is a move action; 1d3 rounds later the grenade explodes, dealing 1d6 points of bludgeoning damage, 1d6 points of piercing damage and 1d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves).
 	SOURCEPAGE:p.108
 
 Pellet Grenade (Cold Iron)
@@ -4399,7 +4410,7 @@ Pellet Grenade (Cold Iron)
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Piercing.Bludgeoning.Fire.Splash.Alchemical.Consumable
-	SPROP:Lighting the fuse is a move action; 1d3 rounds later the grenade explodes, dealing 1d6 points of bludgeoning damage, 1d6 points of piercing damage and 1d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves).|PRERULE:1,DisplayWeaponDetails
+	SPROP:Lighting the fuse is a move action; 1d3 rounds later the grenade explodes, dealing 1d6 points of bludgeoning damage, 1d6 points of piercing damage and 1d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves).
 	SOURCEPAGE:p.108
 
 Pellet Grenade (Adamantine)
@@ -4411,7 +4422,7 @@ Pellet Grenade (Adamantine)
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Piercing.Bludgeoning.Fire.Splash.Alchemical.Consumable
-	SPROP:Lighting the fuse is a move action; 1d3 rounds later the grenade explodes, dealing 1d6 points of bludgeoning damage, 1d6 points of piercing damage and 1d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves).|PRERULE:1,DisplayWeaponDetails
+	SPROP:Lighting the fuse is a move action; 1d3 rounds later the grenade explodes, dealing 1d6 points of bludgeoning damage, 1d6 points of piercing damage and 1d6 points of fire damage in a 10-foot-radius burst (Reflex DC 15 halves).
 	SOURCEPAGE:p.108
 
 Shard Gel (Flask)
@@ -4424,7 +4435,7 @@ Shard Gel (Flask)
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Piercing.Splash.Alchemical.Consumable
-	SPROP:The target’s square and each square adjacent to it are covered in shards that function like caltrops for 5 rounds|PRERULE:1,DisplayWeaponDetails
+	SPROP:The target's square and each square adjacent to it are covered in shards that function like caltrops for 5 rounds
 	SOURCEPAGE:p.108
 
 Skyrocket (Firework)
@@ -4435,7 +4446,7 @@ Skyrocket (Firework)
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Fire.Alchemical.Consumable
-	SPROP:Takes flight one round after being lit at a speed of 90 ft for 1d6 rounds. Damage is a 10-ft-radius burst. Anyone who takes damage from the explosion is either blinded or deafened (50% chance of either) for 1 round.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Takes flight one round after being lit at a speed of 90 ft for 1d6 rounds. Damage is a 10-ft-radius burst. Anyone who takes damage from the explosion is either blinded or deafened (50% chance of either) for 1 round.
 	SOURCEPAGE:p.109
 
 Sneezing Powder
@@ -4445,7 +4456,7 @@ Sneezing Powder
 	WT:2
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Poison.Alchemical.Consumable
-	SPROP:Causes uncontrollable sneezing for 1d4+1 rounds. Anyone standing in the square of impact must succeed at a DC 12 Fortitude save to resist the powder, while those in adjacent squares must make DC 8 Fortitude saves. Affected creatures must make a DC 10 Fortitude save every round for the duration or be staggered until their next turn.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Causes uncontrollable sneezing for 1d4+1 rounds. Anyone standing in the square of impact must succeed at a DC 12 Fortitude save to resist the powder, while those in adjacent squares must make DC 8 Fortitude saves. Affected creatures must make a DC 10 Fortitude save every round for the duration or be staggered until their next turn.
 	SOURCEPAGE:p.109
 
 Star Candle (Firework)
@@ -4458,7 +4469,7 @@ Star Candle (Firework)
 	EQMOD:NONLETHAL
 	SIZE:M
 	TYPE:Weapon.Ranged.Fire.Alchemical.Consumable
-	SPROP:Launches every round for 4 rounds after being lit. Deals 1 point of nonlethal damage and 1 point of fire damage; on a critical hit, the target is also blinded for 1 round.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Launches every round for 4 rounds after being lit. Deals 1 point of nonlethal damage and 1 point of fire damage; on a critical hit, the target is also blinded for 1 round.
 	SOURCEPAGE:p.109
 
 Starfountain (Firework)
@@ -4469,7 +4480,7 @@ Starfountain (Firework)
 	WT:100
 	SIZE:M
 	TYPE:Weapon.Ranged.Fire.Alchemical.Consumable
-	SPROP:Indoors or in a closed area, the ricocheting fireworks deal damage each round in a 20-foot-radius spread (Reflex DC 15 halves). Creatures who fail their save are blinded for 1d4 rounds and deafened for 1 hour.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Indoors or in a closed area, the ricocheting fireworks deal damage each round in a 20-foot-radius spread (Reflex DC 15 halves). Creatures who fail their save are blinded for 1d4 rounds and deafened for 1 hour.
 	SOURCEPAGE:p.109
 
 Tangleburn Bag
@@ -4480,7 +4491,7 @@ Tangleburn Bag
 	WT:5
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Fire.Splash.Alchemical.Consumable
-	SPROP:An entangled creature takes a –2 penalty on attack rolls and a –4 penalty to Dexterity and must make a DC 15 Reflex save or be glued to the floor, unable to move. A direct hit on a creature deals 1d6 points of fire damage, and the creature must make a DC 20 Reflex save or catch on fire.|PRERULE:1,DisplayWeaponDetails
+	SPROP:An entangled creature takes a -2 penalty on attack rolls and a -4 penalty to Dexterity and must make a DC 15 Reflex save or be glued to the floor, unable to move. A direct hit on a creature deals 1d6 points of fire damage, and the creature must make a DC 20 Reflex save or catch on fire.
 	SOURCEPAGE:p.109
 
 Tanglefoot Bag.MOD
@@ -4490,7 +4501,7 @@ Tanglefoot Bag.MOD
 	WT:4
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Splash.Alchemical.Consumable
-	SPROP:An entangled creature takes a –2 penalty on attack rolls and a –4 penalty to Dexterity and must make a DC 15 Reflex save or be glued to the floor, unable to move|PRERULE:1,DisplayWeaponDetails
+	SPROP:An entangled creature takes a -2 penalty on attack rolls and a -4 penalty to Dexterity and must make a DC 15 Reflex save or be glued to the floor, unable to move
 	SOURCEPAGE:p.109
 
 Thunderstone.MOD
@@ -4500,7 +4511,7 @@ Thunderstone.MOD
 	WT:1
 	SIZE:M
 	TYPE:Weapon.Ranged.Thrown.Sonic.Splash.Alchemical.Consumable
-	SPROP:Each creature within a 10-foot-radius spread must make a DC 15 Fortitude save or be deafened for 1 hour.|PRERULE:1,DisplayWeaponDetails
+	SPROP:Each creature within a 10-foot-radius spread must make a DC 15 Fortitude save or be deafened for 1 hour.
 	SOURCEPAGE:p.109
 
 

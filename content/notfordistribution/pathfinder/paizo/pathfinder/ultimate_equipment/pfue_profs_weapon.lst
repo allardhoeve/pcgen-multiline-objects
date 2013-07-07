@@ -435,7 +435,7 @@ Shotgun
 
 ###Block: new weapon proficiency to properly implement the splash weapons
 Splash Weapon
-	TYPE:Simple.Ranged.Thrown.Splash
+	TYPE:Simple.Ranged.Splash
 
 
 
