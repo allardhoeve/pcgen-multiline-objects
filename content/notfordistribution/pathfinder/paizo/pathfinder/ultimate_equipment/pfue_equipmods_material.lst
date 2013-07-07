@@ -460,44 +460,25 @@ Wyroot (3 Life Points)
 
 
 
-###Block:  Holy Symbol Modifications
-Holy Symbol Compartment
-	KEY:HOLYCOMP
-	ITYPE:Container
-	TYPE:DivineFocus
-	SOURCEPAGE:p.66
-	COST:5
-	VISIBLE:QUALIFY
-	CONTAINS:1|Vial=1|Flask=1
-
-Holy Symbol Flask
-	KEY:HOLYFLASK
-	ITYPE:Container
-	TYPE:DivineFocus
-	SOURCEPAGE:p.66
-	COST:10
-	VISIBLE:QUALIFY
-	CONTAINS:1|Liquid=1|SpellComponent=1|Poison=1
-
-
-
-###Block: Clothing Options
+###Block: Clothing Option
 Tear-Away
 	KEY:TAWAY
 	TYPE:Clothing
 	SOURCEPAGE:p.91
 	COST:5
 	VISIBLE:QUALIFY
+	SPROP:The seams on this clothing are designed to break easily, making it a simple matter (a standard action) to remove these items and walk away with none the wiser.
 
 
 
-###Block: Lantern Modifications
+###Block: Lantern Modification
 Waterproof
 	KEY:WPROOF
 	TYPE:LightSource
 	SOURCEPAGE:p.75
 	COST:5
 	VISIBLE:QUALIFY
+	SPROP:This lantern treats severe winds as strong winds, windstorms as severe winds, and hurricanes as windstorms for the purpose of determining whether they extinguish its flame. It holds enough air to burn underwater for 5 rounds before going dark.
 
 #
 # End

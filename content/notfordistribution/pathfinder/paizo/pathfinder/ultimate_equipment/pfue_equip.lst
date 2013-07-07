@@ -31,7 +31,7 @@ Area Map
 	BONUS:SKILL|Survival (Navigate),Knowledge (Dungeoneering, Navigate)|1|TYPE=Circumstance
 	SPROP:A geographically relevant map grants a user a +1 circumstance bonus on Survival checks made to navigate in the wilderness. It also can be used to grant the same bonus on Knowledge (dungeoneering) checks made to navigate underground.
 
-Astrolabe
+Astrolabe.MOD
 	TYPE:Goods.General
 	COST:1000
 	WT:6
@@ -42,7 +42,7 @@ Backpack.MOD
 	OUTPUTNAME:Backpack, Common
 	SOURCEPAGE:p.58
 
-Backpack (Masterwork)
+Backpack (Masterwork).MOD
 	OUTPUTNAME:Backpack, Masterwork
 	TYPE:Goods.General.Container.Resizable
 	CONTAINS:UNLIM|Any
@@ -81,7 +81,7 @@ Banner (Detailed)
 	SOURCEPAGE:p.59
 	SPROP:A detailed banner with four or more field colors and a very complex insignia.
 
-Barbed Vest
+Barbed Vest.MOD
 	TYPE:Goods.Clothing.Resizable.Shirt
 	SOURCEPAGE:p.59
 	COST:10
@@ -116,7 +116,7 @@ Pouch (Belt).MOD
 	OUTPUTNAME:Belt Pouch
 	SOURCEPAGE:p.59
 
-Blanket
+Blanket.MOD
 	TYPE:Goods.General.Resizable
 	COST:0.5
 	WT:3
@@ -157,21 +157,21 @@ Lantern (Bullseye).MOD
 	OUTPUTNAME:Bullseye Lantern
 	SOURCEPAGE:p.60
 
-Buoy (Common)
+Buoy (Common).MOD
 	OUTPUTNAME:Bouy, Common
 	TYPE:Goods.General
 	COST:0.5
 	WT:16
 	SOURCEPAGE:p.60
 
-Buoy (Superior)
+Buoy (Superior).MOD
 	OUTPUTNAME:Buoy, Superior
 	TYPE:Goods.General
 	COST:10
 	WT:30
 	SOURCEPAGE:p.60
 
-Butterfly Net
+Butterfly Net.MOD
 	TYPE:Goods.General.Resizable
 	COST:5
 	WT:2
@@ -217,7 +217,7 @@ Canteen
 Canvas (Sq Yd).MOD
 	SOURCEPAGE:p.61
 
-Cauldron
+Cauldron.MOD
 	TYPE:Goods.Tools
 	COST:1
 	WT:5
@@ -237,7 +237,7 @@ Chain (10 Ft).MOD
 Chalk (1 Piece).MOD
 	SOURCEPAGE:p.62
 
-Chalkboard
+Chalkboard.MOD
 	TYPE:Goods.General
 	COST:1
 	WT:2
@@ -246,13 +246,13 @@ Chalkboard
 Chest (Small).MOD
 	SOURCEPAGE:p.62
 
-Chest (Medium)
+Chest (Medium).MOD
 	SOURCEPAGE:p.62
 
-Chest (Large)
+Chest (Large).MOD
 	SOURCEPAGE:p.62
 
-Chest (Huge)
+Chest (Huge).MOD
 	SOURCEPAGE:p.62
 
 Clay
@@ -291,7 +291,7 @@ Collapsible Plank
 	WT:10
 	SOURCEPAGE:p.62
 
-Compass
+Compass.MOD
 	TYPE:Goods.General
 	COST:10
 	WT:.5
@@ -320,7 +320,7 @@ Cypher Books
 	SOURCEPAGE:p.63
 	SPROP:A creature without access to the appropriate cypher book takes a –10 penalty on Linguistic checks made to decipher each page of a coded message.
 
-Drill
+Drill.MOD
 	TYPE:Goods.General
 	COST:.5
 	WT:1
@@ -333,7 +333,7 @@ Ear Trumpet
 	SOURCEPAGE:p.63
 	SPROP:By holding this specially crafted ear trumpet to your ear and placing the other end against a door or wall, you reduce the DC penalty for listening through a door or wall by 5.
 
-Earplugs
+Earplugs.MOD
 	TYPE:Goods.General
 	COST:0.03
 	SOURCEPAGE:p.63
@@ -524,14 +524,44 @@ Hollowed Pommel
 Holy Symbol (Wooden).MOD
 	SOURCEPAGE:p.66
 
+Holy Symbol (Wooden).COPY=Holy Symbol (Wooden/Compartment)
+	TYPE:Container
+	CONTAINS:1|Vial=1|Flask=1
+	COST:6
+
+Holy Symbol (Wooden).COPY=Holy Symbol (Wooden/Flask)
+	TYPE:Container
+	CONTAINS:1|Liquid=1|SpellComponent=1|Poison=1
+	COST:11
+
 Holy Symbol (Iron)
 	TYPE:Goods.Tools.DivineFocus
 	COST:5
 	WT:1
 	SOURCEPAGE:p.66
 
+Holy Symbol (Iron).COPY=Holy Symbol (Iron/Compartment)
+	TYPE:Container
+	CONTAINS:1|Vial=1|Flask=1
+	COST:10
+
+Holy Symbol (Iron).COPY=Holy Symbol (Iron/Flask)
+	TYPE:Container
+	CONTAINS:1|Liquid=1|SpellComponent=1|Poison=1
+	COST:15
+
 Holy Symbol (Silver).MOD
 	SOURCEPAGE:p.66
+
+Holy Symbol (Silver).COPY=Holy Symbol (Silver/Compartment)
+	TYPE:Container
+	CONTAINS:1|Vial=1|Flask=1
+	COST:30
+
+Holy Symbol (Silver).COPY=Holy Symbol (Silver/Flask)
+	TYPE:Container
+	CONTAINS:1|Liquid=1|SpellComponent=1|Poison=1
+	COST:35
 
 Holy Symbol (Gold)
 	TYPE:Goods.Tools.DivineFocus
@@ -539,11 +569,31 @@ Holy Symbol (Gold)
 	WT:1
 	SOURCEPAGE:p.66
 
+Holy Symbol (Gold).COPY=Holy Symbol (Gold/Compartment)
+	TYPE:Container
+	CONTAINS:1|Vial=1|Flask=1
+	COST:105
+
+Holy Symbol (Gold).COPY=Holy Symbol (Gold/Flask)
+	TYPE:Container
+	CONTAINS:1|Liquid=1|SpellComponent=1|Poison=1
+	COST:110
+
 Holy Symbol (Platinum)
 	TYPE:Goods.Tools.DivineFocus
 	COST:500
 	WT:1
 	SOURCEPAGE:p.66
+
+Holy Symbol (Platinum).COPY=Holy Symbol (Platinum/Compartment)
+	TYPE:Container
+	CONTAINS:1|Vial=1|Flask=1
+	COST:505
+
+Holy Symbol (Platinum).COPY=Holy Symbol (Platinum/Flask)
+	TYPE:Container
+	CONTAINS:1|Liquid=1|SpellComponent=1|Poison=1
+	COST:510
 
 Holy Symbol (Tattoo)
 	TYPE:Goods.Tools.DivineFocus
@@ -598,7 +648,7 @@ Ink (1 oz Vial).MOD
 Inkpen.MOD
 	SOURCEPAGE:p.67
 
-Iron Spike
+Iron Spike.MOD
 	TYPE:Goods.General
 	COST:0.05
 	WT:1
@@ -639,13 +689,13 @@ Lock (Good).MOD
 Lock (Superior).MOD
 	SOURCEPAGE:p.67
 
-Magnet
+Magnet.MOD
 	TYPE:Goods.General
 	COST:0.5
 	WT:0.5
 	SOURCEPAGE:p.67
 
-Magnifying Glass
+Magnifying Glass.MOD
 	TYPE:Goods.General
 	COST:100
 	SOURCEPAGE:p.67
@@ -654,28 +704,23 @@ Magnifying Glass
 Manacles (Medium).MOD
 	SOURCEPAGE:p.68
 
-Manacles (Small).MOD  
-	SOURCEPAGE:p.68      
+Manacles (Small).MOD
+	SOURCEPAGE:p.68
 
 Manacles (Large).MOD
 	SOURCEPAGE:p.68
-	         
 
 Manacles (Huge).MOD
 	SOURCEPAGE:p.68
-	         
 
 Manacles (Masterwork/Small).MOD
 	SOURCEPAGE:p.68
-	
 
 Manacles (Masterwork/Large).MOD
 	SOURCEPAGE:p.68
-	
 
 Manacles (Masterwork/Huge).MOD
 	SOURCEPAGE:p.68
-	 
 
 Manacles (Masterwork/Medium).MOD
 	SOURCEPAGE:p.68
@@ -704,7 +749,7 @@ Manacles (Mithral/Huge)
 	WT:32
 	SOURCEPAGE:p.68
 
-Marbles
+Marbles.MOD
 	TYPE:Goods.General
 	COST:0.1
 	WT:2
@@ -749,7 +794,7 @@ Perfume/Cologne
 	SOURCEPAGE:p.69
 	SPROP:Perfume or cologne may (at the GM’s discretion) provide a +1 circumstance bonus on several Charisma-based skill checks.
 
-Periscope
+Periscope.MOD
 	TYPE:Goods.General
 	COST:20
 	WT:4
@@ -761,7 +806,7 @@ Pitcher (Clay).MOD
 Piton.MOD
 	SOURCEPAGE:p.69
 
-Ring (Poison Pill)
+Ring (Poison Pill).MOD
 	OUTPUTNAME:Ring, Poison Pill
 	TYPE:Goods.General
 	COST:20
@@ -785,7 +830,6 @@ Portable Bridge
 
 Ram (Portable).MOD
 	OUTPUTNAME:Portable Ram
-	 
 	SOURCEPAGE:p.70
 
 Pot (Iron).MOD
@@ -797,7 +841,7 @@ Pot (Mithral)
 	WT:2
 	SOURCEPAGE:p.70
 
-Powder
+Powder.MOD
 	TYPE:Goods.General.Consumable
 	COST:0.01
 	WT:0.5
@@ -844,7 +888,7 @@ Pyrography Kit
 	WT:2
 	SOURCEPAGE:p.70
 
-Rice Paper (Sheet)
+Rice Paper (Sheet).MOD
 	OUTPUTNAME:Rice Paper, Sheet
 	TYPE:Goods.General.Writing.Documents
 	COST:0.05
@@ -857,7 +901,7 @@ Rope (Hemp/50 ft).MOD
 Sack.MOD
 	SOURCEPAGE:p.70
 
-Saw
+Saw.MOD
 	TYPE:Goods.General
 	COST:0.04
 	WT:2
@@ -886,7 +930,7 @@ Sentry Mannequin
 Sewing Needle.MOD
 	SOURCEPAGE:p.71
 
-Sextant
+Sextant.MOD
 	TYPE:Goods.Tools
 	COST:500
 	WT:2
@@ -916,7 +960,7 @@ Shovel (Folding)
 	WT:12
 	SOURCEPAGE:p.71
 
-Signal Horn
+Signal Horn.MOD
 	TYPE:Goods.General.Resizable
 	COST:1
 	WT:2
@@ -928,7 +972,7 @@ Signal Whistle.MOD
 Signet Ring.MOD
 	SOURCEPAGE:p.72
 
-Whistle (Silent)
+Whistle (Silent).MOD
 	OUTPUTNAME:Silent Whistle
 	SOURCEPAGE:p.72
 
@@ -957,7 +1001,7 @@ Skillet (Mithral)
 Sledge.MOD
 	SOURCEPAGE:p.72
 
-Smoked Goggles
+Smoked Goggles.MOD
 	TYPE:Goods.General
 	COST:10
 	WT:0
@@ -978,7 +1022,7 @@ Snorkel (Masterwork)
 Soap (per lb).MOD
 	SOURCEPAGE:p.72
 
-Rope (Spider Silk/50 ft.)
+Rope (Spider Silk/50 ft.).MOD
 	OUTPUTNAME:Rope, Spider Silk (50 ft.)
 	TYPE:Goods.General
 	COST:100
@@ -1011,7 +1055,7 @@ Stove Can
 	WT:1
 	SOURCEPAGE:p.73
 
-String (50 ft.)
+String (50 ft.).MOD
 	TYPE:Goods.General
 	COST:0.01
 	WT:0.5
@@ -1030,7 +1074,7 @@ Survival Kit (Masterwork)
 	SOURCEPAGE:p.73
 	BONUS:SKILL|Survival|2|TYPE=Circumstance
 
-Swarmsuit
+Swarmsuit.MOD
 	TYPE:Goods.General.Resizable
 	COST:20
 	WT:10
@@ -1048,21 +1092,21 @@ Tent.MOD
 	TYPE:Goods.General.Resizable
 	SOURCEPAGE:p.74
 
-Tent (Medium)
+Tent (Medium).MOD
 	OUTPUTNAME:Tent, Medium
 	TYPE:Goods.General.Resizable
 	COST:15
 	WT:30
 	SOURCEPAGE:p.74
 
-Tent (Large)
+Tent (Large).MOD
 	OUTPUTNAME:Tent, Large
 	TYPE:Goods.General.Resizable
 	COST:30
 	WT:40
 	SOURCEPAGE:p.74
 
-Tent (Pavilion)
+Tent (Pavilion).MOD
 	OUTPUTNAME:Tent, Pavilion
 	TYPE:Goods.General.Resizable
 	COST:100
@@ -1119,7 +1163,7 @@ Wax Key Blank
 	WT:0.5
 	SOURCEPAGE:p.75
 
-Weapon Cord
+Weapon Cord.MOD
 	TYPE:Goods.General
 	COST:0.1
 	WT:0
@@ -1271,8 +1315,7 @@ Druid's Kit
 	SOURCEPAGE:p.63
 	KIT:1|Druid Equipment
 
-Druid's Kit
-	 (Small)
+Druid's Kit (Small)
 	TYPE:Goods.Tools.Kits
 	COST:14
 	WT:33
@@ -1562,13 +1605,13 @@ Wizard’s Kit (Small)
 
 ###Block: Tools and Skill Kits
 # Equipment Name				Type			Cost		Weight	Source Page		Bonus to skill
-Abacus
+Abacus.MOD
 	TYPE:Goods.Tools
 	COST:2
 	WT:2
 	SOURCEPAGE:p.76
 
-Alchemist’s Lab.MOD
+Alchemist's Lab.MOD
 	SOURCEPAGE:p.76
 
 Alchemy Crafting Kit
@@ -1583,19 +1626,19 @@ Antidote Kit
 	WT:3
 	SOURCEPAGE:p.76
 
-Anvil (Blacksmith)
+Anvil (Blacksmith).MOD
 	TYPE:Goods.Tools
 	COST:5
 	WT:100
 	SOURCEPAGE:p.76
 
-Anvil (Farrier)
+Anvil (Farrier).MOD
 	TYPE:Goods.Tools
 	COST:5
 	WT:50
 	SOURCEPAGE:p.76
 
-Anvil (Goldsmith/Silversmith)
+Anvil (Goldsmith/Silversmith).MOD
 	TYPE:Goods.Tools
 	COST:5
 	WT:10
@@ -1748,82 +1791,82 @@ Artisan's Tools (Weaponsmithing).COPY=Artisan's Tools (Weaponsmithing/Masterwork
 	COST:55
 	BONUS:SKILL|Craft (Weaponsmithing)|2|TYPE=Circumstance
 
-Balancing Pole
+Balancing Pole.MOD
 	TYPE:Goods.Tools
 	COST:0.8
 	WT:12
 	SOURCEPAGE:p.76
 
-Bear Trap
+Bear Trap.MOD
 	TYPE:Goods.Tools
 	COST:2
 	WT:10
 	SOURCEPAGE:p.76
 
-Bellows
+Bellows.MOD
 	TYPE:Goods.Tools
 	COST:1
 	WT:3
 	SOURCEPAGE:p.76
 
-Climber’s Kit.MOD
+Climber's Kit.MOD
 	SOURCEPAGE:p.76
 
 Disguise Kit.MOD
 	SOURCEPAGE:p.76
 
-Footprint Book
+Footprint Book.MOD
 	TYPE:Goods.Tools.Book
 	COST:50
 	WT:3
 	SOURCEPAGE:p.76
 
-Forger’s Kit
+Forger's Kit
 	TYPE:Goods.Tools
 	COST:200
 	WT:6
 	SOURCEPAGE:p.77
 	BONUS:SKILL|Linguistics (Forgery)|2|TYPE=Circumstance
 
-Spellbook.COPY=Formula Book
+Spellbook (Wizard's/Blank).COPY=Formula Book (Alchemist's/Blank)
 
-Fortune-Teller's Deck (Common)
+Fortune-Teller's Deck (Common).MOD
 	TYPE:Goods.Tools
 	COST:1
 	WT:0.5
 	SOURCEPAGE:p.77
 
-Fortune-Teller's Deck (Quality)
+Fortune-Teller's Deck (Quality).MOD
 	TYPE:Goods.Tools
 	COST:25
 	WT:1
 	SOURCEPAGE:p.77
 	BONUS:SKILL|Profession (Fortune-Teller)|1|TYPE=Circumstance
 
-Fortune-Teller's Deck (Masterwork)
+Fortune-Teller's Deck (Masterwork).MOD
 	TYPE:Goods.Tools
 	COST:50
 	WT:1
 	SOURCEPAGE:p.77
 	BONUS:SKILL|Profession (Fortune-Teller)|2|TYPE=Circumstance
 
-Healer’s Kit.MOD
+Healer's Kit.MOD
 	SOURCEPAGE:p.77
 
-Juggler’s Kit
+Juggler's Kit
 	TYPE:Goods.Tools
 	COST:15
 	WT:10
 	SOURCEPAGE:p.77
 	BONUS:SKILL|Perform (Act),Perform (Comedy)|1|TYPE=Circumstance
 
-Leeching Kit
+Leeching Kit.MOD
 	TYPE:Goods.Tools
 	COST:5
 	WT:5
 	SOURCEPAGE:p.77
 
-Map Maker’s Kit
+Map Maker's Kit.MOD
 	TYPE:Goods.Tools
 	COST:10
 	WT:2
@@ -1833,7 +1876,7 @@ Map Maker’s Kit
 Scale (Merchant's).MOD
 	SOURCEPAGE:p.78
 
-Midwife’s Kit
+Midwife's Kit
 	COST:10
 	WT:2
 	SOURCEPAGE:p.78
@@ -1953,7 +1996,7 @@ Parasol (Umbrella)
 	WT:3
 	SOURCEPAGE:p.78
 
-Alchemist's Lab (Portable)
+Alchemist's Lab (Portable).MOD
 	OUTPUTNAME:Alchemist's Lab, Portable
 	TYPE:Goods.Tools.CraftToolsAlchemist
 	COST:75
@@ -1966,7 +2009,7 @@ Portable Altar
 	WT:40
 	SOURCEPAGE:p.79
 
-Portrait Book
+Portrait Book.MOD
 	TYPE:Goods.Tools.Book
 	COST:10
 	WT:3
@@ -1975,7 +2018,7 @@ Portrait Book
 Spell Component Pouch.MOD
 	SOURCEPAGE:p.79
 
-Spellbook.MOD
+Spellbook (Wizard's/Blank).MOD
 	SOURCEPAGE:p.79
 
 Stretcher
@@ -1984,17 +2027,17 @@ Stretcher
 	WT:10
 	SOURCEPAGE:p.79
 
-Surgeon’s Tools
+Surgeon's Tools
 	TYPE:Goods.Tools
 	COST:20
 	WT:5
 	SOURCEPAGE:p.79
 
-Surgeon’s Tools.COPY=Surgeon’s Tools (Small)
+Surgeon's Tools.COPY=Surgeon's Tools (Small)
 	WT:1.25
 	SOURCEPAGE:p.79
 
-Symptom Kit
+Symptom Kit.MOD
 	TYPE:Goods.Tools
 	COST:25
 	WT:5
@@ -2011,7 +2054,7 @@ Thieves' Tools.COPY=Thieves' Tools (Masterwork)
 
 Traveling Spellbook (Blank).COPY=Traveling Formula Book (Blank)
 
-Traveling Spellbook (Blank)
+Traveling Spellbook (Blank).MOD
 	TYPE:Goods.Tools.Book.Spellbook
 	NUMPAGES:50
 	PAGEUSAGE:max(SPELLLEVEL,1)
@@ -2019,7 +2062,7 @@ Traveling Spellbook (Blank)
 	WT:1
 	SOURCEPAGE:p.79
 
-Veterinarian’s Kit
+Veterinarian's Kit
 	TYPE=Goods.Tools
 	COST:10
 	WT:20
@@ -2184,7 +2227,7 @@ Owl (Large)
 	WT:3
 	SOURCEPAGE:p.84
 
-Ox
+Ox.MOD
 	TYPE:Goods.Trade.Pets.Transportation.Container
 	COST:15
 	WT:1500
@@ -2463,7 +2506,7 @@ Mule.MOD
 
 ###Block:  Mount Equipment
 # Barding is in armor .LST file
-Animal Harness
+Animal Harness.MOD
 	TYPE:Goods.Mount.Resizable
 	COST:2
 	WT:2
@@ -2484,7 +2527,7 @@ Cage (Diminutive)
 	WT:2
 	SOURCEPAGE:p.81
 
-Cage (Tiny)
+Cage (Tiny).MOD
 	TYPE:Goods.Mount.Pets
 	COST:2
 	WT:5
@@ -2502,13 +2545,13 @@ Cage (Medium)
 	WT:60
 	SOURCEPAGE:p.81
 
-Cage (Large)
+Cage (Large).MOD
 	TYPE:Goods.Mount.Pets
 	COST:30
 	WT:240
 	SOURCEPAGE:p.81
 
-Cage (Huge)
+Cage (Huge).MOD
 	TYPE:Goods.Mount.Pets
 	COST:60
 	WT:960
@@ -2574,7 +2617,7 @@ Chariot (Heavy)
 	CONTAINS:UNLIM|Any
 	SOURCEPAGE:p.86
 
-Dog Sled
+Dog Sled.MOD
 	TYPE:Goods.Transportation.Container
 	COST:20
 	CONTAINS:UNLIM|Any
@@ -2625,7 +2668,7 @@ Rowboat.MOD
 Sailing Ship.MOD
 	SOURCEPAGE:p.87
 
-Ship’s Boat
+Ship's Boat
 	TYPE:Goods.Transportation.Ships.Container
 	COST:500
 	CONTAINS:UNLIM|Any
@@ -2638,7 +2681,7 @@ Warship.MOD
 
 ###Block: Clothing
 # Equipment Name	Type							Contains			Cost		Weight	Source Page
-Outfit (Artisan’s).MOD
+Outfit (Artisan's).MOD
 	SOURCEPAGE:88
 
 Brooch 
@@ -2651,19 +2694,19 @@ Caul (Common)
 	COST:10
 	SOURCEPAGE:88
 
-Cleats
+Cleats.MOD
 	TYPE:Goods.Clothing.Resizable.Boot
 	COST:5
 	WT:2
 	SOURCEPAGE:88
 
-Vestments (Cleric’s).MOD
+Vestments (Cleric's).MOD
 	SOURCEPAGE:88
 
 Outfit (Cold-Weather).MOD
 	SOURCEPAGE:88
 
-Outfit (Courtier’s).MOD
+Outfit (Courtier's).MOD
 	SOURCEPAGE:88
 
 Decorative Trim (Common)
@@ -2677,10 +2720,10 @@ Diving Suit
 	WT:2
 	SOURCEPAGE:88
 
-Outfit (Entertainer’s).MOD
+Outfit (Entertainer's).MOD
 	SOURCEPAGE:88
 
-Outfit (Explorer’s).MOD
+Outfit (Explorer's).MOD
 	SOURCEPAGE:89
 
 Boots (Fire-Resistant)
@@ -2689,7 +2732,7 @@ Boots (Fire-Resistant)
 	WT:2
 	SOURCEPAGE:89
 
-Furs
+Furs.MOD
 	TYPE:Goods.Clothing.Resizable
 	COST:12
 	WT:5
@@ -2703,11 +2746,11 @@ Hat (Common)
 
 Hennin (Common)
 	TYPE:Goods.Clothing.Resizable.Headgear
-	Cost:10
+	COST:10
 	WT:1
 	SOURCEPAGE:89
 
-Outfit (Hot Weather)
+Outfit (Hot Weather).MOD
 	TYPE:Goods.Clothing.Resizable.Starting
 	COST:8
 	WT:4
@@ -2737,7 +2780,7 @@ Mask (Common)
 	WT:1
 	SOURCEPAGE:p.90
 
-Outfit (Monk’s).MOD
+Outfit (Monk's).MOD
 	SOURCEPAGE:p.90
 
 Monster Mask (Common)
@@ -2746,7 +2789,7 @@ Monster Mask (Common)
 	WT:1
 	SOURCEPAGE:p.90
 
-Outfit (Noble’s).MOD
+Outfit (Noble's).MOD
 	SOURCEPAGE:p.90
 
 Patchwork Cloak
@@ -2755,10 +2798,10 @@ Patchwork Cloak
 	WT:0.5
 	SOURCEPAGE:p.90
 
-Outfit (Peasant’s).MOD
+Outfit (Peasant's).MOD
 	SOURCEPAGE:p.90
 
-Outfit (Pickpocket’s)
+Outfit (Pickpocket's)
 	TYPE:Goods.Clothing.Resizable.Starting
 	COST:5
 	WT:3
@@ -2798,7 +2841,7 @@ Scarf (Common)
 	WT:0.5
 	SOURCEPAGE:p.91
 
-Outfit (Scholar’s).MOD
+Outfit (Scholar's).MOD
 	SOURCEPAGE:p.91
 
 Skis
@@ -2807,13 +2850,13 @@ Skis
 	WT:20
 	SOURCEPAGE:p.91
 
-Snowshoes
+Snowshoes.MOD
 	TYPE:Goods.Clothing.Resizable.Boot
 	COST:5
 	WT:4
 	SOURCEPAGE:p.91
 
-Uniform (Soldier’s)
+Uniform (Soldier's)
 	TYPE:Goods.Clothing.Resizable.Starting
 	COST:1
 	WT:5
@@ -2825,7 +2868,7 @@ Tabard
 	WT:1
 	SOURCEPAGE:p.91
 
-Outfit (Traveler’s).MOD
+Outfit (Traveler's).MOD
 	SOURCEPAGE:p.91
 
 Wig (Common)
@@ -2911,17 +2954,17 @@ Kite (Common)
 	WT:1
 	SOURCEPAGE:p.92
 
-Loaded Dice (Average)
+Loaded Dice (Average).MOD
 	TYPE:Goods.General
 	COST:10
 	SOURCEPAGE:p.92
 
-Loaded Dice (Superior)
+Loaded Dice (Superior).MOD
 	TYPE:Goods.General
 	COST:50
 	SOURCEPAGE:p.92
 
-Marked Cards
+Marked Cards.MOD
 	TYPE:Goods.General
 	COST:1
 	WT:1
@@ -2958,12 +3001,12 @@ Guinea Pig
 	COST:0.01
 	SOURCEPAGE:p.93
 
-Rat
+Rat.MOD
 	TYPE:Goods.Trade
 	COST:0.01
 	SOURCEPAGE:p.93
 
-Wheat(per lb).MOD
+Wheat (per lb).MOD
 	OUTPUTNAME:Wheat (per lb.)
 	TYPE:Goods.Trade
 	COST:0.01
@@ -3138,7 +3181,7 @@ Cinnamon (per lb).MOD
 	WT:1
 	SOURCEPAGE:p.93
 
-Cloves (per lb)
+Cloves (per lb).MOD
 	OUTPUTNAME:Cloves (per lb.)
 	TYPE:Goods.Trade
 	COST:1
@@ -3262,7 +3305,7 @@ Ermine Pelt
 	COST:4
 	SOURCEPAGE:p.93
 
-Linen (per sq yd).MOD
+Linen (sq yd).MOD
 	OUTPUTNAME:Linen (per sq. yd.)
 	TYPE:Goods.Trade
 	COST:4
@@ -3322,7 +3365,7 @@ Darkwood (per lb)
 	WT:1
 	SOURCEPAGE:p.93
 
-Silk (per sq yd).MOD
+Silk (sq yd).MOD
 	OUTPUTNAME:Silk (per sq. yd.)
 	TYPE:Goods.Trade
 	COST:10
@@ -3497,7 +3540,7 @@ Grog (Mug)
 
 Haggis
 	TYPE:Goods.Food
-	0.1
+	COST:0.1
 	WT:1.5
 	SOURCEPAGE:p.95
 
@@ -3741,13 +3784,13 @@ Hireling (Untrained).MOD
 Hireling (Trained).MOD
 	SOURCEPAGE:p.98
 
-Inn Stay (Poor/Per Day).MOD
+Inn (Poor/Per Day).MOD
 	SOURCEPAGE:p.98
 
-Inn Stay (Common/Per Day).MOD
+Inn (Common/Per Day).MOD
 	SOURCEPAGE:p.98
 
-Inn Stay (Good/Per Day).MOD
+Inn (Good/Per Day).MOD
 	SOURCEPAGE:p.98
 
 Inn Suite (Small)
@@ -3832,7 +3875,7 @@ Valet (Per Day)
 
 
 ###Block: Alchemical Remedies
-Alchemical Grease
+Alchemical Grease.MOD
 	TYPE:Goods.Alchemical.Consumable
 	COST:5
 	WT:1
@@ -3858,7 +3901,7 @@ Antitoxin
 	SOURCEPAGE:p.100
 	SPROP:gain a +5 alchemical bonus on Fortitude saving throws against poison for 1 hour.
 
-Bladeguard
+Bladeguard.MOD
 	TYPE:Goods.Alchemical.Consumable
 	COST:40
 	SOURCEPAGE:p.100
@@ -3888,13 +3931,13 @@ Padzahr
 	SOURCEPAGE:p.100
 	SPROP:Resting 1 hour after drinking a vial heals 1 point of CON damage.
 
-Smelling Salts
+Smelling Salts.MOD
 	TYPE:Goods.Alchemical.Consumable
 	COST:25
 	SOURCEPAGE:p.101
 	SPROP:Grants new saving throw against unconscious or staggerd conditions. If dying, become conscious and staggered but still make stabilization checks each round.
 
-Soothe Syrup
+Soothe Syrup.MOD
 	TYPE:Goods.Alchemical.Consumable
 	COST:25
 	WT:0.5
@@ -3971,7 +4014,7 @@ Blackfire Clay
 	WT:10
 	SOURCEPAGE:p.102
 
-Bloodblock
+Bloodblock.MOD
 	TYPE:Goods.Alchemical.Consumable
 	COST:25
 	SOURCEPAGE:p.102
@@ -3988,7 +4031,7 @@ Candlerod
 	WT:1
 	SOURCEPAGE:p.102
 
-Casting Plaster
+Casting Plaster.MOD
 	TYPE:Goods.Alchemical.Consumable
 	COST:0.5
 	WT:5
@@ -4048,7 +4091,7 @@ Invisible Ink (Superior)
 	COST:75
 	SOURCEPAGE:p.104
 
-Light Detector
+Light Detector.MOD
 	TYPE:Goods.Alchemical.Consumable
 	COST:1
 	SOURCEPAGE:p.104
@@ -4082,7 +4125,7 @@ Scent Cloak
 	WT:2
 	SOURCEPAGE:p.105
 
-Smoke Pellet
+Smoke Pellet.MOD
 	TYPE:Goods.Alchemical.Consumable
 	COST:25
 	SOURCEPAGE:p.105
@@ -4113,19 +4156,19 @@ Water Purification Sponge
 	WT:1
 	SOURCEPAGE:p.105
 
-Weapon Blanch (Adamantine)
+Weapon Blanch (Adamantine).MOD
 	TYPE:Goods.Alchemical.Consumable
 	COST:100
 	WT:0.5
 	SOURCEPAGE:p.105
 
-Weapon Blanch (Cold Iron)
+Weapon Blanch (Cold Iron).MOD
 	TYPE:Goods.Alchemical.Consumable
 	COST:20
 	WT:0.5
 	SOURCEPAGE:p.105
 
-Weapon Blanch (Silver)
+Weapon Blanch (Silver).MOD
 	TYPE:Goods.Alchemical.Consumable
 	COST:5
 	WT:0.5
@@ -4187,7 +4230,7 @@ Alchemist's Fire (Flask).MOD
 	SPROP:Every creature within 5 feet of the point where the flask hits takes 1 point of fire damage from the splash. On the round following a direct hit, the target takes an additional 1d6 points of damage.|PRERULE:1,DisplayWeaponDetails
 	SOURCEPAGE:p.106
 
-Alkali (Flask)
+Alkali (Flask).MOD
 	PROFICIENCY:WEAPON|Splash Weapon
 	COST:15
 	DAMAGE:1d6
@@ -4212,7 +4255,7 @@ Banshee Ballerina (Firework)
 Bottled Lightning
 	PROFICIENCY:WEAPON|Spells (Ray)
 	COST:40
-	DAMAGE:1d8/1
+	DAMAGE:1d8
 	CRITMULT:x2
 	CRITRANGE:1
 	RANGE:20
@@ -4245,7 +4288,7 @@ Flash Poweder
 Fuse Grenade
 	PROFICIENCY:WEAPON|Splash Weapon
 	COST:100
-	DAMAGE:2d6/1d6
+	DAMAGE:1d6
 	CRITMULT:x2
 	CRITRANGE:1
 	RANGE:10
@@ -4301,7 +4344,7 @@ Keros Oil (Flask)
 	SPROP:Taking a mouthful from the bottle is a standard action|PRERULE:1,DisplayWeaponDetails
 	SOURCEPAGE:p.108
 
-Liquid Ice (Flask)
+Liquid Ice (Flask).MOD
 	PROFICIENCY:WEAPON|Splash Weapon
 	COST:40
 	DAMAGE:1d6
@@ -4327,7 +4370,7 @@ Pellet Grenade (Iron)
 	PROFICIENCY:WEAPON|Splash Weapon
 	OUTPUTNAME:Pellet Grenade, Iron
 	COST:50
-	DAMAGE:1d6/1d6/1d6
+	DAMAGE:1d6
 	RANGE:10
 	WT:1
 	SIZE:M
@@ -4339,7 +4382,7 @@ Pellet Grenade (Silver)
 	PROFICIENCY:WEAPON|Splash Weapon
 	OUTPUTNAME:Pellet Grenade, Silver
 	COST:70
-	DAMAGE:1d6/1d6/1d6
+	DAMAGE:1d6
 	RANGE:10
 	WT:1
 	SIZE:M
@@ -4351,7 +4394,7 @@ Pellet Grenade (Cold Iron)
 	PROFICIENCY:WEAPON|Splash Weapon
 	OUTPUTNAME:Pellet Grenade, Cold Iron
 	COST:100
-	DAMAGE:1d6/1d6/1d6
+	DAMAGE:1d6
 	RANGE:10
 	WT:1
 	SIZE:M
@@ -4363,7 +4406,7 @@ Pellet Grenade (Adamantine)
 	PROFICIENCY:WEAPON|Splash Weapon
 	OUTPUTNAME:Pellet Grenade, Adamantine
 	COST:150
-	DAMAGE:1d6/1d6/1d6
+	DAMAGE:1d6
 	RANGE:10
 	WT:1
 	SIZE:M
@@ -4408,8 +4451,8 @@ Sneezing Powder
 Star Candle (Firework)
 	PROFICIENCY:WEAPON|Star Candle Firework
 	COST:5
-	DAMAGE:1/1
-	CRITMULT:Blindness
+	DAMAGE:1
+	CRITMULT:-
 	CRITRANGE:1
 	RANGE:5
 	EQMOD:NONLETHAL

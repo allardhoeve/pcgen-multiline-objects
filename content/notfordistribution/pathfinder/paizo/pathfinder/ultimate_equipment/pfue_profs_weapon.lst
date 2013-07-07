@@ -431,3 +431,14 @@ Shotgun
 	TYPE:Ranged.Piercing.Bludgeoning.Firearm.Shotgun.Scatter.TwoHandedFireArm
 	HANDS:2
 
+
+
+###Block: new weapon proficiency to properly implement the splash weapons
+Splash Weapon
+	TYPE:Simple.Ranged.Thrown.Splash
+
+
+
+###Block: placeholder proficiency to make sure weapon always has nonproficiency penalty
+Star Candle Firework
+	TYPE:Ranged

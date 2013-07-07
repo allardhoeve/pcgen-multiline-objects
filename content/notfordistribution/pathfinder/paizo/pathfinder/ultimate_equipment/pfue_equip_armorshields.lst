@@ -532,7 +532,7 @@ Barding (Parade)
 	TYPE:Armor.Light.Standard.Nonmetal.Barding.Mount
 	COST:50
 	WT:20
-	ACCHECK:1
+	ACCHECK:-1
 	EQMOD:LEATHER
 	MAXDEX:5
 	SOURCEPAGE:p.80
@@ -546,7 +546,7 @@ Barding (Wooden)
 	TYPE:Armor.Light.Standard.Nonmetal.Barding.Mount
 	COST:40
 	WT:25
-	ACCHECK:1
+	ACCHECK:-1
 	EQMOD:WOOD
 	MAXDEX:3
 	SOURCEPAGE:p.80
@@ -561,7 +561,7 @@ Barding (Lamellar/Leather)
 	TYPE:Armor.Light.Standard.Nonmetal.Barding.Mount
 	COST:120
 	WT:25
-	ACCHECK:2
+	ACCHECK:-2
 	EQMOD:LEATHER
 	MAXDEX:3
 	SOURCEPAGE:p.80
@@ -574,7 +574,7 @@ Barding (Armored Coat)
 	TYPE:Armor.Medium.Standard.Nonmetal.Barding.Mount
 	COST:100
 	WT:20
-	ACCHECK:2
+	ACCHECK:-2
 	EQMOD:CLOTH
 	MAXDEX:3
 	SOURCEPAGE:p.80
@@ -589,7 +589,7 @@ Barding (Do-maru)
 	TYPE:Armor.Medium.Standard.Nonmetal.Barding.Mount
 	COST:400
 	WT:30
-	ACCHECK:4
+	ACCHECK:-4
 	EQMOD:LEATHER
 	MAXDEX:4
 	SOURCEPAGE:p.80
@@ -601,7 +601,7 @@ Barding (Kikko)
 	TYPE:Armor.Medium.Standard.Nonmetal.Barding.Mount
 	COST:60
 	WT:25
-	ACCHECK:3
+	ACCHECK:-3
 	EQMOD:CLOTH
 	MAXDEX:4
 	SOURCEPAGE:p.80
@@ -613,7 +613,7 @@ Barding (Lemellar/Horn)
 	TYPE:Armor.Medium.Standard.Nonmetal.Barding.Mount
 	COST:200
 	WT:30
-	ACCHECK:4
+	ACCHECK:-4
 	EQMOD:HORN
 	MAXDEX:3
 	SOURCEPAGE:p.80
@@ -628,7 +628,7 @@ Barding (Agile Breastplate)
 	TYPE:Armor.Medium.Standard.Nonmetal.Barding.Mount
 	COST:800
 	WT:25
-	ACCHECK:4
+	ACCHECK:-4
 	EQMOD:STEEL
 	MAXDEX:3
 	SOURCEPAGE:p.80
@@ -646,7 +646,7 @@ Barding (Four-mirror)
 	TYPE:Armor.Medium.Standard.Nonmetal.Barding.Mount
 	COST:90
 	WT:45
-	ACCHECK:5
+	ACCHECK:-5
 	EQMOD:STEEL
 	MAXDEX:2
 	SOURCEPAGE:p.80
@@ -658,7 +658,7 @@ Barding (Lamellar/Steel)
 	TYPE:Armor.Medium.Standard.Nonmetal.Barding.Mount
 	COST:300
 	WT:35
-	ACCHECK:5
+	ACCHECK:-5
 	EQMOD:STEEL
 	MAXDEX:3
 	SOURCEPAGE:p.80
@@ -670,7 +670,7 @@ Barding (Mountain Pattern)
 	TYPE:Armor.Medium.Standard.Nonmetal.Barding.Mount
 	COST:500
 	WT:40
-	ACCHECK:4
+	ACCHECK:-4
 	EQMOD:STEEL
 	MAXDEX:3
 	SOURCEPAGE:p.80
@@ -686,7 +686,7 @@ Barding (Kusari Gusoku)
 	TYPE:Armor.Heavy.Standard.Nonmetal.Barding.Mount
 	COST:700
 	WT:45
-	ACCHECK:7
+	ACCHECK:-7
 	EQMOD:STEEL
 	MAXDEX:1
 	SOURCEPAGE:p.80
@@ -701,7 +701,7 @@ Barding (Lamellar/Iron)
 	TYPE:Armor.Heavy.Standard.Nonmetal.Barding.Mount
 	COST:400
 	WT:50
-	ACCHECK:7
+	ACCHECK:-7
 	EQMOD:STEEL
 	MAXDEX:0
 	SOURCEPAGE:p.80
@@ -713,7 +713,7 @@ Barding (Tatami-do)
 	TYPE:Armor.Heavy.Standard.Nonmetal.Barding.Mount
 	COST:2000
 	WT:45
-	ACCHECK:6
+	ACCHECK:-6
 	EQMOD:STEEL
 	MAXDEX:3
 	SOURCEPAGE:p.80
@@ -725,7 +725,7 @@ Barding (Agile Half-Plate)
 	TYPE:Armor.Heavy.Standard.Nonmetal.Barding.Mount
 	COST:1700
 	WT:55
-	ACCHECK:7
+	ACCHECK:-7
 	EQMOD:STEEL
 	MAXDEX:0
 	SOURCEPAGE:p.80
@@ -740,7 +740,7 @@ Barding (Lamellar/Stone)
 	TYPE:Armor.Heavy.Standard.Nonmetal.Barding.Mount
 	COST:1000
 	WT:45
-	ACCHECK:7
+	ACCHECK:-7
 	EQMOD:STONE
 	MAXDEX:0
 	SOURCEPAGE:p.80
@@ -752,7 +752,7 @@ Barding (O-yoroi)
 	TYPE:Armor.Heavy.Standard.Nonmetal.Barding.Mount
 	COST:3400
 	WT:45
-	ACCHECK:6
+	ACCHECK:-6
 	EQMOD:STEEL
 	MAXDEX:2
 	SOURCEPAGE:p.80
@@ -767,7 +767,7 @@ Barding (Stone Plate)
 	TYPE:Armor.Heavy.Standard.Nonmetal.Barding.Mount
 	COST:3600
 	WT:75
-	ACCHECK:6
+	ACCHECK:-6
 	EQMOD:STONE
 	MAXDEX:1
 	SOURCEPAGE:p.80
