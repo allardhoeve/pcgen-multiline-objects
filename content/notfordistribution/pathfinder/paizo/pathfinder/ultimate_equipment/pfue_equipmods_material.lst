@@ -307,7 +307,7 @@ Frost-Forged Steel
 
 Greenwood
 	ITYPE:Greenwood
-	KEY:GREEN
+	KEY:GRNWD
 	TYPE:BaseMaterial.MasterworkQuality.Ammunition.Weapon.Shield
 	REPLACES:MWORKA,MWORKW
 	SOURCEPAGE:50
