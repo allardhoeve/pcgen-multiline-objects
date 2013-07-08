@@ -987,6 +987,7 @@ Agile
 	TYPE:Extraordinary.ArchetypeAbility.SpecialQuality
 	DESC:A daredevil adds half her class level (minimum 1) on Acrobatics, Bluff, Climb, and Escape Artist checks. This ability replaces bardic knowledge.
 	SOURCEPAGE:p.32
+	BONUS:SKILL|Acrobatics,Bluff,Climb,Escape Artist|ceil(classlevel("Bard")/2)
 
 Bardic Performance
 	KEY:Bardic Performance ~ DAREDEVIL
