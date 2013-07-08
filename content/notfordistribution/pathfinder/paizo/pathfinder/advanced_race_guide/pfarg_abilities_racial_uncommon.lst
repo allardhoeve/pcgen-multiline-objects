@@ -1337,6 +1337,22 @@ Uncanny Resistance
 
 ###Block: Kitsune Tail
 # Ability Name	Unique Key					Category of Ability		Type						Required Ability										Required Feat		Innate Spells											Description												Source Page		Description of the Benefits
+Magical Tail
+	KEY:Magical Tail ~ Kitsune
+	CATEGORY:Special Ability
+	TYPE:General
+	SPELLS:Innate|TIMES=2|CASTERLEVEL=TL|Disguise Self,11+CHA|PREVARGTEQ:KitsuneTails,1
+	SPELLS:Innate|TIMES=2|CASTERLEVEL=TL|Charm Person,11+CHA|PREVARGTEQ:KitsuneTails,2
+	SPELLS:Innate|TIMES=2|CASTERLEVEL=TL|Misdirection,12+CHA|PREVARGTEQ:KitsuneTails,3
+	SPELLS:Innate|TIMES=2|CASTERLEVEL=TL|Invisibility,12+CHA|PREVARGTEQ:KitsuneTails,4
+	SPELLS:Innate|TIMES=2|CASTERLEVEL=TL|Suggestion,13+CHA|PREVARGTEQ:KitsuneTails,5
+	SPELLS:Innate|TIMES=2|CASTERLEVEL=TL|Displacement,13+CHA|PREVARGTEQ:KitsuneTails,6
+	SPELLS:Innate|TIMES=2|CASTERLEVEL=TL|Confusion,14+CHA|PREVARGTEQ:KitsuneTails,7
+	SPELLS:Innate|TIMES=2|CASTERLEVEL=TL|Dominate Person,15+CHA|PREVARGTEQ:KitsuneTails,8
+
+
+
+# Old Version
 Disguise Self
 	KEY:Disguise Self ~ Kitsune Tail
 	CATEGORY:Special Ability
