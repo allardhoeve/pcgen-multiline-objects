@@ -1,19 +1,28 @@
+# CVS $Revision: 14380 $ $Author: amaitland $ -- Fri Sep 28 11:29:47 2012 -- reformated by prettylst.pl v1.39 (build 16265)
+SOURCELONG:Ultimate Equipment
+	SOURCESHORT:PFUE
+	SOURCEWEB:http://paizo.com/products/btpy8tmc?Pathfinder-Roleplaying-Game-Ultimate-Equipment
+	SOURCEDATE:2012-08
+
+# Pathfinder RPG Entry by: Scott Meyer
+
+
 ###Block: Starting Kits (Buyable)
 
 
 STARTPACK:Alchemist Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Alchemy Crafting Kit
 	LOCATION:Not Carried
 	QTY:1
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -21,52 +30,60 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Barbarian Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Belt Pouch
@@ -74,48 +91,56 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Blanket
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Harpsichord)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -123,68 +148,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Harpsichord)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Piano)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -192,68 +225,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Piano)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Pipe Organ)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -261,68 +302,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Pipe Organ)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Bells)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -330,68 +379,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Bells)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Chimes)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -399,68 +456,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Chimes)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Drums)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -468,68 +533,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Drums)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Gong)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -537,68 +610,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Gong)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Fiddle)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -606,68 +687,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Fiddle)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Harp)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -675,68 +764,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Harp)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Lute)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -744,68 +841,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Lute)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Mandolin)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -813,68 +918,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Mandolin)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Flute)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -882,68 +995,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Flute)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Pan Pipes)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -951,68 +1072,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Pan Pipes)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Recorder)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1020,68 +1149,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Recorder)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Bard Equipment (Trumpet)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1089,72 +1226,80 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Journal
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Musical Instrument (Trumpet)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Cavalier Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Feed (Per Day)
 	LOCATION:Not Carried
 	QTY:5
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1166,19 +1311,19 @@ GEAR:Bit and Bridle
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Saddle (Riding)
@@ -1190,32 +1335,40 @@ GEAR:Saddlebags
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Cleric Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1223,64 +1376,72 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Candle
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:10
 
 GEAR:Holy Text (Cheap)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Spell Componenet Pouch
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Holy Symbol (Wooden)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 
 
 STARTPACK:Druid Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Feed (Per Day)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:5
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1288,60 +1449,68 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Blanket
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Holly and Mistletoe
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Spell Component Pouch
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Fighter Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1349,48 +1518,56 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Gunslinger Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1398,52 +1575,60 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Gunsmith's Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Powder Horn
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Inquisitor Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1451,68 +1636,76 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Candle
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:10
 
 GEAR:Holy Text (Cheap)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Manacles (Medium)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Spell Component Pouch
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Holy Symbol (Wooden)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 
 
 STARTPACK:Magus Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1520,56 +1713,64 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Spell Component Pouch
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Monk Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1577,40 +1778,48 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Blanket
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Oracle Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1618,52 +1827,60 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Candle
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:10
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Paladin Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1671,56 +1888,64 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Holy Text (Cheap)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Holy Symbol (Wooden)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 
 
 STARTPACK:Ranger Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1728,48 +1953,56 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Rogue Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1777,72 +2010,84 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Caltrops
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Chalk
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:10
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Grappling Hook
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mirror
-	LOCATION:Not Carried
+	LOCATION:Backpack
+	QTY:1
+
+GEAR:Piton
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Piton
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Thieves' Tools
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Sorceror Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1850,44 +2095,52 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Witch Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1895,64 +2148,72 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Candle
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:10
 
 GEAR:Chalk
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:10
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Spell Component Pouch
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Wizard Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -1960,53 +2221,61 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Inkpen
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Iron Pot
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Mess Kit
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Soap (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Spell Component Pouch
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Campsite Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Bedroll
 	LOCATION:Not Carried
@@ -2044,10 +2313,10 @@ GEAR:Rations (Trail/Per Day)
 
 
 STARTPACK:Chronicler Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Case (Map or Scroll)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Ink (1 oz Vial)
@@ -2073,14 +2342,14 @@ GEAR:Powder
 
 
 STARTPACK:Dragonslayer Equipment (Fire)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Potion of Cure Moderate Wounds
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Oil of Bless Weapon
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Longspear
@@ -2088,11 +2357,11 @@ GEAR:Longspear
 	QTY:1
 
 GEAR:Shield (Tower)
-	LOCATION:Secondary Hand
+	LOCATION:Shield
 	QTY:1
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Sack
@@ -2100,24 +2369,24 @@ GEAR:Sack
 	QTY:3
 
 GEAR:Sunrod
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Alchemist's Fire (Flask)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:5
 
 
 
 STARTPACK:Dragonslayer Equipment (Acid)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Potion of Cure Moderate Wounds
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Oil of Bless Weapon
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Longspear
@@ -2125,11 +2394,11 @@ GEAR:Longspear
 	QTY:1
 
 GEAR:Shield (Tower)
-	LOCATION:Secondary Hand
+	LOCATION:Shield
 	QTY:1
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Sack
@@ -2137,110 +2406,110 @@ GEAR:Sack
 	QTY:3
 
 GEAR:Sunrod
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Acid (Flask)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:5
 
 
 
 STARTPACK:Dungeoneering Equipment (Common)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Candle
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:2
 
 GEAR:Chalk
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Hammer
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Piton
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:4
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Lantern (Hooded)
-	LOCATIONA:Not Carried
+	LOCATIONA:Backpack
 	QTY:1
 
 GEAR:Oil (1 Pint Flask)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:5
 
 GEAR:Sack
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:2
 
 GEAR:Torch
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:2
 
 GEAR:Tindertwig
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:4
 
 
 
 STARTPACK:Dungeoneering Equipment (Deluxe)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Candle
 	LOCATION:Not Carried
 	QTY:2
 
 GEAR:Chalk
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Hammer
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Piton
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:4
 
 GEAR:Rope (Hemp/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Sack
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:2
 
 GEAR:Sunrod
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:3
 
 GEAR:Tindertwig
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:4
 
 GEAR:Everburning Torch
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Pathfinder Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Backpack
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Bedroll
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Belt Pouch
@@ -2248,49 +2517,53 @@ GEAR:Belt Pouch
 	QTY:1
 
 GEAR:Mug or Tankard (Clay)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Dagger
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Fishhook
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:2
 
 GEAR:Flint and Steel
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Sewing Needle
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Signal Whistle
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:String (50 ft.)
-	LOCATION:Not Carried
+	LOCATION:Backpack
+	QTY:1
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Rations (Trail/Per Day)
 	LOCATION:Not Carried
-	QTY:5
+	QTY:4
 
 GEAR:Waterskin
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Whetstone
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
 
 STARTPACK:Riding Equipment (Common)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Bit and Bridle
 	LOCATION:Not Carried
@@ -2315,7 +2588,7 @@ GEAR:Feed (Per Day)
 
 
 STARTPACK:Riding Equipment (Exotic)
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Bit and Bridle
 	LOCATION:Not Carried
@@ -2340,92 +2613,96 @@ GEAR:Feed (Per Day)
 
 
 STARTPACK:Spelunker Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Lantern (Hooded)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Oil (1 Pint Flask)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:4
 
 GEAR:Hammer
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Piton
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:8
 
 GEAR:Rope (Silk/50 ft)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:2
 
 GEAR:Grappling Hook
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Climber's Kit
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 
 
 STARTPACK:Troll Slayer Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Alchemist's Fire (Flask)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Acid (Flask)
-	LOCATION:Not Carried
+	LOCATION:Backpack
+	QTY:1
+
+GEAR:Torch
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Torch
 	LOCATION:Not Carried
-	QTY:10
+	QTY:9
 
 GEAR:Tindertwig
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Oil (1 Pint Flask)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:5
 
 
 
 STARTPACK:Undead Slayer Equipment
-	EQUIPBUY:0
+	EQUIPBUY:100
 
 GEAR:Holy Symbol (Wooden)
-	LOCATION:Not Carried
+	LOCATION:Equipped
 	QTY:1
 
 GEAR:Garlic (per lb)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Hammer
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Holy Water (Flask)
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:2
 
 GEAR:Sunrod
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Potion of Lesser Restoration
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 GEAR:Potion of Protection from Evil
-	LOCATION:Not Carried
+	LOCATION:Backpack
 	QTY:1
 
 
