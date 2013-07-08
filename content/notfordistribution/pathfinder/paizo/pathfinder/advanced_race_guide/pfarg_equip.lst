@@ -151,7 +151,7 @@ Dilettante's Outfit
 	TYPE:Goods.Clothing.Resizable.Racial.Gnome
 	COST:20
 	WT:8
-	SIZE:Small
+	SIZE:S
 	SOURCEPAGE:p.36
 	BONUS:SKILL|Sleight of Hand (Conceal Small Object)|2|TYPE=Circumstance
 	SPROP:Grants a +2 circumstance bonus on Sleight of Hand checks made to conceal a small object on the body.
@@ -333,7 +333,7 @@ Billow Cape
 	TYPE:Goods.Clothing.Racial.Halfling
 	COST:100
 	WT:4
-	SIZE:Small
+	SIZE:S
 	SOURCEPAGE:p.65
 	SPROP:When falling, a creature wearing a billow cape is treated as if he had deliberately jumped from the height. In areas of strong wind, the wearer treats all terrain as difficult terrain and takes a 4 penalty on Fly checks.
 
@@ -708,7 +708,7 @@ Goggles (Gloom Sight)
 	TYPE:Goods.Alchemical.Eyegear.Racial.Fetchling
 	COST:200
 	SOURCEPAGE:p.111
-	ABILITY:Special Ability|Light Sensitivity|PRERACE:1,Fetchling|!PREABILITY:1,CATEGORY=Special Ability,Gloom Sight
+	ABILITY:Special Ability|AUTOMATIC|Light Sensitivity|PRERACE:1,Fetchling|!PREABILITY:1,CATEGORY=Special Ability,Gloom Sight
 	BONUS:VISION|Darkvision|30|PRERACE:1,Fetchling|!PREABILITY:1,CATEGORY=Special Ability,Gloom Sight
 	SPROP:Gloom sight goggles interact with the unique eyes of fetchlings in such a way that when the goggles are worn over both eyes, they expand the range of a fetchling's darkvision to 90 feet, but the fetchling also gains the light sensitivity weakness.
 	OUTPUTNAME:Goggles, Gloom Sight
@@ -1385,6 +1385,7 @@ Slippers of the Triton
 	MOVE:Swim,30|!PREMOVE:1,Swim=1
 	SOURCEPAGE:p.178
 	BONUS:MOVEADD|TYPE.Swim|10|TYPE=Enhancement|PREMOVE:1,Swim=1
+	ABILITY:Special Ability|AUTOMATIC|Water Breathing
 	SPROP:Grant water breathing, swim speed of 30 ft or +10 foot enhancement if wearer already has a swim speed.
 
 
@@ -1430,7 +1431,7 @@ Black Spider Marsh Poison
 	COST:800
 	SOURCEPAGE:p.191
 	SPROP:Injury; Fort DC 14; Freq 1 rnd (6); Cure 2 consecutive saves;
-	Effect 1d4 Dex and confused for 1 rnd:
+	EFFECT:1d4 Dex and confused for 1 rnd:
 
 Bubble Vault
 	TYPE:Magic.Wondrous
@@ -1525,7 +1526,7 @@ Incense of Many Fates
 	WT:1
 	SOURCEPAGE:p.199
 	SPROP:Functions like Legend Lore, but only works if the subject is at hand. Takes 1 hour or 24 hours for non-Samsarans
-	TYPE.Magic.Wondrous.Consumable.Racial.Samsaran:
+	TYPE:Magic.Wondrous.Consumable.Racial.Samsaran:
 
 
 
@@ -1536,7 +1537,7 @@ Snag Net
 	TYPE:Weapon.Exotic.Ranged.Standard.Thrown
 	COST:30
 	WT:10
-	EQMOD:
+	EQMOD:CLOTH
 	RANGE:10
 	SIZE:M
 	SOURCEPAGE:p.201
@@ -1571,10 +1572,10 @@ Jolting Dart
 	WT:.5
 	CRITMULT:x2
 	CRITRANGE:1
-	DAMAGE:1d3+1d6 Electricity
+	DAMAGE:1d3
 	SIZE:S
 	SOURCEPAGE:p.205
-	SPROP:|PRERULE:1,DisplayWeaponDetails
+	SPROP:1d6 Electricity
 
 
 

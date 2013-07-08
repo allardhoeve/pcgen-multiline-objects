@@ -140,7 +140,7 @@ Shaitan Binder Eidolon (Biped)
 	FACE:5,5
 	REACH:5
 	VISION:Darkvision (60')
-	BONUS:ABILITYPOOL|ShaitanBinderEidolon Biped Evolution|5
+	BONUS:ABILITYPOOL|Eidolon Biped Evolution|5
 	BONUS:COMBAT|AC|2|TYPE=NaturalArmor
 	BONUS:STAT|%LIST|2
 	BONUS:STAT|STR|6
@@ -164,7 +164,7 @@ Shaitan Binder Eidolon (Quadruped)
 	FACE:5,5
 	REACH:5
 	VISION:Darkvision (60')
-	BONUS:ABILITYPOOL|ShaitanBinderEidolon Quadruped Evolution|5
+	BONUS:ABILITYPOOL|Eidolon Quadruped Evolution|5
 	BONUS:COMBAT|AC|2|TYPE=NaturalArmor
 	BONUS:STAT|STR|4
 	BONUS:STAT|DEX|4
@@ -186,7 +186,7 @@ Shaitan Binder Eidolon (Serpentine)
 	FACE:5,5
 	REACH:5
 	VISION:Darkvision (60')
-	BONUS:ABILITYPOOL|ShaitanBinderEidolon Serpentine Evolution|5
+	BONUS:ABILITYPOOL|Eidolon Serpentine Evolution|5
 	BONUS:COMBAT|AC|2|TYPE=NaturalArmor
 	BONUS:STAT|STR|2
 	BONUS:STAT|DEX|6

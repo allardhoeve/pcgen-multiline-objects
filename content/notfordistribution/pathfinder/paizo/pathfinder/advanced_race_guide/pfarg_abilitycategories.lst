@@ -87,14 +87,24 @@ ABILITYCATEGORY:Bond of the Land Terrain
 	PLURAL:Bond of the Land Terrains
 	DISPLAYLOCATION:Racial Abilities
 
-ABILITYCATEGORY:Adoptive Parentage
+ABILITYCATEGORY:Adoptive Parentage Race
 	VISIBLE:QUALIFY
 	EDITABLE:YES
 	EDITPOOL:NO
 	FRACTIONALPOOL:NO
 	CATEGORY:Special Ability
 	TYPE:AdoptiveParentageRace
-	PLURAL:Adoptive Parentages
+	PLURAL:Adoptive Parentage Races
+	DISPLAYLOCATION:Racial Abilities
+
+ABILITYCATEGORY:Heart Ability
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:HeartAbility
+	PLURAL:Heart Abilities
 	DISPLAYLOCATION:Racial Abilities
 
 ABILITYCATEGORY:Multitalented Mastery Bonus
@@ -113,6 +123,26 @@ ABILITYCATEGORY:Multitalented Mastery Bonus
 
 ###Block: Featured Races ability categories
 # Ability Category				Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object		Plural description for UI	Display Location
+ABILITYCATEGORY:Angelic Flesh Option
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:AngelicFleshOption
+	PLURAL:Angelic Flesh Options
+	DISPLAYLOCATION:Racial Abilities
+
+ABILITYCATEGORY:Heavenly Radiance Option
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:HeavenlyRadianceOption
+	PLURAL:Heavenly Radiance Options
+	DISPLAYLOCATION:Racial Abilities
+
 ABILITYCATEGORY:Catfolk Racial Trait
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -121,6 +151,26 @@ ABILITYCATEGORY:Catfolk Racial Trait
 	CATEGORY:Special Ability
 	TYPE:CatfolkRacialTrait
 	PLURAL:Catfolk Racial Traits
+	DISPLAYLOCATION:Racial Abilities
+
+ABILITYCATEGORY:Catfolk Exemplar Option
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:CatfolkExemplarOption
+	PLURAL:Catfolk Exemplar Options
+	DISPLAYLOCATION:Racial Abilities
+
+ABILITYCATEGORY:Blood Drinker Type
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:BloodDrinkerType
+	PLURAL:Blood Drinker Types
 	DISPLAYLOCATION:Racial Abilities
 
 ABILITYCATEGORY:Ratfolk Racial Trait
@@ -132,6 +182,28 @@ ABILITYCATEGORY:Ratfolk Racial Trait
 	TYPE:RatfolkRacialTrait
 	PLURAL:Ratfolk Racial Traits
 	DISPLAYLOCATION:Racial Abilities
+
+ABILITYCATEGORY:Kobold Dragon Scale Color
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:KoboldDragonScaleColor
+	PLURAL:Kobold Dragon Scale Colors
+	DISPLAYLOCATION:Racial Abilities
+
+ABILITYCATEGORY:Orc Weapon Expertise
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:OrcWeaponExpertise
+	PLURAL:Orc Weapon Expertise
+	DISPLAYLOCATION:Racial Abilities
+
+
 
 
 
@@ -145,6 +217,16 @@ ABILITYCATEGORY:Changeling Racial Trait
 	CATEGORY:Special Ability
 	TYPE:ChangelingRacialTrait
 	PLURAL:Changeling Racial Traits
+	DISPLAYLOCATION:Racial Abilities
+
+ABILITYCATEGORY:Mother's Gift Option
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:MothersGiftOption
+	PLURAL:Mother's Gift Options
 	DISPLAYLOCATION:Racial Abilities
 
 ABILITYCATEGORY:Gillman Racial Trait
@@ -271,14 +353,64 @@ ABILITYCATEGORY:Runeforger Option
 	PLURAL:Runeforger Options
 	DISPLAYLOCATION:Class Abilities
 
-ABILITYCATEGORY:Native Cunning Option
+ABILITYCATEGORY:Wave Warden Bonus Feat
 	VISIBLE:QUALIFY
 	EDITABLE:YES
 	EDITPOOL:NO
 	FRACTIONALPOOL:NO
 	CATEGORY:Special Ability
-	TYPE:NativeCunningOption
-	PLURAL:Native Cunning Options
+	TYPE:WaveWardenBonusFeat
+	PLURAL:Wave Warden Bonus Feats
+	DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Augmented Form Selection
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:AugmentedFormSelection
+	PLURAL:Augmented Form Selections
+	DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Experimental Gunsmith Innovation
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:ExperimentalGunsmithInnovation
+	PLURAL:Experimental Gunsmith Innovations
+	DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Kobold Bloodline Feat
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:KoboldBloodlineFeat
+	PLURAL:Kobold Bloodline Feats
+	DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Spell Binder Bonded Spell
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:SpellBinderBondedSpell
+	PLURAL:Spell Binder Bonded Spells
+	DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Swordmaster Trance
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:SwordmasterTrance
+	PLURAL:Swordmaster Trances
 	DISPLAYLOCATION:Class Abilities
 
 

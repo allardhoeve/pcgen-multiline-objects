@@ -629,7 +629,7 @@ Dragon-Scaled
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dragon-Scaled ~ Kobold],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.KoboldArmor]
 	DEFINE:AcidResistanceBonus|5
 	DESC:Some kobolds are hatched with scales of such vivid color that their connection to a particular sort of chromatic dragon seems undeniable. Whether this coloration is just a quirk of a stray egg or a trait shared by all the members of a tribe, these kobolds gain a resistance that makes them especially suited to work alongside dragons matching the color of the kobold's scales.
-	BONUS:ABILITYPOOL|DragonScaleColor|1
+	BONUS:ABILITYPOOL|KoboldDragonScaleColor|1
 	COST:0
 	SOURCEPAGE:p.132
 
@@ -1306,8 +1306,8 @@ Enhanced Senses
 	TYPE:CatfolkExemplarOption.Extraordinary
 	PRERACE:1,Catfolk
 	DESC:Your feline traits are more defined and prominent than those of other members of your race.
-	ABILITY:Special Ability|Scent|[!PREABILITY:1,CATEGORY=Special Ability,Scent]
-	ABILITY:Special Ability|Low-Light Vision|[!PREABILITY:1,CATEGORY=Special Ability,Low-Light Vision]
+	ABILITY:Special Ability|AUTOMATIC|Scent|[!PREABILITY:1,CATEGORY=Special Ability,Scent]
+	ABILITY:Special Ability|AUTOMATIC|Low-Light Vision|[!PREABILITY:1,CATEGORY=Special Ability,Low-Light Vision]
 	SOURCEPAGE:p.93
 	BENEFIT:If you have low-light vision, you gain the scent catfolk racial trait. If you have the scent racial trait, you gain low-light vision.
 
@@ -1326,8 +1326,8 @@ Sharp Claws
 	TYPE:CatfolkExemplarOption.Extraordinary
 	PRERACE:1,Catfolk
 	DESC:Your feline traits are more defined and prominent than those of other members of your race.
-	ABILITY:Special Ability|Cat's Claws ~ Catfolk|[!PREABILITY:1,CATEGORY=Special Ability,Cat's Claws ~ Catfolk]|PREFEAT:1,[Aspect of the Beast(Claws of the Beast)]
-	BONUS:WEAPONPROF|Claws|DAMAGESIZE|1|PREMULT:1,PREABILITY:1,CATEGORY=Special Ability,Cat's Claws ~ Catfolk,PREFEAT:1,Aspect of the Beast(Claws of the Beast)
+	ABILITY:Special Ability|AUTOMATIC|Cat's Claws ~ Catfolk|[!PREABILITY:1,CATEGORY=Special Ability,Cat's Claws ~ Catfolk]|PREFEAT:1,[Aspect of the Beast(Claws of the Beast)]
+	BONUS:WEAPONPROF|Claws|DAMAGESIZE|1|PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Cat's Claws ~ Catfolk],[PREFEAT:1,Aspect of the Beast(Claws of the Beast)]
 	SOURCEPAGE:p.93
 	BENEFIT:If you do not have the cat's claws racial trait or the claws of the beast manifestation from the Aspect of the Beast feat , you gain the cat's claws racial trait. If you have either the cat's claws racial trait or the claws of the beast manifestation, your claw damage increases to 1d6.
 
@@ -1445,7 +1445,7 @@ CATEGORY=Special Ability|Spell-Like Abilities ~ Drow.MOD
 
 
 
-###Block: Dragon Scaled Colors
+###Block: Kobold Dragon Scaled Colors
 # Ability Name	Unique Key				Category of Ability		Type					Required Race	Description										Source Page		Description of the Benefits
 Black
 	KEY:Black ~ Dragon Scaled

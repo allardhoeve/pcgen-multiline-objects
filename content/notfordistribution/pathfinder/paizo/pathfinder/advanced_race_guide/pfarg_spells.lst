@@ -20,7 +20,7 @@ Sow Thought
 	DURATION:Permanent
 	SAVEINFO:Will negates
 	SPELLRES:Yes
-	DESC:You plant an idea, concept, or suspicion in the mind of the subject. The target genuinely believes that the idea is his own, but is not required to act upon it. If the idea is contrary to the target's normal thoughts (such as making a paladin think, I should murder my friends) the target may suspect mind-altering magic is at play. The idea must be fairly clear, enough so that it can be conveyed in one or two sentences. You do not need to share a common language for the spell to succeed, but without a common language you can only sow the most basic rudimentary ideas.
+	DESC:You plant an idea, concept, or suspicion in the mind of the subject. The target genuinely believes that the idea is his own, but is not required to act upon it. If the idea is contrary to the target's normal thoughts (such as making a paladin think, "I should murder my friends") the target may suspect mind-altering magic is at play. The idea must be fairly clear, enough so that it can be conveyed in one or two sentences. You do not need to share a common language for the spell to succeed, but without a common language you can only sow the most basic rudimentary ideas.
 	SOURCEPAGE:p.185
 
 
@@ -53,7 +53,7 @@ Ironbeard
 	DURATION:(CASTERLEVEL) minutes
 	SAVEINFO:Fortitude negates (harmless)
 	SPELLRES:Yes (harmless)
-	DESC:This spell causes a brushy beard of stiff iron to erupt from the face of a willing target. The ironbeard grants a +1 armor bonus to AC, and this bonus stacks with any armor worn by the creature. The ironbeard may also be used as a weapon equivalent to cold iron armor spikes. The ironbeard makes it difficult to speak, so any spellcasting with a verbal component has a 20% spell failure chance.
+	DESC:This spell causes a brushy beard of stiff iron to erupt from the face of a willing target. The ironbeard grants a +1 armor bonus to AC, and this bonus stacks with any armor worn by the creature. The ironbeard may also be used as a weapon equivalent to cold iron armor spikes. The ironbeard makes it difficult to speak, so any spellcasting with a verbal component has a 20%% spell failure chance.
 	SOURCEPAGE:p.19
 	TEMPBONUS:ANYPC|COMBAT|AC|1|TYPE=Armor.STACK
 	TEMPBONUS:ANYPC|MISC|SPELLFAILURE|20
@@ -153,7 +153,7 @@ Jitterbugs
 	DURATION:(CASTERLEVEL) rounds
 	SAVEINFO:Will negates
 	SPELLRES:yes
-	DESC:You cause the target to perceive itself as being covered in creeping, crawling, stinging bugs. This causes the target to become jittery and unable to stay still, forcing it to constantly move and twitch. The target takes a 4 penalty on all Dexterity checks and Dexterity-based skill checks, and cannot take the delay, ready, or total defense actions.
+	DESC:You cause the target to perceive itself as being covered in creeping, crawling, stinging bugs. This causes the target to become jittery and unable to stay still, forcing it to constantly move and twitch. The target takes a -4 penalty on all Dexterity checks and Dexterity-based skill checks, and cannot take the delay, ready, or total defense actions.
 	SOURCEPAGE:p.39
 
 Major Phantom Object
@@ -242,7 +242,6 @@ Paragon Surge
 	CLASSES:Alchemist,Cleric,Sorceror,Wizard,Witch=3|Magus,Paladin=4
 	SCHOOL:Transmutation
 	SUBSCHOOL:Polymorph
-	DESCRIPTOR:
 	TYPE:Arcane.Divine
 	COMPS:V, S
 	CASTTIME:1 standard action
@@ -287,7 +286,7 @@ Urban Grace
 ###Block: Half-Orc Spells
 # Spell Name		Classes of caster									School			Sub-School			Spell Descriptors			Type				Components		Casting Time			Range			Target Area or Effect					Duration								Save Info			Spell Resistance	Description																																																																																																																																				Source Page		Temporary Bonus
 Battle Trance
-	CLASSES:Alchemist,Antipaladin,Inquisitor,Ranger,=3|Cleric,Witch=4
+	CLASSES:Alchemist,Antipaladin,Inquisitor,Ranger=3|Cleric,Witch=4
 	SCHOOL:Enchantment
 	SUBSCHOOL:Compulsion
 	DESCRIPTOR:Mind-Affecting
@@ -299,7 +298,7 @@ Battle Trance
 	DURATION:(CASTERLEVEL) minutes
 	SAVEINFO:Will Negates
 	SPELLRES:Yes
-	DESC:You are transformed into a single-minded force of destruction. You gain the ferocity monster special ability, a number of temporary hit points equal to 1d6 + your caster level (maximum +10), and a +4 morale bonus on saving throws against mind-affecting effects. You cannot use the withdraw action or willingly move away from a creature that has attacked you. When you use this spell, you immediately take 4 points of Intelligence damage. You must make a DC 20 concentration check to cast spells, and all other concentration checks to cast spells have a 5 penalty.
+	DESC:You are transformed into a single-minded force of destruction. You gain the ferocity monster special ability, a number of temporary hit points equal to 1d6 + your caster level (maximum +10), and a +4 morale bonus on saving throws against mind-affecting effects. You cannot use the withdraw action or willingly move away from a creature that has attacked you. When you use this spell, you immediately take 4 points of Intelligence damage. You must make a DC 20 concentration check to cast spells, and all other concentration checks to cast spells have a -5 penalty.
 	SOURCEPAGE:p.58
 
 Ghost Wolf
@@ -359,7 +358,7 @@ Savage Maw
 	DURATION:(CASTERLEVEL) minutes
 	SAVEINFO:None
 	SPELLRES:No
-	DESC:Your teeth extend and sharpen, transforming your mouth into a maw of razor-sharp fangs. You gain a bite attack that deals 1d4 points of damage plus your Strength modifier. If you confirm a critical hit with this attack, it also deals 1 point of bleed damage. If you already have a bite attack, your bite deals 2 points of bleed damage on a critical hit. You are considered proficient with this attack. If used as part of a full-attack action, the bite is considered a secondary attack, is made at your full base attack bonus 5, and adds half your Strength modifier to its damage. You can end this spell before its normal duration by making a bestial roar as a swift action. When you do, you can make an Intimidate check to demoralize all foes within a 30-foot radius that can hear the roar.
+	DESC:Your teeth extend and sharpen, transforming your mouth into a maw of razor-sharp fangs. You gain a bite attack that deals 1d4 points of damage plus your Strength modifier. If you confirm a critical hit with this attack, it also deals 1 point of bleed damage. If you already have a bite attack, your bite deals 2 points of bleed damage on a critical hit. You are considered proficient with this attack. If used as part of a full-attack action, the bite is considered a secondary attack, is made at your full base attack bonus -5, and adds half your Strength modifier to its damage. You can end this spell before its normal duration by making a bestial roar as a swift action. When you do, you can make an Intimidate check to demoralize all foes within a 30-foot radius that can hear the roar.
 	SOURCEPAGE:p.59
 
 
@@ -382,7 +381,8 @@ Blessing of Luck and Resolve
 	DESC:A favored blessing of halfling clerics, this spell grants its target a +2 morale bonus on saving throws against fear effects. If the target has the fearless racial trait, it is immune to fear instead. If the target fails a saving throw against fear, it can end the spell as an immediate action to reroll the save with a +4 morale bonus, and must take the new result, even if it is worse.
 	SOURCEPAGE:p.68
 
-Blessing of Luck and Resolve, Mass
+Blessing of Luck and Resolve (Mass)
+	OUTPUTNAME:Blessing of Luck and Resolve, Mass
 	CLASSES:Cleric,Inquisitor=6|Paladin=4
 	SCHOOL:Enchantment
 	SUBSCHOOL:Compulsion
@@ -424,7 +424,7 @@ Fearsome Duplicate
 	DURATION:(CASTERLEVEL) minutes
 	SAVEINFO:Will disbelief
 	SPELLRES:Yes
-	DESC:You create a larger and far more menacing version of yourself that you can send forth, manipulate like a puppet, and use to interact with others. You can make the duplicate up to two size categories larger than you are and determine a theme as to how it alters your original appearance. However, this duplicate always retains some vestiges of your actual appearance. Creatures who already know you gain a +2 bonus on saving throws made to disbelieve this spell. Your duplicate has no actual substance, and you cannot use it to alter its surroundings or to attack or otherwise harm creatures it encounters. You can use the duplicate to speak, and interact verbally with creatures using the Bluff, Diplomacy, and Intimidate skills, and you gain a +2 competence bonus on Intimidate checks when using that skill through the duplicate. You can see, hear, taste, and smell your duplicate's surroundings as if you are actually present using your Perception skill. While you also remain aware of your own immediate surroundings when controlling your duplicate, controlling it does take a toll on your senses. You take a 4 penalty on Perception checks while you control your duplicate. The duplicate moves under your mental command, and while you need not act out its movements, you must take a standard action to control your duplicate for 1 round (concentrating on the spell) or it winks out of existence. You can maintain control of your duplicate even if you have no line of sight or line of effect to it. The duplicate immediately winks out of existence if it is hit by an attack or in the area of a damaging effect, or if it moves beyond the maximum range of the spell.
+	DESC:You create a larger and far more menacing version of yourself that you can send forth, manipulate like a puppet, and use to interact with others. You can make the duplicate up to two size categories larger than you are and determine a theme as to how it alters your original appearance. However, this duplicate always retains some vestiges of your actual appearance. Creatures who already know you gain a +2 bonus on saving throws made to disbelieve this spell. Your duplicate has no actual substance, and you cannot use it to alter its surroundings or to attack or otherwise harm creatures it encounters. You can use the duplicate to speak, and interact verbally with creatures using the Bluff, Diplomacy, and Intimidate skills, and you gain a +2 competence bonus on Intimidate checks when using that skill through the duplicate. You can see, hear, taste, and smell your duplicate's surroundings as if you are actually present using your Perception skill. While you also remain aware of your own immediate surroundings when controlling your duplicate, controlling it does take a toll on your senses. You take a -4 penalty on Perception checks while you control your duplicate. The duplicate moves under your mental command, and while you need not act out its movements, you must take a standard action to control your duplicate for 1 round (concentrating on the spell) or it winks out of existence. You can maintain control of your duplicate even if you have no line of sight or line of effect to it. The duplicate immediately winks out of existence if it is hit by an attack or in the area of a damaging effect, or if it moves beyond the maximum range of the spell.
 	SOURCEPAGE:p.68
 
 Village Veil
@@ -440,7 +440,7 @@ Village Veil
 	DURATION:(CASTERLEVEL) days
 	SAVEINFO:Will disbelief
 	SPELLRES:Yes
-	DESC:You throw an illusion over an area to make creatures that view or interact with it believe it has suffered some great catastrophe or calamity that renders it utterly worthless for their needs. You must set a few general guidelines when casting the spell as to the nature of this disaster (fire, tornado, bandit raid, plague, etc.), after which the illusion fills in the remaining details to make it seem realistic. When casting the spell, you can grant creatures with particular, clearly identifiable physical traits (race, gender, age category, etc.) immunity to this spell. This allows all such eligible creatures to perceive the true nature of the affected area instead of its illusory appearance. Creatures without this immunity that fail their saving throws always perceive the affected area as having absolutely nothing of interest or worth to them. Unless they have reason for suspicion, they always move on without closely investigating the area. Creatures with sufficient reasons for suspicion who do choose to investigate the area gain another saving throw, this one with a +2 bonus, as they enter the village and directly interact with the illusion. You can expand the area of this spell by casting it multiple times. Each time you do, you must effectively attach the spell to the existing area by using the same disaster and granting the same sorts of creatures immunity to its effects. If you fail to do this, the entire illusion, no matter how large, disappears.
+	DESC:You throw an illusion over an area to make creatures that view or interact with it believe it has suffered some great catastrophe or calamity that renders it utterly worthless for their needs. You must set a few general guidelines when casting the spell as to the nature of this disaster (fire, tornado, bandit raid, plague, etc.), after which the illusion fills in the remaining details to make it seem realistic. When casting the spell, you can grant creatures with particular, clearly identifiable physical traits (race, gender, age category, etc.) immunity to this spell. This allows all such eligible creatures to perceive the true nature of the affected area instead of its illusory appearance. Creatures without this immunity that fail their saving throws always perceive the affected area as having absolutely nothing of interest or worth to them. Unless they have reason for suspicion, they always move on without closely investigating the area. Creatures with sufficient reasons for suspicion who do choose to investigate the area gain another saving throw, this one with a +2 bonus, as they enter the village and directly interact with the illusion. You can expand the area of this spell by casting it multiple times. Each time you do, you must effectively "attach" the spell to the existing area by using the same disaster and granting the same sorts of creatures immunity to its effects. If you fail to do this, the entire illusion, no matter how large, disappears.
 	SOURCEPAGE:p.69
 
 
@@ -507,7 +507,7 @@ Sacred Space
 	DURATION:(CASTERLEVEL*2) hours
 	SAVEINFO:None
 	SPELLRES:No
-	DESC:This spell sanctifies an area with heavenly power. The DC to resist spells or spell-like abilities with the good descriptor or channeled energy that damages evil outsiders (as when using Alignment Channel) increases by +2. In addition, evil outsiders take a 1 penalty on attack rolls, damage rolls, and saving throws, and they cannot be called or summoned into a sacred space. If the sacred space contains an altar, shrine, or other permanent fixture dedicated to your deity, pantheon, or good-aligned higher power, the modifiers given above are doubled. You cannot cast sacred space in an area with a permanent fixture dedicated to a deity other than yours.
+	DESC:This spell sanctifies an area with heavenly power. The DC to resist spells or spell-like abilities with the good descriptor or channeled energy that damages evil outsiders (as when using Alignment Channel) increases by +2. In addition, evil outsiders take a -1 penalty on attack rolls, damage rolls, and saving throws, and they cannot be called or summoned into a sacred space. If the sacred space contains an altar, shrine, or other permanent fixture dedicated to your deity, pantheon, or good-aligned higher power, the modifiers given above are doubled. You cannot cast sacred space in an area with a permanent fixture dedicated to a deity other than yours.
 	SOURCEPAGE:p.89
 
 Truespeak
@@ -980,7 +980,8 @@ Binding Earth
 	DESC:If the target of this spell fails its Fortitude save, areas of earth and stone floor act as a snapping quagmire that pulls the target down and damages it if it attempts to move through such terrain. If the target is a creature, it treats all areas of earth and stone it moves through as difficult terrain. Furthermore, for each 5 feet a creature moves through such areas, it takes 1d6 points of damage. Creatures with a burrow speed or the earth glide ability are unaffected by binding earth. If cast on an unattended object resting on an area of stone or earth, the stone or earth warps and wraps around it, pulling it firmly to the ground. A DC 15 Strength check is required to pull the object free from snapping earth or stone.
 	SOURCEPAGE:p.149
 
-Binding Earth, Mass
+Binding Earth (Mass)
+	OUTPUTNAME:Binding Earth, Mass
 	CLASSES:Druid,Witch=6
 	SCHOOL:Transmutation
 	DESCRIPTOR:Earth
@@ -1136,7 +1137,7 @@ Gusting Sphere
 	DURATION:(CASTERLEVEL) rounds
 	SAVEINFO:Fortitude Negates (object) or Reflex Negates
 	SPELLRES:Yes
-	DESC:A swirling ball of wind rolls in whichever direction you point, hurling those it strikes with great force. The sphere is treated in all ways as an area of severe wind, applying a 4 penalty on ranged weapon attacks that pass through it. The sphere moves 30 feet per round. As part of this movement, it can ascend or jump up to 30 feet to strike a target. If it enters a space containing a Medium or smaller creature, it stops moving for that round and generates a sharp thrust of wind to bull rush the creature. The sphere's CMB for bull rush combat maneuvers uses your caster level in place of its base attack bonus, with a +2 bonus for its Strength score (14). Whether or not the bull rush is successful, the creature takes 1d6 points of nonlethal bludgeoning damage from the attack. If the bull rush fails, the creature is still subject to the severe winds from the sphere as long as they remain in the same square as it. A gusting sphere rolls over objects or barriers that are less than 4 feet tall. The sphere moves as long as you actively direct it (a move action for you); otherwise, it merely stays at rest. A gusting sphere immediately dissipates if it exceeds the spell's range.
+	DESC:A swirling ball of wind rolls in whichever direction you point, hurling those it strikes with great force. The sphere is treated in all ways as an area of severe wind, applying a -4 penalty on ranged weapon attacks that pass through it. The sphere moves 30 feet per round. As part of this movement, it can ascend or jump up to 30 feet to strike a target. If it enters a space containing a Medium or smaller creature, it stops moving for that round and generates a sharp thrust of wind to bull rush the creature. The sphere's CMB for bull rush combat maneuvers uses your caster level in place of its base attack bonus, with a +2 bonus for its Strength score (14). Whether or not the bull rush is successful, the creature takes 1d6 points of nonlethal bludgeoning damage from the attack. If the bull rush fails, the creature is still subject to the severe winds from the sphere as long as they remain in the same square as it. A gusting sphere rolls over objects or barriers that are less than 4 feet tall. The sphere moves as long as you actively direct it (a move action for you); otherwise, it merely stays at rest. A gusting sphere immediately dissipates if it exceeds the spell's range.
 	SOURCEPAGE:p.160
 
 Miasmatic Form
@@ -1229,7 +1230,7 @@ Winter Feathers
 	DURATION:24 hours
 	SAVEINFO:Negates (harmless
 	SPELLRES:Yes (harmless)
-	DESC:The target's feathers thicken and fluff up to ward against winter's chill. The target suffers no harm from being in a cold environment, and can exist comfortably in conditions as low as 50 degrees Fahrenheit without having to make Fortitude saves. The creature's equipment is likewise protected. This spell doesn't provide any protection from cold damage, nor does it protect against other environmental hazards associated with cold weather (such as slipping on ice, blindness from snow, and so on). When you cast this spell, you may have the target's feathers turn white for the duration, granting it a +4 circumstance bonus on Stealth checks to hide in ice and snow.
+	DESC:The target's feathers thicken and fluff up to ward against winter's chill. The target suffers no harm from being in a cold environment, and can exist comfortably in conditions as low as -50 degrees Fahrenheit without having to make Fortitude saves. The creature's equipment is likewise protected. This spell doesn't provide any protection from cold damage, nor does it protect against other environmental hazards associated with cold weather (such as slipping on ice, blindness from snow, and so on). When you cast this spell, you may have the target's feathers turn white for the duration, granting it a +4 circumstance bonus on Stealth checks to hide in ice and snow.
 	SOURCEPAGE:p.167
 
 
@@ -1283,7 +1284,7 @@ Marid's Mastery
 	DURATION:(CASTERLEVEL) minutes
 	SAVEINFO:Will Negates (harmless)
 	SPELLRES:Yes (harmless)
-	DESC:The target gains a +1 bonus on attack and damage rolls if it and its opponent are touching water. If the opponent or the target is touching the ground, the target takes a 4 penalty on attack and damage rolls.
+	DESC:The target gains a +1 bonus on attack and damage rolls if it and its opponent are touching water. If the opponent or the target is touching the ground, the target takes a -4 penalty on attack and damage rolls.
 	SOURCEPAGE:p.178
 
 Nereid's Grace
@@ -1368,7 +1369,7 @@ Aboleth's Lung
 	CASTTIME:1 standard action
 	RANGE:Touch
 	TARGETAREA:Creatures touched
-	DURATION:CASTERLEVEL) hours
+	DURATION:(CASTERLEVEL) hours
 	SAVEINFO:Will Negates
 	SPELLRES:Yes
 	DESC:The targets are able to breathe water, freely. However, they can no longer breathe air. Divide the duration evenly among all the creatures you touch. This spell has no effect on creatures that can already breathe water.
@@ -1537,7 +1538,7 @@ Shadow Anchor
 	DURATION:(CASTERLEVEL) rounds
 	SAVEINFO:Will Negates
 	SPELLRES:Yes
-	DESC:The target's shadow becomes a flexible tether to its current square. The creature can move up to 5 feet from that square without penalty. Moving farther than 5 feet from the tether point requires the target to make a bull rush combat maneuver check against a CMB of %1 (if a witch or wizard) or %2 (if a bard or sorcerer). The target takes a 1 penalty for every 5 feet of distance between it and its tethered square. Failing this check means the target's move is wasted and it cannot move farther away. If it fails this check by 10 or more, it is pulled 5 feet toward the tether square and is knocked prone. If it beats the check by 10 or more, the spell ends. This spell does not work on creatures that do not cast shadows or reflections. If the target uses a teleportation effect or leaves the current plane, the spell ends.|10+CASTERLEVEL/2+INT|10+CASTERLEVEL/2+CHA
+	DESC:The target's shadow becomes a flexible tether to its current square. The creature can move up to 5 feet from that square without penalty. Moving farther than 5 feet from the tether point requires the target to make a bull rush combat maneuver check against a CMB of %1 (if a witch or wizard) or %2 (if a bard or sorcerer). The target takes a -1 penalty for every 5 feet of distance between it and its tethered square. Failing this check means the target's move is wasted and it cannot move farther away. If it fails this check by 10 or more, it is pulled 5 feet toward the tether square and is knocked prone. If it beats the check by 10 or more, the spell ends. This spell does not work on creatures that do not cast shadows or reflections. If the target uses a teleportation effect or leaves the current plane, the spell ends.|10+CASTERLEVEL/2+INT|10+CASTERLEVEL/2+CHA
 	SOURCEPAGE:p.211
 
 

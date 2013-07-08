@@ -626,7 +626,7 @@ Class Skills
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:A spell dancer adds Acrobatics and Perform (dance) to his list of class skills and removes Intimidate and Ride from his list of class skills.
 	CSKILL:Acrobatics|Perform (Dance)
-	CCSKILL:Intimidate,Ride
+	CCSKILL:Intimidate|Ride
 	SOURCEPAGE:p.24
 
 Spell Dance
@@ -1206,7 +1206,7 @@ Rage Power
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:A blood god disciple selects a barbarian rage power, which he may use when raging (whether from the avatar gambit ability or actual barbarian rage).
-	BONUS:ABILITYPOOL|RagePower|1
+	BONUS:ABILITYPOOL|BarbarianRagePower|1
 	SOURCEPAGE:p.54
 
 
@@ -1854,7 +1854,7 @@ Class Skills
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:A feral child adds Acrobatics to her list of class skills and removes Fly and Profession from her list of class skills.
 	CSKILL:Acrobatics
-	CCSKILL:Fly,TYPE.Profession
+	CCSKILL:Fly|TYPE.Profession
 	SOURCEPAGE:p.74
 
 # Implement: need to remove available languages (Druidic and Sylvan)
@@ -4191,7 +4191,7 @@ Class Skills
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:The swordmaster adds Knowledge (nature) and Survival to her list of class skills and removes Disguise and Knowledge (dungeoneering) from her list of class skills.
 	CSKILL:Knowledge (Nature)|Survival
-	CCSKILL:Disguise,Knowledge (Dungeoneering)
+	CCSKILL:Disguise|Knowledge (Dungeoneering)
 	SOURCEPAGE:p.164
 
 Trance

@@ -26,7 +26,7 @@ Constrict
 	CATEGORY:Special Ability
 	TYPE:RaceAbility.CrawlingVineRaceAbility.SpecialAttack.SpecialAbility
 	DESC:1d6 bludgeoning with a successful grapple check
-	Key:Constrict ~ Crawling Vine
+	KEY:Constrict ~ Crawling Vine
 
 
 
@@ -150,6 +150,6 @@ Noble Eidolon
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike
 	SPELLS:Innate|TIMES=1|TIMEUNIT=Day|CASTERLEVEL=MasterLevel|Limited Wish
-	DESC:A shaitan binder's eidolon gains the ability to grant its summoner's wishes. Once per day, the eidolon can cast limited wish as a spelllike ability. The eidolon's caster level is %1. The wish must be spoken aloud by the shaitan binder, beginning with the words I wish, and cannot duplicate a wish the eidolon has granted within the past 24 hours. If the eidolon uses this ability to duplicate a spell with a costly material component, the shaitan binder must provide that component.|MasterLevel
+	DESC:A shaitan binder's eidolon gains the ability to grant its summoner's wishes. Once per day, the eidolon can cast limited wish as a spelllike ability. The eidolon's caster level is %1. The wish must be spoken aloud by the shaitan binder, beginning with the words "I wish," and cannot duplicate a wish the eidolon has granted within the past 24 hours. If the eidolon uses this ability to duplicate a spell with a costly material component, the shaitan binder must provide that component.|MasterLevel
 	SOURCEPAGE:p.146
 

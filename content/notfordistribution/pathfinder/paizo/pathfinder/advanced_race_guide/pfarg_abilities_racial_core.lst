@@ -144,7 +144,7 @@ Stonesinger
 	DESC:Some dwarves' affinity with the earth grants them greater powers. Dwarves with this racial trait are treated as 1 level higher when casting spells with the earth descriptor or using granted powers of the Earth domain, the bloodline powers of the earth elemental bloodline, and revelations of the oracle's stone mystery. This ability does not give the dwarf early access to level-based powers; it only affects powers the dwarf could use without this ability.
 	BONUS:CASTERLEVEL|DESCRIPTOR.Earth|1
 	BONUS:VAR|BloodlineLVL|1|PREABILITY:1,CATEGORY=Special Ability,Elemental Bloodline (Earth)
-	BONUS:VAR|OracleMysteryLevel|PREABILITY:1,CATEGORY=Special Ability,Stone Mysteries
+	BONUS:VAR|OracleMysteryLevel|1|PREABILITY:1,CATEGORY=Special Ability,Stone Mysteries
 	COST:0
 	SOURCEPAGE:p.11
 
@@ -246,7 +246,7 @@ Elemental Resistance
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Elemental Resistance ~ Elf],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.ElfImmunities]
 	DESC:Elves who dwell in the most extreme environments, from arctic wastelands to volcanic plains, develop natural resistance to the dangers of their homelands over the course of a few generations. Elves with this racial trait gain elemental resistance 5 to acid, cold, electricity, or fire. This choice is made at character creation, and once made it cannot be changed.
 	MULT:NO
-	CHOOSE:ABILITY|Special Ability|Resistance to Acid,Resistance to Cold,Resistance to Electricity,Resistance to Fire
+	CHOOSE:ABILITY|TYPE=Special Ability|Resistance to Acid,Resistance to Cold,Resistance to Electricity,Resistance to Fire
 	SELECT:1
 	ABILITY:Special Ability|AUTOMATIC|%LIST
 	BONUS:VAR|AcidResistanceBonus,ColdResistanceBonus,FireResistanceBonus,ElectricityResistanceBonus|5
@@ -486,7 +486,7 @@ Fell Magic
 	TYPE:RacialTraits.SpecialQuality.GnomeRacialTrait.GnomeMagic
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Fell Magic ~ Gnome],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.GnomeMagic]
 	SPELLS:Innate|TIMES=1|CASTERLEVEL=TL|Bleed,10+WIS|Chill Touch,11+WIS|Detect Poison|Touch of Fatigue,10+WIS|PRESTAT:1,WIS=11
-	DESC:Gnomes add +1 to the DC of any saving throws against necromancy spells that they cast. Gnomes with Wisdom scores of 11 or higher also gain the following spell-like abilities: 1/daybleed, chill touch, detect poison, and touch of fatigue.
+	DESC:Gnomes add +1 to the DC of any saving throws against necromancy spells that they cast. Gnomes with Wisdom scores of 11 or higher also gain the following spell-like abilities: 1/day:bleed, chill touch, detect poison, and touch of fatigue.
 	BONUS:DC|SCHOOL.Necromancy|1
 	COST:0
 	SOURCEPAGE:p.32
@@ -586,7 +586,7 @@ Drow Blooded
 	CATEGORY:Special Ability
 	TYPE:RacialTraits.SpecialQuality.HalfElfRacialTrait.HalfElfRacialVision
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Drow Blooded ~ Half-Elf],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.HalfElfRacialVision]
-	DESC:Some half-elves born of drow parents exhibit more drow traits than othersparticularly many of the physical features of the drowand have darkvision 60 feet and light blindness.
+	DESC:Some half-elves born of drow parents exhibit more drow traits than others:particularly many of the physical features of the drow:and have darkvision 60 feet and light blindness.
 	ABILITY:Special Ability|AUTOMATIC|Light Blindness
 	VISION:.CLEAR.Low-Light|Darkvision(60)
 	COST:0
@@ -927,7 +927,7 @@ Shiftless
 	CATEGORY:Special Ability
 	TYPE:RacialTraits.SpecialQuality.HalflingRacialTrait.HalflingSureFooted
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Shiftless ~ Halfling],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.HalflingSureFooted]
-	DESC:Halflings have a reputation for larceny and guileand sometimes it's well deserved. Halflings with this racial trait gain a +2 racial bonus on Bluff and Sleight of Hand checks, and Sleight of Hand is always a class skill for them.
+	DESC:Halflings have a reputation for larceny and guile:and sometimes it's well deserved. Halflings with this racial trait gain a +2 racial bonus on Bluff and Sleight of Hand checks, and Sleight of Hand is always a class skill for them.
 	BONUS:SKILL|Bluff,Sleight of Hand|2|TYPE=Racial
 	CSKILL:Sleight of Hand
 	COST:0
@@ -1199,7 +1199,7 @@ Mixed Heritage
 	CATEGORY:Special Ability
 	TYPE:RacialTraits.SpecialQuality.HumanRacialTrait.HumanSkilled
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Mixed Heritage ~ Human],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.HumanSkilled]
-	DESC:Often human civilization is defined by more than one characteristic. A human with this trait may select a second Heart of the racial trait.
+	DESC:Often human civilization is defined by more than one characteristic. A human with this trait may select a second "Heart of the" racial trait.
 	BONUS:ABILITYPOOL|Heart Ability|1
 	COST:0
 	SOURCEPAGE:p.72
