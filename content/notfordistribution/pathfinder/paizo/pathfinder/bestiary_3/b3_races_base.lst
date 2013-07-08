@@ -198,4 +198,19 @@ Wayang
 
 
 
-#Ratfolk	STARTFEATS:1	SIZE:S	MOVE:Walk,20	FACE:5	REACH:5	LANGAUTO:Common		LANGBONUS:Aklo,Draconic,Dwarven,Gnoll,Gnome,Goblin,Halfling,Orc,Undercommon	BONUS:STAT|DEX,INT|2	BONUS:STAT|STR|-2	RACETYPE:Humanoid	RACESUBTYPE:Ratfolk	TYPE:Base.PC.Featured	CR:1/2		SOURCEPAGE:p.151
+Ratfolk
+	STARTFEATS:1
+	SIZE:S
+	MOVE:Walk,20
+	FACE:5
+	REACH:5
+	AUTO:LANG|Common
+	LANGBONUS:Aklo,Draconic,Dwarven,Gnoll,Gnome,Goblin,Halfling,Orc,Undercommon
+	BONUS:STAT|DEX,INT|2
+	BONUS:STAT|STR|-2
+	RACETYPE:Humanoid
+	RACESUBTYPE:Ratfolk
+	TYPE:Base.PC.Featured
+	CR:1/2
+	SOURCEPAGE:p.151
+
