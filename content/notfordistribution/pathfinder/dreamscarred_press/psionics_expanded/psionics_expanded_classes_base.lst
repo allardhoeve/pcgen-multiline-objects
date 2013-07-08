@@ -1154,7 +1154,8 @@ CLASS:Vitalist
 	ABILITY:Special Ability|AUTOMATIC|Medic Powers|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistMedicPowers
 
 1
-	BONUS:VAR|TransferWoundsDice|(CL+2)/3
+	DEFINE:TransferWoundsLVL|CL
+	BONUS:VAR|TransferWoundsDice|(TransferWoundsLVL+2)/3
 	ABILITY:Special Ability|AUTOMATIC|Transfer Wounds|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistTransferWounds
 
 2

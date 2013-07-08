@@ -1140,8 +1140,10 @@ Altered Defense
 	BONUS:VAR|AlteredDefenseRounds|4+CrypticPrimeStat
 	SOURCEPAGE:p.3
 	DEFINE:AlteredDefenseBonus|0
-	BONUS:VAR|AlteredDefenseBonus|floor((CrypticLVL+3)/4)
+	BONUS:VAR|AlteredDefenseBonus|floor((AlteredDefenseLVL+3)/4)
 	ABILITY:Special Ability|AUTOMATIC|Altered Defense ~ Deflect
+	DEFINE:AlteredDefenseLVL|0
+	BONUS:VAR|AlteredDefenseLVL|CrypticLVL
 
 Altered Defense ~ Deflect
 	CATEGORY:Special Ability
@@ -2997,7 +2999,9 @@ Soulthief
 Guardian's Touch
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:Target of transfer wounds also gets %1 temporary hit points.|MethodLVL
+	DESC:Target of transfer wounds also gets %1 temporary hit points.|VitalistsTouchLVL
+	DEFINE:VitalistsTouchLVL|0
+	BONUS:VAR|VitalistsTouchLVL|MethodLVL
 	SOURCEPAGE:p.6
 
 Guardian's Pulse
@@ -3047,7 +3051,9 @@ Resistant
 Mender's Touch
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:With transfer wounds, heal %1 extra hit points not passed on as damage to you.|MethodLVL
+	DESC:With transfer wounds, heal %1 extra hit points not passed on as damage to you.|VitalistsTouchLVL
+	DEFINE:VitalistsTouchLVL|0
+	BONUS:VAR|VitalistsTouchLVL|MethodLVL
 	SOURCEPAGE:p.6
 
 Mender's Pulse
@@ -3090,7 +3096,9 @@ Halt Death
 Soulthief's Touch
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:Use transfer wounds to harm target and heal self, with %1 extra damage.|MethodLVL
+	DESC:Use transfer wounds to harm target and heal self, with %1 extra damage.|VitalistsTouchLVL
+	DEFINE:VitalistsTouchLVL|0
+	BONUS:VAR|VitalistsTouchLVL|MethodLVL
 	SOURCEPAGE:p.7
 
 Soulthief's Pulse
@@ -3138,6 +3146,9 @@ Siphon
 
 
 ###Block: Abilities for existing psionic classes
+
+
+# ======================== PSION ====================== #
 
 
 ###Block: Psion
@@ -3380,11 +3391,10 @@ Permanent Telekinesis
 
 
 
+# ======================== PSYCHIC WARRIOR ====================== #
 
 
 ###Block: Psychic Warrior
-
-
 ###Block: Warrior Paths
 Archer Path
 	KEY:Archer Path ~ First
@@ -3787,6 +3797,7 @@ Burst
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Interceptor Path ~ First,Interceptor Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Burst
+	BONUS:CASTERLEVEL|SPELL.Burst|PathPowerBonusML
 
 Catfall
 	KEY:Catfall Path Power
@@ -3795,6 +3806,7 @@ Catfall
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Survivor Path ~ First,Survivor Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Catfall
+	BONUS:CASTERLEVEL|SPELL.Catfall|PathPowerBonusML
 
 Chameleon
 	KEY:Chameleon Path Power
@@ -3803,6 +3815,7 @@ Chameleon
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Infiltrator Path ~ First,Infiltrator Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Chameleon
+	BONUS:CASTERLEVEL|SPELL.Chameleon|PathPowerBonusML
 
 Expansion
 	KEY:Expansion Path Power
@@ -3811,6 +3824,7 @@ Expansion
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Interceptor Path ~ First,Interceptor Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Expansion
+	BONUS:CASTERLEVEL|SPELL.Expansion|PathPowerBonusML
 
 Force Screen
 	KEY:Force Screen Path Power
@@ -3819,6 +3833,7 @@ Force Screen
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Archer Path ~ First,Archer Path ~ Second,Brawling Path ~ First,Brawling Path ~ Second,Dervish Path ~ First,Dervish Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Force Screen
+	BONUS:CASTERLEVEL|SPELL.Force Screen|PathPowerBonusML
 
 CATEGORY=Special Ability|Grip of Iron Path Power.MOD
 	PRE:.CLEAR
@@ -3835,6 +3850,7 @@ Minor Metamorphosis
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Infiltrator Path ~ First,Infiltrator Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Metamorphosis (Minor)
+	BONUS:CASTERLEVEL|SPELL.Metamorphosis (Minor)|PathPowerBonusML
 
 Psychokinetic Cannon
 	KEY:Psychokinetic Cannon Path Power
@@ -3843,6 +3859,7 @@ Psychokinetic Cannon
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Archer Path ~ First,Archer Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Psychokinetic Cannon
+	BONUS:CASTERLEVEL|SPELL.Psychokinetic Cannon|PathPowerBonusML
 
 Tactical Precognition
 	KEY:Tactical Precognition Path Power
@@ -3851,6 +3868,7 @@ Tactical Precognition
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Gladiator Path ~ First,Gladiator Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Precognition (Tactical)
+	BONUS:CASTERLEVEL|SPELL.Precognition (Tactical)|PathPowerBonusML
 
 Vigor
 	KEY:Vigor Path Power
@@ -3859,14 +3877,14 @@ Vigor
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Survivor Path ~ First,Survivor Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Vigor
+	BONUS:CASTERLEVEL|SPELL.Vigor|PathPowerBonusML
 
 
 
+# ======================== SOULKNIFE ====================== #
 
 
 ###Block: Soulknife
-
-
 ###Block: Blade Skills
 Absorbing Blade
 	KEY:Absorbing Blade ~ Blade Skill
@@ -4274,11 +4292,10 @@ Whiplash
 
 
 
+# ======================== WILDER ====================== #
 
 
 ###Block: Wilder
-
-
 ###Block: Surge options
 Chaotic Surge
 	CATEGORY:Special Ability
@@ -4460,11 +4477,10 @@ Warping Surge Bond
 
 
 
+# ======================== OTHER CLASSES ====================== #
 
 
 ###Block: Abilities for other classes
-
-
 ###Block: Psionic Rogue Talents
 Major Psionics
 	KEY:Major Psionics ~ Psionic Rogue Talent
