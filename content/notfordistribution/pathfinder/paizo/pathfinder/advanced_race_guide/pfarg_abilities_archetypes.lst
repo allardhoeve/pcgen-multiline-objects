@@ -9,7 +9,7 @@ SOURCELONG:Advanced Race Guide
 
 
 # Dwarf Class Archetypes:
-# Ability Name			Unique Key							Category of Ability		Type																																											Required Class		Multiple Requirements																																																														Required Race									Define					Description																																																																																																										Automatically Gained Feat			Ability																																																																																																																																																																															Bonus to Ability Pool						Caster level					Combat bonus							Modify VAR																	Damage Reduction			Cost		Source Page		List of Known Class Spells by Level
+# Ability Name		Unique Key				Category of Ability	Type																						Required Class	Multiple Requirements																															Required Race					Define			Description																																																					Automatically Gained Feat		Ability																																																																																								Bonus to Ability Pool			Caster level			Combat bonus				Modify VAR									Damage Reduction		Cost	Source Page	List of Known Class Spells by Level
 Exarch
 	KEY:Inquisitor Archetype ~ Exarch
 	CATEGORY:Archetype
@@ -491,7 +491,7 @@ Stone Body
 
 # Gnome
 ###Block: Gunslinger Archetype -------------------------
-# Ability Name		Unique Key								Category of Ability	Type																								Required Class		Multiple Requirements																																							Required Race	Description																								Ability																																	Cost		Source Page
+# Ability Name	Unique Key				Category of Ability	Type												Required Class	Multiple Requirements																				Required Race	Description												Ability																	Cost	Source Page
 Experimental Gunsmith
 	KEY:Gunslinger Archetype ~ Experimental Gunsmith
 	CATEGORY:Archetype
@@ -509,7 +509,7 @@ Experimental Gunsmith
 
 ###Block: Gunslinger Archetype Abilities -------------------------
 #Experimental Gunsmith
-# Ability Name							Unique Key									Category of Ability		Type																																								Required Ability																									Required AL		Required Class		Maximum Level Allowed		Prohibited Feat						Multiple Requirements																																																										Required Race		Define							Innate Spells														Description																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		Stackable?	Multiple?	Choose									Automatically Gained Feat										Automatically Gained Language	Ability																																																																																																																																																																																									Add 																Remove Object																					Bonus to Ability Pool											Combat bonus																						Bonus to skill								Bonus to skill point/L		Modify VAR																	Allow Follower			Allowed Companions																																								Remove Class Skill	Class Skill																														Cross-Class Skill							Source Page		List of Known Class Spells by Level																																													DESCThe spell dancer may instead choose to take a swift action to gain freedom of movement for 1d4 rounds.	SPELLKNOWN
+# Ability Name				Unique Key					Category of Ability	Type																				Required Ability													Required AL	Required Class	Maximum Level Allowed	Prohibited Feat			Multiple Requirements																													Required Race	Define				Innate Spells							Description																																																																																																																																																																																																																																																																																																	Stackable?	Multiple?	Choose					Automatically Gained Feat					Automatically Gained Language	Ability																																																																																													Add 								Remove Object											Bonus to Ability Pool						Combat bonus											Bonus to skill				Bonus to skill point/L	Modify VAR									Allow Follower		Allowed Companions																				Remove Class Skill	Class Skill															Cross-Class Skill				Source Page	List of Known Class Spells by Level																							
 Experimental Firearm
 	KEY:Experimental Firearm ~ Experimental Gunsmith
 	CATEGORY:Special Ability
@@ -589,7 +589,6 @@ Elven Arcana
 	DESC:At 2nd level, an ancient lorekeeper's mastery of elven legends and philosophy has allowed her to master one spell used by elven wizards. She selects one spell from the sorcerer/wizard spell list that is at least one level lower than the highest-level oracle spell she can cast. The ancient lorekeeper gains this as a bonus spell known. The spell is treated as one level higher than its true level for all purposes. The ancient lorekeeper may choose an additional spell at 4th, 6th, 8th, 10th, 12th, 14th, 16th, and 18th levels. This ability replaces the bonus spells she would normally gain at these levels from her chosen mystery.
 	CHOOSE:SPELLS|SPELLTYPE=Arcane[LEVELMAX=MAXCASTABLE-1]
 	SOURCEPAGE:p.24
-	SPELLKNOWN:CLASS|Oracle=
 
 Mysteries
 	KEY:Mysteries ~ Ancient Lorekeeper
@@ -656,7 +655,7 @@ Spell Dance
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
 	SOURCEPAGE:p.24
-	DESCThe spell dancer may instead choose to take a swift action to gain freedom of movement for 1d4 rounds.:
+	DESC:The spell dancer may instead choose to take a swift action to gain freedom of movement for 1d4 rounds.:
 
 Arcane Movement
 	KEY:Arcane Movement ~ Spell Dancer
@@ -1442,7 +1441,7 @@ Improved Surprise Follow-Through
 	KEY:Improved Surprise Follow-Through ~ Skulking Slayer
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.RogueTalent.RogueAdvancedTalent
-	PREABILITY:Special Ability,Bonus Feats ~ Skulking Slayer
+	PREABILITY:1,CATEGORY=Special Ability,Bonus Feats ~ Skulking Slayer
 	PRECLASS:1,Rogue=10
 	!PREFEAT:1,Improved Surprise Follow-Through
 	DESC:A skulking slayer can take the Improved Surprise Follow-Through feat in place of an advanced Rogue Talent
@@ -1495,8 +1494,7 @@ Bonus Spells
 	SPELLKNOWN:CLASS|Oracle=2|Consecrate|PRECLASS:1,Oracle=4
 	SPELLKNOWN:CLASS|Oracle=3|Remove Disease|PRECLASS:1,Oracle=6
 	SPELLKNOWN:CLASS|Oracle=4|Hallow|PRECLASS:1,Oracle=10
-	SPELLKNOWN:CLASS|Oracle=|Heroes' Feast|PRECLASS:1,Oracle=12
-	SPELLKNOWN:.CLEAR
+	SPELLKNOWN:CLASS|Oracle=5|Heroes' Feast|PRECLASS:1,Oracle=12
 
 Revelations
 	KEY:Revelations ~ Community Guardian
@@ -1774,7 +1772,7 @@ Liquid Courage
 	KEY:Liquid Courage ~ Buccaneer
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
-	DESC:A buccaneer gains the ability to fortify her grit with strong drink. The act of drinking is a standard action that provokes attacks of opportunity, and each drink provides 1 grog point. Grog points can be used in place of grit points to fuel deeds or grit feats (including those requiring a minimum of 1 grit point to use). The buccaneer can gain a maximum number of grog points each day equal to her Constitution modifier (minimum 1), and they last for 1 hour or until used, whichever comes first. She gains a morale bonus on saves against fear and a dodge bonus to AC against attacks of opportunity equal to her current grog point total.
+	DESC:A buccaneer gains the ability to fortify her grit with strong drink. The act of drinking is a standard action that provokes attacks of opportunity, and each drink provides 1 grog point. Grog points can be used in place of grit points to fuel deeds or grit feats (including those requiring a minimum of 1 grit point to use). The buccaneer can gain a maximum number of grog points each day
 	SOURCEPAGE:p.74
 
 Bonus Feat
@@ -1788,8 +1786,9 @@ Exotic Pet
 	KEY:Exotic Pet ~ Buccaneer
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
+	DEFINE:BuccaneerExoticPetLevel|GunslingerLvl/2
 	DESC:A buccaneer gains a familiar as a wizard of half the buccaneer's class level (though the exotic pet never gains the ability to deliver touch spells or share spells). This pet is typically a monkey or parrot (use the stats for a raven familiar). Such animals are useful scouts, even in the thick of combat. As long as the pet is within 30 feet of the buccaneer, the buccaneer also gains the benefit of evasion.
-	COMPANIONLIST:Exotic Pet|Parrot,Monkey|FOLLOWERADJUSTMENT:-GunslingerLvl/2
+	COMPANIONLIST:Exotic Pet|Parrot,Monkey|FOLLOWERADJUSTMENT:-BuccaneerExoticPetLevel
 	SOURCEPAGE:p.74
 
 Sword and Pistol
@@ -1805,7 +1804,7 @@ Gun Training
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:A buccaneer gains this ability only at 13th level with a single type of firearm.
-	ABILITY:Special Ability|Gun Training ~ Gunslinger
+	ABILITY:Special Ability|AUTOMATIC|Gun Training ~ Gunslinger
 	SOURCEPAGE:p.74
 
 Raider's Riposte
@@ -1894,7 +1893,7 @@ Favored Terrain
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:A feral child gains the favored terrain ability as a ranger of her class level. A feral child may not choose urban as a favored terrain.
-	ABILITY:Special Ability|Favored Terrain
+	ABILITY:Special Ability|AUTOMATIC|Favored Terrain
 	SOURCEPAGE:p.75
 
 Native Cunning
@@ -1902,7 +1901,7 @@ Native Cunning
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:A feral child gains trap sense as a barbarian of equal level, and in her favored terrain, she immediately receives a Perception check to notice traps within 10 feet. In addition, at 3rd level and every three levels thereafter, she may choose one combat maneuver, and gains a bonus equal to her trap sense bonus to her CMD against that maneuver.
-	ABILITY:Special Ability|Trap Sense ~ Barbarian
+	ABILITY:Special Ability|AUTOMATIC|Trap Sense ~ Barbarian
 	BONUS:ABILITYPOOL|Native Cunning Option|DruidLvl/3
 	BONUS:VAR|BarbarianTrapSenseLVL|DruidLvl
 	SOURCEPAGE:p.75
@@ -1931,7 +1930,7 @@ Native Call
 
 
 ###Block: Native Cunning combat maneuver options
-# Ability Name			Unique Key								Category of Ability		Type																																									Required Ability						Required Class		Required Domain			Multiple Requirements																																																												Required Race		Define																			Innate Spells																		Description																																																																																																																																																																																																																																																																																																																																										Stackable?	Multiple?	Choose						Automatically Gained Feat						Automatically Gained Weapon Prof.	Virtual Feat		Ability																																																																																																																																											Remove Object										Bonus to Ability Pool				Save checks bonus		Combat bonus								Damage reduction					Bonus to skill																				Bonus to spell cast/day				Modify VAR										Add to vision			Weapon prof. bonus																									Allow Follower			Allowed Companions																					Class Skill												Cross-Class Skill			Source Page					Natural Attacks										List of Known Class Spells by Level			Define								SPELLKNOWN
+# Ability Name		Unique Key				Category of Ability	Type																					Required Ability			Required Class	Required Domain		Multiple Requirements																														Required Race	Define										Innate Spells									Description																																																																																																																																																																					Stackable?	Multiple?	Choose			Automatically Gained Feat			Automatically Gained Weapon Prof.	Virtual Feat	Ability																																																																						Remove Object					Bonus to Ability Pool		Save checks bonus	Combat bonus				Damage reduction			Bonus to skill										Bonus to spell cast/day		Modify VAR					Add to vision		Weapon prof. bonus													Allow Follower		Allowed Companions											Class Skill						Cross-Class Skill		Source Page			Natural Attacks					List of Known Class Spells by Level		Define				SPELLKNOWN
 Bull Rush
 	KEY:Bull Rush ~ Native Cunning
 	CATEGORY:Special Ability
@@ -2081,7 +2080,7 @@ Wanderer's Wisdom
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:The wanderer can dispense excellent advice in the form of philosophical proverbs and parables. As a swift action, the wanderer can inspire courage or inspire competence as a bard of his monk level by spending 2 points from his ki pool. This affects one creature within 30 feet and lasts a number of rounds equal to the wanderer's Wisdom modifier (minimum 1 round). This ability is language-dependent.
-	ABILITY:Special Ability|Inspire Courage,Inspire Competence
+	ABILITY:Special Ability|AUTOMATIC|Inspire Courage,Inspire Competence
 	SOURCEPAGE:p.76
 
 Disappear Unnoticed
@@ -2152,15 +2151,15 @@ Bonus Spells
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:A Purifier automatically gains bonus spells.
 	SOURCEPAGE:p.86
-	SPELLKNOWN:Oracle=1|Veil of Heaven|PRECLASS:1,Oracle=2[!PRESPELL:1,Veil of Heaven]
-	SPELLKNOWN:Oracle=2|Confess|PRECLASS:1,Oracle=4[!PRESPELL:1,Confess]
-	SPELLKNOWN:Oracle=3|Cast Out|PRECLASS:1,Oracle=6[!PRESPELL:1,Cast Out]
-	SPELLKNOWN:Oracle=4|Denounce|PRECLASS:1,Oracle=8[!PRESPELL:1,Denounce]
-	SPELLKNOWN:Oracle=5|Dispel Evil|PRECLASS:1,Oracle=10[!PRESPELL:1,Dispel Evil]
-	SPELLKNOWN:Oracle=6|Banishment|PRECLASS:1,Oracle=12[!PRESPELL:1,Banishment]
-	SPELLKNOWN:Oracle=7|Holy Word|PRECLASS:1,Oracle=14[!PRESPELL:1,Holy Word]
-	SPELLKNOWN:Oracle=8|Mind Blank|PRECLASS:1,Oracle=16[!PRESPELL:1,Mind Blank]
-	SPELLKNOWN:Oracle=9|Freedom|PRECLASS:1,Oracle=18[!PRESPELL:1,Freedom]
+	SPELLKNOWN:CLASS|Oracle=1|Veil of Heaven|PRECLASS:1,Oracle=2[!PRESPELL:1,Veil of Heaven]
+	SPELLKNOWN:CLASS|Oracle=2|Confess|PRECLASS:1,Oracle=4[!PRESPELL:1,Confess]
+	SPELLKNOWN:CLASS|Oracle=3|Cast Out|PRECLASS:1,Oracle=6[!PRESPELL:1,Cast Out]
+	SPELLKNOWN:CLASS|Oracle=4|Denounce|PRECLASS:1,Oracle=8[!PRESPELL:1,Denounce]
+	SPELLKNOWN:CLASS|Oracle=5|Dispel Evil|PRECLASS:1,Oracle=10[!PRESPELL:1,Dispel Evil]
+	SPELLKNOWN:CLASS|Oracle=6|Banishment|PRECLASS:1,Oracle=12[!PRESPELL:1,Banishment]
+	SPELLKNOWN:CLASS|Oracle=7|Holy Word|PRECLASS:1,Oracle=14[!PRESPELL:1,Holy Word]
+	SPELLKNOWN:CLASS|Oracle=8|Mind Blank|PRECLASS:1,Oracle=16[!PRESPELL:1,Mind Blank]
+	SPELLKNOWN:CLASS|Oracle=9|Freedom|PRECLASS:1,Oracle=18[!PRESPELL:1,Freedom]
 
 Diminished Spellcasting
 	KEY:Diminished Spellcasting ~ Purifier
@@ -2450,7 +2449,7 @@ Commanding Infusion
 	DESC:When using this infusion with animate dead, the cruoromancer can create %1 Hit Dice of undead.|WizardLvl*3
 	SOURCEPAGE:p.98
 
-# Blood Desecration			KEY:Blood Desecration ~ Cruoromancer	SOURCEPAGE:p.98		TYPE:ArchetypeAbility.SpecialQuality.Supernatural	CATEGORY:Special Ability	DESC:The cruoromancer gains the blood infusion Blood Desecration.
+# Blood Desecration		KEY:Blood Desecration ~ Cruoromancer	SOURCEPAGE:p.98	TYPE:ArchetypeAbility.SpecialQuality.Supernatural	CATEGORY:Special Ability	DESC:The cruoromancer gains the blood infusion Blood Desecration.
 Desecrating Infusion
 	KEY:Desecrating Infusion ~ Cruoromancer
 	CATEGORY:Special Ability
@@ -2465,7 +2464,7 @@ Blood Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
 	DESC:The cruoromancer can choose to scry through a single undead creature he created with a spell modified by a commanding infusion. The undead creature is treated as if imbued with an arcane eye spell (caster level %1).|CruoromancerBloodAbilityCastLvl
 	SOURCEPAGE:p.98
-	Define:CruoromancerBloodAbilityCastLvl|WizardLvl
+	DEFINE:CruoromancerBloodAbilityCastLvl|WizardLvl
 
 Perfect Infusion
 	KEY:Perfect Infusion ~ Cruoromancer
@@ -2491,7 +2490,7 @@ Kinslayer
 	SOURCEPAGE:p.98
 
 #
-#Judgment					KEY:Judgment ~ Kinslayer				SOURCEPAGE:p.98		TYPE:ArchetypeAbility.SpecialQuality.Supernatural	CATEGORY:Special Ability	DESC:The kinslayer gains the following judgment.
+#Judgment			KEY:Judgment ~ Kinslayer		SOURCEPAGE:p.98	TYPE:ArchetypeAbility.SpecialQuality.Supernatural	CATEGORY:Special Ability	DESC:The kinslayer gains the following judgment.
 Slayer's Brand
 	KEY:Slayer's Brand ~ Kinslayer
 	CATEGORY:Special Ability
@@ -2625,7 +2624,7 @@ Silent Shooter
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:The cavern sniper gains a bonus on Stealth checks made when loading a bow or crossbow, poisoning ammunition, and making sniping attempts.
-	BONUS:SKILL|Stealth (Load Crossbow,Stealth (Poison Ammo),Stealth (Sniping)|(1+max(0,(FighterLvl-2)/4))*2
+	BONUS:SKILL|Stealth (Load Crossbow),Stealth (Poison Ammo),Stealth (Sniping)|(1+max(0,(FighterLvl-2)/4))*2
 	SOURCEPAGE:p.104
 
 Quick and Deadly
@@ -2701,8 +2700,8 @@ Demonic Channel
 	KEY:Demonic Channel ~ Demonic Apostle
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
-	DEFINE:DemonicApostleChannelEnergyDmg|1+{ClericLvl-1)/2
-	DEFINE:DemonicApostleChannelEnergySave|10+ClericLvl/2+CHA
+	DEFINE:DemonicApostleChannelEnergyDmg|(ClericLvl-1)/2+1
+	DEFINE:DemonicApostleChannelEnergySave|ClericLvl/2+CHA+10
 	DESC:The demonic apostle can channel demonic energy to damage creatures of lawful and good alignment, or, at higher levels, bolster the abilities of chaotic evil allies. Channeling this energy causes a 30-foot-radius burst centered on the cleric. Creatures within the burst that are lawful or good take %1d6 points of damage. Creatures that take damage from the channeled demonic energy receive a Fortitude save to halve the damage. The DC of this save is %2. Lawful good creatures take a -2 penalty on this saving throw. At 5th level, chaotic evil allies within the burst are affected as if targeted by a rage spell with a duration of 1 round. At 9th level, lawful or good enemies are also sickened for 1d6 rounds if they fail their saving throw against the demonic channel. Channeling demonic energy is a standard action that does not provoke attacks of opportunity.|DemonicApostleChannelEnergyDmg|DemonicApostleChannelEnergySave
 	SOURCEPAGE:p.104
 
@@ -2752,7 +2751,7 @@ Dark Sight
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
 	DESC:The dusk stalker gains the see in darkness ability (Bestiary 2 301).
-	BONUS:VISION|See in Darkness
+	ABILITY:Special Ability|AUTOMATIC|See in Darkness
 	SOURCEPAGE:p.110
 
 
@@ -2822,7 +2821,7 @@ Weapon and Armor Proficiency
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:A feral gnasher loses all martial weapon proficiencies except for greatclub and loses proficiency with medium armor.
-	AUTO:WEAPONPROFICIENCY|Greatclub
+	AUTO:WEAPONPROF|Greatclub
 	REMOVE:FEAT|2|Martial Weapon Proficiency,Armor Proficiency (Medium)
 	SOURCEPAGE:p.116
 
@@ -2936,7 +2935,7 @@ Fire Bombardier (Su or Ex)
 	DESC:When a fire bomber throws a bomb that deals fire damage, all creatures in the splash radius take an additional point of damage per die of fire damage dealt. Fire bombers only add their Intelligence bonus to damage from bombs or alchemical substances that deal fire damage. This otherwise works like the alchemist's bomb and throw anything abilities.
 	SOURCEPAGE:p.117
 
-#Bonus Feats						KEY:Bonus Feats ~ Fire Bomber							SOURCEPAGE:p.117	TYPE:ArchetypeAbility.SpecialQuality					CATEGORY:Special Ability	DESC:A fire bomber can select the Burn! Burn! Burn!, Fire Tamer, or Flame Heart feat in place of a discovery.
+#Bonus Feats			KEY:Bonus Feats ~ Fire Bomber				SOURCEPAGE:p.117	TYPE:ArchetypeAbility.SpecialQuality			CATEGORY:Special Ability	DESC:A fire bomber can select the Burn! Burn! Burn!, Fire Tamer, or Flame Heart feat in place of a discovery.
 Fiery Cocktail
 	KEY:Fiery Cocktail ~ Fire Bomber
 	CATEGORY:Special Ability
@@ -3098,7 +3097,6 @@ Iron Skin
 	BONUS:COMBAT|AC|IronskinMonkIronSkinBonus|TYPE=NaturalArmor
 	SOURCEPAGE:p.122
 
-# Implement: can't currently remove feats from monk bonus feats list
 Bonus Feat
 	KEY:Bonus Feat ~ Ironskin Monk
 	CATEGORY:Special Ability
@@ -3162,13 +3160,13 @@ Unbreakable
 
 
 
-###Block: Iron Skin Bonus Feats
-# Ability Name			Unique Key								Category of Ability		Type																																		Visible		Required Ability								Required Class		Required Deitys Domain	Required Domain	Prohibited Feat			Multiple Requirements																																																			Required Race	Var. Min. Value				Define						Innate Spells						Description																																																																																																																																																																																																																			Multiple?	Choose												Template		Move			Automatically Added to Inventory	Virtual Feat		Ability																																																																																																																																																																																																	Bonus to Ability Pool							Save checks bonus				Damage reduction		Bonus Number of Followers	Bonus to skill					Modify VAR										Allow Follower				Allowed Companions									Class Skill			Vision				Source Page		List of Known Class Spells by Level
+###Block: Ironskin Monk Bonus Feats
+# Ability Name		Unique Key				Category of Ability	Type																	Visible	Required Ability				Required Class	Required Deitys Domain	Required Domain	Prohibited Feat		Multiple Requirements																										Required Race	Var. Min. Value		Define			Innate Spells			Description																																																																																																										Multiple?	Choose						Template	Move		Automatically Added to Inventory	Virtual Feat	Ability																																																																																																	Bonus to Ability Pool				Save checks bonus		Damage reduction	Bonus Number of Followers	Bonus to skill			Modify VAR					Allow Follower		Allowed Companions					Class Skill		Vision		Source Page	List of Known Class Spells by Level
 Power Attack
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
-	PREABILITY:1,Special Ability,Bonus Feat ~ Ironskin Monk
+	PREABILITY:1,CATEGORY=Special Ability,Bonus Feat ~ Ironskin Monk
 	!PREFEAT:1,Power Attack
 	PREVARGTEQ:MonkBonusFeatLVL,1
 	VFEAT:Power Attack
@@ -3177,7 +3175,7 @@ Improved Sunder
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
-	PREABILITY:1,Special Ability,Bonus Feat ~ Ironskin Monk
+	PREABILITY:1,CATEGORY=Special Ability,Bonus Feat ~ Ironskin Monk
 	!PREFEAT:1,Improved Sunder
 	PREVARGTEQ:MonkBonusFeatLVL,6
 	VFEAT:Improved Sunder
@@ -3186,10 +3184,19 @@ Greater Sunder
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
-	PREABILITY:1,Special Ability,Bonus Feat ~ Ironskin Monk
+	PREABILITY:1,CATEGORY=Special Ability,Bonus Feat ~ Ironskin Monk
 	!PREFEAT:1,Greater Sunder
 	PREVARGTEQ:MonkBonusFeatLVL,10
 	VFEAT:Greater Sunder
+
+CATEGORY=Special Ability|Dodge.MOD
+	!PREABILITY:1,CATEGORY=Special Ability,Bonus Feat ~ Ironskin Monk
+
+CATEGORY=Special Ability|Mobility.MOD
+	!PREABILITY:1,CATEGORY=Special Ability,Bonus Feat ~ Ironskin Monk
+
+CATEGORY=Special Ability|Spring Attack.MOD
+	!PREABILITY:1,CATEGORY=Special Ability,Bonus Feat ~ Ironskin Monk
 
 
 
@@ -3221,7 +3228,7 @@ Servant of the Flame
 	BONUS:VAR|DomainFireLVL|1|PREVARGTEQ:DomainFireLVL,0
 	SOURCEPAGE:p.124
 
-#Judgment						KEY:Judgment ~ Immolator				SOURCEPAGE:p.124	TYPE:ArchetypeAbility.SpecialQuality.Supernatural	CATEGORY:Special Ability	DESC:An immolator gains the following judgment instead of the smiting judgment.
+#Judgment			KEY:Judgment ~ Immolator		SOURCEPAGE:p.124	TYPE:ArchetypeAbility.SpecialQuality.Supernatural	CATEGORY:Special Ability	DESC:An immolator gains the following judgment instead of the smiting judgment.
 # Implement as judgement
 Immolation
 	KEY:Immolation ~ Immolator
@@ -3288,10 +3295,8 @@ Expanded Wishcraft
 	KEY:Expanded Wishcraft ~ Wishcrafter
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
-	SPELLS:Wishcraft|CASTERLEVEL=SorcerorLvl|%LIST
+	BONUS:SPELLCAST|CLASS=Sorceror;LEVEL=(SorcerorLvl/2-1)|1
 	DESC:The wishcrafter grows more adept at altering reality to fit the whims of others. She may add an additional spell selected from the sorcerer/wizard spell list to her list of spells known. This spell must be one level lower than the highest-level spell she can cast. A wishcrafter can only use these spells in conjunction with her wishbound arcana ability. For example, if she used this ability to learn cat's grace, she can only cast it when another creature wishes for it, and can't cast it on herself because it is a targeted spell. She cannot use these spells to craft or recharge magic items.
-	MULT:YES
-	CHOOSE:SPELLS|CLASSLIST=Sorcerer[LEVELMIN=1;LEVELMAX=MAXCASTABLE-1;KNOWN=NO]
 	SOURCEPAGE:p.124
 
 Heart's Desire
@@ -3344,7 +3349,7 @@ Trembling Grit
 	SOURCEPAGE:p.134
 
 # Implement as Gunslinger Deeds
-#Craven Deeds					KEY:Craven Deeds ~ Bushwhacker				SOURCEPAGE:p.134	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary	CATEGORY:Special Ability	DESC:A bushwhacker replaces some of her deeds with the following deeds. This ability otherwise works like the gunslinger's deed ability and alters that ability.
+#Craven Deeds			KEY:Craven Deeds ~ Bushwhacker		SOURCEPAGE:p.134	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary	CATEGORY:Special Ability	DESC:A bushwhacker replaces some of her deeds with the following deeds. This ability otherwise works like the gunslinger's deed ability and alters that ability.
 Shifty Shot
 	KEY:Shifty Shot ~ Bushwhacker
 	CATEGORY:Special Ability
@@ -3402,7 +3407,7 @@ Bonus Spells
 	SPELLKNOWN:CLASS|Sorceror=8|Form of the Dragon III|PREVARGTEQ:BloodlineCasterLVL,17
 	SPELLKNOWN:CLASS|Sorceror=9|Imprisonment|PREVARGTEQ:BloodlineCasterLVL,19
 
-#Bonus Feats						KEY:Bonus Feats ~ Kobold Sorcerer Bloodline			SOURCEPAGE:p.134	TYPE:ArchetypeAbility.SpecialQuality				CATEGORY:Special Ability	DESC:Alertness, Combat Casting, Defensive Combat Training, Dodge, Improved Initiative, Lightning Reflexes, Silent Spell.
+#Bonus Feats			KEY:Bonus Feats ~ Kobold Sorcerer Bloodline		SOURCEPAGE:p.134	TYPE:ArchetypeAbility.SpecialQuality		CATEGORY:Special Ability	DESC:Alertness, Combat Casting, Defensive Combat Training, Dodge, Improved Initiative, Lightning Reflexes, Silent Spell.
 Bloodline Arcana
 	KEY:Bloodline Arcana ~ Kobold Sorcerer Bloodline
 	CATEGORY:Special Ability
@@ -3710,7 +3715,7 @@ Body of Stone
 	KEY:Body of Stone ~ Student of Stone
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
-	DESC:A student of stone gains the benefits of the light fortification armor property.  (When a critical hit or sneak attack is scored on the wearer, there is a 25% chance that the critical hit or sneak attack is negated and damage is instead rolled normally.)
+	DESC:A student of stone gains the benefits of the light fortification armor property.  (When a critical hit or sneak attack is scored on the wearer, there is a 25%% chance that the critical hit or sneak attack is negated and damage is instead rolled normally.)
 	SOURCEPAGE:p.146
 
 Soul of Stone
@@ -3728,18 +3733,17 @@ Stone Self
 	TEMPLATE:Earth
 	MOVE:Burrow,20
 	BONUS:DR|Chaotic|5
-	VISION:Tremor Sense {20)
 	SOURCEPAGE:p.146
 
 
 
 ###Block: Student of Stone Bonus Feats
-# Ability Name			Unique Key							Category of Ability		Type																																									Visible		Required Ability																	Restricted Ability													Required AL					Required Class		Required Domain				Prohibited Feat			Multiple Requirements																																																												Required Race		Required Stat	Var. Min. Value				Serves As							Define							Innate Spells												Description																																																																																																																																																																																																																																																																																																																																																												Choose								Template		Virtual Feat							Ability																																																																																																																																					Remove Object					Bonus to Ability Pool							Bonus to skill											Bonus to skill point/L		Modify VAR																	Allow Follower			Allowed Companions																			Remove Class Skill	Class Skill																										Cross-Class Skill						Source Page		List of Known Class Spells by Level
+# Ability Name		Unique Key				Category of Ability	Type																					Visible	Required Ability									Restricted Ability							Required AL			Required Class	Required Domain		Prohibited Feat		Multiple Requirements																														Required Race	Required Stat	Var. Min. Value		Serves As				Define				Innate Spells						Description																																																																																																																																																																														Choose				Template	Virtual Feat				Ability																																																																			Remove Object			Bonus to Ability Pool				Bonus to skill						Bonus to skill point/L	Modify VAR									Allow Follower		Allowed Companions										Remove Class Skill	Class Skill													Cross-Class Skill			Source Page	List of Known Class Spells by Level
 Elemental Fist
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
-	PREABILITY:1,Special Ability,Bonus Feat ~ Student of Stone
+	PREABILITY:1,CATEGORY=Special Ability,Bonus Feat ~ Student of Stone
 	!PREFEAT:1,Elemental Fist
 	PREVARGTEQ:MonkBonusFeatLVL,6
 	VFEAT:Elemental Fist
@@ -3748,7 +3752,7 @@ Shaitan Style
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
-	PREABILITY:1,Special Ability,Bonus Feat ~ Student of Stone
+	PREABILITY:1,CATEGORY=Special Ability,Bonus Feat ~ Student of Stone
 	!PREFEAT:1,Shaitan Style
 	PREVARGTEQ:MonkBonusFeatLVL,10
 	VFEAT:Shaitan Style
@@ -3757,7 +3761,7 @@ Shaitan Skin
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
-	PREABILITY:1,Special Ability,Bonus Feat ~ Student of Stone
+	PREABILITY:1,CATEGORY=Special Ability,Bonus Feat ~ Student of Stone
 	!PREFEAT:1,Shaitan Skin
 	PREVARGTEQ:MonkBonusFeatLVL,14
 	VFEAT:Shaitan Skin
@@ -3766,7 +3770,7 @@ Shaitan Earthblast
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
-	PREABILITY:1,Special Ability,Bonus Feat ~ Student of Stone
+	PREABILITY:1,CATEGORY=Special Ability,Bonus Feat ~ Student of Stone
 	!PREFEAT:1,Shaitan Earthblast
 	PREVARGTEQ:MonkBonusFeatLVL,18
 	VFEAT:Shaitan Earthblast
@@ -3930,7 +3934,7 @@ Weapon and Armor Proficiency
 Nature Bond
 	KEY:Nature Bond ~ Sky Druid
 	CATEGORY:Special Ability
-	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary..NaturesBondAnimalCompanion.NaturesBondDruidDomain
+	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.NaturesBondAnimalCompanion.NaturesBondDruidDomain
 	DEFINE:DruidAnimalTerrainDomainNotAllowed|1
 	DESC:A sky druid who chooses an animal companion must select one with a fly speed. If choosing a domain, the sky druid must choose from the Air, Animals, Liberation, and Weather domains, or subdomains appropriate to those domains.
 	SOURCEPAGE:p.158
@@ -4833,7 +4837,7 @@ Amphibious Mutagen
 	DESC:When a bogborn alchemist uses a mutagen, he may choose to have his mutagen form enhanced for aquatic movement. This gives him the amphibious special quality, his feet elongate, and the webbing between his fingers and toes expands, granting a swim speed of 15 feet.
 	SOURCEPAGE:p.191
 
-#Discovery Options				KEY:Discovery Options ~ Bogborn Alchemist		SOURCEPAGE:p.191	TYPE:ArchetypeAbility.SpecialQuality				CATEGORY:Special Ability	DESC:A bogborn alchemist can select the toxic skin grippli racial trait in place of an alchemical discovery.
+#Discovery Options		KEY:Discovery Options ~ Bogborn Alchemist	SOURCEPAGE:p.191	TYPE:ArchetypeAbility.SpecialQuality		CATEGORY:Special Ability	DESC:A bogborn alchemist can select the toxic skin grippli racial trait in place of an alchemical discovery.
 Discoveries
 	KEY:Discoveries ~ Bogborn Alchemist
 	CATEGORY:Special Ability
@@ -4949,7 +4953,7 @@ Watery Summons
 
 #
 ###Block: Wave Warden Bonus Feats
-# Ability Name			Unique Key								Category of Ability		Type																																										Visible		Required Ability											Required Class		Prohibited Feat					Multiple Requirements																																																													Required Race		Description																																																																																																																																																						Virtual Feat														Ability																																																																																													Remove Object									Bonus to Ability Pool							Add to base move							Class Skill							Cross-Class Skill				Source Page		List of Known Class Spells by Level																																																				List of Class Spells by Level																																																																											VFEAT|Incremental Elemental Assault
+# Ability Name		Unique Key				Category of Ability	Type																					Visible	Required Ability						Required Class	Prohibited Feat			Multiple Requirements																															Required Race	Description																																																																											Virtual Feat							Ability																																															Remove Object					Bonus to Ability Pool				Add to base move				Class Skill				Cross-Class Skill		Source Page	List of Known Class Spells by Level																										List of Class Spells by Level																																						VFEAT|Incremental Elemental Assault
 Dodge
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
@@ -5116,7 +5120,7 @@ Aspirant's Bond
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:A naga aspirant gains a spiritual connection to the serpentine deities worshiped by the nagas. At 1st level, and each time she gains a druid level, she may add one of the following spells to her druid spell list. 0-acid splash, bleed, daze, mage hand, open/close, ray of frost; 1st-charm person, divine favor, expeditious retreat, mage armor, magic missile, ray of enfeeblement, shield, shield of faith, silent image, true strike; 2nd-acid arrow, detect thoughts, invisibility, mirror image, scorching ray, see invisibility; 3rd- dispel magic, displacement, fireball, lightning bolt, suggestion; 4th-divine power, greater invisibility.
 	SOURCEPAGE:p.196
-	SPELLLEVEL:CLASS|Naga Aspirant=0|Acid Splash|Bleed|Daze|Mage Hand|Open/close|Ray of frost|Naga Aspirant=1|Charm Person|Divine Favor|Expeditious Retreat|Mage Armor|Magic Missile|Ray of Enfeeblement|Shield|Shield of Faith|Silent Image|True Strike|Naga Aspirant=2|Acid Arrow|Detect Thoughts|Invisibility|Mirror Image|Scorching Ray|See Invisibility|Naga Aspirant=3|Dispel Magic|Displacement|Fireball|Lightning Bolt|Suggestion|Naga Aspirant=4|Divine Power|Greater Invisibility
+	SPELLLEVEL:CLASS|Druid=0|Acid Splash|Bleed|Daze|Mage Hand|Open/Close|Ray of Frost|Druid=1|Charm Person|Divine Favor|Expeditious Retreat|Mage Armor|Magic Missile|Ray of Enfeeblement|Shield|Shield of Faith|Silent Image|True Strike|Druid=2|Acid Arrow|Detect Thoughts|Invisibility|Mirror Image|Scorching Ray|See Invisibility|Druid=3|Dispel Magic|Displacement|Fireball|Lightning Bolt|Suggestion|Druid=4|Divine Power|Greater Invisibility
 
 Aspirant's Enlightenment
 	KEY:Aspirant's Enlightenment ~ Naga Aspirant
@@ -5402,7 +5406,7 @@ Energy Reflection
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural.MagusArcana
 	PREABILITY:1,CATEGORY=Special Ability,Elemental Arcana ~ Elemental Knight
 	PRECLASS:1,Magus=12
-	DESC:This functions like the reflection magus arcana, except it only works on spells that deal acid, cold, electricity, or fire damage. As long as the elemental knight spends at least 1 point from her arcane pool to activate this arcana, he may expend rounds of elemental assault as if they were arcane pool points. For example, the knight could spend 1 arcane pool point and 3 rounds of elemental assault to reflect a spell of 4th-level or lower.|
+	DESC:This functions like the reflection magus arcana, except it only works on spells that deal acid, cold, electricity, or fire damage. As long as the elemental knight spends at least 1 point from her arcane pool to activate this arcana, he may expend rounds of elemental assault as if they were arcane pool points. For example, the knight could spend 1 arcane pool point and 3 rounds of elemental assault to reflect a spell of 4th-level or lower.
 	SOURCEPAGE:p.203
 
 Energy Resistance Boost
@@ -5420,7 +5424,7 @@ Elemental Matrix
 	!PREFEAT:1,Incremental Elemental Assault
 	DESC:An elemental knight gains Incremental Elemental Assault as a bonus feat. In addition, at 4th level, as a swift action, an elemental knight may expend rounds of duration from her elemental assault ability. For every 4 rounds expended, he gains 1 arcane pool point.
 	SOURCEPAGE:p.203
-	VFEAT|Incremental Elemental Assault:
+	VFEAT:Incremental Elemental Assault:
 
 Magus Arcana
 	KEY:Magus Arcana ~ Elemental Knight
@@ -5631,7 +5635,7 @@ Shadow Puppets
 
 
 ###Block: Quinggong Monk, new ki powers
-# Ability Name			Unique Key						Category of Ability		Type					Required Class	Description																																																																																																																									Source Page
+# Ability Name		Unique Key			Category of Ability	Type			Required Class	Description																																																													Source Page
 Mighty Fist of the Earth
 	KEY:Ki Power ~ Mighty Fist of the Earth
 	CATEGORY:Special Ability

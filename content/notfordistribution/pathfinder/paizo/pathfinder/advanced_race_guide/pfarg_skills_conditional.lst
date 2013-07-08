@@ -111,10 +111,6 @@ Spellcraft.MOD
 	BONUS:SKILL|Spellcraft (Cast Defensively)|var("SKILL.Spellcraft.MISC")
 	BONUS:SKILLRANK|Spellcraft (Cast Defensively)|skillinfo("TOTALRANK","Spellcraft")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Spellcraft (Cast Defensively).MISC"),var("SKILL.Spellcraft.MISC")
 
-Concentration.MOD
-	BONUS:SKILL|Concentration (Cast Defensively)|var("SKILL.Concentration.MISC")
-	BONUS:SKILLRANK|Concentration (Cast Defensively)|skillinfo("TOTALRANK","Concentration")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Concentration (Cast Defensively).MISC"),var("SKILL.Concentration.MISC")
-
 Bluff.MOD
 	BONUS:SKILL|Bluff (Lie)|var("SKILL.Bluff.MISC")
 	BONUS:SKILLRANK|Bluff (Lie)|skillinfo("TOTALRANK","Bluff")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Bluff (Lie).MISC"),var("SKILL.Bluff.MISC")
@@ -179,10 +175,6 @@ Perception.MOD
 	BONUS:SKILL|Perception (Notice Flying Creatures)|var("SKILL.Perception.MISC")
 	BONUS:SKILLRANK|Perception (Notice Flying Creatures)|skillinfo("TOTALRANK","Perception")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Perception (Notice Flying Creatures).MISC"),var("SKILL.Perception.MISC")
 
-Concentration.MOD
-	BONUS:SKILL|Concentration (Cast Arcane Defensively)|var("SKILL.Concentration.MISC")
-	BONUS:SKILLRANK|Concentration (Cast Arcane Defensively)|skillinfo("TOTALRANK","Concentration")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Concentration (Cast Arcane Defensively).MISC"),var("SKILL.Concentration.MISC")
-
 Diplomacy.MOD
 	BONUS:SKILL|Diplomacy (Gather Information)|var("SKILL.Diplomacy.MISC")
 	BONUS:SKILLRANK|Diplomacy (Gather Information)|skillinfo("TOTALRANK","Diplomacy")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Diplomacy (Gather Information).MISC"),var("SKILL.Diplomacy.MISC")
@@ -214,10 +206,6 @@ Acrobatics.MOD
 Climb.MOD
 	BONUS:SKILL|Climb (Narrow Surfaces)|var("SKILL.Climb.MISC")
 	BONUS:SKILLRANK|Climb (Narrow Surfaces)|skillinfo("TOTALRANK","Climb")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Climb (Narrow Surfaces).MISC"),var("SKILL.Climb.MISC")
-
-Concentration.MOD
-	BONUS:SKILL|Concentration (Underwater)|var("SKILL.Concentration.MISC")
-	BONUS:SKILLRANK|Concentration (Underwater)|skillinfo("TOTALRANK","Concentration")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Concentration (Underwater).MISC"),var("SKILL.Concentration.MISC")
 
 Survival.MOD
 	BONUS:SKILL|Survival (Urban)|var("SKILL.Survival.MISC")
