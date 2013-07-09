@@ -97,10 +97,6 @@ Basket.MOD
 Bedroll.MOD
 	SOURCEPAGE:p.59
 
-Bedroll.COPY=Bedroll (Small)
-	OUTPUTNAME:Bedroll, Small
-	WT:1.25
-
 Bell.MOD
 	SOURCEPAGE:p.59
 
