@@ -1261,7 +1261,7 @@ Elixer of Forceful Exhalation
 	WT:1
 	SOURCEPAGE:p.160
 	SPROP:The drinker can exhale up to three 15-foot-long Gusts of Wind (as the spell), after which the skill bonuses end.
-	TEMPBONUS:ANYPC|SKILL|Acrobatics (Jump),Swim|4|Competence
+	TEMPBONUS:ANYPC|SKILL|Acrobatics (Jump),Swim|4|TYPE=Competence
 
 
 

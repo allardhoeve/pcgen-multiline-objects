@@ -126,7 +126,7 @@ Claw Pounce
 	TYPE:Combat
 	PREATT:10
 	PREFEAT:1,Nimble Striker
-	PREMULT:1,PREABILITY:1,CATEGORY=Special Ability,Cat's Claws ~ Catfolk,PREFEAT:1,Aspect of the Beast (Claws of the Beast)
+	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Cat's Claws ~ Catfolk],[PREFEAT:1,Aspect of the Beast (Claws of the Beast)]
 	PRERACE:1,Catfolk
 	PRESTAT:2,STR=13,DEX=15
 	DESC:You can charge and make an attack with your paws.

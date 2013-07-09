@@ -348,7 +348,7 @@ Linebreaker
 	TEMPBONUS:VAR|CMB_BullRush,CMB_Overrun|2
 
 Savage Maw
-	CLASSES:Antipaladin,,Ranger=1|Cleric,Druid,Inquisitor,Magus=2
+	CLASSES:Antipaladin,Ranger=1|Cleric,Druid,Inquisitor,Magus=2
 	SCHOOL:Transmutation
 	TYPE:Arcane.Divine
 	COMPS:V, S
@@ -1168,7 +1168,7 @@ Path of the Winds
 	DURATION:Concentration +1 round
 	SAVEINFO:Fortitude Negates
 	SPELLRES:Yes
-	DESC:With a sweeping gesture, you call forth mighty winds to clear a path ahead of you. The winds are the equivalent of a windstorm (Core Rulebook 439). During the first round of the spell, the winds sweep the designated area clear of anything of Small or smaller size, blowing it outward to the sides of the spell's effect (50% chance of landing on either side). You may move within the effect without penalty, though all other creatures are subject to the wind's effects. On the second and all later rounds of the spell, the edges of the effect are treated as a wind wall. If the effect includes a body of water or other liquid, the winds create a channel up to 40 feet deep into the surface of the liquid. On your turn as a move action, you can move the effect of this spell, either rotating it at one of its ends up to 45 degrees, or moving it up to 50 feet in line with its current orientation (toward you or away from you).
+	DESC:With a sweeping gesture, you call forth mighty winds to clear a path ahead of you. The winds are the equivalent of a windstorm (Core Rulebook 439). During the first round of the spell, the winds sweep the designated area clear of anything of Small or smaller size, blowing it outward to the sides of the spell's effect (50%% chance of landing on either side). You may move within the effect without penalty, though all other creatures are subject to the wind's effects. On the second and all later rounds of the spell, the edges of the effect are treated as a wind wall. If the effect includes a body of water or other liquid, the winds create a channel up to 40 feet deep into the surface of the liquid. On your turn as a move action, you can move the effect of this spell, either rotating it at one of its ends up to 45 degrees, or moving it up to 50 feet in line with its current orientation (toward you or away from you).
 	SOURCEPAGE:p.161
 
 Wind Blades
@@ -1351,7 +1351,7 @@ Sow Thought
 	DURATION:Permanent
 	SAVEINFO:Will Negates
 	SPELLRES:Yes
-	DESC:You plant an idea, concept, or suspicion in the mind of the subject. The target genuinely believes that the idea is his own, but is not required to act upon it. If the idea is contrary to the target's normal thoughts (such as making a paladin think, I should murder my friends) the target may suspect mindaltering magic is at play. The idea must be fairly clear, enough so that it can be conveyed in one or two sentences. You do not need to share a common language for the spell to succeed, but without a common language you can only sow the most basic rudimentary ideas.
+	DESC:You plant an idea, concept, or suspicion in the mind of the subject. The target genuinely believes that the idea is his own, but is not required to act upon it. If the idea is contrary to the target's normal thoughts (such as making a paladin think, "I should murder my friends") the target may suspect mindaltering magic is at play. The idea must be fairly clear, enough so that it can be conveyed in one or two sentences. You do not need to share a common language for the spell to succeed, but without a common language you can only sow the most basic rudimentary ideas.
 	SOURCEPAGE:p.185
 
 

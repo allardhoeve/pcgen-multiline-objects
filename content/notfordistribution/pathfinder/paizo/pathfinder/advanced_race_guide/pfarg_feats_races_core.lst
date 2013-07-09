@@ -125,9 +125,9 @@ Attuned to the Wild
 	DESC:You share a strong mystic connection with one type of wilderness terrain.
 	STACK:NO
 	MULT:YES
-	CHOOSE:USERINPUT|1|TITLE=Wilderness Terrain Choice (not urban)
+	CHOOSE:STRING|Cold|Desert|Forest|Jungle|Mountain|Plains|Plane|Swamp|Underground|Water
 	SOURCEPAGE:p.28
-	BENEFIT:While you are in %1 terrain, your natural healing rate doubles.
+	BENEFIT:While you are in %1 terrain, your natural healing rate doubles.|%LIST
 
 Elven Battle Training
 	TYPE:Combat
