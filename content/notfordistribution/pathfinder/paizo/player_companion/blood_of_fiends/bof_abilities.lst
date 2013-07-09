@@ -365,7 +365,7 @@ Demodand_Spawn Spell Like Ability
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Demodand_SpawnSLA ~ Tiefling],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingSLA]
 	DEFINE:TieflingBearsEnduranceTimes|1
 	SPELLS:Innate|TIMES=TieflingBearsEnduranceTimes|CASTERLEVEL=TL|Bear's Endurance
-	DESC:Demodand-Spawn tieflings can use bear's endurance %1/day as a spell-like ability.|TieflingBearsEnduranceTimes
+	DESC:Demodand-Spawn tieflings can use bear’s endurance %1/day as a spell-like ability.|TieflingBearsEnduranceTimes
 	SOURCEPAGE:p.20
 
 Demon_Spawn Spell Like Ability
@@ -633,13 +633,13 @@ Prayer Breaker
 	DESC:You have an instinctive flair for causing such pain to the faithful that they temporarily lose their connection with their god. If a divine spellcaster makes a concentration check to avoid losing a spell because of an injury you caused, increase the DC of that check by +2.
 	SOURCEPAGE:p.19
 
-Deaths Deputy
-	KEY:Deaths Deputy ~ DaemonSpawn
+Death’s Deputy
+	KEY:Death’s Deputy ~ DaemonSpawn
 	CATEGORY:Special Ability
 	TYPE:Trait.RaceTrait.DaemonSpawnRaceTrait
-	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Deaths Deputy ~ DaemonSpawn],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
+	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Death’s Deputy ~ DaemonSpawn],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Tiefling_Daemon_Spawn],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Tiefling Daemon-Spawn]
-	DESC:When you send opponents to deaths door, you often hurl their corpses right across its threshold. You gain a +2 trait bonus on the damage dealt for any attack that would already reduce your target to negative hit points without this trait.
+	DESC:When you send opponents to death’s door, you often hurl their corpses right across its threshold. You gain a +2 trait bonus on the damage dealt for any attack that would already reduce your target to negative hit points without this trait.
 	SOURCEPAGE:p.19
 
 Soul Eater
