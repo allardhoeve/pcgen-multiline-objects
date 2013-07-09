@@ -25,11 +25,6 @@ CATEGORY=Special Ability|Fiendish Language ~ Tiefling.MOD
 
 ###Block: Set up Tiefling_Asura_Spawn default abilities
 # Ability Name										Category of Ability	Ability																							Bonus to Ability Pool
-CATEGORY=Internal|Select Racial Traits.MOD
-	ABILITY:Internal|AUTOMATIC|Tiefling_Asura_Spawn Racial Trait Default|PRERACE:1,Tiefling_Asura_Spawn
-
-
-
 Tiefling_Asura_Spawn Racial Trait Default
 	CATEGORY:Internal
 
@@ -61,11 +56,6 @@ CATEGORY=Internal|Tiefling_Asura_Spawn Racial Trait Default.MOD
 
 ###Block: Set up Tiefling_Daemon_Spawn default abilities
 # Ability Name										Category of Ability	Ability																							Bonus to Ability Pool
-CATEGORY=Internal|Select Racial Traits.MOD
-	ABILITY:Internal|AUTOMATIC|Tiefling_Daemon_Spawn Racial Trait Default|PRERACE:1,Tiefling_Daemon_Spawn
-
-
-
 Tiefling_Daemon_Spawn Racial Trait Default
 	CATEGORY:Internal
 
@@ -97,11 +87,6 @@ CATEGORY=Internal|Tiefling_Daemon_Spawn Racial Trait Default.MOD
 
 ###Block: Set up Tiefling_Demodand_Spawn default abilities
 # Ability Name										Category of Ability	Ability																							Bonus to Ability Pool
-CATEGORY=Internal|Select Racial Traits.MOD
-	ABILITY:Internal|AUTOMATIC|Tiefling_Demodand_Spawn Racial Trait Default|PRERACE:1,Tiefling_Demodand_Spawn
-
-
-
 Tiefling_Demodand_Spawn Racial Trait Default
 	CATEGORY:Internal
 
@@ -133,11 +118,6 @@ CATEGORY=Internal|Tiefling_Demodand_Spawn Racial Trait Default.MOD
 
 ###Block: Set up Tiefling_Demon_Spawn default abilities
 # Ability Name										Category of Ability	Ability																							Bonus to Ability Pool
-CATEGORY=Internal|Select Racial Traits.MOD
-	ABILITY:Internal|AUTOMATIC|Tiefling_Demon_Spawn Racial Trait Default|PRERACE:1,Tiefling_Demon_Spawn
-
-
-
 Tiefling_Demon_Spawn Racial Trait Default
 	CATEGORY:Internal
 
@@ -175,11 +155,6 @@ CATEGORY=Internal|Tiefling_Demon_Spawn Racial Trait Default.MOD
 
 ###Block: Set up Tiefling_Devil_Spawn default abilities
 # Ability Name										Category of Ability	Ability																							Bonus to Ability Pool
-CATEGORY=Internal|Select Racial Traits.MOD
-	ABILITY:Internal|AUTOMATIC|Tiefling_Devil_Spawn Racial Trait Default|PRERACE:1,Tiefling_Devil_Spawn
-
-
-
 Tiefling_Devil_Spawn Racial Trait Default
 	CATEGORY:Internal
 
@@ -211,11 +186,6 @@ CATEGORY=Internal|Tiefling_Devil_Spawn Racial Trait Default.MOD
 
 ###Block: Set up Tiefling_Div_Spawn default abilities
 # Ability Name										Category of Ability	Ability																							Bonus to Ability Pool
-CATEGORY=Internal|Select Racial Traits.MOD
-	ABILITY:Internal|AUTOMATIC|Tiefling_Div_Spawn Racial Trait Default|PRERACE:1,Tiefling_Div_Spawn
-
-
-
 Tiefling_Div_Spawn Racial Trait Default
 	CATEGORY:Internal
 
@@ -247,11 +217,6 @@ CATEGORY=Internal|Tiefling_Div_Spawn Racial Trait Default.MOD
 
 ###Block: Set up Tiefling_Kyton_Spawn default abilities
 # Ability Name										Category of Ability	Ability																							Bonus to Ability Pool
-CATEGORY=Internal|Select Racial Traits.MOD
-	ABILITY:Internal|AUTOMATIC|Tiefling_Kyton_Spawn Racial Trait Default|PRERACE:1,Tiefling_Kyton_Spawn
-
-
-
 Tiefling_Kyton_Spawn Racial Trait Default
 	CATEGORY:Internal
 
@@ -283,11 +248,6 @@ CATEGORY=Internal|Tiefling_Kyton_Spawn Racial Trait Default.MOD
 
 ###Block: Set up Tiefling_Oni_Spawn default abilities
 # Ability Name										Category of Ability	Ability																							Bonus to Ability Pool
-CATEGORY=Internal|Select Racial Traits.MOD
-	ABILITY:Internal|AUTOMATIC|Tiefling_Oni_Spawn Racial Trait Default|PRERACE:1,Tiefling_Oni_Spawn
-
-
-
 Tiefling_Oni_Spawn Racial Trait Default
 	CATEGORY:Internal
 
@@ -319,11 +279,6 @@ CATEGORY=Internal|Tiefling_Oni_Spawn Racial Trait Default.MOD
 
 ###Block: Set up Tiefling_Qlippoth_Spawn default abilities
 # Ability Name										Category of Ability	Ability																							Bonus to Ability Pool
-CATEGORY=Internal|Select Racial Traits.MOD
-	ABILITY:Internal|AUTOMATIC|Tiefling_Qlippoth_Spawn Racial Trait Default|PRERACE:1,Tiefling_Qlippoth_Spawn
-
-
-
 Tiefling_Qlippoth_Spawn Racial Trait Default
 	CATEGORY:Internal
 
@@ -355,11 +310,6 @@ CATEGORY=Internal|Tiefling_Qlippoth_Spawn Racial Trait Default.MOD
 
 ###Block: Set up Tiefling_Rakshasa_Spawn default abilities
 # Ability Name										Category of Ability	Ability																							Bonus to Ability Pool
-CATEGORY=Internal|Select Racial Traits.MOD
-	ABILITY:Internal|AUTOMATIC|Tiefling_Rakshasa_Spawn Racial Trait Default|PRERACE:1,Tiefling_Rakshasa_Spawn
-
-
-
 Tiefling_Rakshasa_Spawn Racial Trait Default
 	CATEGORY:Internal
 
@@ -683,13 +633,13 @@ Prayer Breaker
 	DESC:You have an instinctive flair for causing such pain to the faithful that they temporarily lose their connection with their god. If a divine spellcaster makes a concentration check to avoid losing a spell because of an injury you caused, increase the DC of that check by +2.
 	SOURCEPAGE:p.19
 
-Death’s Deputy
-	KEY:Death’s Deputy ~ DaemonSpawn
+Deaths Deputy
+	KEY:Deaths Deputy ~ DaemonSpawn
 	CATEGORY:Special Ability
 	TYPE:Trait.RaceTrait.DaemonSpawnRaceTrait
-	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Death’s Deputy ~ DaemonSpawn],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
+	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Deaths Deputy ~ DaemonSpawn],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Tiefling_Daemon_Spawn],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Tiefling Daemon-Spawn]
-	DESC:When you send opponents to death’s door, you often hurl their corpses right across its threshold. You gain a +2 trait bonus on the damage dealt for any attack that would already reduce your target to negative hit points without this trait.
+	DESC:When you send opponents to deaths door, you often hurl their corpses right across its threshold. You gain a +2 trait bonus on the damage dealt for any attack that would already reduce your target to negative hit points without this trait.
 	SOURCEPAGE:p.19
 
 Soul Eater
@@ -752,7 +702,7 @@ Unearth Secrets
 	TYPE:Trait.RaceTrait.DevilSpawnRaceTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Unearth Secrets ~ DevilSpawn],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Tiefling_Devil_Spawn],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Tiefling Devil-Spawn]
-	DESC:You have a gift for recognizing secret desires. You gain a +2 trait bonus on Sense Motive checks when trying to get a hunch that might reveal a target’s hidden vice, dark impulse, or any other craving it would not want publicly revealed.
+	DESC:You have a gift for recognizing secret desires. You gain a +2 trait bonus on Sense Motive checks when trying to get a hunch that might reveal a targets hidden vice, dark impulse, or any other craving it would not want publicly revealed.
 	SOURCEPAGE:p.21
 
 Buried Anxiety
@@ -797,7 +747,7 @@ Big Boned
 	TYPE:Trait.OniSpawnRaceTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Big Boned ~ OniSpawn],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Tiefling_Oni_Spawn],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Tiefling Oni-Spawn]
-	DESC:Your ancestors’ great size has gifted you with an exceptionally sturdy frame. You gain a +1 trait bonus on combat maneuver checks made to overrun opponents, as well as a +1 trait bonus to your CMD against trip attempts.
+	DESC:Your ancestors great size has gifted you with an exceptionally sturdy frame. You gain a +1 trait bonus on combat maneuver checks made to overrun opponents, as well as a +1 trait bonus to your CMD against trip attempts.
 	SOURCEPAGE:p.22
 
 Superior Clutch
@@ -842,7 +792,7 @@ Tough Skin
 	TYPE:Trait.RakshasaSpawnRaceTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Tough Skin ~ RakshasaSpawn],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Tiefling_Rakshasa_Spawn],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Tiefling Rakshasa-Spawn]
-	DESC:You retain a small amount of your ancestors’ unyielding skin. You gain a +1 trait bonus to AC when opponents attempt to confirm critical hits with either bludgeoning or slashing weapons.
+	DESC:You retain a small amount of your ancestors unyielding skin. You gain a +1 trait bonus to AC when opponents attempt to confirm critical hits with either bludgeoning or slashing weapons.
 	SOURCEPAGE:p.23
 
 
@@ -875,7 +825,7 @@ Blessing of Darkness
 	TYPE:Trait.RaceTrait.AsuraSpawnRaceTrait.DaemonSpawnRaceTrait.DemodandSpawnRaceTrait.DemonSpawnRaceTrait.DevilSpawnRaceTrait.DivSpawnRaceTrait.KytonSpawnRaceTrait.OniSpawnRaceTrait.QlippothSpawnRaceTrait.RakshasaSpawnRaceTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Blessing of Darkness ~ Tiefling],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Tiefling,Tiefling_Asura_Spawn,Tiefling_Daemon_Spawn,Tiefling_Demodand_Spawn,Tiefling_Demon_Spawn,Tiefling_Devil_Spawn,Tiefling_Div_Spawn,Tiefling_Kyton_Spawn,Tiefling_Oni_Spawn,Tiefling_Qlippoth_Spawn,Tiefling_Rakshasa_Spawn],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Tiefling,Adoptive Race ~ Tiefling Asura-Spawn,Adoptive Race ~ Tiefling Daemon-Spawn,Adoptive Race ~ Tiefling Demodand-Spawn,Adoptive Race ~ Tiefling Demon-Spawn,Adoptive Race ~ Tiefling Devil-Spawn,Adoptive Race ~ Tiefling Div-Spawn,Adoptive Race ~ Tiefling Kyton-Spawn,Adoptive Race ~ Tiefling Oni-Spawn,Adoptive Race ~ Tiefling Qlippoth-Spawn,Adoptive Race ~ Tiefling Rakshasa-Spawn]
-	DESC:Your innate connection with the powers of darkness serves you well when evil zealots pray on your behalf. Whenever a spellcaster capable of channeling negative energy casts a beneficial spell on you, she acts as if she were one level higher for the purpose of determining that spell’s effects.
+	DESC:Your innate connection with the powers of darkness serves you well when evil zealots pray on your behalf. Whenever a spellcaster capable of channeling negative energy casts a beneficial spell on you, she acts as if she were one level higher for the purpose of determining that spells effects.
 	SOURCEPAGE:p.30
 
 Born Damned
@@ -893,7 +843,7 @@ Dark Magic Affinity
 	TYPE:Trait.RaceTrait.AsuraSpawnRaceTrait.DaemonSpawnRaceTrait.DemodandSpawnRaceTrait.DemonSpawnRaceTrait.DevilSpawnRaceTrait.DivSpawnRaceTrait.KytonSpawnRaceTrait.OniSpawnRaceTrait.QlippothSpawnRaceTrait.RakshasaSpawnRaceTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dark Magic Affinity ~ Tiefling],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Tiefling,Tiefling_Asura_Spawn,Tiefling_Daemon_Spawn,Tiefling_Demodand_Spawn,Tiefling_Demon_Spawn,Tiefling_Devil_Spawn,Tiefling_Div_Spawn,Tiefling_Kyton_Spawn,Tiefling_Oni_Spawn,Tiefling_Qlippoth_Spawn,Tiefling_Rakshasa_Spawn],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Tiefling,Adoptive Race ~ Tiefling Asura-Spawn,Adoptive Race ~ Tiefling Daemon-Spawn,Adoptive Race ~ Tiefling Demodand-Spawn,Adoptive Race ~ Tiefling Demon-Spawn,Adoptive Race ~ Tiefling Devil-Spawn,Adoptive Race ~ Tiefling Div-Spawn,Adoptive Race ~ Tiefling Kyton-Spawn,Adoptive Race ~ Tiefling Oni-Spawn,Adoptive Race ~ Tiefling Qlippoth-Spawn,Adoptive Race ~ Tiefling Rakshasa-Spawn]
-	DESC:You have an instinctive talent for unleashing the vilest spells, letting the taint in your blood empower your malicious magic. Whenever you cast a spell with the evil descriptor, you act as if you were one level higher for the purpose of determining that spell’s effects.
+	DESC:You have an instinctive talent for unleashing the vilest spells, letting the taint in your blood empower your malicious magic. Whenever you cast a spell with the evil descriptor, you act as if you were one level higher for the purpose of determining that spells effects.
 	SOURCEPAGE:p.30
 
 Ever Wary

@@ -24,6 +24,7 @@ Tiefling_Asura_Spawn
 	RACESUBTYPE:Native
 	CR:1/2
 	SOURCEPAGE:p.264
+	ABILITY:Internal|AUTOMATIC|Tiefling_Asura_Spawn Racial Trait Default
 
 Tiefling_Daemon_Spawn
 	OUTPUTNAME:Tiefling (Daemon-Spawn)
@@ -41,6 +42,7 @@ Tiefling_Daemon_Spawn
 	RACESUBTYPE:Native
 	CR:1/2
 	SOURCEPAGE:p.264
+	ABILITY:Internal|AUTOMATIC|Tiefling_Daemon_Spawn Racial Trait Default
 
 Tiefling_Demodand_Spawn
 	OUTPUTNAME:Tiefling (Demodand-Spawn)
@@ -58,6 +60,7 @@ Tiefling_Demodand_Spawn
 	RACESUBTYPE:Native
 	CR:1/2
 	SOURCEPAGE:p.264
+	ABILITY:Internal|AUTOMATIC|Tiefling_Demodand_Spawn Racial Trait Default
 
 Tiefling_Demon_Spawn
 	OUTPUTNAME:Tiefling (Demon-Spawn)
@@ -75,6 +78,7 @@ Tiefling_Demon_Spawn
 	RACESUBTYPE:Native
 	CR:1/2
 	SOURCEPAGE:p.264
+	ABILITY:Internal|AUTOMATIC|Tiefling_Demon_Spawn Racial Trait Default
 
 Tiefling_Devil_Spawn
 	OUTPUTNAME:Tiefling (Devil-Spawn)
@@ -92,6 +96,7 @@ Tiefling_Devil_Spawn
 	RACESUBTYPE:Native
 	CR:1/2
 	SOURCEPAGE:p.264
+	ABILITY:Internal|AUTOMATIC|Tiefling_Devil_Spawn Racial Trait Default
 
 Tiefling_Div_Spawn
 	OUTPUTNAME:Tiefling (Div-Spawn)
@@ -109,6 +114,7 @@ Tiefling_Div_Spawn
 	RACESUBTYPE:Native
 	CR:1/2
 	SOURCEPAGE:p.264
+	ABILITY:Internal|AUTOMATIC|Tiefling_Div_Spawn Racial Trait Default
 
 Tiefling_Kyton_Spawn
 	OUTPUTNAME:Tiefling (Kyton-Spawn)
@@ -126,6 +132,7 @@ Tiefling_Kyton_Spawn
 	RACESUBTYPE:Native
 	CR:1/2
 	SOURCEPAGE:p.264
+	ABILITY:Internal|AUTOMATIC|Tiefling_Kyton_Spawn Racial Trait Default
 
 Tiefling_Oni_Spawn
 	OUTPUTNAME:Tiefling (Oni-Spawn)
@@ -143,6 +150,7 @@ Tiefling_Oni_Spawn
 	RACESUBTYPE:Native
 	CR:1/2
 	SOURCEPAGE:p.264
+	ABILITY:Internal|AUTOMATIC|Tiefling_Oni_Spawn Racial Trait Default
 
 Tiefling_Qlippoth_Spawn
 	OUTPUTNAME:Tiefling (Qlippoth-Spawn)
@@ -160,6 +168,7 @@ Tiefling_Qlippoth_Spawn
 	RACESUBTYPE:Native
 	CR:1/2
 	SOURCEPAGE:p.264
+	ABILITY:Internal|AUTOMATIC|Tiefling_Qlippoth_Spawn Racial Trait Default
 
 Tiefling_Rakshasa_Spawn
 	OUTPUTNAME:Tiefling (Rakshasa-Spawn)
@@ -177,4 +186,5 @@ Tiefling_Rakshasa_Spawn
 	RACESUBTYPE:Native
 	CR:1/2
 	SOURCEPAGE:p.264
+	ABILITY:Internal|AUTOMATIC|Tiefling_Rakshasa_Spawn Racial Trait Default
 
