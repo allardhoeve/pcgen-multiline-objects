@@ -433,9 +433,17 @@ Divine Weapon Focus
 	PREVARGTEQ:DivineRank,1
 	MULT:YES
 	CHOOSE:WEAPONPROFICIENCY|Grapple|PC|SPELLCASTER[Ray]
-	BONUS:WEAPONPROF=%LIST|TOHIT|4
+	AUTO:FEAT|Divine Weapon Focus (%LIST)
 	COST:1
 	SOURCEPAGE:DivineAbilitiesandFeats.rtf
+
+# COMMENT: Workaround as getting this to work by any other method has been a frustrating uphill battle
+Divine Weapon Focus
+	CATEGORY:FEAT
+	VISIBLE:NO
+	MULT:YES
+	CHOOSE:WEAPONPROFICIENCY|Grapple|PC|SPELLCASTER[Ray]
+	BONUS:WEAPONPROF=%LIST|TOHIT|4
 
 Divine Weapon Mastery
 	CATEGORY:Salient Divine Ability
@@ -453,15 +461,10 @@ Divine Weapon Specialization
 	PREATT:20
 	PREVARGTEQ:DivineRank,1
 	MULT:YES
-	CHOOSE:WEAPONPROFICIENCY|Grapple|PC|SPELLCASTER[Ray]
+	CHOOSE:WEAPONPROFICIENCY|FEAT=Divine Weapon Focus
 	BONUS:WEAPONPROF=%LIST|DAMAGE|DivineRank
 	COST:1
 	SOURCEPAGE:DivineAbilitiesandFeats.rtf
-
-# Issue with this till we get CHOOSE:ABILITY resolved
-#CHOOSE:FEAT=Divine Weapon Focus																																	BONUS:WEAPONPROF=%LIST|DAMAGE|DivineRank	COST:1	SOURCEPAGE:DivineAbilitiesandFeats.rtf
-# COMMENT: CHOOSE:ABILITYLIST
-
 
 Energy Burst
 	CATEGORY:Salient Divine Ability
