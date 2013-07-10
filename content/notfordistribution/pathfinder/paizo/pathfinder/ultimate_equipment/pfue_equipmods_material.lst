@@ -370,6 +370,15 @@ Living Steel
 
 Living Steel
 	ITYPE:LivingSteel
+	KEY:LIVING_ST_SHLD
+	TYPE:BaseMaterial.Shield
+	SOURCEPAGE:51
+	COST:100
+	PRETYPE:1,Metal,Shield
+	SPROP:35 hp/inch, hardness 15
+
+Living Steel
+	ITYPE:LivingSteel
 	KEY:LIVING_ST_WEAP
 	TYPE:BaseMaterial.Weapon
 	SOURCEPAGE:51
