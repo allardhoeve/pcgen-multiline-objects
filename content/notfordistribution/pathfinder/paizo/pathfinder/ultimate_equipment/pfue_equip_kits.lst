@@ -1,5 +1,5 @@
 # CVS $Revision: 14380 $ $Author: amaitland $ -- Fri Sep 28 11:29:47 2012 -- reformated by prettylst.pl v1.39 (build 16265)
-SOURCELONG:Ultimate Equipment
+SOURCELONG:Ultimate's Kit
 	SOURCESHORT:PFUE
 	SOURCEWEB:http://paizo.com/products/btpy8tmc?Pathfinder-Roleplaying-Game-Ultimate-Equipment
 	SOURCEDATE:2012-08
@@ -10,7 +10,7 @@ SOURCELONG:Ultimate Equipment
 ###Block: Starting Kits (Buyable)
 
 
-STARTPACK:Alchemist Equipment
+STARTPACK:Alchemist's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
@@ -20,7 +20,7 @@ GEAR:Alchemy Crafting Kit
 	SIZE:PC
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -29,7 +29,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -96,16 +96,16 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Barbarian Equipment
+STARTPACK:Barbarian's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -162,12 +162,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Harpsichord)
+STARTPACK:Bard's Kit (Random)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -176,7 +176,190 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
+	LOCATION:Not Carried
+	QTY:1
+	SIZE:PC
+
+GEAR:Flint and Steel
+	LOCATION:Backpack
+	QTY:1
+	SIZE:PC
+
+GEAR:Ink (1 oz Vial)
+	LOCATION:Backpack
+	QTY:1
+	SIZE:PC
+
+GEAR:Inkpen
+	LOCATION:Backpack
+	QTY:1
+	SIZE:PC
+
+GEAR:Iron Pot
+	LOCATION:Backpack
+	QTY:1
+	SIZE:PC
+
+GEAR:Journal
+	LOCATION:Backpack
+	QTY:1
+	SIZE:PC
+
+GEAR:Mess Kit
+	LOCATION:Backpack
+	QTY:1
+	SIZE:PC
+
+GEAR:Mirror
+	LOCATION:Backpack
+	QTY:1
+	SIZE:PC
+
+GEAR:Rope (Hemp/50 ft)
+	LOCATION:Backpack
+	QTY:1
+	SIZE:PC
+
+GEAR:Soap (per lb)
+	LOCATION:Backpack
+	QTY:1
+	SIZE:PC
+
+GEAR:Torch
+	LOCATION:Not Carried
+	QTY:9
+	SIZE:PC
+
+GEAR:Torch
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Backpack
+	QTY:1
+	SIZE:PC
+
+GEAR:Rations (Trail/Per Day)
+	LOCATION:Not Carried
+	QTY:4
+	SIZE:PC
+
+GEAR:Waterskin
+	LOCATION:Backpack
+	QTY:1
+	SIZE:PC
+
+SELECT:roll("1d15")
+
+GEAR:Musical Instrument (Harpsichord)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:1
+
+GEAR:Musical Instrument (Piano)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:2
+
+GEAR:Musical Instrument (Pipe Organ)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:3
+
+GEAR:Musical Instrument (Bells)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:4
+
+GEAR:Musical Instrument (Chimes)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:5
+
+GEAR:Musical Instrument (Drums)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:6
+
+GEAR:Musical Instrument (Gong)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:7
+
+GEAR:Musical Instrument (Fiddle)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:8
+
+GEAR:Musical Instrument (Harp)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:9
+
+GEAR:Musical Instrument (Lute)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:10
+
+GEAR:Musical Instrument (Mandolin)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:11
+
+GEAR:Musical Instrument (Flute)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:12
+
+GEAR:Musical Instrument (Pan Pipes)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:13
+
+GEAR:Musical Instrument (Recorder)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:14
+
+GEAR:Musical Instrument (Trumpet)
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+	OPTION:15
+
+
+
+STARTPACK:Bard's Kit (Harpsichord)
+	EQUIPBUY:100
+	APPLY:INSTANT
+
+GEAR:Backpack
+	LOCATION:Carried
+	QTY:1
+	SIZE:PC
+
+GEAR:Bedroll
+	LOCATION:Backpack
+	QTY:1
+	SIZE:PC
+
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -217,7 +400,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Harpsichord)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -258,12 +441,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Piano)
+STARTPACK:Bard's Kit (Piano)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -272,7 +455,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -313,7 +496,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Piano)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -354,12 +537,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Pipe Organ)
+STARTPACK:Bard's Kit (Pipe Organ)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -368,7 +551,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -409,7 +592,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Pipe Organ)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -450,12 +633,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Bells)
+STARTPACK:Bard's Kit (Bells)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -464,7 +647,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -505,7 +688,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Bells)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -546,12 +729,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Chimes)
+STARTPACK:Bard's Kit (Chimes)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -560,7 +743,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -601,7 +784,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Chimes)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -642,12 +825,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Drums)
+STARTPACK:Bard's Kit (Drums)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -656,7 +839,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -697,7 +880,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Drums)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -738,12 +921,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Gong)
+STARTPACK:Bard's Kit (Gong)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -752,7 +935,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -793,7 +976,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Gong)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -834,12 +1017,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Fiddle)
+STARTPACK:Bard's Kit (Fiddle)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -848,7 +1031,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -889,7 +1072,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Fiddle)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -930,12 +1113,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Harp)
+STARTPACK:Bard's Kit (Harp)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -944,7 +1127,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -985,7 +1168,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Harp)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1026,12 +1209,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Lute)
+STARTPACK:Bard's Kit (Lute)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1040,7 +1223,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -1081,7 +1264,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Lute)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1122,12 +1305,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Mandolin)
+STARTPACK:Bard's Kit (Mandolin)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1136,7 +1319,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -1177,7 +1360,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Mandolin)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1218,12 +1401,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Flute)
+STARTPACK:Bard's Kit (Flute)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1232,7 +1415,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -1273,7 +1456,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Flute)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1314,12 +1497,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Pan Pipes)
+STARTPACK:Bard's Kit (Pan Pipes)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1328,7 +1511,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -1369,7 +1552,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Pan Pipes)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1410,12 +1593,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Recorder)
+STARTPACK:Bard's Kit (Recorder)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1424,7 +1607,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -1465,7 +1648,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Recorder)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1506,12 +1689,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Bard Equipment (Trumpet)
+STARTPACK:Bard's Kit (Trumpet)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1520,7 +1703,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -1561,7 +1744,7 @@ GEAR:Mirror
 	SIZE:PC
 
 GEAR:Musical Instrument (Trumpet)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1602,7 +1785,7 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Cavalier Equipment
+STARTPACK:Cavalier's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
@@ -1612,7 +1795,7 @@ GEAR:Feed (Per Day)
 	SIZE:PC
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1621,7 +1804,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -1693,12 +1876,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Cleric Equipment
+STARTPACK:Cleric's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1707,7 +1890,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -1748,7 +1931,7 @@ GEAR:Soap (per lb)
 	SIZE:PC
 
 GEAR:Spell Componenet Pouch
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1778,13 +1961,13 @@ GEAR:Waterskin
 	SIZE:PC
 
 GEAR:Holy Symbol (Wooden)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
 
 
-STARTPACK:Druid Equipment
+STARTPACK:Druid's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
@@ -1794,11 +1977,11 @@ GEAR:Feed (Per Day)
 	SIZE:PC
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -1839,7 +2022,7 @@ GEAR:Soap (per lb)
 	SIZE:PC
 
 GEAR:Spell Component Pouch
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1870,7 +2053,7 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Fighter Equipment
+STARTPACK:Fighter's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
@@ -1884,7 +2067,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -1941,12 +2124,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Gunslinger Equipment
+STARTPACK:Gunslinger's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -1955,7 +2138,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -1981,7 +2164,7 @@ GEAR:Mess Kit
 	SIZE:PC
 
 GEAR:Powder Horn
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2017,12 +2200,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Inquisitor Equipment
+STARTPACK:Inquisitor's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2031,7 +2214,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -2077,7 +2260,7 @@ GEAR:Soap (per lb)
 	SIZE:PC
 
 GEAR:Spell Component Pouch
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2107,18 +2290,18 @@ GEAR:Waterskin
 	SIZE:PC
 
 GEAR:Holy Symbol (Wooden)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
 
 
-STARTPACK:Magus Equipment
+STARTPACK:Magus' Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2127,7 +2310,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -2168,7 +2351,7 @@ GEAR:Soap (per lb)
 	SIZE:PC
 
 GEAR:Spell Component Pouch
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2199,16 +2382,16 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Monk Equipment
+STARTPACK:Monk's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -2255,12 +2438,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Oracle Equipment
+STARTPACK:Oracle's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2269,7 +2452,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -2331,12 +2514,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Paladin Equipment
+STARTPACK:Paladin's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2345,7 +2528,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -2406,18 +2589,18 @@ GEAR:Waterskin
 	SIZE:PC
 
 GEAR:Holy Symbol (Wooden)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
 
 
-STARTPACK:Ranger Equipment
+STARTPACK:Ranger's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2426,7 +2609,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -2483,12 +2666,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Rogue Equipment
+STARTPACK:Rogue's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2497,7 +2680,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -2558,7 +2741,7 @@ GEAR:Soap (per lb)
 	SIZE:PC
 
 GEAR:Thieves' Tools
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2589,12 +2772,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Sorceror Equipment
+STARTPACK:Sorceror's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2603,7 +2786,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -2655,12 +2838,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Witch Equipment
+STARTPACK:Witch's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2669,7 +2852,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -2715,7 +2898,7 @@ GEAR:Soap (per lb)
 	SIZE:PC
 
 GEAR:Spell Component Pouch
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2746,12 +2929,12 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Wizard Equipment
+STARTPACK:Wizard's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2760,7 +2943,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -2801,7 +2984,7 @@ GEAR:Soap (per lb)
 	SIZE:PC
 
 GEAR:Spell Component Pouch
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2832,7 +3015,7 @@ GEAR:Waterskin
 
 
 
-STARTPACK:Campsite Equipment
+STARTPACK:Campsite Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
@@ -2878,12 +3061,12 @@ GEAR:Rations (Trail/Per Day)
 
 
 
-STARTPACK:Chronicler Equipment
+STARTPACK:Chronicler's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Case (Map or Scroll)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2914,7 +3097,7 @@ GEAR:Powder
 
 
 
-STARTPACK:Dragonslayer Equipment (Fire)
+STARTPACK:Dragonslayer's Kit (Fire)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
@@ -2939,7 +3122,7 @@ GEAR:Shield (Tower)
 	SIZE:PC
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2960,7 +3143,7 @@ GEAR:Alchemist's Fire (Flask)
 
 
 
-STARTPACK:Dragonslayer Equipment (Acid)
+STARTPACK:Dragonslayer's Kit (Acid)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
@@ -2985,7 +3168,7 @@ GEAR:Shield (Tower)
 	SIZE:PC
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -3006,7 +3189,7 @@ GEAR:Acid (Flask)
 
 
 
-STARTPACK:Dungeoneering Equipment (Common)
+STARTPACK:Dungeoneering Kit (Common)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
@@ -3062,7 +3245,7 @@ GEAR:Tindertwig
 
 
 
-STARTPACK:Dungeoneering Equipment (Deluxe)
+STARTPACK:Dungeoneering Kit (Deluxe)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
@@ -3113,12 +3296,12 @@ GEAR:Everburning Torch
 
 
 
-STARTPACK:Pathfinder Equipment
+STARTPACK:Pathfinder's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -3127,7 +3310,7 @@ GEAR:Bedroll
 	QTY:1
 	SIZE:PC
 
-GEAR:Belt Pouch
+GEAR:Pouch (Belt)
 	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
@@ -3189,7 +3372,7 @@ GEAR:Whetstone
 
 
 
-STARTPACK:Riding Equipment (Common)
+STARTPACK:Riding Kit (Common)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
@@ -3219,7 +3402,7 @@ GEAR:Feed (Per Day)
 
 
 
-STARTPACK:Riding Equipment (Exotic)
+STARTPACK:Riding Kit (Exotic)
 	EQUIPBUY:100
 	APPLY:INSTANT
 
@@ -3249,12 +3432,12 @@ GEAR:Feed (Per Day)
 
 
 
-STARTPACK:Spelunker Equipment
+STARTPACK:Spelunker's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Lantern (Hooded)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 
 GEAR:Oil (1 Pint Flask)
@@ -3278,13 +3461,13 @@ GEAR:Grappling Hook
 	QTY:1
 
 GEAR:Climber's Kit
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
 
 
-STARTPACK:Troll Slayer Equipment
+STARTPACK:Troll Slayer's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
@@ -3297,7 +3480,7 @@ GEAR:Acid (Flask)
 	QTY:1
 
 GEAR:Torch
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 
 GEAR:Torch
@@ -3314,12 +3497,12 @@ GEAR:Oil (1 Pint Flask)
 
 
 
-STARTPACK:Undead Slayer Equipment
+STARTPACK:Undead Slayer's Kit
 	EQUIPBUY:100
 	APPLY:INSTANT
 
 GEAR:Holy Symbol (Wooden)
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 
 GEAR:Garlic (per lb)
