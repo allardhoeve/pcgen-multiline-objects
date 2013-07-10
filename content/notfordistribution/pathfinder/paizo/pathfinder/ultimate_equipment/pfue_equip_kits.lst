@@ -1875,7 +1875,7 @@ STARTPACK:Fighter Equipment
 	APPLY:INSTANT
 
 GEAR:Backpack
-	LOCATION:Equipped
+	LOCATION:Carried
 	QTY:1
 	SIZE:PC
 
@@ -2857,8 +2857,7 @@ GEAR:Flint and Steel
 	SIZE:PC
 
 GEAR:Tindertwig
-	LOCATION:
-	Not Carried
+	LOCATION:Not Carried
 	QTY:1
 	SIZE:PC
 
@@ -3037,7 +3036,7 @@ GEAR:Rope (Hemp/50 ft)
 	SIZE:PC
 
 GEAR:Lantern (Hooded)
-	LOCATIONA:Backpack
+	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
 
