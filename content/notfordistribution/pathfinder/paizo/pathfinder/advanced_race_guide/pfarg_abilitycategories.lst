@@ -413,6 +413,16 @@ ABILITYCATEGORY:Swordmaster Trance
 	PLURAL:Swordmaster Trances
 	DISPLAYLOCATION:Class Abilities
 
+ABILITYCATEGORY:Plant Bond Option
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:PlantBondOption
+	PLURAL:Plant Bond Options
+	DISPLAYLOCATION:Class Abilities
+
 
 
 #
