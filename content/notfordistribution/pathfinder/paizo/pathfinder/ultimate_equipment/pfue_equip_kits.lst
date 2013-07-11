@@ -49,7 +49,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -120,7 +120,7 @@ GEAR:Flint and Steel
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -196,7 +196,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -211,7 +211,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -379,7 +379,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -394,7 +394,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -475,7 +475,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -490,7 +490,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -571,7 +571,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -586,7 +586,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -667,7 +667,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -682,7 +682,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -763,7 +763,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -778,7 +778,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -859,7 +859,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -874,7 +874,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -955,7 +955,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -970,7 +970,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1051,7 +1051,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1066,7 +1066,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1147,7 +1147,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1162,7 +1162,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1243,7 +1243,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1258,7 +1258,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1339,7 +1339,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1354,7 +1354,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1435,7 +1435,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1450,7 +1450,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1531,7 +1531,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1546,7 +1546,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1627,7 +1627,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1642,7 +1642,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1723,7 +1723,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1738,7 +1738,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1819,7 +1819,7 @@ GEAR:Flint and Steel
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1910,7 +1910,7 @@ GEAR:Flint and Steel
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -1930,7 +1930,7 @@ GEAR:Soap (per lb)
 	QTY:1
 	SIZE:PC
 
-GEAR:Spell Componenet Pouch
+GEAR:Spell Component Pouch
 	LOCATION:Carried
 	QTY:1
 	SIZE:PC
@@ -2001,7 +2001,7 @@ GEAR:Holly and Mistletoe
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -2077,7 +2077,7 @@ GEAR:Flint and Steel
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -2153,7 +2153,7 @@ GEAR:Gunsmith's Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -2234,7 +2234,7 @@ GEAR:Flint and Steel
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -2330,7 +2330,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -2467,7 +2467,7 @@ GEAR:Flint and Steel
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -2543,7 +2543,7 @@ GEAR:Flint and Steel
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -2619,7 +2619,7 @@ GEAR:Flint and Steel
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -2690,7 +2690,7 @@ GEAR:Caltrops
 	QTY:1
 	SIZE:PC
 
-GEAR:Chalk
+GEAR:Chalk (1 Piece)
 	LOCATION:Backpack
 	QTY:10
 	SIZE:PC
@@ -2705,7 +2705,7 @@ GEAR:Grappling Hook
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -2715,7 +2715,7 @@ GEAR:Mess Kit
 	QTY:1
 	SIZE:PC
 
-GEAR:Mirror
+GEAR:Mirror (Small/Steel)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -2796,7 +2796,7 @@ GEAR:Flint and Steel
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -2862,7 +2862,7 @@ GEAR:Candle
 	QTY:10
 	SIZE:PC
 
-GEAR:Chalk
+GEAR:Chalk (1 Piece)
 	LOCATION:Backpack
 	QTY:10
 	SIZE:PC
@@ -2882,7 +2882,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -2963,7 +2963,7 @@ GEAR:Inkpen
 	QTY:1
 	SIZE:PC
 
-GEAR:Iron Pot
+GEAR:Pot (Iron)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -3198,7 +3198,7 @@ GEAR:Candle
 	QTY:2
 	SIZE:PC
 
-GEAR:Chalk
+GEAR:Chalk (1 Piece)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
@@ -3254,7 +3254,7 @@ GEAR:Candle
 	QTY:2
 	SIZE:PC
 
-GEAR:Chalk
+GEAR:Chalk (1 Piece)
 	LOCATION:Backpack
 	QTY:1
 	SIZE:PC
