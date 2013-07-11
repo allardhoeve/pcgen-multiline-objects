@@ -753,6 +753,7 @@ Prankster
 	ABILITY:Special Ability|AUTOMATIC|Punchline ~ Prankster|PRECLASS:1,Bard=6
 	ABILITY:Special Ability|AUTOMATIC|Mass Punchline ~ Prankster|PRECLASS:1,Bard=18
 	ABILITY:Special Ability|AUTOMATIC|Swap ~ Prankster|PRECLASS:1,Bard=1
+	COST:0
 	SOURCEPAGE:p.26
 
 Saboteur
@@ -766,6 +767,7 @@ Saboteur
 	ABILITY:Special Ability|AUTOMATIC|Class Skills ~ Saboteur|PRECLASS:1,Alchemist=1
 	ABILITY:Special Ability|AUTOMATIC|Chameleon Mutagen ~ Saboteur|PRECLASS:1,Alchemist=1
 	ABILITY:Special Ability|AUTOMATIC|Discoveries ~ Saboteur|PRECLASS:1,Alchemist=1
+	COST:0
 	SOURCEPAGE:p.36
 
 
@@ -951,6 +953,7 @@ Bonded Witch
 	PRERACE:1,Half-Elf
 	DESC:While all witches commune with the unknown, the blend of human ingenuity and adept learning mixed with elven blood gives some half-elves a unique conduit to channel the powers of the arcane. Bonded witches forsake familiars as vessels of power in favor of a specific object that grants them powers above and beyond those of their patron alone, as they tap into the powerful magic of the item itself. A bonded witch has the following class features.
 	ABILITY:Special Ability|AUTOMATIC|Bonded Item ~ Bonded Witch|PRECLASS:1,Witch=1
+	COST:0
 	SOURCEPAGE:p.43
 
 Bramble Brewer
@@ -965,6 +968,7 @@ Bramble Brewer
 	ABILITY:Special Ability|AUTOMATIC|Dendrite Mutagen ~ Bramble Brewer|PRECLASS:1,Alchemist=1
 	ABILITY:Special Ability|AUTOMATIC|Grand Discovery ~ Bramble Brewer|PRECLASS:1,Alchemist=20
 	ABILITY:Special Ability|AUTOMATIC|Discoveries ~ Bramble Brewer|PRECLASS:1,Alchemist=1
+	COST:0
 	SOURCEPAGE:p.43
 
 Wild Caller
@@ -978,6 +982,7 @@ Wild Caller
 	ABILITY:Special Ability|AUTOMATIC|Spells ~ Wild Caller|PRECLASS:1,Summoner=1
 	ABILITY:Special Ability|AUTOMATIC|Eidolon ~ Wild Caller|PRECLASS:1,Summoner=1
 	ABILITY:Special Ability|AUTOMATIC|Summon Nature's Ally I ~ Wild Caller|PRECLASS:1,Summoner=1
+	COST:0
 	SOURCEPAGE:p.44
 
 Wild Shadow
@@ -995,6 +1000,7 @@ Wild Shadow
 	ABILITY:Special Ability|AUTOMATIC|Harrying Attack ~ Wild Shadow|PRECLASS:1,Ranger=11
 	ABILITY:Special Ability|AUTOMATIC|Wild Stalker ~ Wild Shadow|PRECLASS:1,Ranger=14
 	ABILITY:Special Ability|AUTOMATIC|Master of Terrain ~ Wild Shadow|PRECLASS:1,Ranger=19
+	COST:0
 	SOURCEPAGE:p.45
 
 
@@ -1171,6 +1177,7 @@ Blood God Disciple
 	ABILITY:Special Ability|AUTOMATIC|Bloody Gift ~ Blood God Disciple|PRECLASS:1,Summoner=3
 	ABILITY:Special Ability|AUTOMATIC|Avatar Gambit ~ Blood God Disciple|PRECLASS:1,Summoner=7
 	ABILITY:Special Ability|AUTOMATIC|Rage Power ~ Blood God Disciple|PRECLASS:1,Summoner=11
+	COST:0
 	SOURCEPAGE:p.53
 
 Hateful Rager
@@ -1186,6 +1193,7 @@ Hateful Rager
 	ABILITY:Special Ability|AUTOMATIC|Feed the Rage ~ Hateful Rager|PRECLASS:1,Barbarian=5
 	ABILITY:Special Ability|AUTOMATIC|Amplified by Hate ~ Hateful Rager|PRECLASS:1,Barbarian=9
 	ABILITY:Special Ability|AUTOMATIC|Rage Power ~ Hateful Rager|PRECLASS:1,Barbarian=1
+	COST:0
 	SOURCEPAGE:p.54
 
 Redeemer
@@ -1201,6 +1209,7 @@ Redeemer
 	ABILITY:Special Ability|AUTOMATIC|Pact of Peace ~ Redeemer|PRECLASS:1,Paladin=8
 	ABILITY:Special Ability|AUTOMATIC|Aura of Mercy ~ Redeemer|PRECLASS:1,Paladin=11
 	ABILITY:Special Ability|AUTOMATIC|Associates ~ Redeemer|PRECLASS:1,Paladin=1
+	COST:0
 	SOURCEPAGE:p.55
 
 Skulking Slayer
@@ -1222,6 +1231,7 @@ Skulking Slayer
 	ABILITY:Special Ability|AUTOMATIC|Unexpected Charge ~ Skulking Slayer|PRECLASS:1,Rogue=9
 	ABILITY:Special Ability|AUTOMATIC|Rogue Talents ~ Skulking Slayer|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Advanced Talents ~ Skulking Slayer|PRECLASS:1,Rogue=1
+	COST:0
 	SOURCEPAGE:p.55
 
 
@@ -1461,6 +1471,7 @@ Community Guardian
 	ABILITY:Special Ability|AUTOMATIC|Revelations ~ Community Guardian|PRECLASS:1,Oracle=1
 	ABILITY:Special Ability|AUTOMATIC|Spirit of Community ~ Community Guardian|PRECLASS:1,Oracle=1
 	ABILITY:Special Ability|AUTOMATIC|Renewing Radiance ~ Community Guardian|PRECLASS:1,Oracle=3
+	COST:0
 	SOURCEPAGE:p.63
 
 Filcher
@@ -1477,6 +1488,7 @@ Filcher
 	ABILITY:Special Ability|AUTOMATIC|Superior Filching ~ Filcher|PRECLASS:1,Rogue=8
 	ABILITY:Special Ability|AUTOMATIC|Rogue Talents ~ Filcher|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Advanced Talents ~ Filcher|PRECLASS:1,Rogue=1
+	COST:0
 	SOURCEPAGE:p.64
 
 Order of the Paw
@@ -1503,6 +1515,7 @@ Underfoot Adept
 	ABILITY:Special Ability|AUTOMATIC|Underfoot Grace ~ Underfoot Adept|PRECLASS:1,Monk=1|PRECLASSLEVELMAX:1,Monk=4
 	ABILITY:Special Ability|AUTOMATIC|Underfoot Trip ~ Underfoot Adept|PRECLASS:1,Monk=1
 	ABILITY:Special Ability|AUTOMATIC|Improved Underfoot Grace ~ Underfoot Adept|PRECLASS:1,Monk=5
+	COST:0
 	SOURCEPAGE:p.65
 
 
@@ -1705,6 +1718,7 @@ Buccaneer
 	ABILITY:Special Ability|AUTOMATIC|Sword and Pistol ~ Buccaneer|PRECLASS:1,Gunslinger=9
 	ABILITY:Special Ability|AUTOMATIC|Gun Training ~ Buccaneer|PRECLASS:1,Gunslinger=13
 	ABILITY:Special Ability|AUTOMATIC|Raider's Riposte ~ Buccaneer|PRECLASS:1,Gunslinger=17
+	COST:0
 	SOURCEPAGE:p.73
 
 Feral Child
@@ -1726,6 +1740,7 @@ Feral Child
 	ABILITY:Special Ability|AUTOMATIC|Native Fortitude ~ Feral Child|PRECLASS:1,Druid=4
 	ABILITY:Special Ability|AUTOMATIC|Native Call 1 ~ Feral Child|PRECLASS:1,Druid=9
 	ABILITY:Special Ability|AUTOMATIC|Native Call 2 ~ Feral Child|PRECLASS:1,Druid=17
+	COST:0
 	SOURCEPAGE:p.74
 
 #Imperious Bloodline (Sorcerer) - Handled under Class.
@@ -1745,6 +1760,7 @@ Wanderer
 	ABILITY:Special Ability|AUTOMATIC|Wanderer's Wisdom ~ Wanderer|PRECLASS:1,Monk=7
 	ABILITY:Special Ability|AUTOMATIC|Disappear Unnoticed ~ Wanderer|PRECLASS:1,Monk=12
 	ABILITY:Special Ability|AUTOMATIC|Free Step ~ Wanderer|PRECLASS:1,Monk=13
+	COST:0
 	SOURCEPAGE:p.76
 
 
@@ -2129,6 +2145,7 @@ Purifier
 	ABILITY:Special Ability|AUTOMATIC|Sacred Scourge ~ Purifier|PRECLASS:1,Oracle=5
 	ABILITY:Special Ability|AUTOMATIC|Holy Terror ~ Purifier|PRECLASS:1,Oracle=9
 	ABILITY:Special Ability|AUTOMATIC|Celestial Master ~ Purifier|PRECLASS:1,Oracle=13
+	COST:0
 	SOURCEPAGE:p.86
 
 #
@@ -2232,6 +2249,7 @@ Tranquil Guardian
 	ABILITY:Special Ability|AUTOMATIC|Aura of Calm ~ Tranquil Guardian|PRECLASS:1,Paladin=8
 	ABILITY:Special Ability|AUTOMATIC|Waves of Peace ~ Tranquil Guardian|PRECLASS:1,Paladin=11
 	ABILITY:Special Ability|AUTOMATIC|Apostle of Peace ~ Tranquil Guardian|PRECLASS:1,Paladin=20
+	COST:0
 	SOURCEPAGE:p.86
 
 #
@@ -2295,7 +2313,7 @@ Cat Burglar
 	ABILITY:Special Ability|AUTOMATIC|Trap Saboteur ~ Cat Burglar|PRECLASS:1,Rogue=8
 	ABILITY:Special Ability|AUTOMATIC|Rogue Talents ~ Cat Burglar|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Advanced Talents ~ Cat Burglar|PRECLASS:1,Rogue=1
-	SOURCEPAGE:p.92
+	COST:0
 	SOURCEPAGE:p.92
 
 #
@@ -2342,6 +2360,7 @@ Nimble Guardian
 	ABILITY:Special Ability|AUTOMATIC|Defensive Mastery ~ Nimble Guardian|PRECLASS:1,Monk=5
 	ABILITY:Special Ability|AUTOMATIC|Guardian Feline ~ Nimble Guardian|PRECLASS:1,Monk=7
 	ABILITY:Special Ability|AUTOMATIC|Evasion ~ Nimble Guardian|PRECLASS:1,Monk=9
+	COST:0
 	SOURCEPAGE:p.92
 
 #
@@ -2404,6 +2423,7 @@ Cruoromancer
 	ABILITY:Special Ability|AUTOMATIC|Desecrating Infusion ~ Cruoromancer|PRECLASS:1,Wizard=10
 	ABILITY:Special Ability|AUTOMATIC|Blood Ability ~ Cruoromancer|PRECLASS:1,Wizard=15
 	ABILITY:Special Ability|AUTOMATIC|Perfect Infusion ~ Cruoromancer|PRECLASS:1,Wizard=20
+	COST:0
 	SOURCEPAGE:p.98
 
 #
@@ -2480,6 +2500,7 @@ Kinslayer
 	ABILITY:Special Ability|AUTOMATIC|Slayer's Brand ~ Kinslayer|PRECLASS:1,Inquisitor=1
 	ABILITY:Special Ability|AUTOMATIC|Greater Brand ~ Kinslayer|PRECLASS:1,Inquisitor=1
 	ABILITY:Special Ability|AUTOMATIC|Undead Sense ~ Kinslayer|PRECLASS:1,Inquisitor=2
+	COST:0
 	SOURCEPAGE:p.98
 
 #
@@ -2593,6 +2614,7 @@ Cavern Sniper
 	ABILITY:Special Ability|AUTOMATIC|Sniper Training ~ Cavern Sniper|PRECLASS:1,Fighter=5
 	ABILITY:Special Ability|AUTOMATIC|Greater Imbued Shot ~ Cavern Sniper|PRECLASS:1,Fighter=9
 	ABILITY:Special Ability|AUTOMATIC|Weapon Mastery ~ Cavern Sniper|PRECLASS:1,Fighter=20
+	COST:0
 	SOURCEPAGE:p.104
 
 #
@@ -2669,6 +2691,7 @@ Demonic Apostle
 	ABILITY:Special Ability|AUTOMATIC|Demonic Magic ~ Demonic Apostle|PRECLASS:1,Cleric=1
 	ABILITY:Special Ability|AUTOMATIC|Demonic Familiar ~ Demonic Apostle|PRECLASS:1,Cleric=1
 	ABILITY:Special Ability|AUTOMATIC|Demonic Channel ~ Demonic Apostle|PRECLASS:1,Cleric=1
+	COST:0
 	SOURCEPAGE:p.104
 
 #
@@ -2713,6 +2736,7 @@ Dusk Stalker
 	ABILITY:Special Ability|AUTOMATIC|Shadow Guide ~ Dusk Stalker|PRECLASS:1,Ranger=1
 	ABILITY:Special Ability|AUTOMATIC|Shadow Bond ~ Dusk Stalker|PRECLASS:1,Ranger=4
 	ABILITY:Special Ability|AUTOMATIC|Dark Sight ~ Dusk Stalker|PRECLASS:1,Ranger=12
+	COST:0
 	SOURCEPAGE:p.110
 
 #
@@ -2760,6 +2784,7 @@ Shadow Caller
 	ABILITY:Special Ability|AUTOMATIC|Class Skills ~ Shadow Caller|PRECLASS:1,Summoner=1
 	ABILITY:Special Ability|AUTOMATIC|Shadow Summoning ~ Shadow Caller|PRECLASS:1,Summoner=1
 	ABILITY:Special Ability|AUTOMATIC|Shadow Eidolon ~ Shadow Caller|PRECLASS:1,Summoner=1
+	COST:0
 	SOURCEPAGE:p.110
 
 #
@@ -2806,6 +2831,7 @@ Feral Gnasher
 	ABILITY:Special Ability|AUTOMATIC|Greater Lockjaw ~ Feral Gnasher|PRECLASS:1,Barbarian=9
 	ABILITY:Special Ability|AUTOMATIC|Wicked Improvisation ~ Feral Gnasher|PRECLASS:1,Barbarian=12
 	ABILITY:Special Ability|AUTOMATIC|Rage Powers ~ Feral Gnasher|PRECLASS:1,Barbarian=1
+	COST:0
 	SOURCEPAGE:p.116
 
 #
@@ -2911,6 +2937,7 @@ Fire Bomber
 	ABILITY:Special Ability|AUTOMATIC|Improved Fire Body ~ Fire Bomber|PRECLASS:1,Alchemist=10
 	ABILITY:Special Ability|AUTOMATIC|Greater Fire Body ~ Fire Bomber|PRECLASS:1,Alchemist=14
 	ABILITY:Special Ability|AUTOMATIC|Discoveries ~ Fire Bomber|PRECLASS:1,Alchemist=1
+	COST:0
 	SOURCEPAGE:p.117
 
 #
@@ -3000,6 +3027,7 @@ Fell Rider
 	ABILITY:Special Ability|AUTOMATIC|Deadly Rampage ~ Fell Rider|PRECLASS:1,Cavalier=11
 	ABILITY:Special Ability|AUTOMATIC|Terror ~ Fell Rider|PRECLASS:1,Cavalier=14
 	ABILITY:Special Ability|AUTOMATIC|Unstoppable Rampage ~ Fell Rider|PRECLASS:1,Cavalier=20
+	COST:0
 	SOURCEPAGE:p.122
 
 #
@@ -3078,6 +3106,7 @@ Ironskin Monk
 	ABILITY:Special Ability|AUTOMATIC|Evasion ~ Ironskin Monk|PRECLASS:1,Monk=9
 	ABILITY:Special Ability|AUTOMATIC|Surefooted ~ Ironskin Monk|PRECLASS:1,Monk=17
 	ABILITY:Special Ability|AUTOMATIC|Unbreakable ~ Ironskin Monk|PRECLASS:1,Monk=20
+	COST:0
 	SOURCEPAGE:p.122
 
 #
@@ -3209,6 +3238,7 @@ Immolator
 	ABILITY:Special Ability|AUTOMATIC|Burnt Offering 1 ~ Immolator|PRECLASS:1,Inquisitor=5
 	ABILITY:Special Ability|AUTOMATIC|Burnt Offering 2 ~ Immolator|PRECLASS:1,Inquisitor=12
 	ABILITY:Special Ability|AUTOMATIC|Judgment by Fire ~ Immolator|PRECLASS:1,Inquisitor=20
+	COST:0
 	SOURCEPAGE:p.124
 
 #
@@ -3274,6 +3304,7 @@ Wishcrafter
 	ABILITY:Special Ability|AUTOMATIC|Heart's Desire ~ Wishcrafter|PRECLASS:1,Sorcerer=7
 	ABILITY:Special Ability|AUTOMATIC|Twisted Wish ~ Wishcrafter|PRECLASS:1,Sorcerer=13
 	ABILITY:Special Ability|AUTOMATIC|Perfect Wishcraft ~ Wishcrafter|PRECLASS:1,Sorcerer=19
+	COST:0
 	SOURCEPAGE:p.124
 
 #
@@ -3329,6 +3360,7 @@ Bushwhacker
 	ABILITY:Special Ability|AUTOMATIC|Shifty Shot ~ Bushwhacker|PRECLASS:1,Gunslinger=3
 	ABILITY:Special Ability|AUTOMATIC|Long Range Shifty Shot ~ Bushwhacker|PRECLASS:1,Gunslinger=7
 	ABILITY:Special Ability|AUTOMATIC|Sneak Shot ~ Bushwhacker|PRECLASS:1,Gunslinger=4
+	COST:0
 	SOURCEPAGE:p.134
 
 #
@@ -3467,6 +3499,7 @@ Dirty Fighter
 	ABILITY:Special Ability|AUTOMATIC|Maneuver Training ~ Dirty Fighter|PRECLASS:1,Fighter=5
 	ABILITY:Special Ability|AUTOMATIC|Speedy Tricks ~ Dirty Fighter|PRECLASS:1,Fighter=9
 	ABILITY:Special Ability|AUTOMATIC|Double Tricks ~ Dirty Fighter|PRECLASS:1,Fighter=13
+	COST:0
 	SOURCEPAGE:p.140
 
 #
@@ -3519,6 +3552,7 @@ Scarred Witch Doctor
 	ABILITY:Special Ability|AUTOMATIC|Hexes ~ Scarred Witch Doctor|PRECLASS:1,Witch=1
 	ABILITY:Special Ability|AUTOMATIC|Major Hexes ~ Scarred Witch Doctor|PRECLASS:1,Witch=1
 	ABILITY:Special Ability|AUTOMATIC|Grand Hexes ~ Scarred Witch Doctor|PRECLASS:1,Witch=1
+	COST:0
 	SOURCEPAGE:p.140
 
 #
@@ -3600,6 +3634,7 @@ Shaitan Binder
 	ABILITY:Special Ability|AUTOMATIC|Earth Glide ~ Shaitan Binder|PRECLASS:1,Summoner=10
 	ABILITY:Special Ability|AUTOMATIC|Stone Curse ~ Shaitan Binder|PRECLASS:1,Summoner=18
 	ABILITY:Special Ability|AUTOMATIC|Noble Eidolon ~ Shaitan Binder|PRECLASS:1,Summoner=20
+	COST:0
 	SOURCEPAGE:p.146
 
 #
@@ -3659,6 +3694,7 @@ Student of Stone
 	ABILITY:Special Ability|AUTOMATIC|Body of Stone ~ Student of Stone|PRECLASS:1,Monk=9
 	ABILITY:Special Ability|AUTOMATIC|Soul of Stone ~ Student of Stone|PRECLASS:1,Monk=12
 	ABILITY:Special Ability|AUTOMATIC|Stone Self ~ Student of Stone|PRECLASS:1,Monk=20
+	COST:0
 	SOURCEPAGE:p.146
 
 #
@@ -3787,6 +3823,7 @@ Gulch Gunner
 	ABILITY:Special Ability|AUTOMATIC|Powder Burns ~ Gulch Gunner|PRECLASS:1,Gunslinger=3
 	ABILITY:Special Ability|AUTOMATIC|Staggering Shot ~ Gulch Gunner|PRECLASS:1,Gunslinger=15
 	ABILITY:Special Ability|AUTOMATIC|Belly Shot ~ Gulch Gunner|PRECLASS:1,Gunslinger=9
+	COST:0
 	SOURCEPAGE:p.152
 
 #
@@ -3862,6 +3899,7 @@ Plague Bringer
 	ABILITY:Special Ability|AUTOMATIC|Disease Resistance ~ Plague Bringer|PRECLASS:1,Alchemist=2|PRECLASSLEVELMAX:1,Alchemist=9
 	ABILITY:Special Ability|AUTOMATIC|Disease Immunity ~ Plague Bringer|PRECLASS:1,Alchemist=10
 	ABILITY:Special Ability|AUTOMATIC|Discoveries ~ Plague Bringer|PRECLASS:1,Alchemist=1
+	COST:0
 	SOURCEPAGE:p.153
 
 #
@@ -3913,6 +3951,7 @@ Sky Druid
 	ABILITY:Special Ability|AUTOMATIC|Wild Shape ~ Sky Druid|PRECLASS:1,Druid=6
 	ABILITY:Special Ability|AUTOMATIC|Soaring Form ~ Sky Druid|PRECLASS:1,Druid=9
 	ABILITY:Special Ability|AUTOMATIC|Into the Wild Blue ~ Sky Druid|PRECLASS:1,Druid=13
+	COST:0
 	SOURCEPAGE:p.158
 
 #
@@ -4009,6 +4048,7 @@ Wind Listener
 	ABILITY:Special Ability|AUTOMATIC|Abjuration Sense ~ Wind Listener|PRECLASS:1,Wizard=5
 	ABILITY:Special Ability|AUTOMATIC|Wispy Form ~ Wind Listener|PRECLASS:1,Wizard=10
 	ABILITY:Special Ability|AUTOMATIC|Listening to the Wind ~ Wind Listener|PRECLASS:1,Wizard=15
+	COST:0
 	SOURCEPAGE:p.158
 
 #
@@ -4077,6 +4117,7 @@ Shigenjo
 	ABILITY:Special Ability|AUTOMATIC|Ki Insight ~ Shigenjo|PRECLASS:1,Oracle=7
 	ABILITY:Special Ability|AUTOMATIC|Quivering Palm ~ Shigenjo|PRECLASS:1,Oracle=15
 	ABILITY:Special Ability|AUTOMATIC|Final Revelation ~ Shigenjo|PRECLASS:1,Oracle=20
+	COST:0
 	SOURCEPAGE:p.164
 
 #
@@ -4175,6 +4216,7 @@ Swordmaster
 	ABILITY:Special Ability|AUTOMATIC|Trance ~ Swordmaster|PRECLASS:1,Rogue=3
 	ABILITY:Special Ability|AUTOMATIC|Rogue Talents ~ Swordmaster|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Advanced Talents ~ Swordmaster|PRECLASS:1,Rogue=1
+	COST:0
 	SOURCEPAGE:p.164
 
 #
@@ -4266,6 +4308,7 @@ Fiend Flayer
 	DESC:Some tief ling magi can tap the dark energy of their fiendish blood to enhance their arcane and combat talents. By physically carving away their tainted f lesh, they can use its dark energies to enhance their powers, call forth weapons from thin air, and bypass enemies' strongest defenses. A fiend f layer has the following class features.
 	ABILITY:Special Ability|AUTOMATIC|Infernal Mortification ~ Fiend Flayer|PRECLASS:1,Magus=1
 	ABILITY:Special Ability|AUTOMATIC|Magus Arcana ~ Fiend Flayer|PRECLASS:1,Magus=1
+	COST:0
 	SOURCEPAGE:p.170
 
 #
@@ -4309,7 +4352,7 @@ Fiendish Vessel
 	PREALIGN:CE,NE,LE
 	PREALIGN:Deity
 	PRECLASS:1,Cleric=1
-	PREDOMAIN:1,Daemon,Demon,Devil
+	PREDOMAIN:1,Daemon Subdomain (Evil),Demon Subdomain (Evil),Demon Subdomain (Chaos),Devil Subdomain (Evil),Devil Subdomian (Law)
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Fiendish Vessel],[!PREABILITY:1,CATEGORY=Archetype,TYPE.ClericChannelEnergy1,TYPE.ClericChannelEnergy2,TYPE.ClericChannelEnergy3,TYPE.ClericChannelEnergy4,TYPE.ClericChannelEnergy5,TYPE.ClericChannelEnergy6,TYPE.ClericChannelEnergy7,TYPE.ClericChannelEnergy8,TYPE.ClericChannelEnergy9,TYPE.ClericChannelEnergy10]
 	PRERACE:1,Tiefling
 	DESC:Many clerics pray to or make evil bargains with fiendish powers, devoting body and soul to the insane plans and wicked aims of their despicable patrons. But these mortal clerics are often just shallow beings searching for quick power or the caress of true and final oblivion-few truly grasp the full scope of the entities they worship. Fiendish vessels, through their fiendish heritage, share an innate connection with their patron, and that connection grants them understanding and power. A fiendish vessel has the following class features.
@@ -4321,6 +4364,7 @@ Fiendish Vessel
 	ABILITY:Special Ability|AUTOMATIC|Fiendish Divination ~ Fiendish Vessel|PRECLASS:1,Cleric=9
 	ABILITY:Special Ability|AUTOMATIC|Extra Divination ~ Fiendish Vessel|PRECLASS:1,Cleric=13
 	ABILITY:Special Ability|AUTOMATIC|Fiendish Summoning ~ Fiendish Vessel|PRECLASS:1,Cleric=1
+	COST:0
 	SOURCEPAGE:p.170
 
 #
@@ -4351,9 +4395,9 @@ Fiendish Familiar
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:A fiendish vessel's patron rewards her with a fiendish servant. The fiendish vessel gains an imp, quasit, or cacodaemon familiar based on the patron she worships. If she worships Asmodeus or an archdevil, she gets an imp; if she worships a demon lord, she gets a quasit; and if she worships one of the Four Horsemen, she gains a cacodaemon. This ability is identical to the wizard's arcane bond with a familiar and the Improved Familiar feat, using the fiendish vessel's character level in place of the wizard level. This tiny fiend acts like a perverse, manifest moral compass. Furthermore, this familiar can act as a living divine focus and unholy symbol for her spellcasting if the fiendish vessel so desires, which means that when she uses her channel evil ability, its burst can be centered on the familiar instead, as long as that familiar is within 30 feet and line of sight. A fiendish vessel's familiar tends to be fawning and subservient to the fiendish vessel. Should her familiar die, the fiendish vessel's patron replaces the familiar with an identical one within 1 week, without the need for a special ritual.
 	FOLLOWERS:Familiar|1
-	COMPANIONLIST:Familiar|Imp|PREALIGN:LE
-	COMPANIONLIST:Familiar|Quasit|PREALIGN:CE
-	COMPANIONLIST:Familiar|Cacodaemon|PREALIGN:NE
+	COMPANIONLIST:Familiar|Familiar (Imp)|PREDEITYALIGN:LE
+	COMPANIONLIST:Familiar|Familiar (Quasit)|PREDEITYALIGN:CE
+	COMPANIONLIST:Familiar|Familiar (Cacodaemon)|PREDEITYALIGN:NE
 	SOURCEPAGE:p.171
 
 Fiendish Augury
@@ -4402,6 +4446,7 @@ Undine Adept
 	ABILITY:Special Ability|AUTOMATIC|Resist Water's Call ~ Undine Adept|PRECLASS:1,Druid=4
 	ABILITY:Special Ability|AUTOMATIC|Wild Shape ~ Undine Adept|PRECLASS:1,Druid=6
 	ABILITY:Special Ability|AUTOMATIC|Commune with Water Spirits ~ Undine Adept|PRECLASS:1,Druid=9
+	COST:0
 	SOURCEPAGE:p.176
 
 #
@@ -4468,6 +4513,7 @@ Watersinger
 	ABILITY:Special Ability|AUTOMATIC|Waterstrike 4 ~ Watersinger|PRECLASS:1,Bard=20
 	ABILITY:Special Ability|AUTOMATIC|Lifewater ~ Watersinger|PRECLASS:1,Bard=5
 	ABILITY:Special Ability|AUTOMATIC|Watersinger Spells ~ Watersinger|PRECLASS:1,Bard=1
+	COST:0
 	SOURCEPAGE:p.176
 
 #
@@ -4554,6 +4600,7 @@ Dreamweaver
 	ABILITY:Special Ability|AUTOMATIC|Hexes ~ Dreamweaver|PRECLASS:1,Witch=1
 	ABILITY:Special Ability|AUTOMATIC|Major Hexes ~ Dreamweaver|PRECLASS:1,Witch=1
 	ABILITY:Special Ability|AUTOMATIC|Grand Hexes ~ Dreamweaver|PRECLASS:1,Witch=1
+	COST:0
 	SOURCEPAGE:p.185
 
 #
@@ -4648,6 +4695,7 @@ Gray Disciple
 	ABILITY:Special Ability|AUTOMATIC|Earth Glide ~ Gray Disciple|PRECLASS:1,Monk=12
 	ABILITY:Special Ability|AUTOMATIC|Entomb ~ Gray Disciple|PRECLASS:1,Monk=15
 	ABILITY:Special Ability|AUTOMATIC|Earthen Thrall ~ Gray Disciple|PRECLASS:1,Monk=17
+	COST:0
 	SOURCEPAGE:p.187
 
 #
@@ -4713,6 +4761,7 @@ Eldritch Raider
 	ABILITY:Special Ability|AUTOMATIC|New Talents ~ Eldritch Raider|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Rogue Talents ~ Eldritch Raider|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Advanced Talents ~ Eldritch Raider|PRECLASS:1,Rogue=1
+	COST:0
 	SOURCEPAGE:p.189
 
 
@@ -4812,6 +4861,7 @@ Bogborn Alchemist
 	ABILITY:Special Ability|AUTOMATIC|Amphibious Mutagen ~ Bogborn Alchemist|PRECLASS:1,Alchemist=1
 	ABILITY:Special Ability|AUTOMATIC|Discovery Options ~ Bogborn Alchemist|PRECLASS:1,Alchemist=1
 	ABILITY:Special Ability|AUTOMATIC|Discoveries ~ Bogborn Alchemist|PRECLASS:1,Alchemist=1
+	COST:0
 	SOURCEPAGE:p.191
 
 #
@@ -4863,6 +4913,7 @@ Kitsune Trickster
 	ABILITY:Special Ability|AUTOMATIC|Kitsune's Guile ~ Kitsune Trickster|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Kitsune's Charm ~ Kitsune Trickster|PRECLASS:1,Rogue=3
 	ABILITY:Special Ability|AUTOMATIC|Rogue Talents ~ Kitsune Trickster|PRECLASS:1,Rogue=1
+	COST:0
 	SOURCEPAGE:p.193
 
 #
@@ -4905,6 +4956,7 @@ Wave Warden
 	ABILITY:Special Ability|AUTOMATIC|Favored Terrain ~ Wave Warden|PRECLASS:1,Ranger=3
 	ABILITY:Special Ability|AUTOMATIC|Seaborn ~ Wave Warden|PRECLASS:1,Ranger=7
 	ABILITY:Special Ability|AUTOMATIC|Watery Summons ~ Wave Warden|PRECLASS:1,Ranger=8
+	COST:0
 	SOURCEPAGE:p.194
 
 #
@@ -5104,6 +5156,7 @@ Naga Aspirant
 	ABILITY:Special Ability|AUTOMATIC|Naga Shape ~ Naga Aspirant|PRECLASS:1,Druid=6
 	ABILITY:Special Ability|AUTOMATIC|Augmented Form ~ Naga Aspirant|PRECLASS:1,Druid=9
 	ABILITY:Special Ability|AUTOMATIC|True Naga ~ Naga Aspirant|PRECLASS:1,Druid=20
+	COST:0
 	SOURCEPAGE:p.196
 
 #
@@ -5241,6 +5294,7 @@ Reincarnated Oracle
 	ABILITY:Special Ability|AUTOMATIC|Oracle's Curse ~ Reincarnated Oracle|PRECLASS:1,Oracle=1
 	ABILITY:Special Ability|AUTOMATIC|Bonus Spells ~ Reincarnated Oracle|PRECLASS:1,Oracle=1
 	ABILITY:Special Ability|AUTOMATIC|Revelations ~ Reincarnated Oracle|PRECLASS:1,Oracle=1
+	COST:0
 	SOURCEPAGE:p.199
 
 #
@@ -5310,6 +5364,7 @@ Airborne Ambusher
 	ABILITY:Special Ability|AUTOMATIC|Aerobatics ~ Airborne Ambusher|PRECLASS:1,Fighter=5
 	ABILITY:Special Ability|AUTOMATIC|Flying Dodger ~ Airborne Ambusher|PRECLASS:1,Fighter=9
 	ABILITY:Special Ability|AUTOMATIC|Plummeting Charge ~ Airborne Ambusher|PRECLASS:1,Fighter=13
+	COST:0
 	SOURCEPAGE:p.201
 
 #
@@ -5375,6 +5430,7 @@ Elemental Knight
 	ABILITY:Special Ability|AUTOMATIC|Energy Resistance Boost ~ Elemental Knight|PRECLASS:1,Magus=1
 	ABILITY:Special Ability|AUTOMATIC|Elemental Matrix ~ Elemental Knight|PRECLASS:1,Magus=4
 	ABILITY:Special Ability|AUTOMATIC|Magus Arcana ~ Elemental Knight|PRECLASS:1,Magus=1
+	COST:0
 	SOURCEPAGE:p.203
 
 #
@@ -5441,6 +5497,7 @@ Deep Bomber
 	ABILITY:Special Ability|AUTOMATIC|Targeting Bomb ~ Deep Bomber|PRECLASS:1,Alchemist=3
 	ABILITY:Special Ability|AUTOMATIC|Stonekin ~ Deep Bomber|PRECLASS:1,Alchemist=6
 	ABILITY:Special Ability|AUTOMATIC|Discoveries ~ Deep Bomber|PRECLASS:1,Alchemist=1
+	COST:0
 	SOURCEPAGE:p.205
 
 #
@@ -5489,6 +5546,7 @@ Treetop Monk
 	ABILITY:Special Ability|AUTOMATIC|Wood Affinity 1 ~ Treetop Monk |PRECLASS:1,Monk=5
 	ABILITY:Special Ability|AUTOMATIC|Wood Affinity 2 ~ Treetop Monk |PRECLASS:1,Monk=8
 	ABILITY:Special Ability|AUTOMATIC|Freedom of Movement ~ Treetop Monk|PRECLASS:1,Monk=12
+	COST:0
 	SOURCEPAGE:p.206
 
 #
@@ -5538,6 +5596,7 @@ Deadly Courtesan
 	ABILITY:Special Ability|AUTOMATIC|Performance Strike ~ Deadly Courtesan|PRECLASS:1,Rogue=8
 	ABILITY:Special Ability|AUTOMATIC|Rogue Talents ~ Deadly Courtesan|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Advanced Talents ~ Deadly Courtesan|PRECLASS:1,Rogue=1
+	COST:0
 	SOURCEPAGE:p.208
 
 #
@@ -5599,6 +5658,7 @@ Shadow Puppeteer
 	ABILITY:Special Ability|AUTOMATIC|Bardic Performance ~ Shadow Puppeteer|PRECLASS:1,Bard=1
 	ABILITY:Special Ability|AUTOMATIC|Shadow Servant ~ Shadow Puppeteer|PRECLASS:1,Bard=1
 	ABILITY:Special Ability|AUTOMATIC|Shadow Puppets ~ Shadow Puppeteer|PRECLASS:1,Bard=1
+	COST:0
 	SOURCEPAGE:p.210
 
 #
