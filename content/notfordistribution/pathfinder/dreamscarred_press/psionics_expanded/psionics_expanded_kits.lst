@@ -12,7 +12,7 @@ STARTPACK:Astral Swarm Default
 	VISIBLE:QUALIFY
 	EQUIPBUY:0
 	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Astral Swarm]
-	SOURCEPAGE:p.10
+	SOURCEPAGE:p.66
 
 RACE:Astral Swarm
 	!PRERACE:1,%
@@ -31,6 +31,7 @@ STARTPACK:Astral Warrior
 	VISIBLE:QUALIFY
 	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Astral Warrior]
 	EQUIPBUY:0
+	SOURCEPAGE:p.66
 
 RACE:Astral Warrior
 	!PRERACE:1,%
@@ -45,6 +46,8 @@ GEAR:Astral Warrior Weapon (Slashing)
 
 
 
+
+
 ###Block: Meditant's Flurry of Strikes
 STARTPACK:Meditant Flurry of Strikes
 	VISIBLE:NO
@@ -53,4 +56,16 @@ STARTPACK:Meditant Flurry of Strikes
 
 GEAR:Flurry of Strikes
 	LOCATION:Unarmed
+
+
+
+
+
+###Block: Lose a skill point for Telekinetic Draw
+STARTPACK:Telekinetic Draw Skill Point Loss
+	VISIBLE:NO
+	APPLY:INSTANT
+
+SKILL:Lost Skill Point
+	RANK:1
 

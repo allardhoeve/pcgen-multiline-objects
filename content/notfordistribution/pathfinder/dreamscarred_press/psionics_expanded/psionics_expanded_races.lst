@@ -24,9 +24,7 @@ Astral Swarm
 	RACETYPE:Construct
 	TEMPLATE:Swarm
 	CR:7
-	SOURCEPAGE:p.10
-
-
+	SOURCEPAGE:p.66
 
 Astral Warrior
 	STARTFEATS:0
@@ -43,6 +41,6 @@ Astral Warrior
 	HANDS:2
 	MONSTERCLASS:Astral Warrior:1
 	RACETYPE:Construct
-	SOURCEPAGE:p.12
+	SOURCEPAGE:p.66
 	KIT:1|Astral Warrior
 

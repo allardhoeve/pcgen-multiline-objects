@@ -7,6 +7,7 @@ SOURCELONG:Psionics Expanded
 # ORIGINAL ENTRY DATE: 2013/07/05
 
 
+###Block: New conditional skills
 Intimidate (Demoralize)
 	KEYSTAT:CHA
 	USEUNTRAINED:YES
@@ -84,4 +85,14 @@ Acrobatics (on the ground)
 Acrobatics.MOD
 	BONUS:SKILL|Acrobatics (on the ground)|var("SKILL.Acrobatics.MISC")
 	BONUS:SKILLRANK|Acrobatics (on the ground)|skillinfo("TOTALRANK", "Acrobatics")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Acrobatics (on the ground).MISC"),var("SKILL.Acrobatics.MISC")
+
+
+
+
+
+###Block: Skill for losing a skill point
+Lost Skill Point
+	USEUNTRAINED:NO
+	VISIBLE:DISPLAY|READONLY
+	EXCLUSIVE:YES
 

@@ -14,7 +14,7 @@ SOURCELONG:Psionics Expanded
 #Block: Cryptic
 Cryptic Power Level 0
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownCryptic
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -22,7 +22,7 @@ Cryptic Power Level 0
 
 Cryptic Power Level 1
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownCryptic
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -30,7 +30,7 @@ Cryptic Power Level 1
 
 Cryptic Power Level 2
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownCryptic
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -38,7 +38,7 @@ Cryptic Power Level 2
 
 Cryptic Power Level 3
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownCryptic
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -46,7 +46,7 @@ Cryptic Power Level 3
 
 Cryptic Power Level 4
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownCryptic
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -54,7 +54,7 @@ Cryptic Power Level 4
 
 Cryptic Power Level 5
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownCryptic
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -62,7 +62,7 @@ Cryptic Power Level 5
 
 Cryptic Power Level 6
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownCryptic
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -73,7 +73,7 @@ Cryptic Power Level 6
 #Block: Dread
 Dread Power Level 0
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownDread
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -81,7 +81,7 @@ Dread Power Level 0
 
 Dread Power Level 1
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownDread
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -89,7 +89,7 @@ Dread Power Level 1
 
 Dread Power Level 2
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownDread
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -97,7 +97,7 @@ Dread Power Level 2
 
 Dread Power Level 3
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownDread
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -105,7 +105,7 @@ Dread Power Level 3
 
 Dread Power Level 4
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownDread
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -113,7 +113,7 @@ Dread Power Level 4
 
 Dread Power Level 5
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownDread
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -121,7 +121,7 @@ Dread Power Level 5
 
 Dread Power Level 6
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownDread
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -129,10 +129,53 @@ Dread Power Level 6
 
 
 
+#Block: Gifted Blade
+Gifted Blade Power Level 0
+	CATEGORY:Special Ability
+	TYPE:BonusSpellKnownGiftedBlade
+	STACK:YES
+	MULT:YES
+	CHOOSE:NOCHOICE
+	BONUS:SPELLKNOWN|CLASS=Gifted Blade;LEVEL=0|1
+
+Gifted Blade Power Level 1
+	CATEGORY:Special Ability
+	TYPE:BonusSpellKnownGiftedBlade
+	STACK:YES
+	MULT:YES
+	CHOOSE:NOCHOICE
+	BONUS:SPELLKNOWN|CLASS=Gifted Blade;LEVEL=1|1
+
+Gifted Blade Power Level 2
+	CATEGORY:Special Ability
+	TYPE:BonusSpellKnownGiftedBlade
+	STACK:YES
+	MULT:YES
+	CHOOSE:NOCHOICE
+	BONUS:SPELLKNOWN|CLASS=Gifted Blade;LEVEL=2|1
+
+Gifted Blade Power Level 3
+	CATEGORY:Special Ability
+	TYPE:BonusSpellKnownGiftedBlade
+	STACK:YES
+	MULT:YES
+	CHOOSE:NOCHOICE
+	BONUS:SPELLKNOWN|CLASS=Gifted Blade;LEVEL=3|1
+
+Gifted Blade Power Level 4
+	CATEGORY:Special Ability
+	TYPE:BonusSpellKnownGiftedBlade
+	STACK:YES
+	MULT:YES
+	CHOOSE:NOCHOICE
+	BONUS:SPELLKNOWN|CLASS=Gifted Blade;LEVEL=4|1
+
+
+
 #Block: Marksman
 Marksman Power Level 0
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownMarksman
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -140,7 +183,7 @@ Marksman Power Level 0
 
 Marksman Power Level 1
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownMarksman
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -148,7 +191,7 @@ Marksman Power Level 1
 
 Marksman Power Level 2
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownMarksman
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -156,7 +199,7 @@ Marksman Power Level 2
 
 Marksman Power Level 3
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownMarksman
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -164,7 +207,7 @@ Marksman Power Level 3
 
 Marksman Power Level 4
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownMarksman
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -175,7 +218,7 @@ Marksman Power Level 4
 #Block: Psion
 Psion Power Level 0
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownPsion
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -183,7 +226,7 @@ Psion Power Level 0
 
 Psion Power Level 1
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownPsion
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -191,7 +234,7 @@ Psion Power Level 1
 
 Psion Power Level 2
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownPsion
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -199,7 +242,7 @@ Psion Power Level 2
 
 Psion Power Level 3
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownPsion
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -207,7 +250,7 @@ Psion Power Level 3
 
 Psion Power Level 4
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownPsion
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -215,7 +258,7 @@ Psion Power Level 4
 
 Psion Power Level 5
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownPsion
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -223,7 +266,7 @@ Psion Power Level 5
 
 Psion Power Level 6
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownPsion
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -231,7 +274,7 @@ Psion Power Level 6
 
 Psion Power Level 7
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownPsion
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -239,7 +282,7 @@ Psion Power Level 7
 
 Psion Power Level 8
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownPsion
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -247,7 +290,7 @@ Psion Power Level 8
 
 Psion Power Level 9
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownPsion
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -317,7 +360,7 @@ Psychic Warrior Power Level 6
 #Block: Tactician
 Tactician Power Level 0
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownTactician
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -325,7 +368,7 @@ Tactician Power Level 0
 
 Tactician Power Level 1
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownTactician
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -333,7 +376,7 @@ Tactician Power Level 1
 
 Tactician Power Level 2
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownTactician
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -341,7 +384,7 @@ Tactician Power Level 2
 
 Tactician Power Level 3
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownTactician
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -349,7 +392,7 @@ Tactician Power Level 3
 
 Tactician Power Level 4
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownTactician
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -357,7 +400,7 @@ Tactician Power Level 4
 
 Tactician Power Level 5
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownTactician
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -365,7 +408,7 @@ Tactician Power Level 5
 
 Tactician Power Level 6
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownTactician
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -373,7 +416,7 @@ Tactician Power Level 6
 
 Tactician Power Level 7
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownTactician
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -381,7 +424,7 @@ Tactician Power Level 7
 
 Tactician Power Level 8
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownTactician
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -389,7 +432,7 @@ Tactician Power Level 8
 
 Tactician Power Level 9
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownTactician
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -400,7 +443,7 @@ Tactician Power Level 9
 #Block: Vitalist
 Vitalist Power Level 0
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownVitalist
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -408,7 +451,7 @@ Vitalist Power Level 0
 
 Vitalist Power Level 1
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownVitalist
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -416,7 +459,7 @@ Vitalist Power Level 1
 
 Vitalist Power Level 2
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownVitalist
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -424,7 +467,7 @@ Vitalist Power Level 2
 
 Vitalist Power Level 3
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownVitalist
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -432,7 +475,7 @@ Vitalist Power Level 3
 
 Vitalist Power Level 4
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownVitalist
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -440,7 +483,7 @@ Vitalist Power Level 4
 
 Vitalist Power Level 5
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownVitalist
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -448,7 +491,7 @@ Vitalist Power Level 5
 
 Vitalist Power Level 6
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownVitalist
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -456,7 +499,7 @@ Vitalist Power Level 6
 
 Vitalist Power Level 7
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownVitalist
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -464,7 +507,7 @@ Vitalist Power Level 7
 
 Vitalist Power Level 8
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownVitalist
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -472,7 +515,7 @@ Vitalist Power Level 8
 
 Vitalist Power Level 9
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownVitalist
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -483,7 +526,7 @@ Vitalist Power Level 9
 #Block: Wilder
 Wilder Power Level 0
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownWilder
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -491,7 +534,7 @@ Wilder Power Level 0
 
 Wilder Power Level 1
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownWilder
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -499,7 +542,7 @@ Wilder Power Level 1
 
 Wilder Power Level 2
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownWilder
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -507,7 +550,7 @@ Wilder Power Level 2
 
 Wilder Power Level 3
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownWilder
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -515,7 +558,7 @@ Wilder Power Level 3
 
 Wilder Power Level 4
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownWilder
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -523,7 +566,7 @@ Wilder Power Level 4
 
 Wilder Power Level 5
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownWilder
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -531,7 +574,7 @@ Wilder Power Level 5
 
 Wilder Power Level 6
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownWilder
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -539,7 +582,7 @@ Wilder Power Level 6
 
 Wilder Power Level 7
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownWilder
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -547,7 +590,7 @@ Wilder Power Level 7
 
 Wilder Power Level 8
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownWilder
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -555,7 +598,7 @@ Wilder Power Level 8
 
 Wilder Power Level 9
 	CATEGORY:Special Ability
-	TYPE:BonusSpellKnownPsychicWarrior
+	TYPE:BonusSpellKnownWilder
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE

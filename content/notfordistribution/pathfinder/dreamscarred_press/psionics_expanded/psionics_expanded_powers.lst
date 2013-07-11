@@ -327,6 +327,10 @@ Psionic Repair
 	DESC:Restore 1d4 hit points to damaged object.
 	SOURCEPAGE:p.39
 
+Psychic Tracking
+
+Resist Death
+
 Sense Poison
 	KEY:Sense Poison Talent
 	CLASSES:Psion,Psychic Warrior,Vitalist,Wilder=0
