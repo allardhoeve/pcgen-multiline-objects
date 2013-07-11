@@ -90,10 +90,9 @@ Elan
 	REACH:5
 	LANGBONUS:ALL
 	BONUS:ABILITYPOOL|Ability Bonus|1
-	BONUS:ABILITYPOOL|Elan Racial Trait|5
+	BONUS:ABILITYPOOL|Elan Racial Trait|6
 	BONUS:VAR|IsPsionic|1
 	AUTO:LANG|Common
-	ABILITY:Special Ability|AUTOMATIC|Aberrant Nature ~ Elan
 	ABILITY:Special Ability|AUTOMATIC|Psionic
 	ABILITY:Internal|AUTOMATIC|Elan Racial Trait Default|PREABILITY:1,CATEGORY=Special Ability,Grant Default Racial Abilities
 	ABILITY:Internal|AUTOMATIC|Default

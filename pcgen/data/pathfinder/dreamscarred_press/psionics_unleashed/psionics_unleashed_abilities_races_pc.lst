@@ -278,10 +278,12 @@ Duergar Psionics
 	CATEGORY:Special Ability
 	TYPE:RacialTraits.SpecialQuality.Extraordinary.DuergarDSPRacialTrait.DuergarDSPRacialDefault
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Duergar Psionics],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.DuergarDSPPsionics]
-	SPELLS:Innate|TIMES=1|CASTERLEVEL=max(3,TL/2)|Expansion,11+CHA
-	SPELLS:Innate|TIMES=1|CASTERLEVEL=max(3,TL/2)|Cloud Mind,12+CHA
+	SPELLS:Innate|TIMES=DuergarExpansionTimes|CASTERLEVEL=max(3,TL/2)|Expansion,11+CHA
+	SPELLS:Innate|TIMES=DuergarCloudMindTimes|CASTERLEVEL=max(3,TL/2)|Cloud Mind,12+CHA
 	DESC:A duergar's expansion and cloud mind affect only the duergar and his gear.
 	SOURCEPAGE:p.12
+	DEFINE:DuergarExpansionTimes|1
+	DEFINE:DuergarCloudMindTimes|1
 
 Hardy
 	KEY:Hardy ~ DuergarDSP
@@ -349,7 +351,7 @@ CATEGORY=Internal|DuergarDSP Racial Trait Default.MOD
 Aberrant Nature
 	KEY:Aberrant Nature ~ Elan
 	CATEGORY:Special Ability
-	TYPE:RacialTraits.SpecialQuality.Extraordinary
+	TYPE:RacialTraits.SpecialQuality.Extraordinary.ElanRacialTrait.ElanRacialDefault
 	DESC:-1 penalty to CHA-based skill checks when dealing with non-Elans.
 	BONUS:SKILL|TYPE.Charisma|-1
 	SOURCEPAGE:p.13
@@ -386,7 +388,10 @@ CATEGORY=Internal|Select Racial Traits.MOD
 
 Elan Racial Trait Default
 	CATEGORY:Internal
-	BONUS:ABILITYPOOL|Elan Racial Trait|-5
+	BONUS:ABILITYPOOL|Elan Racial Trait|-6
+
+CATEGORY=Internal|Elan Racial Trait Default.MOD
+	ABILITY:Elan Racial Trait|AUTOMATIC|Aberrant Nature ~ Elan|!PREABILITY:1,CATEGORY=Special Ability,TYPE.ElanAberrantNature
 
 CATEGORY=Internal|Elan Racial Trait Default.MOD
 	ABILITY:Elan Racial Trait|AUTOMATIC|Resistance ~ Elan|!PREABILITY:1,CATEGORY=Special Ability,TYPE.ElanResistance
@@ -676,11 +681,12 @@ Burst
 	TYPE:RacialTraits.SpecialQuality.Supernatural.XephRacialTrait.XephRacialDefault
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Burst ~ Xeph],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.XephBurst]
 	DEFINE:BurstBonus|10
-	DESC:3/day, burst of speed for 3 rounds, +%1 competence bonus to speed.|BurstBonus
+	DESC:%2/day, burst of speed for 3 rounds, +%1 competence bonus to speed.|BurstBonus|XephBurstTimes
 	BONUS:MOVEADD|TYPE.Walk|BurstBonus|TYPE=Competence|PREAPPLY:PC
 	BONUS:VAR|BurstBonus|10|PREPCLEVEL:MIN=5
 	BONUS:VAR|BurstBonus|10|PREPCLEVEL:MIN=9
 	SOURCEPAGE:p.17
+	DEFINE:XephBurstTimes|3
 
 
 

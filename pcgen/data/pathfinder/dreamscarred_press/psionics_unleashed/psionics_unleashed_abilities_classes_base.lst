@@ -639,6 +639,7 @@ Warrior's Path
 	DEFINE:WarriorPathLVL|0
 	DESC:Choose a warrior path to adhere to.
 	SOURCEPAGE:p.25
+	DEFINE:PathPowerBonusML|0
 
 Martial Power
 	CATEGORY:Special Ability
@@ -819,14 +820,6 @@ Weaponmaster Path
 
 
 ### Path Power abilities
-Defensive Precognition
-	KEY:Defensive Precognition Path Power
-	CATEGORY:Special Ability
-	TYPE:PathPower
-	VISIBLE:DISPLAY
-	PREABILITY:1,CATEGORY=Special Ability,Ascetic Path ~ First,Ascetic Path ~ Second
-	SPELLKNOWN:CLASS|Psychic Warrior=1|Precognition (Defensive)
-
 Offensive Precognition
 	KEY:Offensive Precognition Path Power
 	CATEGORY:Special Ability
@@ -834,6 +827,16 @@ Offensive Precognition
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Ascetic Path ~ First,Ascetic Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Precognition (Offensive)
+	BONUS:CASTERLEVEL|SPELL.Precognition (Offensive)|PathPowerBonusML
+
+Defensive Precognition
+	KEY:Defensive Precognition Path Power
+	CATEGORY:Special Ability
+	TYPE:PathPower
+	VISIBLE:DISPLAY
+	PREABILITY:1,CATEGORY=Special Ability,Ascetic Path ~ First,Ascetic Path ~ Second
+	SPELLKNOWN:CLASS|Psychic Warrior=1|Precognition (Defensive)
+	BONUS:CASTERLEVEL|SPELL.Precognition (Defensive)|PathPowerBonusML
 
 Distract
 	KEY:Distract Path Power
@@ -842,6 +845,7 @@ Distract
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Assassin's Path ~ First,Assassin's Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Distract
+	BONUS:CASTERLEVEL|SPELL.Distract|PathPowerBonusML
 
 Prevenom
 	KEY:Prevenom Path Power
@@ -850,6 +854,7 @@ Prevenom
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Assassin's Path ~ First,Assassin's Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Prevenom
+	BONUS:CASTERLEVEL|SPELL.Prevenom|PathPowerBonusML
 
 Prevenom Weapon
 	KEY:Prevenom Weapon Path Power
@@ -858,6 +863,7 @@ Prevenom Weapon
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Assassin's Path ~ First,Assassin's Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Prevenom Weapon
+	BONUS:CASTERLEVEL|SPELL.Prevenom Weapon|PathPowerBonusML
 
 Grip of Iron
 	KEY:Grip of Iron Path Power
@@ -866,6 +872,7 @@ Grip of Iron
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Brawling Path ~ First,Brawling Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Grip of Iron
+	BONUS:CASTERLEVEL|SPELL.Grip of Iron|PathPowerBonusML
 
 Hammer
 	KEY:Hammer Path Power
@@ -874,6 +881,7 @@ Hammer
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Brawling Path ~ First,Brawling Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Hammer
+	BONUS:CASTERLEVEL|SPELL.Hammer|PathPowerBonusML
 
 Bite of the Wolf
 	KEY:Bite of the Wolf Path Power
@@ -882,6 +890,7 @@ Bite of the Wolf
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Feral Warrior Path ~ First,Feral Warrior Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Bite of the Wolf
+	BONUS:CASTERLEVEL|SPELL.Bite of the Wolf|PathPowerBonusML
 
 Claws of the Beast
 	KEY:Claws of the Beast Path Power
@@ -890,6 +899,7 @@ Claws of the Beast
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Feral Warrior Path ~ First,Feral Warrior Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Claws of the Beast
+	BONUS:CASTERLEVEL|SPELL.Claws of the Beast|PathPowerBonusML
 
 Call Weaponry
 	KEY:Call Weaponry Path Power
@@ -898,6 +908,7 @@ Call Weaponry
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Mind Knight Path ~ First,Mind Knight Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Call Weaponry
+	BONUS:CASTERLEVEL|SPELL.Call Weaponry|PathPowerBonusML
 
 Inertial Armor
 	KEY:Inertial Armor Path Power
@@ -906,6 +917,7 @@ Inertial Armor
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Mind Knight Path ~ First,Mind Knight Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Inertial Armor
+	BONUS:CASTERLEVEL|SPELL.Inertial Armor|PathPowerBonusML
 
 Empty Mind
 	KEY:Empty Mind Path Power
@@ -914,6 +926,7 @@ Empty Mind
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Weaponmaster Path ~ First,Weaponmaster Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Empty Mind
+	BONUS:CASTERLEVEL|SPELL.Empty Mind|PathPowerBonusML
 
 Metaphysical Weapon
 	KEY:Metaphysical Weapon Path Power
@@ -922,6 +935,7 @@ Metaphysical Weapon
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Weaponmaster Path ~ First,Weaponmaster Path ~ Second
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Metaphysical Weapon
+	BONUS:CASTERLEVEL|SPELL.Metaphysical Weapon|PathPowerBonusML
 
 
 
@@ -1349,8 +1363,11 @@ Enhanced Mind Blade
 Psychic Strike
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack.Supernatural
-	DESC:Imbue mind blade with psychic energy; +%1d%2 damage when discharged.|PsychicStrikeDiceNumber|PsychicStrikeDie
+	DESC:Imbue mind blade with psychic energy; +%1d%2|PsychicStrikeDiceNumber|PsychicStrikeDie
+	DESC:+%1|PsychicStrikeBonusDamage|PREVARGT:PsychicStrikeBonusDamage,0
+	DESC:damage when discharged.
 	SOURCEPAGE:p.32
+	DEFINE:PsychicStrikeBonusDamage|0
 
 Quick Draw Mind Blade
 	OUTPUTNAME:Quick Draw
@@ -1661,7 +1678,9 @@ Surging Euphoria
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Extraordinary
 	DEFINE:SurgingEuphoria|0
-	DESC:Gain +%1 morale bonus on attack rolls, damage rolls, and saves for %2 rounds on successful wild surge.|SurgingEuphoria|WildSurge
+	DESC:Gain +%1 morale bonus on attack rolls, damage rolls, and saves for %2 rounds on successful wild surge.|SurgingEuphoria|SurgingEuphoriaDuration
+	DEFINE:SurgingEuphoriaDuration|0
+	BONUS:VAR|SurgingEuphoriaDuration|WildSurge
 	BONUS:CHECKS|ALL|SurgingEuphoria|TYPE=Morale|PREAPPLY:PC
 	BONUS:COMBAT|TOHIT|SurgingEuphoria|TYPE=Morale|PREAPPLY:PC
 	BONUS:COMBAT|DAMAGE|SurgingEuphoria|TYPE=Morale|PREAPPLY:PC
