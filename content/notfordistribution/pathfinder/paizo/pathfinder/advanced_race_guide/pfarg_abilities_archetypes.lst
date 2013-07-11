@@ -685,7 +685,7 @@ Plant Bond
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.NaturesBondAnimalCompanion.NaturesBondDruidDomain
 	DEFINE:DruidAnimalTerrainDomainNotAllowed|1
 	DESC:A treesinger forms a mystic bond with plant life.
-	BONUS:ABILITYPOOL|PlantBondOption|1
+	BONUS:ABILITYPOOL|Plant Bond Option|1
 	SOURCEPAGE:p.25
 
 Green Empathy
@@ -711,7 +711,7 @@ Plant Companion
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.PlantBondOption
 	DESC:The treesinger forms a close bond with a plant companion.  This plant is a loyal companion that accompanies the treesinger on her adventures. Except for the companion being a creature of the plant type, drawn from the list of plant companions, this ability otherwise works like the standard druid's animal companion ability.
 	FOLLOWERS:Plant Companion|1
-	COMPANIONLIST:Plant Companion|Companion (Carnivorous Flower),Companion (Crawling Vine),Companion (Puffball),Companion (Sapling Treant)|PREVARLT:WizardLvl,4
+	COMPANIONLIST:Plant Companion|Companion (Carnivorous Flower),Companion (Crawling Vine),Companion (Puffball),Companion (Sapling Treant)
 	SOURCEPAGE:p.25
 
 Domain

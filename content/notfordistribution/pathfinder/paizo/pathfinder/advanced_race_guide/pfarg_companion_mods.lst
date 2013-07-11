@@ -377,7 +377,7 @@ FOLLOWER:PlantCompanionLVL=1
 	DEFINE:BonusTricks|0
 	BONUS:VAR|MasterLevel|1
 	BONUS:VAR|BonusTricks|1
-	RACETYPE:Animal
+	RACETYPE:Plant
 
 FOLLOWER:PlantCompanionLVL=2
 	TYPE:Plant Companion
@@ -395,7 +395,7 @@ FOLLOWER:PlantCompanionLVL=3
 FOLLOWER:PlantCompanionLVL=4
 	TYPE:Plant Companion
 	HD:1
-	BONUS:ABILITYPOOL|Companion Stat Increase|1
+	ABILITY:Special Ability|AUTOMATIC|Plant Companion Advancement
 	BONUS:VAR|MasterLevel|1
 
 FOLLOWER:PlantCompanionLVL=5
