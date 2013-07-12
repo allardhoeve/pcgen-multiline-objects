@@ -8,6 +8,9 @@ SOURCELONG:Psionics Unleashed
 # SRD Original Entry by: Arknight
 
 
+# COMMENT: Use SORTKEY:a_base_pc if we want these interleaved with the core races.
+
+
 # Race Name		Output Name			Starting Feats	Size		Move			Face/Space	Reach		Vision			Bonus Languages							Bonus to Ability Pool										Stat bonus								Modify VAR			Automatically Gained Language			Ability																																											Define			Main Race Type	Type		Template			Challenge Rating	Source Page
 Blue
 	STARTFEATS:1
