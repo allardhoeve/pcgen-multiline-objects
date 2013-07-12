@@ -3997,7 +3997,7 @@ Hair
 	TYPE:NaturalAttack
 	CATEGORY:Natural Attack
 	DEFINE:NaturalHairReach|WitchWhiteHairedHairRange
-	DEFINE:HairAttackBonus|BAB+STR
+	DEFINE:HairAttackBonus|BAB+INT
 	DEFINE:HairThreatRange|0
 	AUTO:WEAPONPROF|Hair
 	BONUS:VAR|HairAttackBonus|1|PREFEAT:1,Weapon Focus (Hair)
