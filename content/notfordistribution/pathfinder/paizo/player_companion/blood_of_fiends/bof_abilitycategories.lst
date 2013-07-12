@@ -1,7 +1,10 @@
-# CVS $Revision: $ $Author: $ -- Mon Apr  8 07:46:57 2013 -- reformated by prettylst.pl v1.50 (build 19790)
+# CVS $Revision: $ $Author: $ -- Fri Jul 12 16:25:58 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 #SOURCELONG:Blood of Fiends	SOURCESHORT:PFBOF	SOURCEWEB:http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy8auu	SOURCEDATE:2012-04
+# ORIGINAL ENTRY: Stefan Radermacher
+# ORIGINAL ENTRY DATE: 12 July 2013
 
 
+###Block: Tiefling Race Traits
 # Ability Category					Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object			Plural description for UI		Display Location
 ABILITYCATEGORY:Asura Spawn Racial Trait
 	VISIBLE:QUALIFY
@@ -105,6 +108,7 @@ ABILITYCATEGORY:Rakshasa Spawn Racial Trait
 
 
 
+###Block: Tiefling Race Traits
 ABILITYCATEGORY:Tiefling Race Trait
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -215,3 +219,23 @@ ABILITYCATEGORY:Rakshasa Spawn Race Trait
 	PLURAL:Rakshasa Spawn Race Traits
 	DISPLAYLOCATION:Race Abilities
 
+
+
+###Block: Class Bonus Feat Categories
+# Ability Category				Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object	Type of Object		Specific choices list		Plural description for UI	Display Location
+ABILITYCATEGORY:Daemon Bloodline Feat
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:YES
+	FRACTIONALPOOL:NO
+	CATEGORY:FEAT
+	TYPE:DaemonBloodline
+	ABILITYLIST:Skill Focus(Heal)
+	PLURAL:Daemon Bloodline Feats
+	DISPLAYLOCATION:Feats
+
+
+
+#
+# End
+#

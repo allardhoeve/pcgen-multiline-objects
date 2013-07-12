@@ -4,9 +4,11 @@ SOURCELONG:Blood of Fiends
 	SOURCEWEB:http://paizo.com/products/btpy8qzz?Pathfinder-Player-Companion-Blood-of-Fiends
 	SOURCEDATE:2012-04
 
+# ORIGINAL ENTRY: Stefan Radermacher
+# ORIGINAL ENTRY DATE: 12 July 2013
 
 
-###Block: T
+###Block: Tieflings
 # Race Name				Unique Key				Starting Feats	Size		Move			Face/Space	Reach		Bonus Languages											Stat bonus						Automatically Gained Language	Ability											Nb Legs	Main Race Type	Race Subtype		Challenge Rating	Source Page
 Tiefling (Asura-Spawn)
 	KEY:Tiefling (Asura-Spawn)
@@ -188,3 +190,8 @@ Tiefling (Rakshasa-Spawn)
 	CR:1/2
 	SOURCEPAGE:p.264
 
+
+
+#
+# End
+#
