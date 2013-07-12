@@ -983,7 +983,8 @@ Unwilling Participant
 	SOURCEPAGE:p.30
 	BENEFIT:You may attempt to force a living creature into your collective.  The target may attempt a Will save (DC %1) to resist.  If the target fails the save, it may attempt another Will save at the same DC every 24 hours thereafter, but is otherwise unable to leave the collective unless you allow it.  Special: Creatures forced into your collective using Unwilling Participant are considered willing members for any collective-related effects unless they succeed on another Will save at the same DC to resist being forced into the collective.  A successful save means the creature resisted the speciifc effect but is still a member of the collective.|UnwillingParticipantDC
 	DEFINE:UnwillingParticipantDC|0
-	BONUS:VAR|UnwillingParticipantDC|10+CollectiveLVL/2+WIS
+	BONUS:VAR|UnwillingParticipantDC|10+(CollectiveLVL/2)+WIS|TYPE=BaseDC
+	BONUS:VAR|UnwillingParticipantDC|10+(TacticianCollectiveLVL/2)+WIS|TYPE=BaseDC
 
 Urban Tracking
 	TYPE:General

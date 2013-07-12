@@ -7,6 +7,9 @@ SOURCELONG:Psionics Expanded
 # ORIGINAL ENTRY DATE: 2013/07/05
 
 
+# NEEDS DATA WORK: RACETYPE:Eidolon needed to allow some eidolon evolutions - but only one RACETYPE allowed!
+# NEEDS CODE WORK: SERVESAS:RACE|Eidolon (Whatever) doesn't seem to be working.
+# TODO: Add in aquatic form from UM?
 Horror (Biped)
 	STARTFEATS:0
 	SIZE:M
@@ -26,6 +29,7 @@ Horror (Biped)
 	RACETYPE:Construct
 	SOURCEPAGE:p.70
 	KIT:1|Horror (Biped)
+	SERVESAS:RACE|Eidolon (Biped)
 
 Horror (Quadruped)
 	STARTFEATS:0
@@ -46,6 +50,7 @@ Horror (Quadruped)
 	RACETYPE:Construct
 	SOURCEPAGE:p.70
 	KIT:1|Horror (Quadruped)
+	SERVESAS:RACE|Eidolon (Quadruped)
 
 Horror (Serpentine)
 	STARTFEATS:0
@@ -66,4 +71,5 @@ Horror (Serpentine)
 	RACETYPE:Construct
 	SOURCEPAGE:p.70
 	KIT:1|Horror (Serpentine)
+	SERVESAS:RACE|Eidolon (Serpentine)
 

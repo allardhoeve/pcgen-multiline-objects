@@ -1071,64 +1071,75 @@ CLASS:Vitalist
 
 ###Block: Vitalist Powers Known
 1
-	KNOWN:0,2
+	KNOWN:0,VitalistPowersKnown
+	BONUS:VAR|VitalistPowersKnown|2
+	DEFINE:VitalistPowersKnown|0
 
 2
-	KNOWN:0,2
+	KNOWN:0,VitalistPowersKnown
 
 3
-	KNOWN:0,0,3
+	KNOWN:0,0,VitalistPowersKnown
+	BONUS:VAR|VitalistPowersKnown|1|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistPower3
 
 4
-	KNOWN:0,0,3
+	KNOWN:0,0,VitalistPowersKnown
 
 5
-	KNOWN:0,0,0,4
+	KNOWN:0,0,0,VitalistPowersKnown
+	BONUS:VAR|VitalistPowersKnown|1|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistPower5
 
 6
-	KNOWN:0,0,0,4
+	KNOWN:0,0,0,VitalistPowersKnown
 
 7
-	KNOWN:0,0,0,0,5
+	KNOWN:0,0,0,0,VitalistPowersKnown
+	BONUS:VAR|VitalistPowersKnown|1|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistPower7
 
 8
-	KNOWN:0,0,0,0,5
+	KNOWN:0,0,0,0,VitalistPowersKnown
 
 9
-	KNOWN:0,0,0,0,0,6
+	KNOWN:0,0,0,0,0,VitalistPowersKnown
+	BONUS:VAR|VitalistPowersKnown|1|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistPower9
 
 10
-	KNOWN:0,0,0,0,0,6
+	KNOWN:0,0,0,0,0,VitalistPowersKnown
 
 11
-	KNOWN:0,0,0,0,0,0,7
+	KNOWN:0,0,0,0,0,0,VitalistPowersKnown
+	BONUS:VAR|VitalistPowersKnown|1|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistPower11
 
 12
-	KNOWN:0,0,0,0,0,0,7
+	KNOWN:0,0,0,0,0,0,VitalistPowersKnown
 
 13
-	KNOWN:0,0,0,0,0,0,0,8
+	KNOWN:0,0,0,0,0,0,0,VitalistPowersKnown
+	BONUS:VAR|VitalistPowersKnown|1|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistPower13
 
 14
-	KNOWN:0,0,0,0,0,0,0,8
+	KNOWN:0,0,0,0,0,0,0,VitalistPowersKnown
 
 15
-	KNOWN:0,0,0,0,0,0,0,0,9
+	KNOWN:0,0,0,0,0,0,0,0,VitalistPowersKnown
+	BONUS:VAR|VitalistPowersKnown|1|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistPower15
 
 16
-	KNOWN:0,0,0,0,0,0,0,0,9
+	KNOWN:0,0,0,0,0,0,0,0,VitalistPowersKnown
 
 17
-	KNOWN:0,0,0,0,0,0,0,0,0,10
+	KNOWN:0,0,0,0,0,0,0,0,0,VitalistPowersKnown
+	BONUS:VAR|VitalistPowersKnown|1|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistPower17
 
 18
-	KNOWN:0,0,0,0,0,0,0,0,0,10
+	KNOWN:0,0,0,0,0,0,0,0,0,VitalistPowersKnown
 
 19
-	KNOWN:0,0,0,0,0,0,0,0,0,11
+	KNOWN:0,0,0,0,0,0,0,0,0,VitalistPowersKnown
+	BONUS:VAR|VitalistPowersKnown|1|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistPower19
 
 20
-	KNOWN:0,0,0,0,0,0,0,0,0,11
+	KNOWN:0,0,0,0,0,0,0,0,0,VitalistPowersKnown
 
 
 

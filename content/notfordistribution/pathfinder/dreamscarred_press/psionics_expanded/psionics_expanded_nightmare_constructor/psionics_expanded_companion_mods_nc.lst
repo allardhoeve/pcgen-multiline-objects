@@ -37,7 +37,7 @@ FOLLOWER:HorrorLVL=4
 	TYPE:Horror
 	BONUS:ABILITYPOOL|Horror Evolution|2
 	BONUS:VAR|MasterLevel|1
-	BONUS:VAR|MaxEidAttacks|1
+	BONUS:VAR|EidMaxAttacks|1
 
 FOLLOWER:HorrorLVL=5
 	TYPE:Horror

@@ -37,7 +37,7 @@ Horror
 	DESC:You are able to form a creature created from distilled fears and nightmares.  Creating a horror takes one minute of concentration to complete and the horror remains until dismissed by you.  This horror functions as a summoner's eidolon using your class level as the summoner level, with the following exceptions.  A horror is a mindless construct like an astral construct and not an outsider, so it is subject to effects like dismiss ectoplasm instead of effects like banishment.  Commanding a horror is the same as commanding an astral construct.  A horror disperses if you are rendered unconscious or die.  You can allow your horror to use your terrors, but such uses still count against your daily limit.
 	SOURCEPAGE:p.70
 	DEFINE:HorrorLVL|0
-	BONUS:VAR|HorrorrLVL|classlevel("Dread")
+	BONUS:VAR|HorrorLVL|classlevel("Dread")
 	FOLLOWERS:Horror|1
 	COMPANIONLIST:Horror|Horror (Biped),Horror (Quadruped),Horror (Serpentine)
 

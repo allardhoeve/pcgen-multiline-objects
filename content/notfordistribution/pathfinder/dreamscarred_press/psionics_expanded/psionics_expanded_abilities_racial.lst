@@ -713,6 +713,7 @@ Bladeborn
 	CATEGORY:Special Ability
 	TYPE:RacialTraits.SpecialQuality.XephRacialTrait.XephBurst
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Bladeborn ~ Xeph],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.XephBurst]
+	PREVARGTEQ:XephBurstTimes,3
 	DESC:Gain Quick Draw and Exotic Weapon Proficiency (Xephyr Knife).
 	AUTO:FEAT|Exotic Weapon Proficiency (Xephyr Knife)|Quick Draw
 	COST:0
@@ -746,7 +747,7 @@ Explorer
 	PREVARGTEQ:XephBurstTimes,1
 	DESC:Gain +2 on Knowledge (Geography) and Survival checks, and treat manifester level as one higher for willing-target psychoportation powers.
 	BONUS:SKILL|Knowledge (Geography),Survival|2|TYPE=Racial
-	BONUS:VAR|BurstTimes|-1
+	BONUS:VAR|XephBurstTimes|-1
 	COST:0
 	SOURCEPAGE:p.20
 
@@ -757,7 +758,7 @@ Quick Craftsman
 	PREABILITY:1,CATEGORY=Special Ability,Burst ~ Xeph
 	PREVARGTEQ:XephBurstTimes,2
 	DESC:Reduce item creation time by half.
-	BONUS:VAR|BurstTimes|-2
+	BONUS:VAR|XephBurstTimes|-2
 	COST:0
 	SOURCEPAGE:p.20
 

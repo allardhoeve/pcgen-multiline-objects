@@ -23,8 +23,8 @@ Grammaton
 	ABILITY:Special Ability|AUTOMATIC|Gun Kata ~ Grammaton|PRECLASS:1,Cryptic=10
 	COST:0
 	SOURCEPAGE:p.68
-	BONUS:ABILITYPOOL|Insight|-1|PRECLASS:1,Cryptic=4
-	BONUS:ABILITYPOOL|Insight|-1|PRECLASS:1,Cryptic=6
+	BONUS:ABILITYPOOL|Cryptic Insight|-1|PRECLASS:1,Cryptic=4
+	BONUS:ABILITYPOOL|Cryptic Insight|-1|PRECLASS:1,Cryptic=6
 	BONUS:SPELLKNOWN|CLASS=Cryptic;LEVEL=3|-1|PRECLASS:1,Cryptic=7
 	AUTO:FEAT|Exotic Weapon Proficiency (Firearms)
 	AUTO:WEAPONPROF|TYPE.Firearm
@@ -42,7 +42,7 @@ Disrupt Pattern
 	KEY:Disrupt Pattern ~ Grammaton
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You are only able to use the disrupt pattern ability when making ranged attack with a handgun.
+	DESC:You are only able to use the disrupt pattern ability when making ranged attacks with a handgun.
 	SOURCEPAGE:p.69
 
 Gritted Patterns

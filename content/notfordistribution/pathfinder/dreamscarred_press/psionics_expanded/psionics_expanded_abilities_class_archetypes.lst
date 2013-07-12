@@ -733,6 +733,8 @@ Pattern Breaker
 	ABILITY:Special Ability|AUTOMATIC|Disabling Aura ~ Pattern Breaker|PRECLASS:1,Cryptic=16
 	COST:0
 	SOURCEPAGE:p.69
+	BONUS:ABILITYPOOL|Cryptic Insight|-1|PRECLASS:1,Cryptic=2
+	BONUS:ABILITYPOOL|Cryptic Insight|-1|PRECLASS:1,Cryptic=16
 
 
 
@@ -826,7 +828,7 @@ Sunder Pattern
 Disable Weapon or Armor
 	KEY:Disable Weapon or Armor ~ Pattern Breaker
 	CATEGORY:Special Ability
-	TYPE:SpecialQuality.Supernatural
+	TYPE:SpecialAttack.Supernatural
 	DESC:You have learned to temporarily suppress the magical qualities of a weapon or armor with a touch.  As a melee touch attack that does not provoke attacks of opportunity, you can target one magical weapon or armor on a creature.  If the attack is successful, you make a manifester level check against a DC of 11 + the manifester level of the item.  If the manifester level check is successful, all magical or psionic qualities of the item are suppressed for %1 rounds.  There is no limit to the number of items you can affect, although you can only affect one per use.|DisableWeaponOrArmorDuration
 	SOURCEPAGE:p.69
 	DEFINE:DisableWeaponOrArmorDuration|0
@@ -839,7 +841,7 @@ Disabling Aura
 	DESC:You can expend your psionic focus as a full round action to suppress only harmful effects around you in a %1 ft. aura for %2 rounds.  This functions similarly to a null psionics field, but it only affects harmful effects.  This includes suppressing magical or psionic weapons being used in attacks against the pattern breaker, although such items would still work against other targets.  You do not need to be awre of the effect to be suppressed.|DisablingAuraRadius|DisablingAuraDuration
 	SOURCEPAGE:p.69
 	DEFINE:DisablingAuraDuration|0
-	DEFINE:DisablingAuraRadius|30
+	DEFINE:DisablingAuraRadius|5
 	BONUS:VAR|DisablingAuraDuration|CrypticPrimeStat
 
 
@@ -870,7 +872,7 @@ Shadow Hunter
 	PRECLASS:1,Dread=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Dread Archetype ~ Shadow Hunter],[!PREABILITY:1,CATEGORY=Archetype,TYPE.DreadFearsomeInsight,TYPE.DreadDevastatingTouch,TYPE.DreadBonusFeat5,TYPE.DreadTerror10]
 	DESC:You have learned how to use your connection to fears to manipulate darkness to aid others.
-	ABILITY:Internal|AUTOMATIC|Covert Nature ~ Shadow Hunter|PRECLASS:1,Dread=1
+	ABILITY:Special Ability|AUTOMATIC|Covert Nature ~ Shadow Hunter|PRECLASS:1,Dread=1
 	ABILITY:Special Ability|AUTOMATIC|Shadow Diversion ~ Shadow Hunter|PRECLASS:1,Dread=1
 	ABILITY:Special Ability|AUTOMATIC|Grasping Shade ~ Shadow Hunter|PRECLASS:1,Dread=5
 	ABILITY:Special Ability|AUTOMATIC|Step through Shadows ~ Shadow Hunter|PRECLASS:1,Dread=10
@@ -935,7 +937,9 @@ Strengthened by Fear
 ###Block: Shadow Hunter Dread archetype abilities
 Covert Nature
 	KEY:Covert Nature ~ Shadow Hunter
-	CATEGORY:Internal
+	CATEGORY:Special Ability
+	TYPE:SpecialQuality
+	DESC:You get a +%1 insight bonus to Stealth checks.|CovertNatureBonus
 	DEFINE:CovertNatureBonus|0
 	BONUS:VAR|CovertNatureBonus|max(1,DreadLVL/2)
 	BONUS:SKILL|Stealth|CovertNatureBonus|TYPE=Insight
@@ -943,11 +947,11 @@ Covert Nature
 Shadow Diversion
 	KEY:Shadow Diversion ~ Shadow Hunter
 	CATEGORY:Special Ability
-	TYPE:SpecialQuality.Supernatural
+	TYPE:SpecialAttack.Supernatural
 	DESC:As a
 	DESC:standard|!PREFEAT:1,Improved Feint,Greater Feint
 	DESC:move|PREMULT:2,[PREFEAT:1,Improved Feint],[!PREFEAT:1,Greater Feint]
-	DESC:swift|PRFEAT:1,Greater Feint
+	DESC:swift|PREFEAT:1,Greater Feint
 	DESC:action, you can cause shadows to take physical shape adjacent to a creature within %1 ft.  Unless the creature makes a successful Will save (DC %2), the creature treats the shadow as an enemy when determining if the creature is flanked until the end of your next turn.  If the shadow is adjacent to multiple creatures, you must choose which one is affected by it.|ShadowDiversionRange|ShadowDiversionDC
 	SOURCEPAGE:p.71
 	DEFINE:ShadowDiversionRange|30
@@ -957,7 +961,7 @@ Shadow Diversion
 Grasping Shade
 	KEY:Grasping Shade ~ Shadow Hunter
 	CATEGORY:Special Ability
-	TYPE:SpecialQuality.Supernatural
+	TYPE:SpecialAttack.Supernatural
 	DESC:You can make shadows turn into reaching, grabbing tentacles of substance.  As a standard action, you can target a creature within %1 ft. and direct shadows near the creature to entangle the target.  The creature targetted cannot be in an area of bright light or the attempt fails.  The creature may make a Reflex save (DC %2) to negate the attack.  Entangled creatures can attempt to break free as a move action, making a Strength or Escape Artist check (DC %3).  Successive successful uses on the same target before the target has successfully broken free cause the target to gain the grapped condition if entangled and the pinned condition if grappled, although a successful save only stops the target from gaining the additional condition.  This ability can be used %4/day.|GraspingShadeRange|GraspingShadeDC|GraspingShadeEscapeDC|GraspingShadeTimes
 	SOURCEPAGE:p.71
 	DEFINE:GraspingShadeRange|30
@@ -1018,7 +1022,7 @@ Unseen
 	KEY:Unseen ~ Shroud
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You can use your heightened awreness of your surroundings and psionic energy to read the environment and blend in so as to be undetectable.  While maintaining psionic focus, you can spend a swift action to become invisible for %1 rounds.|UnseenDuration
+	DESC:You can use your heightened awareness of your surroundings and psionic energy to read the environment and blend in so as to be undetectable.  While maintaining psionic focus, you can spend a swift action to become invisible for %1 rounds.|UnseenDuration
 	DESC:The invisibility ends as soon as you attack a creature.|!PREABILITY:1,CATEGORY=Special Ability,Unseen Assault ~ Shroud
 	DESC:You can use this ability %1/day.|UnseenTimes
 	DEFINE:UnseenDuration|0
@@ -1059,7 +1063,7 @@ Returning Throw
 	CATEGORY:Internal
 	AUTO:FEAT|Returning Throw
 
-# TODO: Check how Psionic Shot is coded, and see if it's worth duplicating here.
+# NEEDS CODE WORK: There is no "add to melee attack/damage with weapon X" tag.
 Psionic Spear
 	KEY:Psionic Spear ~ Spearman
 	CATEGORY:Special Ability
@@ -1075,6 +1079,7 @@ Running Throw
 	DESC:You can put additional power behind your spear attacks by using your momentum. Prior to making a thrown attack with a spear, if you move at least 10 ft. during the round, on the first thrown attack you make that round, you add twice your Strength bonus to the damage roll and ignore the first range penalty.
 	SOURCEPAGE:p.73
 
+# NEEDS CODE WORK: Can't "treat a longspear as a quarterstaff for the purposes of feats"
 Spear Training
 	KEY:Spear Training ~ Spearman
 	CATEGORY:Special Ability
@@ -1082,7 +1087,7 @@ Spear Training
 	DESC:You gain a +%1 bonus on all attack and damage rolls made with a spear, longspear, or shortspear.|SpearTrainingBonus
 	SOURCEPAGE:p.73
 	DEFINE:SpearTrainingBonus|0
-	BONUS:VAR|SpearTrainingBonus|min(4,floor(MarksmanLVL-1)/4)
+	BONUS:VAR|SpearTrainingBonus|min(4,floor(classlevel("Marksman")-1)/4)
 	BONUS:WEAPONPROF=Spear|TOHIT,DAMAGE|SpearTrainingBonus
 	BONUS:WEAPONPROF=Longspear|TOHIT,DAMAGE|SpearTrainingBonus
 	BONUS:WEAPONPROF=Shortspear|TOHIT,DAMAGE|SpearTrainingBonus
@@ -1128,6 +1133,8 @@ Battle Medic
 	COST:0
 	SOURCEPAGE:p.22
 	ABILITY:Internal|AUTOMATIC|Battle Medic Powers Known
+	BONUS:SPELLKNOWN|CLASS=Tactician;LEVEL=0|-3
+	BONUS:ABILITYPOOL|Tactician Strategy|-1|PRECLASS:1,Tactician=4
 
 Commander
 	KEY:Tactician Archetype ~ Commander
@@ -1141,6 +1148,8 @@ Commander
 	ABILITY:Special Ability|AUTOMATIC|Thrall ~ Commander|PRECLASS:1,Tactician=12
 	COST:0
 	SOURCEPAGE:p.94
+	BONUS:ABILITYPOOL|Tactician Bonus Teamwork Feat|-1|PRECLASS:1,Tactician=12
+	BONUS:ABILITYPOOL|Tactician Strategy|-1|PRECLASS:1,Tactician=4
 
 Fear Projector
 	KEY:Tactician Archetype ~ Fear Projector
@@ -1155,6 +1164,9 @@ Fear Projector
 	ABILITY:Special Ability|AUTOMATIC|Permeating Fear ~ Fear Projector|PRECLASS:1,Tactician=10
 	COST:0
 	SOURCEPAGE:p.94
+	BONUS:SPELLKNOWN|CLASS=Tactician;LEVEL=0|-3
+	BONUS:ABILITYPOOL|Tactician Bonus Teamwork Feat|-1|PRECLASS:1,Tactician=6
+	BONUS:ABILITYPOOL|Tactician Strategy|-1|PRECLASS:1,Tactician=10
 
 
 
@@ -1163,18 +1175,19 @@ Inevitable Strike
 	KEY:Inevitable Strike ~ Amplifier
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You can, %1/day, frant one member of your collective a +%2 insight bonus to its next single attack roll made before the end of its next turn.|InevitableStrikeTimes|InevitableStrikeBonus
+	DESC:You can, %1/day, grant one member of your collective a +%2 insight bonus to its next single attack roll made before the end of its next turn.|InevitableStrikeTimes|InevitableStrikeBonus
 	SOURCEPAGE:p.93
 	DEFINE:InevitableStrikeTimes|0
 	DEFINE:InevitableStrikeBonus|0
 	BONUS:VAR|InevitableStrikeTimes|3+INT
 	BONUS:VAR|InevitableStrikeBonus|5+floor(classlevel("Tactician")-1)/2
 
+# COMMENT: Consider a PREAPPLY?
 Heightened Movement
 	KEY:Heightened Movement ~ Amplifier
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:As a swift action, you can grant one member of your collective a +%1 insight bonus to AC and Reflex saves, as well as a %2 ft. bonus to movement speed.  This effect lasts %3 rounds and counts as a use of your strategies ability.|HeightenedMovementBonus|HightenedMovementExtraSpeed|HeightenedMovementDuration
+	DESC:As a swift action, you can grant one member of your collective a +%1 insight bonus to AC and Reflex saves, as well as a %2 ft. bonus to movement speed.  This effect lasts %3 rounds and counts as a use of your strategies ability.|HeightenedMovementBonus|HeightenedMovementExtraSpeed|HeightenedMovementDuration
 	SOURCEPAGE:p.93
 	DEFINE:HeightenedMovementBonus|0
 	DEFINE:HeightenedMovementExtraSpeed|0
@@ -1190,10 +1203,10 @@ Augmented Offense
 	DESC:As a standard action, you can grant one member of your collective a +%1 insight bonus to attack rolls and to the DC of the next single power or spell the collective member manifests or casts that has a save DC, and a +%2 insight bonus to damage rolls.  This effect lasts %3 rounds.|AugmentedOffenseAttackDCBonus|AugmentedOffenseDamageBonus|AugmentedOffenseDuration
 	SOURCEPAGE:p.93
 	DEFINE:AugmentedOffenseAttackDCBonus|0
-	DEFINE:AugmentedOffenceDamageBonus|0
+	DEFINE:AugmentedOffenseDamageBonus|0
 	DEFINE:AugmentedOffenseDuration|0
 	BONUS:VAR|AugmentedOffenseAttackDCBonus|floor((classlevel("Tactician")-3)/3)
-	BONUS:VAR|AugmentedOffenceDamageBonus|2*floor((classlevel("Tactician")-3)/3)
+	BONUS:VAR|AugmentedOffenseDamageBonus|2*floor((classlevel("Tactician")-3)/3)
 	BONUS:VAR|AugmentedOffenseDuration|INT
 
 Empowered Attack
@@ -1215,7 +1228,6 @@ Empowered Attack
 Battle Medic Powers Known
 	CATEGORY:Internal
 	SPELLLEVEL:CLASS|Tactician=1|Natural Healing|Tactician=2|Body Adjustment,Cleanse Body,Empathic Condition Relief,Resist Toxin|Tactician=3|Body Purification,Mend Body|Tactician=5|Psionic Revivify,Restore Extremity|Tactician=6|Cleanse Spirit,Heal Injuries|Tactician=8|True Metabolism|Tactician=9|Regenerative Aura
-	BONUS:SPELLKNOWN|CLASS=Tactician;LEVEL=0|-3
 
 Medic Tricks ~ Battle Medic
 	CATEGORY:Internal
@@ -1259,7 +1271,7 @@ Cushion the Blow
 ###Block: Battle Medic Medic Tricks
 # NEEDS CODE WORK: Can't change (just) the 0-level powers to Vitalist powers, even in a class file.  I think.
 # WORKAROUND: Individual powers from a static list added with the SPELLKNOWN tag.
-# COMMENT: The ability should give all 0-level Vitalist powers; this is a specific list as of Psionics Expanded
+# COMMENT: The ability should allow all 0-level Vitalist powers; this is a specific list as of Psionics Expanded
 Dazzle
 	KEY:Dazzle Vitalist Talent
 	CATEGORY:Special Ability
@@ -1365,7 +1377,7 @@ Power from Fear
 	DESC:Your allies are able to tap into your fear-based power.  When a member of the collective causes a creature to have the shaken, panicked, or frightened condition, the collective member gains a +%1 morale bonus to attack rolls and saving throws for %2 rounds.|PowerFromFearBonus|PowerFromFearDuration
 	SOURCEPAGE:p.94
 	DEFINE:PowerFromFearBonus|0
-	BONUS:VAR|PowerFromFearBonus|floor((classlevel("Tactician")-1)/4)
+	BONUS:VAR|PowerFromFearBonus|floor((classlevel("Tactician")-2)/4)
 	DEFINE:PowerFromFearDuration|0
 	BONUS:VAR|PowerFromFearDuration|CHA
 
@@ -1415,14 +1427,13 @@ Sadist
 	CATEGORY:Archetype
 	TYPE:Archetype.VitalistArchetype.VitalistKnacks.VitalistPower3.VitalistRequestAid
 	PRECLASS:1,Vitalist=1
-	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Vitalist Archetype ~ Sadist],[!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistArchetype,TYPE.VitalistKnacks,TYPE.VitalistPower3,TYPE.VitalistRequestAid]
+	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Vitalist Archetype ~ Sadist],[!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistKnacks,TYPE.VitalistPower3,TYPE.VitalistRequestAid]
 	DESC:You are able to empower your abilities when others feel pain, making you less predictable in how you will handle the wounds of your allies.
 	ABILITY:Special Ability|AUTOMATIC|Exquisite Agony ~ Sadist|PRECLASS:1,Vitalist=1
 	ABILITY:Special Ability|AUTOMATIC|Lingering Pain ~ Sadist|PRECLASS:1,Vitalist=3
 	ABILITY:Special Ability|AUTOMATIC|Empowered in Pain ~ Sadist|PRECLASS:1,Vitalist=5
 	COST:0
 	SOURCEPAGE:p.96
-	BONUS:SPELLKNOWN|CLASS=Vitalist;LEVEL=1|-1|PRECLASS:1,Vitalist=3
 
 
 
@@ -2351,7 +2362,7 @@ Shape Mind Armaments
 	SOURCEPAGE:p.87
 	ABILITY:Special Ability|AUTOMATIC|Shape Mind Blade
 
-# NEEDS CODE/DATA WORK: Bonuses to MindBladeEnhancment variables lost (zeroed) when archetype is removed.
+# NEEDS CODE/DATA WORK: Bonuses to MindBladeEnhancement variables lost (zeroed) when archetype is removed.
 Enhanced Mind Armaments
 	KEY:Enhanced Mind Armaments ~ Armored Blade
 	CATEGORY:Special Ability
