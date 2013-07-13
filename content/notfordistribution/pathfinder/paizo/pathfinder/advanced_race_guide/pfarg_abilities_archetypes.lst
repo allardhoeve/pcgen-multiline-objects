@@ -953,7 +953,7 @@ Bonded Witch
 	PRECLASS:1,Witch=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Bonded Witch],[!PREABILITY:1,CATEGORY=Archetype,TYPE.WitchFamiliar]
 	PRERACE:1,Half-Elf
-	DESC:While all witches commune with the unknown, the blend of human ingenuity and adept learning mixed with elven blood gives some half-elves a unique conduit to channel the powers of the arcane. Bonded witches forsake familiars as vessels of power in favor of a specific object that grants them powers above and beyond those of their patron alone, as they tap into the powerful magic of the item itself. A bonded witch has the following class features.
+	DESC:While all witches commune with the unknown, the blend of human ingenuity and adept learning mixed with elven blood gives some half-elves a unique conduit to channel the powers of the arcane. Bonded witches forsake familiars as vessels of power in favor of a specific object that grants them powers above and beyond those of their patron alone, as they tap into the powerful magic of the item itself.
 	ABILITY:Special Ability|AUTOMATIC|Bonded Item ~ Bonded Witch|PRECLASS:1,Witch=1
 	COST:0
 	SOURCEPAGE:p.43
@@ -965,7 +965,7 @@ Bramble Brewer
 	PRECLASS:1,Alchemist=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Bramble Brewer],[!PREABILITY:1,CATEGORY=Archetype,TYPE.AlchemistDiscovery]
 	PRERACE:1,Half-Elf
-	DESC:Some half-elven alchemists merge human curiosity with their elven link to nature. Such alchemists can manipulate the forces of alchemy to create bombs that reshape terrain and defoliate swaths of vegetation or to create mutagens that bestow the resilience of oak or the tenacity of bamboo. A bramble brewer has the following class features.
+	DESC:Some half-elven alchemists merge human curiosity with their elven link to nature. Such alchemists can manipulate the forces of alchemy to create bombs that reshape terrain and defoliate swaths of vegetation or to create mutagens that bestow the resilience of oak or the tenacity of bamboo.
 	ABILITY:Special Ability|AUTOMATIC|Briar Bombs ~ Bramble Brewer|PRECLASS:1,Alchemist=2
 	ABILITY:Special Ability|AUTOMATIC|Dendrite Mutagen ~ Bramble Brewer|PRECLASS:1,Alchemist=1
 	ABILITY:Special Ability|AUTOMATIC|Grand Discovery ~ Bramble Brewer|PRECLASS:1,Alchemist=20
@@ -976,11 +976,11 @@ Bramble Brewer
 Wild Caller
 	KEY:Summoner Archetype ~ Wild Caller
 	CATEGORY:Archetype
-	TYPE:Archetype.SummonerArchetype.SummonerEidolon.SummonerSummonMonster
+	TYPE:Archetype.SummonerArchetype.SummonerSummonMonster
 	PRECLASS:1,Summoner=1
-	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Summoner Archetype ~ Wild Caller],[!PREABILITY:1,CATEGORY=Archetype,TYPE.SummonerEidolon,TYPE.SummonerSummonMonster]
+	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Summoner Archetype ~ Wild Caller],[!PREABILITY:1,CATEGORY=Archetype,TYPE.SummonerSummonMonster]
 	PRERACE:1,Half-Elf
-	DESC:Often a half-elf 's ties to nature and elven heritage are so strong that they can dramatically affect the nature of his summonings. The wild caller calls eidolons that take more natural and savage forms and summons from nature rather than the Great Beyond. A wild caller has the following class features.
+	DESC:Often a half-elf 's ties to nature and elven heritage are so strong that they can dramatically affect the nature of his summonings. The wild caller calls eidolons that take more natural and savage forms and summons from nature rather than the Great Beyond.
 	ABILITY:Special Ability|AUTOMATIC|Spells ~ Wild Caller|PRECLASS:1,Summoner=1
 	ABILITY:Special Ability|AUTOMATIC|Eidolon ~ Wild Caller|PRECLASS:1,Summoner=1
 	ABILITY:Special Ability|AUTOMATIC|Summon Nature's Ally I ~ Wild Caller|PRECLASS:1,Summoner=1
@@ -994,7 +994,7 @@ Wild Shadow
 	PRECLASS:1,Ranger=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ Wild Shadow],[!PREABILITY:1,CATEGORY=Archetype,TYPE.RangerTrack,TYPE.RangerWildEmpathy,TYPE.RangerFavoredTerrain,TYPE.RangerHuntersBond,TYPE.RangerWoodlandStride,TYPE.RangerQuarry,TYPE.RangerCamouflage,TYPE.RangerImprovedQuarry]
 	PRERACE:1,Half-Elf
-	DESC:The isolation that some half-elves feel leads them to live a life of isolation amid the wild places of the world. Such rangers stalk the wild like shadows, creating close bonds with the wild itself instead of seeking the solace and aid of companions. While ill at ease within cities and other urban areas, they are adept at using the terrain to tactical advantage; they dart through brambles and rough terrain with uncommon grace and use the land itself to lock down enemies. A wild shadow has the following class features.
+	DESC:The isolation that some half-elves feel leads them to live a life of isolation amid the wild places of the world. Such rangers stalk the wild like shadows, creating close bonds with the wild itself instead of seeking the solace and aid of companions. While ill at ease within cities and other urban areas, they are adept at using the terrain to tactical advantage; they dart through brambles and rough terrain with uncommon grace and use the land itself to lock down enemies.
 	ABILITY:Special Ability|AUTOMATIC|Wild at Heart ~ Wild Shadow|PRECLASS:1,Ranger=1
 	ABILITY:Special Ability|AUTOMATIC|Favored Terrain ~ Wild Shadow|PRECLASS:1,Ranger=3
 	ABILITY:Special Ability|AUTOMATIC|Woodland Stride ~ Wild Shadow|PRECLASS:1,Ranger=4
@@ -1101,14 +1101,16 @@ Eidolon
 	KEY:Eidolon ~ Wild Caller
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
-	DESC:The eidolon of a wild caller tends to take more natural and more savage forms than other summoners' eidolons. A wild caller gains 1/4 his class level as bonus evolution points in his eidolon's evolution pool, but his eidolon cannot take the following evolutions: Advanced Player's Guide-1-point evolutions: magic attacks, skilled (while the eidolon can select this evolution, it can only do so with the following skills: Acrobatics, Climb, Escape Artist, Fly, Intimidate, Perception, Survival, and Swim); 2-point evolutions: energy attacks, immunity, weapon training; 3-point evolutions: damage reduction, frightful presence; 4-point evolutions: breath weapon, spell resistance. Ultimate Magic-1-point evolutions: basic magic, unnatural aura; 2-point evolutions: channel resistance, head, minor magic, undead appearance; 3-point evolutions: major magic; 4-point evolutions: dimension door, incorporeal form, lifesense, no breath, ultimate magic. This ability alters the normal summoner's eidolon class feature, but is otherwise identical to that class feature.
+	DESC:The eidolon of a wild caller tends to take more natural and more savage forms than other summoners' eidolons. A wild caller gains 1/4 his class level as bonus evolution points in his eidolon's evolution pool, but his eidolon cannot take the following evolutions: magic attacks, skilled (while the eidolon can select this evolution, it can only do so with the following skills: Acrobatics, Climb, Escape Artist, Fly, Intimidate, Perception, Survival, and Swim), energy attacks, immunity, weapon training, damage reduction, frightful presence, breath weapon, spell resistance, basic magic, unnatural aura, channel resistance, head, minor magic, undead appearance, major magic, dimension door, incorporeal form, lifesense, no breath, ultimate magic.
+	DEFINE:EidolonEP|0
+	BONUS:EidolonEP|SummonerLVL
 	SOURCEPAGE:p.45
 
 Summon Nature's Ally I
 	KEY:Summon Nature's Ally I ~ Wild Caller
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.SpellLike
-	DESC:Starting at 1st level, a wild caller can cast summon nature's ally a number of times per day equal to 3 + his Charisma modifier. At 3rd level and every 2 levels thereafter, the power of this ability increases by one spell level, allowing him to summon more powerful creatures (to a maximum of summon nature's ally IX at 17th level). Furthermore, at 19th level, the wild caller cannot use gate as a spell-like ability, but can use either summon elder worm or summon froghemoth (Ultimate Magic 240) instead. This ability otherwise functions like the standard summoner's summon monster I ability and replaces that ability.
+	DESC:Starting at 1st level, a wild caller can cast summon nature's ally %1 times per day. At 3rd level and every 2 levels thereafter, the power of this ability increases by one spell level, allowing him to summon more powerful creatures (to a maximum of summon nature's ally IX at 17th level). Furthermore, at 19th level, the wild caller cannot use gate as a spell-like ability, but can use either summon elder worm or summon froghemoth instead.|3+CHA
 	SOURCEPAGE:p.45
 
 
@@ -1127,6 +1129,9 @@ Favored Terrain
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:When a wild shadow chooses a favored terrain, he cannot choose urban as the terrain type. Furthermore, at 8th level and every five levels thereafter, when he chooses a new favorite terrain type, he cannot choose the urban terrain type.
 	SOURCEPAGE:p.45
+
+CATEGORY:Special Ability|Favored Terrain (Urban).MOD
+	!PREABILITY:1,CATEGORY=Archetype,Wild Shadow
 
 Woodland Stride
 	KEY:Woodland Stride ~ Wild Shadow
@@ -2004,7 +2009,7 @@ Grapple
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Extraordinary.NativeCunningOption
 	DESC:The Feral Child gains a bonus of %1 to her CMD against the maneuver.|TrapSenseBonus
-	BONUS:VAR|CMD_|TrapSenseBonus
+	BONUS:VAR|CMD_Grapple|TrapSenseBonus
 	SOURCEPAGE:p.75
 
 Overrun
@@ -2012,7 +2017,7 @@ Overrun
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Extraordinary.NativeCunningOption
 	DESC:The Feral Child gains a bonus of %1 to her CMD against the maneuver.|TrapSenseBonus
-	BONUS:VAR|CMD_Grapple|TrapSenseBonus
+	BONUS:VAR|CMD_Overrun|TrapSenseBonus
 	SOURCEPAGE:p.75
 
 Reposition
