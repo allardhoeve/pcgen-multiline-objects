@@ -1164,8 +1164,19 @@ Trance
 	KEY:Trance ~ Ascetic
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:Gain +%1 insight bonus to AC or saves when in light or no armor.|(WarriorPathLVL+1)/4
+	DESC:Gain +%1 insight bonus to AC or saves when in light or no armor.|AsceticPathBonus
+	DEFINE:AsceticPathBonus|0
+	BONUS:VAR|AsceticPathBonus|(WarriorPathLVL+1)/4
 	SOURCEPAGE:p.27
+	ABILITY:Internal|AUTOMATIC|Ascetic Path Bonus ~ AC|Ascetic Path Bonus ~ Saves
+
+Ascetic Path Bonus ~ AC
+	CATEGORY:Internal
+	BONUS:COMBAT|AC|AsceticPathBonus|TYPE=Insight|PREAPPLY:PC
+
+Ascetic Path Bonus ~ Saves
+	CATEGORY:Internal
+	BONUS:CHECKS|ALL|AsceticPathBonus|TYPE=Insight|PREAPPLY:PC
 
 Maneuver
 	KEY:Maneuver ~ Ascetic
