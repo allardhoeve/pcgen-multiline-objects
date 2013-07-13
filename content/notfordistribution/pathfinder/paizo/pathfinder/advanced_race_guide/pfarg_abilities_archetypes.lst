@@ -2781,7 +2781,7 @@ Dark Sight
 	KEY:Dark Sight ~ Dusk Stalker
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
-	DESC:The dusk stalker gains the see in darkness ability (Bestiary 2 301).
+	DESC:The dusk stalker gains the see in darkness ability.
 	ABILITY:Special Ability|AUTOMATIC|See in Darkness
 	SOURCEPAGE:p.110
 
@@ -2815,14 +2815,14 @@ Shadow Summoning
 	KEY:Shadow Summoning ~ Shadow Caller
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.SpellLike
-	DESC:When a shadow caller uses his summon monster ability or casts the summon monster spell, he typically summons creatures from the Shadow Plane or creatures closely associated with shadow. When a creature on the summon monster spell list indicates that it is summoned with either the celestial or the fiendish template based on the alignment of the caster, the creature summoned by the shadow caller has the shadow creature template instead (see sidebar). Furthermore, the summon monster lists are modified in the following ways (these changes also apply to using a higher-level summon spell to summon multiple creatures from a lower-level list). Summon Monster I: No changes. Summon Monster II: A shadow caller cannot summon Small elementals or lemures, but instead can summon zoogs (Bestiary 3 288). Summon Monster III: A shadow caller cannot summon dretches or lantern archons, but can summon augur kytons (Bestiary 3 171). Summon Monster IV: A shadow caller cannot summon Medium elementals, hell hounds, hound archons, or mephits, but can summon allips (Bestiary 3 12), gloomwings (Bestiary 2 133), and shadows (Bestiary 245). Summon Monster V: A shadow caller cannot summon babau, bearded devils, bralani azatas, Large elementals, salamanders, or xills, but can summon shadow mastiffs (Bestiary 3 241) and shae (Bestiary 3 242). Summon Monster VI: A shadow caller cannot summon Huge elementals, erinyes, lillend azatas, or succubi, but can summon cloakers (Bestiary 47). Summon Monster VII: A shadow caller cannot summon bebiliths, bone devils, greater elementals, or vrocks, but can summon greater shadows (Bestiary 245). Summon Monster VIII: A shadow caller can only summon derghodaemons (Bestiary 3 66) and young umbral dragons (Bestiary 2 102). Summon Monster IX: A shadow caller can only summon interlocutor kytons (Bestiary 3 174) and nightwings (Bestiary 3 203). This ability otherwise functions as and replaces the summoner's normal summon monster spell-like abilities.
+	DESC:When a shadow caller uses his summon monster ability or casts the summon monster spell, he typically summons creatures from the Shadow Plane or creatures closely associated with shadow. When a creature on the summon monster spell list indicates that it is summoned with either the celestial or the fiendish template based on the alignment of the caster, the creature summoned by the shadow caller has the shadow creature template instead. Furthermore, the summon monster lists are modified in the following ways (these changes also apply to using a higher-level summon spell to summon multiple creatures from a lower-level list). Summon Monster I: No changes. Summon Monster II: A shadow caller cannot summon Small elementals or lemures, but instead can summon zoogs. Summon Monster III: A shadow caller cannot summon dretches or lantern archons, but can summon augur kytons. Summon Monster IV: A shadow caller cannot summon Medium elementals, hell hounds, hound archons, or mephits, but can summon allips, gloomwings, and shadows. Summon Monster V: A shadow caller cannot summon babau, bearded devils, bralani azatas, Large elementals, salamanders, or xills, but can summon shadow mastiffs and shae. Summon Monster VI: A shadow caller cannot summon Huge elementals, erinyes, lillend azatas, or succubi, but can summon cloakers. Summon Monster VII: A shadow caller cannot summon bebiliths, bone devils, greater elementals, or vrocks, but can summon greater shadows. Summon Monster VIII: A shadow caller can only summon derghodaemons and young umbral dragons. Summon Monster IX: A shadow caller can only summon interlocutor kytons and nightwings.
 	SOURCEPAGE:p.110
 
 Shadow Eidolon
 	KEY:Shadow Eidolon ~ Shadow Caller
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
-	DESC:A shadow caller's eidolon is at once a thing of shadow called from the deep of the Shadow Plane and his own shadow; the two are inseparable. When his eidolon manifests, his shadow lengthens and finally detaches from him as a creature unto itself. For as long as the shadow caller's eidolon is manifested, he and the eidolon do not have distinct shadows, regardless of the presence or absence of light. This lack of a shadow replaces the magical symbol that identifies the summoner and his eidolon. This ability alters the summoner's eidolon ability.
+	DESC:A shadow caller's eidolon is at once a thing of shadow called from the deep of the Shadow Plane and his own shadow; the two are inseparable. When his eidolon manifests, his shadow lengthens and finally detaches from him as a creature unto itself. For as long as the shadow caller's eidolon is manifested, he and the eidolon do not have distinct shadows, regardless of the presence or absence of light. This lack of a shadow replaces the magical symbol that identifies the summoner and his eidolon.
 	SOURCEPAGE:p.111
 
 
@@ -2835,7 +2835,7 @@ Feral Gnasher
 	PRECLASS:1,Barbarian=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Barbarian Archetype ~ Feral Gnasher],[!PREABILITY:1,CATEGORY=Archetype,TYPE.BarbarianFastMovement,TYPE.BarbarianTrapSense1,TYPE.BarbarianTrapSense2,TYPE.BarbarianTrapSense3,TYPE.BarbarianTrapSense4,TYPE.BarbarianImprovedUncannyDodge]
 	PRERACE:1,Goblin
-	DESC:Feral gnashers grow up in the wild, either raised by animals or scraping by on their own, and soon learn to fend for themselves. These barbarians often utilize pieced-together armor and fight with their sharp teeth and whatever improvised weapons are within reach. A feral gnasher has the following class features.
+	DESC:Feral gnashers grow up in the wild, either raised by animals or scraping by on their own, and soon learn to fend for themselves. These barbarians often utilize pieced-together armor and fight with their sharp teeth and whatever improvised weapons are within reach.
 	ABILITY:Special Ability|AUTOMATIC|Weapon and Armor Proficiency ~ Feral Gnasher|PRECLASS:1,Barbarian=1
 	ABILITY:Special Ability|AUTOMATIC|Savage Bite ~ Feral Gnasher|PRECLASS:1,Barbarian=1
 	ABILITY:Special Ability|AUTOMATIC|Impromptu Armament ~ Feral Gnasher|PRECLASS:1,Barbarian=2
@@ -2863,10 +2863,10 @@ Savage Bite
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:The feral gnasher gains a savage bite attack. This is a primary natural attack. If the goblin already has the hard head, big teeth racial trait, the damage increases.
-	BONUS:WEAPONPROF=Bite|DAMAGESIZE|1|PREABILITY:1,CATEGORY=Special Ability,Hard Head Big Teeth
-	BONUS:WEAPONPROF=Bite|WEAPONSIZE,CRITMULTADD|1|PRECLASS:1,Barbarian=10
-	SOURCEPAGE:p.116
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Piercing.Finesseble,*1,1d4
+	BONUS:WEAPONPROF=Bite|DAMAGESIZE|1|PREABILITY:1,CATEGORY=Special Ability,Hard Head Big Teeth ~ Goblin
+	BONUS:WEAPONPROF=Bite|DAMAGESIZE,CRITMULTADD|1|PRECLASS:1,Barbarian=10
+	SOURCEPAGE:p.116
 
 Impromptu Armament
 	KEY:Impromptu Armament ~ Feral Gnasher
@@ -2942,7 +2942,7 @@ Fire Bomber
 	PRECLASS:1,Alchemist=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Fire Bomber],[!PREABILITY:1,CATEGORY=Archetype,TYPE.AlchemistBomb,TYPE.AlchemistThrowAnything,TYPE.AlchemistDiscovery4,TYPE.AlchemistPoisonResistance6,TYPE.AlchemistPoisonImmunity,TYPE.AlchemistPersistentMutagen]
 	PRERACE:1,Goblin
-	DESC:Fire bombers are exceptionally good at using bombs to burn creatures and blow things up, but are not quite as good at creating other types of bombs or extracts. A fire bomber has the following class features.
+	DESC:Fire bombers are exceptionally good at using bombs to burn creatures and blow things up, but are not quite as good at creating other types of bombs or extracts.
 	ABILITY:Special Ability|AUTOMATIC|Weapon and Armor Proficiency ~ Fire Bomber|PRECLASS:1,Alchemist=1
 	ABILITY:Special Ability|AUTOMATIC|Fire Bombardier ~ Fire Bomber|PRECLASS:1,Alchemist=1
 	ABILITY:Special Ability|AUTOMATIC|Bonus Feats ~ Fire Bomber|PRECLASS:1,Alchemist=1
@@ -2997,6 +2997,7 @@ Burn! Burn! Burn!
 	KEY:Burn! Burn! Burn! ~ Fire Bomber
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.AlchemistDiscovery
+	!PREFEAT:1,Burn! Burn! Burn!
 	PREABILITY:1,CATEGORY=Archetype,Fire Bomber
 	DESC:You take the goblin love of arson and fire play to a whole new level.
 	VFEAT:Burn! Burn! Burn!
@@ -3006,6 +3007,7 @@ Fire Tamer
 	KEY:Fire Tamer ~ Fire Bomber
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.AlchemistDiscovery
+	!PREFEAT:1,Fire Tamer
 	PREABILITY:1,CATEGORY=Archetype,Fire Bomber
 	DESC:You know your way around even magical fire.
 	VFEAT:Fire Tamer
@@ -3015,6 +3017,7 @@ Flame Heart
 	KEY:Flame Heart ~ Fire Bomber
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.AlchemistDiscovery
+	!PREFEAT:1,Flame Heart
 	PREABILITY:1,CATEGORY=Archetype,Fire Bomber
 	DESC:You have mastered fire magic and alchemy.
 	VFEAT:Flame Heart
