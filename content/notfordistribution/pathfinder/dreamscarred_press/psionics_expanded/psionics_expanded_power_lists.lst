@@ -8,32 +8,6 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: Cryptic power list
-Create Sound.MOD
-	CLASSES:Cryptic=0
-
-Detect Psionics Talent.MOD
-	CLASSES:Cryptic=0
-
-Distract Talent.MOD
-	CLASSES:Cryptic=0
-
-Ectoplasmic Trinket Talent.MOD
-	CLASSES:Cryptic=0
-
-Empathy.MOD
-	CLASSES:Cryptic=0
-
-Far Hand Talent.MOD
-	CLASSES:Cryptic=0
-
-Missive Talent.MOD
-	CLASSES:Cryptic=0
-
-My Light.MOD
-	CLASSES:Cryptic=0
-
-
-
 Call to Mind.MOD
 	CLASSES:Cryptic=1
 
@@ -170,10 +144,16 @@ Retrieve.MOD
 Aura Alteration.MOD
 	CLASSES:Cryptic=6
 
+Barred Mind (Personal).MOD
+	CLASSES:Cryptic=6
+
 Cosmic Awareness.MOD
 	CLASSES:Cryptic=6
 
 Ethereal Passage.MOD
+	CLASSES:Cryptic=6
+
+Hypercognition.MOD
 	CLASSES:Cryptic=6
 
 
@@ -183,9 +163,6 @@ Biofeedback.MOD
 	CLASSES:Dread=1
 
 Conceal Thoughts.MOD
-	CLASSES:Dread=1
-
-Create Sound.MOD
 	CLASSES:Dread=1
 
 Demoralize.MOD
@@ -300,25 +277,10 @@ Catfall.MOD
 Chameleon.MOD
 	CLASSES:Marksman=1
 
-Conceal Thoughts.MOD
-	CLASSES:Marksman=1
-
-Detect Psionics.MOD
-	CLASSES:Marksman=1
-
 Elfsight.MOD
 	CLASSES:Marksman=1
 
-Far Hand.MOD
-	CLASSES:Marksman=1
-
-Float.MOD
-	CLASSES:Marksman=1
-
 Metaphysical Weapon.MOD
-	CLASSES:Marksman=1
-
-My Light.MOD
 	CLASSES:Marksman=1
 
 Precognition (Defensive).MOD
@@ -598,9 +560,6 @@ Timeless Body.MOD
 Biofeedback.MOD
 	CLASSES:Vitalist=1
 
-Detect Psionics.MOD
-	CLASSES:Vitalist=1
-
 Elfsight.MOD
 	CLASSES:Vitalist=1
 
@@ -634,9 +593,6 @@ Body Equilibrium.MOD
 	CLASSES:Vitalist=2
 
 Cleanse Body.MOD
-	CLASSES:Vitalist=2
-
-Delay Poison.MOD
 	CLASSES:Vitalist=2
 
 Empathic Transfer.MOD
@@ -742,6 +698,9 @@ Trigger Power.MOD
 Barred Mind (Personal).MOD
 	CLASSES:Vitalist=7
 
+Bend Reality.MOD
+	CLASSES:Vitalist=7
+
 Crisis of Life.MOD
 	CLASSES:Vitalist=7
 
@@ -754,9 +713,6 @@ Oak Body.MOD
 
 
 Barred Mind.MOD
-	CLASSES:Vitalist=8
-
-Bend Reality.MOD
 	CLASSES:Vitalist=8
 
 Body of Iron.MOD

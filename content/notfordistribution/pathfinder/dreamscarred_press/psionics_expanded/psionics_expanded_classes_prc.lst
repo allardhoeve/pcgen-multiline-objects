@@ -604,7 +604,11 @@ SUBCLASS:Sighted Seeker (Own Manifesting)
 	COST:0
 	PROHIBITCOST:0
 
-
+SUBCLASS:Sighted Seeker (Own Manifesting)
+	SPELLSTAT:WIS
+	SPELLTYPE:Psionic
+	MEMORIZE:NO
+	BONUS:CASTERLEVEL|Sighted Seeker|CL
 
 ###Block: Sighted Seeker psionic ability
 SUBCLASSLEVEL:1
