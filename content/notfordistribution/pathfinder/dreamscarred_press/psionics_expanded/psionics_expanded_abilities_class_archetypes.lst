@@ -1619,6 +1619,7 @@ Talents
 	TYPE:SpecialQuality
 	DESC:You gain energy splash as a talent usable at will as long as you maintain psionic focus.
 	SPELLKNOWN:CLASS|Psion=0|Energy Splash Talent
+	BONUS:SPELLKNOWN|CLASS=Psion;LEVEL=0|-3
 	SOURCEPAGE:p.76
 
 

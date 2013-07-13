@@ -14,7 +14,7 @@ Clairsentient Talent
 	TYPE:Trait.BasicTrait.PsionicTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Clairsentient Talent ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.PsionicTrait]
 	DESC:When focused, you can use detect psionics in your space.
-	SOURCEPAGE:p.35
+	SOURCEPAGE:p.124
 
 Mental Discipline
 	KEY:Mental Discipline ~ Trait
@@ -24,7 +24,7 @@ Mental Discipline
 	DESC:You have had some basic training in mental control.
 	BONUS:SKILL|Autohypnosis|1|TYPE=Trait
 	CSKILL:Autohypnosis
-	SOURCEPAGE:p.35
+	SOURCEPAGE:p.124
 
 Metacreative Talent
 	KEY:Metacreative Talent ~ Trait
@@ -34,7 +34,7 @@ Metacreative Talent
 	DESC:When focused, you can create weaponized crystal shards.
 	AUTO:EQUIP|Crystal Shard
 	AUTO:WEAPONPROF|Crystal Shard
-	SOURCEPAGE:p.35
+	SOURCEPAGE:p.124
 
 Perceptive Talent
 	KEY:Perceptive Talent ~ Trait
@@ -44,7 +44,7 @@ Perceptive Talent
 	DESC:Gain +1 initiative and Sense Motive when focused.
 	BONUS:COMBAT|INITIATIVE|1*PsionicFocusActive|TYPE=Trait
 	BONUS:SKILL|Sense Motive|1*PsionicFocusActive|TYPE=Trait
-	SOURCEPAGE:p.35
+	SOURCEPAGE:p.124
 
 Psigifted
 	KEY:Psigifted ~ Trait
@@ -56,7 +56,7 @@ Psigifted
 	MULT:YES
 	CHOOSE:NUMCHOICES=1|SPELLS|SPELLTYPE=Psionic[KNOWN=YES]
 	BONUS:CASTERLEVEL|SPELL.%LIST|1
-	SOURCEPAGE:p.35
+	SOURCEPAGE:p.125
 
 Psionic Item Familiarity
 	KEY:Psionic Item Familiarity ~ Trait
@@ -66,16 +66,16 @@ Psionic Item Familiarity
 	DESC:You are very familiar with psionic and magic items.  This does not stack with Dangerously Curious.
 	BONUS:SKILL|Use Magic Device|1|TYPE=Trait
 	CSKILL:Use Magic Device
-	SOURCEPAGE:p.35
+	SOURCEPAGE:p.125
 
-# NEEDS CODE/DATA WORK: Not yet implemented
+# NEEDS CODE/DATA WORK: Not implemented (choose a manifesting class; +2 ML, up to HD)
 Psionic Knack
 	KEY:Psionic Knack ~ Trait
 	CATEGORY:Special Ability
 	TYPE:Trait.BasicTrait.PsionicTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Psionic Knack ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.PsionicTrait]
 	DESC:Gain +2 to manifester level in chosen class, up to your current Hit Dice.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.125
 
 Psionic Monster Familiarity
 	KEY:Psionic Monster Familiarity ~ Trait
@@ -83,7 +83,7 @@ Psionic Monster Familiarity
 	TYPE:Trait.BasicTrait.PsionicTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Psionic Monster Familiarity ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.PsionicTrait]
 	DESC:+2 bonus to Knowledge (Psionics) to identify creatures.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.125
 
 Psionic Power Focus
 	KEY:Psionic Power Focus ~ Trait
@@ -94,7 +94,7 @@ Psionic Power Focus
 	STACK:NO
 	MULT:YES
 	CHOOSE:SPELLS|SPELLTYPE=Psionic[KNOWN=YES;LEVELMAX=1;LEVELMIN=1]
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.125
 
 Psionic Theory
 	KEY:Psionic Theory ~ Trait
@@ -102,7 +102,7 @@ Psionic Theory
 	TYPE:Trait.BasicTrait.PsionicTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Psionic Theory ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.PsionicTrait]
 	DESC:+2 to Spellcraft checks when analyzing psionic powers or items.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.125
 
 Psychokinetic Talent
 	KEY:Psychokinetic Talent ~ Trait
@@ -110,7 +110,7 @@ Psychokinetic Talent
 	TYPE:Trait.BasicTrait.PsionicTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Psychokinetic Talent ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.PsionicTrait]
 	DESC:Expend focus to manifest far hand.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.125
 
 Psychoportive Talent
 	KEY:Psychoportive Talent ~ Trait
@@ -118,7 +118,7 @@ Psychoportive Talent
 	TYPE:Trait.BasicTrait.PsionicTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Psychoportive Talent ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.PsionicTrait]
 	DESC:Expend focus to take a five-foot step.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.125
 
 Telepathic Talent
 	KEY:Telepathic Talent ~ Trait
@@ -126,7 +126,7 @@ Telepathic Talent
 	TYPE:Trait.BasicTrait.PsionicTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Telepathic Talent ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.PsionicTrait]
 	DESC:Expend focus to gain +2 on saves vs. mind-affecting powers and psi-like abilities.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.125
 
 
 
@@ -137,7 +137,7 @@ Dream Seared
 	TYPE:Trait.DreamTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dream Seared ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.DreamTrait]
 	DESC:+1 on saves vs. effects against sleeping mind.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.125
 
 Dreamless Sleep
 	KEY:Dreamless Sleep ~ Trait
@@ -145,7 +145,7 @@ Dreamless Sleep
 	TYPE:Trait.DreamTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dreamless Sleep ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.DreamTrait]
 	DESC:+1 on saves vs. dream-related effects; -1 to the DC of dream-related effects you use.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.125
 
 Lucid Dreaming
 	KEY:Lucid Dreaming ~ Trait
@@ -153,7 +153,7 @@ Lucid Dreaming
 	TYPE:Trait.DreamTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Lucid Dreaming ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.DreamTrait]
 	DESC:You can recall dreams and things you have ddone while sleeping; you can use powers in dreams.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.125
 
 
 
@@ -235,7 +235,7 @@ Playing Dumb
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Playing Dumb ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Blue,RACESUBTYPE=Blue],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Blue]
 	DESC:+2 on Bluff to appear less than you are.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.125
 
 Psionic Lineage
 	KEY:Psionic Lineage ~ Trait
@@ -247,7 +247,7 @@ Psionic Lineage
 	STACK:NO
 	MULT:YES
 	CHOOSE:SPELLS|SPELLTYPE=Psionic
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.125
 
 
 
@@ -259,7 +259,7 @@ Psychoenergetic Talent
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Psychoenergetic Talent ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Dromite,RACESUBTYPE=Dromite],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Dromite]
 	DESC:Fire weakened energy ray when focused.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.126
 
 Sensitive Nose
 	KEY:Sensitive Nose ~ Trait
@@ -268,7 +268,7 @@ Sensitive Nose
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Sensitive Nose ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Dromite,RACESUBTYPE=Dromite],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Dromite]
 	DESC:+1 on Perception and Survival checks related to smell; -1 onsaves involving smells.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.126
 
 
 
@@ -280,7 +280,7 @@ Psychic Buffer
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Psychic Buffer ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Duergar,RACESUBTYPE=Duergar],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Duergar]
 	DESC:+1 to Will saves vs. Telepathy powers.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.126
 
 Sense Dissonance
 	KEY:Sense Dissonance ~ Trait
@@ -289,7 +289,7 @@ Sense Dissonance
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Sense Dissonance ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Duergar,RACESUBTYPE=Duergar],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Duergar]
 	DESC:+2 to Sense Motive to sense enchantment and to get a hunch.
-	SOURCEPAGE:p.36
+	SOURCEPAGE:p.126
 
 
 
@@ -301,7 +301,7 @@ Fight Through the Pain
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Fight Through the Pain ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Elan,RACESUBTYPE=Elan],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Elan]
 	DESC:+2 to Autohypnosis to resist caltrop wounds, stabilize yourself, or resist poison.
-	SOURCEPAGE:p.37
+	SOURCEPAGE:p.126
 
 Memories
 	KEY:Memories ~ Trait
@@ -310,7 +310,7 @@ Memories
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Memories ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Elan,RACESUBTYPE=Elan],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Elan]
 	DESC:Your Charisma-based penalty does not apply against individuals you knew prior to becoming an elan.
-	SOURCEPAGE:p.37
+	SOURCEPAGE:p.126
 
 
 
@@ -323,7 +323,7 @@ Impressive Physique
 	PREMULT:1,[PRERACE:1,Half-Giant,RACESUBTYPE=Half-Giant],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Half-Giant]
 	DESC:+2 to Intimidate
 	BONUS:SKILL|Intimidate|2|TYPE=Trait
-	SOURCEPAGE:p.37
+	SOURCEPAGE:p.126
 
 Hot-Foot
 	KEY:Hot-Foot ~ Trait
@@ -332,12 +332,11 @@ Hot-Foot
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Hot-Foot ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Half-Giant,RACESUBTYPE=Half-Giant],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Half-Giant]
 	DESC:Any creature you damage with a fire power takes 1 point of fire damage on their next turn.
-	SOURCEPAGE:p.37
+	SOURCEPAGE:p.126
 
 
 
 #Block: Maenad
-# NEEDS CODE/DATA WORK: The +1 bonus is not implemented
 Inner Peace
 	KEY:Inner Peace ~ Trait
 	CATEGORY:Special Ability
@@ -345,8 +344,8 @@ Inner Peace
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Inner Peace ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Maenad,RACESUBTYPE=Maenad],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Maenad]
 	DESC:Knowledge (Religion) and Knowledge (Psionics) are class skills; gain +1 on them if they are already class skills.
-	CSKILL:Knowledge (Religion)|Knowledge (Psionics)
-	SOURCEPAGE:p.37
+	TEMPLATE:CHOOSE:Inner Peace both|Inner Peace religion|Inner Peace psionics|Inner Peace neither
+	SOURCEPAGE:p.126
 
 Surge Protection
 	KEY:Surge Protection ~ Trait
@@ -355,7 +354,7 @@ Surge Protection
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Surge Protection ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Maenad,RACESUBTYPE=Maenad],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Maenad]
 	DESC:Take 1 less hp or pp damage from enervation (minimum 1).
-	SOURCEPAGE:p.37
+	SOURCEPAGE:p.126
 
 
 
@@ -367,7 +366,7 @@ Beguiling Nature
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Beguiling Nature ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Ophiduan,RACESUBTYPE=Ophiduan],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Ophiduan]
 	DESC:+1 to all Charisma-based checks against creatures affected by one of your Telepathy powers.
-	SOURCEPAGE:p.37
+	SOURCEPAGE:p.126
 
 Infiltrator
 	KEY:Infiltrator ~ Trait
@@ -377,7 +376,7 @@ Infiltrator
 	PREMULT:1,[PRERACE:1,Ophiduan,RACESUBTYPE=Ophiduan],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Ophiduan]
 	DESC:+1 on Bluff and Diplomacy against non-ophiduan humanoids; Sense Motive is a class skill.
 	CSKILL:Sense Motive
-	SOURCEPAGE:p.37
+	SOURCEPAGE:p.126
 
 
 
@@ -389,7 +388,7 @@ Fancy Footwork
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Fancy Footwork ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Xeph,RACESUBTYPE=Xeph],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Xeph]
 	DESC:+1 dodge bonus to AC when using burst.
-	SOURCEPAGE:p.37
+	SOURCEPAGE:p.126
 
 Resist Dampening
 	KEY:Resist Dampening ~ Trait
@@ -398,5 +397,5 @@ Resist Dampening
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Resist Dampening ~ Trait],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RaceTrait]
 	PREMULT:1,[PRERACE:1,Xeph,RACESUBTYPE=Xeph],[PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Xeph]
 	DESC:+1 to manifester level checks to bypass power resistance; +2 to create mind blade while inside a null psionics field.
-	SOURCEPAGE:p.37
+	SOURCEPAGE:p.126
 

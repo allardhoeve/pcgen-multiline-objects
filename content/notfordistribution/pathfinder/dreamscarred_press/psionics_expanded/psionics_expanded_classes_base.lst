@@ -1155,7 +1155,7 @@ CLASS:Vitalist
 	ABILITY:Special Ability|AUTOMATIC|Collective|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistCollective
 
 1
-	BONUS:ABILITYPOOL|Knack|2|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistKnacks
+	BONUS:SPELLKNOWN|CLASS=Vitalist;LEVEL=0|2|!PREABILITY:1,CATEGORY=Archetype,TYPE.VitalistKnacks
 	
 
 1

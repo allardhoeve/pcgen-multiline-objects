@@ -3039,19 +3039,16 @@ Master Guardian
 # COMMENT:Bubble of protection template?
 
 
-# TODO: Change these to 0-level spells
 ###Block: Guardian Method Knacks
 Toughen
 	CATEGORY:Special Ability
-	TYPE:SpecialQuality.Knack.GuardianKnack.Psilike
-	DESC:Member of collective gets +%1 natural armor bonus.|1
-	SOURCEPAGE:p.61
+	TYPE:Knack.GuardianKnack
+	SPELLKNOWN:CLASS|Vitalist=0|Toughen Talent
 
-Resistant
+Fortify (Lesser)
 	CATEGORY:Special Ability
-	TYPE:SpecialQuality.Knack.GuardianKnack.Psilike
-	DESC:Member of collective gets +%1 resistance bonus on saves.|1
-	SOURCEPAGE:p.61
+	TYPE:Knack.GuardianKnack
+	SPELLKNOWN:CLASS|Vitalist=0|Fortify Lesser Talent
 
 
 
@@ -3091,13 +3088,13 @@ Master Mender
 
 
 
-# TODO: Change these to 0-level spells
 ###Block: Mender Method Knack
 Halt Death
 	CATEGORY:Special Ability
-	TYPE:SpecialQuality.Knack.MenderKnack.Psilike
-	DESC:Stabilize member of collective.
-	SOURCEPAGE:p.62
+	TYPE:Knack.GuardianKnack
+	SPELLKNOWN:CLASS|Vitalist=0|Halt Death Talent
+
+
 
 
 
@@ -3141,15 +3138,13 @@ Master Soulthief
 ###Block: Soulthief Method Knacks
 Fatigue
 	CATEGORY:Special Ability
-	TYPE:SpecialAttack.Knack.SoulthiefKnack.Psilike
-	DESC:Target fatigued for %1 rounds with ranged touch attack (DC %2).|MethodLVL|10+WIS
-	SOURCEPAGE:p.62
+	TYPE:Knack.GuardianKnack
+	SPELLKNOWN:CLASS|Vitalist=0|Fatigue Talent
 
 Siphon
 	CATEGORY:Special Ability
-	TYPE:SpecialAttack.Knack.SoulthiefKnack.Psilike
-	DESC:Target takes 1d3 damage, collective member gains %1 temporary hit point, on ranged touch attack.|1
-	SOURCEPAGE:p.62
+	TYPE:Knack.GuardianKnack
+	SPELLKNOWN:CLASS|Vitalist=0|Siphon Talent
 
 
 
