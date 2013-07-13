@@ -2251,7 +2251,7 @@ Tranquil Guardian
 	PRECLASS:1,Paladin=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Tranquil Guardian],[!PREABILITY:1,CATEGORY=Archetype,TYPE.PaladinSmiteEvil,TYPE.PaladinAuraOfCourage,TYPE.PaladinAuraOfResolve,TYPE.PaladinAuraOfJustice,TYPE.PaladinHolyChampion]
 	PRERACE:1,Aasimar
-	DESC:A tranquil guardian is a missionary of peace and tranquility, a soothing voice of succor in a violent and dangerous world. A tranquil guardian gains the following class features.
+	DESC:A tranquil guardian is a missionary of peace and tranquility, a soothing voice of succor in a violent and dangerous world.
 	ABILITY:Special Ability|AUTOMATIC|Touch of Serenity ~ Tranquil Guardian|PRECLASS:1,Paladin=1
 	ABILITY:Special Ability|AUTOMATIC|Serene Strike ~ Tranquil Guardian|PRECLASS:1,Paladin=3
 	ABILITY:Special Ability|AUTOMATIC|Divine Bond ~ Tranquil Guardian|PRECLASS:1,Paladin=1
@@ -2266,7 +2266,7 @@ Touch of Serenity
 	KEY:Touch of Serenity ~ Tranquil Guardian
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
-	DESC:The tranquil guardian gains Touch of Serenity (Advanced Player's Guide 172) as a bonus feat, even if she does not meet the prerequisites. At 6th level, and every six levels thereafter, the duration of a tranquil guardian's Touch of Serenity increases by 1 round. Each round on its turn, the target may attempt a new Will save to end the effect. The duration does not stack; only the longest remaining duration applies.
+	DESC:The tranquil guardian gains Touch of Serenity as a bonus feat, even if she does not meet the prerequisites. At 6th level, and every six levels thereafter, the duration of a tranquil guardian's Touch of Serenity increases by 1 round. Each round on its turn, the target may attempt a new Will save to end the effect. The duration does not stack; only the longest remaining duration applies.
 	AUTO:FEAT|Touch of Serenity
 	BONUS:VAR|TouchOfSerenityDuration|PaladinLvl/6
 	SOURCEPAGE:p.86
@@ -2282,7 +2282,7 @@ Divine Bond
 	KEY:Divine Bond ~ Tranquil Guardian
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
-	DESC:A tranquil guardian who chooses a weapon as her divine bond may only increase her weapon's enhancement bonus or add the following properties to her weapon: conductive (Advanced Player's Guide 286), defending, disruptive, grayflame (Advanced Player's Guide 288), or merciful.
+	DESC:A tranquil guardian who chooses a weapon as her divine bond may only increase her weapon's enhancement bonus or add the following properties to her weapon: conductive, defending, disruptive, grayflame, or merciful.
 	SOURCEPAGE:p.86
 
 Aura of Calm
@@ -2317,7 +2317,7 @@ Cat Burglar
 	PRECLASS:1,Rogue=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Cat Burglar],[!PREABILITY:1,CATEGORY=Archetype,TYPE.RogueUncannyDodge]
 	PRERACE:1,Catfolk
-	DESC:Gifted with finesse and stealth, catfolk make excellent burglars. Cat burglars are masters of breaking and entering, using their feline grace to make it seem as though no crime was ever committed in the first place. Few locks can withstand skilled cat burglars, and such nimble rogues are capable of bypassing traps without activating them and enabling associates to do the same. A cat burglar has the following class features.
+	DESC:Gifted with finesse and stealth, catfolk make excellent burglars. Cat burglars are masters of breaking and entering, using their feline grace to make it seem as though no crime was ever committed in the first place. Few locks can withstand skilled cat burglars, and such nimble rogues are capable of bypassing traps without activating them and enabling associates to do the same.
 	ABILITY:Special Ability|AUTOMATIC|Phantom Presence ~ Cat Burglar|PRECLASS:1,Rogue=4
 	ABILITY:Special Ability|AUTOMATIC|Trap Saboteur ~ Cat Burglar|PRECLASS:1,Rogue=8
 	ABILITY:Special Ability|AUTOMATIC|Rogue Talents ~ Cat Burglar|PRECLASS:1,Rogue=1
@@ -2344,14 +2344,14 @@ Rogue Talents
 	KEY:Rogue Talents ~ Cat Burglar
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
-	DESC:The following rogue talents complement the cat burglar archetype: fast stealth, quick disable (Core Rulebook); convincing fakes, dodge trap (Advanced Race Guide); fast picks (Advanced Player's Guide); terrain mastery (Ultimate Combat).
+	DESC:The following rogue talents complement the cat burglar archetype: fast stealth, quick disable, convincing fakes, dodge trap, fast picks, terrain mastery.
 	SOURCEPAGE:p.92
 
 Advanced Talents
 	KEY:Advanced Talents ~ Cat Burglar
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
-	DESC:The following advanced rogue talents complement the cat burglar archetype: another day, fast tumble (Advanced Player's Guide); hide in plain sight (Ultimate Combat).
+	DESC:The following advanced rogue talents complement the cat burglar archetype: another day, fast tumble; hide in plain sight.
 	SOURCEPAGE:p.92
 
 
@@ -2504,7 +2504,7 @@ Kinslayer
 	PRECLASS:1,Inquisitor=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Kinslayer],[!PREABILITY:1,CATEGORY=Archetype,TYPE.InquisitorJudgementDestruction,TYPE.InquisitorDetectAlignment]
 	PRERACE:1,Dhampir
-	DESC:Appalled and guilt-ridden by the horrific circumstances of her birth, a kinslayer dedicates herself to eradicating the very creatures whose blood f lows within her veins. She spends her life hunting and slaying those vampiric monsters for whom humans have become prey. A kinslayer has the following class features.
+	DESC:Appalled and guilt-ridden by the horrific circumstances of her birth, a kinslayer dedicates herself to eradicating the very creatures whose blood flows within her veins. She spends her life hunting and slaying those vampiric monsters for whom humans have become prey. A kinslayer has the following class features.
 	ABILITY:Special Ability|AUTOMATIC|Judgment ~ Kinslayer|PRECLASS:1,Inquisitor=1
 	ABILITY:Special Ability|AUTOMATIC|Slayer's Brand ~ Kinslayer|PRECLASS:1,Inquisitor=1
 	ABILITY:Special Ability|AUTOMATIC|Greater Brand ~ Kinslayer|PRECLASS:1,Inquisitor=1
@@ -2590,7 +2590,7 @@ Silver Brand
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural.GreaterBrand
 	PREABILITY:1,CATEGORY=Archetype,Kinslayer
-	DESC:The kinslayer can use her brand on lycanthropes and creatures with vulnerability to silver as well as undead. Each time the kinslayer opts to take a greater brand, it replaces her ability to gain a teamwork feat at that level.
+	DESC:The kinslayer can use her brand on lycanthropes and creatures with vulnerability to silver as well as undead.
 	SOURCEPAGE:p.99
 
 #
@@ -2600,7 +2600,8 @@ Undead Sense
 	TYPE:ArchetypeAbility.SpecialQuality.SpellLike
 	DEFINE:KinslayerUndeadSenseLvl|InquisitorLvl
 	DEFINE:KinslayerUndeadSenseBonus|InquisitorLvl
-	DESC:At 2nd level, a kinslayer gains the ability to use detect undead as a spell-like ability (caster level %1) at will. If she detects the presence of undead, she can use her monster lore ability to attempt to determine the type of undead detected as well as to reveal any strengths or weaknesses the undead might have. If any of the detected undead are vampires, she gains a bonus of %2 on the check to immediately identify them as such.|KinslayerUndeadSenseLvl|KinslayerUndeadSenseBonus
+	DESC:The kinslayer gains the ability to use detect undead as a spell-like ability (caster level %1) at will. If she detects the presence of undead, she can use her monster lore ability to attempt to determine the type of undead detected as well as to reveal any strengths or weaknesses the undead might have. If any of the detected undead are vampires, she gains a bonus of %2 on the check to immediately identify them as such.|KinslayerUndeadSenseLvl|KinslayerUndeadSenseBonus
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=KinslayerUndeadSenseLvl|Detect Undead
 	SOURCEPAGE:p.99
 
 
@@ -2655,7 +2656,7 @@ Quick and Deadly
 	KEY:Quick and Deadly ~ Cavern Sniper
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
-	DESC:The cavern sniper can move at full speed while using Stealth at no penalty and can apply poison to a single arrow or crossbow bolt as a swift action. This ability replaces the 4th-level fighter bonus feat.
+	DESC:The cavern sniper can move at full speed while using Stealth at no penalty and can apply poison to a single arrow or crossbow bolt as a swift action.
 	SOURCEPAGE:p.104
 
 Sniper Training
@@ -2681,6 +2682,7 @@ Weapon Mastery
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:Any attacks made by a %1 automatically confirm all critical threats and have their damage multiplier increased by 1 (x2 becomes x3, for example). In addition, you cannot be disarmed while wielding a weapon of this type.|%CHOICE
+	BONUS:WEAPONPROF|%CHOICE|CRITRANGEADD|1
 	STACK:NO
 	MULT:YES
 	CHOOSE:WEAPONPROFICIENCY|Bow|Crossbow
@@ -2696,7 +2698,7 @@ Demonic Apostle
 	PREDOMAIN:1,Chaos,Evil,Demon
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Demonic Apostle],[!PREABILITY:1,CATEGORY=Archetype,TYPE.ClericChannelEnergy1,TYPE.ClericChannelEnergy2,TYPE.ClericChannelEnergy3,TYPE.ClericChannelEnergy4,TYPE.ClericChannelEnergy5,TYPE.ClericChannelEnergy6,TYPE.ClericChannelEnergy7,TYPE.ClericChannelEnergy8,TYPE.ClericChannelEnergy9,TYPE.ClericChannelEnergy10]
 	PRERACE:1,Drow
-	DESC:In order to survive, the drow threw in their lot with demon lords. Thus, demon worship is common among the drow, and so are ranks of demonic apostles, who gain magical insight from their dark lords and crush their chaotic masters' enemies by channeling demonic energy. A demonic apostle has the following class features.
+	DESC:In order to survive, the drow threw in their lot with demon lords. Thus, demon worship is common among the drow, and so are ranks of demonic apostles, who gain magical insight from their dark lords and crush their chaotic masters' enemies by channeling demonic energy.
 	ABILITY:Special Ability|AUTOMATIC|Demonic Magic ~ Demonic Apostle|PRECLASS:1,Cleric=1
 	ABILITY:Special Ability|AUTOMATIC|Demonic Familiar ~ Demonic Apostle|PRECLASS:1,Cleric=1
 	ABILITY:Special Ability|AUTOMATIC|Demonic Channel ~ Demonic Apostle|PRECLASS:1,Cleric=1
@@ -2718,10 +2720,10 @@ Demonic Familiar
 	DESC:The demonic apostle gains a familiar as a wizard equal to her cleric level, or if she already has a familiar, her cleric levels stack to determine the familiar's abilities. At 3rd level, her familiar gains the fiendish template (Bestiary 294). At 7th level, the demonic apostle exchanges her familiar for a quasit without the need to take the Improved Familiar feat.
 	DEFINE:DemonicFamiliarLVL|0
 	BONUS:DemonicFamiliarLVL|ClericLvl+FamiliarLVL
-	FOLLOWERS:Familiar|-1
+	FOLLOWERS:Familiar|-2
 	FOLLOWERS:Demonic Familiar|1
-	COMPANIONLIST:Demonic Familiar|RACESUBTYPE=FamiliarBase|PREVARLT:ClericLvl,7
-	COMPANIONLIST:Demonic Familiar|Quasit|PREVARGTEQ:ClericLvl,7
+	COMPANIONLIST:Demonic Familiar|RACESUBTYPE=FamiliarBase|PREVARLT:DemonicFamiliarLVL,7
+	COMPANIONLIST:Demonic Familiar|Familiar (Quasit)|PREVARGTEQ:DemonicFamiliarLVL,7
 	SOURCEPAGE:p.104
 
 Demonic Channel
