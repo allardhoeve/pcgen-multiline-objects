@@ -722,6 +722,17 @@ ABILITYCATEGORY:Bonus Gifted Blade Power
 
 
 
+ABILITYCATEGORY:Bonus Power
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:YES
+	FRACTIONALPOOL:NO
+	CATEGORY:Internal
+	TYPE:BonusPower
+	DISPLAYLOCATION:Class Abilities
+
+
+
 ###Block: Other ability pools
 ABILITYCATEGORY:Improved Shield Blade Skill
 	VISIBLE:QUALIFY
