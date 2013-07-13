@@ -319,6 +319,16 @@ ABILITYCATEGORY:Wayang Racial Trait
 	PLURAL:Wayang Racial Traits
 	DISPLAYLOCATION:Racial Abilities
 
+ABILITYCATEGORY:Shaitan Binder Eidolon Stat Bonus
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:ShaitanBinderEidolonStatBonus
+	PLURAL:Eidolon Stat Bonuses
+	DISPLAYLOCATION:Racial Abilities
+
 
 
 ###Block: Archetype ability categories

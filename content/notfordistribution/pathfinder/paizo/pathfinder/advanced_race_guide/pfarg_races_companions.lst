@@ -86,7 +86,7 @@ Companion (Carnivorous Flower)
 	BONUS:COMBAT|AC|2|TYPE=NaturalArmor
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Piercing,*1,1d6
 	ABILITY:Special Ability|AUTOMATIC|Scent
-	MONSTERCLASS:Plant Companion:2
+	MONSTERCLASS:Plant:2
 	RACETYPE:Plant
 	TYPE:Companion.PlantCompanion
 	SOURCEPAGE:p.26
@@ -105,7 +105,7 @@ Companion (Crawling Vine)
 	BONUS:COMBAT|AC|2|TYPE=NaturalArmor
 	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d4
 	ABILITY:Special Ability|AUTOMATIC|Grab|Scent
-	MONSTERCLASS:Plant:1
+	MONSTERCLASS:Plant:2
 	RACETYPE:Plant
 	TYPE:Companion
 	SOURCEPAGE:p.26
@@ -125,7 +125,7 @@ Companion (Puffball)
 	NATURALATTACKS:Thorn,Weapon.Natural.Melee.Finesseable.Piercing,*1,1d4
 	ABILITY:Special Ability|AUTOMATIC|Poison ~ Puffball|Flight Maneuverability
 	DEFINE:Maneuverability|3
-	MONSTERCLASS:Plant:1
+	MONSTERCLASS:Plant:2
 	RACETYPE:Plant
 	TYPE:Companion
 	SOURCEPAGE:p.26
@@ -143,7 +143,7 @@ Companion (Sapling Treant)
 	PREVARGTEQ:NotAllowed,1
 	BONUS:COMBAT|AC|1|TYPE=NaturalArmor
 	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,1d6
-	MONSTERCLASS:Plant:1
+	MONSTERCLASS:Plant:2
 	RACETYPE:Plant
 	TYPE:Companion
 	SOURCEPAGE:p.26
@@ -154,6 +154,7 @@ Companion (Sapling Treant)
 
 ###Block: Shaitan Binder Eidolon
 Shaitan Binder Eidolon (Biped)
+	OUTPUTNAME:Biped
 	STARTFEATS:1
 	SIZE:M
 	MOVE:Walk,20
@@ -162,7 +163,6 @@ Shaitan Binder Eidolon (Biped)
 	VISION:Darkvision (60')
 	BONUS:ABILITYPOOL|Eidolon Biped Evolution|5
 	BONUS:COMBAT|AC|2|TYPE=NaturalArmor
-	BONUS:STAT|%LIST|2
 	BONUS:STAT|STR|6
 	BONUS:STAT|DEX|2
 	BONUS:STAT|CON|2
@@ -172,12 +172,13 @@ Shaitan Binder Eidolon (Biped)
 	HANDS:7
 	DEFINE:EidHeads|1
 	MONSTERCLASS:Eidolon (Fort/Will):1
-	RACETYPE:ShaitanBinderEidolon
+	RACETYPE:Shaitan Binder Eidolon
 	SOURCEPAGE:p.56
-	CHOOSE:PCSTAT|ALL
+	BONUS:ABILITYPOOL|Shaitan Binder Eidolon Stat Bonus|1
 	KIT:1|Eidolon (Biped)
 
 Shaitan Binder Eidolon (Quadruped)
+	OUTPUTNAME:Quadruped
 	STARTFEATS:1
 	SIZE:M
 	MOVE:Walk,20
@@ -195,11 +196,12 @@ Shaitan Binder Eidolon (Quadruped)
 	HANDS:7
 	DEFINE:EidHeads|1
 	MONSTERCLASS:Eidolon (Fort/Ref):1
-	RACETYPE:ShaitanBinderEidolon
+	RACETYPE:Shaitan Binder Eidolon
 	SOURCEPAGE:p.56
 	KIT:1|Eidolon (Quadruped)
 
 Shaitan Binder Eidolon (Serpentine)
+	OUTPUTNAME:Serpentine
 	STARTFEATS:1
 	SIZE:M
 	MOVE:Walk,20
@@ -217,7 +219,7 @@ Shaitan Binder Eidolon (Serpentine)
 	HANDS:7
 	DEFINE:EidHeads|1
 	MONSTERCLASS:Eidolon (Ref/Will):1
-	RACETYPE:ShaitanBinderEidolon
+	RACETYPE:Shaitan Binder Eidolon
 	SOURCEPAGE:p.56
 	KIT:1|Eidolon (Serpentine)
 
@@ -229,3 +231,57 @@ Shaitan Binder Eidolon (Serpentine)
 #Companion (Dinosaur (Pteranodon))		OUTPUTNAME:Pteranodon		STARTFEATS:1	SIZE:M	MOVE:Walk,10,Fly,50	FACE:5	REACH:5	BONUS:ABILITYPOOL|Companion Level Increase Choice|1|PREVARGTEQ:MasterLevel,7							BONUS:STAT|STR|-2	BONUS:STAT|DEX|10	BONUS:STAT|WIS|4	BONUS:STAT|INT|-8	BONUS:STAT|CHA|2											BONUS:WEAPONPROF=Bite|DAMAGE|max(0,(STR/2))	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability|Scent														LEGS:2	HANDS:2	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing,*1,1d8															DEFINE:Maneuverability|1					MONSTERCLASS:Companion:2			RACETYPE:Companion	RACESUBTYPE:AnimalCompanionDinosaur				SOURCEPAGE:p.85	KIT:1|Companion ~ Dinosaur (Pteranodon)
 #Companion (Dinosaur (Stegosaurus))		OUTPUTNAME:Stegosaurus		STARTFEATS:1	SIZE:M	MOVE:Walk,30		FACE:5	REACH:5	BONUS:ABILITYPOOL|Companion Level Increase Choice|1|PREVARGTEQ:MasterLevel,7	BONUS:COMBAT|AC|6|TYPE=NaturalArmor	BONUS:STAT|DEX|8	BONUS:STAT|INT|-8	BONUS:STAT|WIS|2																	BONUS:WEAPONPROF=Tail|DAMAGE|max(0,(STR/2))	ABILITY:Special Ability|AUTOMATIC|Scent																		LEGS:4	HANDS:0	NATURALATTACKS:Tail,Weapon.Natural.Melee.Finesseable.Bludgeoning.Trip,*1,2d6																									MONSTERCLASS:Companion:2			RACETYPE:Companion	RACESUBTYPE:AnimalCompanionDinosaur				SOURCEPAGE:p.85	KIT:1|Companion ~ Dinosaur (Stegosaurus)
 #Companion (Dinosaur (Triceratops))		OUTPUTNAME:Triceratops		STARTFEATS:1	SIZE:M	MOVE:Walk,30		FACE:5	REACH:5	BONUS:ABILITYPOOL|Companion Level Increase Choice|1|PREVARGTEQ:MasterLevel,7	BONUS:COMBAT|AC|6|TYPE=NaturalArmor	BONUS:STAT|DEX|2	BONUS:STAT|INT|-8	BONUS:STAT|WIS|2	BONUS:STAT|CHA|-4							BONUS:VAR|TrampleDamageDieSize|8		BONUS:WEAPONPROF=Gore|DAMAGE|max(0,(STR/2))	ABILITY:Special Ability|AUTOMATIC|Scent																		LEGS:4	HANDS:0	NATURALATTACKS:Gore,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing,*1,1d8																								MONSTERCLASS:Companion:2			RACETYPE:Companion	RACESUBTYPE:AnimalCompanionDinosaur				SOURCEPAGE:p.86	KIT:1|Companion ~ Dinosaur (Triceratops)
+
+
+###Block: Brute Steed
+Brute Steed (Camel)
+	OUTPUTNAME:Brute Steed [NAME]
+	STARTFEATS:1
+	SIZE:L
+	MOVE:Walk,50
+	FACE:10
+	REACH:5
+	PREVARGTEQ:NotAllowed,1
+	BONUS:ABILITYPOOL|Companion Level Increase Choice|1|PREVARGTEQ:MasterLevel,4
+	BONUS:COMBAT|AC|1|TYPE=NaturalArmor
+	BONUS:STAT|STR|10
+	BONUS:STAT|DEX|4
+	BONUS:STAT|CON|4
+	BONUS:STAT|INT|-8
+	BONUS:STAT|CHA|-6
+	ABILITY:Special Ability|AUTOMATIC|Scent|Spit ~ Camel
+	LEGS:4
+	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d4
+	MONSTERCLASS:Companion:2
+	RACETYPE:Companion
+	TYPE:Companion.AnimalCompanion
+	SOURCEPAGE:p.56
+	KIT:1|Companion ~ Camel
+	SORTKEY:z_Companion
+
+Brute Steed (Horse)
+	OUTPUTNAME:Brute Steed [NAME]
+	STARTFEATS:1
+	SIZE:L
+	MOVE:Walk,50
+	FACE:10
+	REACH:5
+	PREVARGTEQ:NotAllowed,1
+	BONUS:ABILITYPOOL|Companion Level Increase Choice|1|PREVARGTEQ:MasterLevel,4
+	BONUS:COMBAT|AC|4|TYPE=NaturalArmor
+	BONUS:STAT|STR|8
+	BONUS:STAT|CON|4
+	BONUS:STAT|INT|-8
+	BONUS:STAT|WIS|2
+	BONUS:STAT|CHA|-4
+	ABILITY:Special Ability|AUTOMATIC|Scent
+	LEGS:4
+	HANDS:3
+	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d4|Hooves,Weapon.Natural.Melee.Finesseable.Bludgeoning,*2,1d6
+	MONSTERCLASS:Companion:2
+	RACETYPE:Companion
+	TYPE:Companion.AnimalCompanion
+	SOURCEPAGE:p.56
+	KIT:1|Companion ~ Horse
+	SORTKEY:z_Companion
+
