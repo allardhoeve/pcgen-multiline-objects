@@ -364,7 +364,7 @@ Barangulaak
 	BONUS:STAT|STR|24
 	BONUS:STAT|CHA|-10
 	ABILITY:Special Ability|AUTOMATIC|Circle Of Devastation|Magic Immunity|Programming
-	DEFINE:LOCK.INT|10
+	DEFINESTAT:NONSTAT|INT
 	DR:10/Adamantine
 	MONSTERCLASS:Construct:20
 	RACETYPE:Construct

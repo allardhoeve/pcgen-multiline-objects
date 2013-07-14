@@ -5641,7 +5641,7 @@ Non-Ability / Strength
 	SORTKEY:Non-Ability_1a
 	CATEGORY:Special Ability
 	TYPE:EclipseAbilityOutput.TemplatesRacial.Corruptable
-	DEFINE:LOCK.STR|10
+	DEFINESTAT:NONSTAT|STR
 	COST:0
 
 Non-Ability / Strength / Incorporeal
@@ -5658,7 +5658,7 @@ Non-Ability / Dexterity
 	SORTKEY:Non-Ability_1c
 	CATEGORY:Special Ability
 	TYPE:EclipseAbilityOutput.TemplatesRacial.Corruptable
-	DEFINE:LOCK.DEX|10
+	DEFINESTAT:NONSTAT|DEX
 	COST:0
 
 Non-Ability / Constitution
@@ -5666,7 +5666,7 @@ Non-Ability / Constitution
 	SORTKEY:Non-Ability_1d
 	CATEGORY:Special Ability
 	TYPE:EclipseAbilityOutput.TemplatesRacial.Corruptable
-	DEFINE:LOCK.CON|10
+	DEFINESTAT:NONSTAT|CON
 	COST:0
 
 Non-Ability / Constitution / Bonus HP
@@ -5683,7 +5683,7 @@ Non-Ability / Intelligence
 	SORTKEY:Non-Ability_1f
 	CATEGORY:Special Ability
 	TYPE:EclipseAbilityOutput.TemplatesRacial.Corruptable
-	DEFINE:LOCK.INT|10
+	DEFINESTAT:NONSTAT|INT
 	COST:0
 
 Non-Ability / Wisdom
@@ -5691,7 +5691,7 @@ Non-Ability / Wisdom
 	SORTKEY:Non-Ability_1g
 	CATEGORY:Special Ability
 	TYPE:EclipseAbilityOutput.TemplatesRacial.Corruptable
-	DEFINE:LOCK.WIS|10
+	DEFINESTAT:NONSTAT|WIS
 	COST:0
 
 Non-Ability / Charisma
@@ -5699,7 +5699,7 @@ Non-Ability / Charisma
 	SORTKEY:Non-Ability_1h
 	CATEGORY:Special Ability
 	TYPE:EclipseAbilityOutput.TemplatesRacial.Corruptable
-	DEFINE:LOCK.CHA|10
+	DEFINESTAT:NONSTAT|CHA
 	COST:0
 
 

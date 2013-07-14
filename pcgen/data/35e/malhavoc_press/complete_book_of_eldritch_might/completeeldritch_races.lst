@@ -209,7 +209,7 @@ Eye Golem
 	SAB:Eye Ray (Su)
 	SAB:Poison (Ex)
 	SAB:Special Vision (Su)
-	DEFINE:LOCK.CON|10
+	DEFINESTAT:NONSTAT|CON
 	MONSTERCLASS:Construct:10
 	RACETYPE:Construct
 	TEMPLATE:Construct

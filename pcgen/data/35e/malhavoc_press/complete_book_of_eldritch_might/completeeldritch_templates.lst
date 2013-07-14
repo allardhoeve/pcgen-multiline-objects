@@ -93,8 +93,8 @@ Magical Construct
 	SAB:Immune to mind-affecting effects/ poison/ disease/ death effects/ paralysis/ stunning/ sleep and similar effects
 	SAB:Not subject to critical hits/ nonlethal damage/ ability damage/ energy drain/ or death from massive damage
 	SAB:Destroyed when reduced to 0 hp, cannot be raised/resurrected
-	DEFINE:LOCK.CON|10
-	DEFINE:LOCK.INT|10
+	DEFINESTAT:NONSTAT|CON
+	DEFINESTAT:NONSTAT|INT
 	PREALIGN:LN,NG,TN,NE,CN
 	BONUS:ABILITYPOOL|Magical Construct Choice|1
 	BONUS:HP|CURRENTMAX|max((SIZE-2),0)*10
