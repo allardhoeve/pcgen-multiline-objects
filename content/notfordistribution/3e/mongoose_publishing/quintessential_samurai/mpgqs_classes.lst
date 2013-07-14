@@ -230,6 +230,8 @@ CLASS:Overseer
 5
 	ABILITY:Class Ability|AUTOMATIC|Fight As One ~ Overseer
 
+
+
 # Paragon
 CLASS:Paragon
 	SOURCEPAGE:p.21
