@@ -28,6 +28,7 @@ Kobolds Neighbor
 	SOURCEPAGE:p.9
 
 Carpenden Lobber
+	NAMEISPI:YES
 	CATEGORY:Special Ability
 	TYPE:Trait.RegionalTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Carpenden Lobber],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RegionalTrait]
@@ -36,6 +37,7 @@ Carpenden Lobber
 	SOURCEPAGE:p.19
 
 Carpenden Roof Runner
+	NAMEISPI:YES
 	CATEGORY:Special Ability
 	TYPE:Trait.RegionalTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Carpenden Roof Runner],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RegionalTrait]
@@ -44,6 +46,7 @@ Carpenden Roof Runner
 	SOURCEPAGE:p.19
 
 Oregent Desperation
+	NAMEISPI:YES
 	CATEGORY:Special Ability
 	TYPE:Trait.RegionalTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Oregent Desperation],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RegionalTrait]
@@ -52,6 +55,7 @@ Oregent Desperation
 	SOURCEPAGE:p.20
 
 Oregent Timing
+	NAMEISPI:YES
 	CATEGORY:Special Ability
 	TYPE:Trait.RegionalTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Oregent Timing],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RegionalTrait]
@@ -60,6 +64,7 @@ Oregent Timing
 	SOURCEPAGE:p.20
 
 Oregent Vandal
+	NAMEISPI:YES
 	CATEGORY:Special Ability
 	TYPE:Trait.RegionalTrait
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Oregent Vandal],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.RegionalTrait]
