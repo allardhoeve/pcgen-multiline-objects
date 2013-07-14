@@ -117,13 +117,13 @@ CLASS:Aegis
 1
 	ABILITY:Special Ability|AUTOMATIC|Form Astral Suit ~ Aegis|!PREABILITY:1,CATEGORY=Archetype,TYPE.AegisFormAstralSuit
 
+1
+	BONUS:VAR|AegisDR|floor((AegisDRLVL+4)/3)
+	ABILITY:Special Ability|AUTOMATIC|Damage Reduction ~ Aegis|PREMULT:2,[!PREABILITY:1,CATEGORY=Archetype,TYPE.AegisDamageReduction],[PREVARGTEQ:AegisDRLVL,2]
+
 2
 	BONUS:VAR|CraftsmanBonus|floor((CL+2)/4)
 	ABILITY:Special Ability|AUTOMATIC|Craftsman ~ Aegis|!PREABILITY:1,CATEGORY=Archetype,TYPE.AegisCraftsman
-
-2
-	BONUS:VAR|AegisDR|floor((AegisDRLVL+4)/3)
-	ABILITY:Special Ability|AUTOMATIC|Damage Reduction ~ Aegis|!PREABILITY:1,CATEGORY=Archetype,TYPE.AegisDamageReduction
 
 3
 	BONUS:VAR|ReconfigureTimes|floor((CL-1)/2)
@@ -1200,129 +1200,44 @@ CLASS:Vitalist
 
 
 
-# COMMENT: Try to actually make this an archetype -- see how eclipse handles adding spell lists.
-
-
-###Block: Gifted Blade
-CLASS:Gifted Blade
-	HD:10
-	TYPE:Base.Psionic.PC
-	MAXLEVEL:20
-	SOURCEPAGE:p.88
-	BONUS:CHECKS|BASE.Fortitude|CL/3
-	BONUS:CHECKS|BASE.Reflex,BASE.Will|CL/2+2
-	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
-	BONUS:VAR|PsiCrystalLVL|CL|PREFEAT:1,Psicrystal Affinity
-	SERVESAS:CLASS|Soulknife
-
-CLASS:Gifted Blade
-	STARTSKILLPTS:4
-	CSKILL:Acrobatics|Autohypnosis|Climb|TYPE=Craft|Intimidate|Knowledge (Psionics)|Perception|TYPE=Profession|Stealth|Swim
-
+###Block: Gifted Blade pseudo-class
 CLASS:Gifted Blade
 	SPELLSTAT:WIS
 	SPELLTYPE:Psionic
 	MEMORIZE:NO
 	BONUS:CASTERLEVEL|Gifted Blade|CL-2
-
-
-
-###Block: Gifted Blade Proficiencies
-1
-	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies
-
-1
-	AUTO:FEAT|Simple Weapon Proficiency|!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifeSimpleWeaponProficiency
-
-1
-	AUTO:FEAT|Armor Proficiency (Light)|!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifeLightArmorProficiency
-	AUTO:FEAT|Armor Proficiency (Medium)|!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifeMediumArmorProficiency
-	AUTO:FEAT|Shield Proficiency|!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifeShieldProficiency
-
-
-
-###Block: Gifted Blade Psionic Ability
-1
-	BONUS:VAR|GiftedBladeML|CL-2
-	BONUS:VAR|GiftedBladeML|var("BL=Gifted Blade")
-	BONUS:VAR|IsPsionic|1
-	DEFINE:GiftedBladeML|0
-	DEFINE:IsPsionic|0
-	ABILITY:Special Ability|AUTOMATIC|Psionic
-	DEFINE:ManifestingFromSoulknifeLevels|0
-	BONUS:VAR|ManifestingFromSoulknifeLevels|1
-
-1
-	BONUS:VAR|GiftedBladePL|GiftedBladeML+2
-	DEFINE:GiftedBladePL|0
-
-1
-	BONUS:VAR|BasePowerPoints|1|PREVARGTEQ:GiftedBladePL,4
-	BONUS:VAR|BasePowerPoints|1|PREVARGTEQ:GiftedBladePL,5
-	BONUS:VAR|BasePowerPoints|1|PREVARGTEQ:GiftedBladePL,6
-
-1
-	BONUS:VAR|BasePowerPoints|2|PREVARGTEQ:GiftedBladePL,7
-	BONUS:VAR|BasePowerPoints|2|PREVARGTEQ:GiftedBladePL,8
-	BONUS:VAR|BasePowerPoints|2|PREVARGTEQ:GiftedBladePL,9
-	BONUS:VAR|BasePowerPoints|2|PREVARGTEQ:GiftedBladePL,10
-
-1
-	BONUS:VAR|BasePowerPoints|3|PREVARGTEQ:GiftedBladePL,11
-	BONUS:VAR|BasePowerPoints|3|PREVARGTEQ:GiftedBladePL,12
-	BONUS:VAR|BasePowerPoints|3|PREVARGTEQ:GiftedBladePL,13
-
-1
-	BONUS:VAR|BasePowerPoints|4|PREVARGTEQ:GiftedBladePL,14
-	BONUS:VAR|BasePowerPoints|4|PREVARGTEQ:GiftedBladePL,15
-	BONUS:VAR|BasePowerPoints|4|PREVARGTEQ:GiftedBladePL,16
-
-1
-	BONUS:VAR|BasePowerPoints|5|PREVARGTEQ:GiftedBladePL,17
-	BONUS:VAR|BasePowerPoints|5|PREVARGTEQ:GiftedBladePL,18
-	BONUS:VAR|BasePowerPoints|5|PREVARGTEQ:GiftedBladePL,19
-	BONUS:VAR|BasePowerPoints|5|PREVARGTEQ:GiftedBladePL,20
-
-1
-	BONUS:VAR|BonusPowerPoints|(WIS*GiftedBladePL-2)/2|TYPE=GiftedBladeBonusPP|PREVARGTEQ:GiftedBladePL,3
+	TYPE:Psionic
+	VISIBLE:NO
 
 
 
 ###Block: Gifted Blade Powers Known
 3
 	KNOWN:0,1
-	DEFINE:GiftedBladePowersKnown|1
-	DEFINE:GiftedBladeMaxPowerLevel|1
 
 4
 	KNOWN:0,1
 
 5
 	KNOWN:0,2
-	BONUS:VAR|GiftedBladePowersKnown|1
 
 6
 	KNOWN:0,2
 
 7
 	KNOWN:0,2,1
-	BONUS:VAR|GiftedBladePowersKnown|1
-	BONUS:VAR|GiftedBladeMaxPowerLevel|1
 
 8
 	KNOWN:0,2,1
 
 9
 	KNOWN:0,2,2
-	BONUS:VAR|GiftedBladePowersKnown|1
 
 10
 	KNOWN:0,2,2
 
 11
 	KNOWN:0,2,2,1
-	BONUS:VAR|GiftedBladePowersKnown|1
-	BONUS:VAR|GiftedBladeMaxPowerLevel|1
 
 12
 	KNOWN:0,2,2,1
@@ -1332,18 +1247,15 @@ CLASS:Gifted Blade
 
 14
 	KNOWN:0,2,2,2
-	BONUS:VAR|GiftedBladePowersKnown|1
 
 15
 	KNOWN:0,2,2,2,0
-	BONUS:VAR|GiftedBladeMaxPowerLevel|1
 
 16
 	KNOWN:0,2,2,2,0
 
 17
 	KNOWN:0,2,2,2,1
-	BONUS:VAR|GiftedBladePowersKnown|1
 
 18
 	KNOWN:0,2,2,2,1
@@ -1353,43 +1265,4 @@ CLASS:Gifted Blade
 
 20
 	KNOWN:0,2,2,2,1
-
-
-
-###Block: Gifted Blade Mind Blade abilities by effective level
-# COMMENT: To add a PrC's class level to SK for mind blade powers,
-# COMMENT:   use BONUS:VAR|MndBladeLVL|x in the PrC's class level line setup
-
-
-1
-	BONUS:VAR|MndBladeLVL|CL
-	DEFINE:MndBladeLVL|0
-	ABILITY:Special Ability|AUTOMATIC|Form Mind Blade|!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifeFormMindBlade
-
-1
-	ABILITY:Special Ability|AUTOMATIC|Shape Mind Blade|!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifeShapeMindBlade
-
-1
-	ABILITY:Special Ability|AUTOMATIC|Throw Mind Blade|!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifeThrowMindBlade
-
-1
-	BONUS:ABILITYPOOL|Blade Skill|CL/2
-
-1
-	ABILITY:Special Ability|AUTOMATIC|Enhanced Mind Blade|PREMULT:2,[PREVARGTEQ:MndBladeLVL,3],[!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifeEnhancedMindBlade]
-
-5
-	ABILITY:Special Ability|AUTOMATIC|Quick Draw Mind Blade|!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifeQuickDrawMindBlade
-
-20
-	ABILITY:Special Ability|AUTOMATIC|Mind Blade Mastery|!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifeMindBladeMastery
-
-
-
-###Block: Gifted Blade Class Abilities
-1
-	BONUS:ABILITYPOOL|Soulknife Feat|1|!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifeBonusFeat
-
-1
-	TEMPLATE:Wild Talent Determination
 
