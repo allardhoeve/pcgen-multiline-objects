@@ -2719,7 +2719,7 @@ Demonic Familiar
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:The demonic apostle gains a familiar as a wizard equal to her cleric level, or if she already has a familiar, her cleric levels stack to determine the familiar's abilities. At 3rd level, her familiar gains the fiendish template (Bestiary 294). At 7th level, the demonic apostle exchanges her familiar for a quasit without the need to take the Improved Familiar feat.
 	DEFINE:DemonicFamiliarLVL|0
-	BONUS:DemonicFamiliarLVL|ClericLvl+FamiliarLVL
+	BONUS:VAR|DemonicFamiliarLVL|ClericLvl+FamiliarLVL
 	FOLLOWERS:Familiar|-2
 	FOLLOWERS:Demonic Familiar|1
 	COMPANIONLIST:Demonic Familiar|RACESUBTYPE=FamiliarBase|PREVARLT:DemonicFamiliarLVL,7

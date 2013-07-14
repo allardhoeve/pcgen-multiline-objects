@@ -241,7 +241,6 @@ FOLLOWER:DemonicFamiliarLVL=9
 	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK
 	DEFINESTAT:MINVALUE|INT|10
 
-# Locking INT to 10 makes it a non-ability.
 FOLLOWER:DemonicFamiliarLVL=11
 	TYPE:Demonic Familiar
 	SR:16
