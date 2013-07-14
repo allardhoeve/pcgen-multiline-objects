@@ -183,6 +183,7 @@ Eternal Hope
 	DESC:Gnomes rarely lose hope and are always confident that even hopeless situations will work out. Gnomes with this racial trait receive a +2 racial bonus on saving throws against fear and despair effects. Once per day, after rolling a 1 on a d20, the gnome may reroll and use the second result. This racial trait replaces the defensive training and hatred racial traits.
 	COST:0
 	SOURCEPAGE:p.15
+	ASPECT:SaveBonus|+2 racial bonus against fear and despair effects
 
 Gift of Tongues
 	KEY:Gift of Tongues ~ Gnome
