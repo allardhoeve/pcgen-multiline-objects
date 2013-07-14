@@ -557,6 +557,7 @@ Frost
 	VISIBLE:QUALIFY
 	SOURCEPAGE:p.347
 	SPROP:unarmed and natural attacks do +1d6 cold damage
+	ABILITY:Special Ability|AUTOMATIC|Unarmed Frost
 
 Ghost Touch
 	KEY:GHOST_AMF
