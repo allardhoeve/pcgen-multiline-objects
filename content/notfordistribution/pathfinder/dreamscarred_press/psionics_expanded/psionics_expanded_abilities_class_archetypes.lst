@@ -2298,6 +2298,7 @@ Gifted Blade
 	COST:0
 	SOURCEPAGE:p.88
 	ADD:SPELLCASTER|Gifted Blade
+	BONUS:PCLEVEL|Gifted Blade|var("GiftedBladePKL")-3
 
 Nimble Blade
 	KEY:Soulknife Archetype ~ Nimble Blade
@@ -2471,21 +2472,10 @@ Quick Empower
 
 
 
-# TODO: Get that caster level down to level-2 (it's not wanting to subtract the 2)
-# TODO: Get rid of variable display
-
-
 ###Block: Gifted Blade Soulknife archetype abilities
 Gifted Blade Manifesting ~ Gifted Blade
 	CATEGORY:Internal
 	ABILITY:Internal|AUTOMATIC|Gifted Blade Manifester Level|Gifted Blade Power Points|Gifted Blade Powers Known|Gifted Blade Maximum Power Level
-	ABILITY:Special Ability|AUTOMATIC|Gifted Blade Display|Initial Gifted Blade Psionics Level
-
-Initial Gifted Blade Psionics Level
-	CATEGORY:Special Ability
-	TYPE:SpecialQuality
-	BONUS:PCLEVEL|Gifted Blade|var("GiftedBladePKL")-1
-	BONUS:CASTERLEVEL|Gifted Blade|-2
 
 Gifted Blade Manifester Level
 	CATEGORY:Internal
@@ -2521,11 +2511,6 @@ Gifted Blade Maximum Power Level
 	BONUS:VAR|GiftedBladeMPLKL|classlevel("Soulknife")+var("BL=Soulknife")
 	DEFINE:GiftedBladeMaxPowerLevel|0
 	BONUS:VAR|GiftedBladeMaxPowerLevel|min(4,(GiftedBladeMPLKL+1)/4)
-
-Gifted Blade Display
-	CATEGORY:Special Ability
-	TYPE:SpecialQuality
-	DESC:GiftedBladeML: %1  GiftedBladePL: %2  GiftedBladePKL: %3  GiftedBladeMPLKL: %4  MaximumManifesterLVL: %5  GiftedBladePowersKnown: %6  GiftedBladeMaxPowerLevel: %7|GiftedBladeML|GiftedBladePL|GiftedBladePKL|GiftedBladeMPLKL|MaximumManifesterLVL|GiftedBladePowersKnown|GiftedBladeMaxPowerLevel
 
 
 

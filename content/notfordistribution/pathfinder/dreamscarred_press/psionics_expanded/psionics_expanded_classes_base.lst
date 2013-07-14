@@ -1205,64 +1205,64 @@ CLASS:Gifted Blade
 	SPELLSTAT:WIS
 	SPELLTYPE:Psionic
 	MEMORIZE:NO
-	BONUS:CASTERLEVEL|Gifted Blade|CL-2
+	BONUS:CASTERLEVEL|Gifted Blade|CL
 	TYPE:Psionic
 	VISIBLE:NO
 
 
 
 ###Block: Gifted Blade Powers Known
-3
+1
 	KNOWN:0,1
+
+2
+	KNOWN:0,1
+
+3
+	KNOWN:0,2
 
 4
-	KNOWN:0,1
+	KNOWN:0,2
 
 5
-	KNOWN:0,2
+	KNOWN:0,2,1
 
 6
-	KNOWN:0,2
+	KNOWN:0,2,1
 
 7
-	KNOWN:0,2,1
+	KNOWN:0,2,2
 
 8
-	KNOWN:0,2,1
+	KNOWN:0,2,2
 
 9
-	KNOWN:0,2,2
+	KNOWN:0,2,2,1
 
 10
-	KNOWN:0,2,2
+	KNOWN:0,2,2,1
 
 11
 	KNOWN:0,2,2,1
 
 12
-	KNOWN:0,2,2,1
-
-13
-	KNOWN:0,2,2,1
-
-14
 	KNOWN:0,2,2,2
 
-15
+13
 	KNOWN:0,2,2,2,0
 
-16
+14
 	KNOWN:0,2,2,2,0
+
+15
+	KNOWN:0,2,2,2,1
+
+16
+	KNOWN:0,2,2,2,1
 
 17
 	KNOWN:0,2,2,2,1
 
 18
-	KNOWN:0,2,2,2,1
-
-19
-	KNOWN:0,2,2,2,1
-
-20
 	KNOWN:0,2,2,2,1
 
