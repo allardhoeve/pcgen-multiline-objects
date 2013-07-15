@@ -620,10 +620,11 @@ Holy Text (Expensive)
 Lantern (Hooded).MOD
 	SOURCEPAGE:p.67
 
-Hourglass (6 Seconds)
+Hourglass (6 Seconds).MOD
 	OUTPUTNAME:Hourglass, 6 Seconds
-	TYPE:Goods.General
 	COST:10
+	SOURCELONG:Ultimate Equipment
+	SOURCESHORT:UE
 	SOURCEPAGE:p.67
 
 Hourglass.MOD
@@ -632,10 +633,12 @@ Hourglass.MOD
 	WT:0.5
 	SOURCEPAGE:p.67
 
-Hourglass (1 Hour)
+Hourglass (1 Hour).MOD
 	OUTPUTNAME:Hourglass, 1 Hour
 	COST:25
 	WT:1
+	SOURCELONG:Ultimate Equipment
+	SOURCESHORT:UE
 	SOURCEPAGE:p.67
 
 Ink (1 oz Vial).MOD

@@ -241,10 +241,11 @@ Mending Paste
 	WT:0.5
 	SOURCEPAGE:p.104
 
-Nushadir
-	TYPE:Goods.Alchemical.Consumable
+Nushadir (Vial).MOD
 	COST:10
 	WT:1
+	SOURCELONG:Ultimate Equipment
+	SOURCESHORT:UE
 	SOURCEPAGE:p.104
 
 Rusting Powder
