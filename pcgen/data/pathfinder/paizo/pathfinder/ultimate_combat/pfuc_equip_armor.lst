@@ -3,7 +3,7 @@
 
 ###Block: Eastern Armor
 # Light
-# Equipment Name		Required Armor Proficiency			Type						Cost		Weight	AC Penalty Check	Maximum DEX Bonus	% of Spell Failure	Combat bonus
+# Equipment Name		Required Armor Proficiency			Type									Cost		Weight	AC Penalty Check	Maximum DEX Bonus	% of Spell Failure	Combat bonus
 Haramaki
 	PROFICIENCY:ARMOR|Haramaki
 	TYPE:Armor.Light.Suit.Standard
@@ -15,6 +15,7 @@ Haramaki
 Silken Ceremonial Armor
 	PROFICIENCY:ARMOR|Silken Ceremonial Armor
 	TYPE:Armor.Light.Suit.Standard
+	EQMOD:CLOTH
 	COST:30
 	WT:4
 	SPELLFAILURE:0
@@ -23,6 +24,7 @@ Silken Ceremonial Armor
 Lamellar Cuirass
 	PROFICIENCY:ARMOR|Lamellar Cuirass
 	TYPE:Armor.Light.Suit.Standard
+	EQMOD:LEATHER
 	COST:15
 	WT:8
 	MAXDEX:4
@@ -32,6 +34,7 @@ Lamellar Cuirass
 Lamellar (Leather)
 	PROFICIENCY:ARMOR|Lamellar (Leather)
 	TYPE:Armor.Light.Suit.Standard
+	EQMOD:LEATHER
 	COST:60
 	WT:25
 	ACCHECK:-2
@@ -85,6 +88,7 @@ Four-mirror Armor
 Lamellar (Steel)
 	PROFICIENCY:ARMOR|Lamellar (Steel)
 	TYPE:Armor.Medium.Suit.Standard
+	EQMOD:STEEL
 	COST:150
 	WT:35
 	ACCHECK:-5
@@ -118,6 +122,7 @@ Kasari Gusoku
 Lamellar (Iron)
 	PROFICIENCY:ARMOR|Lamellar (Iron)
 	TYPE:Armor.Heavy.Suit.Standard
+	EQMOD:IRON
 	COST:200
 	WT:50
 	ACCHECK:-7
