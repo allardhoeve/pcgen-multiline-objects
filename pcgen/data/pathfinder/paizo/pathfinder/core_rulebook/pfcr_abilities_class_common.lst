@@ -31,7 +31,7 @@ Touch Attack (Ray)
 	BONUS:VAR|RayAttackBonus|1|PREFEAT:1,Weapon Focus (Spells (Ray))
 	BONUS:VAR|RayThreatRange|20
 	BONUS:VAR|RayThreatRange|-1|PREFEAT:1,Improved Critical (Spells (Ray))
-	BONUS:VAR|RayAttackBonus|BAB+DEX
+	BONUS:VAR|RayAttackBonus|BAB+DEX+AttackBonusSize
 	COST:0
 	ASPECT:NaturalAttackName|Touch Attack (Ray)
 	ASPECT:NaturalAttackToHit|+%1|RayAttackBonus
@@ -40,6 +40,18 @@ Touch Attack (Ray)
 	ASPECT:NaturalAttackThreatRange|%1|RayThreatRange
 	ASPECT:NaturalAttackDamage|As Spell
 	ASPECT:NaturalAttackCritMult|/x%1|RayCritMult
+	DEFINE:AttackBonusSize|0
+	BONUS:VAR|AttackBonusSize|8|PRESIZEEQ:F
+	BONUS:VAR|AttackBonusSize|4|PRESIZEEQ:D
+	BONUS:VAR|AttackBonusSize|2|PRESIZEEQ:T
+	BONUS:VAR|AttackBonusSize|1|PRESIZEEQ:S
+	BONUS:VAR|AttackBonusSize|0|PRESIZEEQ:M
+	BONUS:VAR|AttackBonusSize|-1|PRESIZEEQ:L
+	BONUS:VAR|AttackBonusSize|-2|PRESIZEEQ:H
+	BONUS:VAR|AttackBonusSize|-4|PRESIZEEQ:G
+	BONUS:VAR|AttackBonusSize|-8|PRESIZEEQ:C
+
+
 
 
 
