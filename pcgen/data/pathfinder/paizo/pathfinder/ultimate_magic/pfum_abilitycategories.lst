@@ -476,12 +476,6 @@ ABILITYCATEGORY:Wood Opposition School Choice
 	PLURAL:Wood Opposition School Choice
 	DISPLAYLOCATION:Class Abilities
 
-
-
-
-
-
-
 ABILITYCATEGORY:Eldritch Heritage Bloodline Choice
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -490,8 +484,6 @@ ABILITYCATEGORY:Eldritch Heritage Bloodline Choice
 	CATEGORY:Special Ability
 	TYPE:EldritchHeritageSelection
 	DISPLAYLOCATION:Feats
-
-
 
 
 
@@ -556,19 +548,6 @@ ABILITYCATEGORY:Crossblooded Feat
 	TYPE:CrossbloodlineFeat
 	PLURAL:Crossblooded Feats
 	DISPLAYLOCATION:Class Abilities
-
-
-
-ABILITYCATEGORY:Magus Weapon Special Ability
-	VISIBLE:QUALIFY
-	EDITABLE:YES
-	EDITPOOL:YES
-	FRACTIONALPOOL:NO
-	CATEGORY:Internal
-	TYPE:MagusWeaponSA
-	DISPLAYLOCATION:Class Abilities
-
-
 
 
 
