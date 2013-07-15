@@ -26,7 +26,7 @@ Merform Belt Merfolk Form
 
 
 ###Block: Modifier to make Splash Weapon proficiency available to all classes
-All Automatic Proficiencies.MOD
+CATEGORY=Special Ability|All Automatic Proficiencies.MOD
 	AUTO:WEAPONPROF|Splash Weapon
 
 

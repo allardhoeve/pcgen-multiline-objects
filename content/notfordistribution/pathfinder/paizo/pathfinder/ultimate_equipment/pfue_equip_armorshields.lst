@@ -43,8 +43,8 @@ Quilted Cloth
 	SPELLFAILURE:10
 	BONUS:COMBAT|AC|1|TYPE=Armor
 
-Silken Ceremonial
-	PROFICIENCY:ARMOR|Silken Ceremonial
+Silken Ceremonial Armor
+	PROFICIENCY:ARMOR|Silken Ceremonial Armor
 	TYPE:Armor.Suit.Standard.Light
 	COST:30
 	WT:4
@@ -175,6 +175,7 @@ Lamellar (Horn)
 	COST:100
 	WT:30
 	ACCHECK:-4
+	EQMOD:BONE
 	MAXDEX:3
 	SOURCEPAGE:p.12
 	SPELLFAILURE:25
@@ -614,7 +615,7 @@ Barding (Lemellar/Horn)
 	COST:200
 	WT:30
 	ACCHECK:-4
-	EQMOD:HORN
+	EQMOD:BONE
 	MAXDEX:3
 	SOURCEPAGE:p.80
 	SPELLFAILURE:25
@@ -870,7 +871,7 @@ Barding (Mountain Pattern).COPY=Barding (Mountain Pattern/Large)
 	WT:80
 
 #------Heavy---------
-Barding (Splint Mail).MOD.COPY=Barding (Splint Mail/Large)
+Barding (Splint Mail).COPY=Barding (Splint Mail/Large)
 	COST:800
 	WT:90
 
@@ -894,7 +895,7 @@ Barding (Agile Half-Plate).COPY=Barding (Agile Half-Plate/Large)
 	COST:3400
 	WT:110
 
-Barding (Half-Plate).MOD.COPY=Barding (Half-Plate/Large).MOD
+Barding (Half-Plate).COPY=Barding (Half-Plate/Large).MOD
 	COST:2400
 	WT:100
 
@@ -906,7 +907,7 @@ Barding (O-yoroi).COPY=Barding (O-yoroi/Large)
 	COST:6800
 	WT:90
 
-Barding (Full Plate).MOD.COPY=Barding (Full Plate/Large)
+Barding (Full Plate).COPY=Barding (Full Plate/Large)
 	COST:6000
 	WT:90
 
