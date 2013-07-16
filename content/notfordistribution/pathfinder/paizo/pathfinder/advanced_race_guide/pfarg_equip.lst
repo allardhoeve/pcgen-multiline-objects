@@ -521,7 +521,7 @@ Halo of Menace
 # Equipment Name		Output Name					Required Weapon Proficiency	Type									Cost		Weight	Base Item for EQMOD		Critical Hit Multiplier	Critical Hit Range	Damage	Modifier		Wield Category	Requires Modification?	Size		Source Page		Weapon prop. bonus				Special Property
 Claw Blades (Catfolk)
 	OUTPUTNAME:Claw Blades, Catfolk
-	PROFICIENCY:WEAPON|ClawBlades
+	PROFICIENCY:WEAPON|Claw Blades (Catfolk)
 	TYPE:Weapon.Light.Melee.Piercing.Slashing.Finessable
 	COST:305
 	WT:2
@@ -568,7 +568,7 @@ Rending Claw Blades
 	TYPE:Weapon.Light.Melee.Piercing.Slashing.Finessable
 	COST:10305
 	WT:1
-	BASEITEM:Claw Blades (Catfolk
+	BASEITEM:Claw Blades (Catfolk)
 	EQMOD:PLUS1W.KEEN
 	SOURCEPAGE:p.95
 	SPROP:When making a full attack with claws, if the wielder hits the same target with this weapon and a different claw attack or set of claw blades, he deals an extra 1d4 damage plus 1-1/2 times his Strength bonus. The wearer can deal this extra damage no more than once per round.
@@ -995,7 +995,7 @@ Trapmaker's Sack
 # Equipment Name			Output Name						Required Weapon Proficiency			Type													Cost		Weight	Critical Hit Multiplier	Critical Hit Range	Damage	Wield Category	Special Property
 Tail Attachment (Long Lash)
 	OUTPUTNAME:Tail Attachment, Long Lash
-	PROFICIENCY:WEAPON|KoboldTailAttachment
+	PROFICIENCY:WEAPON|Kobold Tail Attachment
 	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Slashing.Reach.Finessable
 	COST:15
 	WT:1
@@ -1007,7 +1007,7 @@ Tail Attachment (Long Lash)
 
 Tail Attachment (Pounder)
 	OUTPUTNAME:Tail Attachment, Pounder
-	PROFICIENCY:WEAPON|KoboldTailAttachment
+	PROFICIENCY:WEAPON|Kobold Tail Attachment
 	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Bludgeoning.Finessable
 	COST:1
 	WT:4
@@ -1019,7 +1019,7 @@ Tail Attachment (Pounder)
 
 Tail Attachment (Razored)
 	OUTPUTNAME:Tail Attachment, Razored
-	PROFICIENCY:WEAPON|KoboldTailAttachment
+	PROFICIENCY:WEAPON|Kobold Tail Attachment
 	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Slashing.Finessable
 	COST:3
 	WT:2
@@ -1031,7 +1031,7 @@ Tail Attachment (Razored)
 
 Tail Attachment (Spiked)
 	OUTPUTNAME:Tail Attachment, Spiked
-	PROFICIENCY:WEAPON|KoboldTailAttachment
+	PROFICIENCY:WEAPON|Kobold Tail Attachment
 	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Piercing.Finessable
 	COST:3
 	WT:2
@@ -1043,7 +1043,7 @@ Tail Attachment (Spiked)
 
 Tail Attachment (Sweeper)
 	OUTPUTNAME:Tail Attachment, Sweeper
-	PROFICIENCY:WEAPON|KoboldTailAttachment
+	PROFICIENCY:WEAPON|Kobold Tail Attachment
 	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Bludgeoning.Trip.Finessable
 	COST:7
 	WT:3
@@ -1419,7 +1419,7 @@ Spellscorch (Poison)
 ###Block: Gillmen Equipment
 # Equipment Name	Required Weapon Proficiency	Type										Cost		Weight	Critical Hit Multiplier	Critical Hit Range	Damage	Wield Category	Size		Source Page		Combat bonus					Special Property
 Sea-Knife
-	PROFICIENCY:WEAPON|SeaKnife
+	PROFICIENCY:WEAPON|Sea-Knife
 	TYPE:Weapon.Light.Melee.Piercing.Slashing.Exotic.Finessable
 	COST:8
 	WT:1
