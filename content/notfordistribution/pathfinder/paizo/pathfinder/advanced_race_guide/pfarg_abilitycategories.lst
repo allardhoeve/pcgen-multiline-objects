@@ -433,7 +433,25 @@ ABILITYCATEGORY:Plant Bond Option
 	PLURAL:Plant Bond Options
 	DISPLAYLOCATION:Class Abilities
 
+ABILITYCATEGORY:Augmented Form Selection
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:AugmentedFormSelection
+	PLURAL:Augmented Form Selections
+	DISPLAYLOCATION:Class Abilities
 
+ABILITYCATEGORY:Native Cunning Option
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:NativeCunningOption
+	PLURAL:Native Cunning Options
+	DISPLAYLOCATION:Class Abilities
 
 #
 # End

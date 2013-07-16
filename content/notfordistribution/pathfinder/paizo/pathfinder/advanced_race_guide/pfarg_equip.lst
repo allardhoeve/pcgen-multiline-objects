@@ -1084,6 +1084,16 @@ Bonebreaker Gauntlets
 	SOURCEPAGE:p.142
 	SPROP:Once per day, as part of a melee attack, the wearer can activate the gauntlets to inflict a horrific injury on an opponent. If the attack hits, the target must make a DC 14 Will save. If the save fails, the gauntlets reduce the target's Strength, Dexterity, or Constitution (wearer's choice) by 6.
 
+Fetish Mask
+	TYPE:Magic.Wondrous.Headgear
+	COST:0
+	SOURCEPAGE:p.140
+	SPROP:A Scarred Witch Doctor forms a bond with a wooden mask.
+	BONUS:SKILL|Heal,Intimidate|2
+	ASPECT:SaveBonus|+2 vs Pain
+	PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Scarred Witch Doctor
+	VISIBLE:QUALIFY
+
 
 
 ###Block: Oread Equipment

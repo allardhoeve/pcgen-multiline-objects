@@ -655,8 +655,11 @@ Spell Bond
 	KEY:Spell Bond ~ Spellbinder
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
-	DESC:A spellbinder selects any one spell that he knows as a bonded spell. As a full-round action, the spellbinder may replace a spell of the same or higher level as his bonded spell with his bonded spell. For example, a spellbinder who selects magic missile as his bonded spell could spend a full-round action to exchange any 1st-level or higher spell that he has prepared with magic missile.
-	BONUS:ABILITYPOOL|SpellbinderBondedSpell|1+(WizardLvl-1)/2
+	SPELLS:Bonded|TIMES=ATWILL|CASTERLEVEL=WizardLvl|%CHOICE
+	DESC:The spellbinder selects any one spell that he knows as a bonded spell. As a full-round action, the spellbinder may replace a spell of the same or higher level as his bonded spell with his bonded spell.
+	SELECT:1+(WizardLvl-1)/2
+	MULT:YES
+	CHOOSE:SPELLS|ALL[KNOWN=YES]
 	SOURCEPAGE:p.25
 
 Discoveries
@@ -664,16 +667,6 @@ Discoveries
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:The following discoveries complement the spellbinder archetype: Fast Study, Split Slot (Ultimate Magic).
-	SOURCEPAGE:p.25
-
-Bonded Spell
-	KEY:Bonded Spell ~ Spellbinder
-	CATEGORY:Special Ability
-	TYPE:SpecialQuality.SpellbinderBondedSpell
-	SPELLS:Bonded|TIMES=ATWILL|CASTERLEVEL=WizardLvl|%CHOICE
-	DESC:The spellbinder selects any one spell that he knows as a bonded spell. As a full-round action, the spellbinder may replace a spell of the same or higher level as his bonded spell with his bonded spell.
-	MULT:YES
-	CHOOSE:SPELLS|ALL[KNOWN=YES]
 	SOURCEPAGE:p.25
 
 
@@ -787,7 +780,7 @@ Innovations
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:An Experimental Gunsmith starts play with one innovation she can make to her experimental firearms, selected from the list below. This innovation is a radical change to the typical design of a firearm, and comes with both additional benefits and noteworthy drawbacks. The Experimental Gunsmith can maintain only one experimental firearm modified with one or more innovations, as it requires constant adjustments and much of her time is spent maintaining the weapon. If the Experimental Gunsmith takes the Gunsmithing feat, she can create other firearms using a single innovation she knows (or add one innovation to an existing firearm), though such weapons become unreliable over time. The misfire value of such weapons increases by 1 for each week after its creation, although the Experimental Gunsmith can return the misfire rate to normal by spending 1 day maintaining the weapon and spending 50 gp in raw materials. For the purposes of crafting such firearms, each innovation is treated as the masterwork weapon quality (with a value of 300 gp).
-	BONUS:ABILITYPOOL|ExperimentalGunsmithInnovation|(classlevel("Gunslinger")+3)/4
+	BONUS:ABILITYPOOL|Experimental Gunsmith Innovation|(classlevel("Gunslinger")+3)/4
 	SOURCEPAGE:p.34
 
 
@@ -1103,7 +1096,7 @@ Eidolon
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:The eidolon of a wild caller tends to take more natural and more savage forms than other summoners' eidolons. A wild caller gains 1/4 his class level as bonus evolution points in his eidolon's evolution pool, but his eidolon cannot take the following evolutions: magic attacks, skilled (while the eidolon can select this evolution, it can only do so with the following skills: Acrobatics, Climb, Escape Artist, Fly, Intimidate, Perception, Survival, and Swim), energy attacks, immunity, weapon training, damage reduction, frightful presence, breath weapon, spell resistance, basic magic, unnatural aura, channel resistance, head, minor magic, undead appearance, major magic, dimension door, incorporeal form, lifesense, no breath, ultimate magic.
 	DEFINE:EidolonEP|0
-	BONUS:EidolonEP|SummonerLVL
+	BONUS:VAR|EidolonEP|SummonerLVL
 	SOURCEPAGE:p.45
 
 Summon Nature's Ally I
@@ -1270,7 +1263,7 @@ Rage Power
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:A blood god disciple selects a barbarian rage power, which he may use when raging (whether from the avatar gambit ability or actual barbarian rage).
-	BONUS:ABILITYPOOL|BarbarianRagePower|1
+	BONUS:ABILITYPOOL|Barbarian Rage Power|1
 	SOURCEPAGE:p.54
 
 
@@ -1808,7 +1801,7 @@ Captain's Curse
 	KEY:Captain's Curse 1 ~ Buccaneer
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.SpellLike
-	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=GunslingerLvl|Old Salt's Curse|10+GunslingerLvl+CHA
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=GunslingerLvl|Old Salt's Curse,10+GunslingerLvl+CHA
 	DESC:A buccaneer can spend 2 grit points to use old salt's curse as a spell-like ability. The caster level for this spell-like ability is equal to %1, and the save DC is equal to %2.|GunslingerLvl|10+GunslingerLvl+CHA
 	SOURCEPAGE:p.74
 
@@ -1816,7 +1809,7 @@ Captain's Curse
 	KEY:Captain's Curse 2 ~ Buccaneer
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.SpellLike
-	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=GunslingerLvl|Black Mark|10+GunslingerLvl+CHA
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=GunslingerLvl|Black Mark,10+GunslingerLvl+CHA
 	DESC:A buccaneer can spend 2 grit points to use black mark as a spell-like ability. The caster level for this spell-like ability is equal to %1, and the save DC is equal to %2.|GunslingerLvl|10+GunslingerLvl+CHA
 	SOURCEPAGE:p.74
 
@@ -1849,7 +1842,7 @@ Exotic Pet
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DEFINE:ExoticPetLVL|0
-	BONUS:ExoticPetLVL|GunslingerLVL/2
+	BONUS:VAR|ExoticPetLVL|GunslingerLVL/2
 	DESC:A buccaneer gains a familiar as a wizard of half the buccaneer's class level (though the exotic pet never gains the ability to deliver touch spells or share spells). This pet is typically a monkey or parrot (use the stats for a raven familiar). Such animals are useful scouts, even in the thick of combat. As long as the pet is within 30 feet of the buccaneer, the buccaneer also gains the benefit of evasion.
 	FOLLOWERS:Exotic Pet|1
 	COMPANIONLIST:Exotic Pet|Familiar (Parrot),Familiar (Monkey)
@@ -2720,7 +2713,7 @@ Demonic Familiar
 	DESC:The demonic apostle gains a familiar as a wizard equal to her cleric level, or if she already has a familiar, her cleric levels stack to determine the familiar's abilities. At 3rd level, her familiar gains the fiendish template (Bestiary 294). At 7th level, the demonic apostle exchanges her familiar for a quasit without the need to take the Improved Familiar feat.
 	DEFINE:DemonicFamiliarLVL|0
 	BONUS:VAR|DemonicFamiliarLVL|ClericLvl+FamiliarLVL
-	FOLLOWERS:Familiar|-2
+	BONUS:FOLLOWERS|Familiar|-1
 	FOLLOWERS:Demonic Familiar|1
 	COMPANIONLIST:Demonic Familiar|RACESUBTYPE=FamiliarBase|PREVARLT:DemonicFamiliarLVL,7
 	COMPANIONLIST:Demonic Familiar|Familiar (Quasit)|PREVARGTEQ:DemonicFamiliarLVL,7
@@ -3032,9 +3025,9 @@ Flame Heart
 Fell Rider
 	KEY:Cavalier Archetype ~ Fell Rider
 	CATEGORY:Archetype
-	TYPE:Archetype.CavalierArchetype.CavalierCharge.CavalierExpertTrainer.CavalierBanner.CavalierMightyCharge.CavalierGreaterBanner.CavalierSupremeCharge
+	TYPE:Archetype.CavalierArchetype.CavalierMount.CavalierCharge.CavalierExpertTrainer.CavalierBanner.CavalierMightyCharge.CavalierGreaterBanner.CavalierSupremeCharge
 	PRECLASS:1,Cavalier=1
-	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cavalier Archetype ~ Fell Rider],[!PREABILITY:1,CATEGORY=Archetype,TYPE.CavalierCharge,TYPE.CavalierExpertTrainer,TYPE.CavalierBanner,TYPE.CavalierMightyCharge,TYPE.CavalierGreaterBanner,TYPE.CavalierSupremeCharge]
+	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cavalier Archetype ~ Fell Rider],[!PREABILITY:1,CATEGORY=Archetype,TYPE.CavalierMount,TYPE.CavalierCharge,TYPE.CavalierExpertTrainer,TYPE.CavalierBanner,TYPE.CavalierMightyCharge,TYPE.CavalierGreaterBanner,TYPE.CavalierSupremeCharge]
 	PRERACE:1,Hobgoblin
 	DESC:The fell rider rides a bestial steed, a mount mastered by him alone. He tramples his enemies down, leaving twisted bodies in his wake, and fear rides with him.
 	ABILITY:Special Ability|AUTOMATIC|Brute Steed ~ Fell Rider|PRECLASS:1,Cavalier=1
@@ -3053,10 +3046,9 @@ Brute Steed
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:A fell rider's mount is unusually large and fierce. It gains a +2 bonus to Strength, but takes a -2 penalty to Dexterity. This otherwise works like the cavalier's mount ability and alters that ability.
-	FOLLOWERS:Special Mount|1
-	COMPANIONLIST:Special Mount|Brute Steed (Camel),Brute Steed (Horse)
-	DEFINE:SpecialMountLVL|0
-	BONUS:VAR|SpecialMountLVL|CavalierLvl
+	DEFINE:CavalierMountLVL|0
+	FOLLOWERS:Cavalier Mount|1
+	COMPANIONLIST:Cavalier Mount|Brute Steed (Camel),Brute Steed (Horse)
 	SOURCEPAGE:p.122
 
 Rampage
@@ -3533,7 +3525,7 @@ Maneuver Training
 	KEY:Maneuver Training ~ Dirty Fighter
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
-	DESC:The dirty fighter becomes a master of dirty tricks. He gains a +2 bonus on dirty trick combat maneuver checks (Advanced Player's Guide 320) and +2 to his CMD when he is the target of a dirty trick combat maneuver.
+	DESC:The dirty fighter becomes a master of dirty tricks. He gains a +2 bonus on dirty trick combat maneuver checks and +2 to his CMD when he is the target of a dirty trick combat maneuver.
 	BONUS:VAR|CMB_DirtyTricks,CMD_DirtyTricks|2
 	SOURCEPAGE:p.140
 
@@ -3562,7 +3554,7 @@ Scarred Witch Doctor
 	PRECLASS:1,Witch=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Scarred Witch Doctor],[!PREABILITY:1,CATEGORY=Archetype,TYPE.WitchFamiliar,TYPE.WitchHex1]
 	PRERACE:1,Orc
-	DESC:The scarred witch doctor draws power from her ability to endure pain and suffering. She mutilates her own f lesh, inf licting horrific scars, in order to attract the attention of her patron. Rather than call forth a familiar, she creates a repulsive fetish mask that she uses as a repository for her power. A scarred witch doctor has the following class features.
+	DESC:The scarred witch doctor draws power from her ability to endure pain and suffering. She mutilates her own f lesh, inf licting horrific scars, in order to attract the attention of her patron. Rather than call forth a familiar, she creates a repulsive fetish mask that she uses as a repository for her power.
 	ABILITY:Special Ability|AUTOMATIC|Constitution Dependent ~ Scarred Witch Doctor|PRECLASS:1,Witch=1
 	ABILITY:Special Ability|AUTOMATIC|Hex Scar ~ Scarred Witch Doctor|PRECLASS:1,Witch=1
 	ABILITY:Special Ability|AUTOMATIC|Fetish Mask 1 ~ Scarred Witch Doctor|PRECLASS:1,Witch=1
@@ -3594,12 +3586,11 @@ Fetish Mask
 	KEY:Fetish Mask 1 ~ Scarred Witch Doctor
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
-	DESC:A scarred witch doctor forms a bond with a wooden mask. As she gains power, her connection to this mask causes it to grow ever more hideous and grotesque as it absorbs the weight of the self-induced pain that underlies her magic. Her spells derive from the insights her patron grants her while she's enduring the cuts, burns, and other sorts of mutilations she inflicts upon herself. Her fetish mask acts in all ways like a witch's familiar for the purpose of preparing and gaining spells. Rather than communing with a familiar to prepare spells each day, a scarred witch doctor hangs her mask on a wall, tree branch, or something similar and contemplates the agony it represents. When wearing her fetish mask, a scarred witch doctor gains a +2 circumstance bonus on Heal and Intimidate checks and gains a +2 bonus on saving throws against effects that specifically cause pain or have the pain descriptor. If the mask is destroyed, the witch doctor can create another fetish mask (which almost immediately adopts the shocking appearance of the original) for the same price and time it takes a witch to replace a dead familiar. At 5th level, the scarred witch doctor gains the ability to add magical abilities to her mask as if she had the Craft Wondrous Item feat..
+	DESC:A scarred witch doctor forms a bond with a wooden mask. As she gains power, her connection to this mask causes it to grow ever more hideous and grotesque as it absorbs the weight of the self-induced pain that underlies her magic. Her spells derive from the insights her patron grants her while she's enduring the cuts, burns, and other sorts of mutilations she inflicts upon herself. Her fetish mask acts in all ways like a witch's familiar for the purpose of preparing and gaining spells. Rather than communing with a familiar to prepare spells each day, a scarred witch doctor hangs her mask on a wall, tree branch, or something similar and contemplates the agony it represents. When wearing her fetish mask, a scarred witch doctor gains a +2 circumstance bonus on Heal and Intimidate checks and gains a +2 bonus on saving throws against effects that specifically cause pain or have the pain descriptor. If the mask is destroyed, the witch doctor can create another fetish mask (which almost immediately adopts the shocking appearance of the original) for the same price and time it takes a witch to replace a dead familiar.
 	AUTO:EQUIP|Fetish Mask
 	BONUS:FOLLOWERS|Familiar|-1
 	SOURCEPAGE:p.140
 
-# Implement: must be able to add abilities to fetish mask
 Fetish Mask
 	KEY:Fetish Mask 2 ~ Scarred Witch Doctor
 	CATEGORY:Special Ability
@@ -3618,21 +3609,21 @@ Hexes
 	KEY:Hexes ~ Scarred Witch Doctor
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
-	DESC:The following hexes complement the scarred witch doctor archetype: evil eye, misfortune (Advanced Player's Guide); scar, unnerve beasts (Ultimate Magic).
+	DESC:The following hexes complement the scarred witch doctor archetype: evil eye, misfortune, scar, unnerve beasts.
 	SOURCEPAGE:p.141
 
 Major Hexes
 	KEY:Major Hexes ~ Scarred Witch Doctor
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
-	DESC:The following major hexes complement the scarred witch doctor archetype: agony, nightmare (Advanced Player's Guide); cook people, infected wounds (Ultimate Magic).
+	DESC:The following major hexes complement the scarred witch doctor archetype: agony, nightmare, cook people, infected wounds.
 	SOURCEPAGE:p.141
 
 Grand Hexes
 	KEY:Grand Hexes ~ Scarred Witch Doctor
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
-	DESC:The following grand hexes complement the scarred witch doctor archetype: death curse, natural disaster (Advanced Player's Guide); dire prophecy (Ultimate Magic).
+	DESC:The following grand hexes complement the scarred witch doctor archetype: death curse, natural disaster, dire prophecy.
 	SOURCEPAGE:p.141
 
 
@@ -3663,7 +3654,7 @@ Base Form
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:At 1st level, if a shaitan binder's eidolon has the biped base form, it gains a +2 bonus to one ability score. The shaitan binder must make this choice at 1st level. If at any time the shaitan binder's eidolon has another base form, it loses this bonus until it returns to biped form. A shaitan binder's eidolon does not gain the share spells ability.
 	DEFINE:EidolonLVL|0
-	BONUS:EidolonLVL|SummonerLvl
+	BONUS:VAR|EidolonLVL|SummonerLvl
 	FOLLOWERS:Eidolon|1
 	COMPANIONLIST:Eidolon|RACETYPE=Shaitan Binder Eidolon
 	SOURCEPAGE:p.146
@@ -3705,7 +3696,7 @@ Student of Stone
 	PRECLASS:1,Monk=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Student of Stone],[!PREABILITY:1,CATEGORY=Archetype,TYPE.MonkEvasion,TYPE.MonkFastMovement,TYPE.MonkHighJump,TYPE.MonkImprovedEvasion,TYPE.MonkAbundantStep,TYPE.MonkPerfectSelf]
 	PRERACE:1,Oread
-	DESC:By following the path of the stone, students of stone give up much of monks' mobility in favor of sheer resilience. A student of stone has the following class features.
+	DESC:By following the path of the stone, students of stone give up much of monks' mobility in favor of sheer resilience.
 	ABILITY:Special Ability|AUTOMATIC|Hard as Stone ~ Student of Stone|PRECLASS:1,Monk=2
 	ABILITY:Special Ability|AUTOMATIC|Strength of Stone ~ Student of Stone|PRECLASS:1,Monk=3
 	ABILITY:Special Ability|AUTOMATIC|Bonus Feat ~ Student of Stone|PRECLASS:1,Monk=6
@@ -3835,7 +3826,7 @@ Gulch Gunner
 	PRECLASS:1,Gunslinger=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Gunslinger Archetype ~ Gulch Gunner],[!PREABILITY:1,CATEGORY=Archetype,TYPE.GunslingerGrit,TYPE.GunslingerDeed,TYPE.GunslingerGunTraining9,TYPE.GunslingerGunTraining13,TYPE.GunslingerGunTraining17]
 	PRERACE:1,Ratfolk
-	DESC:Ratfolk warfare often occurs in cramped, claustrophobic spaces such as the ratfolk's own underground warrens and heavily trapped gulch fortresses, or the subterranean tunnels of goblins and similar foes. Since these battlegrounds often have tight corners and few areas with long lines of sight, those ratfolk who seek to master the use of firearms almost inevitably become experts in closequarters combat. These gulch gunners often specialize in proficiency with a single pistol (easily handled in tight spaces) and wander from warren to warren selling their tunnel-shooting skills to the highest bidder. A gulch gunner has the following class features.
+	DESC:Ratfolk warfare often occurs in cramped, claustrophobic spaces such as the ratfolk's own underground warrens and heavily trapped gulch fortresses, or the subterranean tunnels of goblins and similar foes. Since these battlegrounds often have tight corners and few areas with long lines of sight, those ratfolk who seek to master the use of firearms almost inevitably become experts in closequarters combat. These gulch gunners often specialize in proficiency with a single pistol (easily handled in tight spaces) and wander from warren to warren selling their tunnel-shooting skills to the highest bidder.
 	ABILITY:Special Ability|AUTOMATIC|Class Skills ~ Gulch Gunner|PRECLASS:1,Gunslinger=1
 	ABILITY:Special Ability|AUTOMATIC|Grit ~ Gulch Gunner|PRECLASS:1,Gunslinger=1
 	ABILITY:Special Ability|AUTOMATIC|Daring Adjacent Shot ~ Gulch Gunner|PRECLASS:1,Gunslinger=1
@@ -3963,7 +3954,7 @@ Sky Druid
 	PRECLASS:1,Druid=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Sky Druid],[!PREABILITY:1,CATEGORY=Archetype,TYPE.DruidWoodlandStride,TYPE.DruidNatureBond,TYPE.DruidNaturesLure,TYPE.DruidTracklessStep,TYPE.DruidWildShape,TYPE.DruidVenomImmunity,TYPE.DruidThousandFaces]
 	PRERACE:1,Sylph
-	DESC:Some druids develop ties not to a particular landscape, but instead to the endless blue expanse of the skies. Such are the sky druids, who are more at home soaring through air than standing on the ground. A sky druid has the following class features.
+	DESC:Some druids develop ties not to a particular landscape, but instead to the endless blue expanse of the skies. Such are the sky druids, who are more at home soaring through air than standing on the ground.
 	ABILITY:Special Ability|AUTOMATIC|Weapon and Armor Proficiency ~ Sky Druid|PRECLASS:1,Druid=1
 	ABILITY:Special Ability|AUTOMATIC|Nature Bond ~ Sky Druid|PRECLASS:1,Druid=1
 	ABILITY:Special Ability|AUTOMATIC|Sky's Embrace ~ Sky Druid|PRECLASS:1,Druid=2
@@ -4041,7 +4032,7 @@ Animal Companion
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.NatureBond
 	DESC:A sky druid who chooses an animal companion must select one with a fly speed.
 	FOLLOWERS:Animal Companion|1
-	COMPANIONLIST:Companion (Bird (Eagle)),Companion (Bird (Hawk)),Companion (Bird (Owl))|RACETYPE=Companion
+	COMPANIONLIST:Animal Companion|Companion (Bird (Eagle)),Companion (Bird (Hawk)),Companion (Bird (Owl))
 	SOURCEPAGE:p.158
 
 Druid Domain
@@ -4062,7 +4053,7 @@ Wind Listener
 	PRECLASS:1,Wizard=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Wizard Archetype ~ Wind Listener],[!PREABILITY:1,CATEGORY=Archetype,TYPE.WizardArcaneBond,TYPE.WizardBonusFeat5,TYPE.WizardBonusFeat10,TYPE.WizardBonusFeat15]
 	PRERACE:1,Sylph
-	DESC:The wind listener takes a sylph's natural curiosity to the extreme, enhancing his natural skill at subterfuge and eavesdropping with potent arcane magic. A wind listener has the following class features.
+	DESC:The wind listener takes a sylph's natural curiosity to the extreme, enhancing his natural skill at subterfuge and eavesdropping with potent arcane magic.
 	ABILITY:Special Ability|AUTOMATIC|Class Skills ~ Wind Listener|PRECLASS:1,Wizard=1
 	ABILITY:Special Ability|AUTOMATIC|Arcane School ~ Wind Listener|PRECLASS:1,Wizard=1
 	ABILITY:Special Ability|AUTOMATIC|Spontaneous Divination ~ Wind Listener|PRECLASS:1,Wizard=1
@@ -4127,7 +4118,7 @@ Shigenjo
 	PRECLASS:1,Oracle=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Shigenjo],[!PREABILITY:1,CATEGORY=Archetype,TYPE.OracleRevelation7,TYPE.OracleRevelation15,TYPE.OracleRevelation20]
 	PRERACE:1,Tengu
-	DESC:The shigenjo walks the path of enlightenment and transcendence by seeking oneness with the celestial spirits. In doing so, she unlocks the martial potential of her own spiritual power. A shigenjo has the following class features.
+	DESC:The shigenjo walks the path of enlightenment and transcendence by seeking oneness with the celestial spirits. In doing so, she unlocks the martial potential of her own spiritual power.
 	ABILITY:Special Ability|AUTOMATIC|Class Skills ~ Shigenjo|PRECLASS:1,Oracle=1
 	ABILITY:Special Ability|AUTOMATIC|Alignment ~ Shigenjo|PRECLASS:1,Oracle=1
 	ABILITY:Special Ability|AUTOMATIC|Recommended Mysteries ~ Shigenjo|PRECLASS:1,Oracle=1
@@ -4232,7 +4223,7 @@ Swordmaster
 	PRECLASS:1,Rogue=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Swordmaster],[!PREABILITY:1,CATEGORY=Archetype,TYPE.RogueTrapSense1,TYPE.RogueTrapSense2,TYPE.RogueTrapSense3,TYPE.RogueTrapSense4,TYPE.RogueTrapSense5,TYPE.RogueTrapSense6]
 	PRERACE:1,Tengu
-	DESC:A swordmaster meditates to strengthen her spiritual connection to her blade. She strives to perfect her skills by mastering six deadly trances. A swordmaster has the following class features.
+	DESC:A swordmaster meditates to strengthen her spiritual connection to her blade. She strives to perfect her skills by mastering six deadly trances.
 	ABILITY:Special Ability|AUTOMATIC|Class Skills ~ Swordmaster|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Trance ~ Swordmaster|PRECLASS:1,Rogue=3
 	ABILITY:Special Ability|AUTOMATIC|Rogue Talents ~ Swordmaster|PRECLASS:1,Rogue=1
@@ -4326,7 +4317,7 @@ Fiend Flayer
 	PRECLASS:1,Magus=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Magus Archetype ~ Fiend Flayer],[!PREABILITY:1,CATEGORY=Archetype]
 	PRERACE:1,Tiefling
-	DESC:Some tief ling magi can tap the dark energy of their fiendish blood to enhance their arcane and combat talents. By physically carving away their tainted f lesh, they can use its dark energies to enhance their powers, call forth weapons from thin air, and bypass enemies' strongest defenses. A fiend f layer has the following class features.
+	DESC:Some tiefling magi can tap the dark energy of their fiendish blood to enhance their arcane and combat talents. By physically carving away their tainted flesh, they can use its dark energies to enhance their powers, call forth weapons from thin air, and bypass enemies' strongest defenses.
 	ABILITY:Special Ability|AUTOMATIC|Infernal Mortification ~ Fiend Flayer|PRECLASS:1,Magus=1
 	ABILITY:Special Ability|AUTOMATIC|Magus Arcana ~ Fiend Flayer|PRECLASS:1,Magus=1
 	COST:0
@@ -4376,7 +4367,7 @@ Fiendish Vessel
 	PREDOMAIN:1,Daemon Subdomain (Evil),Demon Subdomain (Evil),Demon Subdomain (Chaos),Devil Subdomain (Evil),Devil Subdomian (Law)
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Fiendish Vessel],[!PREABILITY:1,CATEGORY=Archetype,TYPE.ClericChannelEnergy1,TYPE.ClericChannelEnergy2,TYPE.ClericChannelEnergy3,TYPE.ClericChannelEnergy4,TYPE.ClericChannelEnergy5,TYPE.ClericChannelEnergy6,TYPE.ClericChannelEnergy7,TYPE.ClericChannelEnergy8,TYPE.ClericChannelEnergy9,TYPE.ClericChannelEnergy10]
 	PRERACE:1,Tiefling
-	DESC:Many clerics pray to or make evil bargains with fiendish powers, devoting body and soul to the insane plans and wicked aims of their despicable patrons. But these mortal clerics are often just shallow beings searching for quick power or the caress of true and final oblivion-few truly grasp the full scope of the entities they worship. Fiendish vessels, through their fiendish heritage, share an innate connection with their patron, and that connection grants them understanding and power. A fiendish vessel has the following class features.
+	DESC:Many clerics pray to or make evil bargains with fiendish powers, devoting body and soul to the insane plans and wicked aims of their despicable patrons. But these mortal clerics are often just shallow beings searching for quick power or the caress of true and final oblivion-few truly grasp the full scope of the entities they worship. Fiendish vessels, through their fiendish heritage, share an innate connection with their patron, and that connection grants them understanding and power.
 	ABILITY:Special Ability|AUTOMATIC|Alignment ~ Fiendish Vessel|PRECLASS:1,Cleric=1
 	ABILITY:Special Ability|AUTOMATIC|Domains ~ Fiendish Vessel|PRECLASS:1,Cleric=1
 	ABILITY:Special Ability|AUTOMATIC|Channel Evil ~ Fiendish Vessel|PRECLASS:1,Cleric=1
@@ -4461,7 +4452,7 @@ Undine Adept
 	PREDOMAIN:1,Community,Water
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Undine Adept],[!PREABILITY:1,CATEGORY=Archetype,TYPE.DruidWoodlandStride,TYPE.DruidTracklessStep,TYPE.DruidResistNaturesLure,TYPE.DruidWildShape,TYPE.DruidVenomImmunity]
 	PRERACE:1,Undine
-	DESC:An undine adept dedicates herself to preserving the knowledge of the first undines and ensuring her people's ancient connections to the natural world remain undisturbed. They serve as the keepers of the roots of the undine people and as their protectors. An undine adept has the following class features.
+	DESC:An undine adept dedicates herself to preserving the knowledge of the first undines and ensuring her people's ancient connections to the natural world remain undisturbed. They serve as the keepers of the roots of the undine people and as their protectors.
 	ABILITY:Special Ability|AUTOMATIC|Domains ~ Undine Adept|PRECLASS:1,Druid=1
 	ABILITY:Special Ability|AUTOMATIC|Amphibious ~ Undine Adept|PRECLASS:1,Druid=2
 	ABILITY:Special Ability|AUTOMATIC|Augment Summoning ~ Undine Adept|PRECLASS:1,Druid=3
@@ -4598,13 +4589,13 @@ Watersinger Spells
 	SPELLKNOWN:CLASS|Bard=1|Hydraulic Push,Slipstream
 	SPELLKNOWN:CLASS|Bard=2|Aqueous Orb,Hydraulic Torrent,Water Walk|PRECLASS:1,Bard=4
 	SPELLKNOWN:CLASS|Bard=3|Fluid Form,Ride the Waves|PRECLASS:1,Bard=7
-	SPELLKNOWN:CLASS|Bard=4|Control Water,Communal Water Walk|PRECLASS:1,Bard=10
+	SPELLKNOWN:CLASS|Bard=4|Control Water,Water Walk (Communal)|PRECLASS:1,Bard=10
 	SPELLKNOWN:CLASS|Bard=5|Vortex|PRECLASS:1,Bard=13
 	SPELLKNOWN:CLASS|Bard=6|Seamantle|PRECLASS:1,Bard=16
 
 
 
-#185 Changelings: Dreamweaver (witch)
+#185 Changelings
 Dreamweaver
 	KEY:Witch Archetype ~ Dreamweaver
 	CATEGORY:Archetype
@@ -4612,7 +4603,7 @@ Dreamweaver
 	PRECLASS:1,Witch=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Dreamweaver],[!PREABILITY:1,CATEGORY=Archetype,TYPE.WitchHex2,TYPE.WitchHex6,TYPE.WitchHex10]
 	PRERACE:1,Changeling
-	DESC:A changeling dreamweaver draws upon her hag heritage to ply the dream realms in order to touch mortal minds and souls, for good or ill. A dreamweaver witch has the following class features.
+	DESC:A changeling dreamweaver draws upon her hag heritage to ply the dream realms in order to touch mortal minds and souls, for good or ill.
 	ABILITY:Special Ability|AUTOMATIC|Class Skills ~ Dreamweaver|PRECLASS:1,Witch=1
 	ABILITY:Special Ability|AUTOMATIC|Patron ~ Dreamweaver|PRECLASS:1,Witch=1
 	ABILITY:Special Ability|AUTOMATIC|Spells ~ Dreamweaver|PRECLASS:1,Witch=1
@@ -4648,7 +4639,7 @@ Spells
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:A dreamweaver replaces some of her patron's spells with the following: 2nd-sow thoughts (see below), 4th-dust of twilight (Pathfinder RPG Advanced Player's Guide), 6th-deep slumber, 8th-modify memory, 10th-dream, 12th- cloak of dreams (Advanced Player's Guide), 14th-ethereal jaunt, 16th-moment of prescience, 18th-astral projection.
 	SOURCEPAGE:p.185
-	SPELLKNOWN:CLASS|Witch=1|Sow Thoughts|PRECLASS:1,Witch=2
+	SPELLKNOWN:CLASS|Witch=1|Sow Thought|PRECLASS:1,Witch=2
 	SPELLKNOWN:CLASS|Witch=2|Dust of Twilight|PRECLASS:1,Witch=4
 	SPELLKNOWN:CLASS|Witch=3|Deep Slumber|PRECLASS:1,Witch=6
 	SPELLKNOWN:CLASS|Witch=4|Modify Memory|PRECLASS:1,Witch=8
@@ -4702,7 +4693,7 @@ Grand Hexes
 
 
 
-#187 Duergar: Gray disciple (monk)
+#187 Duergar
 Gray Disciple
 	KEY:Monk Archetype ~ Gray Disciple
 	CATEGORY:Archetype
@@ -4775,7 +4766,7 @@ Eldritch Raider
 	PRECLASS:1,Rogue=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Eldrich Raider],[!PREABILITY:1,CATEGORY=Archetype,TYPE.RogueTalent2,TYPE.RogueTrapSense]
 	PRERACE:1,Gillmen
-	DESC:An eldritch raider is a rogue who seeks to unravel the mysteries of the destruction of the gillmen's homeland. They explore old ruins that date back to the days of the old human empire and track down relics and lore from its glory days. An eldritch raider has the following class features.
+	DESC:An eldritch raider is a rogue who seeks to unravel the mysteries of the destruction of the gillmen's homeland. They explore old ruins that date back to the days of the old human empire and track down relics and lore from its glory days.
 	ABILITY:Special Ability|AUTOMATIC|Class Skills ~ Eldritch Raider|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Skill Ranks per Level ~ Eldritch Raider|PRECLASS:1,Rogue=2
 	ABILITY:Special Ability|AUTOMATIC|Detect Magic ~ Eldritch Raider|PRECLASS:1,Rogue=3
@@ -4837,8 +4828,10 @@ Major Eldritch Magic
 	TYPE:ArchetypeAbility.SpecialQuality.RogueTalent.SpellLike
 	PREABILITY:3,CATEGORY=Special Ability,New Talents ~ Eldritch Raider,Minor Magic,Major Magic,Minor Eldrich Magic
 	PRESTAT:1,INT=13
-	SPELLS:Innate|TIMES=2|TIMEUNIT=Day|CASTERLEVEL=RogueLvl|%CHOICE|13+INT
+	SPELLS:Innate|TIMES=2|TIMEUNIT=Day|CASTERLEVEL=RogueLvl|%LIST,13+INT
 	DESC:The eldritch raider gains the ability to cast a 3rd-level spell from the sorcerer/wizard spell list two times per day as a spell-like ability. The caster level for this ability is %2. The save DC for this spell is %3.|RogueLvl|13+INT
+	MULT:NO
+	SELECT:1
 	CHOOSE:SPELLS|CLASSLIST=Wizard[LEVELMIN=3;LEVELMAX=3]
 	SOURCEPAGE:p.189
 
@@ -4848,8 +4841,10 @@ Minor Eldritch Magic
 	TYPE:ArchetypeAbility.SpecialQuality.RogueTalent.SpellLike
 	PREABILITY:2,CATEGORY=Special Ability,New Talents ~ Eldritch Raider,Minor Magic,Major Magic
 	PRESTAT:1,INT=12
-	SPELLS:Innate|TIMES=2|TIMEUNIT=Day|CASTERLEVEL=RogueLvl|%CHOICE|12+INT
+	SPELLS:Innate|TIMES=2|TIMEUNIT=Day|CASTERLEVEL=RogueLvl|%LIST,12+INT
 	DESC:The eldritch raider gains the ability to cast a 2nd-level spell from the sorcerer/wizard spell list two times per day as a spell-like ability. The caster level for this ability is %2. The save DC for this spell is %3.|RogueLvl|12+INT
+	MULT:NO
+	SELECT:1
 	CHOOSE:SPELLS|CLASSLIST=Wizard[LEVELMIN=2;LEVELMAX=2]
 	SOURCEPAGE:p.189
 
@@ -4878,7 +4873,7 @@ Bogborn Alchemist
 	PRECLASS:1,Alchemist=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Bogborn Alchemist],[!PREABILITY:1,CATEGORY=Archetype,TYPE.AlchemistThrowAnything]
 	PRERACE:1,Grippli
-	DESC:Some grippli alchemists are particularly attuned to the swamps and the dangerous creatures that inhabit them; these serve as their laboratories and research subjects, respectively. These bogborn alchemists have the following class features.
+	DESC:Some grippli alchemists are particularly attuned to the swamps and the dangerous creatures that inhabit them; these serve as their laboratories and research subjects, respectively.
 	ABILITY:Special Ability|AUTOMATIC|Class Skills ~ Bogborn Alchemist|PRECLASS:1,Alchemist=1
 	ABILITY:Special Ability|AUTOMATIC|Amphibious Mutagen ~ Bogborn Alchemist|PRECLASS:1,Alchemist=1
 	ABILITY:Special Ability|AUTOMATIC|Discovery Options ~ Bogborn Alchemist|PRECLASS:1,Alchemist=1
@@ -4931,7 +4926,7 @@ Kitsune Trickster
 	PRECLASS:1,Rogue=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Kitsune Trickster],[!PREABILITY:1,CATEGORY=Archetype,TYPE.RogueTrapfinding,TYPE.RogueTrapSense]
 	PRERACE:1,Kitsune
-	DESC:The kitsune trickster combines her sharpened wit with minor arcane powers of charm and persuasion. She uses her talents to spin convincing lies, riddles, and stories. A trickster has the following class features.
+	DESC:The kitsune trickster combines her sharpened wit with minor arcane powers of charm and persuasion. She uses her talents to spin convincing lies, riddles, and stories.
 	ABILITY:Special Ability|AUTOMATIC|Kitsune's Guile ~ Kitsune Trickster|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Kitsune's Charm ~ Kitsune Trickster|PRECLASS:1,Rogue=3
 	ABILITY:Special Ability|AUTOMATIC|Rogue Talents ~ Kitsune Trickster|PRECLASS:1,Rogue=1
@@ -5172,7 +5167,7 @@ Naga Aspirant
 	PRECLASS:1,Druid=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Naga Aspirant],[!PREABILITY:1,CATEGORY=Archetype,TYPE.DruidSpontaneousCasting,TYPE.DruidResisNaturesLure,TYPE.DruidWildShape,TYPE.DruidVenomImmunity,TYPE.DruidAThousandFaces,TYPE.DruidTimelessBody]
 	PRERACE:1,Nagaji
-	DESC:The naga aspirant follows the ancient beliefs and engages in the rituals of a druidic sect dedicated to the transcendence of her nagaji form through absolute devotion to nagas and naga gods. Through acting as a herald to the naga deities, the aspirant is rewarded with the ability to unlock her ultimate spirit form and become a true naga. A naga aspirant has the following class features.
+	DESC:The naga aspirant follows the ancient beliefs and engages in the rituals of a druidic sect dedicated to the transcendence of her nagaji form through absolute devotion to nagas and naga gods. Through acting as a herald to the naga deities, the aspirant is rewarded with the ability to unlock her ultimate spirit form and become a true naga.
 	ABILITY:Special Ability|AUTOMATIC|Aspirant's Bond ~ Naga Aspirant|PRECLASS:1,Druid=1
 	ABILITY:Special Ability|AUTOMATIC|Aspirant's Enlightenment ~ Naga Aspirant|PRECLASS:1,Druid=4
 	ABILITY:Special Ability|AUTOMATIC|Naga Shape ~ Naga Aspirant|PRECLASS:1,Druid=6
@@ -5209,7 +5204,7 @@ Augmented Form
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
 	DESC:A naga aspirant can choose one of the augmented form selections to enhance her naga form. Once chosen, this augmentation cannot be changed and always applies to her naga form. The caster level for these abilities is equal to %1, and unless otherwise stated, the DC is equal to %2.|DruidLvl|10+DruidLvl/2+CHA
-	BONUS:ABILITYPOOL|AugmentedFormSelection|1+(DruidLvl-9)/4
+	BONUS:ABILITYPOOL|Augmented Form Selection|1+(DruidLvl-9)/4
 	SOURCEPAGE:p.197
 
 True Naga
@@ -5311,7 +5306,7 @@ Reincarnated Oracle
 	PRECLASS:1,Oracle=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Reincarnated Oracle],[!PREABILITY:1,CATEGORY=Archetype]
 	PRERACE:1,Samsaran
-	DESC:A reincarnated oracle draws her knowledge and power from the experiences of her previous lives. Her memories guide her through a spiritual ascension leading the way to her ultimate incarnation. A reincarnated oracle has the following class features.
+	DESC:A reincarnated oracle draws her knowledge and power from the experiences of her previous lives. Her memories guide her through a spiritual ascension leading the way to her ultimate incarnation.
 	ABILITY:Special Ability|AUTOMATIC|Recommended Mysteries ~ Reincarnated Oracle|PRECLASS:1,Oracle=1
 	ABILITY:Special Ability|AUTOMATIC|Oracle's Curse ~ Reincarnated Oracle|PRECLASS:1,Oracle=1
 	ABILITY:Special Ability|AUTOMATIC|Bonus Spells ~ Reincarnated Oracle|PRECLASS:1,Oracle=1
@@ -5445,7 +5440,7 @@ Elemental Knight
 	PRECLASS:1,Magus=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Magus Archetype ~ Elemental Knight],[!PREABILITY:1,CATEGORY=Archetype,TYPE.MagusSpellRecall]
 	PRERACE:1,Sulis
-	DESC:Elemental knights are born with elemental energies surging through their blood and discover the secret of reconciling and focusing this primal power into the arcane. An elemental knight has the following class features.
+	DESC:Elemental knights are born with elemental energies surging through their blood and discover the secret of reconciling and focusing this primal power into the arcane.
 	ABILITY:Special Ability|AUTOMATIC|Elemental Arcana ~ Elemental Knight|PRECLASS:1,Magus=3
 	ABILITY:Special Ability|AUTOMATIC|Assault Synergy ~ Elemental Knight|PRECLASS:1,Magus=1
 	ABILITY:Special Ability|AUTOMATIC|Energy Reflection ~ Elemental Knight|PRECLASS:1,Magus=1
@@ -5514,7 +5509,7 @@ Deep Bomber
 	PRECLASS:1,Alchemist=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Deep Bomber],[!PREABILITY:1,CATEGORY=Archetype,TYPE.AlchemistPoisonUse,TYPE.AlchemistSwiftAlchemy,TYPE.AlchemistSwiftPoisoning]
 	PRERACE:1,Svirfneblin
-	DESC:Consumed with keeping hidden from the horrors below the surface, svirfneblin use their racial proclivity for alchemy and their inherent talent for obfuscation to strike their enemies from the darkness and retreat unseen. A deep bomber has the following class features.
+	DESC:Consumed with keeping hidden from the horrors below the surface, svirfneblin use their racial proclivity for alchemy and their inherent talent for obfuscation to strike their enemies from the darkness and retreat unseen.
 	ABILITY:Special Ability|AUTOMATIC|Silent Bomb ~ Deep Bomber|PRECLASS:1,Alchemist=2
 	ABILITY:Special Ability|AUTOMATIC|Targeting Bomb ~ Deep Bomber|PRECLASS:1,Alchemist=3
 	ABILITY:Special Ability|AUTOMATIC|Stonekin ~ Deep Bomber|PRECLASS:1,Alchemist=6
@@ -5563,7 +5558,7 @@ Treetop Monk
 	PRECLASS:1,Monk=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Treetop Monk],[!PREABILITY:1,CATEGORY=Archetype,TYPE.MonkStillMind,TYPE.MonkPurityOfBody]
 	PRERACE:1,Vanara
-	DESC:While many vanaras follow traditional monastic training and traditions, others learn to blend exotic combat and the mysterious forces of ki with the natural world, allowing them to move through trees and overgrowth to deliver devastating attacks. A treetop monk has the following class features.
+	DESC:While many vanaras follow traditional monastic training and traditions, others learn to blend exotic combat and the mysterious forces of ki with the natural world, allowing them to move through trees and overgrowth to deliver devastating attacks.
 	ABILITY:Special Ability|AUTOMATIC|Branch Runner ~ Treetop Monk|PRECLASS:1,Monk=3
 	ABILITY:Special Ability|AUTOMATIC|Wood Affinity 1 ~ Treetop Monk |PRECLASS:1,Monk=5
 	ABILITY:Special Ability|AUTOMATIC|Wood Affinity 2 ~ Treetop Monk |PRECLASS:1,Monk=8
@@ -5611,7 +5606,7 @@ Deadly Courtesan
 	PRECLASS:1,Rogue=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Deadly Courtesan],[!PREABILITY:1,CATEGORY=Archetype,TYPE.RogueTrick2,TYPE.RogueTrapSense1,TYPE.RogueTrapSense2,TYPE.RogueTrapSense3,TYPE.RogueTrapSense4,TYPE.RogueTrapSense5,TYPE.RogueTrapSense6,TYPE.RogueUncannyDodge]
 	PRERACE:1,Vishkanya
-	DESC:Skilled at manipulation and diversion, the deadly courtesan builds up those around her and periodically takes them down. She can be a spy, entertainer, assassin, bodyguard, or just an intimate to someone who needs it most. A deadly courtesan has the following class features.
+	DESC:Skilled at manipulation and diversion, the deadly courtesan builds up those around her and periodically takes them down. She can be a spy, entertainer, assassin, bodyguard, or just an intimate to someone who needs it most.
 	ABILITY:Special Ability|AUTOMATIC|Class Skills ~ Deadly Courtesan|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Bardic Performance ~ Deadly Courtesan|PRECLASS:1,Rogue=2
 	ABILITY:Special Ability|AUTOMATIC|Inspire Competence ~ Deadly Courtesan|PRECLASS:1,Rogue=3
@@ -5676,7 +5671,7 @@ Shadow Puppeteer
 	PRECLASS:1,Bard=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Bard Archetype ~ Shadow Puppeteer],[!PREABILITY:1,CATEGORY=Archetype,TYPE.BardInspireCourage1,TYPE.BardInspireCourage2,TYPE.BardInspireCourage3,TYPE.BardInspireCourage4,TYPE.BardInspireCompetence1,TYPE.BardInspireCompetence2,TYPE.BardInspireCompetence3,TYPE.BardInspireCompetence4,TYPE.BardInspireCompetence5,TYPE.BardInspireCompetence6]
 	PRERACE:1,Wayang
-	DESC:A shadow puppeteer invokes amazing and terrifying shadow puppet shows, producing supernatural effects by creating and manipulating shadow. A shadow puppeteer has the following class feature.
+	DESC:A shadow puppeteer invokes amazing and terrifying shadow puppet shows, producing supernatural effects by creating and manipulating shadow.
 	ABILITY:Special Ability|AUTOMATIC|Bardic Performance ~ Shadow Puppeteer|PRECLASS:1,Bard=1
 	ABILITY:Special Ability|AUTOMATIC|Shadow Servant ~ Shadow Puppeteer|PRECLASS:1,Bard=1
 	ABILITY:Special Ability|AUTOMATIC|Shadow Puppets ~ Shadow Puppeteer|PRECLASS:1,Bard=1

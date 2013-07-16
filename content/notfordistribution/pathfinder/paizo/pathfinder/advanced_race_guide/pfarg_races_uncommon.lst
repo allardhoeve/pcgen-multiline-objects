@@ -26,6 +26,7 @@ Changeling
 	CR:1/2
 	SOURCEPAGE:p.184
 	BONUS:LANGUAGES|NUMBER|1
+	SORTKEY:a_base_pc
 
 Gillman
 	STARTFEATS:1
@@ -41,6 +42,7 @@ Gillman
 	TYPE:Base.PC.Uncommon
 	CR:1/2
 	SOURCEPAGE:p.188
+	SORTKEY:a_base_pc
 
 # COMMENT: Bonus languages include "any human language".
 Kitsune
@@ -58,6 +60,7 @@ Kitsune
 	TYPE:Base.PC.Uncommon
 	CR:1/2
 	SOURCEPAGE:p.192
+	SORTKEY:a_base_pc
 
 Nagaji
 	STARTFEATS:1
@@ -74,6 +77,7 @@ Nagaji
 	TYPE:Base.PC.Uncommon
 	CR:1/2
 	SOURCEPAGE:p.196
+	SORTKEY:a_base_pc
 
 # COMMENT: Bonus languages include "any human language".
 # COMMENT: Bonus languages include Nagaji; not even the Nagaji speak Nagaji.  Removed from list until further clarification.
@@ -91,6 +95,7 @@ Samsaran
 	TYPE:Base.PC.Uncommon
 	CR:1/2
 	SOURCEPAGE:p.198
+	SORTKEY:a_base_pc
 
 Strix
 	STARTFEATS:1
@@ -109,6 +114,7 @@ Strix
 	TYPE:Base.PC.Uncommon
 	CR:1/2
 	SOURCEPAGE:p.200
+	SORTKEY:a_base_pc
 
 Suli
 	STARTFEATS:1
@@ -125,6 +131,7 @@ Suli
 	TYPE:Base.PC.Uncommon
 	CR:1/2
 	SOURCEPAGE:p.202
+	SORTKEY:a_base_pc
 
 Vanara
 	STARTFEATS:1
@@ -141,6 +148,7 @@ Vanara
 	TYPE:Base.PC.Uncommon
 	CR:1/2
 	SOURCEPAGE:p.206
+	SORTKEY:a_base_pc
 
 Vishkanya
 	STARTFEATS:1
@@ -157,6 +165,7 @@ Vishkanya
 	TYPE:Base.PC.Uncommon
 	CR:1/2
 	SOURCEPAGE:p.208
+	SORTKEY:a_base_pc
 
 # COMMENT: Bonus languages include Nagaji; not even the Nagaji speak Nagaji.  Removed from list until further clarification.
 Wayang
@@ -174,6 +183,7 @@ Wayang
 	TYPE:Base.PC.Uncommon
 	CR:1/2
 	SOURCEPAGE:p.210
+	SORTKEY:a_base_pc
 
 
 
@@ -184,5 +194,20 @@ Wayang
 # COMMENT: No movement rate given for svirfneblin.  Bestiary 1 gives 20 feet.
 #Grippli	STARTFEATS:1	SIZE:S	MOVE:Walk,30,Climb,20	FACE:5	REACH:5	LANGAUTO:Common,Grippli				LANGBONUS:Boggard,Draconic,Elven,Gnome,Goblin,Sylvan						BONUS:STAT|DEX,WIS|2	BONUS:STAT|STR|-2					RACETYPE:Humanoid	TYPE:Base.PC.Uncommon	RACESUBTYPE:Grippli			CR:1/2		SOURCEPAGE:p.190
 #
+
+
+###Block: Mods to change the sort order
+Duergar.MOD
+	SORTKEY:a_base_pc
+
+Grippli.MOD
+	SORTKEY:a_base_pc
+
+Merfolk.MOD
+	SORTKEY:a_base_pc
+
+Svirfneblin.MOD
+	SORTKEY:a_base_pc
+
 # End
 #

@@ -33,7 +33,7 @@ Angelic Flesh
 	PRERACE:1,Aasimar
 	DESC:Your skin shines like burnished metal.
 	MULT:NO
-	BONUS:ABILITYPOOL|AngelicFleshOption|1
+	BONUS:ABILITYPOOL|Angelic Flesh Option|1
 	BONUS:SKILL|Disguise,Stealth|-2
 	SOURCEPAGE:p.88
 	BENEFIT:You take a -2 penalty on Disguise and Stealth checks but gain one of the following benefits, depending on the metallic affinity of your flesh (choose one).
@@ -76,7 +76,7 @@ Heavenly Radiance
 	STACK:NO
 	MULT:YES
 	CHOOSE:NOCHOICE
-	BONUS:ABILITYPOOL|HeavenlyRadianceOption|1
+	BONUS:ABILITYPOOL|Heavenly Radiance Option|1
 	BONUS:VAR|AasimarDaylightTimes|1
 	SOURCEPAGE:p.88
 	BENEFIT:You gain one additional use per day of daylight. Choose one spell from the table below; by expending a use of daylight, you may use this spell as a spell-like ability.
@@ -118,7 +118,7 @@ Catfolk Exemplar
 	DESC:Your feline traits are more defined and prominent than those of other members of your race.
 	STACK:NO
 	MULT:YES
-	BONUS:ABILITYPOOL|CatfolkExemplarOption|1
+	BONUS:ABILITYPOOL|Catfolk Exemplar Option|1
 	SOURCEPAGE:p.93
 	BENEFIT:You can take the Aspect of the Beast feat even if you do not meet the normal prerequisites. Furthermore, your catlike nature manifests in one of the following ways.
 
@@ -160,7 +160,7 @@ Blood Drinker
 	TYPE:General
 	PRERACE:1,Dhampir
 	DESC:Consuming blood reinvigorates you.
-	BONUS:ABILITYPOOL|BloodDrinkerType|1
+	BONUS:ABILITYPOOL|Blood Drinker Type|1
 	SOURCEPAGE:p.99
 	BENEFIT:Choose one humanoid subtype, such as "goblinoid" (this subtype cannot be "dhampir"). You have acquired a taste for the blood of creatures with this subtype. Whenever you drink fresh blood from such a creature, you gain 5 temporary hit points and a +1 bonus on checks and saves based on Constitution. The effects last 1 hour. If you feed multiple times, you continue to gain hit points to a maximum of 5 temporary hit points for every three Hit Dice you have, but the +1 bonus on Constitution-based skill checks and saving throws does not stack. Normally, you can only drink blood from an opponent who is helpless, grappled, paralyzed, pinned, unconscious, or similarly disabled. If you have a bite attack, you can drink blood automatically as part of your bite attack; otherwise, you must first cut your target by dealing 1 hit point of damage with a slashing or piercing weapon (though you may feed upon a creature with severe wounds or a bleed effect without cutting it first). Once you cut the target, you can drink from its wound as a standard action. Drinking blood deals 2 points of Constitution damage to the creature you feed upon. The blood must come from a living creature of the specified humanoid subtype. It cannot come from a dead or summoned creature. Feeding on unwilling intelligent creatures is an evil act.
 
@@ -189,7 +189,7 @@ Diverse Palate
 	STACK:NO
 	MULT:YES
 	CHOOSE:NOCHOICE
-	BONUS:ABILITYPOOL|BloodDrinkerType|1
+	BONUS:ABILITYPOOL|Blood Drinker Type|1
 	SOURCEPAGE:p.100
 	BENEFIT:Choose a humanoid subtype or the monstrous humanoid type. You may use your Blood Drinker feat on creatures of this subtype or type. You can take this feat multiple times. Each time you select it, choose a new humanoid subtype or the monstrous humanoid.
 
@@ -665,7 +665,7 @@ Orc Weapon Expertise
 	STACK:NO
 	MULT:YES
 	CHOOSE:NOCHOICE
-	BONUS:ABILITYPOOL|OrcWeaponExpertise|1
+	BONUS:ABILITYPOOL|Orc Weapon Expertise|1
 	SOURCEPAGE:p.142
 	BENEFIT:Whenever you wield a weapon that has "orc" in its name, you gain the benefit you chose so long as you are actually proficient with that weapon. This feat has no effect if you are not proficient with the weapon you're using.  You can gain this feat multiple times. Each time you take this feat, you must choose a different benefit. You may only apply one of these benefits per round (chosen as a free action at the start of your turn).
 
