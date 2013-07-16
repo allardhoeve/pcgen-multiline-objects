@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -8,6 +9,7 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: Archetype set-up
+# Ability Name					Category of Ability	Type				Visible	Ability
 CATEGORY=Internal|Archetype Display.MOD
 	ABILITY:Aegis Archetype|AUTOMATIC|Archetype Aegis|PRECLASS:1,Aegis=1
 
@@ -64,6 +66,7 @@ Archetype Vitalist
 
 
 ###Block: Aegis archetypes
+# Ability Name	Unique Key						Category of Ability	Type																						Required Class		Multiple Requirements																																					Description																													Ability																																																																											Class Skill			Cost		Source Page
 Aberrant
 	KEY:Aegis Archetype ~ Aberrant
 	CATEGORY:Archetype
@@ -90,9 +93,9 @@ Ectopic Artisan
 	ABILITY:Special Ability|AUTOMATIC|Astral Warrior ~ Ectopic Artisan|PRECLASS:1,Aegis=3
 	ABILITY:Special Ability|AUTOMATIC|Cocooning Strike ~ Ectopic Artisan|PRECLASS:1,Aegis=5
 	ABILITY:Special Ability|AUTOMATIC|Astral Swarm ~ Ectopic Artisan|PRECLASS:1,Aegis=12
+	CSKILL:Disable Device
 	COST:0
 	SOURCEPAGE:p.65
-	CSKILL:Disable Device
 
 Trailblazer
 	KEY:Aegis Archetype ~ Trailblazer
@@ -105,9 +108,9 @@ Trailblazer
 	ABILITY:Special Ability|AUTOMATIC|Rapid Adjustment ~ Trailblazer|PRECLASS:1,Aegis=1
 	ABILITY:Special Ability|AUTOMATIC|Undetected Tracker ~ Trailblazer|PRECLASS:1,Aegis=4
 	ABILITY:Internal|AUTOMATIC|Trapfinding ~ Trailblazer|PRECLASS:1,Aegis=5
+	CSKILL:Survival
 	COST:0
 	SOURCEPAGE:p.67
-	CSKILL:Survival
 
 
 
@@ -115,53 +118,55 @@ Trailblazer
 
 
 ###Block: Abberant Aegis archetype abilities
+# Ability Name	Unique Key					Category of Ability		Type						Define													Innate Spells										Description																																																																																										Ability																																																								Bonus to Ability Pool								Combat bonus								Bonus to HP											Bonus to skill						Modify VAR															Source Page
 Transformed Body
 	KEY:Transformed Body ~ Aberrant
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You learn to modify your own form, rather than covering yourself in an ectoplasmic suit. You gain a +%1 natural armor bonus to your AC. You can modify your form in a fashion similar to the aegis's customization, but your options are more limited. Because you are modifying your own body, you can wear armor as normal.  Customization Points:%2|TransformedBodyACBonus|CustomPoints
-	SOURCEPAGE:p.64
 	DEFINE:TransformedBodyACBonus|0
-	BONUS:VAR|TransformedBodyACBonus|1+floor(AstralSuitLVL/5)
-	BONUS:COMBAT|AC|TransformedBodyACBonus|TYPE=NaturalArmor
+	DEFINE:CustomPoints|0
+	DEFINE:AstralSuitLVL|0
+	DESC:You learn to modify your own form as a full-round action, rather than covering yourself in an ectoplasmic suit. This transformation lasts until it is dismissed, and you can dismiss the transformation as a free action.  While this ability is active, you gain a +%1 natural armor bonus to your AC. You can modify your form in a fashion similar to the aegis's customization, but your options are more limited. Because you are modifying your own body, you can wear armor as normal.  Customization Points:%2|TransformedBodyACBonus|CustomPoints
 	ABILITY:Transformed Body Customization|AUTOMATIC|Hardened Strikes ~ Aegis
 	ABILITY:Transformed Body Customization|AUTOMATIC|Brawn ~ Aegis
 	ABILITY:Transformed Body Customization|AUTOMATIC|Darkvision ~ Aegis|PRECLASS:1,Aegis=2
 	ABILITY:Transformed Body Customization|AUTOMATIC|Improved Damage Reduction ~ Aegis|PRECLASS:1,Aegis=10
-	DEFINE:CustomPoints|0
-	DEFINE:AstralSuitLVL|0
-	BONUS:VAR|AstralSuitLVL|AegisLVL
 	BONUS:ABILITYPOOL|Transformed Body Customization|CustomPoints
+	BONUS:COMBAT|AC|TransformedBodyACBonus|TYPE=NaturalArmor
+	BONUS:VAR|TransformedBodyACBonus|1+floor(AstralSuitLVL/5)
+	BONUS:VAR|AstralSuitLVL|AegisLVL
+	SOURCEPAGE:p.64
 
 Vim
 	KEY:Vim ~ Aberrant
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Psilike
+	SPELLS:Innate|TIMES=ATWILL|Vim Talent|PREVARGTEQ:PsionicFocusActive,1
 	DESC:You gain vim as a psi-like ability usable at will as long as you maintain psionic focus.
 	SOURCEPAGE:p.64
-	SPELLS:Innate|TIMES=ATWILL|Vim Talent|PREVARGTEQ:PsionicFocusActive,1
 
 Intimidate
 	KEY:Intimidate ~ Aberrant
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You gain a +%1 bonus to Intimidate checks.|AberrantIntimidateBonus
-	SOURCEPAGE:p.64
 	DEFINE:AberrantIntimidateBonus|0
-	BONUS:VAR|AberrantIntimidateBonus|floor((AegisLVL+2)/4)
+	DESC:You gain a +%1 bonus to Intimidate checks.|AberrantIntimidateBonus
 	BONUS:SKILL|Intimidate|AberrantIntimidateBonus
+	BONUS:VAR|AberrantIntimidateBonus|floor((AegisLVL+2)/4)
+	SOURCEPAGE:p.64
 
 Psionic Form
 	KEY:Psionic Form ~ Aberrant
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:You gain 1 hit point for each psionic feat you have.
-	SOURCEPAGE:p.64
 	BONUS:HP|CURRENTMAX|count("ABILITIES","CATEGORY=FEAT","TYPE=Psionic")
+	SOURCEPAGE:p.64
 
 
 
 ###Block: Aberrant Customizations - Existent Customizations
+# Ability Name										Type
 CATEGORY=Special Ability|Adhesive Feet ~ Aegis.MOD
 	TYPE:AberrantCustomization
 
@@ -373,6 +378,7 @@ CATEGORY=Special Ability|Underwater Breath ~ Aegis.MOD
 
 ###Block: Aberrant Customizations - New Customizations
 #Block: 1-point Customizations
+# Ability Name		Unique Key					Category of Ability		Type							Required Ability								Var. Min. Value			Define									Description																																																								Stackable?	Multiple?	Choose							Ability						Bonus to HP				Bonus to skill			Modify VAR														Vision			Cost		Source Page		Natural Attacks
 Disjointed
 	KEY:Disjointed ~ Aegis
 	CATEGORY:Special Ability
@@ -382,25 +388,24 @@ Disjointed
 	COST:1
 	SOURCEPAGE:p.65
 
-# TODO: Check on how low-light vision is done these days.
 Eyestalks
 	KEY:Eyestalks ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AberrantCustomization.SpecialQuality
 	DESC:Your eyes extend out on a pair of stacks, giving a +2 bonus on Perception checks and low-light vision.  You are also capable of looking around corners while still maintaining cover.
 	BONUS:SKILL|Perception|2
+	VISION:Low-Light Vision
 	COST:1
 	SOURCEPAGE:p.11
-	VISION:Low-Light Vision
 
 Tearing Sting
 	KEY:Tearing Sting ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AberrantCustomization.SpecialQuality
+	PREABILITY:1,CATEGORY=Special Ability,Stinger ~ Aegis
 	DESC:When you make a successful attack with your stinger, it rips the flesh of the target, causing the target to bleed, taking 1 point of damage each round.
 	COST:1
 	SOURCEPAGE:p.65
-	PREABILITY:1,CATEGORY=Special Ability,Stinger ~ Aegis
 
 Stinger
 	KEY:Stinger ~ Aegis
@@ -415,61 +420,60 @@ Tentacle
 	KEY:Tentacle ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AberrantCustomization.SpecialAttack
+	DEFINE:TentacleBonusToGrab|-2
 	DESC:You grow a tentacle and gain a secondary natural attack with the tentacle that deals 1d4 points of damage.  You also gain the grab ability and get a +%1 bonus to grab.|TentacleBonusToGrab
+	STACK:YES
+	MULT:YES
+	CHOOSE:NUMCHOICES=4|NOCHOICE
+	ABILITY:Special Ability|AUTOMATIC|Grab
+	BONUS:VAR|TentacleBonusToGrab|2
 	COST:1
 	SOURCEPAGE:p.65
 	NATURALATTACKS:Tentacle,Weapon.Natural.Melee.Bludgeoning,*1,1d4
-	ABILITY:Special Ability|AUTOMATIC|Grab
-	DEFINE:TentacleBonusToGrab|-2
-	BONUS:VAR|TentacleBonusToGrab|2
-	MULT:YES
-	STACK:YES
-	CHOOSE:NUMCHOICES=4|NOCHOICE
 
 
-	
 
 #Block: 2-point customizations
 Improved Natural Armor
 	KEY:Improved Natural Armor ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AberrantCustomization.SpecialQuality
+	PREVARGTEQ:AstralSuitLVL,5
+	DEFINE:ImpNatArmorChoices|0
 	DESC:Your natural armor bonus increased by 1.
+	STACK:YES
+	MULT:YES
+	CHOOSE:NUMCHOICES=ImpNatArmorChoices|NOCHOICE
 	BONUS:VAR|TransformedBodyACBonus|1
+	BONUS:VAR|ImpNatArmorChoices|floor(AstralSuitLVL/5)
 	COST:2
 	SOURCEPAGE:p.65
-	MULT:YES
-	STACK:YES
-	CHOOSE:NUMCHOICES=ImpNatArmorChoices|NOCHOICE
-	DEFINE:ImpNatArmorChoices|0
-	BONUS:VAR|ImpNatArmorChoices|floor(AstralSuitLVL/5)
-	PREVARGTEQ:AstralSuitLVL,5
 
-# NEEDS DATA WORK: Encumbered as heavy armor?  How to?
+# NEEDS CODE/DATA WORK: Encumbered as heavy armor?  How to?
 Obese
 	KEY:Obese ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AberrantCustomization.SpecialQuality
+	DEFINE:ObeseHP|0
 	DESC:Your base movement is reduced as if you were wearing heavy armor,but you gain %1 extra hit points and your damage reduction improves by 1.|ObeseHP
 	BONUS:HP|CURRENTMAX|ObeseHP
-	DEFINE:ObeseHP|0
 	BONUS:VAR|ObeseHP|AstralSuitLVL
+	BONUS:VAR|AegisDR|1
 	COST:2
 	SOURCEPAGE:p.65
-	BONUS:VAR|AegisDR|1
 
 Poison
 	KEY:Poison ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AberrantCustomization.SpecialQuality
-	DESC:Your stinger attacks deal 1 point of Strength damage (Fortitude DC %1 negates) on a successful attack.|AberrantPoisonDC
-	COST:2
-	SOURCEPAGE:p.65
 	PREABILITY:1,CATEGORY=Special Ability,Stinger ~ Aegis
 	DEFINE:AberrantPoisonDC|0
+	DESC:Your stinger attacks deal 1 point of Strength damage (Fortitude DC %1 negates) on a successful attack.|AberrantPoisonDC
 	BONUS:VAR|AberrantPoisonDC|10+floor(AstralSuitLVL/2)+CHA
+	COST:2
+	SOURCEPAGE:p.65
 
-# NEEDS DATA WORK: Not set up for non-Medium size.
+# NEEDS CODE/DATA WORK: Not set up for non-Medium size.
 Spikes
 	KEY:Spikes ~ Aegis
 	CATEGORY:Special Ability
@@ -483,10 +487,10 @@ Tear Flesh
 	KEY:Tear Flesh ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AberrantCustomization.SpecialQuality
+	PREABILITY:1,CATEGORY=Special Ability,Tentacle ~ Aegis
 	DESC:When you have successfully grabbed a creature with your tentacles, you deal 1d6 damage per attached tentacle when the target breaks free.
 	COST:2
 	SOURCEPAGE:p.65
-	PREABILITY:1,CATEGORY=Special Ability,Tentacle ~ Aegis
 
 
 
@@ -495,13 +499,13 @@ Toxic
 	KEY:Toxic ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AberrantCustomization.SpecialQuality
+	DEFINE:AberrantSalivaTimes|0
+	DEFINE:AberrantSalivaDC|0
 	DESC:You can, %1/day, envenom a weapon that you wield or one natural attack with toxic saliva.  Applying venom this way is a swift action and you are immune to this poison.  Aberrant Saliva: Injury; save Fort DC %2; frequency 1/round for 6 rounds; effect 1d2 Dex; cure 1 save.|AberrantSalivaTimes|AberrantSalivaDC
+	BONUS:VAR|AberrantSalivaTimes|CON
+	BONUS:VAR|AberrantSalivaDC|10+AstralSuitLVL/2+CON
 	COST:3
 	SOURCEPAGE:p.65
-	DEFINE:AberrantSalivaTimes|0
-	BONUS:VAR|AberrantSalivaTimes|CON
-	DEFINE:AberrantSalivaDC|0
-	BONUS:VAR|AberrantSalivaDC|10+AstralSuitLVL/2+CON
 
 
 
@@ -510,10 +514,10 @@ Protective Shell
 	KEY:Protective Shell ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AberrantCustomization.SpecialQuality
+	PREVARGTEQ:AstralSuitLVL,12
 	DESC:You gain the ability to form a protective shell around your entire body, but lose your ability to move while it is active.  As a full-round action, you gain heavy fortification and double your damage reduction, but you cannot make attacks of opportunity.
 	COST:4
 	SOURCEPAGE:p.65
-	PREVARGTEQ:AstralSuitLVL,12
 
 
 
@@ -521,6 +525,7 @@ Protective Shell
 
 
 ###Block: Ectopic Artisan Aegis archetype abilities
+# Ability Name				Unique Key							Category of Ability		Type						Required Ability										Define											Innate Spells																																									Description																																																																																		Stackable?	Multiple?	Choose		Modify VAR															Allow Follower			Allowed Companions					Cost		Source Page
 Astral Manipulation
 	KEY:Astral Manipulation ~ Ectopic Artisan
 	CATEGORY:Special Ability
@@ -531,42 +536,42 @@ Astral Manipulation
 Ectoplasmic Creation
 	KEY:Ectoplasmic Creation ~ Ectopic Artisan
 	CATEGORY:Internal
-	SOURCEPAGE:p.66
+	DEFINE:EctoplasmicCreationTimes|0
+	DEFINE:EctoplasmicCreationML|0
 	SPELLS:Innate|TIMES=EctoplasmicCreationTimes|CASTERLEVEL=EctoplasmicCreationML|Ectoplasmic Creation|PREVARLT:AegisLVL,11
 	SPELLS:Innate|TIMES=EctoplasmicCreationTimes|CASTERLEVEL=EctoplasmicCreationML|Ectoplasmic Creation (Major)|PREVARGTEQ:AegisLVL,11
-	DEFINE:EctoplasmicCreationTimes|0
 	BONUS:VAR|EctoplasmicCreationTimes|INT
-	DEFINE:EctoplasmicCreationML|0
 	BONUS:VAR|EctoplasmicCreationML|floor(AegisLVL/2)
+	SOURCEPAGE:p.66
 
 Astral Warrior
 	KEY:Astral Warrior ~ Ectopic Artisan
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Psilike
-	DESC:You can create an ally to aid you in battle.  Creating an astral warrior takes one minute of concentration to complete and the astral warrior remains until dismissed by you.
-	SOURCEPAGE:p.66
 	DEFINE:AstralWarriorLVL|0
+	DESC:You can create an ally to aid you in battle.  Creating an astral warrior takes one minute of concentration to complete and the astral warrior remains until dismissed by you.
 	BONUS:VAR|AstralWarriorLVL|AegisLVL
 	FOLLOWERS:Astral Warrior|1
 	COMPANIONLIST:Astral Warrior|Astral Warrior
+	SOURCEPAGE:p.66
 
 Cocooning Strike
 	KEY:Cocooning Strike ~ Ectopic Artisan
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You gain a permanent customization that triggers on a critical hit while your astral suit is active.  When triggered, the target is affected by ectoplasmic cocoon (Reflex DC %1 negates).  This effect only works on Large or smaller creatures.  This ability can only be triggered once per round.  You can grant this customization to your astral warrior when it is created, but you lose access to it while the astral warrior is active and has been granted the customization.|CocooningStrikeDC
-	SOURCEPAGE:p.66
 	DEFINE:CocooningStrikeDC|0
+	DESC:You gain a permanent customization that triggers on a critical hit while your astral suit is active.  When triggered, the target is affected by ectoplasmic cocoon (Reflex DC %1 negates).  This effect only works on Large or smaller creatures.  This ability can only be triggered once per round.  You can grant this customization to your astral warrior when it is created, but you lose access to it while the astral warrior is active and has been granted the customization.|CocooningStrikeDC
 	BONUS:VAR|CocooningStrikeDC|10+floor(AegisLVL/2)+INT
+	SOURCEPAGE:p.66
 
 Astral Swarm
 	KEY:Astral Swarm ~ Ectopic Artisan
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You can create an astral swarm %1/day.|AstralSwarmTimes
-	SOURCEPAGE:p.66
 	DEFINE:AstralSwarmTimes|0
+	DESC:You can create an astral swarm %1/day.|AstralSwarmTimes
 	BONUS:VAR|AstralSwarmTimes|max(0,floor((AegisLVL-10)/2))
+	SOURCEPAGE:p.66
 
 
 
@@ -574,65 +579,66 @@ Astral Warrior Transfer (1 point)
 	KEY:AWT1 ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AstralSuitCustomization
+	PREABILITY:1,CATEGORY=Special Ability,Astral Warrior ~ Ectopic Artisan
+	DEFINE:TransferredCustomizationPoints|0
 	DESC:You have transferred %1 customization points to your Astral Warrior.|TransferredCustomizationPoints
+	STACK:YES
+	MULT:YES
+	CHOOSE:NOCHOICE
+	BONUS:VAR|TransferredCustomizationPoints|1
 	COST:1
 	SOURCEPAGE:p.12
-	DEFINE:TransferredCustomizationPoints|0
-	BONUS:VAR|TransferredCustomizationPoints|1
-	MULT:YES
-	STACK:YES
-	CHOOSE:NOCHOICE
-	PREABILITY:1,CATEGORY=Special Ability,Astral Warrior ~ Ectopic Artisan
 	SOURCEPAGE:p.66
 
 Astral Warrior Transfer (3 points)
 	KEY:AWT3 ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AstralSuitCustomization
+	PREABILITY:1,CATEGORY=Special Ability,Astral Warrior ~ Ectopic Artisan
+	DEFINE:TransferredCustomizationPoints|0
 	DESC:You have transferred %1 customization points to your Astral Warrior.|TransferredCustomizationPoints
+	STACK:YES
+	MULT:YES
+	CHOOSE:NOCHOICE
+	BONUS:VAR|TransferredCustomizationPoints|3
 	COST:3
 	SOURCEPAGE:p.12
-	DEFINE:TransferredCustomizationPoints|0
-	BONUS:VAR|TransferredCustomizationPoints|3
-	MULT:YES
-	STACK:YES
-	CHOOSE:NOCHOICE
-	PREABILITY:1,CATEGORY=Special Ability,Astral Warrior ~ Ectopic Artisan
 	SOURCEPAGE:p.66
 
 Astral Warrior Transfer (5 points)
 	KEY:AWT5 ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AstralSuitCustomization
+	PREABILITY:1,CATEGORY=Special Ability,Astral Warrior ~ Ectopic Artisan
+	DEFINE:TransferredCustomizationPoints|0
 	DESC:You have transferred %1 customization points to your Astral Warrior.|TransferredCustomizationPoints
+	STACK:YES
+	MULT:YES
+	CHOOSE:NOCHOICE
+	BONUS:VAR|TransferredCustomizationPoints|5
 	COST:5
 	SOURCEPAGE:p.12
-	DEFINE:TransferredCustomizationPoints|0
-	BONUS:VAR|TransferredCustomizationPoints|5
-	MULT:YES
-	STACK:YES
-	CHOOSE:NOCHOICE
-	PREABILITY:1,CATEGORY=Special Ability,Astral Warrior ~ Ectopic Artisan
 	SOURCEPAGE:p.66
 
 Astral Warrior Transfer (10 points)
 	KEY:AWT10 ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AstralSuitCustomization
+	PREABILITY:1,CATEGORY=Special Ability,Astral Warrior ~ Ectopic Artisan
+	DEFINE:TransferredCustomizationPoints|0
 	DESC:You have transferred %1 customization points to your Astral Warrior.|TransferredCustomizationPoints
+	STACK:YES
+	MULT:YES
+	CHOOSE:NOCHOICE
+	BONUS:VAR|TransferredCustomizationPoints|10
 	COST:10
 	SOURCEPAGE:p.12
-	DEFINE:TransferredCustomizationPoints|0
-	BONUS:VAR|TransferredCustomizationPoints|10
-	MULT:YES
-	STACK:YES
-	CHOOSE:NOCHOICE
-	PREABILITY:1,CATEGORY=Special Ability,Astral Warrior ~ Ectopic Artisan
 	SOURCEPAGE:p.66
 
 
 
 ###Block: Trailblazer Aegis archetype abilities
+# Ability Name			Unique Key						Category of Ability		Type						Define					Description																																																																										Ability							Bonus to skill									Modify VAR								Source Page
 Track ~ Trailblazer
 	CATEGORY:Internal
 	ABILITY:Special Ability|AUTOMATIC|Track
@@ -649,11 +655,11 @@ Undetected Tracker
 	KEY:Undetected Tracker ~ Trailblazer
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You add +%1 to Stealth checks as long as you are maintaining focus and have your astral suit active.|UndetectedTrackerBonus
-	SOURCEPAGE:p.67
-	BONUS:SKILL|Stealth|UndetectedTrackerBonus*PsionicFocusActive
 	DEFINE:UndetectedTrackerBonus|0
+	DESC:You add +%1 to Stealth checks as long as you are maintaining focus and have your astral suit active.|UndetectedTrackerBonus
+	BONUS:SKILL|Stealth|UndetectedTrackerBonus*PsionicFocusActive
 	BONUS:VAR|UndetectedTrackerBonus|floor(AegisLVL/2)
+	SOURCEPAGE:p.67
 
 Trapfinding ~ Trailblazer
 	CATEGORY:Internal
@@ -663,32 +669,34 @@ Trapfinding ~ Trailblazer
 
 
 ###Block: Trailblazer customizations
+# Ability Name	Unique Key					Category of Ability		Type								Required Ability									Var. Min. Value			Description																																																Ability									Bonus to Ability Pool			Cost		Source Page
 Favored Terrain
 	KEY:Favored Terrain ~ Trailblazer
 	CATEGORY:Special Ability
 	TYPE:AstralSuitCustomization
 	PREABILITY:1,CATEGORY=Archetype,Aegis Archetype ~ Trailblazer
-	SOURCEPAGE:p.67
-	COST:2
 	PREVARGTEQ:AstralSuitLVL,5
 	ABILITY:Special Ability|AUTOMATIC|Basic Favored Terrain
 	BONUS:ABILITYPOOL|Favored Terrain|1
+	COST:2
+	SOURCEPAGE:p.67
 
 Woodland Stride
 	KEY:Woodland Stride ~ Trailblazer
 	CATEGORY:Special Ability
 	TYPE:AstralSuitCustomization.SpecialQuality
 	PREABILITY:1,CATEGORY=Archetype,Aegis Archetype ~ Trailblazer
-	DESC:While wearing your astral suit, you may move through any sort of undergrowth at your normal speed and without taking damage or suffering any other impairment. Thorns, briars, and overgrown areas that are enchanted or magically manipulated to impede motion, however, still affect you.
-	SOURCEPAGE:p.67
-	COST:3
 	PREVARGTEQ:AstralSuitLVL,10
+	DESC:While wearing your astral suit, you may move through any sort of undergrowth at your normal speed and without taking damage or suffering any other impairment. Thorns, briars, and overgrown areas that are enchanted or magically manipulated to impede motion, however, still affect you.
+	COST:3
+	SOURCEPAGE:p.67
 
 
 
 
 
 ###Block: Cryptic archetypes
+# Ability Name	Unique Key						Category of Ability	Type																			Required Class		Multiple Requirements																																	Description																	Ability																																																													Bonus to Ability Pool																	Class Skill		Cost		Source Page
 Brutal Disruptor
 	KEY:Cryptic Archetype ~ Brutal Disruptor
 	CATEGORY:Archetype
@@ -699,9 +707,9 @@ Brutal Disruptor
 	ABILITY:Special Ability|AUTOMATIC|Intimidating Pattern ~ Brutal Disruptor|PRECLASS:1,Cryptic=1
 	ABILITY:Special Ability|AUTOMATIC|Unnerving Disruption ~ Brutal Disruptor|PRECLASS:1,Cryptic=1
 	ABILITY:Special Ability|AUTOMATIC|Channeled Disruption ~ Brutal Disruptor|PRECLASS:1,Cryptic=6
+	CSKILL:Intimidate
 	COST:0
 	SOURCEPAGE:p.68
-	CSKILL:Intimidate
 
 Distorter
 	KEY:Cryptic Archetype ~ Distorter
@@ -714,10 +722,10 @@ Distorter
 	ABILITY:Special Ability|AUTOMATIC|Warp Perception ~ Distorter|PRECLASS:1,Cryptic=4
 	ABILITY:Special Ability|AUTOMATIC|Silent Pattern ~ Distorter|PRECLASS:1,Cryptic=10
 	ABILITY:Special Ability|AUTOMATIC|Blur Pattern ~ Distorter|PRECLASS:1,Cryptic=14
-	COST:0
-	SOURCEPAGE:p.68
 	BONUS:ABILITYPOOL|Cryptic Insight|-1|PRECLASS:1,Cryptic=4
 	BONUS:ABILITYPOOL|Cryptic Insight|-1|PRECLASS:1,Cryptic=10
+	COST:0
+	SOURCEPAGE:p.68
 
 # COMMENT: Grammaton found in firearms auxiliary files
 Pattern Breaker
@@ -731,23 +739,24 @@ Pattern Breaker
 	ABILITY:Special Ability|AUTOMATIC|Sunder Pattern ~ Pattern Breaker|PRECLASS:1,Cryptic=2
 	ABILITY:Special Ability|AUTOMATIC|Disable Weapon or Armor ~ Pattern Breaker|PRECLASS:1,Cryptic=6
 	ABILITY:Special Ability|AUTOMATIC|Disabling Aura ~ Pattern Breaker|PRECLASS:1,Cryptic=16
-	COST:0
-	SOURCEPAGE:p.69
 	BONUS:ABILITYPOOL|Cryptic Insight|-1|PRECLASS:1,Cryptic=2
 	BONUS:ABILITYPOOL|Cryptic Insight|-1|PRECLASS:1,Cryptic=16
+	COST:0
+	SOURCEPAGE:p.69
 
 
 
 ###Block: Brutal Disruptor Cryptic archetype abilities
+# Ability Name		Unique Key							Category of Ability		Type				Define					Description																																																																	Bonus to skill									Modify VAR										Source Page
 Intmidating Pattern
 	KEY:Intimidating Pattern ~ Brutal Disruptor
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You add +%1 on Intimidate checks made to demoralize a target.|IntimidatingPatternBonus
 	DEFINE:IntimidatingPatternBonus|0
+	DESC:You add +%1 on Intimidate checks made to demoralize a target.|IntimidatingPatternBonus
+	BONUS:SKILL|Intimidate (Demoralize)|IntimidatingPatternBonus
 	BONUS:VAR|IntimidatingPatternBonus|max(1,floor(CrypticLVL/2))
 	SOURCEPAGE:p.68
-	BONUS:SKILL|Intimidate (Demoralize)|IntimidatingPatternBonus
 
 Unnerving Disruption
 	KEY:Unnerving Disruption ~ Brutal Disruptor
@@ -766,6 +775,7 @@ Channeled Disruption
 
 
 ###Block: Distorter Cryptic archetype abilities
+# Ability Name		Unique Key					Category of Ability		Type						Define																Description																																																																																																																																																				Modify VAR																													Source Page
 Altered Appearance
 	KEY:Altered Appearance ~ Distorter
 	CATEGORY:Special Ability
@@ -777,12 +787,12 @@ Warp Perception
 	KEY:Warp Perception ~ Distorter
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You have learned to alter the way creatures perceive distances by manipulating the visual patterns. You can cause up to %1 creatures to incorrectly calculate the distance between the affected creature and yourself unless each creature makes a successful Will save (DC %2). For %3 rounds, each square of movement any of the affected creatures take toward you counts as two squares of movement, regardless of the mode of movement (flight, swim, etc) or if the creature is corporeal or incorporeal. In addition, any ranged attacks made at you by the affected creatures that only work within a certain range (such as a ranged sneak attack or Point-Blank Shot) count the distance between the creature and the cryptic as double. This does not affect the range increment of the attack, only if the distance of the attack qualifies.|WarpPerceptionTargets|WarpPerceptionDC|WarpPerceptionDuration
 	DEFINE:WarpPerceptionTargets|0
-	BONUS:VAR|WarpPerceptionTargets|CrypticPrimeStat
 	DEFINE:WarpPerceptionDC|0
-	BONUS:VAR|WarpPerceptionDC|10+classlevel("Cryptic")/2+CrypticPrimeStat
 	DEFINE:WarpPerceptionDuration|0
+	DESC:You have learned to alter the way creatures perceive distances by manipulating the visual patterns. You can cause up to %1 creatures to incorrectly calculate the distance between the affected creature and yourself unless each creature makes a successful Will save (DC %2). For %3 rounds, each square of movement any of the affected creatures take toward you counts as two squares of movement, regardless of the mode of movement (flight, swim, etc) or if the creature is corporeal or incorporeal. In addition, any ranged attacks made at you by the affected creatures that only work within a certain range (such as a ranged sneak attack or Point-Blank Shot) count the distance between the creature and the cryptic as double. This does not affect the range increment of the attack, only if the distance of the attack qualifies.|WarpPerceptionTargets|WarpPerceptionDC|WarpPerceptionDuration
+	BONUS:VAR|WarpPerceptionTargets|CrypticPrimeStat
+	BONUS:VAR|WarpPerceptionDC|10+classlevel("Cryptic")/2+CrypticPrimeStat
 	BONUS:VAR|WarpPerceptionDuration|CrypticPrimeStat
 	SOURCEPAGE:p.68
 
@@ -790,10 +800,10 @@ Silent Pattern
 	KEY:Silent Pattern ~ Distorter
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.PsiLike
-	DESC:You have learned to alter the pattern of an area to disrupt sound within it.  The area is treated as if under the effect of silence until you choose to end the effect (a free action).  You may only have one silent pattern active at a time, the area affected is a %1 ft. radius, and you can select an area within %2 ft. of your current location when you use this ability.|SilentPatternRadius|SilentPatternRange
-	SOURCEPAGE:p.68
 	DEFINE:SilentPatternRadius|10
 	DEFINE:SilentPatternRange|30
+	DESC:You have learned to alter the pattern of an area to disrupt sound within it.  The area is treated as if under the effect of silence until you choose to end the effect (a free action).  You may only have one silent pattern active at a time, the area affected is a %1 ft. radius, and you can select an area within %2 ft. of your current location when you use this ability.|SilentPatternRadius|SilentPatternRange
+	SOURCEPAGE:p.68
 
 Blur Pattern
 	KEY:Blur Pattern ~ Distorter
@@ -805,50 +815,52 @@ Blur Pattern
 
 
 ###Block: Pattern Breaker Cryptic archetype abilities
+# Ability Name		Unique Key							Category of Ability		Type						Define										Description																																																																																																				Modify VAR																Source Page
 Disable Lock
 	KEY:Disable Lock ~ Pattern Breaker
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You gain the ability to disable a lock %1/day.  Using this ability is a standard action with a range of %2 ft.  You make a manifester level check with a +10 bonus against the DC of the lock.  If the check is successful, you successfully open the lock.|DisableLockTimes|DisableLockRange
-	SOURCEPAGE:p.69
 	DEFINE:DisableLockTimes|0
 	DEFINE:DisableLockRange|30
+	DESC:You gain the ability to disable a lock %1/day.  Using this ability is a standard action with a range of %2 ft.  You make a manifester level check with a +10 bonus against the DC of the lock.  If the check is successful, you successfully open the lock.|DisableLockTimes|DisableLockRange
 	BONUS:VAR|DisableLockTimes|3+CrypticPrimeStat
+	SOURCEPAGE:p.69
 
 Sunder Pattern
 	KEY:Sunder Pattern ~ Pattern Breaker
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You gain a +%1 bonus on Sunder attempts.|SunderPatternBonus
-	SOURCEPAGE:p.69
 	DEFINE:SunderPatternBonus|0
+	DESC:You gain a +%1 bonus on Sunder attempts.|SunderPatternBonus
 	BONUS:VAR|SunderPatternBonus|floor(classlevel("Cryptic")/2)
 	BONUS:VAR|CMB_Sunder|SunderPatternBonus
+	SOURCEPAGE:p.69
 
 Disable Weapon or Armor
 	KEY:Disable Weapon or Armor ~ Pattern Breaker
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack.Supernatural
-	DESC:You have learned to temporarily suppress the magical qualities of a weapon or armor with a touch.  As a melee touch attack that does not provoke attacks of opportunity, you can target one magical weapon or armor on a creature.  If the attack is successful, you make a manifester level check against a DC of 11 + the manifester level of the item.  If the manifester level check is successful, all magical or psionic qualities of the item are suppressed for %1 rounds.  There is no limit to the number of items you can affect, although you can only affect one per use.|DisableWeaponOrArmorDuration
-	SOURCEPAGE:p.69
 	DEFINE:DisableWeaponOrArmorDuration|0
+	DESC:You have learned to temporarily suppress the magical qualities of a weapon or armor with a touch.  As a melee touch attack that does not provoke attacks of opportunity, you can target one magical weapon or armor on a creature.  If the attack is successful, you make a manifester level check against a DC of 11 + the manifester level of the item.  If the manifester level check is successful, all magical or psionic qualities of the item are suppressed for %1 rounds.  There is no limit to the number of items you can affect, although you can only affect one per use.|DisableWeaponOrArmorDuration
 	BONUS:VAR|DisableWeaponOrArmorDuration|CrypticPrimeStat
+	SOURCEPAGE:p.69
 
 Disabling Aura
 	KEY:Disabling Aura ~ Pattern Breaker
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You can expend your psionic focus as a full round action to suppress only harmful effects around you in a %1 ft. aura for %2 rounds.  This functions similarly to a null psionics field, but it only affects harmful effects.  This includes suppressing magical or psionic weapons being used in attacks against the pattern breaker, although such items would still work against other targets.  You do not need to be awre of the effect to be suppressed.|DisablingAuraRadius|DisablingAuraDuration
-	SOURCEPAGE:p.69
 	DEFINE:DisablingAuraDuration|0
 	DEFINE:DisablingAuraRadius|5
+	DESC:You can expend your psionic focus as a full round action to suppress only harmful effects around you in a %1 ft. aura for %2 rounds.  This functions similarly to a null psionics field, but it only affects harmful effects.  This includes suppressing magical or psionic weapons being used in attacks against the pattern breaker, although such items would still work against other targets.  You do not need to be awre of the effect to be suppressed.|DisablingAuraRadius|DisablingAuraDuration
 	BONUS:VAR|DisablingAuraDuration|CrypticPrimeStat
+	SOURCEPAGE:p.69
 
 
 
 
 
 ###Block: Dread archetypes
+# Ability Name	Unique Key					Category of Ability	Type																			Required Class		Multiple Requirements																																	Description															Ability																																																										Bonus to Ability Pool					Cost		Source Page
 Fear in Flesh
 	KEY:Dread Archetype ~ Fear in Flesh
 	CATEGORY:Archetype
@@ -860,9 +872,9 @@ Fear in Flesh
 	ABILITY:Special Ability|AUTOMATIC|Terrors ~ Fear in Flesh|PRECLASS:1,Dread=1
 	ABILITY:Special Ability|AUTOMATIC|Intimidating Strike ~ Fear in Flesh|PRECLASS:1,Dread=3
 	ABILITY:Special Ability|AUTOMATIC|Strengthened by Fear ~ Fear in Flesh|PRECLASS:1,Dread=4
+	BONUS:ABILITYPOOL|Terror|-1|PRECLASS:1,Dread=4
 	COST:0
 	SOURCEPAGE:p.70
-	BONUS:ABILITYPOOL|Terror|-1|PRECLASS:1,Dread=4
 
 # COMMENT: Nightmare Constructor found in nightmare constructor auxiliary files
 Shadow Hunter
@@ -876,21 +888,22 @@ Shadow Hunter
 	ABILITY:Special Ability|AUTOMATIC|Shadow Diversion ~ Shadow Hunter|PRECLASS:1,Dread=1
 	ABILITY:Special Ability|AUTOMATIC|Grasping Shade ~ Shadow Hunter|PRECLASS:1,Dread=5
 	ABILITY:Special Ability|AUTOMATIC|Step through Shadows ~ Shadow Hunter|PRECLASS:1,Dread=10
+	BONUS:ABILITYPOOL|Terror|-1|PRECLASS:1,Dread=10
 	COST:0
 	SOURCEPAGE:p.71
-	BONUS:ABILITYPOOL|Terror|-1|PRECLASS:1,Dread=10
 
 
 
 ###Block: Fear in Flesh Dread archetype abilities
+# Ability Name		Unique Key						Category of Ability		Type				Define																																						Description																																																																																																																																											Modify VAR																																																																Source Page
 Fear Made Flesh
 	KEY:Fear Made Flesh ~ Fear in Flesh
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You can spend 1 hour in meditation, preparing your body for a physical transformation into a frightening creature.  One you have finished your meditation, you can activate the transformation at any time as a standard action.  Once activated, you are under the effects of bite of the wolf and claws of the beast, with a manifester level of %1.  This effect lasts %2 minutes.  Once the effect ends, you must spend another hour in meditation before you can transform again.|FearMadeFleshML|FearMadeFleshDuration
 	DEFINE:FearMadeFleshML|0
-	BONUS:VAR|FearMadeFleshML|DreadLVL
 	DEFINE:FearMadeFleshDuration|0
+	DESC:You can spend 1 hour in meditation, preparing your body for a physical transformation into a frightening creature.  One you have finished your meditation, you can activate the transformation at any time as a standard action.  Once activated, you are under the effects of bite of the wolf and claws of the beast, with a manifester level of %1.  This effect lasts %2 minutes.  Once the effect ends, you must spend another hour in meditation before you can transform again.|FearMadeFleshML|FearMadeFleshDuration
+	BONUS:VAR|FearMadeFleshML|DreadLVL
 	BONUS:VAR|FearMadeFleshDuration|10*DreadLVL
 	SOURCEPAGE:p.70
 
@@ -912,73 +925,74 @@ Strengthened by Fear
 	KEY:Strengthened by Fear ~ Fear in Flesh
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You can channel the fear of those around you into a physical boost to your own form.  As a swift action, %1/day, you can gain a +%2 insight bonus to your natural armor and a +%3 insight bonus to one physical ability score (Strength, Dexterity, or Constitution) for %4 rounds.  You can only use this ability if there is a creature within your line of sight with the shaken, frightened, or panicked condition.|StrengthenedByFearTimes|StrengthenedByFearNABonus|StrengthenedByFearStatBonus1|StrengthenedByFearDuration
-	SOURCEPAGE:p.70
 	DEFINE:StrengthenedByFearTimes|0
-	BONUS:VAR|StrengthenedByFearTimes|floor(DreadLVL/4)
 	DEFINE:StrengthenedByFearNABonus|0
-	BONUS:VAR|StrengthenedByFearNABonus|min(floor(DreadLVL/4),3)
 	DEFINE:StrengthenedByFearDuration|0
-	BONUS:VAR|StrengthenedByFearDuration|DreadLVL
 	DEFINE:StrengthenedByFearStatBonus1|0
-	BONUS:VAR|StrengthenedByFearStatBonus1|min(2*floor(DreadLVL/4),6)
 	DEFINE:StrengthenedByFearStatBonus2|0
-	BONUS:VAR|StrengthenedByFearStatBonus2|max(0,min(2*floor((DreadLVL-4)/4),4))
 	DEFINE:StrengthenedByFearStatBonus3|0
-	BONUS:VAR|StrengthenedByFearStatBonus3|max(0,min(2*floor((DreadLVL-8)/4),2))
+	DESC:You can channel the fear of those around you into a physical boost to your own form.  As a swift action, %1/day, you can gain a +%2 insight bonus to your natural armor and a +%3 insight bonus to one physical ability score (Strength, Dexterity, or Constitution) for %4 rounds.  You can only use this ability if there is a creature within your line of sight with the shaken, frightened, or panicked condition.|StrengthenedByFearTimes|StrengthenedByFearNABonus|StrengthenedByFearStatBonus1|StrengthenedByFearDuration
 	DESC:You also get a +%1 insight bonus to a second physical ability score.|StrengthenedByFearStatBonus2|PREVARGTEQ:DreadLVL,8
 	DESC:You also get a +%1 insight bonus to your third physical ability score.|StrengthenedByFearStatBonus3|PREVARGTEQ:DreadLVL,12
 	DESC:[Add the Strengthened By Fear template to activate.]
+	BONUS:VAR|StrengthenedByFearTimes|floor(DreadLVL/4)
+	BONUS:VAR|StrengthenedByFearNABonus|min(floor(DreadLVL/4),3)
+	BONUS:VAR|StrengthenedByFearDuration|DreadLVL
+	BONUS:VAR|StrengthenedByFearStatBonus1|min(2*floor(DreadLVL/4),6)
+	BONUS:VAR|StrengthenedByFearStatBonus2|max(0,min(2*floor((DreadLVL-4)/4),4))
+	BONUS:VAR|StrengthenedByFearStatBonus3|max(0,min(2*floor((DreadLVL-8)/4),2))
+	SOURCEPAGE:p.70
 
 
 
 
 
 ###Block: Shadow Hunter Dread archetype abilities
+# Ability Name		Unique Key						Category of Ability		Type						Define																				Description																																																																																																																																														Bonus to skill							Modify VAR																										Source Page
 Covert Nature
 	KEY:Covert Nature ~ Shadow Hunter
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You get a +%1 insight bonus to Stealth checks.|CovertNatureBonus
 	DEFINE:CovertNatureBonus|0
-	BONUS:VAR|CovertNatureBonus|max(1,DreadLVL/2)
+	DESC:You get a +%1 insight bonus to Stealth checks.|CovertNatureBonus
 	BONUS:SKILL|Stealth|CovertNatureBonus|TYPE=Insight
+	BONUS:VAR|CovertNatureBonus|max(1,DreadLVL/2)
 
 Shadow Diversion
 	KEY:Shadow Diversion ~ Shadow Hunter
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack.Supernatural
+	DEFINE:ShadowDiversionRange|30
+	DEFINE:ShadowDiversionDC|0
 	DESC:As a
 	DESC:standard|!PREFEAT:1,Improved Feint,Greater Feint
 	DESC:move|PREMULT:2,[PREFEAT:1,Improved Feint],[!PREFEAT:1,Greater Feint]
 	DESC:swift|PREFEAT:1,Greater Feint
 	DESC:action, you can cause shadows to take physical shape adjacent to a creature within %1 ft.  Unless the creature makes a successful Will save (DC %2), the creature treats the shadow as an enemy when determining if the creature is flanked until the end of your next turn.  If the shadow is adjacent to multiple creatures, you must choose which one is affected by it.|ShadowDiversionRange|ShadowDiversionDC
-	SOURCEPAGE:p.71
-	DEFINE:ShadowDiversionRange|30
-	DEFINE:ShadowDiversionDC|0
 	BONUS:VAR|ShadowDiversionDC|10+DreadLVL/2+DreadPrimeStat
+	SOURCEPAGE:p.71
 
 Grasping Shade
 	KEY:Grasping Shade ~ Shadow Hunter
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack.Supernatural
-	DESC:You can make shadows turn into reaching, grabbing tentacles of substance.  As a standard action, you can target a creature within %1 ft. and direct shadows near the creature to entangle the target.  The creature targetted cannot be in an area of bright light or the attempt fails.  The creature may make a Reflex save (DC %2) to negate the attack.  Entangled creatures can attempt to break free as a move action, making a Strength or Escape Artist check (DC %3).  Successive successful uses on the same target before the target has successfully broken free cause the target to gain the grapped condition if entangled and the pinned condition if grappled, although a successful save only stops the target from gaining the additional condition.  This ability can be used %4/day.|GraspingShadeRange|GraspingShadeDC|GraspingShadeEscapeDC|GraspingShadeTimes
-	SOURCEPAGE:p.71
 	DEFINE:GraspingShadeRange|30
 	DEFINE:GraspingShadeDC|0
 	DEFINE:GraspingShadeEscapeDC|0
 	DEFINE:GraspingShadeTimes|0
+	DESC:You can make shadows turn into reaching, grabbing tentacles of substance.  As a standard action, you can target a creature within %1 ft. and direct shadows near the creature to entangle the target.  The creature targetted cannot be in an area of bright light or the attempt fails.  The creature may make a Reflex save (DC %2) to negate the attack.  Entangled creatures can attempt to break free as a move action, making a Strength or Escape Artist check (DC %3).  Successive successful uses on the same target before the target has successfully broken free cause the target to gain the grapped condition if entangled and the pinned condition if grappled, although a successful save only stops the target from gaining the additional condition.  This ability can be used %4/day.|GraspingShadeRange|GraspingShadeDC|GraspingShadeEscapeDC|GraspingShadeTimes
 	BONUS:VAR|GraspingShadeDC|10+DreadLVL/2+DreadPrimeStat
 	BONUS:VAR|GraspingShadeEscapeDC|11+DreadPrimeStat
 	BONUS:VAR|GraspingShadeTimes|3+DreadPrimeStat
+	SOURCEPAGE:p.71
 
 Step through Shadows
 	KEY:Step through Shadows ~ Shadow Hunter
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
+	DEFINE:StepThroughShadowsRange|60
 	DESC:If you are in an area of dim light or darkness, you can travel to another location of dim light or darkness as if by means of fold space, as long as the destination is within %1 ft. of your initial location.  Using this ability counts as a daily use of the terrors ability.|StepThroughShadowsRange
 	SOURCEPAGE:p.71
-	DEFINE:StepThroughShadowsRange|60
 
 
 
@@ -986,6 +1000,7 @@ Step through Shadows
 
 ###Block: Marksman archetypes
 # COMMENT: Kaigun found in firearms auxiliary files
+# Ability Name	Unique Key					Category of Ability	Type																						Required Class		Multiple Requirements																																				Description																												Ability																																																																				Cost		Source Page
 Shroud
 	KEY:Marksman Archetype ~ Shroud
 	CATEGORY:Archetype
@@ -1018,16 +1033,17 @@ Spearman
 
 
 ###Block: Shroud Marksman archetype abilities
+# Ability Name		Unique Key					Category of Ability		Type						Define							Description																																																																									Bonus to skill					Modify VAR												Source Page
 Unseen
 	KEY:Unseen ~ Shroud
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
+	DEFINE:UnseenDuration|0
+	DEFINE:UnseenTimes|0
 	DESC:You can use your heightened awareness of your surroundings and psionic energy to read the environment and blend in so as to be undetectable.  While maintaining psionic focus, you can spend a swift action to become invisible for %1 rounds.|UnseenDuration
 	DESC:The invisibility ends as soon as you attack a creature.|!PREABILITY:1,CATEGORY=Special Ability,Unseen Assault ~ Shroud
 	DESC:You can use this ability %1/day.|UnseenTimes
-	DEFINE:UnseenDuration|0
 	BONUS:VAR|UnseenDuration|WIS
-	DEFINE:UnseenTimes|0
 	BONUS:VAR|UnseenTimes|3+classlevel("Marksman")
 	SOURCEPAGE:p.73
 
@@ -1035,11 +1051,11 @@ Hidden Hunter
 	KEY:Hidden Hunter ~ Shroud
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You gain a +%1 bonus on Stealth checks.|HiddenHunterBonus
-	SOURCEPAGE:p.73
 	DEFINE:HiddenHunterBonus|0
-	BONUS:VAR|HiddenHunterBonus|floor((classlevel("Marksman")+2)/4)
+	DESC:You gain a +%1 bonus on Stealth checks.|HiddenHunterBonus
 	BONUS:SKILL|Stealth|HiddenHunterBonus
+	BONUS:VAR|HiddenHunterBonus|floor((classlevel("Marksman")+2)/4)
+	SOURCEPAGE:p.73
 
 Hide in Plain Sight
 	KEY:Hide in Plain Sight ~ Shroud
@@ -1058,6 +1074,7 @@ Unseen Assault
 
 
 ###Block: Spearman Marksman archetype abilities
+# Ability Name	Unique Key					Category of Ability		Type						Define				Description																																																																			Automatically Gained Feat	Modify VAR											Weapon prof. bonus																											Source Page
 Returning Throw
 	KEY:Returning Throw ~ Spearman
 	CATEGORY:Internal
@@ -1069,8 +1086,8 @@ Psionic Spear
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:You can apply the benefits of Psionic Shot to melee attacks made with a spear, longspear, or shortspear.  Should you gain the Greater Psionic Shot or Fell Shot feats, they also apply to melee attacks made with a spear, longspear, or shortspear.
-	SOURCEPAGE:p.73
 	AUTO:FEAT|Psionic Shot
+	SOURCEPAGE:p.73
 
 Running Throw
 	KEY:Running Throw ~ Spearman
@@ -1084,13 +1101,13 @@ Spear Training
 	KEY:Spear Training ~ Spearman
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You gain a +%1 bonus on all attack and damage rolls made with a spear, longspear, or shortspear.|SpearTrainingBonus
-	SOURCEPAGE:p.73
 	DEFINE:SpearTrainingBonus|0
+	DESC:You gain a +%1 bonus on all attack and damage rolls made with a spear, longspear, or shortspear.|SpearTrainingBonus
 	BONUS:VAR|SpearTrainingBonus|min(4,floor(classlevel("Marksman")-1)/4)
 	BONUS:WEAPONPROF=Spear|TOHIT,DAMAGE|SpearTrainingBonus
 	BONUS:WEAPONPROF=Longspear|TOHIT,DAMAGE|SpearTrainingBonus
 	BONUS:WEAPONPROF=Shortspear|TOHIT,DAMAGE|SpearTrainingBonus
+	SOURCEPAGE:p.73
 
 Spear Expert
 	KEY:Spear Expert ~ Spearman
@@ -1104,6 +1121,7 @@ Spear Expert
 
 
 ###Block: Tactician archetypes
+# Ability Name	Unique Key						Category of Ability	Type																									Required Class		Multiple Requirements																																								Description																															Ability																																																																																	Bonus to Ability Pool																					Bonus to spell known/L					Cost		Source Page
 Amplifier
 	KEY:Tactician Archetype ~ Amplifier
 	CATEGORY:Archetype
@@ -1130,11 +1148,11 @@ Battle Medic
 	ABILITY:Special Ability|AUTOMATIC|Healing Bond ~ Battle Medic|PRECLASS:1,Tactician=4
 	ABILITY:Special Ability|AUTOMATIC|Back Into the Fray ~ Battle Medic|PRECLASS:1,Tactician=6
 	ABILITY:Internal|AUTOMATIC|Cushion the Blow ~ Battle Medic|PRECLASS:1,Tactician=6
+	ABILITY:Internal|AUTOMATIC|Battle Medic Powers Known
+	BONUS:ABILITYPOOL|Tactician Strategy|-1|PRECLASS:1,Tactician=4
+	BONUS:SPELLKNOWN|CLASS=Tactician;LEVEL=0|-3
 	COST:0
 	SOURCEPAGE:p.22
-	ABILITY:Internal|AUTOMATIC|Battle Medic Powers Known
-	BONUS:SPELLKNOWN|CLASS=Tactician;LEVEL=0|-3
-	BONUS:ABILITYPOOL|Tactician Strategy|-1|PRECLASS:1,Tactician=4
 
 Commander
 	KEY:Tactician Archetype ~ Commander
@@ -1146,10 +1164,10 @@ Commander
 	ABILITY:Internal|AUTOMATIC|Forced Participant ~ Commander|PRECLASS:1,Tactician=1
 	ABILITY:Special Ability|AUTOMATIC|Issue Order ~ Commander|PRECLASS:1,Tactician=4
 	ABILITY:Special Ability|AUTOMATIC|Thrall ~ Commander|PRECLASS:1,Tactician=12
-	COST:0
-	SOURCEPAGE:p.94
 	BONUS:ABILITYPOOL|Tactician Bonus Teamwork Feat|-1|PRECLASS:1,Tactician=12
 	BONUS:ABILITYPOOL|Tactician Strategy|-1|PRECLASS:1,Tactician=4
+	COST:0
+	SOURCEPAGE:p.94
 
 Fear Projector
 	KEY:Tactician Archetype ~ Fear Projector
@@ -1162,52 +1180,52 @@ Fear Projector
 	ABILITY:Special Ability|AUTOMATIC|Collective Fear ~ Fear Projector|PRECLASS:1,Tactician=6
 	ABILITY:Special Ability|AUTOMATIC|Power from Fear ~ Fear Projector|PRECLASS:1,Tactician=6
 	ABILITY:Special Ability|AUTOMATIC|Permeating Fear ~ Fear Projector|PRECLASS:1,Tactician=10
-	COST:0
-	SOURCEPAGE:p.94
-	BONUS:SPELLKNOWN|CLASS=Tactician;LEVEL=0|-3
 	BONUS:ABILITYPOOL|Tactician Bonus Teamwork Feat|-1|PRECLASS:1,Tactician=6
 	BONUS:ABILITYPOOL|Tactician Strategy|-1|PRECLASS:1,Tactician=10
+	BONUS:SPELLKNOWN|CLASS=Tactician;LEVEL=0|-3
+	COST:0
+	SOURCEPAGE:p.94
 
 
 
 ###Block: Amplifier Tactician archetype abilities
+# Ability Name		Unique Key					Category of Ability		Type						Define																			Description																																																													Modify VAR																																		Source Page
 Inevitable Strike
 	KEY:Inevitable Strike ~ Amplifier
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You can, %1/day, grant one member of your collective a +%2 insight bonus to its next single attack roll made before the end of its next turn.|InevitableStrikeTimes|InevitableStrikeBonus
-	SOURCEPAGE:p.93
 	DEFINE:InevitableStrikeTimes|0
 	DEFINE:InevitableStrikeBonus|0
+	DESC:You can, %1/day, grant one member of your collective a +%2 insight bonus to its next single attack roll made before the end of its next turn.|InevitableStrikeTimes|InevitableStrikeBonus
 	BONUS:VAR|InevitableStrikeTimes|3+INT
 	BONUS:VAR|InevitableStrikeBonus|5+floor(classlevel("Tactician")-1)/2
+	SOURCEPAGE:p.93
 
-# COMMENT: Consider a PREAPPLY?
 Heightened Movement
 	KEY:Heightened Movement ~ Amplifier
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:As a swift action, you can grant one member of your collective a +%1 insight bonus to AC and Reflex saves, as well as a %2 ft. bonus to movement speed.  This effect lasts %3 rounds and counts as a use of your strategies ability.|HeightenedMovementBonus|HeightenedMovementExtraSpeed|HeightenedMovementDuration
-	SOURCEPAGE:p.93
 	DEFINE:HeightenedMovementBonus|0
 	DEFINE:HeightenedMovementExtraSpeed|0
 	DEFINE:HeightenedMovementDuration|0
+	DESC:As a swift action, you can grant one member of your collective a +%1 insight bonus to AC and Reflex saves, as well as a %2 ft. bonus to movement speed.  This effect lasts %3 rounds and counts as a use of your strategies ability.|HeightenedMovementBonus|HeightenedMovementExtraSpeed|HeightenedMovementDuration
 	BONUS:VAR|HeightenedMovementBonus|min(3,floor((classlevel("Tactician")+1)/6))
 	BONUS:VAR|HeightenedMovementExtraSpeed|5*min(3,floor((classlevel("Tactician")+1)/6))
 	BONUS:VAR|HeightenedMovementDuration|INT
+	SOURCEPAGE:p.93
 
 Augmented Offense
 	KEY:Augmented Offense ~ Amplifier
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:As a standard action, you can grant one member of your collective a +%1 insight bonus to attack rolls and to the DC of the next single power or spell the collective member manifests or casts that has a save DC, and a +%2 insight bonus to damage rolls.  This effect lasts %3 rounds.|AugmentedOffenseAttackDCBonus|AugmentedOffenseDamageBonus|AugmentedOffenseDuration
-	SOURCEPAGE:p.93
 	DEFINE:AugmentedOffenseAttackDCBonus|0
 	DEFINE:AugmentedOffenseDamageBonus|0
 	DEFINE:AugmentedOffenseDuration|0
+	DESC:As a standard action, you can grant one member of your collective a +%1 insight bonus to attack rolls and to the DC of the next single power or spell the collective member manifests or casts that has a save DC, and a +%2 insight bonus to damage rolls.  This effect lasts %3 rounds.|AugmentedOffenseAttackDCBonus|AugmentedOffenseDamageBonus|AugmentedOffenseDuration
 	BONUS:VAR|AugmentedOffenseAttackDCBonus|floor((classlevel("Tactician")-3)/3)
 	BONUS:VAR|AugmentedOffenseDamageBonus|2*floor((classlevel("Tactician")-3)/3)
 	BONUS:VAR|AugmentedOffenseDuration|INT
+	SOURCEPAGE:p.93
 
 Empowered Attack
 	KEY:Empowered Attack ~ Amplifier
@@ -1218,13 +1236,12 @@ Empowered Attack
 
 
 
-
-
 ###Block: Battle Medic Tactician archetype abilities
 # COMMENT: Needs to have all Healing subschool powers on the Vitalist list
 # NEEDS CODE WORK: Can't add all of one subschool of powers (or one subschool from another class), even in a class file.
 # WORKAROUND: A static list of powers added with the SPELLLEVEL tag.
 # COMMENT: New powers are added to power lists with new releases, so a static list of additional powers is less than ideal.
+# Ability Name			Unique Key						Category of Ability		Type						Define																				Description																																																																														Automatically Gained Feat																					Bonus to Ability Pool			Modify VAR																				Source Page		List of Class Spells by Level
 Battle Medic Powers Known
 	CATEGORY:Internal
 	SPELLLEVEL:CLASS|Tactician=1|Natural Healing|Tactician=2|Body Adjustment,Cleanse Body,Empathic Condition Relief,Resist Toxin|Tactician=3|Body Purification,Mend Body|Tactician=5|Psionic Revivify,Restore Extremity|Tactician=6|Cleanse Spirit,Heal Injuries|Tactician=8|True Metabolism|Tactician=9|Regenerative Aura
@@ -1237,13 +1254,13 @@ Transfer Wounds
 	KEY:Transfer Wounds ~ Battle Medic
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You learned how to transfer wounds with but a touch.  As a standard action that does not provoke attacks of opportunity, you may touch a target and heal it for %1d%2 points of damage.  You suffer the same number of points of non-lethal damage (up to the amount the target is actually healed).  You may use this ability %3/day. You may not use this ability upon yourself.|BattleMedicTransferWoundsDice|BattleMedicTransferWoundsDieSize|BattleMedicTransferWoundsTimes
-	SOURCEPAGE:p.93
 	DEFINE:BattleMedicTransferWoundsDieSize|6
 	DEFINE:BattleMedicTransferWoundsDice|0
-	BONUS:VAR|BattleMedicTransferWoundsDice|floor((classlevel("Tactician")+2)/3)
 	DEFINE:BattleMedicTransferWoundsTimes|0
+	DESC:You learned how to transfer wounds with but a touch.  As a standard action that does not provoke attacks of opportunity, you may touch a target and heal it for %1d%2 points of damage.  You suffer the same number of points of non-lethal damage (up to the amount the target is actually healed).  You may use this ability %3/day. You may not use this ability upon yourself.|BattleMedicTransferWoundsDice|BattleMedicTransferWoundsDieSize|BattleMedicTransferWoundsTimes
+	BONUS:VAR|BattleMedicTransferWoundsDice|floor((classlevel("Tactician")+2)/3)
 	BONUS:VAR|BattleMedicTransferWoundsTimes|3+INT
+	SOURCEPAGE:p.93
 
 Healing Bond
 	KEY:Healing Bond ~ Battle Medic
@@ -1272,6 +1289,7 @@ Cushion the Blow
 # NEEDS CODE WORK: Can't change (just) the 0-level powers to Vitalist powers, even in a class file.  I think.
 # WORKAROUND: Individual powers from a static list added with the SPELLKNOWN tag.
 # COMMENT: The ability should allow all 0-level Vitalist powers; this is a specific list as of Psionics Expanded
+# Ability Name	Unique Key						Category of Ability		Type					List of Known Class Spells by Level
 Dazzle
 	KEY:Dazzle Vitalist Talent
 	CATEGORY:Special Ability
@@ -1322,9 +1340,8 @@ Vim
 
 
 
-
-
 ###Block: Commander Tactician archetype abilities
+# Ability Name		Unique Key					Category of Ability		Type						Description																																																																																							Automatically Gained Feat		Modify VAR											Source Page
 Forced Participant
 	KEY:Forced Participant ~ Commander
 	CATEGORY:Internal
@@ -1347,53 +1364,53 @@ Thrall
 
 
 
-
-
 ###Block: Fear Projector Tactician archetype abilities
+# Ability Name	Unique Key						Category of Ability		Type						Define													Description																																																																																																							Modify VAR																Source Page
 Project Fear
 	KEY:Project Fear ~ Fear Projector
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack.Supernatural
-	DESC:You are capable of projecting horrifying images into the minds of your enemies.  As a standard action, you target one creature within %1 ft. and project these terrifying images into that creature's mind unless the creature makes a successful Will save (DC %2).  A failed save means the creature is shaken for %3 rounds.|ProjectFearRange|ProjectFearDC|ProjectFearDuration
-	SOURCEPAGE:p.94
 	DEFINE:ProjectFearRange|30
 	DEFINE:ProjectFearDC|0
 	DEFINE:ProjectFearDuration|0
+	DESC:You are capable of projecting horrifying images into the minds of your enemies.  As a standard action, you target one creature within %1 ft. and project these terrifying images into that creature's mind unless the creature makes a successful Will save (DC %2).  A failed save means the creature is shaken for %3 rounds.|ProjectFearRange|ProjectFearDC|ProjectFearDuration
 	BONUS:VAR|ProjectFearDuration|CHA
 	BONUS:VAR|ProjectFearDC|10+classlevel("Tactician")/2+CHA
+	SOURCEPAGE:p.94
 
 Collective Fear
 	KEY:Collective Fear ~ Fear Projector
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
+	DEFINE:CollectiveFearACBonus|1
 	DESC:You have learned to channel your powers over fear through your collective.  You can choose one member of your collective and treat that as the source for any fear-based effect you use, including your project fear ability, by expending your psionic focus while creating the effect to be redirected.  This ability includes altering what reatures can be targeted by an effect, what creatures are affected by an effect, and the like.  In addition, the member of your collective slelected is shrouded in frightening images that provide a +%1 deflection bonus to AC until the end of its next turn.|CollectiveFearACBonus
 	SOURCEPAGE:p.94
-	DEFINE:CollectiveFearACBonus|1
 
 Power from Fear
 	KEY:Power from Fear ~ Fear Projector
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:Your allies are able to tap into your fear-based power.  When a member of the collective causes a creature to have the shaken, panicked, or frightened condition, the collective member gains a +%1 morale bonus to attack rolls and saving throws for %2 rounds.|PowerFromFearBonus|PowerFromFearDuration
-	SOURCEPAGE:p.94
 	DEFINE:PowerFromFearBonus|0
-	BONUS:VAR|PowerFromFearBonus|floor((classlevel("Tactician")-2)/4)
 	DEFINE:PowerFromFearDuration|0
+	DESC:Your allies are able to tap into your fear-based power.  When a member of the collective causes a creature to have the shaken, panicked, or frightened condition, the collective member gains a +%1 morale bonus to attack rolls and saving throws for %2 rounds.|PowerFromFearBonus|PowerFromFearDuration
+	BONUS:VAR|PowerFromFearBonus|floor((classlevel("Tactician")-2)/4)
 	BONUS:VAR|PowerFromFearDuration|CHA
+	SOURCEPAGE:p.94
 
 Permeating Fear
 	KEY:Permeating Fear ~ Fear Projector
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
+	DEFINE:PermeatingFearRadius|30
 	DESC:You can expend your psionic focus to channel your project fear ability through your collective and target all creatures within %1 ft. of any member of your collective.  You must wait ten minutes after using this ability before you can use it again.|PermeatingFearRadius
 	SOURCEPAGE:p.94
-	DEFINE:PermeatingFearRadius|30
 
 
 
 
 
 ###Block: Vitalist archetypes
+# Ability Name	Unique Key					Category of Ability	Type																					Required Class		Multiple Requirements																																		Description																																																	Ability																																																											Cost		Source Page
 Life Leech
 	KEY:Vitalist Archetype ~ Life Leech
 	CATEGORY:Archetype
@@ -1438,39 +1455,40 @@ Sadist
 
 
 ###Block: Life Leech Vitalist archetype abilities
+# Ability Name		Unique Key						Category of Ability		Type						Define									Description																																																																																																																																																																																								Automatically Gained Feat		Modify VAR																		Source Page
 Transfer Ailment
 	KEY:Transfer Ailment ~ Life Leech
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack
-	DESC:You can transfer a condition (listed below) from one member of your collective to another as a standard action.  If this ability is used on an unwilling target and the recipient of the effect makes a successful save (see the Unwilling Participant feat), the creature with the condition being transferred still suffers from the condition.  You may use this ability %1/day.  This ability may only be used on creatures with a Constitution score and may not be used against creatures with less than %2 hit dice.  This ability can only be used to transfer temporary conditions.  For example, a life leech could not transfer blindness from a creature that has somehow lost its eyes permanently.|TransferAilmentTimes|TransferAilmentHD
 	DEFINE:TransferAilmentTimes|0
-	BONUS:VAR|TransferAilmentTimes|3+WIS
 	DEFINE:TransferAilmentHD|0
-	BONUS:VAR|TransferAilmentHD|classlevel("Vitalist")/2
-	SOURCEPAGE:p.95
+	DESC:You can transfer a condition (listed below) from one member of your collective to another as a standard action.  If this ability is used on an unwilling target and the recipient of the effect makes a successful save (see the Unwilling Participant feat), the creature with the condition being transferred still suffers from the condition.  You may use this ability %1/day.  This ability may only be used on creatures with a Constitution score and may not be used against creatures with less than %2 hit dice.  This ability can only be used to transfer temporary conditions.  For example, a life leech could not transfer blindness from a creature that has somehow lost its eyes permanently.|TransferAilmentTimes|TransferAilmentHD
 	DESC:List of conditions: dazed, dazzled, shaken, staggered
 	DESC:, blind, deafened, fatigued, frightened, sickened|PRECLASS:1,Vitalist=4
 	DESC:, exhausted, panicked, nauseated, paralyzed|PRECLASS:1,Vitalist=7
 	DESC:, stunned, unconscious (doesn't reduce target creature to negative hit points or bring original creature to positive hit points)|PRECLASS:1,Vitalist=10
+	BONUS:VAR|TransferAilmentTimes|3+WIS
+	BONUS:VAR|TransferAilmentHD|classlevel("Vitalist")/2
+	SOURCEPAGE:p.95
 
 Unwilling Participant
 	KEY:Unwilling Participant ~ Life Leech
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:When any creature in the collective against their will makes a save against an effect from over the collective, they suffer a -2 penalty on the save to resist the effect.
-	SOURCEPAGE:p.95
 	AUTO:FEAT|Unwilling Participant
+	SOURCEPAGE:p.95
 
 Drain Health
 	KEY:Drain Health ~ Life Leech
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack
-	DESC:You can steal hit points from members of your collective and transfer them as healing to other members of the collective.  As a standard action, one member of the collective takes %1 damage and another member of the collective heals the same amount.  If used on an unwilling target, a successful Will save halves the amount of damage taken and healed.  This ability mjay only be used on creatures with a Constitution score and may not be used against creatures with less than %2 hit dice.|DrainHealthDamage|DrainHealthHD
-	SOURCEPAGE:p.95
 	DEFINE:DrainHealthDamage|0
-	BONUS:VAR|DrainHealthDamage|WIS+2*classlevel("Vitalist")
 	DEFINE:DrainHealthHD|0
+	DESC:You can steal hit points from members of your collective and transfer them as healing to other members of the collective.  As a standard action, one member of the collective takes %1 damage and another member of the collective heals the same amount.  If used on an unwilling target, a successful Will save halves the amount of damage taken and healed.  This ability mjay only be used on creatures with a Constitution score and may not be used against creatures with less than %2 hit dice.|DrainHealthDamage|DrainHealthHD
+	BONUS:VAR|DrainHealthDamage|WIS+2*classlevel("Vitalist")
 	BONUS:VAR|DrainHealthHD|classlevel("Vitalist")/2
+	SOURCEPAGE:p.95
 
 Transfer Attack
 	KEY:Transfer Attack ~ Life Leech
@@ -1482,6 +1500,7 @@ Transfer Attack
 
 
 ###Block: Miasmic Vitalist archetype abilities
+# Ability Name	Unique Key				Category of Ability		Type						Define																						Description																																																																																																																																																														Modify VAR																														Source Page		List of Known Class Spells by Level
 Noxious Talent
 	KEY:Noxious Talent ~ Miasmic
 	CATEGORY:Internal
@@ -1491,6 +1510,10 @@ Sickening Touch
 	KEY:Sickening Touch ~ Miasmic
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack.Supernatural
+	DEFINE:SickeningTouchDC|0
+	DEFINE:SickeningTouchDuration|0
+	DEFINE:SickeningTouchTimes|0
+	DEFINE:SickeningTouchTransferDuration|0
 	DESC:You can cause a living creature to be
 	DESC:sickened|PREVARLT:classlevel("Vitalist"),5
 	DESC:nauseated|PREVARGTEQ:classlevel("Vitalist"),5
@@ -1501,16 +1524,12 @@ Sickening Touch
 	DESC:A successful save negates this effect.|PREVARLT:classlevel("Vitalist"),9
 	DESC:A successful save causes the creature touched to be sickened.|PREVARGTEQ:classlevel("Vitalist"),9
 	DESC:You may use this ability %1/day.|SickeningTouchTimes
-	SOURCEPAGE:p.95
-	DEFINE:SickeningTouchDC|0
-	DEFINE:SickeningTouchDuration|0
-	DEFINE:SickeningTouchTimes|0
+	DESC:If you absorb a disease through your disease mastery ability, for %1 rounds after abosrbing the disease, you can transfer the disease through this ability, infecting the touched creature with the disease absorbed.|SickeningTouchTransferDuration|PRECLASS:1,Vitalist=13
 	BONUS:VAR|SickeningTouchDC|10+classlevel("Vitalist")/2+WIS
 	BONUS:VAR|SickeningTouchDuration|WIS
 	BONUS:VAR|SickeningTouchTimes|3+WIS
-	DESC:If you absorb a disease through your disease mastery ability, for %1 rounds after abosrbing the disease, you can transfer the disease through this ability, infecting the touched creature with the disease absorbed.|SickeningTouchTransferDuration|PRECLASS:1,Vitalist=13
-	DEFINE:SickeningTouchTransferDuration|0
 	BONUS:VAR|SickeningTouchTransferDuration|WIS
+	SOURCEPAGE:p.95
 
 Disease Mastery
 	KEY:Disease Mastery ~ Miasmic
@@ -1524,43 +1543,44 @@ Block Toxin
 	KEY:Block Toxin ~ Miasmic
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:Members of your collective can request assistance against poisons or diseases.  As an immediate action, the collective member can request you grant immunity to a specific disease or poison that they are currently affected by.  You can grant this immunity by spending %2 power points as a free action even if it is not your turn and making a manifester level check against the save DC of the poison or disease.  If the check is successful, the collective member is treated as immune to that specific application of poison or disease.  This does not cure any damage suffered prior to the request being made.  You can do this %1/day.|BlockToxinTimes|BlockToxinPPCost
-	SOURCEPAGE:p.96
 	DEFINE:BlockToxinTimes|0
-	BONUS:VAR|BlockToxinTimes|3+WIS
 	DEFINE:BlockToxinPPCost|5
+	DESC:Members of your collective can request assistance against poisons or diseases.  As an immediate action, the collective member can request you grant immunity to a specific disease or poison that they are currently affected by.  You can grant this immunity by spending %2 power points as a free action even if it is not your turn and making a manifester level check against the save DC of the poison or disease.  If the check is successful, the collective member is treated as immune to that specific application of poison or disease.  This does not cure any damage suffered prior to the request being made.  You can do this %1/day.|BlockToxinTimes|BlockToxinPPCost
+	BONUS:VAR|BlockToxinTimes|3+WIS
+	SOURCEPAGE:p.96
 
 
 
 ###Block: Sadist Vitalist archetype abilities
+# Ability Name	Unique Key					Category of Ability		Type						Define									Description																																																																																																								Modify VAR																				Source Page
 Exquisite Agony
 	KEY:Exquisite Agony ~ Sadist
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:When a member of your collective dies, instead of needing to make a save to avoid taking damage, you gain a number of temporary power points equal to the Hit Die of the creature killed.  These power points last %1 rounds and do not stack with each other or other temporary power points.|ExquisiteAgonyDuration
-	SOURCEPAGE:p.96
 	DEFINE:ExquisiteAgonyDuration|0
+	DESC:When a member of your collective dies, instead of needing to make a save to avoid taking damage, you gain a number of temporary power points equal to the Hit Die of the creature killed.  These power points last %1 rounds and do not stack with each other or other temporary power points.|ExquisiteAgonyDuration
 	BONUS:VAR|ExquisiteAgonyDuration|WIS
+	SOURCEPAGE:p.96
 
 Lingering Pain
 	KEY:Lingering Pain ~ Sadist
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You learn to make wounds more painful than usual.  Any time you inflict hit point damage on a creature and you are maintaining focus, it also causes %1 bleed damage unless the target makes a successful Fortitude save (DC %2).|LingeringPainBleed|LingeringPainDC
-	SOURCEPAGE:p.96
 	DEFINE:LingeringPainBleed|0
-	BONUS:VAR|LingeringPainBleed|floor(classlevel("Vitalist")/2)
 	DEFINE:LingeringPainDC|0
+	DESC:You learn to make wounds more painful than usual.  Any time you inflict hit point damage on a creature and you are maintaining focus, it also causes %1 bleed damage unless the target makes a successful Fortitude save (DC %2).|LingeringPainBleed|LingeringPainDC
+	BONUS:VAR|LingeringPainBleed|floor(classlevel("Vitalist")/2)
 	BONUS:VAR|LingeringPainDC|10+classlevel("Vitalist")/2+WIS
+	SOURCEPAGE:p.96
 
 Empowered in Pain
 	KEY:Empowered in Pain ~ Sadist
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You can treat any power you manifest of the healing subdiscipline as if affected by the Empower Power feat by expending your psionic focus and causing a number of hit points in damage to one member of your collective equal to the total number of power points spent on the power.  The member targeted by this damage cannot be the recipient of the healing (whether directly or through effects such as collective healing) and may attempt a Will save (DC %1) to negate the effect, but doing so means the power is not empowered and psionic focus is still expended.  You cannot inflict this damage upon yourself.|EmpoweredInPainDC
-	SOURCEPAGE:p.96
 	DEFINE:EmpoweredInPainDC|0
+	DESC:You can treat any power you manifest of the healing subdiscipline as if affected by the Empower Power feat by expending your psionic focus and causing a number of hit points in damage to one member of your collective equal to the total number of power points spent on the power.  The member targeted by this damage cannot be the recipient of the healing (whether directly or through effects such as collective healing) and may attempt a Will save (DC %1) to negate the effect, but doing so means the power is not empowered and psionic focus is still expended.  You cannot inflict this damage upon yourself.|EmpoweredInPainDC
 	BONUS:VAR|EmpoweredInPainDC|10+classlevel("Vitalist")/2+WIS
+	SOURCEPAGE:p.96
 
 
 
@@ -1570,15 +1590,15 @@ Empowered in Pain
 
 
 ###Block: Psion archetypes
+# Ability Name	Unique Key					Category of Ability	Type														Required Ability									Required Class		Multiple Requirements																											Description										Bonus to Ability Pool																						Caster level																																																																																																														Cost		Source Page
 Dual Disciple
 	KEY:Psion Archetype ~ Dual Disciple
 	CATEGORY:Archetype
 	TYPE:Archetype.PsionArchetype.PsionDisciplineClassSkills.PsionFeat10.PsionFeat15
+	PREABILITY:1,CATEGORY=Special Ability,TYPE.PsionicDiscipline
 	PRECLASS:1,Psion=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Psion Archetype ~ Dual Disciple],[!PREABILITY:1,CATEGORY=Archetype,TYPE.PsionDisciplineClassSkills,TYPE.PsionFeat10,TYPE.PsionFeat15]
 	DESC:You strive to unlock the secrets of multiple disciplines.
-	COST:0
-	SOURCEPAGE:p.76
 	BONUS:ABILITYPOOL|Psion Feat|-1|PRECLASS:1,Psion=10
 	BONUS:ABILITYPOOL|Psion Feat|-1|PRECLASS:1,Psion=15
 	BONUS:ABILITYPOOL|Secondary Discipline|1
@@ -1589,38 +1609,40 @@ Dual Disciple
 	BONUS:CASTERLEVEL|SCHOOL.Clairsentience|1|PREABILITY:1,CATEGORY=Special Ability,Clairsentience Discipline
 	BONUS:CASTERLEVEL|SCHOOL.Metacreativity|1|PREABILITY:1,CATEGORY=Special Ability,Metacreativity Discipline
 	BONUS:CASTERLEVEL|SCHOOL.Telepathy|1|PREABILITY:1,CATEGORY=Special Ability,Telepathy Discipline
-	PREABILITY:1,CATEGORY=Special Ability,TYPE.PsionicDiscipline
+	COST:0
+	SOURCEPAGE:p.76
 
 
 
 # COMMENT: Bombardier Psion Archetype - to remove the discipline ability, this needs to be implemented as a subclass.
 ###Block: Bombardier Psion archetype abilities
+# Ability Name	Unique Key					Category of Ability		Type						Define																																										Description																																																																																																																																	Bonus to spell known/L				Modify VAR																																				Source Page		List of Known Class Spells by Level
 Exploding Stone
 	KEY:Exploding Stone ~ Bombardier
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack.Supernatural
-	DESC:You can throw a power stone at an enemy as a standard action.  Thrown power stones have a range of 20 feet and use the Throw Splash Weapon special attack.  On a direct hit, an exploding stone inflicts %1d%2+%3+%4d%2 of your active energy type and the effect of the power stone affects the struck creature.  You are capable of empowering mundane crystal to act as an exploding stone in place of using a power stone.  Splash damage from your exploding stone is always equal to the exploding stone's minimum damage.  Those caught in the splash damage can attempt a save (Reflex DC %5) for half damage. You can throw exploding stones %6/day.|ExplodingStoneBaseDice|ExplodingStoneDieSize|ExplodingStoneBonusDamage|ExplodingStoneBonusDice|ExplodingStoneDC|ExplodingStoneTimes
-	SOURCEPAGE:p.76
 	DEFINE:ExplodingStoneBaseDice|1
 	DEFINE:ExplodingStoneDieSize|6
 	DEFINE:ExplodingStoneBonusDamage|0
-	BONUS:VAR|ExplodingStoneBonusDamage|INT
 	DEFINE:ExplodingStoneBonusDice|0
-	BONUS:VAR|ExplodingStoneBonusDice|floor((ExplodingStoneLVL-1)/2)
 	DEFINE:ExplodingStoneDC|0
-	BONUS:VAR|ExplodingStoneDC|10+floor(ExplodingStoneLVL/2)+INT
 	DEFINE:ExplodingStoneTimes|ExplodingStoneLVL+INT
 	DEFINE:ExplodingStoneLVL|0
+	DESC:You can throw a power stone at an enemy as a standard action.  Thrown power stones have a range of 20 feet and use the Throw Splash Weapon special attack.  On a direct hit, an exploding stone inflicts %1d%2+%3+%4d%2 of your active energy type and the effect of the power stone affects the struck creature.  You are capable of empowering mundane crystal to act as an exploding stone in place of using a power stone.  Splash damage from your exploding stone is always equal to the exploding stone's minimum damage.  Those caught in the splash damage can attempt a save (Reflex DC %5) for half damage. You can throw exploding stones %6/day.|ExplodingStoneBaseDice|ExplodingStoneDieSize|ExplodingStoneBonusDamage|ExplodingStoneBonusDice|ExplodingStoneDC|ExplodingStoneTimes
+	BONUS:VAR|ExplodingStoneBonusDamage|INT
+	BONUS:VAR|ExplodingStoneBonusDice|floor((ExplodingStoneLVL-1)/2)
+	BONUS:VAR|ExplodingStoneDC|10+floor(ExplodingStoneLVL/2)+INT
 	BONUS:VAR|ExplodingStoneLVL|classlevel("Psion")
+	SOURCEPAGE:p.76
 
 Talents
 	KEY:Talents ~ Bombardier
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:You gain energy splash as a talent usable at will as long as you maintain psionic focus.
-	SPELLKNOWN:CLASS|Psion=0|Energy Splash Talent
 	BONUS:SPELLKNOWN|CLASS=Psion;LEVEL=0|-3
 	SOURCEPAGE:p.76
+	SPELLKNOWN:CLASS|Psion=0|Energy Splash Talent
 
 
 
@@ -1629,93 +1651,95 @@ Talents
 # NEEDS CODE/DATA WORK: How to add another spell list?  Must 30 (more) subclasses be created?
 # WORKAROUND: A static list of powers added with the SPELLLEVEL tag.
 # COMMENT: New powers are added to discipline lists with new releases, so a static list of additional powers is less than ideal.
+# Ability Name					Unique Key									Category of Ability		Type							Restricted Ability									Define						Description									Ability																																								Caster level						Modify VAR									Source Page
 Psychometabolism Secondary Discipline
 	KEY:Psychometabolism Secondary Discipline ~ Dual Disciple
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SecondaryDiscipline
 	!PREABILITY:1,CATEGORY=Special Ability,Psychometabolism Discipline
-	BONUS:CASTERLEVEL|SCHOOL.Psychometabolism|1
+	DEFINE:PsychometabolismDisciplineLVL|0
+	DESC:You have a secondary discipline of Psychometabolism.
 	ABILITY:Special Ability|AUTOMATIC|Metabolic Healing ~ Psychometabolism|PRECLASS:1,Psion=10
 	ABILITY:Special Ability|AUTOMATIC|Shared Effect ~ Psychometabolism|PRECLASS:1,Psion=15
-	DESC:You have a secondary discipline of Psychometabolism.
-	SOURCEPAGE:p.76
-	DEFINE:PsychometabolismDisciplineLVL|0
-	BONUS:VAR|PsychometabolismDisciplineLVL|classlevel("Psion")
 	ABILITY:Internal|AUTOMATIC|Psychometabolism Power List
+	BONUS:CASTERLEVEL|SCHOOL.Psychometabolism|1
+	BONUS:VAR|PsychometabolismDisciplineLVL|classlevel("Psion")
+	SOURCEPAGE:p.76
 
 Psychokinesis Secondary Discipline
 	KEY:Psychokinesis Secondary Discipline ~ Dual Disciple
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SecondaryDiscipline
 	!PREABILITY:1,CATEGORY=Special Ability,Psychokinesis Discipline
-	BONUS:CASTERLEVEL|SCHOOL.Psychokinesis|1
+	DEFINE:PsychokinesisDisciplineLVL|0
+	DESC:You have a secondary discipline of Psychokinesis.
 	ABILITY:Special Ability|AUTOMATIC|Telekinetic Hurl ~ Psychokinesis|PRECLASS:1,Psion=10
 	ABILITY:Special Ability|AUTOMATIC|Kinetic Aura ~ Psychokinesis|PRECLASS:1,Psion=15
-	DESC:You have a secondary discipline of Psychokinesis.
-	SOURCEPAGE:p.76
-	DEFINE:PsychokinesisDisciplineLVL|0
-	BONUS:VAR|PsychokinesisDisciplineLVL|classlevel("Psion")
 	ABILITY:Internal|AUTOMATIC|Psychokinesis Power List
+	BONUS:CASTERLEVEL|SCHOOL.Psychokinesis|1
+	BONUS:VAR|PsychokinesisDisciplineLVL|classlevel("Psion")
+	SOURCEPAGE:p.76
 
 Psychoportation Secondary Discipline
 	KEY:Psychoportation Secondary Discipline ~ Dual Disciple
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SecondaryDiscipline
 	!PREABILITY:1,CATEGORY=Special Ability,Psychoportation Discipline
-	BONUS:CASTERLEVEL|SCHOOL.Psychoportation|1
+	DEFINE:PsychoportationDisciplineLVL|0
+	DESC:You have a secondary discipline of Psychoportation.
 	ABILITY:Special Ability|AUTOMATIC|Nomad's Step ~ Psychoportation|PRECLASS:1,Psion=10
 	ABILITY:Special Ability|AUTOMATIC|Inconstant Position ~ Psychoportation|PRECLASS:1,Psion=15
-	DESC:You have a secondary discipline of Psychoportation.
-	SOURCEPAGE:p.76
-	DEFINE:PsychoportationDisciplineLVL|0
-	BONUS:VAR|PsychoportationDisciplineLVL|classlevel("Psion")
 	ABILITY:Internal|AUTOMATIC|Psychoportation Power List
+	BONUS:CASTERLEVEL|SCHOOL.Psychoportation|1
+	BONUS:VAR|PsychoportationDisciplineLVL|classlevel("Psion")
+	SOURCEPAGE:p.76
 
 Clairsentience Secondary Discipline
 	KEY:Clairsentience Secondary Discipline ~ Dual Disciple
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SecondaryDiscipline
 	!PREABILITY:1,CATEGORY=Special Ability,Clairsentience Discipline
-	BONUS:CASTERLEVEL|SCHOOL.Clairsentience|1
+	DEFINE:ClairsentienceDisciplineLVL|0
+	DESC:You have a secondary discipline of Clairsentience.
 	ABILITY:Special Ability|AUTOMATIC|Recovered Information ~ Clairsentience|PRECLASS:1,Psion=10
 	ABILITY:Special Ability|AUTOMATIC|Alter the Waves ~ Clairsentience|PRECLASS:1,Psion=15
-	DESC:You have a secondary discipline of Clairsentience.
-	SOURCEPAGE:p.76
-	DEFINE:ClairsentienceDisciplineLVL|0
-	BONUS:VAR|ClairsentienceDisciplineLVL|classlevel("Psion")
 	ABILITY:Internal|AUTOMATIC|Clairsentience Power List
+	BONUS:CASTERLEVEL|SCHOOL.Clairsentience|1
+	BONUS:VAR|ClairsentienceDisciplineLVL|classlevel("Psion")
+	SOURCEPAGE:p.76
 
 Metacreativity Secondary Discipline
 	KEY:Metacreativity Secondary Discipline ~ Dual Disciple
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SecondaryDiscipline
 	!PREABILITY:1,CATEGORY=Special Ability,Metacreativity Discipline
-	BONUS:CASTERLEVEL|SCHOOL.Metacreativity|1
+	DEFINE:MetacreativityDisciplineLVL|0
+	DESC:You have a secondary discipline of Metacreativity.
 	ABILITY:Special Ability|AUTOMATIC|Summoner's Call ~ Metacreativity|PRECLASS:1,Psion=10
 	ABILITY:Special Ability|AUTOMATIC|Ectoplasmic Protection ~ Metacreativity|PRECLASS:1,Psion=15
-	DESC:You have a secondary discipline of Metacreativity.
-	SOURCEPAGE:p.76
-	DEFINE:MetacreativityDisciplineLVL|0
-	BONUS:VAR|MetacreativityDisciplineLVL|classlevel("Psion")
 	ABILITY:Internal|AUTOMATIC|Metacreativity Power List
+	BONUS:CASTERLEVEL|SCHOOL.Metacreativity|1
+	BONUS:VAR|MetacreativityDisciplineLVL|classlevel("Psion")
+	SOURCEPAGE:p.76
 
 Telepathy Secondary Discipline
 	KEY:Telepathy Secondary Discipline ~ Dual Disciple
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SecondaryDiscipline
 	!PREABILITY:1,CATEGORY=Special Ability,Telepathy Discipline
-	BONUS:CASTERLEVEL|SCHOOL.Telepathy|1
+	DEFINE:TelepathyDisciplineLVL|0
+	DESC:You have a secondary discipline of Telepathy.
 	ABILITY:Special Ability|AUTOMATIC|Mental Intrusion ~ Telepathy|PRECLASS:1,Psion=10
 	ABILITY:Special Ability|AUTOMATIC|Telepathy ~ Telepathy|PRECLASS:1,Psion=15
-	DESC:You have a secondary discipline of Telepathy.
-	SOURCEPAGE:p.76
-	DEFINE:TelepathyDisciplineLVL|0
-	BONUS:VAR|TelepathyDisciplineLVL|classlevel("Psion")
 	ABILITY:Internal|AUTOMATIC|Telepathy Power List
+	BONUS:CASTERLEVEL|SCHOOL.Telepathy|1
+	BONUS:VAR|TelepathyDisciplineLVL|classlevel("Psion")
+	SOURCEPAGE:p.76
 
 
 
 ###Block: Core power lists for the disciplines
+# Ability Name			Category of Ability	List of Class Spells by Level
 Psychometabolism Power List
 	CATEGORY:Internal
 	SPELLLEVEL:CLASS|Psion=1|Metamorphosis (Minor),Natural Healing,Thicken Skin|Psion=2|Animal Affinity,Chameleon,Empathic Transfer|Psion=3|Ectoplasmic Form,Hustle,Metamorphosis|Psion=4|Psychic Drain|Psion=5|Psionic Revivify,Psychofeedback,Restore Extremity|Psion=6|Cleanse Spirit,Metamorphosis (Major)|Psion=7|Fission|Psion=8|Fusion|Psion=9|Metamorphosis (True)
@@ -1743,6 +1767,7 @@ Telepathy Power List
 
 
 ###Block: New powers from Psionics Expanded added
+# Ability Name							List of Class Spells by Level
 CATEGORY=Internal|Psychometabolism Power List.MOD
 	SPELLLEVEL:CLASS|Psion=1|Corrosive Aura|Psion=2|Resist Toxin|Psion=3|Physical Acceleration|Psion=4|Hidden Body,Resist Death|Psion=6|Expose Weakness|Psion=9|Regenerative Aura
 
@@ -1763,74 +1788,74 @@ CATEGORY=Internal|Telepathy Power List.MOD
 
 
 
-
-
 # COMMENT: Mindwright Psion Archetype - to remove the discipline ability, this needs to be implemented as a subclass.
 ###Block: Mindwright Psion archetype abilities
+# Ability Name			Unique Key							Category of Ability		Type						Define														Innate Spells												Description																																																																																																																																															Ability																																																																					Bonus to Ability Pool									Bonus to skill										Modify VAR											Source Page
 Mindwright Abilities
 	CATEGORY:Internal
-	BONUS:ABILITYPOOL|Mindwright Feat|floor((classlevel("Psion")+4)/5)
 	ABILITY:Special Ability|AUTOMATIC|Trained Artisan ~ Mindwright
 	ABILITY:Special Ability|AUTOMATIC|Efficient Artisan ~ Mindwright|PRECLASS:1,Psion=2
 	ABILITY:Special Ability|AUTOMATIC|Psionic Identification ~ Mindwright|PRECLASS:1,Psion=8
 	ABILITY:Special Ability|AUTOMATIC|Greater Ectoplasmic Creation ~ Mindwright|PRECLASS:1,Psion=14
 	ABILITY:Special Ability|AUTOMATIC|Psionic Infusion ~ Mindwright|PRECLASS:1,Psion=20
+	BONUS:ABILITYPOOL|Mindwright Feat|floor((classlevel("Psion")+4)/5)
 
 Trained Artisan
 	KEY:Trained Artisan ~ Mindwright
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You gain a +%1 bonus on Craft and Profession skills.|TrainedArtisanBonus
-	SOURCEPAGE:p.77
 	DEFINE:TrainedArtisanBonus|0
-	BONUS:VAR|TrainedArtisanBonus|max(1,floor(classlevel("Psion")/2))
+	DESC:You gain a +%1 bonus on Craft and Profession skills.|TrainedArtisanBonus
 	BONUS:SKILL|TYPE.Craft,TYPE.Profession|TrainedArtisanBonus
+	BONUS:VAR|TrainedArtisanBonus|max(1,floor(classlevel("Psion")/2))
+	SOURCEPAGE:p.77
 
 Efficient Artisan
 	KEY:Efficient Artisan ~ Mindwright
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You decrease the cost of creating a psionic item by %1%%.  In addition, you treat the base price as if it were %1%% lower for the purpose of determining the time it takes to create the psionic item.  This ability does not stack with other effects that decrease the cost or time of creating a psionic item.|EfficientArtisanReduction
-	SOURCEPAGE:p.77
 	DEFINE:EfficientArtisanReduction|0
+	DESC:You decrease the cost of creating a psionic item by %1%%.  In addition, you treat the base price as if it were %1%% lower for the purpose of determining the time it takes to create the psionic item.  This ability does not stack with other effects that decrease the cost or time of creating a psionic item.|EfficientArtisanReduction
 	BONUS:VAR|EfficientArtisanReduction|5*floor((classlevel("Psion")+2)/4)
+	SOURCEPAGE:p.77
 
 # COMMENT: psionic/magic transparency means identifying magic items and psionic items are the same, so use the same subskill.
 Psionic Identification
 	KEY:Psionic Identification ~ Mindwright
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Extraordinary
-	DESC:You add +%1 as a bonus on Spellcraft checks to identify psionic items.|PsionicIdentificationBonus
-	SOURCEPAGE:p.77
 	DEFINE:PsionicIdentificationBonus|0
-	BONUS:VAR|PsionicIdentificationBonus|classlevel("Psion")
+	DESC:You add +%1 as a bonus on Spellcraft checks to identify psionic items.|PsionicIdentificationBonus
 	BONUS:SKILL|Spellcraft (Identify magic item)|PsionicIdentificationBonus
+	BONUS:VAR|PsionicIdentificationBonus|classlevel("Psion")
+	SOURCEPAGE:p.77
 
 Greater Ectoplasmic Creation
 	KEY:Greater Ectoplasmic Creation ~ Mindwright
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.PsiLike
-	DESC:You can use major ectoplasmic creation as a psi-like ability %1/day, but you can only have %2 of such objects in existence at any given time.|GreaterEctoplasmicCreationTimes|GreaterEctoplasmicCreationObjects
-	SOURCEPAGE:p.77
 	DEFINE:GreaterEctoplasmicCreationTimes|3
 	DEFINE:GreaterEctoplasmicCreationObjects|0
-	BONUS:VAR|GreaterEctoplasmicCreationObjects|INT
 	SPELLS:Innate|TIMES=GreaterEctoplasmicCreationTimes|Ectoplasmic Creation (Major)
+	DESC:You can use major ectoplasmic creation as a psi-like ability %1/day, but you can only have %2 of such objects in existence at any given time.|GreaterEctoplasmicCreationTimes|GreaterEctoplasmicCreationObjects
+	BONUS:VAR|GreaterEctoplasmicCreationObjects|INT
+	SOURCEPAGE:p.77
 
 Psionic Infusion
 	KEY:Psionic Infusion ~ Mindwright
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You can temporarily add a special ability to a suit of armor, a shield, or a weapon.  Doing so takes a full-round action and a Spellcraft check (DC 25 + the manifester level of the special ability).  If the check is successful, the mindwright adds the special ability to the item for 1 minute.  The item does not need to have a +1 enhancement bonus to add a special ability.  You must spend 1 power point for every 500 gp of the special ability's base price (rounded up).  You can spend up to %1 power points.  If you use this ability to add a special ability to an existing psionic item, subtract the item's base price from the base price if would have if it had the ability to determine the number of power points needed to spend to add the special ability.  If you fail the Spellcraft check, the power points are not lost.|PsionicInfusionPowerPointLimit
-	SOURCEPAGE:p.77
 	DEFINE:PsionicInfusionPowerPointLimit|0
+	DESC:You can temporarily add a special ability to a suit of armor, a shield, or a weapon.  Doing so takes a full-round action and a Spellcraft check (DC 25 + the manifester level of the special ability).  If the check is successful, the mindwright adds the special ability to the item for 1 minute.  The item does not need to have a +1 enhancement bonus to add a special ability.  You must spend 1 power point for every 500 gp of the special ability's base price (rounded up).  You can spend up to %1 power points.  If you use this ability to add a special ability to an existing psionic item, subtract the item's base price from the base price if would have if it had the ability to determine the number of power points needed to spend to add the special ability.  If you fail the Spellcraft check, the power points are not lost.|PsionicInfusionPowerPointLimit
 	BONUS:VAR|PsionicInfusionPowerPointLimit|classlevel("Psion")
+	SOURCEPAGE:p.77
 
 
 
 
 
 ###Block: Psychic Warrior archetypes
+# Ability Name		Unique Key								Category of Ability	Type																																																																			Required Class			Multiple Requirements																																																																																								Description																																												Ability																																																																																																																																		Bonus to Ability Pool																											Class Skill			Cost		Source Page
 Martial Kineticist
 	KEY:Psychic Warrior Archetype ~ Martial Kineticist
 	CATEGORY:Archetype
@@ -1838,7 +1863,6 @@ Martial Kineticist
 	PRECLASS:1,Psychic Warrior=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Psychic Warrior Archetype ~ Martial Kineticist],[!PREABILITY:1,CATEGORY=Archetype,TYPE.PsychicWarriorMartialWeaponProficiency,TYPE.PsychicWarriorHeavyArmorProficiency,TYPE.PsychicWarriorMediumArmorProficiency,TYPE.PsychicWarriorShieldProficiency,TYPE.PsychicWarriorBonusFeats,TYPE.PsychicWarriorWarriorPath,TYPE.PsychicWarriorPsionicProficiency,TYPE.PsychicWarriorExpandedPath,TYPE.PsychicWarriorPathSkill,TYPE.PsychicWarriorSecondaryPath,TYPE.PsychicWarriorTwistingPath,TYPE.PsychicWarriorPathweaving]
 	DESC:You eschew mundane weapons to fight using only your psionic prowess.  You give up the advanced combat training of most psychic warriors in order to learn how to use the power of psychokinesis as a weapon.
-	CSKILL:Use Magic Device
 	ABILITY:Special Ability|AUTOMATIC|Martial Psionics ~ Martial Kineticist|PRECLASS:1,Psychic Warrior=1
 	ABILITY:Special Ability|AUTOMATIC|Psionic Prowess ~ Martial Kineticist|PRECLASS:1,Psychic Warrior=1
 	ABILITY:Special Ability|AUTOMATIC|Expanded Martial Psionics ~ Martial Kineticist|PRECLASS:1,Psychic Warrior=3
@@ -1846,11 +1870,12 @@ Martial Kineticist
 	ABILITY:Special Ability|AUTOMATIC|Warrior's Path ~ Martial Kineticist|PRECLASS:1,Psychic Warrior=9
 	ABILITY:Special Ability|AUTOMATIC|Martial Focus ~ Martial Kineticist|PRECLASS:1,Psychic Warrior=12
 	ABILITY:Special Ability|AUTOMATIC|Psionic Riposte ~ Martial Kineticist|PRECLASS:1,Psychic Warrior=15
-	COST:0
-	SOURCEPAGE:p.79
+	ABILITY:Internal|AUTOMATIC|Martial Kineticist Powers Known
 	BONUS:ABILITYPOOL|Martial Kineticist Feat|1+floor((classlevel("Psychic Warrior")+1)/3)
 	BONUS:ABILITYPOOL|Psychic Warrior Feat|-(1+floor((classlevel("Psychic Warrior")+1)/3))
-	ABILITY:Internal|AUTOMATIC|Martial Kineticist Powers Known
+	CSKILL:Use Magic Device
+	COST:0
+	SOURCEPAGE:p.79
 
 Meditant
 	KEY:Psychic Warrior Archetype ~ Meditant
@@ -1863,9 +1888,9 @@ Meditant
 	ABILITY:Special Ability|AUTOMATIC|Unarmed and Dangerous ~ Meditant|PRECLASS:1,Psychic Warrior=1
 	ABILITY:Special Ability|AUTOMATIC|Flurry of Strikes ~ Meditant|PRECLASS:1,Psychic Warrior=6
 	ABILITY:Special Ability|AUTOMATIC|Unarmed Fighting Style ~ Meditant|PRECLASS:1,Psychic Warrior=8
+	BONUS:ABILITYPOOL|Psychic Warrior Feat|-1
 	COST:0
 	SOURCEPAGE:p.80
-	BONUS:ABILITYPOOL|Psychic Warrior Feat|-1
 
 Protector
 	KEY:Psychic Warrior Archetype ~ Protector
@@ -1878,9 +1903,9 @@ Protector
 	ABILITY:Special Ability|AUTOMATIC|Swap Places ~ Protector|PRECLASS:1,Psychic Warrior=5
 	ABILITY:Special Ability|AUTOMATIC|Dual Effect ~ Protector|PRECLASS:1,Psychic Warrior=6
 	ABILITY:Special Ability|AUTOMATIC|In Harm's Way ~ Protector|PRECLASS:1,Psychic Warrior=12
+	BONUS:ABILITYPOOL|Psychic Warrior Feat|-1
 	COST:0
 	SOURCEPAGE:p.81
-	BONUS:ABILITYPOOL|Psychic Warrior Feat|-1
 
 Traceur
 	KEY:Psychic Warrior Archetype ~ Traceur
@@ -1904,6 +1929,7 @@ Traceur
 # NEEDS CODE WORK: Can't add all of one school of powers, even in a class file.
 # WORKAROUND: A static list of powers added with the SPELLLEVEL tag. (Line 1: PsiUn, Line 2:PsiEx)
 # COMMENT: New powers are added to discipline lists with new releases, so a static list of additional powers is less than ideal.
+# Ability Name							Unique Key								Category of Ability		Type						Define															Description																																																																																																												Bonus to Ability Pool											Combat bonus										Modify VAR																															Source Page		List of Known Class Spells by Level			List of Class Spells by Level
 Martial Kineticist Powers Known
 	CATEGORY:Internal
 	SPELLLEVEL:CLASS|Psychic Warrior=1|Control Flames,Control Light,Control Object,Energy Ray,Far Hand,Matter Agitation|Psychic Warrior=2|Concussion Blast,Control Air,Control Sound,Energy Missile,Energy Push,Energy Stun|Psychic Warrior=3|Dispel Psionics,Energy Bolt,Energy Burst,Energy Cone,Energy Retort,Energy Wall,Eradicate Invisibility,Telekinetic Force|Psychic Warrior=4|Control Body,Energy Ball,Intellect Fortress|Psychic Warrior=5|Energy Current,Fiery Discorporation,Telekinetic Maneuver|Psychic Warrior=6|Null Psionics Field
@@ -1915,44 +1941,44 @@ Martial Psionics
 	KEY:Martial Psionics ~ Martial Kineticist
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Extraordinary
-	DESC:You learn how to use psionics to fight in melee combat. As long as you have at least one power point remaining or are maintaining focus, you gain a +%1 deflection bonus to AC. You lose this bonus if wearing medium or heavy armor.  In addition, you gain energy ray as a power known.  This power does not count against your number of powers known.  When manifesting this power, you can either choose to manifest it for no cost by expending your psionic focus, in which case it cannot be augmented, or you can choose to manifest it normally, in which case your effective manifester level is treated as one higher than normal.|MartialPsionicsACBonus
 	DEFINE:MartialPsionicsACBonus|0
+	DESC:You learn how to use psionics to fight in melee combat. As long as you have at least one power point remaining or are maintaining focus, you gain a +%1 deflection bonus to AC. You lose this bonus if wearing medium or heavy armor.  In addition, you gain energy ray as a power known.  This power does not count against your number of powers known.  When manifesting this power, you can either choose to manifest it for no cost by expending your psionic focus, in which case it cannot be augmented, or you can choose to manifest it normally, in which case your effective manifester level is treated as one higher than normal.|MartialPsionicsACBonus
+	BONUS:COMBAT|AC|MartialPsionicsACBonus|TYPE=Deflection|PREAPPLY:PC
 	BONUS:VAR|MartialPsionicsACBonus|1+floor(classlevel("Psychic Warrior")/5)
 	SOURCEPAGE:p.17
-	BONUS:COMBAT|AC|MartialPsionicsACBonus|TYPE=Deflection|PREAPPLY:PC
 	SPELLKNOWN:CLASS|Psychic Warrior=1|Energy Ray
 
 Psionic Prowess
 	KEY:Psionic Prowess ~ Martial Kineticist
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You treat your Wisdom score as %1 higher for the purpose of determining bonus power points.|PsychicWarriorWISPPBonus
-	SOURCEPAGE:p.79
 	DEFINE:PsychicWarriorWISPPBonus|0
+	DESC:You treat your Wisdom score as %1 higher for the purpose of determining bonus power points.|PsychicWarriorWISPPBonus
 	BONUS:VAR|PsychicWarriorWISPPBonus|2
 	BONUS:VAR|PsychicWarriorWISPPBonus|2|PRECLASS:1,Psychic Warrior=10
 	BONUS:VAR|BonusPowerPoints|(PsychicWarriorWISPPBonus*PsychicWarriorPL)/4
+	SOURCEPAGE:p.79
 
 Expanded Martial Psionics
 	KEY:Expanded Martial Psionics ~ Martial Kineticist
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Extraordinary
-	DESC:While maintaining psionic focus, you can deliver powers that feature a ranged touch attack as melee touch attack powers. You can use a ranged touch attack power that targets more than one creature, but you make only one melee touch attack to deliver %1 of these ranged touch effects; additional ranged touch attacks from that effect are wasted and have no effect. In addition, you can expend your psionic focus when you manifest a power to gain %2 temporary power points to augment that power.  You must use the power points to augment this power, or they are lost.|ExpandedMartialPsionicsTouchAttacks|ExpandedMartialPsionicsPowerPoints
-	SOURCEPAGE:p.79
 	DEFINE:ExpandedMartialPsionicsTouchAttacks|0
-	BONUS:VAR|ExpandedMartialPsionicsTouchAttacks|floor((classlevel("Psychic Warrior")+2)/5)
 	DEFINE:ExpandedMartialPsionicsPowerPoints|0
+	DESC:While maintaining psionic focus, you can deliver powers that feature a ranged touch attack as melee touch attack powers. You can use a ranged touch attack power that targets more than one creature, but you make only one melee touch attack to deliver %1 of these ranged touch effects; additional ranged touch attacks from that effect are wasted and have no effect. In addition, you can expend your psionic focus when you manifest a power to gain %2 temporary power points to augment that power.  You must use the power points to augment this power, or they are lost.|ExpandedMartialPsionicsTouchAttacks|ExpandedMartialPsionicsPowerPoints
+	BONUS:VAR|ExpandedMartialPsionicsTouchAttacks|floor((classlevel("Psychic Warrior")+2)/5)
 	BONUS:VAR|ExpandedMartialPsionicsPowerPoints|floor((classlevel("Psychic Warrior")+5)/8)
+	SOURCEPAGE:p.79
 
 Psionic Training
 	KEY:Psionic Training ~ Martial Kineticist
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You can choose bonuses to Autohypnosis, Spellcraft, or Use Magic Device.
-	SOURCEPAGE:p.80
-	BONUS:ABILITYPOOL|Martial Kineticist Skill Bonus|MartialKineticistSkillBonuses
 	DEFINE:MartialKineticistSkillBonuses|0
+	DESC:You can choose bonuses to Autohypnosis, Spellcraft, or Use Magic Device.
+	BONUS:ABILITYPOOL|Martial Kineticist Skill Bonus|MartialKineticistSkillBonuses
 	BONUS:VAR|MartialKineticistSkillBonuses|floor((classlevel("Psychic Warrior")-1)/3)
+	SOURCEPAGE:p.80
 
 Warrior's Path
 	KEY:Warrior's Path ~ Martial Kineticist
@@ -1960,131 +1986,131 @@ Warrior's Path
 	TYPE:SpecialQuality.Extraordinary
 	DESC:You get to choose a wrrior's path.
 	DESC:You can choose to use the Trance and Maneuver from your warrior's path, but you do not gain the benefits from Expanded Martial Psionics while doing so.  Switching from your warrior's path Trance and Maneuver to Expanded Martial Psionics, and vice versa, is a standard action.|PRECLASS:1,Psychic Warrior=11
-	SOURCEPAGE:p.80
 	BONUS:ABILITYPOOL|Secondary Warrior Path|1
+	SOURCEPAGE:p.80
 
 Martial Focus
 	KEY:Martial Focus ~ Martial Kineticist
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Extraordinary
-	DESC:You are treated as if you are still maintaining your psionic focus even after you have expended it.  For effects that require maintaining psionic focus, you are treated as if you are maintaining your psionic focus for %1 rounds after you expended focus.  You can use this ability %2/day.|MartialFocusDuration|MartialFocusTimes
-	SOURCEPAGE:p.80
 	DEFINE:MartialFocusDuration|0
-	BONUS:VAR|MartialFocusDuration|WIS
 	DEFINE:MartialFocusTimes|3
+	DESC:You are treated as if you are still maintaining your psionic focus even after you have expended it.  For effects that require maintaining psionic focus, you are treated as if you are maintaining your psionic focus for %1 rounds after you expended focus.  You can use this ability %2/day.|MartialFocusDuration|MartialFocusTimes
+	BONUS:VAR|MartialFocusDuration|WIS
+	SOURCEPAGE:p.80
 
 Psionic Riposte
 	KEY:Psionic Riposte ~ Martial Kineticist
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You can expend your psionic focus and a number of power points as an immediate action to reflect a power back at its manifester.  This functions as reddopsi, but only if you spend a number of power points that exceeds or is equal to the number of power points the manifester expended.  If insufficient power points are expended, they instead grant an insight bonus on any saving throws allowed by the power, equal to one-half the number of power points spent.  You can only expend %1 power points.|PsionicRiposteMaxPP
-	SOURCEPAGE:p.80
 	DEFINE:PsionicRiposteMaxPP|0
+	DESC:You can expend your psionic focus and a number of power points as an immediate action to reflect a power back at its manifester.  This functions as reddopsi, but only if you spend a number of power points that exceeds or is equal to the number of power points the manifester expended.  If insufficient power points are expended, they instead grant an insight bonus on any saving throws allowed by the power, equal to one-half the number of power points spent.  You can only expend %1 power points.|PsionicRiposteMaxPP
 	BONUS:VAR|PsionicRiposteMaxPP|classlevel("Psychic Warrior")
+	SOURCEPAGE:p.80
 
 
 
 ###Block: Skill bonuses for Psionic Training
+# Ability Name		Category of Ability	Type						Visible		Required Ability							Bonus to skill
 Autohypnosis +2
 	CATEGORY:Internal
-	VISIBLE:DISPLAY
 	TYPE:MartialKineticistSkillBonus
+	VISIBLE:DISPLAY
 	BONUS:SKILL|Autohypnosis|2
 
 Autohypnosis +4
 	CATEGORY:Internal
-	VISIBLE:DISPLAY
 	TYPE:MartialKineticistSkillBonus
-	BONUS:SKILL|Autohypnosis|2
+	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Internal,Autohypnosis +2
+	BONUS:SKILL|Autohypnosis|2
 
 Autohypnosis +6
 	CATEGORY:Internal
-	VISIBLE:DISPLAY
 	TYPE:MartialKineticistSkillBonus
-	BONUS:SKILL|Autohypnosis|2
+	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Internal,Autohypnosis +4
+	BONUS:SKILL|Autohypnosis|2
 
 Spellcraft +2
 	CATEGORY:Internal
-	VISIBLE:DISPLAY
 	TYPE:MartialKineticistSkillBonus
+	VISIBLE:DISPLAY
 	BONUS:SKILL|Spellcraft|2
 
 Spellcraft +4
 	CATEGORY:Internal
-	VISIBLE:DISPLAY
 	TYPE:MartialKineticistSkillBonus
-	BONUS:SKILL|Spellcraft|2
+	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Internal,Spellcraft +2
+	BONUS:SKILL|Spellcraft|2
 
 Spellcraft +6
 	CATEGORY:Internal
-	VISIBLE:DISPLAY
 	TYPE:MartialKineticistSkillBonus
-	BONUS:SKILL|Spellcraft|2
+	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Internal,Spellcraft +4
+	BONUS:SKILL|Spellcraft|2
 
 Use Magic Device +2
 	CATEGORY:Internal
-	VISIBLE:DISPLAY
 	TYPE:MartialKineticistSkillBonus
+	VISIBLE:DISPLAY
 	BONUS:SKILL|Use Magic Device|2
 
 Use Magic Device +4
 	CATEGORY:Internal
-	VISIBLE:DISPLAY
 	TYPE:MartialKineticistSkillBonus
-	BONUS:SKILL|Use Magic Device|2
+	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Internal,Use Magic Device +2
+	BONUS:SKILL|Use Magic Device|2
 
 Use Magic Device +6
 	CATEGORY:Internal
-	VISIBLE:DISPLAY
 	TYPE:MartialKineticistSkillBonus
-	BONUS:SKILL|Use Magic Device|2
+	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Internal,Use Magic Device +4
-
-
+	BONUS:SKILL|Use Magic Device|2
 
 
 
 ###Block: Meditant Psychic Warrior archetype abilities
+# Ability Name		Unique Key						Category of Ability		Type							Visible		Define																				Description																																																																																																																																																																																																																																																			Automatically Added to Inventory	Automatically Gained Feat		Automatically Gained Weapon Prof.																							Unarmed Damage					Unarmed Multiplier	Ability																																																																																																				Add 						Bonus to Ability Pool					Combat bonus																																																					Modify VAR																																																																									Apply Kit					Source Page
 Psionic Armor
 	KEY:Psionic Armor ~ Meditant
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
+	DEFINE:MeditantWISBonusToAC|0
+	DEFINE:MeditantBonusToAC|0
 	DESC:If you maintain psionic focus and are unarmored and unencumbered, you add your Wisdom bonus (+%1) to your AC and CMD.  If you gain your Wisdom bonus to your AC or CMD from other source, it does not stack.|MeditantWISBonusToAC
 	DESC:In addition, you gain an additional +%1 bonus to AC and CMD.|MeditantBonusToAC|PRECLASS:1,Psychic Warrior=4
 	DESC:These bonuses to AC apply even against touch attacks or when you are flat-footed.  You lose these bonuses when you are immobilized or helpless, when you wear any armor, when you carry a shield, when you carry a medium or heavy load, or when you are not focused.
-	SOURCEPAGE:p.80
-	DEFINE:MeditantWISBonusToAC|0
-	BONUS:VAR|MeditantWISBonusToAC|max(0,WIS)
-	DEFINE:MeditantBonusToAC|0
-	BONUS:VAR|MeditantBonusToAC|min(5,floor(classlevel("Psychic Warrior")/4))
 	BONUS:COMBAT|AC|MeditantBonusToAC*PsionicFocusActive|PREVAREQ:ENCUMBERANCE,0,var("COUNT[EQTYPE.ARMOR.EQUIPPED]"),0,var("COUNT[EQTYPE.SHIELD.EQUIPPED]"),0
 	BONUS:COMBAT|AC|MeditantWISBonusToAC*PsionicFocusActive|TYPE=WisToAC|PREVAREQ:ENCUMBERANCE,0,var("COUNT[EQTYPE.ARMOR.EQUIPPED]"),0,var("COUNT[EQTYPE.SHIELD.EQUIPPED]"),0
+	BONUS:VAR|MeditantWISBonusToAC|max(0,WIS)
+	BONUS:VAR|MeditantBonusToAC|min(5,floor(classlevel("Psychic Warrior")/4))
 	BONUS:VAR|CMD|MeditantBonusToAC*PsionicFocusActive|PREVAREQ:ENCUMBERANCE,0,var("COUNT[EQTYPE.ARMOR.EQUIPPED]"),0,var("COUNT[EQTYPE.SHIELD.EQUIPPED]"),0
 	BONUS:VAR|CMD|MeditantWISBonusToAC*PsionicFocusActive|TYPE=WisToAC|PREVAREQ:ENCUMBERANCE,0,var("COUNT[EQTYPE.ARMOR.EQUIPPED]"),0,var("COUNT[EQTYPE.SHIELD.EQUIPPED]"),0
+	SOURCEPAGE:p.80
 
 Unarmed and Dangerous
 	KEY:Unarmed and Dangerous ~ Meditant
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You are a student in the art of fighting without weapons.  You gain the Improved Unarmed Strike feat as a bonus feat.  In addition, your unarmed strikes deal %1d%2 damage if you are Medium, adjusted accordingly for other sizes.|UnarmedAndDangerousDice|UnarmedAndDangerousDieSize 
-	SOURCEPAGE:p.80
-	AUTO:FEAT|Improved Unarmed Strike
 	DEFINE:UnarmedAndDangerousDice|0
 	DEFINE:UnarmedAndDangerousDieSize|0
-	BONUS:VAR|UnarmedAndDangerousDice|1
-	BONUS:VAR|UnarmedAndDangerousDice|1|PRECLASS:1,Psychic Warrior=15
-	BONUS:VAR|UnarmedAndDangerousDieSize|6+2*floor(classlevel("Psychic Warrior")/5)
-	BONUS:VAR|UnarmedAndDangerousDieSize|-6|PRECLASS:1,Psychic Warrior=15
+	DESC:You are a student in the art of fighting without weapons.  You gain the Improved Unarmed Strike feat as a bonus feat.  In addition, your unarmed strikes deal %1d%2 damage if you are Medium, adjusted accordingly for other sizes.|UnarmedAndDangerousDice|UnarmedAndDangerousDieSize
+	AUTO:FEAT|Improved Unarmed Strike
 	ABILITY:Internal|AUTOMATIC|Meditant UDAM 1|PREVARLT:classlevel("Psychic Warrior"),5
 	ABILITY:Internal|AUTOMATIC|Meditant UDAM 5|PREMULT:2,[PREVARGTEQ:classlevel("Psychic Warrior"),5],[PREVARLT:classlevel("Psychic Warrior"),10]
 	ABILITY:Internal|AUTOMATIC|Meditant UDAM 10|PREMULT:2,[PREVARGTEQ:classlevel("Psychic Warrior"),10],[PREVARLT:classlevel("Psychic Warrior"),15]
 	ABILITY:Internal|AUTOMATIC|Meditant UDAM 15|PREMULT:2,[PREVARGTEQ:classlevel("Psychic Warrior"),15],[PREVARLT:classlevel("Psychic Warrior"),20]
 	ABILITY:Internal|AUTOMATIC|Meditant UDAM 20|PREVARGTEQ:classlevel("Psychic Warrior"),20
+	BONUS:VAR|UnarmedAndDangerousDice|1
+	BONUS:VAR|UnarmedAndDangerousDice|1|PRECLASS:1,Psychic Warrior=15
+	BONUS:VAR|UnarmedAndDangerousDieSize|6+2*floor(classlevel("Psychic Warrior")/5)
+	BONUS:VAR|UnarmedAndDangerousDieSize|-6|PRECLASS:1,Psychic Warrior=15
+	SOURCEPAGE:p.80
 
 Meditant UDAM 1
 	CATEGORY:Internal
@@ -2115,30 +2141,30 @@ Flurry of Strikes
 	KEY:Flurry of Strikes ~ Meditant
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
+	DEFINE:MeditantFlurryLVL|0
+	DEFINE:MeditantFlurryExtraAttacks|0
+	DEFINE:MeditantFlurryBABBonus|0
+	DEFINE:MeditantBAB|0
 	DESC:You can make a flurry of strikes as a full-attack action as long as you are maintaining psionic focus. When doing so you may make
 	DESC:one additional attack using unarmed strikes as if using the Two-Weapon Fighting feat|PREVARLT:classlevel("Psychic Warrior"),11
 	DESC:two additional attacks using unarmed strikes as if using the Improved Two-Weapon Fighting feat|PREMULT:2,[PREVARLT:classlevel("Psychic Warrior"),16],[PREVARGTEQ:classlevel("Psychic Warrior"),11]
 	DESC:three additional attacks using unarmed strikes as if using the Greater Two-Weapon Fighting feat|PREVARGTEQ:classlevel("Psychic Warrior"),16
 	DESC:(even if you do not meet the prerequisites for the feat).  For the purpose of these attacks, your base attack bonus from your psychic warrior class levels is equal to your meditant level.  For all other purposes, such as qualifying for a feat or a prestige class, you use your normal base attack bonus.  You apply your full Strength bonus to your damage rolls for all successful attacks made with flurry of strikes.  You may substitute disarm, sunder, and trip combat maneuvers for unarmed attacks as part of a flurry of strikes.  You cannot use any weapon other than an unarmed strike as a part of a flurry of strikes.  If you have natural weapons, you cannot use such weapons as part of a flurry of strikes unless you expend your psionic focus, but you cannot make natural attacks in addition to your flurry of strikes attacks.
-	SOURCEPAGE:p.80
-	DEFINE:MeditantFlurryLVL|0
-	DEFINE:MeditantFlurryExtraAttacks|0
-	DEFINE:MeditantFlurryBABBonus|0
-	DEFINE:MeditantBAB|0
 	AUTO:EQUIP|Flurry of Strikes
 	BONUS:VAR|MeditantFlurryExtraAttacks|min(floor((MeditantFlurryLVL-1)/5),3)
 	BONUS:VAR|MeditantFlurryBABBonus|MeditantFlurryLVL-MeditantBAB
 	BONUS:VAR|MeditantBAB|floor(3*classlevel("Psychic Warrior")/4)
 	BONUS:VAR|MeditantFlurryLVL|classlevel("Psychic Warrior")
 	KIT:1|Meditant Flurry of Strikes
+	SOURCEPAGE:p.80
 
 Unarmed Fighting Style
 	KEY:Unarmed Fighting Style ~ Meditant
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:You can choose whether to focus your fighting style to take advantage of natural attacks or to use specialized weapons.
-	SOURCEPAGE:p.81
 	BONUS:ABILITYPOOL|Meditant Fighting Style|1
+	SOURCEPAGE:p.81
 
 
 
@@ -2156,14 +2182,13 @@ Monk Weapons Style
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.MeditantFightingStyle
 	DESC:You are proficient with all monk weapons and can use flurry of strikes with monk weapons, making any or all of the attacks with the monk weapon in place of an unarmed strike.
-	SOURCEPAGE:p.81
 	AUTO:WEAPONPROF|Club|Crossbow (Light)|Crossbow (Heavy)|Dagger|Handaxe|Javelin|Kama|Nunchaku|Quarterstaff|Sai|Shortspear|Sword (Short)|Shuriken|Siangham|Sling|Spear
-
-
+	SOURCEPAGE:p.81
 
 
 
 ###Block: Protector Psychic Warrior archetype abilities
+# Ability Name	Unique Key				Category of Ability		Type						Define				Description																																																																																		Modify VAR											Source Page
 Resilience
 	KEY:Resilience ~ Protector
 	CATEGORY:Special Ability
@@ -2175,11 +2200,11 @@ Swap Places
 	KEY:Swap Places ~ Protector
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
+	DEFINE:SwapPlacesACBonus|0
 	DESC:As an immediate action and by expending your psionic focus, you can swap places with an adjacent ally who is about to get attacked.  Neither activating this ability nor the movement of you or your ally from this ability provoke attacks of opportunity.  This occurs before the attack and the attacker must resolve the attack against the protector instead of the original target.
 	DESC:You gain a +%1 Dodge bonus to your AC against this attack.|SwapPlacesACBonus|PRECLASS:1,Psychic Warrior=9
-	SOURCEPAGE:p.81
-	DEFINE:SwapPlacesACBonus|0
 	BONUS:VAR|SwapPlacesACBonus|floor((classlevel("Psychic Warrior")-5)/4)
+	SOURCEPAGE:p.81
 
 Dual Effect
 	KEY:Dual Effect ~ Protector
@@ -2199,9 +2224,8 @@ In Harm's Way
 
 
 
-
-
 ###Block: Traceur Psychic Warrior archetype abilities
+# Ability Name		Unique Key					Category of Ability		Type						Define					Description																																							Bonus to Ability Pool				Add to base move													Modify VAR													Source Page
 Quickened Strides
 	KEY:Quickened Strides ~ Traceur
 	CATEGORY:Special Ability
@@ -2246,6 +2270,7 @@ Rapid Acrobatics
 
 
 ###Block: Soulknife archetypes
+# Ability Name	Unique Key						Category of Ability	Type																															Required Class		Multiple Requirements																																															Description																																										Ability																																																																													Add 					Bonus to Ability Pool																	Caster level bonus						Modify VAR									Cost		Source Page
 Armored Blade
 	KEY:Soulknife Archetype ~ Armored Blade
 	CATEGORY:Archetype
@@ -2295,10 +2320,10 @@ Gifted Blade
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Soulknife Archetype ~ Gifted Blade],[!PREABILITY:1,CATEGORY=Archetype,TYPE.SoulknifePsychicStrike]
 	DESC:You are a soulknife who learned to manifest powers, as well as form mind blades.  You wield both blade and mind with deadly efficiency.
 	ABILITY:Internal|AUTOMATIC|Gifted Blade Manifesting ~ Gifted Blade
-	COST:0
-	SOURCEPAGE:p.88
 	ADD:SPELLCASTER|Gifted Blade
 	BONUS:PCLEVEL|Gifted Blade|var("GiftedBladePKL")-3
+	COST:0
+	SOURCEPAGE:p.88
 
 Nimble Blade
 	KEY:Soulknife Archetype ~ Nimble Blade
@@ -2312,11 +2337,11 @@ Nimble Blade
 	ABILITY:Internal|AUTOMATIC|Piranha Strike ~ Nimble Blade|PRECLASS:1,Soulknife=2
 	ABILITY:Special Ability|AUTOMATIC|Agile Blade ~ Nimble Blade|PRECLASS:1,Soulknife=7
 	ABILITY:Special Ability|AUTOMATIC|Adaptive Form ~ Nimble Blade|PRECLASS:1,Soulknife=10
-	COST:0
-	SOURCEPAGE:p.89
 	BONUS:ABILITYPOOL|Blade Skill|-1|PRECLASS:1,Soulknife=1
 	BONUS:ABILITYPOOL|Blade Skill|-1|PRECLASS:1,Soulknife=10
 	BONUS:VAR|MindBladeEnhancement|-1|PRECLASS:1,Soulknife=7
+	COST:0
+	SOURCEPAGE:p.89
 
 Shielded Blade
 	KEY:Soulknife Archetype ~ Shielded Blade
@@ -2348,118 +2373,117 @@ Soulbolt
 
 
 ###Block: Armored Blade Soulknife archetype abilities
+# Ability Name		Unique Key							Category of Ability		Type				Serves As								Define										Description																																										Automatically Gained Armor Prof.	Ability								Modify VAR																			Source Page
 Form Mind Armaments
 	KEY:Form Mind Armaments ~ Armored Blade
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:You can form mind armor as well as a mind blade.  Forming mind armor is a separate action from forming a mind blade.
-	SOURCEPAGE:p.86
-	ABILITY:Special Ability|AUTOMATIC|Form Mind Blade
 	AUTO:ARMORPROF|Mind Armor
+	ABILITY:Special Ability|AUTOMATIC|Form Mind Blade
+	SOURCEPAGE:p.86
 
 Shape Mind Armaments
 	KEY:Shape Mind Armaments ~ Armored Blade
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:You can shape your mind armor as well as your mind blade.  Shaping mind armor is a separate action from shaping a mind blade.
-	SOURCEPAGE:p.87
 	ABILITY:Special Ability|AUTOMATIC|Shape Mind Blade
+	SOURCEPAGE:p.87
 
 # NEEDS CODE/DATA WORK: Bonuses to MindBladeEnhancement variables lost (zeroed) when archetype is removed.
 Enhanced Mind Armaments
 	KEY:Enhanced Mind Armaments ~ Armored Blade
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:Gain +%1 in enhancement bonuses and abilities for both your mind blade and your mind armor; maximum enhancement bonus +%2.  The enhancement bonus for mind armor is unaffected if you form two mind blades.|MindBladeEnhancement|MindBladeMaxEnhancement
-	SOURCEPAGE:p.87
+	SERVESAS:ABILITY=Special Ability|Enhanced Mind Blade
 	DEFINE:MindBladeEnhancement|0
 	DEFINE:MindBladeMaxEnhancement|0
+	DESC:Gain +%1 in enhancement bonuses and abilities for both your mind blade and your mind armor; maximum enhancement bonus +%2.  The enhancement bonus for mind armor is unaffected if you form two mind blades.|MindBladeEnhancement|MindBladeMaxEnhancement
 	BONUS:VAR|MindBladeEnhancement|floor((2*MndBladeLVL-1)/5)
 	BONUS:VAR|MindBladeEnhancement|-max(0,(MndBladeLVL-1)/2)
-	SERVESAS:ABILITY=Special Ability|Enhanced Mind Blade
-
-
+	SOURCEPAGE:p.87
 
 
 
 ###Block: Cutthroat Soulknife archetype abilities
+# Ability Name	Unique Key					Category of Ability		Type						Visible		Define			Description																																				Ability											Bonus to skill											Bonus to skill point/L		Modify VAR											Class Skill		Source Page
 Covert Training
 	KEY:Covert Training ~ Cutthroat
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
 	VISIBLE:DISPLAY
-	SOURCEPAGE:p.87
 	BONUS:SKILLPOINTS|NUMBER|2
+	SOURCEPAGE:p.87
 
 Cunning
 	KEY:Cunning ~ Cutthroat
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You gain a +%1 competence bonus on Bluff and Stealth skill checks made while maintaining psionic focus.  You can expend your psionic focus to double this bonus for a single Bluff or Stealth skill check.|CunningBonus
-	SOURCEPAGE:p.87
 	DEFINE:CunningBonus|0
-	BONUS:VAR|CunningBonus|min(5,floor((classlevel("Soulknife")+2)/4))
+	DESC:You gain a +%1 competence bonus on Bluff and Stealth skill checks made while maintaining psionic focus.  You can expend your psionic focus to double this bonus for a single Bluff or Stealth skill check.|CunningBonus
 	BONUS:SKILL|Bluff,Stealth|CunningBonus*PsionicFocusActive|TYPE=Competence
+	BONUS:VAR|CunningBonus|min(5,floor((classlevel("Soulknife")+2)/4))
 	CSKILL:Bluff
+	SOURCEPAGE:p.87
 
 Sneak Attack
 	KEY:Sneak Attack ~ Cutthroat
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:You gain the sneak attack ability of a rogue of half your soulknife level as long as you are maintaining psionic focus.
-	SOURCEPAGE:p.87
-	BONUS:VAR|RogueSneakAttackLVL|floor(classlevel("Soulknife")/2)
 	ABILITY:Special Ability|AUTOMATIC|Sneak Attack|Sneak Attack ~ Rogue
-
-
+	BONUS:VAR|RogueSneakAttackLVL|floor(classlevel("Soulknife")/2)
+	SOURCEPAGE:p.87
 
 
 
 ###Block: Deadly Fist Soulknife archetype abilities
+# Ability Name		Unique Key						Category of Ability		Type						Serves As								Define																														Description																																														Automatically Gained Weapon Prof.	Ability																	Modify VAR																								Source Page
 Empowered Strikes
 	KEY:Empowered Strikes ~ Deadly Fist
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:Your unarmed strikes deal 1d6 points of damage (or your normal unarmed strike damage, if higher) and are considered to be magic weapons for overcoming damage resistance.  You can change the damage type of your unarmed strikes between bludgeoning, piercing, and slashing.
-	SOURCEPAGE:p.88
 	SERVESAS:ABILITY=Special Ability|Form Mind Blade
 	DEFINE:MndBladeLVL|0
 	DEFINE:MindBladeEnhancement|0
 	DEFINE:MindBladeMaxEnhancement|0
 	DEFINE:PsychicStrikeDie|0
-	BONUS:VAR|PsychicStrikeDie|8
 	DEFINE:PsychicStrikeDiceNumber|0
 	DEFINE:WeaponSpecialCount|0
+	DESC:Your unarmed strikes deal 1d6 points of damage (or your normal unarmed strike damage, if higher) and are considered to be magic weapons for overcoming damage resistance.  You can change the damage type of your unarmed strikes between bludgeoning, piercing, and slashing.
+	AUTO:WEAPONPROF|Deadly Fist
+	BONUS:VAR|PsychicStrikeDie|8
 	BONUS:VAR|MindBladeEnhancement|max(0,(MndBladeLVL-1)/2)
 	BONUS:VAR|MindBladeMaxEnhancement|min((MndBladeLVL/3),5)
-	AUTO:WEAPONPROF|Deadly Fist
+	SOURCEPAGE:p.88
 
 Enhanced Strikes
 	KEY:Enhanced Strikes ~ Deadly Fist
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
+	SERVESAS:ABILITY=Special Ability|Enhanced Mind Blade
 	DESC:Gain +%1 in enhancement bonuses and abilities for your deadly fist; maximum enhancement bonus +%2.|MindBladeEnhancement|MindBladeMaxEnhancement
 	SOURCEPAGE:p.88
-	SERVESAS:ABILITY=Special Ability|Enhanced Mind Blade
 
 Unarmed Assault
 	KEY:Unarmed Assault ~ Deadly Fist
 	CATEGORY:Special Ability
 	TYPE:Internal
-	SOURCEPAGE:p.88
 	ABILITY:FEAT|AUTOMATIC|Improved Unarmed Strike
 	ABILITY:Blade Skill|AUTOMATIC|Flurry of Fists ~ Blade Skill
+	SOURCEPAGE:p.88
 
 Psychokinetic Discharge
 	KEY:Psychokinetic Discharge ~ Deadly Fist
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack.Supernatural
-	DESC:You can make an unarmed attack as a ranged attack with range increment %1 (max range %2 increments).  When used, your unarmed attacks are no longer empowered and you must take the normal time to empower them.|PsychokineticDischargeRangeInc|PsychokineticDischargeMaxRangeInc
-	SOURCEPAGE:p.88
 	DEFINE:PsychokineticDischargeRangeInc|0
-	BONUS:VAR|PsychokineticDischargeRangeInc|10
 	DEFINE:PsychokineticDischargeMaxRangeInc|0
+	DESC:You can make an unarmed attack as a ranged attack with range increment %1 (max range %2 increments).  When used, your unarmed attacks are no longer empowered and you must take the normal time to empower them.|PsychokineticDischargeRangeInc|PsychokineticDischargeMaxRangeInc
+	BONUS:VAR|PsychokineticDischargeRangeInc|10
 	BONUS:VAR|PsychokineticDischargeMaxRangeInc|10
+	SOURCEPAGE:p.88
 
 Quick Empower
 	KEY:Quick Empower ~ Deadly Fist
@@ -2470,9 +2494,8 @@ Quick Empower
 
 
 
-
-
 ###Block: Gifted Blade Soulknife archetype abilities
+# Ability Name					Category of Ability	Define															Ability																							Modify VAR
 Gifted Blade Manifesting ~ Gifted Blade
 	CATEGORY:Internal
 	ABILITY:Internal|AUTOMATIC|Gifted Blade Manifester Level|Gifted Blade Power Points|Gifted Blade Powers Known|Gifted Blade Maximum Power Level
@@ -2480,17 +2503,17 @@ Gifted Blade Manifesting ~ Gifted Blade
 Gifted Blade Manifester Level
 	CATEGORY:Internal
 	DEFINE:GiftedBladeML|0
-	BONUS:VAR|GiftedBladeML|classlevel("Soulknife")-2+var("BL=Soulknife")
 	DEFINE:ManifestingFromSoulknifeLevels|0
-	BONUS:VAR|ManifestingFromSoulknifeLevels|1
 	DEFINE:MaximumManifesterLVL|0
+	BONUS:VAR|GiftedBladeML|classlevel("Soulknife")-2+var("BL=Soulknife")
+	BONUS:VAR|ManifestingFromSoulknifeLevels|1
 	BONUS:VAR|MaximumManifesterLVL|GiftedBladeML|TYPE=NoStack
 
 Gifted Blade Power Points
 	CATEGORY:Internal
 	DEFINE:GiftedBladePL|0
-	BONUS:VAR|GiftedBladePL|GiftedBladeML+2
 	DEFINE:GiftedBladePL|0
+	BONUS:VAR|GiftedBladePL|GiftedBladeML+2
 	BONUS:VAR|BasePowerPoints|GiftedBladePL-3|PREVARGTEQ:GiftedBladePL,4
 	BONUS:VAR|BasePowerPoints|GiftedBladePL-6|PREVARGTEQ:GiftedBladePL,7
 	BONUS:VAR|BasePowerPoints|GiftedBladePL-10|PREVARGTEQ:GiftedBladePL,11
@@ -2501,20 +2524,21 @@ Gifted Blade Power Points
 Gifted Blade Powers Known
 	CATEGORY:Internal
 	DEFINE:GiftedBladePKL|0
-	BONUS:VAR|GiftedBladePKL|classlevel("Soulknife")+var("BL=Soulknife")
 	DEFINE:GiftedBladePowersKnown|0
+	BONUS:VAR|GiftedBladePKL|classlevel("Soulknife")+var("BL=Soulknife")
 	BONUS:VAR|GiftedBladePowersKnown|min(4,(GiftedBladePKL-1)/2)+min(3,max(0,(GiftedBladePKL-8)/3))
 
 Gifted Blade Maximum Power Level
 	CATEGORY:Internal
 	DEFINE:GiftedBladeMPLKL|0
-	BONUS:VAR|GiftedBladeMPLKL|classlevel("Soulknife")+var("BL=Soulknife")
 	DEFINE:GiftedBladeMaxPowerLevel|0
+	BONUS:VAR|GiftedBladeMPLKL|classlevel("Soulknife")+var("BL=Soulknife")
 	BONUS:VAR|GiftedBladeMaxPowerLevel|min(4,(GiftedBladeMPLKL+1)/4)
 
 
 
 ###Block: Nimble Blade Soulknife archetype abilities
+# Ability Name		Unique Key						Category of Ability		Type				Description																																																																Automatically Gained Feat	Ability										Source Page
 Weapon Finesse
 	KEY:Weapon Finesse ~ Nimble Blade
 	CATEGORY:Internal
@@ -2546,31 +2570,29 @@ Adaptive Form
 
 
 
-
-
 ###Block: Shielded Blade Soulknife archetype abilities
+# Ability Name	Unique Key						Category of Ability		Type						Description																																																																			Automatically Gained Shield Prof.	Ability						Bonus to Ability Pool											Source Page
 Form Mind Shield
 	KEY:Form Mind Shield ~ Shielded Blade
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
 	DESC:You can use your mind shield as if it were a masterwork heavy shield, including making shield bashes, but without the Armor Check penalty or Arcane Spell Failure.  You still apply the shield bonus to AC when performing a shield bash.  Your mind shield is enhanced as you gain levels, but the mind blade suffers a -1 penalty to its enhancement bonus (if any) if you have both formed at the same time.
-	SOURCEPAGE:p.89
-	ABILITY:Blade Skill|AUTOMATIC|Mind Shield
 	AUTO:SHIELDPROF|Mind Shield
+	ABILITY:Blade Skill|AUTOMATIC|Mind Shield
+	SOURCEPAGE:p.89
 
 Improved Shield
 	KEY:Improved Shield ~ Shielded Blade
 	CATEGORY:Special Ability
 	TYPE:Internal
-	SOURCEPAGE:p.90
 	BONUS:ABILITYPOOL|Improved Shield Blade Skill|1
 	BONUS:ABILITYPOOL|Blade Skill|-1
-
-
+	SOURCEPAGE:p.90
 
 
 
 ###Block: Soulbolt Soulknife archetype abilities
+# Ability Name		Unique Key					Category of Ability		Type						Define																														Description																					Automatically Gained Weapon Prof.	Bonus to Ability Pool			Modify VAR																			Source Page
 Soulbolt Bonus Feat
 	KEY:Soulbolt Bonus Feat ~ Soulbolt
 	CATEGORY:Internal
@@ -2617,6 +2639,7 @@ Enhanced Mind Bolt
 
 
 ###Block: Soulbolt Bonus Feats
+# Ability Name				Output Name						Category of Ability		Type			Visible		Automatically Gained Feat
 Point-Blank Shot ~ Soulbolt
 	OUTPUTNAME:Power Attack
 	CATEGORY:Special Ability
@@ -2634,6 +2657,7 @@ Weapon Focus(Mind Bolt) ~ Soulbolt
 
 
 ###Block: Soulbolt Blade Skills
+# Ability Name								Output Name						Category of Ability		Type						Required Ability																			Restricted Ability								Var. Min. Value			Description																		Source Page
 CATEGORY=Special Ability|Alter Blade.MOD
 	!PREABILITY:1,CATEGORY=Archetype,Soulknife Archetype ~ Soulbolt
 
@@ -2764,6 +2788,7 @@ Thousand Blades
 
 
 ###Block: Wilder archetypes
+# Ability Name	Unique Key						Category of Ability	Type																									Required Class		Multiple Requirements																																								Description																																							Automatically Gained Feat				Ability																																																																																																			Cost		Source Page
 Battle Wilder
 	KEY:Wilder Archetype ~ Battle Wilder
 	CATEGORY:Archetype
@@ -2771,16 +2796,16 @@ Battle Wilder
 	PRECLASS:1,Wilder=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Wilder Archetype ~ Battle Wilder],[!PREABILITY:1,CATEGORY=Archetype,TYPE.WilderWildSurge,TYPE.WilderSurgeBlast,TYPE.WilderSurgeBond,TYPE.WilderSurgingEuphoria,TYPE.WilderImprovedSurgeBond,TYPE.WilderPerfectSurge]
 	DESC:You channel your emotions not into your manifesting ability, but into your combat prowess.  While you are still capable of and effective at using powers, you also gain improved battle capacity, as well as expanded training in weapons.
+	AUTO:FEAT|Martial Weapon Proficiency Output
 	ABILITY:Special Ability|AUTOMATIC|Combat Surge ~ Battle Wilder|PRECLASS:1,Wilder=1
 	ABILITY:Special Ability|AUTOMATIC|Surging Assault ~ Battle Wilder|PRECLASS:1,Wilder=1
 	ABILITY:Special Ability|AUTOMATIC|Toughness ~ Battle Wilder|PRECLASS:1,Wilder=1
 	ABILITY:Special Ability|AUTOMATIC|Combat Euphoria ~ Battle Wilder|PRECLASS:1,Wilder=4
 	ABILITY:Special Ability|AUTOMATIC|Combat Fortitude ~ Battle Wilder|PRECLASS:1,Wilder=5
 	ABILITY:Special Ability|AUTOMATIC|Physical Overload ~ Battle Wilder|PRECLASS:1,Wilder=20
+	ABILITY:Special Ability|AUTOMATIC|All Martial Weapon Proficiencies
 	COST:0
 	SOURCEPAGE:p.99
-	ABILITY:Special Ability|AUTOMATIC|All Martial Weapon Proficiencies
-	AUTO:FEAT|Martial Weapon Proficiency Output
 
 Blasting Wilder
 	KEY:Wilder Archetype ~ Blasting Wilder
@@ -2800,27 +2825,28 @@ Blasting Wilder
 
 
 ###Block: Battle Wilder Wilder archetype abilities
+# Ability Name	Unique Key						Category of Ability		Type						Define															Description																																																																																																														Automatically Gained Feat	Save checks bonus									Combat bonus																							Stat bonus																					Modify VAR																																																												Source Page
 Combat Surge
 	KEY:Combat Surge ~ Battle Wilder
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
+	DEFINE:CombatSurgeSTRBonus|0
+	DEFINE:CombatSurgeCONBonus|0
+	DEFINE:PsychicEnervationDamage|0
 	DESC:You channel your emotions into a physical boost of energy that strengthens your body.  You can invoke a combat surge in two possible manners.  You can invoke a combat surge while manifesting a power or by spending 1 power point as a swift action.  In either case, you gain a +%1 enhancement bonus to your Strength|CombatSurgeSTRBonus
 	DESC:and a +%1 enhancement bonus to your Constitution|CombatSurgeCONBonus|PREVARGT:CombatSurgeCONBonus,0
 	DESC:for one round after invoking a combat surge.
-	DEFINE:CombatSurgeSTRBonus|0
+	DESC:Psychic enervation: %1 hit point damage, dazed 1 round.|PsychicEnervationDamage
+	BONUS:STAT|STR|CombatSurgeSTRBonus|TYPE=Enhancement|PREAPPLY:PC
+	BONUS:STAT|CON|CombatSurgeCONBonus|TYPE=Enhancement|PREAPPLY:PC
 	BONUS:VAR|CombatSurgeSTRBonus|2
 	BONUS:VAR|CombatSurgeSTRBonus|2|PRECLASS:1,Wilder=3
 	BONUS:VAR|CombatSurgeSTRBonus|2|PRECLASS:1,Wilder=15
-	DEFINE:CombatSurgeCONBonus|0
 	BONUS:VAR|CombatSurgeCONBonus|2|PRECLASS:1,Wilder=7
 	BONUS:VAR|CombatSurgeCONBonus|2|PRECLASS:1,Wilder=11
 	BONUS:VAR|CombatSurgeCONBonus|2|PRECLASS:1,Wilder=19
-	BONUS:STAT|STR|CombatSurgeSTRBonus|TYPE=Enhancement|PREAPPLY:PC
-	BONUS:STAT|CON|CombatSurgeCONBonus|TYPE=Enhancement|PREAPPLY:PC
-	SOURCEPAGE:p.99
-	DEFINE:PsychicEnervationDamage|0
 	BONUS:VAR|PsychicEnervationDamage|2*classlevel("Wilder")
-	DESC:Psychic enervation: %1 hit point damage, dazed 1 round.|PsychicEnervationDamage
+	SOURCEPAGE:p.99
 
 Surging Assault
 	KEY:Surging Assault ~ Battle Wilder
@@ -2833,58 +2859,59 @@ Toughness
 	KEY:Toughness ~ Battle Wilder
 	CATEGORY:Special Ability
 	TYPE:Internal
-	SOURCEPAGE:p.99
 	AUTO:FEAT|Toughness
+	SOURCEPAGE:p.99
 
 Combat Euphoria
 	KEY:Combat Euphoria ~ Battle Wilder
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:When you use your combat surge ability, you gain a +%1 morale bonus on attack rolls, damage rolls, and saving throws for %2 rounds.  If you are overcome by psychic enervation following your combat surge, you do not gain the morale bonus for this use of your combat surge ability.|CombatEuphoriaBonus|CombatEuphoriaDuration
-	SOURCEPAGE:p.99
-	BONUS:VAR|CombatEuphoriaBonus|floor((classlevel("Wilder")+4)/8)
-	BONUS:VAR|CombatEuphoriaDuration|CHA
 	DEFINE:CombatEuphoriaBonus|0
 	DEFINE:CombatEuphoriaDuration|0
+	DESC:When you use your combat surge ability, you gain a +%1 morale bonus on attack rolls, damage rolls, and saving throws for %2 rounds.  If you are overcome by psychic enervation following your combat surge, you do not gain the morale bonus for this use of your combat surge ability.|CombatEuphoriaBonus|CombatEuphoriaDuration
 	BONUS:CHECKS|ALL|CombatEuphoriaBonus|TYPE=Morale|PREAPPLY:PC
 	BONUS:COMBAT|TOHIT|CombatEuphoriaBonus|TYPE=Morale|PREAPPLY:PC
 	BONUS:COMBAT|DAMAGE.Melee,DAMAGE.Ranged|CombatEuphoriaBonus|TYPE=Morale|PREAPPLY:PC
+	BONUS:VAR|CombatEuphoriaBonus|floor((classlevel("Wilder")+4)/8)
+	BONUS:VAR|CombatEuphoriaDuration|CHA
+	SOURCEPAGE:p.99
 
 Combat Fortitude
 	KEY:Combat Fortitude ~ Battle Wilder
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
+	DEFINE:CombatFortitudeBonus|0
 	DESC:You gain a +%1 bonus to Fortitude saves as long as you are maintaining focus.|CombatFortitudeBonus
 	DESC:Whenever you are subject to an effect that allows a Fortitude save, you receive a second Fortitude save to negate the effect in addition to any save the effect may allow; if the spell or power already allows a Fortitude save to negate, you make a second one, and would need to fail both to be affected.|PRECLASS:1,Wilder=17
-	SOURCEPAGE:p.99
-	BONUS:VAR|CombatFortitudeBonus|floor((classlevel("Wilder")-1)/4)
-	DEFINE:CombatFortitudeBonus|0
 	BONUS:CHECKS|Fortitude|CombatFortitudeBonus*PsionicFocusActive
+	BONUS:VAR|CombatFortitudeBonus|floor((classlevel("Wilder")-1)/4)
+	SOURCEPAGE:p.99
 
 Physical Overload
 	KEY:Physical Overload ~ Battle Wilder
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You are able to push yourself and greatly increase your combat ability.  Once per day, you can invoke a combat surge and gain a +8 enhancement bonus to both Strength and Constitution for %1 rounds.  In addition, while under the affects of physical overload, you treat your base attack bonus as equal to your battle wilder level, which may grant additional iterative attacks.  Invoking physical overload comes with a guaranteed psychic enervation that does double the normal effect when the physical overload ends and this psychic enervation cannot be modified by feats or other abilities that would mitigate or otherwise alter it.|PhysicalOverloadDuration
-	SOURCEPAGE:p.99
 	DEFINE:PhysicalOverloadDuration|0
-	BONUS:VAR|PhysicalOverloadDuration|max(1,CHA)
-	BONUS:STAT|STR,CON|8|TYPE=Enhancement|PREAPPLY:PC
+	DESC:You are able to push yourself and greatly increase your combat ability.  Once per day, you can invoke a combat surge and gain a +8 enhancement bonus to both Strength and Constitution for %1 rounds.  In addition, while under the affects of physical overload, you treat your base attack bonus as equal to your battle wilder level, which may grant additional iterative attacks.  Invoking physical overload comes with a guaranteed psychic enervation that does double the normal effect when the physical overload ends and this psychic enervation cannot be modified by feats or other abilities that would mitigate or otherwise alter it.|PhysicalOverloadDuration
 	BONUS:COMBAT|BAB|5|PREAPPLY:PC
+	BONUS:STAT|STR,CON|8|TYPE=Enhancement|PREAPPLY:PC
+	BONUS:VAR|PhysicalOverloadDuration|max(1,CHA)
+	SOURCEPAGE:p.99
 
 
 
 ###Block: Blasting Wilder archetype abilities
+# Ability Name		Unique Key						Category of Ability		Type				Define												Description																																																																																																		Automatically Gained Feat	Bonus to Ability Pool			Source Page
 Wild Surge
 	KEY:Wild Surge ~ Blasting Wilder
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You use your wild surge not to improve your psionic powers, but to enhance your surge blast ability. Any time you invoke a wild surge, you gain no increase to your manifester level, but add %1 dice of damage to your surge blast and can expend your psionic focus to use your surge blast as a free ation in the same round you used your wild surge, although you may only do this once per round, even if wild surging more than once per round.  This ability functions in all other ways as Wild Surge, including the risk of enervation, and is modified by your surge choice as normal.|WildSurge
-	SOURCEPAGE:p.99
-	BONUS:ABILITYPOOL|Surge Type|1
 	DEFINE:WildSurgeMustModifyML|1
 	DEFINE:SurgeLVL|0
 	DEFINE:WildSurge|0
+	DESC:You use your wild surge not to improve your psionic powers, but to enhance your surge blast ability. Any time you invoke a wild surge, you gain no increase to your manifester level, but add %1 dice of damage to your surge blast and can expend your psionic focus to use your surge blast as a free ation in the same round you used your wild surge, although you may only do this once per round, even if wild surging more than once per round.  This ability functions in all other ways as Wild Surge, including the risk of enervation, and is modified by your surge choice as normal.|WildSurge
+	BONUS:ABILITYPOOL|Surge Type|1
+	SOURCEPAGE:p.99
 
 Modified Blast
 	KEY:Modified Blast ~ Blasting Wilder
@@ -2900,9 +2927,9 @@ Chained Blast
 	KEY:Chained Blast ~ Blasting Wilder
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
+	DEFINE:ChainedBlastRange|15
 	DESC:You can chain the effect of your surge blast to another nearby target at a reduced capacity. Any time you use your surge blast, you can select a secondary target within %1 ft. of the original target.  The secondary target takes half the damage of the original target if you make a successful ranged touch attack against the secondary target.  If the original target took no damage, you cannot chain the blast.|ChainedBlastRange
 	SOURCEPAGE:p.100
-	DEFINE:ChainedBlastRange|15
 
 Perfect Blast
 	KEY:Perfect Blast ~ Blasting Wilder
@@ -2917,6 +2944,7 @@ Perfect Blast
 
 ###Block: Archetypes for other classes
 ###Block: Fighter archetypes
+# Ability Name	Unique Key						Category of Ability	Type																			Required Class		Multiple Requirements																																	Description			Ability																																																																									Cost		Source Page
 Psionic Fighter
 	KEY:Fighter Archetype ~ Psionic Fighter
 	CATEGORY:Archetype
@@ -2926,15 +2954,16 @@ Psionic Fighter
 	DESC:[No description]
 	ABILITY:Special Ability|AUTOMATIC|Psionic Feats ~ Psionic Fighter|PRECLASS:1,Fighter=1
 	ABILITY:Special Ability|AUTOMATIC|Willpower ~ Psionic Fighter|PRECLASS:1,Fighter=2
-	COST:0
 	ABILITY:Special Ability|AUTOMATIC|Telekinetic Draw ~ Psionic Fighter|PRECLASS:1,Fighter=5
 	ABILITY:Special Ability|AUTOMATIC|Combat Focus ~ Psionic Fighter|PRECLASS:1,Fighter=9
 	ABILITY:Special Ability|AUTOMATIC|Double Imbue ~ Psionic Fighter|PRECLASS:1,Fighter=13
+	COST:0
 	SOURCEPAGE:p.100
 
 
 
 ###Block: Psionic Fighter archetype abilities
+# Ability Name	Unique Key						Category of Ability		Type								Define						Description																																															Ability					Bonus to Ability Pool																															Modify VAR												Apply Kit						Source Page		Aspects
 Psionic Feats
 	KEY:Psionic Feats ~ Psionic Fighter
 	CATEGORY:Special Ability
@@ -2948,21 +2977,21 @@ Willpower
 	KEY:Willpower ~ Psionic Fighter
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural.SaveBonus
-	DESC:You gain a +%1 on Will saves against Charm and Compulsion effects as long as you maintain psionic focus.|PsionicFighterWillpowerBonus
 	DEFINE:PsionicFighterWillpowerBonus|0
+	DESC:You gain a +%1 on Will saves against Charm and Compulsion effects as long as you maintain psionic focus.|PsionicFighterWillpowerBonus
 	BONUS:VAR|PsionicFighterWillpowerBonus|floor((classlevel("Fighter")+2)/4)
-	ASPECT:SaveBonus|+%1 save vs. Charm and Compusion|PsionicFighterWillpowerBonus*PsionicFocusActive
 	SOURCEPAGE:p.100
+	ASPECT:SaveBonus|+%1 save vs. Charm and Compusion|PsionicFighterWillpowerBonus*PsionicFocusActive
 
-# COMMENT: BONUS:SKILLPOOL|CLASS=Fighter;LEVEL=5|-1 was what was used.
+# COMMENT: BONUS:SKILLPOOL|CLASS=Fighter;LEVEL=5|-1 was what was used.  Gave PCGen fits.
 # WORKAROUND: Give it one rank in the "Lose Skill Rank" feat.
 Telekinetic Draw
 	KEY:Telekinetic Draw ~ Psionic Fighter
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
 	DESC:You can expend your psionic focus to telekinetically draw your weapon from within 30 ft.  You must have line of sight to the weapon and it must be unattended.
-	SOURCEPAGE:p.100
 	KIT:1|Telekinetic Draw Skill Point Loss
+	SOURCEPAGE:p.100
 
 Combat Focus
 	KEY:Combat Focus ~ Psionic Fighter
@@ -2980,7 +3009,10 @@ Double Imbue
 
 
 
+
+
 ###Block: Monk archetypes
+# Ability Name	Unique Key						Category of Ability	Type												Required Class	Multiple Requirements																										Description																		Ability																																																											Class Skill			Cost		Source Page
 Enlightened Monk
 	KEY:Monk Archetype ~ Enlightened Monk
 	CATEGORY:Archetype
@@ -2992,13 +3024,14 @@ Enlightened Monk
 	ABILITY:Special Ability|AUTOMATIC|Stunning Fist ~ Enlightened Monk|PRECLASS:1,Monk=1
 	ABILITY:Special Ability|AUTOMATIC|Ki Psionics ~ Enlightened Monk|PRECLASS:1,Monk=1
 	ABILITY:Special Ability|AUTOMATIC|Augmented Stunning Fist ~ Enlightened Monk|PRECLASS:1,Monk=6
+	CSKILL:Autohypnosis
 	COST:0
 	SOURCEPAGE:p.101
-	CSKILL:Autohypnosis
 
 
 
 ###Block: Enlightened Monk Monk archetype abilities
+# Ability Name		Unique Key							Category of Ability		Type				Define							Description																																																																											Automatically Gained Feat				Modify VAR								Source Page
 Psionic Training
 	KEY:Psionic Training ~ Enlightened Monk
 	CATEGORY:Special Ability
@@ -3010,31 +3043,34 @@ Stunning Fist
 	KEY:Stunning Fist ~ Enlightened Monk
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
+	DEFINE:EnlightenedMonkStunningFistDCBonus|1
 	DESC:When you use your Stunning Fist ability, you can choose to expend your psionic focus to gain a +%1 bonus to the save DC of that Stunning Fist attack.  If you expend your psionic focus for the Psionic Fist feat as part of a Stunning Fist attack, you gain this bonus in addition to the bonus damage from Stunning Fist.|EnlightenedMonkStunningFistDCBonus
 	SOURCEPAGE:p.101
-	DEFINE:EnlightenedMonkStunningFistDCBonus|1
 
 Ki Psionics
 	KEY:Ki Psionics ~ Enlightened Monk
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You can use your Ki points in place of power points for special abilities including manifesting powers (such as those that might be gained from multiclassing) or racial abilities like the elan's resilience ability.  In addition, you can spend 1 ki point to use catfall as a psi-like ability with a manifester level of %1.|KiPsionicsCatfallML
-	SOURCEPAGE:p.101
 	DEFINE:KiPsionicsCatfallML|0
+	DESC:You can use your Ki points in place of power points for special abilities including manifesting powers (such as those that might be gained from multiclassing) or racial abilities like the elan's resilience ability.  In addition, you can spend 1 ki point to use catfall as a psi-like ability with a manifester level of %1.|KiPsionicsCatfallML
 	BONUS:VAR|KiPsionicsCatfallML|classlevel("Monk")
+	SOURCEPAGE:p.101
 
 Augmented Stunning Fist
 	KEY:Augmented Stunning Fist ~ Enlightened Monk
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You can channel power points into your Stunning Fist attacks to make them more devastating.  When you use your Stunning Fist attack, you may choose to spend up to %1 power points on the attack.  If you do, you gain an insight bonus to the damage if the attack is successful equal to the number of power points spent.  For every two power points spent adding damage, the save DC of the Stunning Fist attack increases by 1.|AugmentedStunningFistPP
-	SOURCEPAGE:p.101
 	DEFINE:AugmentedStunningFistPP|0
+	DESC:You can channel power points into your Stunning Fist attacks to make them more devastating.  When you use your Stunning Fist attack, you may choose to spend up to %1 power points on the attack.  If you do, you gain an insight bonus to the damage if the attack is successful equal to the number of power points spent.  For every two power points spent adding damage, the save DC of the Stunning Fist attack increases by 1.|AugmentedStunningFistPP
 	BONUS:VAR|AugmentedStunningFistPP|classlevel("Monk")
+	SOURCEPAGE:p.101
+
+
 
 
 
 ###Block: Rogue archetypes
+# Ability Name		Unique Key							Category of Ability	Type											Required Class		Multiple Requirements																								Description																Ability																															Class Skill			Cost		Source Page
 Cerebral Infiltrator
 	KEY:Rogue Archetype ~ Cerebral Infiltrator
 	CATEGORY:Archetype
@@ -3044,36 +3080,35 @@ Cerebral Infiltrator
 	DESC:You focus more on dealing with people and less on dealing with traps and mechanical devices.
 	ABILITY:Special Ability|AUTOMATIC|Enhanced Senses ~ Cerebral Infiltrator|PRECLASS:1,Rogue=1
 	ABILITY:Special Ability|AUTOMATIC|Cripple Senses ~ Cerebral Infiltrator|PRECLASS:1,Rogue=3
+	CSKILL:Autohypnosis
 	COST:0
 	SOURCEPAGE:p.101
-	CSKILL:Autohypnosis
 
 
 
 ###Block: Cerebral Infiltrator Rogue archetype abilities
+# Ability Name	Unique Key							Category of Ability		Type				Define										Description																											Automatically Gained Feat	Bonus to skill								Modify VAR															Source Page
 Enhanced Senses
 	KEY:Enhanced Senses ~ Cerebral Infiltrator
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You unlock your psionic talent and additional insight into interactions with others.  You gain a +%1 bonus on Sense Motive checks.|EnhancedSensesSenseMotiveBonus
-	SOURCEPAGE:p.101
 	DEFINE:EnhancedSensesSenseMotiveBonus|0
-	BONUS:VAR|EnhancedSensesSenseMotiveBonus|max(1,floor(classlevel("Rogue")/2))
-	BONUS:SKILL|Sense Motive|EnhancedSensesSenseMotiveBonus
+	DESC:You unlock your psionic talent and additional insight into interactions with others.  You gain a +%1 bonus on Sense Motive checks.|EnhancedSensesSenseMotiveBonus
 	AUTO:FEAT|Wild Talent
+	BONUS:SKILL|Sense Motive|EnhancedSensesSenseMotiveBonus
+	BONUS:VAR|EnhancedSensesSenseMotiveBonus|max(1,floor(classlevel("Rogue")/2))
+	SOURCEPAGE:p.101
 
 Cripple Senses
 	KEY:Cripple Senses ~ Cerebral Infiltrator
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:You gain the ability when making a sneak attack to blind and deafen the struck creature for %1 rounds %2/day.|CrippleSensesDuration|CrippleSensesTimes
-	SOURCEPAGE:p.101
 	DEFINE:CrippleSensesDuration|0
-	BONUS:VAR|CrippleSensesDuration|INT
 	DEFINE:CrippleSensesTimes|0
+	DESC:You gain the ability when making a sneak attack to blind and deafen the struck creature for %1 rounds %2/day.|CrippleSensesDuration|CrippleSensesTimes
+	BONUS:VAR|CrippleSensesDuration|INT
 	BONUS:VAR|CrippleSensesTimes|floor(classlevel("Rogue")/3)
-
-
+	SOURCEPAGE:p.101
 
 
 

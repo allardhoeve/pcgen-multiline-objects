@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -8,10 +9,10 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: Alternate Racial Traits
-# TODO: ADD:FEAT should be replaced with a BONUS:ABILITYPOOL - otherwise removal of the trait won't remove the feat granted.
 
 
 ###Block: Blue
+# Ability Name		Unique Key					Category of Ability		Type													Multiple Requirements																							Description															Bonus to Ability Pool				Bonus to DC							Bonus to skill									Cost		Source Page
 Goblinoid Camouflage
 	KEY:Goblinoid Camouflage ~ Blue
 	CATEGORY:Special Ability
@@ -74,6 +75,7 @@ Self Reliant
 
 
 ###Block: Dromite
+# Ability Name	Unique Key						Category of Ability		Type														Multiple Requirements																						Define				Innate Spells							Description																		Stackable?	Multiple?	Choose			Bonus to Ability Pool					Bonus to skill							Modify VAR															Cost		Source Page		Natural Attacks										Ignore Encumberance
 Atavistic Link
 	KEY:Atavistic Link ~ Dromite
 	CATEGORY:Special Ability
@@ -83,16 +85,15 @@ Atavistic Link
 	COST:0
 	SOURCEPAGE:p.8
 
-# TODO: Check to see if this works.  And, try to get 10 ranks in that *specific* Craft skill.
 Crafter
 	KEY:Crafter ~ Dromite
 	CATEGORY:Special Ability
 	TYPE:RacialTraits.SpecialQuality.DromiteRacialTrait.DromitePsionics
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Crafter ~ Dromite],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.DromitePsionics]
 	DEFINE:DromiteCrafterBonus|0
-	BONUS:VAR|DromiteCrafterBonus|2
 	DESC:Gain +%1 on chosen craft skill.|DromiteCrafterBonus
 	BONUS:ABILITYPOOL|Dromite Crafter Skill Bonus|1
+	BONUS:VAR|DromiteCrafterBonus|2
 	BONUS:VAR|DromiteCrafterBonus|2|PRESKILL:1,TYPE.Craft=10
 	COST:0
 	SOURCEPAGE:p.8
@@ -101,13 +102,12 @@ Craft Skill Bonus
 	KEY:Craft Skill Bonus ~ Dromite Crafter
 	CATEGORY:Special Ability
 	TYPE:Internal.DromiteCrafter
-	MULT:YES
 	STACK:NO
+	MULT:YES
 	CHOOSE:SKILL|TYPE.Craft
 	BONUS:SKILL|%LIST|DromiteCrafterBonus|TYPE=Racial
 
 # COMMENT: Can carrying capacity be bonusified?
-# TODO: Check to see if speed works correctly.
 Excavator
 	KEY:Excavator ~ Dromite
 	CATEGORY:Special Ability
@@ -124,9 +124,9 @@ Gendered
 	TYPE:RacialTraits.SpecialQuality.DromiteRacialTrait.DromitePsionics
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Gendered ~ Dromite],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.DromitePsionics]
 	DESC:Gain +3 bonus on Diplomacy checks on dromites.
+	BONUS:SKILL|Diplomacy (Dromites)|3
 	COST:0
 	SOURCEPAGE:p.8
-	BONUS:SKILL|Diplomacy (Dromites)|3
 
 # COMMENT: Unknown caster level for Hive Mind's mindlink. Assumed to be TL.
 Hive Mind
@@ -152,7 +152,7 @@ Hive Soldier
 
 
 ###Block: Duergar
-# TODO: Check to see if this works.
+# Ability Name		Unique Key						Category of Ability		Type															Multiple Requirements																						Define					Innate Spells							Description														Stackable?	Multiple?	Choose				Bonus to Ability Pool						Save checks bonus				Bonus to skill								Cost		Source Page
 Ancestral Voice
 	KEY:Ancestral Voice ~ DuergarDSP
 	CATEGORY:Special Ability
@@ -169,8 +169,8 @@ Ancestral Voice Bonus
 	KEY:Ancestral Voice Bonus ~ DuergarDSP
 	CATEGORY:Special Ability
 	TYPE:Internal.DuergarAncestralVoice
-	MULT:YES
 	STACK:NO
+	MULT:YES
 	CHOOSE:SKILL|TYPE.Knowledge
 	BONUS:SKILL|%LIST|DuergarAncestralVoiceBonus|TYPE=Racial
 
@@ -225,6 +225,7 @@ Whispers of Insanity
 
 
 ###Block: Elan
+# Ability Name				Unique Key							Category of Ability		Type																		Multiple Requirements																													Description																	Template						Ability														Caster level					Bonus to skill					Stat bonus										Modify VAR				Vision			Cost		Source Page		Aspects
 Failed Transformation (Blue)
 	KEY:Failed Transformation Blue ~ Elan
 	CATEGORY:Special Ability
@@ -367,10 +368,10 @@ Failed Transformation (Xeph)
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Failed Transformation Xeph ~ Elan],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.ElanResistance,TYPE.ElanRepletion,TYPE.ElanResilience]
 	DESC:Gain Darkvision and Burst (1/day) Xeph traits.
 	ABILITY:Special Ability|AUTOMATIC|Burst ~ Xeph
+	BONUS:VAR|XephBurstTimes|-2
 	VISION:Darkvision (60')
 	COST:0
 	SOURCEPAGE:p.12
-	BONUS:VAR|XephBurstTimes|-2
 
 Haughty
 	KEY:Haughty ~ Elan
@@ -507,10 +508,10 @@ Strong Blooded (Maenad)
 	TYPE:RacialTraits.SpecialQuality.ElanRacialTrait.ElanResilience
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Strong Blooded Maenad ~ Elan],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.ElanResilience]
 	DESC:Spend a power point for +2 on Strength, -2 on Intelligence and Wisdom for a round.
-	COST:0
-	SOURCEPAGE:p.12
 	BONUS:STAT|STR|2|PREAPPLY:PC
 	BONUS:STAT|INT,WIS|-2|PREAPPLY:PC
+	COST:0
+	SOURCEPAGE:p.12
 
 Strong Blooded (Ophiduan)
 	KEY:Strong Blooded Ophiduan ~ Elan
@@ -533,6 +534,7 @@ Strong Blooded (Xeph)
 
 
 ###Block: Half-Giant
+# Ability Name	Unique Key					Category of Ability		Type																Multiple Requirements																									Description												Caster level				Bonus to skill								Modify VAR									Cost		Source Page		Aspects
 Cold Acclimated
 	KEY:Cold Acclimated ~ Half-Giant
 	CATEGORY:Special Ability
@@ -579,13 +581,14 @@ Psionic Resonance
 	TYPE:RacialTraits.SpecialQuality.Half-GiantRacialTrait.Half-GiantSurvivor
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Psionic Resonance ~ Half-Giant],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.Half-GiantSurvivor]
 	DESC:+2 bonus to Use Magic Device to activate an item or use a power stone.
+	BONUS:SKILL|Use Magic Device (activate item)|2|TYPE=Racial
 	COST:0
 	SOURCEPAGE:p.14
-	BONUS:SKILL|Use Magic Device (activate item)|2|TYPE=Racial
 
 
 
 ###Block: Maenad
+# Ability Name		Unique Key					Category of Ability		Type																				Multiple Requirements																													Description																								Automatically Gained Weapon Prof.	Combat bonus				Bonus to skill								Stat bonus										Cost		Source Page
 Born to Lead
 	KEY:Born to Lead ~ Maenad
 	CATEGORY:Special Ability
@@ -622,9 +625,9 @@ Shore-Bound
 	TYPE:RacialTraits.SpecialQuality.MaenadRacialTrait.MaenadNaturalSailor
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Shore-Bound ~ Maenad],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.MaenadNaturalSailor]
 	DESC:+2 to Acrobatics checks on the ground.
+	BONUS:SKILL|Acrobatics (on the ground)|2
 	COST:0
 	SOURCEPAGE:p.16
-	BONUS:SKILL|Acrobatics (on the ground)|2
 
 Tempestuous Temper
 	KEY:Tempestuous Temper ~ Maenad
@@ -640,6 +643,7 @@ Tempestuous Temper
 
 
 ###Block: Ophiduan
+# Ability Name		Unique Key							Category of Ability		Type																	Multiple Requirements																									Define				Innate Spells									Description																	Stackable?	Multiple?	Choose				Ability								Bonus to Ability Pool					Combat bonus				Add to base move			Bonus to skill							Modify VAR					Class Skill	Cost		Source Page
 Deformed
 	KEY:Deformed ~ Ophiduan
 	CATEGORY:Special Ability
@@ -688,8 +692,8 @@ Knowledge Skill Bonus
 	KEY:Knowledge Skill Bonus ~ Ophiduan Scholar
 	CATEGORY:Special Ability
 	TYPE:Internal.OphiduanScholarBonus
-	MULT:YES
 	STACK:NO
+	MULT:YES
 	CHOOSE:SKILL|TYPE.Knowledge
 	BONUS:SKILL|%LIST|OphiduanScholarBonus|TYPE=Racial
 	CSKILL:LIST
@@ -708,6 +712,7 @@ Slippery Hide
 
 
 ###Block: Xeph
+# Ability Name	Unique Key				Category of Ability		Type												Required Ability							Multiple Requirements																				Var. Min. Value			Define				Innate Spells										Description																							Stackable?	Multiple?	Choose		Automatically Gained Feat							Combat bonus			Bonus to skill								Modify VAR									Cost		Source Page
 Bladeborn
 	KEY:Bladeborn ~ Xeph
 	CATEGORY:Special Ability
@@ -726,16 +731,16 @@ Call Blade
 	PREABILITY:1,CATEGORY=Special Ability,Burst ~ Xeph
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Call Blade ~ Xeph],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.XephBurst]
 	PREVARGTEQ:XephBurstTimes,1
-	MULT:YES
-	STACK:YES
-	CHOOSE:NOCHOICE
 	DEFINE:CallWeaponryTimes|0
-	BONUS:VAR|CallWeaponryTimes|1
 	SPELLS:Innate|TIMES=CallWeaponryTimes|CASTERLEVEL=TL|Call Weaponry
 	DESC:Gain call weaponry as a psilike ability.
+	STACK:YES
+	MULT:YES
+	CHOOSE:NOCHOICE
+	BONUS:VAR|CallWeaponryTimes|1
+	BONUS:VAR|XephBurstTimes|-1
 	COST:0
 	SOURCEPAGE:p.20
-	BONUS:VAR|XephBurstTimes|-1
 
 # COMMENT: Bonus to manifester level not implemented; too hard to track down all possibilities
 Explorer
@@ -782,3 +787,8 @@ Windweaver
 	COST:0
 	SOURCEPAGE:p.20
 
+
+
+#
+# End
+#

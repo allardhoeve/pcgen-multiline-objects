@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -15,6 +16,7 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: Adaptive Warrior abilities
+# Ability Name							Unique Key							Category of Ability		Type						Define						Description																																																																							Automatically Gained Feat																								Ability											Modify VAR												Source Page
 Weapon and Armor Proficiencies ~ Adaptive Warrior
 	CATEGORY:Internal
 	AUTO:FEAT|Martial Weapon Proficiency Output|Simple Weapon Proficiency|Armor Proficiency (Light)|Armor Proficiency (Medium)|Armor Proficiency (Heavy)|Shield Proficiency
@@ -24,31 +26,31 @@ Examine Technique
 	KEY:Examine Technique ~ Adaptive Warrior
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
+	DEFINE:ExamineTechniqueTargets|0
 	DESC:When focused, you can examine %1 creatures within line of sight.  When focus is expended, you lose access to any examined techniques.|ExamineTechniqueTargets
 	DESC:You can use this ability 1/round as a move action.|!PRECLASS:1,Adaptive Warrior=6
 	DESC:You can use this ability 1/round as a swift action.|PRECLASS:1,Adaptive Warrior=6
-	SOURCEPAGE:p.38
-	DEFINE:ExamineTechniqueTargets|0
 	BONUS:VAR|ExamineTechniqueTargets|classlevel("Adaptive Warrior")
+	SOURCEPAGE:p.38
 
 Counter Fighting Style
 	KEY:Counter Fighting Style ~ Adaptive Warrior
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
+	DEFINE:CounterFightingStyleBonus|0
 	DESC:You get a +%1 competence bonus on attack and damage rolls against an enemy you have examined for at least one round.  This lasts for one minute, until you use Examine Technique on another target, or you have expended focus.|CounterFightingStyleBonus
 	DESC:You can expend focus when attacking to automatically threaten a critical hit.|PRECLASS:1,Adaptive Warrior=4
-	SOURCEPAGE:p.38
-	DEFINE:CounterFightingStyleBonus|0
 	BONUS:VAR|CounterFightingStyleBonus|max(1,classlevel("Adaptive Warrior")/2)
+	SOURCEPAGE:p.38
 
 Mimic Skill
 	KEY:Mimic Skill ~ Adaptive Warrior
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:When focused, you can mimic any Strength, Dexterity, or Constitution skill that you have seen used within the past minute by an examined creature trained in the skill.  You are treated has having %1 ranks in the skill.|MimicSkillRanks
-	SOURCEPAGE:p.38
 	DEFINE:MimicSkillRanks|0
+	DESC:When focused, you can mimic any Strength, Dexterity, or Constitution skill that you have seen used within the past minute by an examined creature trained in the skill.  You are treated has having %1 ranks in the skill.|MimicSkillRanks
 	BONUS:VAR|MimicSkillRanks|classlevel("Adaptive Warrior")
+	SOURCEPAGE:p.38
 
 Mimic Proficiency
 	KEY:Mimic Proficiency ~ Adaptive Warrior
@@ -82,10 +84,10 @@ Extended Examination
 	KEY:Extended Examination ~ Adaptive Warrior
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:By examining a creature using Examine Technique as a full-round action, your competence bonus against that enemy for Counter Fighting Style and Block Attack is +%1.|ExtendedExaminationBonus
-	SOURCEPAGE:p.39
 	DEFINE:ExtendedExaminationBonus|0
+	DESC:By examining a creature using Examine Technique as a full-round action, your competence bonus against that enemy for Counter Fighting Style and Block Attack is +%1.|ExtendedExaminationBonus
 	BONUS:VAR|ExtendedExaminationBonus|classlevel("Adaptive Warrior")
+	SOURCEPAGE:p.39
 
 Mimic Feat
 	KEY:Mimic Feat ~ Adaptive Warrior
@@ -98,94 +100,95 @@ Combine Fighting Styles
 	KEY:Combine Fighting Styles ~ Adaptive Warrior
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
+	DEFINE:CombineFightingStylesTimes|4+INT
 	DESC:When focused, and have used your Examine Technique on at least two creatures in the past hour, and have not expended focus since using Examine Technique, you can, as a swift action, treat your opponents as flat-footed when making attacks against them until the start of your next turn.  This can be used %1/day.|CombineFightingStylesTimes
 	SOURCEPAGE:p.39
-	DEFINE:CombineFightingStylesTimes|4+INT
 
 
 
-#Block: Adaptive Warrior enhancement choices
+###Block: Adaptive Warrior enhancement choices
+# Ability Name							Unique Key				Category of Ability		Type									Visible	Required Ability																		Required Template			Description																					Stackable?	Multiple?	Choose						Caster level bonus						Modify VAR
 Advance Manifesting
 	KEY:Adaptive Warrior ~ Ma
-	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
-	MULT:YES
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|AdaptiveWarriorEnhancementCount
 
 Advance Mind Blade
 	KEY:Adaptive Warrior ~ MB
-	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|AdaptiveWarriorEnhancementCount
 
 Advance Astral Suit
 	KEY:Adaptive Warrior ~ AS
-	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|AegisCL,AegisDRLVL|AdaptiveWarriorEnhancementCount
 
 Advance Manifesting and Mind Blade
 	KEY:Adaptive Warrior ~ MaMB
-	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|AdaptiveWarriorEnhancementCount
 	BONUS:VAR|MndBladeLVL|AdaptiveWarriorEnhancementCount
 
 Advance Manifesting and Astral Suit
 	KEY:Adaptive Warrior ~ MaAS
-	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|AdaptiveWarriorEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|AdaptiveWarriorEnhancementCount
 
 Advance Mindblade and Astral Suit
 	KEY:Adaptive Warrior ~ MBAS
-	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|AdaptiveWarriorEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|AdaptiveWarriorEnhancementCount
 
 Advance Manifesting and Mindblade and Astral Suit
 	KEY:Adaptive Warrior ~ MaMBAS
-	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.AdaptiveWarriorEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|AdaptiveWarriorEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|AdaptiveWarriorEnhancementCount
 	BONUS:VAR|MndBladeLVL|AdaptiveWarriorEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|AdaptiveWarriorEnhancementCount
@@ -195,14 +198,15 @@ Advance Manifesting and Mindblade and Astral Suit
 
 
 ###Block: Body Snatcher abilities
+# Ability Name			Unique Key							Category of Ability		Type						Define						Description																																																																																																																																																																																Caster level										Modify VAR											Source Page		List of Known Class Spells by Level
 Body Thief
 	KEY:Body Thief ~ Body Snatcher
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Extraordinary
 	DESC:You can manifest mind switch at a higher manifester level.
+	BONUS:CASTERLEVEL|SPELL.Mind Switch|classlevel("Body Snatcher")
 	SOURCEPAGE:p.43
 	SPELLKNOWN:CLASS|SPELLCASTER.Psionic=6|Mind Switch
-	BONUS:CASTERLEVEL|SPELL.Mind Switch|classlevel("Body Snatcher")
 
 Extended Transfer
 	KEY:Extended Transfer ~ Body Snatcher
@@ -215,19 +219,19 @@ Melding Exchange
 	KEY:Melding Exchange ~ Body Snatcher
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:During a mind switch, your mind briefly interfaces with that of your target, resulting in a one-way exchange of information.  In addition to rudimentary or instinctive knowledge of the subject as normal for the power, you also learn the subject's name, where he lives, and who his principal associates and enemies are.  While you remain in the subject's body, you also gain knowledge of all of the subject's languages (written and spoken), treat any Knowledge check made with a skill with which the subject had ranks as a trained check, and gains a +%1 competence bonus on any skill check used to impersonate the subject.|MeldingExchangeBonus
-	SOURCEPAGE:p.44
 	DEFINE:MeldingExchangeBonus|0
+	DESC:During a mind switch, your mind briefly interfaces with that of your target, resulting in a one-way exchange of information.  In addition to rudimentary or instinctive knowledge of the subject as normal for the power, you also learn the subject's name, where he lives, and who his principal associates and enemies are.  While you remain in the subject's body, you also gain knowledge of all of the subject's languages (written and spoken), treat any Knowledge check made with a skill with which the subject had ranks as a trained check, and gains a +%1 competence bonus on any skill check used to impersonate the subject.|MeldingExchangeBonus
 	BONUS:VAR|MeldingExchangeBonus|2*classlevel("Body Snatcher")
+	SOURCEPAGE:p.44
 
 The Flesh Remembers
 	KEY:The Flesh Remembers ~ Body Snatcher
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Extraordinary
-	DESC:You can connect with a host's kinaesthetic memories ("muscle memories") and draw upon learned physical capabilities.  While under the influence of mind switch, you gain the host body's weapon and armor proficiencies.  Additionally, you may choose to use your host's ranks in skills keyed to Strength, Dexterity, or Constitution instead of your own.  Your training limites how completely you can draw upon your host, though - you cannot emulate a higher rank than %1.|FleshRemembersSkillRankLimit
-	SOURCEPAGE:p.44
 	DEFINE:FleshRemembersSkillRankLimit|0
+	DESC:You can connect with a host's kinaesthetic memories ("muscle memories") and draw upon learned physical capabilities.  While under the influence of mind switch, you gain the host body's weapon and armor proficiencies.  Additionally, you may choose to use your host's ranks in skills keyed to Strength, Dexterity, or Constitution instead of your own.  Your training limites how completely you can draw upon your host, though - you cannot emulate a higher rank than %1.|FleshRemembersSkillRankLimit
 	BONUS:VAR|FleshRemembersSkillRankLimit|INT+classlevel("Body Snatcher")
+	SOURCEPAGE:p.44
 
 Traumatic Transfer
 	KEY:Traumatic Transfer ~ Body Snatcher
@@ -277,94 +281,95 @@ Death Is Only the Beginning
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
 	DESC:Common folklore suggests that many people see their lives flash before their eyes just before they die. In some ways, this is literal truth for you, although you tend to see only opportunity. Immediately upon being reduced to -1 hit points or lower, or failing a saving throw against an effect that would kill you, you may expend your psionic focus to manifest true mind switch as an immediate action at the same manifester level you manifest mind switch. You may only target your killer with this effect (thus, if the killer is out of range, this ability is worthless), and the save DC is reduced by 4 due to the desperate nature of this technique. If successful, your mind switches places with your killer's just before dying. You suffer level loss as normal for losing your previous body after a true mind switch.  You may apply all your body snatcher class features (except seal the host) to any manifestation of true mind switch, even one made at the moment of death.
+	BONUS:CASTERLEVEL|SPELL.Mind Switch (True)|classlevel("Body Snatcher")
 	SOURCEPAGE:p.45
 	SPELLKNOWN:CLASS|SPELLCASTER.Psionic=9|Mind Switch (True)
-	BONUS:CASTERLEVEL|SPELL.Mind Switch (True)|classlevel("Body Snatcher")
 
 
 
-#Block: Body Snatcher enhancement choices
+###Block: Body Snatcher enhancement choices
+# Ability Name							Unique Key				Category of Ability		Type									Visible	Required Ability																		Required Template			Description																					Stackable?	Multiple?	Choose						Caster level bonus						Modify VAR
 Advance Manifesting
 	KEY:Body Snatcher ~ Ma
-	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
-	MULT:YES
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|BodySnatcherEnhancementCount
 
 Advance Mind Blade
 	KEY:Body Snatcher ~ MB
-	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|BodySnatcherEnhancementCount
 
 Advance Astral Suit
 	KEY:Body Snatcher ~ AS
-	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|AegisCL,AegisDRLVL|BodySnatcherEnhancementCount
 
 Advance Manifesting and Mind Blade
 	KEY:Body Snatcher ~ MaMB
-	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|BodySnatcherEnhancementCount
 	BONUS:VAR|MndBladeLVL|BodySnatcherEnhancementCount
 
 Advance Manifesting and Astral Suit
 	KEY:Body Snatcher ~ MaAS
-	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|BodySnatcherEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|BodySnatcherEnhancementCount
 
 Advance Mindblade and Astral Suit
 	KEY:Body Snatcher ~ MBAS
-	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|BodySnatcherEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|BodySnatcherEnhancementCount
 
 Advance Manifesting and Mindblade and Astral Suit
 	KEY:Body Snatcher ~ MaMBAS
-	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.BodySnatcherEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|BodySnatcherEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|BodySnatcherEnhancementCount
 	BONUS:VAR|MndBladeLVL|BodySnatcherEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|BodySnatcherEnhancementCount
@@ -374,12 +379,13 @@ Advance Manifesting and Mindblade and Astral Suit
 
 
 ###Block: Metaforge abilities
+# Ability Name		Unique Key						Category of Ability		Type						Define					Description																												Source Page
 Crystallized Mind Blade
 	KEY:Crystallized Mind Blade ~ Metaforge
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
 	DEFINE:CrystallizedMindBlade|0
-	DESC:Your mind blade gains %1 hardness and hit points; can be charged with %2 power pooints to increase enhancement by +%2.|MetaforgedLVL|CrystallizedMindBlade
+	DESC:Your mind blade gains %1 hardness and hit points; can be charged with %2 power points to increase enhancement by +%2 for 1 round.|MetaforgedLVL|CrystallizedMindBlade
 	SOURCEPAGE:p.38
 
 Transfer Enhancement
@@ -409,6 +415,7 @@ Shift Form
 
 
 ###Block: Metamorph abilities
+# Ability Name			Category of Ability		Type						Visible		Define					Description																																																		Stackable?	Multiple?	Choose				Template							Caster level																																							Bonus to spell known/L				Source Page		List of Class Spells by Level
 Natural Shifter
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
@@ -496,88 +503,89 @@ Learn Major Metamorphosis
 
 
 
-#Block: Metamorph enhancement choices
+###Block: Metamorph enhancement choices
+# Ability Name							Unique Key			Category of Ability		Type								Visible	Required Ability																		Required Template			Description																				Stackable?	Multiple?	Choose						Caster level bonus					Modify VAR
 Advance Manifesting
 	KEY:Metamorph ~ Ma
-	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
-	MULT:YES
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|MetamorphEnhancementCount
 
 Advance Mind Blade
 	KEY:Metamorph ~ MB
-	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|MetamorphEnhancementCount
 
 Advance Astral Suit
 	KEY:Metamorph ~ AS
-	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|AegisCL,AegisDRLVL|MetamorphEnhancementCount
 
 Advance Manifesting and Mind Blade
 	KEY:Metamorph ~ MaMB
-	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|MetamorphEnhancementCount
 	BONUS:VAR|MndBladeLVL|MetamorphEnhancementCount
 
 Advance Manifesting and Astral Suit
 	KEY:Metamorph ~ MaAS
-	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|MetamorphEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|MetamorphEnhancementCount
 
 Advance Mindblade and Astral Suit
 	KEY:Metamorph ~ MBAS
-	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|MetamorphEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|MetamorphEnhancementCount
 
 Advance Manifesting and Mindblade and Astral Suit
 	KEY:Metamorph ~ MaMBAS
-	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.MetamorphEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|MetamorphEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|MetamorphEnhancementCount
 	BONUS:VAR|MndBladeLVL|MetamorphEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|MetamorphEnhancementCount
@@ -587,6 +595,7 @@ Advance Manifesting and Mindblade and Astral Suit
 
 
 ###Block: Mystic Archer abilities
+# Ability Name		Unique Key						Category of Ability		Type						Define																Innate Spells								Description																						Modify VAR									Add to vision					Vision			Source Page
 Inevitable Strike
 	KEY:Inevitable Strike ~ Mystic Archer
 	CATEGORY:Special Ability
@@ -661,6 +670,7 @@ Unhindered Vision
 
 
 ###Block: Psicrystal Imprinter abilities
+# Ability Name		Unique Key								Category of Ability		Type						Define																		Description																																		Template					Bonus to Ability Pool				Modify VAR									Source Page
 Psicrystal Bond
 	KEY:Psicrystal Bond ~ Psicrystal Imprinter
 	CATEGORY:Special Ability
@@ -723,88 +733,89 @@ Crystalline Infusion
 
 
 
-#Block: Psicrystal Imprinter enhancement choices
+###Block: Psicrystal Imprinter enhancement choices
+# Ability Name							Unique Key					Category of Ability		Type										Visible	Required Ability																		Required Template			Description																						Stackable?	Multiple?	Choose						Caster level bonus							Modify VAR
 Advance Manifesting
 	KEY:Psicrystal Imprinter ~ Ma
-	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
-	MULT:YES
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|PsicrystalImprinterEnhancementCount
 
 Advance Mind Blade
 	KEY:Psicrystal Imprinter ~ MB
-	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|PsicrystalImprinterEnhancementCount
 
 Advance Astral Suit
 	KEY:Psicrystal Imprinter ~ AS
-	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|AegisCL,AegisDRLVL|PsicrystalImprinterEnhancementCount
 
 Advance Manifesting and Mind Blade
 	KEY:Psicrystal Imprinter ~ MaMB
-	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|PsicrystalImprinterEnhancementCount
 	BONUS:VAR|MndBladeLVL|PsicrystalImprinterEnhancementCount
 
 Advance Manifesting and Astral Suit
 	KEY:Psicrystal Imprinter ~ MaAS
-	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|PsicrystalImprinterEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|PsicrystalImprinterEnhancementCount
 
 Advance Mindblade and Astral Suit
 	KEY:Psicrystal Imprinter ~ MBAS
-	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|PsicrystalImprinterEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|PsicrystalImprinterEnhancementCount
 
 Advance Manifesting and Mindblade and Astral Suit
 	KEY:Psicrystal Imprinter ~ MaMBAS
-	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.PsicrystalImprinterEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|PsicrystalImprinterEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|PsicrystalImprinterEnhancementCount
 	BONUS:VAR|MndBladeLVL|PsicrystalImprinterEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|PsicrystalImprinterEnhancementCount
@@ -814,6 +825,7 @@ Advance Manifesting and Mindblade and Astral Suit
 
 
 ###Block: Sighted Seeker abilities
+# Ability Name						Unique Key						SORTKEY			Category of Ability		Type											Visible		Define				Innate Spells														Description																													Stackable?	Multiple?	Choose				Automatically Gained Feat										Automatically Gained Weapon Prof.						Bonus to Ability Pool						Bonus to spell known/L				Modify VAR										Source Page		List of Class Spells by Level
 Favored Prey
 	KEY:Favored Prey ~ Sighted Seeker
 	CATEGORY:Special Ability
@@ -922,96 +934,97 @@ Sighted Seeker Metafaculty
 
 
 
-#Block: Sighted Seeker enhancement choices
+###Block: Sighted Seeker enhancement choices
+# Ability Name							Unique Key				Category of Ability		Type									Visible	Required Ability																		Required Template			Description																					Stackable?	Multiple?	Choose						Caster level bonus						Modify VAR
 Own Manifesting
 	KEY:Sighted Seeker ~ Own
-	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	VISIBLE:NO
 	BONUS:VAR|SightedSeekerML|SightedSeekerLVL
 	BONUS:VAR|OwnManifesting|1
 
 Advance Manifesting
 	KEY:Sighted Seeker ~ Ma
-	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
-	MULT:YES
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|SightedSeekerEnhancementCount
 
 Advance Mind Blade
 	KEY:Sighted Seeker ~ MB
-	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|SightedSeekerEnhancementCount
 
 Advance Astral Suit
 	KEY:Sighted Seeker ~ AS
-	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|AegisCL,AegisDRLVL|SightedSeekerEnhancementCount
 
 Advance Manifesting and Mind Blade
 	KEY:Sighted Seeker ~ MaMB
-	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|SightedSeekerEnhancementCount
 	BONUS:VAR|MndBladeLVL|SightedSeekerEnhancementCount
 
 Advance Manifesting and Astral Suit
 	KEY:Sighted Seeker ~ MaAS
-	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|SightedSeekerEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|SightedSeekerEnhancementCount
 
 Advance Mindblade and Astral Suit
 	KEY:Sighted Seeker ~ MBAS
-	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|SightedSeekerEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|SightedSeekerEnhancementCount
 
 Advance Manifesting and Mindblade and Astral Suit
 	KEY:Sighted Seeker ~ MaMBAS
-	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SightedSeekerEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SightedSeekerEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|SightedSeekerEnhancementCount
 	BONUS:VAR|MndBladeLVL|SightedSeekerEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|SightedSeekerEnhancementCount
@@ -1021,6 +1034,7 @@ Advance Manifesting and Mindblade and Astral Suit
 
 
 ###Block: Soul Archer abilities
+# Ability Name		Unique Key						Category of Ability		Type						Define						Description																																																																																																																																																																																											Automatically Added to Inventory	Modify VAR												Source Page
 Ranged Feat
 	KEY:Ranged Feat ~ Soul Archer
 	CATEGORY:Special Ability
@@ -1040,17 +1054,18 @@ Form Mind Arrow
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:You can choose to shape your mind blade as a semisolid arrow of psychic energy and form a mind arrow as a free action.  If you have the ability to make multiple attacks, you can create multiple mind arrows as part of an attack.  You must have one hand free to create and fire a mind arrow.  The arrow is identical in all ways (except visually) to an arrow shot from a composite longbow of a size appropriate to you. You add your Wisdom modifier to the damage for attacks made with mind arrows, instead of your Strength modifier. The mind arrow receives all the benefits normally applied to the mind blade, including the ability to use psychic strike, any enhancement bonus or weapon special abilities, or feats that apply to the mind blade, although any melee-specific options are non-functional while in mind arrow form. Ranged feats that apply to ranged attacks, such as Point-Blank Shot, apply to the mind arrow. Any weapon special abilities that apply to the mind blade are inactive while in mind arrow form until the soulknife spends the normal amount of time to reassign the special abilities of the mind blade.
-	SOURCEPAGE:p.46
 	AUTO:EQUIP|Mind Arrow
+	SOURCEPAGE:p.46
 
 Ranged Psychic Strike
 	KEY:Ranged Psychic Strike ~ Soul Archer
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:Your psychic strike damage when your mind blade is in mind arrow form increases by %1 dice of damage.|RangedPsychicStrikeBonusDice
-	SOURCEPAGE:p.46
 	DEFINE:RangedPsychicStrikeBonusDice|0
+	DESC:Your psychic strike damage when your mind blade is in mind arrow form increases by %1 dice of damage.|RangedPsychicStrikeBonusDice|PREABILITY:1,CATEGORY=Special Ability,Psychic Strike
+	DESC:You gain the psychic strike ability, dealing %1d8 points of damage, but may only use this ability when your mind blade is in mind arrow form.|RangedPsychicStrikeBonusDice|!PREABILITY:1,CATEGORY=Special Ability,Psychic Strike
 	BONUS:VAR|RangedPsychicStrikeBonusDice|floor(classlevel("Soul Archer")/4)
+	SOURCEPAGE:p.46
 
 Reflexive Shot
 	KEY:Reflexive Shot ~ Soul Archer
@@ -1075,88 +1090,89 @@ Empowered Shot
 
 
 
-#Block: Soul Archer enhancement choices
+###Block: Soul Archer enhancement choices
+# Ability Name							Unique Key				Category of Ability		Type								Visible	Required Ability																		Required Template			Description																				Stackable?	Multiple?	Choose						Caster level bonus					Modify VAR
 Advance Manifesting
 	KEY:Soul Archer ~ Ma
-	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
-	MULT:YES
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|SoulArcherEnhancementCount
 
 Advance Mind Blade
 	KEY:Soul Archer ~ MB
-	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|SoulArcherEnhancementCount
 
 Advance Astral Suit
 	KEY:Soul Archer ~ AS
-	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|AegisCL,AegisDRLVL|SoulArcherEnhancementCount
 
 Advance Manifesting and Mind Blade
 	KEY:Soul Archer ~ MaMB
-	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|SoulArcherEnhancementCount
 	BONUS:VAR|MndBladeLVL|SoulArcherEnhancementCount
 
 Advance Manifesting and Astral Suit
 	KEY:Soul Archer ~ MaAS
-	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|SoulArcherEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|SoulArcherEnhancementCount
 
 Advance Mindblade and Astral Suit
 	KEY:Soul Archer ~ MBAS
-	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|SoulArcherEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|SoulArcherEnhancementCount
 
 Advance Manifesting and Mindblade and Astral Suit
 	KEY:Soul Archer ~ MaMBAS
-	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SoulArcherEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|SoulArcherEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|SoulArcherEnhancementCount
 	BONUS:VAR|MndBladeLVL|SoulArcherEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|SoulArcherEnhancementCount
@@ -1166,6 +1182,7 @@ Advance Manifesting and Mindblade and Astral Suit
 
 
 ###Block: Telekinetic Weaponmaster abilities
+# Ability Name		Unique Key								Category of Ability		Type						Description																																																																															Combat bonus							Source Page
 Telekinetic Reach
 	KEY:Telekinetic Reach ~ Telekinetic Weaponmaster
 	CATEGORY:Special Ability
@@ -1186,8 +1203,8 @@ Telekinetic Block
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
 	DESC:When focused, you gain a +1 deflection bonus to AC.  You may expend focus as a free action to increase the bonus to +4 until the beginning of your next turn.
-	SOURCEPAGE:p.40
 	BONUS:COMBAT|AC|1*PsionicFocusActive|TYPE=Deflection
+	SOURCEPAGE:p.40
 
 Dual Kinetic Mastery
 	KEY:Dual Kinetic Mastery ~ Telekinetic Weaponmaster
@@ -1205,88 +1222,89 @@ Telekinetic Whirlwind
 
 
 
-#Block: Telekinetic Weaponmaster enhancement choices
+###Block: Telekinetic Weaponmaster enhancement choices
+# Ability Name							Unique Key						Category of Ability		Type											Visible	Required Ability																		Required Template			Description																						Stackable?	Multiple?	Choose						Caster level bonus							Modify VAR
 Advance Manifesting
 	KEY:Telekinetic Weaponmaster ~ Ma
-	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
-	MULT:YES
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|TelekineticWeaponmasterEnhancementCount
 
 Advance Mind Blade
 	KEY:Telekinetic Weaponmaster ~ MB
-	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|TelekineticWeaponmasterEnhancementCount
 
 Advance Astral Suit
 	KEY:Telekinetic Weaponmaster ~ AS
-	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|AegisCL,AegisDRLVL|TelekineticWeaponmasterEnhancementCount
 
 Advance Manifesting and Mind Blade
 	KEY:Telekinetic Weaponmaster ~ MaMB
-	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|TelekineticWeaponmasterEnhancementCount
 	BONUS:VAR|MndBladeLVL|TelekineticWeaponmasterEnhancementCount
 
 Advance Manifesting and Astral Suit
 	KEY:Telekinetic Weaponmaster ~ MaAS
-	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|TelekineticWeaponmasterEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|TelekineticWeaponmasterEnhancementCount
 
 Advance Mindblade and Astral Suit
 	KEY:Telekinetic Weaponmaster ~ MBAS
-	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	VISIBLE:NO
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
 	BONUS:VAR|MndBladeLVL|TelekineticWeaponmasterEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|TelekineticWeaponmasterEnhancementCount
 
 Advance Manifesting and Mindblade and Astral Suit
 	KEY:Telekinetic Weaponmaster ~ MaMBAS
-	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	CATEGORY:Special Ability
+	TYPE:SpecialQuality.TelekineticWeaponmasterEnhancementChoice
 	VISIBLE:NO
-	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
-	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
 	PREABILITY:1,CATEGORY=Special Ability,Form Mind Blade
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
 	PRETEMPLATE:1,High Psionics
-	MULT:YES
+	DESC:Chosen class:%1  Number of Advances:%2  Number of Bonus Levels:%3|%CHOICE|TelekineticWeaponmasterEnhancementCount|BL=Psychic Warrior
 	STACK:NO
+	MULT:YES
+	CHOOSE:CLASS|SPELLCASTER,TYPE=Psionic
 	BONUS:PCLEVEL|%LIST|TelekineticWeaponmasterEnhancementCount
 	BONUS:VAR|MndBladeLVL|TelekineticWeaponmasterEnhancementCount
 	BONUS:VAR|AegisCL,AegisDRLVL|TelekineticWeaponmasterEnhancementCount

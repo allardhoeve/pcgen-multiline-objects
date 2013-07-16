@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -8,6 +9,7 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: Cryptic power list
+# Spell Name				Classes of caster
 Call to Mind.MOD
 	CLASSES:Cryptic=1
 
@@ -159,6 +161,7 @@ Hypercognition.MOD
 
 
 ###Block: Dread power list
+# Spell Name			Classes of caster
 Biofeedback.MOD
 	CLASSES:Dread=1
 
@@ -262,6 +265,7 @@ Temporal Acceleration.MOD
 
 
 ###Block: Marksman power list
+# Spell Name				Classes of caster
 Astral Traveler.MOD
 	CLASSES:Marksman=1
 
@@ -397,6 +401,7 @@ Truevenom Weapon.MOD
 
 
 ###Block: Tactician power list
+# Spell Name				Classes of caster
 Call to Mind.MOD
 	CLASSES:Tactician=1
 
@@ -557,6 +562,7 @@ Timeless Body.MOD
 
 
 ###Block: Vitalist power list
+# Spell Name				Classes of caster
 Biofeedback.MOD
 	CLASSES:Vitalist=1
 
@@ -741,6 +747,7 @@ Timeless Body.MOD
 
 
 ###Block: Sighted Seeker prestige class power list
+# Spell Name					Classes of caster
 Burst.MOD
 	CLASSES:Sighted Seeker=1
 
@@ -855,6 +862,7 @@ Trace Psychoport.MOD
 
 
 ###Block: Gifted Blade archetype power list
+# Spell Name				Classes of caster		Spell Descriptors
 Astral Traveler.MOD
 	CLASSES:Gifted Blade=1
 

@@ -1,9 +1,11 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 #SOURCELONG:Psionics Expanded	SOURCESHORT:PsiEx	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php	SOURCEDATE:2012-07
 # ORIGINAL ENTRY: Douglas Limmer
 # ORIGINAL ENTRY DATE: 2013/07/05
 
 
 ###Block: Archetype support
+# Ability Category			Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object	Type of Object		Plural description for UI	Display Location
 ABILITYCATEGORY:Aegis Archetype
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -67,6 +69,7 @@ ABILITYCATEGORY:Vitalist Archetype
 
 
 ###Block: Bonus Feat ability pools
+# Ability Category					Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object					Specific choices list						Plural description for UI			Display Location
 ABILITYCATEGORY:Bonus Psionic Feat
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -75,17 +78,6 @@ ABILITYCATEGORY:Bonus Psionic Feat
 	CATEGORY:FEAT
 	TYPE:Psionic
 	PLURAL:Bonus Psionic Feats
-	DISPLAYLOCATION:Feats
-
-# TODO: Merge this with the above.
-ABILITYCATEGORY:Psionic Feat
-	VISIBLE:QUALIFY
-	EDITABLE:YES
-	EDITPOOL:YES
-	FRACTIONALPOOL:NO
-	CATEGORY:FEAT
-	TYPE:Psionic
-	PLURAL:Psionic Feats
 	DISPLAYLOCATION:Feats
 
 #Block: Aegis
@@ -171,7 +163,7 @@ ABILITYCATEGORY:Healing Surge Feat
 	EDITPOOL:YES
 	FRACTIONALPOOL:NO
 	CATEGORY:FEAT
-	ABILITYLIST:Expanded Knowledge
+	ABILITYLIST:Expanded Knowledge|Extra Power Known
 	PLURAL:Healing Surge Feats
 	DISPLAYLOCATION:Feats
 
@@ -256,6 +248,7 @@ ABILITYCATEGORY:Unlocked Talent Feat
 
 ###Block: Class Ability ability pools
 #Block: Aegis
+# Ability Category					Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object				Specific choices list				Plural description for UI			Display Location
 ABILITYCATEGORY:Craft Skill Bonus
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -445,6 +438,7 @@ ABILITYCATEGORY:Sighted Seeker Metafaculty
 
 
 ###Block: Enhancement choice ability pools
+# Ability Category							Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object						Display Location
 ABILITYCATEGORY:Adaptive Warrior Enhancement Choice
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -513,6 +507,7 @@ ABILITYCATEGORY:Telekinetic Weaponmaster Enhancement Choice
 
 
 ###Block: Archetype Ability ability pools
+# Ability Category					Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object				Specific choices list																	Plural description for UI			Display Location
 ABILITYCATEGORY:Transformed Body Customization
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -589,6 +584,7 @@ ABILITYCATEGORY:Medic Tricks
 #Block: Soul Archer
 # NEEDS CODE/DATA WORK: How to limit this to only soulbolt blade skills, but not Alter Mind Bolt?
 # WORKAROUND: Allow any blade skill.  The rest is user-enforced.
+# Ability Category					Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object		Plural description for UI	Display Location
 ABILITYCATEGORY:Ranged Blade Skill
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -623,6 +619,7 @@ ABILITYCATEGORY:Metamorph Level Five Power
 
 
 ###Block: Race Traits
+# Ability Category				Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object		Plural description for UI	Display Location
 ABILITYCATEGORY:Blue Race Trait
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -706,7 +703,7 @@ ABILITYCATEGORY:Xeph Race Trait
 
 
 ###Block: Bonus Powers
-# COMMENT: Will need more for prestige classes
+# Ability Category					Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object				Display Location
 ABILITYCATEGORY:Bonus Cryptic Power
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -788,6 +785,15 @@ ABILITYCATEGORY:Bonus Gifted Blade Power
 	TYPE:BonusSpellKnownGiftedBlade
 	DISPLAYLOCATION:Class Abilities
 
+ABILITYCATEGORY:Bonus Sighted Seeker Power
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:YES
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:BonusSpellKnownSightedSeeker
+	DISPLAYLOCATION:Class Abilities
+
 
 
 ABILITYCATEGORY:Bonus Power
@@ -802,6 +808,7 @@ ABILITYCATEGORY:Bonus Power
 
 
 ###Block: Other ability pools
+# Ability Category					Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object			Plural description for UI			Display Location
 ABILITYCATEGORY:Improved Shield Blade Skill
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -842,3 +849,8 @@ ABILITYCATEGORY:Ophiduan Scholar Bonus
 	PLURAL:Ophiduan Scholar Bonuses
 	DISPLAYLOCATION:Racial Abilities
 
+
+
+#
+# End
+#

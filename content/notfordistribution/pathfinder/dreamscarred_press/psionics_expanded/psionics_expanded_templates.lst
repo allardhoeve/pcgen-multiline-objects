@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -8,6 +9,7 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: Determines whether a Constructor gets Advanced Construct or Boost Construct
+# Template Name				Visible	Template													Required Feat						Prohibited Feat				Bonus to Ability Pool				Automatically Gained Feat
 Improved Constructs Determination
 	VISIBLE:NO
 	TEMPLATE:CHOOSE:Get Advanced Constructs|Get Boost Construct|Get Bonus Psionic Feat
@@ -30,6 +32,7 @@ Get Bonus Psionic Feat
 
 
 ###Block: Determines Psicrystal Bond choice
+# Template Name		Visible	Template										Required Feat			Prohibited Feat				Automatically Gained Feat
 Psicrystal Bond Choice
 	VISIBLE:NO
 	TEMPLATE:CHOOSE:Get Psicrystal Affinity|Get Improved Psicrystal
@@ -47,6 +50,7 @@ Get Improved Psicrystal
 
 
 ###Block: Determines whether a Metamorph gets Swift Shapeshifter or Master of Forms
+# Template Name			Visible	Template												Required Feat							Prohibited Feat				Automatically Gained Feat
 Quick Shift Determination
 	VISIBLE:NO
 	TEMPLATE:CHOOSE:Get Swift Shapeshifter|Get Master of All Forms|Get Nothing
@@ -68,7 +72,8 @@ Get Nothing
 
 
 
-### Determines whether a Metamorph gets Major Metamorphosis or some other power.  Not done yet!
+###Block: Determines whether a Metamorph gets Major Metamorphosis or some other power.
+# Template Name				Visible	Template										Req. Known Spell				!PRESPELL					Bonus to Ability Pool
 Major Metamorphosis Determination
 	VISIBLE:NO
 	TEMPLATE:CHOOSE:Get Major Metamorphosis|Get Level Five Power
@@ -86,6 +91,7 @@ Get Level Five Power
 
 
 ###Block: Failed Transformation templates (where needed)
+# Template Name			Size		Visible	Ability								Move			Vision
 Failed Transformation Blue
 	SIZE:S
 	VISIBLE:NO
@@ -106,6 +112,7 @@ Failed Transformation Dwarf
 
 
 ###Block: Strengthened By Fear stat choices
+# Template Name				Visible	Template																																					Combat bonus										Stat bonus
 Strengthened By Fear
 	TEMPLATE:CHOOSE:Strengthened By Fear (Str/Dex/Con)|Strengthened By Fear (Str/Con/Dex)|Strengthened By Fear (Dex/Str/Con)|Strengthened By Fear (Dex/Con/Str)|Strengthened By Fear (Con/Str/Dex)|Strengthened By Fear (Con/Dex/Str)
 	BONUS:COMBAT|AC|StrengthenedByFearNABonus|TYPE=InsightNaturalArmor
@@ -151,14 +158,16 @@ Strengthened By Fear (Con/Dex/Str)
 
 
 ###Block: Dread Fear Incarnate Template
+# Template Name	Visible	Template		Main Race Type
 Fear Incarnate
 	VISIBLE:NO
-	RACETYPE:Outsider
 	TEMPLATE:Native
+	RACETYPE:Outsider
 
 
 
 ###Block: Battlesense templates
+# Template Name				Visible		Combat bonus												Add to base move										Choose
 Battlesense attack bonus
 	VISIBLE:DISPLAY
 	BONUS:COMBAT|TOHIT|%CHOICE|TYPE=Circumstance|PREAPPLY:ANYPC
@@ -182,37 +191,45 @@ Battlesense speed bonus
 
 
 ###Block: Activate Advanced Construct abilities
+# Template Name		Required Race
 Advanced Construct
 	PRERACE:1,Astral Construct%
 
 
 
 ###Block: Activate High Psionics
+# Template Name	Description
 High Psionics
 	DESC:Add this to activate high psionics options.
 
 
 
 ###Block: Inner Peace Maenad trait templates
+# Template Name		Visible	Required Class Skill						Prohibited Class SKill							Multiple Requirements											Bonus to skill										Class Skill
 Inner Peace both
 	VISIBLE:NO
-	BONUS:SKILL|Knowledge (Religion),Knowledge (Psionics)|1|TYPE=Trait
 	PRECSKILL:2,Knowledge (Psionics),Knowledge (Religion)
+	BONUS:SKILL|Knowledge (Religion),Knowledge (Psionics)|1|TYPE=Trait
 
 Inner Peace religion
 	VISIBLE:NO
+	PREMULT:2,[PRECSKILL:1,Knowledge (Religion)],[!PRECSKILL:1,Knowledge (Psionics)]
 	BONUS:SKILL|Knowledge (Religion)|1|TYPE=Trait
 	CSKILL:Knowledge (Psionics)
-	PREMULT:2,[PRECSKILL:1,Knowledge (Religion)],[!PRECSKILL:1,Knowledge (Psionics)]
 
 Inner Peace psionics
 	VISIBLE:NO
+	PREMULT:2,[PRECSKILL:1,Knowledge (Psionics)],[!PRECSKILL:1,Knowledge (Religion)]
 	BONUS:SKILL|Knowledge (Psionics)|1|TYPE=Trait
 	CSKILL:Knowledge (Religion)
-	PREMULT:2,[PRECSKILL:1,Knowledge (Psionics)],[!PRECSKILL:1,Knowledge (Religion)]
 
 Inner Peace neither
 	VISIBLE:NO
-	CSKILL:Knowledge (Religion)|Knowledge (Psionics)
 	!PRECSKILL:1,Knowledge (Psionics),Knowledge (Religion)
+	CSKILL:Knowledge (Religion)|Knowledge (Psionics)
 
+
+
+#
+# End
+#

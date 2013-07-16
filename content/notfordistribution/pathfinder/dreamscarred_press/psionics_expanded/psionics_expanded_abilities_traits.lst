@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -8,6 +9,7 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: Basic Traits: Psionic Traits
+# Ability Name			Unique Key						Category of Ability		Type						Restricted Ability							Multiple Requirements																						Description																	Stackable?	Multiple?	Choose										Automatically Added to Inventory	Automatically Gained Weapon Prof.	Caster level				Combat bonus								Bonus to skill								Class Skill			Source Page
 Clairsentient Talent
 	KEY:Clairsentient Talent ~ Trait
 	CATEGORY:Special Ability
@@ -131,6 +133,7 @@ Telepathic Talent
 
 
 ###Block: Dream Traits
+# Ability Name	Unique Key				Category of Ability		Type				Multiple Requirements																			Description																Source Page
 Dream Seared
 	KEY:Dream Seared ~ Trait
 	CATEGORY:Special Ability
@@ -158,6 +161,7 @@ Lucid Dreaming
 
 
 ###Block: Adopted Traits Mod
+# Ability Name						Bonus to Ability Pool
 CATEGORY=Special Ability|Adopted ~ Trait.MOD
 	BONUS:ABILITYPOOL|Blue Race Trait|1|PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Blue
 	BONUS:ABILITYPOOL|Dromite Race Trait|1|PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Dromite
@@ -171,6 +175,7 @@ CATEGORY=Special Ability|Adopted ~ Trait.MOD
 
 
 ###Block: Adopted Trait Race Selection
+# Ability Name	Unique Key					Category of Ability		Type				Multiple Requirements																			Required Race			Description																							Source Page
 Blue
 	KEY:Adoptive Race ~ Blue
 	CATEGORY:Special Ability
@@ -227,7 +232,7 @@ Goldsniffer
 
 ###Block: Race Traits
 #Block: Blue
-# Ability Name		Unique Key					Category of Ability		Type						Restricted Ability						Multiple Requirements																																									Description																				Stackable?	Multiple?	Choose					Bonus to skill				Class Skill								Source Page
+# Ability Name		Unique Key					Category of Ability		Type						Restricted Ability						Multiple Requirements																																									Description																				Stackable?	Multiple?	Choose					Template															Bonus to skill				Class Skill			Source Page
 Playing Dumb
 	KEY:Playing Dumb ~ Trait
 	CATEGORY:Special Ability
@@ -399,3 +404,8 @@ Resist Dampening
 	DESC:+1 to manifester level checks to bypass power resistance; +2 to create mind blade while inside a null psionics field.
 	SOURCEPAGE:p.126
 
+
+
+#
+# End
+#

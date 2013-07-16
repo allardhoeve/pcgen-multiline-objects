@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -8,34 +9,58 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: Modifications to prestige classes for Aegis
+
+
+# Class Name		Modify VAR
 CLASS:Cerebremancer.MOD
 	BONUS:VAR|AegisCL|CL
 	BONUS:VAR|AegisDRLVL|CL
 
+
+
+# Class Name		Modify VAR
 CLASS:Elocater.MOD
 	BONUS:VAR|AegisCL|(CL*3/4)
 	BONUS:VAR|AegisDRLVL|(CL*3/4)
 
+
+
+# Class Name		Modify VAR
 CLASS:Metamind.MOD
 	BONUS:VAR|AegisCL|(CL*3/4)
 	BONUS:VAR|AegisDRLVL|(CL*3/4)
 
+
+
+# Class Name			Modify VAR
 CLASS:Phrenic Slayer.MOD
 	BONUS:VAR|AegisCL|(CL-1)
 	BONUS:VAR|AegisDRLVL|(CL-1)
 
+
+
+# Class Name			Modify VAR
 CLASS:Psion Uncarnate.MOD
 	BONUS:VAR|AegisCL|(CL*2/3)
 	BONUS:VAR|AegisDRLVL|(CL*2/3)
 
+
+
+# Class Name						Modify VAR
 CLASS:Psychic Fist (Add to Manifesting).MOD
 	BONUS:VAR|AegisCL|(CL*4/5)
 	BONUS:VAR|AegisDRLVL|(CL*4/5)
 
+
+
+# Class Name		Modify VAR
 CLASS:Thrallherd.MOD
 	BONUS:VAR|AegisCL|max(8,(CL-1))
 	BONUS:VAR|AegisDRLVL|max(8,(CL-1))
 
+
+
+# Class Name				Modify VAR
 CLASS:War Mind (Warrior's Path).MOD
 	BONUS:VAR|AegisCL|CL
 	BONUS:VAR|AegisDRLVL|CL
@@ -45,6 +70,9 @@ CLASS:War Mind (Warrior's Path).MOD
 
 
 ###Block: Advanced Disciplines
+
+
+# Class Name
 CLASS:Psion.MOD
 
 SUBCLASS:Constructor
@@ -134,6 +162,9 @@ SUBCLASSLEVEL:1
 
 
 ###Block: Archetypes implemented as subclasses
+
+
+# Class Name
 CLASS:Psion.MOD
 
 SUBCLASS:Bombardier
@@ -143,9 +174,9 @@ SUBCLASS:Bombardier
 	CSKILL:Autohypnosis|TYPE=Craft|TYPE=Knowledge|TYPE=Profession|Spellcraft|Use Magic Device
 
 SUBCLASSLEVEL:1
-	AUTO:FEAT|Scribe Scroll
-	ABILITY:Special Ability|AUTOMATIC|Exploding Stone ~ Bombardier|Talents ~ Bombardier
 	BONUS:ABILITYPOOL|Psion Feat|-1
+	ABILITY:Special Ability|AUTOMATIC|Exploding Stone ~ Bombardier|Talents ~ Bombardier
+	AUTO:FEAT|Scribe Scroll
 
 
 
@@ -161,10 +192,12 @@ SUBCLASSLEVEL:1
 
 
 ###Block: Add in talents
+
+
+# Class Name
 CLASS:Psion.MOD
 
 1
-	BONUS:SPELLKNOWN|CLASS=Psion;LEVEL=0|3
 	BONUS:ABILITYPOOL|Clairsentience Discipline Talent|-2|PREVARGTEQ:ClairsentienceDisciplineLVL,1
 	BONUS:ABILITYPOOL|Metacreativity Discipline Talent|-2|PREVARGTEQ:MetacreativityDisciplineLVL,1
 	BONUS:ABILITYPOOL|Psychokinesis Discipline Talent|-2|PREVARGTEQ:PsychokinesisDisciplineLVL,1
@@ -172,9 +205,11 @@ CLASS:Psion.MOD
 	BONUS:ABILITYPOOL|Psychoportation Discipline Talent|-2|PREVARGTEQ:PsychoportationDisciplineLVL,1
 	BONUS:ABILITYPOOL|Telepathy Discipline Talent|-2|PREVARGTEQ:TelepathyDisciplineLVL,1
 	BONUS:ABILITYPOOL|Generalist Discipline Talent|-3|PREVARGTEQ:GeneralistDisciplineLVL,1
+	BONUS:SPELLKNOWN|CLASS=Psion;LEVEL=0|3
 
 
 
+# Class Name
 CLASS:Psychic Warrior.MOD
 
 1
@@ -182,7 +217,14 @@ CLASS:Psychic Warrior.MOD
 
 
 
+# Class Name
 CLASS:Wilder.MOD
 
 1
 	BONUS:SPELLKNOWN|CLASS=Wilder;LEVEL=0|1
+
+
+
+#
+# End
+#

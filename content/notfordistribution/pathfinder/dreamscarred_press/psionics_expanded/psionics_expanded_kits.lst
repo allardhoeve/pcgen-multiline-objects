@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -7,6 +8,7 @@ SOURCELONG:Psionics Expanded
 # ORIGINAL ENTRY DATE: 2013/07/05
 
 
+###Block: Astral Swarm
 STARTPACK:Astral Swarm Default
 	TYPE:DefaultMonster.AstralSwarm
 	VISIBLE:QUALIFY
@@ -29,8 +31,8 @@ STAT:STR=10|DEX=10|CON=10|INT=10|WIS=11|CHA=10
 STARTPACK:Astral Warrior
 	TYPE:Companion
 	VISIBLE:QUALIFY
-	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Astral Warrior]
 	EQUIPBUY:0
+	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Astral Warrior]
 	SOURCEPAGE:p.66
 
 RACE:Astral Warrior
@@ -69,3 +71,8 @@ STARTPACK:Telekinetic Draw Skill Point Loss
 SKILL:Lost Skill Point
 	RANK:1
 
+
+
+#
+# End
+#

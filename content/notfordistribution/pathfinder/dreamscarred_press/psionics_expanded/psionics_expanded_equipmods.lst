@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -8,6 +9,7 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: Weapon equipment modifiers
+# Modifier Name			Unique Key		Type				Plus		Cost		Visible		Source Page		Required Type						Prohibited Type	Weapon prop. bonus				Special Property
 Agile
 	KEY:AGILE
 	TYPE:Melee.Weapon
@@ -15,8 +17,8 @@ Agile
 	VISIBLE:QUALIFY
 	SOURCEPAGE:p.207
 	PRETYPE:4,Enhancement,Weapon,Melee,Finesseable
-	SPROP:Add Dexterity bonus, instead of Strength bonus, to weapon damage
 	BONUS:WEAPON|DAMAGE|max(STR,DEX)-STR
+	SPROP:Add Dexterity bonus, instead of Strength bonus, to weapon damage
 
 Dueling
 	KEY:DUEL
@@ -135,6 +137,7 @@ Wrenching
 
 
 ###Block: Armor/Shield equipment modifiers
+# Modifier Name	Unique Key			Type		Plus		Visible		Source Page		Required Type				Bonus Armor Modifiers												Special Property										Change Armor Type
 Fusing
 	KEY:FUSE_ARMR_HVY
 	TYPE:Armor
@@ -144,6 +147,7 @@ Fusing
 	PRETYPE:3,Enhancement,Armor,Heavy
 	BONUS:EQMARMOR|ACCHECK|1
 	BONUS:EQMARMOR|MAXDEX|1
+	BONUS:EQMARMOR|SPELLFAILURE|-10
 	SPROP:Armor Check reduced, Max Dex increased, one category lighter
 	ARMORTYPE:Heavy|Medium
 
@@ -156,7 +160,9 @@ Fusing
 	PRETYPE:3,Enhancement,Armor,Light
 	BONUS:EQMARMOR|ACCHECK|1
 	BONUS:EQMARMOR|MAXDEX|1
+	BONUS:EQMARMOR|SPELLFAILURE|-10
 	SPROP:Armor Check reduced, Max Dex increased, one category lighter
+	ARMORTYPE:Heavy|Medium
 
 Fusing
 	KEY:FUSE_ARMR_MED
@@ -167,8 +173,10 @@ Fusing
 	PRETYPE:3,Enhancement,Armor,Medium
 	BONUS:EQMARMOR|ACCHECK|1
 	BONUS:EQMARMOR|MAXDEX|1
+	BONUS:EQMARMOR|SPELLFAILURE|-10
 	SPROP:Armor Check reduced, Max Dex increased, one category lighter
 	ARMORTYPE:Medium|Light
+	ARMORTYPE:Heavy|Medium
 
 Fusing
 	KEY:FUSE_ARMR_SHLD
@@ -179,5 +187,12 @@ Fusing
 	PRETYPE:3,Enhancement,Shield
 	BONUS:EQMARMOR|ACCHECK|1
 	BONUS:EQMARMOR|MAXDEX|1
+	BONUS:EQMARMOR|SPELLFAILURE|-10
 	SPROP:Armor Check reduced, Max Dex increased, one category lighter
+	ARMORTYPE:Heavy|Medium
 
+
+
+#
+# End
+#

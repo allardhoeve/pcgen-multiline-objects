@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -10,6 +11,7 @@ SOURCELONG:Psionics Expanded
 ###Block: Astral suits
 # NEEDS CODE/DATA WORK: Astral Armor and Astral Juggernaut should override other worn armor.
 # WORKAROUND: Right now, they take a slot.
+# Equipment Name	Required Armor Proficiency	Type						Cost		Weight	AC Penalty Check	Modifier		Maximum DEX Bonus	Source Page		% of Spell Failure	Ability																				Combat bonus													Bonus Equipment Modifiers					Bonus Armor Modifiers
 Astral Skin
 	PROFICIENCY:ARMOR|Astral Suit
 	TYPE:Skin.AstralSuit
@@ -57,6 +59,7 @@ Astral Juggernaut
 
 
 ###Block: Astral suit weapons
+# Equipment Name			Output Name		Required Weapon Proficiency				Type								Cost		Weight	Critical Hit Multiplier	Critical Hit Range	Damage	Range		Source Page
 Astral Suit Ranged Attack
 	PROFICIENCY:WEAPON|Astral Suit Ranged Attack
 	TYPE:Weapon.Ranged.Standard.Piercing.Projectile
@@ -115,6 +118,7 @@ Astral Suit Ram 4
 
 
 ###Block: Deadly Fist
+# Equipment Name	Required Weapon Proficiency		Type															Cost		Weight	Critical Hit Multiplier	Critical Hit Range	Damage	Wield Category	Size		Source Page
 Deadly Fist
 	PROFICIENCY:WEAPON|Deadly Fist
 	TYPE:Weapon.Melee.Special.Unarmed.Monk.Bludgeoning.Piercing.Slashing.Finesseable.Close
@@ -131,6 +135,7 @@ Deadly Fist
 
 ###Block: The Soul Archer's Mind Arrow
 # COMMENT: Necessary free hand simulated by requiring 1 hand "slot".
+# Equipment Name	Required Weapon Proficiency	Type									Cost		Weight	Slot Needed	Critical Hit Multiplier	Critical Hit Range	Damage	Modifier		Range		Size		Source Page		Weapon prop. bonus
 Mind Arrow
 	PROFICIENCY:WEAPON|Mind Blade
 	TYPE:Weapon.Ranged.Projectile.Piercing.MindArrow
@@ -149,6 +154,7 @@ Mind Arrow
 
 
 ###Block: Mind bolts
+# Equipment Name					Output Name							Required Weapon Proficiency	Type									Cost		Weight	Slot Needed	Critical Hit Multiplier	Critical Hit Range	Damage	Modifier		Range		Size		Source Page
 Mind Bolt (Long Range Bludgeoning)
 	OUTPUTNAME:Mind Bolt, Long Range Bludgeoning
 	PROFICIENCY:WEAPON|Mind Bolt
@@ -287,6 +293,7 @@ Mind Bolt (Short Range Slashing)
 
 
 ###Block: Mind armor
+# Equipment Name			Required Armor Proficiency			Type								Cost		Weight	Slot Needed	AC Penalty Check	Maximum DEX Bonus	Source Page		% of Spell Failure	Combat bonus
 Mind Armor (Light)
 	PROFICIENCY:ARMOR|Mind Armor
 	TYPE:Armor.Light.Suit.Standard
@@ -361,6 +368,7 @@ Improved Mind Armor (Heavy)
 
 
 ###Block: Mind shield
+# Equipment Name		Required Shield Proficiency		Type						Cost		Weight	Slot Needed	AC Penalty Check	Critical Hit Multiplier	Critical Hit Range	Damage	Wield Category	Maximum DEX Bonus	Size		Source Page		% of Spell Failure	Combat bonus			Special Property
 Mind Shield (Heavy)
 	PROFICIENCY:SHIELD|Mind Shield
 	TYPE:Shield.Heavy.Standard.Close
@@ -368,13 +376,13 @@ Mind Shield (Heavy)
 	WT:0
 	SLOTS:1
 	ACCHECK:0
-	SOURCEPAGE:p.8
-	BONUS:COMBAT|AC|2|TYPE=Shield
 	CRITMULT:x2
 	CRITRANGE:1
 	DAMAGE:1d4
 	WIELD:OneHanded
 	SIZE:M
+	SOURCEPAGE:p.8
+	BONUS:COMBAT|AC|2|TYPE=Shield
 
 Mind Shield (Tower)
 	PROFICIENCY:SHIELD|Mind Shield
@@ -382,17 +390,18 @@ Mind Shield (Tower)
 	COST:0
 	WT:0
 	SLOTS:1
-	MAXDEX:2
 	ACCHECK:-9
-	SOURCEPAGE:p.8
-	BONUS:COMBAT|AC|4|TYPE=Shield
+	MAXDEX:2
 	SIZE:M
+	SOURCEPAGE:p.8
 	SPELLFAILURE:50
+	BONUS:COMBAT|AC|4|TYPE=Shield
 	SPROP:can grant full cover
 
 
 
 ###Block: Flurry weapons
+# Equipment Name	Required Weapon Proficiency		Type												Cost		Weight	Critical Hit Multiplier	Critical Hit Range	Damage	Wield Category	Requires Modification?	Size		Source Page		Weapon prop. bonus
 Flurry of Fists
 	PROFICIENCY:WEAPON|Unarmed Strike
 	TYPE:Weapon.Melee.Special.Unarmed.Monk.Bludgeoning.Finesseable.Close
@@ -427,6 +436,7 @@ Flurry of Strikes
 
 
 ###Block: Astral Warrior weapons
+# Equipment Name				Required Weapon Proficiency			Type											Cost		Weight	Critical Hit Multiplier	Critical Hit Range	Damage	Modifier		Wield Category	Size		Source Page
 Astral Warrior Weapon (Bludgeoning)
 	PROFICIENCY:WEAPON|Astral Warrior Weapon
 	TYPE:Weapon.Melee.OneHanded.Finesseable.Standard.Bludgeoning
@@ -469,6 +479,7 @@ Astral Warrior Weapon (Slashing)
 
 
 ###Block: Crystal Shard from Metacreative Talent trait
+# Equipment Name	Required Weapon Proficiency		Type								Cost		Weight	Critical Hit Multiplier	Critical Hit Range	Damage	Range		Source Page
 Crystal Shard
 	PROFICIENCY:WEAPON|Crystal Shard
 	TYPE:Weapon.Ranged.Standard.Slashing.Thrown
@@ -483,6 +494,7 @@ Crystal Shard
 
 
 ###Block: Mundane items
+# Equipment Name	Required Weapon Proficiency		Type																Cost		Weight	Critical Hit Multiplier	Critical Hit Range	Damage	Source Page
 Xephyr Knife
 	PROFICIENCY:WEAPON|Xephyr Knife
 	TYPE:Weapon.Melee.Light.Finesseable.Ranged.Thrown.Exotic.Standard.Piercing.Slashing.BladeLight
@@ -498,6 +510,7 @@ Xephyr Knife
 
 
 ###Block: Universal psionic items
+# Equipment Name						Output Name						Type						Cost		Weight	Slot Needed	Define			Source Page		Ability										Innate Spells											Combat bonus		Modify VAR																																	Special Property
 Aura Monocle (Good/Evil)
 	TYPE:Psionic.Wondrous.Eyes
 	COST:23520
@@ -513,12 +526,12 @@ Aura Monocle (Law/Chaos)
 	SPROP:Discern lawful/chaotic alignment 3/day
 
 Aura Monocle (Greater)
+	OUTPUTNAME:Aura Monocle, Greater
 	TYPE:Psionic.Wondrous.Eyes
 	COST:47040
 	WT:0.5
 	SOURCEPAGE:p.212
 	SPROP:Discern good/evil and lawful/chaotic alignment 3/day
-	OUTPUTNAME:Aura Monocle, Greater
 
 Boots of Gravity Binding
 	TYPE:Psionic.Wondrous.Boot
@@ -587,19 +600,19 @@ Boots of the Nomad
 	COST:10000
 	WT:1
 	SLOTS:2
+	DEFINE:NomadsStepLVL|0
 	SOURCEPAGE:p.212
 	ABILITY:Special Ability|AUTOMATIC|Nomad's Step ~ Psychoportation
 	BONUS:VAR|NomadsStepLVL|4
-	DEFINE:NomadsStepLVL|0
 	SPROP:Gain Nomad's Step as 4th-level Nomad, or add 4 to Nomad level for Nomad's Step
 
 Bracers of Disruption
 	TYPE:Psionic.Wondrous.Bracer
 	COST:20000
 	WT:0
+	SLOTS:2
 	SOURCEPAGE:p.212
 	BONUS:VAR|EnhancedDisruptionDice|2
-	SLOTS:2
 
 Cacophonous Bell
 	TYPE:Psionic.Wondrous
@@ -673,12 +686,12 @@ Empathic Monocle
 	SPROP:Expend focus for bonus to Diplomacy and Sense Motive
 
 Empathic Monocle (Greater)
+	OUTPUTNAME:Empathic Monocle, Greater
 	TYPE:Psionic.Wondrous.Eyes
 	COST:8400
 	WT:0.5
 	SOURCEPAGE:p.213
 	SPROP:Learn surface thoughts of creature (Will DC 12 negates)
-	OUTPUTNAME:Empathic Monocle, Greater
 
 Gladiator's Gauze
 	TYPE:Psionic.Wondrous.Consumable
@@ -818,9 +831,9 @@ Pattern Breaker's Gloves
 	TYPE:Psionic.Wondrous.Glove
 	COST:2000
 	WT:1
+	SLOTS:2
 	SOURCEPAGE:p.215
 	SPROP:Use disrupt pattern with unarmed strikes or natural attacks
-	SLOTS:2
 
 Shimmering Vest
 	TYPE:Psionic.Wondrous.Shirt
@@ -830,12 +843,12 @@ Shimmering Vest
 	SPROP:Gives or enhances light-bending pattern insight
 
 Shimmering Vest (Greater)
+	OUTPUTNAME:Shimmering Vest, Greater
 	TYPE:Psionic.Wondrous.Shirt
 	COST:25000
 	WT:0.5
 	SOURCEPAGE:p.216
 	SPROP:Gives or enhances light-bending pattern insight
-	OUTPUTNAME:Shimmering Vest, Greater
 
 Student's Robes
 	TYPE:Psionic.Wondrous.Robe
@@ -853,15 +866,14 @@ Survivor's Sleeping Bag
 	SPROP:No harm from hot or cold environments
 
 # COMMENT: Each new Warrior's Path needs a new item.
-# COMMENT: Allowing a CHOOSE in an item might avoid this.
 Warrior's Bracer (Ascetic Path)
 	TYPE:Psionic.Wondrous.Bracer
 	COST:15000
 	WT:0
 	SLOTS:1
 	SOURCEPAGE:p.216
-	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 	BONUS:VAR|AsceticPathLVL|4
+	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 
 Warrior's Bracer (Assassin's Path)
 	TYPE:Psionic.Wondrous.Bracer
@@ -869,8 +881,8 @@ Warrior's Bracer (Assassin's Path)
 	WT:0
 	SLOTS:1
 	SOURCEPAGE:p.216
-	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 	BONUS:VAR|AssassinsPathLVL|4
+	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 
 Warrior's Bracer (Brawling Path)
 	TYPE:Psionic.Wondrous.Bracer
@@ -878,8 +890,8 @@ Warrior's Bracer (Brawling Path)
 	WT:0
 	SLOTS:1
 	SOURCEPAGE:p.216
-	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 	BONUS:VAR|BrawlingPathLVL|4
+	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 
 Warrior's Bracer (Dervish Path)
 	TYPE:Psionic.Wondrous.Bracer
@@ -887,8 +899,8 @@ Warrior's Bracer (Dervish Path)
 	WT:0
 	SLOTS:1
 	SOURCEPAGE:p.216
-	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 	BONUS:VAR|DervishPathLVL|4
+	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 
 Warrior's Bracer (Feral Warrior Path)
 	TYPE:Psionic.Wondrous.Bracer
@@ -896,8 +908,8 @@ Warrior's Bracer (Feral Warrior Path)
 	WT:0
 	SLOTS:1
 	SOURCEPAGE:p.216
-	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 	BONUS:VAR|FeralWarriorPathLVL|4
+	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 
 Warrior's Bracer (Gladiator Path)
 	TYPE:Psionic.Wondrous.Bracer
@@ -905,8 +917,8 @@ Warrior's Bracer (Gladiator Path)
 	WT:0
 	SLOTS:1
 	SOURCEPAGE:p.216
-	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 	BONUS:VAR|GladiatorPathLVL|4
+	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 
 Warrior's Bracer (Mind Knight Path)
 	TYPE:Psionic.Wondrous.Bracer
@@ -914,8 +926,8 @@ Warrior's Bracer (Mind Knight Path)
 	WT:0
 	SLOTS:1
 	SOURCEPAGE:p.216
-	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 	BONUS:VAR|MindKnightPathLVL|4
+	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 
 Warrior's Bracer (Weaponmaster Path)
 	TYPE:Psionic.Wondrous.Bracer
@@ -923,8 +935,8 @@ Warrior's Bracer (Weaponmaster Path)
 	WT:0
 	SLOTS:1
 	SOURCEPAGE:p.216
-	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 	BONUS:VAR|WeaponmasterPathLVL|4
+	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 
 Warrior's Bracer (Archer Path)
 	TYPE:Psionic.Wondrous.Bracer
@@ -932,8 +944,8 @@ Warrior's Bracer (Archer Path)
 	WT:0
 	SLOTS:1
 	SOURCEPAGE:p.216
-	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 	BONUS:VAR|ArcherPathLVL|4
+	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 
 Warrior's Bracer (Infiltrator Path)
 	TYPE:Psionic.Wondrous.Bracer
@@ -941,8 +953,8 @@ Warrior's Bracer (Infiltrator Path)
 	WT:0
 	SLOTS:1
 	SOURCEPAGE:p.216
-	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 	BONUS:VAR|InfiltratorPathLVL|4
+	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 
 Warrior's Bracer (Interceptor Path)
 	TYPE:Psionic.Wondrous.Bracer
@@ -950,8 +962,8 @@ Warrior's Bracer (Interceptor Path)
 	WT:0
 	SLOTS:1
 	SOURCEPAGE:p.216
-	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 	BONUS:VAR|InterceptorPathLVL|4
+	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 
 Warrior's Bracer (Survivor Path)
 	TYPE:Psionic.Wondrous.Bracer
@@ -959,8 +971,8 @@ Warrior's Bracer (Survivor Path)
 	WT:0
 	SLOTS:1
 	SOURCEPAGE:p.216
-	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 	BONUS:VAR|SurvivorPathLVL|4
+	SPROP:Treat level as 4 higher for trance and maneuver for specific warrior's path, or can use the trance and maneuver 3/day for 1 minute if path is not known.
 
 Warrior's Scabbard
 	TYPE:Psionic.Wondrous
@@ -972,6 +984,7 @@ Warrior's Scabbard
 
 
 ###Block: Psionic rings
+# Equipment Name			Type			Cost		Weight	Source Page		Special Property
 Ring of Altered Perception
 	TYPE:Psionic.Ring
 	COST:12000
@@ -981,7 +994,7 @@ Ring of Altered Perception
 
 Ring of Missile Protection
 	TYPE:Psionic.Ring
-	COST:2000
+	COST:4000
 	WT:0
 	SOURCEPAGE:p.214
 	SPROP:DR 10/magic vs. ranged attacks, inert for 24 hours after 50 damage avoided
@@ -1010,6 +1023,7 @@ Ring of Psionics +6
 
 
 ###Block: Crystalline foci
+# Equipment Name			Type					Cost		Weight	Source Page		Special Property
 Crystal Bow +1
 	TYPE:Psionic.CrystallineFocus
 	COST:11200
@@ -1157,3 +1171,8 @@ Crystal Spaulders +3
 	SOURCEPAGE:p.211
 	SPROP:enhancement of mind armor is increased by +3, up to +5
 
+
+
+#
+# End
+#

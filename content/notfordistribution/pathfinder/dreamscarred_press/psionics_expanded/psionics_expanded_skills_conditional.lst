@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -8,6 +9,7 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: New conditional skills
+# Skill Name				Key Stat	Untrained?		Classes	Type			Visible		Req. Rule (in options)		Prohibited Var. Value													Source Page		Bonus to skill												Bonus to skill rank
 Intimidate (Demoralize)
 	KEYSTAT:CHA
 	USEUNTRAINED:YES
@@ -91,8 +93,14 @@ Acrobatics.MOD
 
 
 ###Block: Skill for losing a skill point
+# Skill Name	Untrained?		Exclusive?		Visible
 Lost Skill Point
 	USEUNTRAINED:NO
-	VISIBLE:DISPLAY|READONLY
 	EXCLUSIVE:YES
+	VISIBLE:DISPLAY|READONLY
 
+
+
+#
+# End
+#

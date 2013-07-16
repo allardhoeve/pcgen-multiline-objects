@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -8,6 +9,7 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: Grammaton Cryptic Archetype
+# Ability Name			Unique Key					Category of Ability		Type																					Required Class		Multiple Requirements																																			Define												Description																																																																																																						Automatically Gained Feat				Automatically Gained Weapon Prof.	Ability																																																																																		Bonus to Ability Pool																	Bonus to spell known/L								Modify VAR																					Cost		Source Page
 Grammaton
 	KEY:Cryptic Archetype ~ Grammaton
 	CATEGORY:Archetype
@@ -15,28 +17,28 @@ Grammaton
 	PRECLASS:1,Cryptic=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cryptic Archetype ~ Grammaton],[!PREABILITY:1,CATEGORY=Archetype,TYPE.CrypticScribeTattoo,TYPE.CrypticInsight4,TYPE.CrypticInsight6,TYPE.CrypticPower7,TYPE.CrypticHideInPlainSight]
 	DESC:For you, the way bullets travel through the air is a special pattern that can bue used and manipulated for deadly attacks and abilities.  You use handguns to destroy patterns and enemies alike.
+	AUTO:FEAT|Exotic Weapon Proficiency (Firearms)
+	AUTO:WEAPONPROF|TYPE.Firearm
 	ABILITY:Special Ability|AUTOMATIC|Pattern of the Gun ~ Grammaton|PRECLASS:1,Cryptic=1
 	ABILITY:Special Ability|AUTOMATIC|Disrupt Pattern ~ Grammaton|PRECLASS:1,Cryptic=1
 	ABILITY:Special Ability|AUTOMATIC|Gritted Patterns ~ Grammaton|PRECLASS:1,Cryptic=4
 	ABILITY:Internal|AUTOMATIC|Insightful Deed ~ Grammaton|PRECLASS:1,Cryptic=6
 	ABILITY:Special Ability|AUTOMATIC|Avoid Attacks ~ Grammaton|PRECLASS:1,Cryptic=7
 	ABILITY:Special Ability|AUTOMATIC|Gun Kata ~ Grammaton|PRECLASS:1,Cryptic=10
-	COST:0
-	SOURCEPAGE:p.68
 	BONUS:ABILITYPOOL|Cryptic Insight|-1|PRECLASS:1,Cryptic=4
 	BONUS:ABILITYPOOL|Cryptic Insight|-1|PRECLASS:1,Cryptic=6
 	BONUS:SPELLKNOWN|CLASS=Cryptic;LEVEL=3|-1|PRECLASS:1,Cryptic=7
-	AUTO:FEAT|Exotic Weapon Proficiency (Firearms)
-	AUTO:WEAPONPROF|TYPE.Firearm
+	COST:0
+	SOURCEPAGE:p.68
 
 Pattern of the Gun
 	KEY:Pattern of the Gun ~ Grammaton
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:You gain a battered gun identical to the one gained by the gunslinger.
-	SOURCEPAGE:p.68
 	AUTO:FEAT|Gunsmithing
 	BONUS:ABILITYPOOL|Amateur Gunslinger Feat|1
+	SOURCEPAGE:p.68
 
 Disrupt Pattern
 	KEY:Disrupt Pattern ~ Grammaton
@@ -49,12 +51,12 @@ Gritted Patterns
 	KEY:Gritted Patterns ~ Grammaton
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:At the start of each day, you gain %1 grit points.  Your grit goes up or down throughout the day, but usually cannot go higher than %2.|GrammatonGrit|GrammatonMaxGrit
-	SOURCEPAGE:p.69
 	DEFINE:GrammatonGrit|0
-	BONUS:VAR|GrammatonGrit|CrypticPrimeStat
 	DEFINE:GrammatonMaxGrit|0
+	DESC:At the start of each day, you gain %1 grit points.  Your grit goes up or down throughout the day, but usually cannot go higher than %2.|GrammatonGrit|GrammatonMaxGrit
+	BONUS:VAR|GrammatonGrit|CrypticPrimeStat
 	BONUS:VAR|GrammatonMaxGrit|CrypticPrimeStat
+	SOURCEPAGE:p.69
 
 Insightful Deed ~ Grammaton
 	CATEGORY:Internal
@@ -64,14 +66,14 @@ Avoid Attacks
 	KEY:Avoid Attacks ~ Grammaton
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You can, %1/day, gain total concealment (50%% miss chance) for %2 rounds.|GrammatonAvoidAttacksTimes|GrammatonAvoidAttacksDuration
-	SOURCEPAGE:p.69
 	DEFINE:GrammatonAvoidAttacksTimes|0
 	DEFINE:GrammatonAvoidAttacksDuration|0
+	DESC:You can, %1/day, gain total concealment (50%% miss chance) for %2 rounds.|GrammatonAvoidAttacksTimes|GrammatonAvoidAttacksDuration
 	BONUS:VAR|GrammatonAvoidAttacksTimes|floor((classlevel("Cryptic")-5)/2)
 	BONUS:VAR|GrammatonAvoidAttacksDuration|CrypticPrimeStat
+	SOURCEPAGE:p.69
 
-# TODO: Set up a gun kata weapon/natural attack.
+# COMMENT: Make a weapon/natural attack for this?
 Gun Kata
 	KEY:Gun Kata ~ Grammaton
 	CATEGORY:Special Ability
@@ -82,6 +84,7 @@ Gun Kata
 
 
 ###Block: Kaigun Marksman Archetype
+# Ability Name		Unique Key					Category of Ability		Type																										Required Class		Multiple Requirements																																								Description																																														Automatically Gained Feat				Automatically Gained Weapon Prof.	Ability																																																																		Bonus to Ability Pool					Bonus to spell known/L																			Modify VAR				Cost		Source Page
 Kaigun
 	KEY:Marksman Archetype ~ Kaigun
 	CATEGORY:Archetype
@@ -89,35 +92,35 @@ Kaigun
 	PRECLASS:1,Marksman=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Marksman Archetype ~ Kaigun],[!PREABILITY:1,CATEGORY=Archetype,TYPE.MarksmanBucklerProficiency,TYPE.MarksmanPointBlankShot,TYPE.MarksmanEvadeArrows1,TYPE.MarksmanPower6,TYPE.MarksmanDisengage,TYPE.MarksmanPower10]
 	DESC:You are a marksman who opts to focus your training with firearms, becoming a deadly gun-wielder.
+	AUTO:FEAT|Exotic Weapon Proficiency (Firearms)
+	AUTO:WEAPONPROF|TYPE.Firearm
 	ABILITY:Special Ability|AUTOMATIC|Gun Wielder ~ Kaigun|PRECLASS:1,Marksman=1
 	ABILITY:Special Ability|AUTOMATIC|Psionic Deed ~ Kaigun|PRECLASS:1,Marksman=2
 	ABILITY:Special Ability|AUTOMATIC|Telekinetic Reload ~ Kaigun|PRECLASS:1,Marksman=6
 	ABILITY:Special Ability|AUTOMATIC|Mental Grit ~ Kaigun|PRECLASS:1,Marksman=7
 	ABILITY:Special Ability|AUTOMATIC|Focused Control ~ Kaigun|PRECLASS:1,Marksman=10
-	COST:0
-	SOURCEPAGE:p.72
-	BONUS:VAR|EvadeArrows|-1
 	BONUS:SPELLKNOWN|CLASS=Marksman;LEVEL=2|-1|PRECLASS:1,Marksman=6
 	BONUS:SPELLKNOWN|CLASS=Marksman;LEVEL=3|-1|PRECLASS:1,Marksman=10
-	AUTO:FEAT|Exotic Weapon Proficiency (Firearms)
-	AUTO:WEAPONPROF|TYPE.Firearm
+	BONUS:VAR|EvadeArrows|-1
+	COST:0
+	SOURCEPAGE:p.72
 
 Gun Wielder
 	KEY:Gun Wielder ~ Kaigun
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:You gain a battered gun identical to the one gained by the gunslinger.
-	SOURCEPAGE:p.72
 	AUTO:FEAT|Gunsmithing
 	BONUS:ABILITYPOOL|Amateur Gunslinger Feat|1
+	SOURCEPAGE:p.72
 
 Psionic Deed
 	KEY:Psionic Deed ~ Kaigun
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:You gain access to a single 1st-level deed normally available to a gunslinger.  This deed works and interacts with grit the same way as gunslinger deeds.  If you also have levels in gunslinger, you can spend grit points from that class to use this deed.
-	SOURCEPAGE:p.72
 	BONUS:ABILITYPOOL|Kaigun Deed|1
+	SOURCEPAGE:p.72
 
 Telekinetic Reload
 	KEY:Telekinetic Reload ~ Kaigun
@@ -143,31 +146,32 @@ Focused Control
 
 
 ###Block: Psionic Deeds
+# Ability Name		Unique Key						Category of Ability		Type											Var. Must Be Grater	Define				Description																																																																																																			Modify VAR								Source Page
 Explosive Shot
 	KEY:Explosive Shot ~ Psionic Deed
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.DeedsLvl1.DeedsHasGritCost.Supernatural
+	PREVARGT:IsPsionic,0
 	DESC:At 1st level, when the gunslinger makes a ranged attack with a firearm, she can spend 1 grit point and have the attack deal splash damage to all creatures within a 5 ft. radius of the creature struck.  Splash damage from explosive shot is always equal to the attack's minimum damage.  Alternatively, the gunslinger can spend 2 grit points to have the radius of the effect be 10 ft. instead of 5 ft.  If the attack misses, the effect is wasted.
 	SOURCEPAGE:p.73
-	PREVARGT:IsPsionic,0
 
 Energized Ammunition
 	KEY:Energized Ammunition ~ Psionic Deed
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.DeedsLvl11.DeedsHasGritCost.Supernatural
+	PREVARGT:IsPsionic,0
 	DESC:At 11th level, when the gunslinger makes a ranged attack with a firearm, she can spend 1 grit point as a free action to change the damage of the attack to her active energy type.
 	SOURCEPAGE:p.73
-	PREVARGT:IsPsionic,0
 
 Thundering Shot
 	KEY:Thundering Shot ~ Psionic Deed
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.DeedsLvl11.DeedsHasGritCost.Supernatural
-	DESC:At 11th level, the gunslinger can spend 1 grit point and fire her gun into the ground at her feet to cause a concussive blast to all creatures within 30 ft. of her. All creatures in the blast radius suffer force damage equal to the gunslinger's level. Creatures that make a Reflex saving throw (DC %1)  suffer only half damage.|ThunderingShotDC
-	SOURCEPAGE:p.73
 	PREVARGT:IsPsionic,0
 	DEFINE:ThunderingShotDC|0
+	DESC:At 11th level, the gunslinger can spend 1 grit point and fire her gun into the ground at her feet to cause a concussive blast to all creatures within 30 ft. of her. All creatures in the blast radius suffer force damage equal to the gunslinger's level. Creatures that make a Reflex saving throw (DC %1)  suffer only half damage.|ThunderingShotDC
 	BONUS:VAR|ThunderingShotDC|10+GunslingerLVL/2+DEX
+	SOURCEPAGE:p.73
 
 Blind Shot
 	KEY:Blind Shot ~ Psionic Deed
@@ -180,15 +184,16 @@ Slowing Shot
 	KEY:Slowing Shot ~ Psionic Deed
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.DeedsLvl15.DeedsHasGritCost.Supernatural
-	DESC:At 15th level, when the gunslinger hits a creature with a firearm attack, she can spend 1 grit point as a free action and cause the creature to be slowed.  The target is staggered and can take only a single move action or standard action each turn, but not both (nor may it take full-round actions).  Additionally, it takes a -1 penalty on attack rolls, AC, and Reflex saves.  The creature moves at half its normal speed (round down to the next 5-foot increment), which affects the creature's jumping distance as normal for decreased speed.  This effect lasts for %1 rounds.|SlowingShotDuration
-	SOURCEPAGE:p.73
 	PREVARGT:IsPsionic,0
 	DEFINE:SlowingShotDuration|0
+	DESC:At 15th level, when the gunslinger hits a creature with a firearm attack, she can spend 1 grit point as a free action and cause the creature to be slowed.  The target is staggered and can take only a single move action or standard action each turn, but not both (nor may it take full-round actions).  Additionally, it takes a -1 penalty on attack rolls, AC, and Reflex saves.  The creature moves at half its normal speed (round down to the next 5-foot increment), which affects the creature's jumping distance as normal for decreased speed.  This effect lasts for %1 rounds.|SlowingShotDuration
 	BONUS:VAR|SlowingShotDuration|max(1,WIS)
+	SOURCEPAGE:p.73
 
 
 
 ###Block: Give the deeds to gunslingers
+# Ability Name						Ability
 CATEGORY=Special Ability|Deeds ~ Gunslinger.MOD
 	ABILITY:Special Ability|AUTOMATIC|Explosive Shot ~ Psionic Deed|PREMULT:2,[!PREABILITY:1,CATEGORY=Archetype,TYPE.ExplosiveShotPsionicDeed],[PREVARGT:IsPsionic,0]
 

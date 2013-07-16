@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -8,6 +9,7 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: Nightmare Constructor Dread archetype abilities
+# Ability Name						Unique Key							Category of Ability		Type																							Required Class		Multiple Requirements																																									Define														Description																																																																																																																																																																																																																																																																																				Ability																																																																																										Bonus to Ability Pool					Bonus to spell known/L														Modify VAR																Allow Follower		Allowed Companions										Cost		Source Page		List of Known Class Spells by Level
 Nightmare Constructor
 	KEY:Dread Archetype ~ Nightmare Constructor
 	CATEGORY:Archetype
@@ -21,11 +23,11 @@ Nightmare Constructor
 	ABILITY:Internal|AUTOMATIC|Improved Fear Surge ~ Nightmare Constructor|PRECLASS:1,Dread=6
 	ABILITY:Internal|AUTOMATIC|Greater Fear Surge ~ Nightmare Constructor|PRECLASS:1,Dread=9
 	ABILITY:Special Ability|AUTOMATIC|Horrific Infusion ~ Nightmare Constructor|PRECLASS:1,Dread=11
-	COST:0
-	SOURCEPAGE:p.70
 	BONUS:ABILITYPOOL|Terror|-1|PRECLASS:1,Dread=6
 	BONUS:SPELLKNOWN|CLASS=Dread;LEVEL=0|-2
 	BONUS:SPELLKNOWN|CLASS=Dread;LEVEL=1|-1|PRECLASS:1,Dread=2
+	COST:0
+	SOURCEPAGE:p.70
 	SPELLKNOWN:CLASS|Dread=0|Telepathic Lash
 
 
@@ -34,12 +36,12 @@ Horror
 	KEY:Horror ~ Nightmare Constructor
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:You are able to form a creature created from distilled fears and nightmares.  Creating a horror takes one minute of concentration to complete and the horror remains until dismissed by you.  This horror functions as a summoner's eidolon using your class level as the summoner level, with the following exceptions.  A horror is a mindless construct like an astral construct and not an outsider, so it is subject to effects like dismiss ectoplasm instead of effects like banishment.  Commanding a horror is the same as commanding an astral construct.  A horror disperses if you are rendered unconscious or die.  You can allow your horror to use your terrors, but such uses still count against your daily limit.
-	SOURCEPAGE:p.70
 	DEFINE:HorrorLVL|0
+	DESC:You are able to form a creature created from distilled fears and nightmares.  Creating a horror takes one minute of concentration to complete and the horror remains until dismissed by you.  This horror functions as a summoner's eidolon using your class level as the summoner level, with the following exceptions.  A horror is a mindless construct like an astral construct and not an outsider, so it is subject to effects like dismiss ectoplasm instead of effects like banishment.  Commanding a horror is the same as commanding an astral construct.  A horror disperses if you are rendered unconscious or die.  You can allow your horror to use your terrors, but such uses still count against your daily limit.
 	BONUS:VAR|HorrorLVL|classlevel("Dread")
 	FOLLOWERS:Horror|1
 	COMPANIONLIST:Horror|Horror (Biped),Horror (Quadruped),Horror (Serpentine)
+	SOURCEPAGE:p.70
 
 Devastating Touch
 	KEY:Devastating Touch ~ Nightmare Constructor
@@ -52,13 +54,13 @@ Fear Surge
 	KEY:Fear Surge ~ Nightmare Constructor
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural
-	DESC:When you are within %1 ft. of a creature that suffers from the shaken, frightened, or panicked condition, you gain %2 additional evolution points to spend on the horror.  These evolution points only last while there is a creature within %1 ft. of the horror with the shaken, frightened, or panicked condition.|FearSurgeRange|FearSurgeEvolutionPoints
-	SOURCEPAGE:p.70
 	DEFINE:FearSurgeRange|30
 	DEFINE:FSEPhandler|0
 	DEFINE:FearSurgeEvolutionPoints|0
+	DESC:When you are within %1 ft. of a creature that suffers from the shaken, frightened, or panicked condition, you gain %2 additional evolution points to spend on the horror.  These evolution points only last while there is a creature within %1 ft. of the horror with the shaken, frightened, or panicked condition.|FearSurgeRange|FearSurgeEvolutionPoints
 	BONUS:VAR|FearSurgeEvolutionPoints|1
 	BONUS:VAR|FSEPhandler|FearSurgeEvolutionPoints|PREAPPLY:PC
+	SOURCEPAGE:p.70
 
 Improved Fear Surge ~ Nightmare Constructor
 	CATEGORY:Internal

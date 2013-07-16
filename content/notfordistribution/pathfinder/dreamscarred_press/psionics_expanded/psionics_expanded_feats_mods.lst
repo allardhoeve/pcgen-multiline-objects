@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -7,10 +8,8 @@ SOURCELONG:Psionics Expanded
 # ORIGINAL ENTRY DATE: 2013/07/05
 
 
-###Block: Modifications of existing feats
-
-
 ###Block: Psionic fighter 1st-level bonus feat
+# Feat Name			Type
 Psionic Fist.MOD
 	TYPE:PsionicFighterStartingFeat
 
@@ -23,6 +22,7 @@ Psionic Weapon.MOD
 
 
 ###Block: Marksman bonus feats
+# Feat Name					Type
 Deadly Aim.MOD
 	TYPE:MarksmanBonus
 
@@ -113,6 +113,12 @@ Rapid Shot.MOD
 
 
 ###Block: Vitalist bonus feat
+# Feat Name			Type
 Expanded Knowledge.MOD
 	TYPE:VitalistBonusFeat
 
+
+
+#
+# End
+#

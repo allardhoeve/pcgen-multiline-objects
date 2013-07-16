@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Tue Jul 16 09:27:47 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Psionics Expanded
 	SOURCESHORT:PsiEx
 	SOURCEWEB:http://dreamscarredpress.com/dragonfly/index.php
@@ -8,6 +9,7 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: New Powers
+# Spell Name			Unique Key					Output Name					Classes of caster																					School			Sub-School			Spell Descriptors						Type			Components				Casting Time				Range					Target Area or Effect												Duration										Save Info													Spell Resistance				Description																								Save checks bonus							Combat bonus																									Misc bonus																		Add to magical move										Bonus to skill										Stat bonus									Choose										Source Page		Temporary effect description
 Ability as One
 	CLASSES:Tactician=8
 	SCHOOL:Telepathy
@@ -24,9 +26,9 @@ Ability as One
 	SOURCEPAGE:p.148
 
 Absorb Weapon
-	TYPE:Psionic
-	SCHOOL:Psychometabolism
 	CLASSES:Cryptic,Psychic Warrior=1
+	SCHOOL:Psychometabolism
+	TYPE:Psionic
 	COMPS:Ol Vi
 	CASTTIME:1 standard action
 	RANGE:Touch
@@ -56,9 +58,9 @@ Alienation
 
 
 Backlash
-	TYPE:Psionic
-	SCHOOL:Clairsentience
 	CLASSES:Psychic Warrior=4
+	SCHOOL:Clairsentience
+	TYPE:Psionic
 	COMPS:Au Me
 	CASTTIME:1 immediate action
 	RANGE:Personal
@@ -113,10 +115,10 @@ Battlesense
 	SOURCEPAGE:p.150
 
 Biting Cold
-	TYPE:Psionic
+	CLASSES:Psychic Warrior=5
 	SCHOOL:Psychokinesis
 	DESCRIPTOR:Cold|Trigger
-	CLASSES:Psychic Warrior=5
+	TYPE:Psionic
 	COMPS:Au Ma
 	CASTTIME:1 swift action
 	RANGE:Melee
@@ -142,10 +144,10 @@ Blanketing Assault
 	SOURCEPAGE:p.151
 
 Blinding Flash
-	TYPE:Psionic
+	CLASSES:Psion,Psychic Warrior,Sighted Seeker,Wilder=1
 	SCHOOL:Psychokinesis
 	DESCRIPTOR:Light
-	CLASSES:Psion,Psychic Warrior,Sighted Seeker,Wilder=1
+	TYPE:Psionic
 	COMPS:Vi
 	CASTTIME:1 swift action
 	RANGE:Close
@@ -172,10 +174,10 @@ Blinding Shot
 	SOURCEPAGE:p.151
 
 Bonding Strike
-	TYPE:Psionic
+	CLASSES:Cryptic,Psychic Warrior=5
 	SCHOOL:Telepathy
 	DESCRIPTOR:Mind-Affecting
-	CLASSES:Cryptic,Psychic Warrior=5
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:1 standard action
 	RANGE:Melee
@@ -279,10 +281,10 @@ Coordinate as One
 	SOURCEPAGE:p.153
 
 Corrosive Aura
-	TYPE:Psionic
+	CLASSES:Psychic Warrior,Egoist=1
 	SCHOOL:Psychometabolism
 	DESCRIPTOR:Acid
-	CLASSES:Psychic Warrior,Egoist=1
+	TYPE:Psionic
 	COMPS:Ma Vi
 	CASTTIME:1 standard action
 	RANGE:5 ft.
@@ -359,10 +361,10 @@ Dazzle
 	SOURCEPAGE:p.154
 
 Dazzling Swordplay
-	TYPE:Psionic
+	CLASSES:Psychic Warrior=1
 	SCHOOL:Psychokinesis
 	DESCRIPTOR:Trigger
-	CLASSES:Psychic Warrior=1
+	TYPE:Psionic
 	COMPS:Ma Vi
 	CASTTIME:1 swift action
 	RANGE:Melee
@@ -388,10 +390,10 @@ Deaden Attack
 	SOURCEPAGE:p.154
 
 Deadly Fear
-	TYPE:Psionic
+	CLASSES:Dread,Psion,Wilder=4
 	SCHOOL:Telepathy
 	DESCRIPTOR:Fear|Mind-Affecting
-	CLASSES:Dread,Psion,Wilder=4
+	TYPE:Psionic
 	COMPS:Vi; see original text
 	CASTTIME:1 standard action
 	RANGE:Medium
@@ -417,9 +419,9 @@ Defer Fatality
 	SOURCEPAGE:p.155
 
 Deflect
-	TYPE:Psionic
-	SCHOOL:Clairsentience
 	CLASSES:Marksman,Dread,Psychic Warrior=2
+	SCHOOL:Clairsentience
+	TYPE:Psionic
 	COMPS:Vi
 	CASTTIME:1 immediate action
 	RANGE:Personal
@@ -489,9 +491,9 @@ Detect Psionics
 	SOURCEPAGE:p.156
 
 Dispatch
-	TYPE:Psionic
-	SCHOOL:Clairsentience
 	CLASSES:Dread,Psychic Warrior=3
+	SCHOOL:Clairsentience
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:1 swift action
 	RANGE:Personal
@@ -503,9 +505,9 @@ Dispatch
 	SOURCEPAGE:p.156
 
 Disrupting Strikes
-	TYPE:Psionic
-	SCHOOL:Clairsentience
 	CLASSES:Cryptic=4
+	SCHOOL:Clairsentience
+	TYPE:Psionic
 	COMPS:Ma Vi
 	CASTTIME:1 swift action
 	RANGE:Personal
@@ -549,10 +551,10 @@ Distract
 	SOURCEPAGE:p.157
 
 Distracting Strikes
-	TYPE:Psionic
+	CLASSES:Cryptic,Psychic Warrior=2
 	SCHOOL:Telepathy
 	DESCRIPTOR:Mind-Affecting
-	CLASSES:Cryptic,Psychic Warrior=2
+	TYPE:Psionic
 	COMPS:Ma Ol
 	CASTTIME:1 swift action
 	RANGE:Melee
@@ -564,10 +566,10 @@ Distracting Strikes
 	SOURCEPAGE:p.157
 
 Dream Message
-	TYPE:Psionic
+	CLASSES:Dread,Psion,Wilder=5
 	SCHOOL:Telepathy
 	DESCRIPTOR:Mind-Affecting
-	CLASSES:Dread,Psion,Wilder=5
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:One minute
 	RANGE:Unlimited
@@ -581,10 +583,10 @@ Dream Message
 
 
 Ectoplasmic Grapnel
-	TYPE:Psionic
+	CLASSES:Cryptic,Gifted Blade,Marksman,Psychic Warrior,Tactician=3
 	SCHOOL:Metacreativity
 	SUBSCHOOL:Creation
-	CLASSES:Cryptic,Gifted Blade,Marksman,Psychic Warrior,Tactician=3
+	TYPE:Psionic
 	COMPS:Ma
 	CASTTIME:1 standard action
 	RANGE:Close
@@ -706,11 +708,11 @@ Entangling Debris
 	SOURCEPAGE:p.160
 
 Entangling Strike
-	TYPE:Psionic
+	CLASSES:Psychic Warrior=2
 	SCHOOL:Metacreativity
 	SUBSCHOOL:Creation
 	DESCRIPTOR:Trigger
-	CLASSES:Psychic Warrior=2
+	TYPE:Psionic
 	COMPS:Au Ma
 	CASTTIME:1 swift action
 	RANGE:Melee
@@ -738,9 +740,9 @@ Ephemeral Bolt
 	SOURCEPAGE:p.161
 
 Everyman
-	TYPE:Psionic
-	SCHOOL:Psychometabolism
 	CLASSES:Cryptic,Psion,Psychic Warrior,Sighted Seeker,Wilder=2
+	SCHOOL:Psychometabolism
+	TYPE:Psionic
 	COMPS:Vi
 	CASTTIME:1 standard action
 	RANGE:Personal
@@ -812,10 +814,10 @@ Fatigue
 	SOURCEPAGE:p.162
 
 Fear Cascade
-	TYPE:Psionic
+	CLASSES:Dread,Telepath=4
 	SCHOOL:Telepathy
 	DESCRIPTOR:Fear|Mind-Affecting
-	CLASSES:Dread,Telepath=4
+	TYPE:Psionic
 	COMPS:Me Vi
 	CASTTIME:1 standard action
 	RANGE:Long
@@ -889,10 +891,10 @@ Foxhole
 	SOURCEPAGE:p.163
 
 Freezing Sting
-	TYPE:Psionic
+	CLASSES:Psychic Warrior=2
 	SCHOOL:Psychokinesis
 	DESCRIPTOR:Cold|Trigger
-	CLASSES:Psychic Warrior=2
+	TYPE:Psionic
 	COMPS:Ma
 	CASTTIME:1 swift action
 	RANGE:Melee
@@ -952,9 +954,9 @@ Gravitational Well
 	SOURCEPAGE:p.165
 
 Guarded Sleep
-	TYPE:Psionic
-	SCHOOL:Clairsentience
 	CLASSES:Dread,Psion,Vitalist,Wilder=3
+	SCHOOL:Clairsentience
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:1 standard action
 	RANGE:Touch
@@ -1013,9 +1015,9 @@ Heal Injuries
 	SOURCEPAGE:p.166
 
 Hidden Body
-	TYPE:Psionic
-	SCHOOL:Psychometabolism
 	CLASSES:Cryptic,Egoist=4
+	SCHOOL:Psychometabolism
+	TYPE:Psionic
 	COMPS:Ol Vi
 	CASTTIME:1 round
 	RANGE:Touch
@@ -1027,9 +1029,9 @@ Hidden Body
 	SOURCEPAGE:p.166
 
 Hidden Pocket
-	TYPE:Psionic
-	SCHOOL:Psychoportation
 	CLASSES:Cryptic=1
+	SCHOOL:Psychoportation
+	TYPE:Psionic
 	COMPS:Ma Me
 	CASTTIME:1 standard action
 	RANGE:Touch
@@ -1091,10 +1093,10 @@ Incite Passion
 	SOURCEPAGE:p.167
 
 Induce Nightmare
-	TYPE:Psionic
+	CLASSES:Dread,Psion,Wilder=5
 	SCHOOL:Telepathy
 	DESCRIPTOR:Evil|Mind-Affecting
-	CLASSES:Dread,Psion,Wilder=5
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:10 minutes
 	RANGE:Unlimited
@@ -1137,9 +1139,9 @@ Inevitable Strike
 
 
 Judge
-	TYPE:Psionic
-	SCHOOL:Telepathy
 	CLASSES:Psion,Sighted Seeker,Wilder=1
+	SCHOOL:Telepathy
+	TYPE:Psionic
 	COMPS:None
 	CASTTIME:1 swift action
 	RANGE:Personal
@@ -1153,9 +1155,9 @@ Judge
 
 
 Kinetic Legerdemain
-	TYPE:Psionic
-	SCHOOL:Psychokinesis
 	CLASSES:Cryptic=1
+	SCHOOL:Psychokinesis
+	TYPE:Psionic
 	COMPS:Vi
 	CASTTIME:1 standard action
 	RANGE:Touch
@@ -1167,9 +1169,9 @@ Kinetic Legerdemain
 	SOURCEPAGE:p.168
 
 Kinetic Reload
-	TYPE:Psionic
-	SCHOOL:Psychokinesis
 	CLASSES:Marksman=2
+	SCHOOL:Psychokinesis
+	TYPE:Psionic
 	COMPS:Au Vi
 	CASTTIME:1 swift action
 	RANGE:Personal
@@ -1212,9 +1214,9 @@ Last Stand
 	SOURCEPAGE:p.169
 
 Lingering Touch
-	TYPE:Psionic
-	SCHOOL:Psychometabolism
 	CLASSES:Dread=1
+	SCHOOL:Psychometabolism
+	TYPE:Psionic
 	COMPS:Vi
 	CASTTIME:1 swift action
 	RANGE:Personal
@@ -1241,9 +1243,9 @@ Localized Windstorm
 	SOURCEPAGE:p.169
 
 Locate Secret Doors
-	TYPE:Psionic
-	SCHOOL:Clairsentience
 	CLASSES:Cryptic,Psion,Wilder=1
+	SCHOOL:Clairsentience
+	TYPE:Psionic
 	COMPS:Au Me
 	CASTTIME:1 standard action
 	RANGE:60 ft.
@@ -1272,9 +1274,9 @@ Mend Body
 	SOURCEPAGE:p.170
 
 Mindhunter
-	TYPE:Psionic
-	SCHOOL:Clairsentience
 	CLASSES:Dread,Psion,Wilder,Sighted Seeker=3
+	SCHOOL:Clairsentience
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:8 hours
 	RANGE:One plane
@@ -1295,7 +1297,7 @@ Mirror Shot
 	TARGETAREA:1 projectile in flight
 	DURATION:Instantaneous
 	SAVEINFO:None
-	SPELLRES:No
+	SPELLRES:Yes
 	DESC:Turn single projectile into many.
 	SOURCEPAGE:p.171
 
@@ -1316,10 +1318,10 @@ Missive
 	SOURCEPAGE:p.171
 
 Moment of Terror
-	TYPE:Psionic
+	CLASSES:Dread,Psion,Wilder=4
 	SCHOOL:Telepathy
 	DESCRIPTOR:Evil|Mind-Affecting
-	CLASSES:Dread,Psion,Wilder=4
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:One standard action
 	RANGE:Medium
@@ -1349,10 +1351,10 @@ My Light
 
 
 Parasitic Possession
-	TYPE:Psionic
+	CLASSES:Cryptic=5
 	SCHOOL:Telepathy
 	DESCRIPTOR:Mind-Affecting
-	CLASSES:Cryptic=5
+	TYPE:Psionic
 	COMPS:Ol Vi
 	CASTTIME:1 standard action
 	RANGE:Close
@@ -1399,10 +1401,10 @@ Precognition (Tactical)
 	SOURCEPAGE:p.173
 
 Preserve Psyche
-	TYPE:Psionic
+	CLASSES:Vitalist=2
 	SCHOOL:Telepathy
 	DESCRIPTOR:Mind-Affecting,Network
-	CLASSES:Vitalist=2
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:1 immediate action
 	RANGE:Touch
@@ -1429,11 +1431,11 @@ Prowess as One
 	SOURCEPAGE:p.173
 
 Proximity Strike
-	TYPE:Psionic
+	CLASSES:Psychic Warrior=2
 	SCHOOL:Psychoportation
 	SUBSCHOOL:Teleportation
 	DESCRIPTOR:Trigger
-	CLASSES:Psychic Warrior=2
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:1 swift action
 	RANGE:Melee
@@ -1490,9 +1492,9 @@ Psychic Interference
 	SOURCEPAGE:p.175
 
 Psychic Tracking
-	TYPE:Psionic
-	SCHOOL:Clairsentience
 	CLASSES:Seer,Sighted Seeker=1
+	SCHOOL:Clairsentience
+	TYPE:Psionic
 	COMPS:Au
 	CASTTIME:1 standard action
 	RANGE:Personal
@@ -1518,10 +1520,10 @@ Psychokinetic Cannon
 	SOURCEPAGE:p.175
 
 Psychokinetic Charge
-	TYPE:Psionic
+	CLASSES:Psion,Tactician,Wilder=4
 	SCHOOL:Psychokinesis
 	DESCRIPTOR:Force
-	CLASSES:Psion,Tactician,Wilder=4
+	TYPE:Psionic
 	COMPS:Au Me
 	CASTTIME:1 standard action
 	RANGE:Close
@@ -1537,6 +1539,7 @@ Psychokinetic Charge
 Regenerative Aura
 	CLASSES:Egoist,Vitalist=9
 	SCHOOL:Psychometabolism
+	SUBSCHOOL:Healing
 	TYPE:Psionic
 	COMPS:Ma Vi
 	CASTTIME:1 standard action
@@ -1545,7 +1548,7 @@ Regenerative Aura
 	DURATION:(CASTERLEVEL) rounds [D]
 	SAVEINFO:Fortitude negates (harmless)
 	SPELLRES:Yes (harmless)
-	DESC:Heal all creatures within range for 25 hit points per round (max 250 hit points).
+	DESC:Heal all creatures within range for 25 hit points per round.
 	SOURCEPAGE:p.176
 
 Reposition
@@ -1565,11 +1568,11 @@ Reposition
 	SOURCEPAGE:p.176
 
 Repositioning Strike
-	TYPE:Psionic
+	CLASSES:Psychic Warrior=2
 	SCHOOL:Psychoportation
 	SUBSCHOOL:Teleportation
 	DESCRIPTOR:Trigger
-	CLASSES:Psychic Warrior=2
+	TYPE:Psionic
 	COMPS:Me Vi
 	CASTTIME:1 swift action
 	RANGE:Melee
@@ -1581,10 +1584,10 @@ Repositioning Strike
 	SOURCEPAGE:p.177
 
 Resist Death
-	TYPE:Psionic
+	CLASSES:Vitalist=3|Egoist=4
 	SCHOOL:Psychometabolism
 	DESCRIPTOR:Network
-	CLASSES:Vitalist=3|Egoist=4
+	TYPE:Psionic
 	COMPS:Vi
 	CASTTIME:1 standard action
 	RANGE:Personal
@@ -1658,10 +1661,10 @@ Sense Poison
 	SOURCEPAGE:p.178
 
 Sensory Cascade
-	TYPE:Psionic
+	CLASSES:Dread,Psion,Wilder=4
 	SCHOOL:Telepathy
 	DESCRIPTOR:Mind-Affecting
-	CLASSES:Dread,Psion,Wilder=4
+	TYPE:Psionic
 	COMPS:Vi
 	CASTTIME:One standard action
 	RANGE:Medium
@@ -1687,10 +1690,10 @@ Shift the Tide
 	SOURCEPAGE:p.179
 
 Shocking Strike
-	TYPE:Psionic
+	CLASSES:Psychic Warrior=2
 	SCHOOL:Psychokinesis
 	DESCRIPTOR:Electricity|Trigger
-	CLASSES:Psychic Warrior=2
+	TYPE:Psionic
 	COMPS:Au Ma
 	CASTTIME:1 swift action
 	RANGE:Melee
@@ -1731,9 +1734,9 @@ Sicken Body
 	SOURCEPAGE:p.179
 
 Sidestep
-	TYPE:Psionic
-	SCHOOL:Clairsentience
 	CLASSES:Dread,Marksman,Psychic Warrior=2
+	SCHOOL:Clairsentience
+	TYPE:Psionic
 	COMPS:Vi
 	CASTTIME:1 immediate action
 	RANGE:Personal
@@ -1776,11 +1779,11 @@ Skills as One
 	SOURCEPAGE:p.180
 
 Slumber
-	TYPE:Psionic
+	CLASSES:Dread,Psion,Wilder=1
 	SCHOOL:Telepathy
 	SUBSCHOOL:Compulsion
 	DESCRIPTOR:Mind-Affecting
-	CLASSES:Dread,Psion,Wilder=1
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:1 round
 	RANGE:Medium
@@ -1792,10 +1795,10 @@ Slumber
 	SOURCEPAGE:p.180
 
 Sonic Blast
-	TYPE:Psionic
+	CLASSES:Marksman,Psychic Warrior=2
 	SCHOOL:Psychokinesis
 	DESCRIPTOR:Sonic|Trigger
-	CLASSES:Marksman,Psychic Warrior=2
+	TYPE:Psionic
 	COMPS:Ol Vi
 	CASTTIME:1 swift action
 	RANGE:Melee
@@ -1822,10 +1825,10 @@ Strike as One
 	SOURCEPAGE:p.180
 
 Subconscious Banishment
-	TYPE:Psionic
+	CLASSES:Dread=2
 	SCHOOL:Telepathy
 	DESCRIPTOR:Mind-Affecting
-	CLASSES:Dread=2
+	TYPE:Psionic
 	COMPS:Vi Me
 	CASTTIME:1 standard action
 	RANGE:Close
@@ -1837,10 +1840,10 @@ Subconscious Banishment
 	SOURCEPAGE:p.181
 
 Summoning Strike
-	TYPE:Psionic
+	CLASSES:Psychic Warrior=5
 	SCHOOL:Psychoportation
 	SUBSCHOOL:Teleportation
-	CLASSES:Psychic Warrior=5
+	TYPE:Psionic
 	COMPS:Ol Vi
 	CASTTIME:Full-round action
 	RANGE:Close
@@ -1917,10 +1920,10 @@ Telepathic Lash
 	SOURCEPAGE:p.182
 
 Thundering Step
-	TYPE:Psionic
+	CLASSES:Psychic Warrior=4
 	SCHOOL:Psychoportation
 	DESCRIPTOR:Sonic
-	CLASSES:Psychic Warrior=4
+	TYPE:Psionic
 	COMPS:Au Vi
 	CASTTIME:Full-round action
 	RANGE:Melee
@@ -1944,13 +1947,13 @@ Toughen
 	SAVEINFO:Will negates (harmless)
 	SPELLRES:Yes (harmless)
 	DESC:Member of collective gets +1 natural armor bonus.
-	SOURCEPAGE:p.182
 	BONUS:COMBAT|AC|1|TYPE=NaturalArmor|PREAPPLY:ANYPC
+	SOURCEPAGE:p.182
 
 Trick Shot
-	TYPE:Psionic
-	SCHOOL:Psychoportation
 	CLASSES:Marksman=0
+	SCHOOL:Psychoportation
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:1 immediate action
 	RANGE:Close
@@ -1962,10 +1965,10 @@ Trick Shot
 	SOURCEPAGE:p.183
 
 True Terror
-	TYPE:Psionic
+	CLASSES:Seer,Dread=2
 	SCHOOL:Clairsentience
 	DESCRIPTOR:Fear|Mind-Affecting
-	CLASSES:Seer,Dread=2
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:1 standard action
 	RANGE:Medium
@@ -1979,10 +1982,10 @@ True Terror
 
 
 Unearthly Terror
-	TYPE:Psionic
+	CLASSES:Dread,Psion,Tactician,Wilder=1
 	SCHOOL:Telepathy
 	DESCRIPTOR:Fear|Mind-Affecting|Network
-	CLASSES:Dread,Psion,Tactician,Wilder=1
+	TYPE:Psionic
 	COMPS:Me
 	CASTTIME:1 standard action
 	RANGE:Close
@@ -1994,10 +1997,10 @@ Unearthly Terror
 	SOURCEPAGE:p.184
 
 Untouchable Aura
-	TYPE:Psionic
+	CLASSES:Dread=1
 	SCHOOL:Telepathy
 	DESCRIPTOR:Fear|Mind-Affecting
-	CLASSES:Dread=1
+	TYPE:Psionic
 	COMPS:Vi Me
 	CASTTIME:1 move action
 	RANGE:Aura
@@ -2025,10 +2028,10 @@ Upheaval
 
 
 Vanishing Strike
-	TYPE:Psionic
+	CLASSES:Cryptic,Psychic Warrior=4
 	SCHOOL:Psychoportation
 	DESCRIPTOR:Light
-	CLASSES:Cryptic,Psychic Warrior=4
+	TYPE:Psionic
 	COMPS:Ol Vi
 	CASTTIME:Full-round action
 	RANGE:Personal; see text
@@ -2071,10 +2074,10 @@ Wind Strike
 	SOURCEPAGE:p.185
 
 Wintry Grasp
-	TYPE:Psionic
+	CLASSES:Psychic Warrior=2
 	SCHOOL:Psychokinesis
 	DESCRIPTOR:Cold
-	CLASSES:Psychic Warrior=2
+	TYPE:Psionic
 	COMPS:Ma Vi
 	CASTTIME:1 standard action
 	RANGE:Personal
@@ -2130,3 +2133,8 @@ Zealous Fury
 	DESC:Reduce penalty on iterative attacks.
 	SOURCEPAGE:p.186
 
+
+
+#
+# End
+#
