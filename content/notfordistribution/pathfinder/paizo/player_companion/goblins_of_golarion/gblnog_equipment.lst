@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Mon Jul 15 23:34:13 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Goblins of Golarion
 	SOURCESHORT:GblnoG
 	SOURCEWEB:http://paizo.com/products/btpy8mfk?Pathfinder-Player-Companion-Goblins-of-Golarion
@@ -10,7 +11,7 @@ SOURCELONG:Goblins of Golarion
 
 
 ## Block: Goblin Goods
-# Equipment Name									Type					Cost		Weight	Source Page			Special Properties
+# Equipment Name		Output Name				Type				Cost		Weight	Source Page
 Caltrops (Vicious)
 	OUTPUTNAME:Caltrops, [NAME]
 	TYPE:Goods.General
@@ -60,7 +61,7 @@ Tossglove
 
 
 ## Block: Magic Items
-# Equipment Name				Type				Cost		Weight	Source Page			Special Properties
+# Equipment Name		Output Name				Type				Cost		Weight	Source Page
 Devastating Dog Whistle
 	TYPE:Magic.Wondrous
 	COST:1500

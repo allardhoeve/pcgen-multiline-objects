@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Mon Jul 15 23:34:13 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Goblins of Golarion
 	SOURCESHORT:GblnoG
 	SOURCEWEB:http://paizo.com/products/btpy8mfk?Pathfinder-Player-Companion-Goblins-of-Golarion
@@ -8,7 +9,7 @@ SOURCELONG:Goblins of Golarion
 
 
 ###Block: Archetype (Domain) Abilities
-# Ability Name		Unique Key					Category of Ability		Type											Visible	Define																									Description																	Ability							Bonus to Ability Pool					Save checks bonus							Combat bonus					Add to base move															Modify VAR																											Damage Reduction	Source Page		Aspects																Description of the Benefits																																																																																																																																																																																																																		Temporary Bonus
+# Ability Name							Unique Key						Category of Ability		Type																																																																																																					Define									Description																																																																																												Modify VAR																			Source Page
 Call Fire
 	KEY:Call of Fire ~ Arson Subdomain
 	CATEGORY:Special Ability
@@ -25,10 +26,10 @@ Sift
 	BONUS:VAR|SiftObjectValue|5000|PREPCLEVEL:MIN=20
 	SOURCEPAGE:pg.27
 
-CATEGORY=Special Ability|Sift ~ Flotsam Subdomain
+CATEGORY=Special Ability|Sift ~ Flotsam Subdomain.MOD
 	DESC:Once per day you can reach into water as a standard action and pull out an object with a maximum gp value of %1. This object always has the broken condition upon being withdrawn from the water. The water you reach into must be at least deep enough to fully immerse yourself. If retrieving an object which would not normally float, assume it rests on top of, or is entwined with, debris that does float. Objects retrieved in this manner disappear after 24 hours if they haven't yet been used up or otherwise destroyed.|SiftObjectValue|PREPCLEVEL:MAX=12
 
-CATEGORY=Special Ability|Sift ~ Flotsam Subdomain
+CATEGORY=Special Ability|Sift ~ Flotsam Subdomain.MOD
 	DESC:Once per day you can reach into water as a standard action and pull out an object with a maximum gp value of %1. The water you reach into must be at least deep enough to fully immerse yourself. If retrieving an object which would not normally float, assume it rests on top of, or is entwined with, debris that does float. Objects retrieved in this manner disappear after 24 hours if they  haven't yet been used up or otherwise destroyed.|SiftObjectValue|PREPCLEVEL:MIN=13
 
 #
@@ -38,9 +39,9 @@ Master's Yoke
 	TYPE:SpecialQuality.Supernatural.DomainPower
 	DEFINE:MastersYokeDuration|0
 	DEFINE:MastersYokeTimes|0
+	DESC:You can attempt to assert your dominance over any visible creature within 30 feet by declaring the target your property. The target can resist this effect with a Will save (DC %1). If the target fails the save, it is affected as if by dominate monster for %2 rounds, save that the target can choose to ignore any order you give and instead take 2 points of Constitution damage and become staggered for 1 round. You can use this ability %3 time(s) per day. This is a language-based mind-affecting effect.|DomainLawDC|DomainLawLVL|MastersYokeTimes
 	BONUS:VAR|MastersYokeDuration|DomainLawLVL/2
 	BONUS:VAR|MastersYokeTimes|1+(DomainLawLVL-4)/4
-	DESC:You can attempt to assert your dominance over any visible creature within 30 feet by declaring the target your property. The target can resist this effect with a Will save (DC %1). If the target fails the save, it is affected as if by dominate monster for %2 rounds, save that the target can choose to ignore any order you give and instead take 2 points of Constitution damage and become staggered for 1 round. You can use this ability %3 time(s) per day. This is a language-based mind-affecting effect.|DomainLawDC|DomainLawLVL|MastersYokeTimes
 	SOURCEPAGE:pg.27
 
 Painful Smite

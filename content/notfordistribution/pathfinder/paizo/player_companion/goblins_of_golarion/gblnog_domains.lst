@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Mon Jul 15 23:34:13 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Goblins of Golarion
 	SOURCESHORT:GblnoG
 	SOURCEWEB:http://paizo.com/products/btpy8mfk?Pathfinder-Player-Companion-Goblins-of-Golarion
@@ -9,7 +10,7 @@ SOURCELONG:Goblins of Golarion
 
 
 
-# Domain Name		Required AL			Multiple Requirements										Class Skill				Ability																																																												Define																																												Modify VAR																																																																Source Page			Description			List of Domain Spells by Level
+# Domain Name	Required AL		Multiple Requirements										Ability																																							Define																												Modify VAR																																											Source Page		List of Domain Spells by Level
 Arson Subdomain
 	PREMULT:1,[PREDOMAIN:1,Arson Subdomain],[PREVARLT:FireDomain,1]
 	ABILITY:Special Ability|AUTOMATIC|Call Fire ~ Arson Subdomain|PREVARGTEQ:DomainFireAbilityTriggerLVL,1

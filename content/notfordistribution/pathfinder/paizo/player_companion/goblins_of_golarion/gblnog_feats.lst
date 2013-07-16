@@ -1,3 +1,4 @@
+# CVS $Revision: $ $Author: $ -- Mon Jul 15 23:34:13 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Goblins of Golarion
 	SOURCESHORT:GblnoG
 	SOURCEWEB:http://paizo.com/products/btpy8mfk?Pathfinder-Player-Companion-Goblins-of-Golarion
@@ -8,7 +9,7 @@ SOURCELONG:Goblins of Golarion
 
 
 ###Block: Feats
-# Feat Name		Type		Required Feat		Required Race		Required Skill			Req. Weapond Prof.							Description																													Combat bonus					Source Page		Description of the Benefits
+# Feat Name			Output Name					Type			Required Ability								Required Race	Required Skill					Description																							Source Page		Description of the Benefits
 Ankle Biter
 	TYPE:Combat
 	PRERACE:1,Goblin
@@ -19,8 +20,8 @@ Ankle Biter
 
 Battle Singer
 	TYPE:General
-	PRERACE:1,Goblin
 	PREABILITY:1,CATEGORY=Special Ability,Bardic Performance
+	PRERACE:1,Goblin
 	DESC:Your battle songs can drive your fellow goblins to new heights of frenzy.
 	SOURCEPAGE:pg.24
 	BENEFIT: When using bardic performance to inspire courage in allies, you can choose to sing in Goblin. Allies who do not speak Goblin gain no benefits from this performance. Allied goblins who hear your battle songs become more energetic and brave, and thus add the bonus granted by your inspire courage ability to all saving throws as a morale bonus.
@@ -33,7 +34,8 @@ Burn! Burn! Burn!
 	SOURCEPAGE:pg.24
 	BENEFIT:You deal an extra 1d4 points of fire damage when you attack with fire from a non-magical or alchemical source (such as with torches or alchemical fire) and gain a +4 competence bonus on Reflex saving throws made to avoid catching on fire or putting yourself out when on fire. Additional damage caused by this feat does not apply to magical attacks or to splash damage.
 
-Dog Killer, Horse Hunter
+Dog Killer Horse Hunter
+	OUTPUTNAME:Dog Killer, Horse Hunter
 	TYPE:General
 	PRERACE:1,Goblin
 	PRESKILL:1,Handle Animal=1
@@ -47,12 +49,12 @@ Lead from the Back
 	PRESKILL:1,Intimidate=1
 	DESC:You allies depend far too much on your leadership and encouraging words for you to actually put yourself in harms' way.
 	SOURCEPAGE:pg.24
-	BEnEFIT:During any round in which you gain the benefit of cover or concealment against at least one opponent, and you are not threatened by any opponent, you can bark orders and encouragement to your allies as a standard action. Doing so grants all allies within 30 feet a +1 bonus on all weapon damage rolls for 1 round.
+	BENEFIT:During any round in which you gain the benefit of cover or concealment against at least one opponent, and you are not threatened by any opponent, you can bark orders and encouragement to your allies as a standard action. Doing so grants all allies within 30 feet a +1 bonus on all weapon damage rolls for 1 round.
 
 Letter Fury
 	TYPE:General
-	PRERACE:1,Goblin
 	PREABILITY:1,CATEGORY=Special Ability,Rage
+	PRERACE:1,Goblin
 	DESC:You go wild when someone tries to steal the words from your head.
 	SOURCEPAGE:pg.24
 	BENEFIT:If someone reads or writes in your presence (including casting spells like glyph of warding or symbol) you can, as an immediate action, choose to activate your rage class ability for 1 round. This round of rage does not count toward the total number of rounds which you can rage each day, but if you wish to continue your rage beyond that single round you must expend rounds from your daily rage allotment as normal. Once you use this feat you must wait at least 1 minute after you cease raging before you can use it again.
@@ -83,8 +85,8 @@ Combat Distraction
 
 Vandal
 	TYPE:General
-	PRERACE:1,Goblin
 	PREABILITY:1,CATEGORY=Special Ability,Sneak Attack
+	PRERACE:1,Goblin
 	DESC:Even other goblins admire your talent for mindless destruction.
 	SOURCEPAGE:pg.25
 	BENEFIT:You treat unattended objects as if they were vulnerable to your sneak attack, but you only deal half as much damage as you would against an actual creature. For instance, if you rolled 12 extra damage from the sneak attack you would deal an extra 6 damage to the object. This only applies when attacking unattended objects.
