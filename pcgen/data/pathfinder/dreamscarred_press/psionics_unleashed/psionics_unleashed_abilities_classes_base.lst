@@ -427,8 +427,10 @@ Nomad's Step
 	KEY:Nomad's Step ~ Psychoportation
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural.PsionicDisciplineTalent
-	DESC:Teleport %1 feet.|(PsychoportationDisciplineLVL+1)*5
+	DESC:Teleport %1 feet.|(NomadsStepLVL+1)*5
 	SOURCEPAGE:p.24
+	DEFINE:NomadsStepLVL|0
+	BONUS:VAR|NomadsStepLVL|PsychoportationDisciplineLVL
 
 Inconstant Position
 	KEY:Inconstant Position ~ Psychoportation
@@ -694,6 +696,8 @@ Ascetic Path
 	BONUS:ABILITYPOOL|Path Power|1
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,3
 	SOURCEPAGE:p.27
+	DEFINE:AsceticPathLVL|0
+	BONUS:VAR|AsceticPathLVL|WarriorPathLVL
 
 Assassin's Path
 	KEY:Assassin's Path ~ First
@@ -706,6 +710,8 @@ Assassin's Path
 	BONUS:ABILITYPOOL|Path Power|1
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,3
 	SOURCEPAGE:p.27
+	DEFINE:AssassinsPathLVL|0
+	BONUS:VAR|AssassinsPathLVL|WarriorPathLVL
 
 Brawling Path
 	KEY:Brawling Path ~ First
@@ -718,6 +724,8 @@ Brawling Path
 	BONUS:ABILITYPOOL|Path Power|1
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,3
 	SOURCEPAGE:p.27
+	DEFINE:BrawlingPathLVL|0
+	BONUS:VAR|BrawlingPathLVL|WarriorPathLVL
 
 Feral Warrior Path
 	KEY:Feral Warrior Path ~ First
@@ -730,6 +738,8 @@ Feral Warrior Path
 	BONUS:ABILITYPOOL|Path Power|1
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,3
 	SOURCEPAGE:p.27
+	DEFINE:FeralWarriorPathLVL|0
+	BONUS:VAR|FeralWarriorPathLVL|WarriorPathLVL
 
 Mind Knight Path
 	KEY:Mind Knight Path ~ First
@@ -742,6 +752,8 @@ Mind Knight Path
 	BONUS:ABILITYPOOL|Path Power|1
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,3
 	SOURCEPAGE:p.28
+	DEFINE:MindKnightPathLVL|0
+	BONUS:VAR|MindKnightPathLVL|WarriorPathLVL
 
 Weaponmaster Path
 	KEY:Weaponmaster Path ~ First
@@ -754,6 +766,8 @@ Weaponmaster Path
 	BONUS:ABILITYPOOL|Path Power|1
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,3
 	SOURCEPAGE:p.28
+	DEFINE:WeaponmasterPathLVL|0
+	BONUS:VAR|WeaponmasterPathLVL|WarriorPathLVL
 
 
 
@@ -766,6 +780,8 @@ Ascetic Path
 	ABILITY:Special Ability|AUTOMATIC|Expanded Path ~ Ascetic|PREVARGTEQ:WarriorPathLVL,11
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,9
 	SOURCEPAGE:p.27
+	DEFINE:AsceticPathLVL|0
+	BONUS:VAR|AsceticPathLVL|WarriorPathLVL
 
 Assassin's Path
 	KEY:Assassin's Path ~ Second
@@ -776,6 +792,8 @@ Assassin's Path
 	ABILITY:Special Ability|AUTOMATIC|Expanded Path ~ Assassin|PREVARGTEQ:WarriorPathLVL,11
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,9
 	SOURCEPAGE:p.27
+	DEFINE:AssassinsPathLVL|0
+	BONUS:VAR|AssassinsPathLVL|WarriorPathLVL
 
 Brawling Path
 	KEY:Brawling Path ~ Second
@@ -786,6 +804,8 @@ Brawling Path
 	ABILITY:Special Ability|AUTOMATIC|Expanded Path ~ Brawling|PREVARGTEQ:WarriorPathLVL,11
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,9
 	SOURCEPAGE:p.27
+	DEFINE:BrawlingPathLVL|0
+	BONUS:VAR|BrawlingPathLVL|WarriorPathLVL
 
 Feral Warrior Path
 	KEY:Feral Warrior Path ~ Second
@@ -796,6 +816,8 @@ Feral Warrior Path
 	ABILITY:Special Ability|AUTOMATIC|Expanded Path ~ Feral Warrior|PREVARGTEQ:WarriorPathLVL,11
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,9
 	SOURCEPAGE:p.27
+	DEFINE:FeralWarriorPathLVL|0
+	BONUS:VAR|FeralWarriorPathLVL|WarriorPathLVL
 
 Mind Knight Path
 	KEY:Mind Knight Path ~ Second
@@ -806,6 +828,8 @@ Mind Knight Path
 	ABILITY:Special Ability|AUTOMATIC|Expanded Path ~ Mind Knight|PREVARGTEQ:WarriorPathLVL,11
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,9
 	SOURCEPAGE:p.28
+	DEFINE:MindKnightPathLVL|0
+	BONUS:VAR|MindKnightPathLVL|WarriorPathLVL
 
 Weaponmaster Path
 	KEY:Weaponmaster Path ~ Second
@@ -816,6 +840,8 @@ Weaponmaster Path
 	ABILITY:Special Ability|AUTOMATIC|Expanded Path ~ Weaponmaster|PREVARGTEQ:WarriorPathLVL,11
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,9
 	SOURCEPAGE:p.28
+	DEFINE:WeaponmasterPathLVL|0
+	BONUS:VAR|WeaponmasterPathLVL|WarriorPathLVL
 
 
 
@@ -1166,7 +1192,7 @@ Trance
 	TYPE:SpecialQuality
 	DESC:Gain +%1 insight bonus to AC or saves when in light or no armor.|AsceticPathBonus
 	DEFINE:AsceticPathBonus|0
-	BONUS:VAR|AsceticPathBonus|(WarriorPathLVL+1)/4
+	BONUS:VAR|AsceticPathBonus|(AsceticPathLVL+1)/4
 	SOURCEPAGE:p.27
 	ABILITY:Internal|AUTOMATIC|Ascetic Path Bonus ~ AC|Ascetic Path Bonus ~ Saves
 
@@ -1182,7 +1208,7 @@ Maneuver
 	KEY:Maneuver ~ Ascetic
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:Expend focus to gain +%1 AC; take a 5-ft. step if the attack misses.|2+(WarriorPathLVL/5)
+	DESC:Expend focus to gain +%1 AC; take a 5-ft. step if the attack misses.|2+(AsceticPathLVL/5)
 	SOURCEPAGE:p.27
 
 
@@ -1204,15 +1230,15 @@ Trance
 	KEY:Trance ~ Assassin
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack
-	DESC:Gain +%1 competence bonus on damage rolls when focused.|(WarriorPathLVL+5)/4
-	BONUS:COMBAT|DAMAGE.Melee,DAMAGE.Ranged|(WarriorPathLVL+5)/4*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
+	DESC:Gain +%1 competence bonus on damage rolls when focused.|(AssassinsPathLVL+5)/4
+	BONUS:COMBAT|DAMAGE.Melee,DAMAGE.Ranged|(AssassinsPathLVL+5)/4*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
 	SOURCEPAGE:p.27
 
 Maneuver
 	KEY:Maneuver ~ Assassin
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack
-	DESC:Expend focus to get +%1d6 damage when striking an enemy in melee with no other enemies adjacent to you.|(WarriorPathLVL+7)/5
+	DESC:Expend focus to get +%1d6 damage when striking an enemy in melee with no other enemies adjacent to you.|(AssassinsPathLVL+7)/5
 	SOURCEPAGE:p.27
 
 
@@ -1241,7 +1267,7 @@ Maneuver
 	KEY:Maneuver ~ Brawling
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack
-	DESC:Expend focus so foe you are grappling takes %1d6 non-lethal damage.|(WarriorPathLVL+1)/2
+	DESC:Expend focus so foe you are grappling takes %1d6 non-lethal damage.|(BrawlingPathLVL+1)/2
 	SOURCEPAGE:p.27
 
 
@@ -1263,15 +1289,15 @@ Trance
 	KEY:Trance ~ Feral Warrior
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack
-	DESC:+%1 competence bonus on attack rolls with natural weapon when focused.|(WarriorPathLVL+1)/4
-	BONUS:COMBAT|TOHIT.Natural|(WarriorPathLVL+1)/4*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
+	DESC:+%1 competence bonus on attack rolls with natural weapon when focused.|(FeralWarriorPathLVL+1)/4
+	BONUS:COMBAT|TOHIT.Natural|(FeralWarriorPathLVL+1)/4*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
 	SOURCEPAGE:p.27
 
 Maneuver
 	KEY:Maneuver ~ Feral Warrior
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack
-	DESC:Expend focus when charging to take an additional attack (full attack at 20th level) with +%1 damage; attacks get -2 on attack roll.|(WarriorPathLVL+1)/4
+	DESC:Expend focus when charging to take an additional attack (full attack at 20th level) with +%1 damage; attacks get -2 on attack roll.|(FeralWarriorPathLVL+1)/4
 	SOURCEPAGE:p.27
 
 
@@ -1293,8 +1319,8 @@ Trance
 	KEY:Trance ~ Mind Knight
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack
-	DESC:+%1 competence bonus to initiative when focused; +%1 to attack and damage when using a called weapon.|(WarriorPathLVL+1)/4
-	BONUS:COMBAT|INITIATIVE|(WarriorPathLVL+1)/4*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
+	DESC:+%1 competence bonus to initiative when focused; +%1 to attack and damage when using a called weapon.|(MindKnightPathLVL+1)/4
+	BONUS:COMBAT|INITIATIVE|(MindKnightPathLVL+1)/4*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
 	SOURCEPAGE:p.28
 
 # COMMENT:  Not sure how to do called weapon bonus.
@@ -1302,7 +1328,7 @@ Maneuver
 	KEY:Maneuver ~ Mind Knight
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack
-	DESC:Expend focus to make a melee attack against %1 adjacent creatures as a standard action.|(WarriorPathLVL+7)/5
+	DESC:Expend focus to make a melee attack against %1 adjacent creatures as a standard action.|(MindKnightPathLVL+7)/5
 	SOURCEPAGE:p.28
 
 
@@ -1324,15 +1350,15 @@ Trance
 	KEY:Trance ~ Weaponmaster
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack
-	DESC:When focused, gain +%1 to attacks with weapons.|(WarriorPathLVL+1)/4
+	DESC:When focused, gain +%1 to attacks with weapons.|(WeaponmasterPathLVL+1)/4
 	SOURCEPAGE:p.28
-	BONUS:WEAPON|TOHIT|(WarriorPathLVL+1)/4*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
+	BONUS:WEAPON|TOHIT|(WeaponmasterPathLVL+1)/4*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
 
 Maneuver
 	KEY:Maneuver ~ Weaponmaster
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack
-	DESC:Expend focus to make a single melee attack against an enemy attacking you, then take a 5-ft. step.  You gain a +%1 competence bonus on the attack and damage rolls.|(WarriorPathLVL-3)/5
+	DESC:Expend focus to make a single melee attack against an enemy attacking you, then take a 5-ft. step.  You gain a +%1 competence bonus on the attack and damage rolls.|(WeaponmasterPathLVL-3)/5
 	SOURCEPAGE:p.28
 
 
