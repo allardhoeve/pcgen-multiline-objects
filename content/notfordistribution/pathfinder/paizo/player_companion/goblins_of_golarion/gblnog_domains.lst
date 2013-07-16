@@ -58,7 +58,7 @@ Slavery Subdomain
 	BONUS:VAR|DomainLawLVL|DomainLVL
 	BONUS:VAR|DomainLawDC|10+(DomainLawLVL/2)+WIS
 	BONUS:VAR|DomainLawTimes|DomainPowerTimes
-	|DomainLawAbilityTriggerLVL|DomainAbilityTriggerLVL
+	BONUS:VAR|DomainLawAbilityTriggerLVL|DomainAbilityTriggerLVL
 	SOURCEPAGE:pg.27
 	SPELLLEVEL:DOMAIN|Slavery Subdomain=1|Charm Person|Slavery Subdomain=2|Align Weapon (Law Only)|Slavery Subdomain=3|Magic Circle against Chaos|Slavery Subdomain=4|Order's Wrath|Slavery Subdomain=5|Dominate Person|Slavery Subdomain=6|Hold Monster|Slavery Subdomain=7|Dictum|Slavery Subdomain=8|Binding|Slavery Subdomain=9|Summon Monster IX (Law Spell Only)
 
