@@ -1393,6 +1393,7 @@ Headband of Vast Intelligence +2
 	WT:1
 	SOURCEPAGE:p.517
 	BONUS:STAT|INT|2|TYPE=Enhancement
+	BONUS:ABILITYPOOL|Headband of Intellect Skill Choice|1
 
 Headband of Vast Intelligence +4
 	TYPE:Magic.Wondrous.Headband.Intelligence
@@ -1400,6 +1401,7 @@ Headband of Vast Intelligence +4
 	WT:1
 	SOURCEPAGE:p.517
 	BONUS:STAT|INT|4|TYPE=Enhancement
+	BONUS:ABILITYPOOL|Headband of Intellect Skill Choice|2
 
 Headband of Vast Intelligence +6
 	TYPE:Magic.Wondrous.Headband.Intelligence
@@ -1407,6 +1409,7 @@ Headband of Vast Intelligence +6
 	WT:1
 	SOURCEPAGE:p.517
 	BONUS:STAT|INT|6|TYPE=Enhancement
+	BONUS:ABILITYPOOL|Headband of Intellect Skill Choice|3
 
 Helm of Brilliance
 	TYPE:Magic.Wondrous.Headgear

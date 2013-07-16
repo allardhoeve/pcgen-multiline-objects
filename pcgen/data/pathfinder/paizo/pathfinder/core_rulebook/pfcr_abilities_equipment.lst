@@ -13,6 +13,16 @@ Unarmed Frost
 
 
 
+Headband of Intellect Skill Selection
+	TYPE:HeadbandSkill
+	CATEGORY:Special Ability
+	MULT:YES
+	STACK:NO
+	CHOOSE:SKILL|TYPE=Base
+	BONUS:SKILLRANK|%LIST|TL
+
+
+
 # Abilities for Intelligent Magic Items
 
 
