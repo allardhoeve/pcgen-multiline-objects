@@ -31,7 +31,7 @@ Arson Subdomain
 Flotsam Subdomain
 	PREMULT:1,[PREDOMAIN:1,Flotsam Subdomain],[PREVARLT:WaterDomain,1]
 	ABILITY:Special Ability|AUTOMATIC|Icicle ~ Water Domain|PREVARGTEQ:DomainWaterAbilityTriggerLVL,1
-	ABILITY:Special Ability|AUTOMATIC|Sift ~ Flotsom Subdomain|PREVARGTEQ:DomainWaterAbilityTriggerLVL,6
+	ABILITY:Special Ability|AUTOMATIC|Sift ~ Flotsam Subdomain|PREVARGTEQ:DomainWaterAbilityTriggerLVL,6
 	DEFINE:WaterDomain|0
 	DEFINE:DomainWaterLVL|0
 	DEFINE:DomainWaterDC|0
