@@ -3411,6 +3411,8 @@ Archer Path
 	BONUS:ABILITYPOOL|Path Power|1
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,3
 	SOURCEPAGE:p.77
+	DEFINE:ArcherPathLVL|0
+	BONUS:VAR|ArcherPathLVL|WarriorPathLVL
 
 Dervish Path
 	KEY:Dervish Path ~ First
@@ -3423,6 +3425,8 @@ Dervish Path
 	BONUS:ABILITYPOOL|Path Power|1
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,3
 	SOURCEPAGE:p.77
+	DEFINE:DervishPathLVL|0
+	BONUS:VAR|DervishPathLVL|WarriorPathLVL
 
 Gladiator Path
 	KEY:Gladiator Path ~ First
@@ -3435,6 +3439,8 @@ Gladiator Path
 	BONUS:ABILITYPOOL|Path Power|1
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,3
 	SOURCEPAGE:p.78
+	DEFINE:GladiatorPathLVL|0
+	BONUS:VAR|GladiatorPathLVL|WarriorPathLVL
 
 Infiltrator Path
 	KEY:Infiltrator Path ~ First
@@ -3447,6 +3453,8 @@ Infiltrator Path
 	BONUS:ABILITYPOOL|Path Power|1
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,3
 	SOURCEPAGE:p.78
+	DEFINE:InfiltratorPathLVL|0
+	BONUS:VAR|InfiltratorPathLVL|WarriorPathLVL
 
 Interceptor Path
 	KEY:Interceptor Path ~ First
@@ -3459,6 +3467,8 @@ Interceptor Path
 	BONUS:ABILITYPOOL|Path Power|1
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,3
 	SOURCEPAGE:p.79
+	DEFINE:InterceptorPathLVL|0
+	BONUS:VAR|InterceptorPathLVL|WarriorPathLVL
 
 Survivor Path
 	KEY:Survivor Path ~ First
@@ -3471,6 +3481,8 @@ Survivor Path
 	BONUS:ABILITYPOOL|Path Power|1
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,3
 	SOURCEPAGE:p.79
+	DEFINE:SurvivorPathLVL|0
+	BONUS:VAR|SurvivorPathLVL|WarriorPathLVL
 
 
 
@@ -3483,6 +3495,8 @@ Archer Path
 	ABILITY:Special Ability|AUTOMATIC|Expanded Path ~ Archer|PREVARGTEQ:WarriorPathLVL,11
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,9
 	SOURCEPAGE:p.77
+	DEFINE:ArcherPathLVL|0
+	BONUS:VAR|ArcherPathLVL|WarriorPathLVL
 
 Dervish Path
 	KEY:Dervish Path ~ Second
@@ -3493,6 +3507,8 @@ Dervish Path
 	ABILITY:Special Ability|AUTOMATIC|Expanded Path ~ Dervish|PREVARGTEQ:WarriorPathLVL,11
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,9
 	SOURCEPAGE:p.77
+	DEFINE:DervishPathLVL|0
+	BONUS:VAR|DervishPathLVL|WarriorPathLVL
 
 Gladiator Path
 	KEY:Gladiator Path ~ Second
@@ -3503,6 +3519,8 @@ Gladiator Path
 	ABILITY:Special Ability|AUTOMATIC|Expanded Path ~ Gladiator|PREVARGTEQ:WarriorPathLVL,11
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,9
 	SOURCEPAGE:p.78
+	DEFINE:GladiatorPathLVL|0
+	BONUS:VAR|GladiatorPathLVL|WarriorPathLVL
 
 Infiltrator Path
 	KEY:Infiltrator Path ~ Second
@@ -3513,6 +3531,8 @@ Infiltrator Path
 	ABILITY:Special Ability|AUTOMATIC|Expanded Path ~ Infiltrator|PREVARGTEQ:WarriorPathLVL,11
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,9
 	SOURCEPAGE:p.78
+	DEFINE:InfiltratorPathLVL|0
+	BONUS:VAR|InfiltratorPathLVL|WarriorPathLVL
 
 Interceptor Path
 	KEY:Interceptor Path ~ Second
@@ -3523,6 +3543,8 @@ Interceptor Path
 	ABILITY:Special Ability|AUTOMATIC|Expanded Path ~ Interceptor|PREVARGTEQ:WarriorPathLVL,11
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,9
 	SOURCEPAGE:p.79
+	DEFINE:InterceptorPathLVL|0
+	BONUS:VAR|InterceptorPathLVL|WarriorPathLVL
 
 Survivor Path
 	KEY:Survivor Path ~ Second
@@ -3533,6 +3555,8 @@ Survivor Path
 	ABILITY:Special Ability|AUTOMATIC|Expanded Path ~ Survivor|PREVARGTEQ:WarriorPathLVL,11
 	BONUS:ABILITYPOOL|Path Power|1|PREVARGTEQ:WarriorPathLVL,9
 	SOURCEPAGE:p.79
+	DEFINE:SurvivorPathLVL|0
+	BONUS:VAR|SurvivorPathLVL|WarriorPathLVL
 
 
 
@@ -3554,14 +3578,14 @@ Trance ~ Archer
 	TYPE:SpecialAttack
 	DESC:Gain +%1 competence bonus on ranged and thrown weapon attack rolls.|ArcherPathBonus
 	DEFINE:ArcherPathBonus|0
-	BONUS:VAR|ArcherPathBonus|(WarriorPathLVL+1)/4
+	BONUS:VAR|ArcherPathBonus|(ArcherPathLVL+1)/4
 	BONUS:COMBAT|TOHIT.RANGED|ArcherPathBonus*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
 	SOURCEPAGE:p.77
 
 Maneuver ~ Archer
 	CATEGORY:Special Ability
 	TYPE:SpecialAttack
-	DESC:Expend focus to make ranged trip attack, +%1 on attack roll.|(WarriorPathLVL-3)/4
+	DESC:Expend focus to make ranged trip attack, +%1 on attack roll.|(ArcherPathLVL-3)/4
 	SOURCEPAGE:p.77
 
 
@@ -3585,7 +3609,7 @@ Trance ~ Dervish
 	DESC:While maintaining focus, you gain a +%1 competence bonus on attack rolls made when you wield two weapons.|DervishTranceBonus
 	SOURCEPAGE:p.12
 	DEFINE:DervishTranceBonus|0
-	BONUS:VAR|DervishTranceBonus|floor((WarriorPathLVL+1)/4)
+	BONUS:VAR|DervishTranceBonus|floor((DervishPathLVL+1)/4)
 	BONUS:COMBAT|TOHIT|DervishTranceBonus*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
 	SOURCEPAGE:p.77
 
@@ -3595,7 +3619,7 @@ Maneuver ~ Dervish
 	DESC:You can expend your psionic focus as part of a full attack when you fight with two weapons to take a 5-foot step between your attacks, even if you have already taken a 5-foot step, but not if you have moved normally (such as by using hustle).  You may gain up to %1 additional 5-foot steps, but each must be made after an attack in your full attack.|DervishManeuverSteps
 	SOURCEPAGE:p.77
 	DEFINE:DervishManeuverSteps|0
-	BONUS:VAR|DervishManeuverSteps|floor((WarriorPathLVL+2)/5)
+	BONUS:VAR|DervishManeuverSteps|floor((DervishPathLVL+2)/5)
 
 
 
@@ -3618,8 +3642,8 @@ Trance ~ Gladiator
 	DEFINE:GladiatorTranceCMBBonus|0
 	DEFINE:GladiatorTranceCMDBonus|0
 	DESC:Gain +%1 to CMB and +%2 to CMD while focused.|GladiatorTranceCMBBonus|GladiatorTranceCMDBonus
-	BONUS:VAR|GladiatorTranceCMBBonus|(WarriorPathLVL+1)/4
-	BONUS:VAR|GladiatorTranceCMDBonus|(WarriorPathLVL+5)/4
+	BONUS:VAR|GladiatorTranceCMBBonus|(GladiatorPathLVL+1)/4
+	BONUS:VAR|GladiatorTranceCMDBonus|(GladiatorPathLVL+5)/4
 	BONUS:VAR|CMB|GladiatorTranceCMBBonus*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
 	BONUS:VAR|CMD|GladiatorTranceCMDBonus*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
 	SOURCEPAGE:p.78
@@ -3629,7 +3653,7 @@ Maneuver ~ Gladiator
 	TYPE:SpecialQuality
 	DEFINE:GladiatorManeuverBonus|0
 	DESC:Expend focus to not provoke attacks of opportunity for using a maneuver.  If you already do not provoke, add a +%1 competence bonus to maneuver checks (stacks with trance).|GladiatorManeuverBonus
-	BONUS:VAR|GladiatorManeuverBonus|2+max(0,WarriorPathLVL-4)/4
+	BONUS:VAR|GladiatorManeuverBonus|2+max(0,GladiatorPathLVL-4)/4
 	SOURCEPAGE:p.78
 
 
@@ -3650,15 +3674,15 @@ Expanded Path
 Trance ~ Infiltrator
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:Gain +%1 competence bonus on Disguise and +%2 competence bonus on damage with natural weapons.|(WarriorPathLVL+5)/4|(WarriorPathLVL+1)/4
-	BONUS:COMBAT|DAMAGE.Natural|(WarriorPathLVL+1)/4*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
-	BONUS:SKILL|Disguise|(WarriorPathLVL+5)/4*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
+	DESC:Gain +%1 competence bonus on Disguise and +%2 competence bonus on damage with natural weapons.|(InfiltratorPathLVL+5)/4|(InfiltratorPathLVL+1)/4
+	BONUS:COMBAT|DAMAGE.Natural|(InfiltratorPathLVL+1)/4*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
+	BONUS:SKILL|Disguise|(InfiltratorPathLVL+5)/4*PsionicFocusActive|TYPE=Competence|PREAPPLY:PC
 	SOURCEPAGE:p.78
 
 Maneuver ~ Infiltrator
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:Expend focus to gain intimidating gaze while metamorphosed; +%1 on Intimidate check.|(WarriorPathLVL-3)/4
+	DESC:Expend focus to gain intimidating gaze while metamorphosed; +%1 on Intimidate check.|(InfiltratorPathLVL-3)/4
 	SOURCEPAGE:p.78
 
 
@@ -3682,7 +3706,7 @@ Trance ~ Interceptor
 	DESC:While maintaining psionic focus, you gain a +%1 competence bonus on attack and damage rolls made against any opponent that threatens any of your allies.|InterceptorTranceBonus
 	SOURCEPAGE:p.79
 	DEFINE:InterceptorTranceBonus|0
-	BONUS:VAR|InterceptorTranceBonus|floor((WarriorPathLVL+1)/4)
+	BONUS:VAR|InterceptorTranceBonus|floor((InterceptorPathLVL+1)/4)
 
 Maneuver ~ Interceptor
 	CATEGORY:Special Ability
@@ -3708,15 +3732,15 @@ Expanded Path
 Trance ~ Survivor
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:Gain DR %1/-; comfortable in extreme temperatures.|(WarriorPathLVL+5)/4
+	DESC:Gain DR %1/-; comfortable in extreme temperatures.|(SurvivorPathLVL+5)/4
 	SOURCEPAGE:p.79
 
 Maneuver ~ Survivor
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DESC:Expend focus to gain Mettle until your next turn.|PREMULT:2,[PREVARGT:WarriorPathLVL,2],[PREVARLT:WarriorPathLVL,7]
-	DESC:Expend focus to gain Mettle and +1 on Will saves until your next turn.|PREMULT:2,[PREVARGT:WarriorPathLVL,6],[PREVARLT:WarriorPathLVL,11]
-	DESC:Expend focus to gain Improved Mettle and +%1 on Will saves until your next turn.|(WarriorPathLVL-3)/4|PREVARGT:WarriorPathLVL,10
+	DESC:Expend focus to gain Mettle until your next turn.|PREMULT:2,[PREVARGT:SurvivorPathLVL,2],[PREVARLT:SurvivorPathLVL,7]
+	DESC:Expend focus to gain Mettle and +1 on Will saves until your next turn.|PREMULT:2,[PREVARGT:SurvivorPathLVL,6],[PREVARLT:SurvivorPathLVL,11]
+	DESC:Expend focus to gain Improved Mettle and +%1 on Will saves until your next turn.|(SurvivorPathLVL-3)/4|PREVARGT:SurvivorPathLVL,10
 	SOURCEPAGE:p.79
 
 

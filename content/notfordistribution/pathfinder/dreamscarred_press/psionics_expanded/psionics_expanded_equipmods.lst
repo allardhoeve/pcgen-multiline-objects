@@ -8,12 +8,31 @@ SOURCELONG:Psionics Expanded
 
 
 ###Block: Weapon equipment modifiers
+Agile
+	KEY:AGILE
+	TYPE:Melee.Weapon
+	PLUS:1
+	VISIBLE:QUALIFY
+	SOURCEPAGE:p.207
+	PRETYPE:4,Enhancement,Weapon,Melee,Finesseable
+	SPROP:Add Dexterity bonus, instead of Strength bonus, to weapon damage
+	BONUS:WEAPON|DAMAGE|max(STR,DEX)-STR
+
+Dueling
+	KEY:DUEL
+	TYPE:Melee.Weapon
+	PLUS:1
+	VISIBLE:QUALIFY
+	SOURCEPAGE:p.207
+	PRETYPE:3,Enhancement,Weapon,Melee
+	SPROP:Gain luck bonus to CMB and CMD double the enchantment bonus with maneuvers when using weapon
+
 Energy (Cold)
 	KEY:ENRGY_C
 	TYPE:Ranged.Weapon
 	COST:12000
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.25
+	SOURCEPAGE:p.208
 	PRETYPE:3,Enhancement,Weapon,Ranged
 	!PRETYPE:1,Thrown
 	SPROP:Creates cold energy ammunition
@@ -23,7 +42,7 @@ Energy (Electricity)
 	TYPE:Ranged.Weapon
 	COST:12000
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.25
+	SOURCEPAGE:p.208
 	PRETYPE:3,Enhancement,Weapon,Ranged
 	!PRETYPE:1,Thrown
 	SPROP:Creates electricity energy ammunition
@@ -33,7 +52,7 @@ Energy (Fire)
 	TYPE:Ranged.Weapon
 	COST:12000
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.25
+	SOURCEPAGE:p.208
 	PRETYPE:3,Enhancement,Weapon,Ranged
 	!PRETYPE:1,Thrown
 	SPROP:Creates fire energy ammunition
@@ -43,7 +62,7 @@ Energy (Greater Cold)
 	TYPE:Ranged.Weapon
 	PLUS:4
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.25
+	SOURCEPAGE:p.208
 	PRETYPE:3,Enhancement,Weapon,Ranged
 	!PRETYPE:1,Thrown
 	SPROP:Converts ammunition to cold energy
@@ -53,7 +72,7 @@ Energy (Greater Electricity)
 	TYPE:Ranged.Weapon
 	PLUS:4
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.25
+	SOURCEPAGE:p.208
 	PRETYPE:3,Enhancement,Weapon,Ranged
 	!PRETYPE:1,Thrown
 	SPROP:Converts ammunition to electricity energy
@@ -63,17 +82,26 @@ Energy (Greater Fire)
 	TYPE:Ranged.Weapon
 	PLUS:4
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.25
+	SOURCEPAGE:p.208
 	PRETYPE:3,Enhancement,Weapon,Ranged
 	!PRETYPE:1,Thrown
 	SPROP:Converts ammunition to fire energy
+
+Guardian
+	KEY:GUARDN
+	TYPE:Weapon
+	PLUS:1
+	VISIBLE:QUALIFY
+	SOURCEPAGE:p.208
+	PRETYPE:2,Enhancement,Weapon
+	SPROP:Transfer some or all of enhancement bonus to saves
 
 Linked Striking
 	KEY:LNKST
 	TYPE:Weapon
 	PLUS:2
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.25
+	SOURCEPAGE:p.208
 	PRETYPE:2,Enhancement,Weapon
 	SPROP:Add 2 to enhancement bonus and +2d6 damage on subsequent hits vs. an enemy
 
@@ -91,7 +119,7 @@ Rebounding
 	TYPE:Weapon.Thrown
 	COST:12000
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.25
+	SOURCEPAGE:p.209
 	PRETYPE:3,Enhancement,Weapon,Thrown
 	SPROP:Use iterative attacks with single thrown weapon
 
@@ -100,7 +128,7 @@ Wrenching
 	TYPE:Weapon.Ranged
 	PLUS:2
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.25
+	SOURCEPAGE:p.209
 	PRETYPE:3,Enhancement,Weapon,Ranged
 	SPROP:Reposition target towards wielder
 
@@ -112,7 +140,7 @@ Fusing
 	TYPE:Armor
 	PLUS:2
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.21
+	SOURCEPAGE:p.207
 	PRETYPE:3,Enhancement,Armor,Heavy
 	BONUS:EQMARMOR|ACCHECK|1
 	BONUS:EQMARMOR|MAXDEX|1
@@ -124,7 +152,7 @@ Fusing
 	TYPE:Armor
 	PLUS:2
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.21
+	SOURCEPAGE:p.207
 	PRETYPE:3,Enhancement,Armor,Light
 	BONUS:EQMARMOR|ACCHECK|1
 	BONUS:EQMARMOR|MAXDEX|1
@@ -135,7 +163,7 @@ Fusing
 	TYPE:Armor
 	PLUS:2
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.21
+	SOURCEPAGE:p.207
 	PRETYPE:3,Enhancement,Armor,Medium
 	BONUS:EQMARMOR|ACCHECK|1
 	BONUS:EQMARMOR|MAXDEX|1
@@ -147,7 +175,7 @@ Fusing
 	TYPE:Shield
 	PLUS:2
 	VISIBLE:QUALIFY
-	SOURCEPAGE:p.21
+	SOURCEPAGE:p.207
 	PRETYPE:3,Enhancement,Shield
 	BONUS:EQMARMOR|ACCHECK|1
 	BONUS:EQMARMOR|MAXDEX|1
