@@ -1123,8 +1123,8 @@ Favored Terrain
 	DESC:When a wild shadow chooses a favored terrain, he cannot choose urban as the terrain type. Furthermore, at 8th level and every five levels thereafter, when he chooses a new favorite terrain type, he cannot choose the urban terrain type.
 	SOURCEPAGE:p.45
 
-CATEGORY:Special Ability|Favored Terrain (Urban).MOD
-	!PREABILITY:1,CATEGORY=Archetype,Wild Shadow
+CATEGORY=Special Ability|Favored Terrain (Urban).MOD
+	!PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ Wild Shadow
 
 Woodland Stride
 	KEY:Woodland Stride ~ Wild Shadow
@@ -2497,7 +2497,7 @@ Kinslayer
 	PRECLASS:1,Inquisitor=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Kinslayer],[!PREABILITY:1,CATEGORY=Archetype,TYPE.InquisitorJudgementDestruction,TYPE.InquisitorDetectAlignment]
 	PRERACE:1,Dhampir
-	DESC:Appalled and guilt-ridden by the horrific circumstances of her birth, a kinslayer dedicates herself to eradicating the very creatures whose blood flows within her veins. She spends her life hunting and slaying those vampiric monsters for whom humans have become prey. A kinslayer has the following class features.
+	DESC:Appalled and guilt-ridden by the horrific circumstances of her birth, a kinslayer dedicates herself to eradicating the very creatures whose blood flows within her veins. She spends her life hunting and slaying those vampiric monsters for whom humans have become prey.
 	ABILITY:Special Ability|AUTOMATIC|Judgment ~ Kinslayer|PRECLASS:1,Inquisitor=1
 	ABILITY:Special Ability|AUTOMATIC|Slayer's Brand ~ Kinslayer|PRECLASS:1,Inquisitor=1
 	ABILITY:Special Ability|AUTOMATIC|Greater Brand ~ Kinslayer|PRECLASS:1,Inquisitor=1
@@ -2530,7 +2530,7 @@ Branding Ray
 	KEY:Branding Ray ~ Kinslayer
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural.GreaterBrand
-	PREABILITY:1,CATEGORY=Archetype,Kinslayer
+	PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Kinslayer
 	DEFINE:BrandingRayRange|0
 	DESC:The slayer's brand judgment can be used as a ranged touch attack with a range of %1 feet. A kinslayer can take this modification more than once. Whenever she does, she increases the range of her brand by 20 feet.|BrandingRayRange
 	STACK:YES
@@ -2542,7 +2542,7 @@ Debilitating Brand
 	KEY:Debilitating Brand ~ Kinslayer
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural.GreaterBrand
-	PREABILITY:1,CATEGORY=Archetype,Kinslayer
+	PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Kinslayer
 	DESC:A creature currently affected by the slayer's brand judgment takes a -2 penalty on attack rolls against the kinslayer who placed the brand.
 	SOURCEPAGE:p.99
 
@@ -2550,7 +2550,7 @@ Devastating Brand
 	KEY:Devastating Brand ~ Kinslayer
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural.GreaterBrand
-	PREABILITY:1,CATEGORY=Archetype,Kinslayer
+	PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Kinslayer
 	DESC:When the kinslayer attacks a creature that she has branded with her slayer's brand, she threatens a critical hit on a roll of 19-20. If the kinslayer is good, she also gains a +2 sacred bonus on all rolls to confirm critical hits on a branded creature.
 	SOURCEPAGE:p.99
 
@@ -2558,7 +2558,7 @@ Dual Brand
 	KEY:Dual Brand ~ Kinslayer
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural.GreaterBrand
-	PREABILITY:1,CATEGORY=Archetype,Kinslayer
+	PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Kinslayer
 	DESC:The kinslayer can have up to two creatures branded at a time.
 	SOURCEPAGE:p.99
 
@@ -2566,7 +2566,7 @@ Holy Brand
 	KEY:Holy Brand ~ Kinslayer
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural.GreaterBrand
-	PREABILITY:1,CATEGORY=Archetype,Kinslayer
+	PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Kinslayer
 	DESC:The kinslayer can use her brand on creatures with the evil subtype as well as undead.
 	SOURCEPAGE:p.99
 
@@ -2574,7 +2574,7 @@ Searing Brand
 	KEY:Searing Brand ~ Kinslayer
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural.GreaterBrand
-	PREABILITY:1,CATEGORY=Archetype,Kinslayer
+	PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Kinslayer
 	DESC:The kinslayer's slayer's brand deals an additional 1d6 points of damage for every five inquisitor levels she has. If the creature hit with the slayer's brand is particularly vulnerable to bright light, the damage dice of her slayer's brand increases to d8s. A kinslayer must be at least 6th level to take this modification.
 	SOURCEPAGE:p.99
 
@@ -2582,7 +2582,7 @@ Silver Brand
 	KEY:Silver Brand ~ Kinslayer
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.Supernatural.GreaterBrand
-	PREABILITY:1,CATEGORY=Archetype,Kinslayer
+	PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Kinslayer
 	DESC:The kinslayer can use her brand on lycanthropes and creatures with vulnerability to silver as well as undead.
 	SOURCEPAGE:p.99
 

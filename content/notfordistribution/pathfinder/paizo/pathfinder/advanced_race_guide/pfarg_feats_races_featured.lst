@@ -92,7 +92,7 @@ Improved Channel Force
 
 Metallic Wings
 	TYPE:General
-	PREFEAT:3,Angel Wings,Angelic Blood,TYPE.AngelicFlesh
+	PREFEAT:3,Angel Wings,Angelic Blood,Angelic Flesh
 	PRELEVEL:MIN=11
 	PRERACE:1,Aasimar
 	DESC:Your wing feathers are made of gleaming metal.
@@ -155,7 +155,8 @@ Nimble Striker
 
 
 ##Block: Dhampir Feats
-#  TODO: benefit has items that likely need PRExxx prerequisites and to be removed from benefit
+
+
 Blood Drinker
 	TYPE:General
 	PRERACE:1,Dhampir
@@ -207,13 +208,13 @@ Natural Charmer
 # Feat Name			Type							Required Ability									Required Feat												Required Lvl	Required Race	Req. Known Spell																																																																Required Stat		Define									Innate Spells													Description																				Stackable?	Multiple?	Choose		Bonus to Ability Pool						Spell Res.	Source Page		Description of the Benefits
 Greater Brand
 	TYPE:Teamwork
-	PREABILITY:1,CATEGORY=Archetype,Kinslayer
+	PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Kinslayer
 	PRERACE:1,Dhampir
 	DESC:A kinslayer learns to modify her slayer's brand judgment as she gains levels.
 	STACK:NO
 	MULT:YES
 	CHOOSE:NOCHOICE
-	BONUS:ABILITYPOOL|Special Ability|GreaterBrand|1
+	BONUS:ABILITYPOOL|Greater Brand|1
 	SOURCEPAGE:98
 	BENEFIT:Whenever she gains the ability to learn a teamwork feat, she can instead opt to learn one of the modifications to her slayer's brand judgment.
 

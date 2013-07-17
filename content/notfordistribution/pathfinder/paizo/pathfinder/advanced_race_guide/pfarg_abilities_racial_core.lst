@@ -994,7 +994,7 @@ Adoptive Parentage
 Adoptive Parentage (Dwarf)
 	CATEGORY:Special Ability
 	TYPE:AdoptiveParentageRace
-	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage
+	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage ~ Human
 	PRERACE:1,Human
 	DESC:You were adopted and raised by dwarves.
 	AUTO:WEAPONPROF|Battleaxe|Pick (Heavy)|Warhammer
@@ -1006,7 +1006,7 @@ Adoptive Parentage (Dwarf)
 Adoptive Parentage (Elf)
 	CATEGORY:Special Ability
 	TYPE:AdoptiveParentageRace
-	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage
+	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage ~ Human
 	PRERACE:1,Human
 	DESC:You were adopted and raised by elves.
 	AUTO:LANG|Elven
@@ -1018,7 +1018,7 @@ Adoptive Parentage (Elf)
 Adoptive Parentage (Gnome)
 	CATEGORY:Special Ability
 	TYPE:AdoptiveParentageRace
-	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage
+	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage ~ Human
 	PRERACE:1,Human
 	DESC:You were adopted and raised by gnomes.
 	AUTO:LANG|Gnome|Sylvan
@@ -1029,7 +1029,7 @@ Adoptive Parentage (Gnome)
 Adoptive Parentage (Orc)
 	CATEGORY:Special Ability
 	TYPE:AdoptiveParentageRace
-	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage
+	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage ~ Human
 	PRERACE:1,Human
 	DESC:You were adopted and raised by orcs.
 	AUTO:LANG|Orc
@@ -1041,7 +1041,7 @@ Adoptive Parentage (Orc)
 Adoptive Parentage (Halfling)
 	CATEGORY:Special Ability
 	TYPE:AdoptiveParentageRace
-	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage
+	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage ~ Human
 	PRERACE:1,Human
 	DESC:You were adopted and raised by halflings.
 	AUTO:LANG|Halfling
@@ -1053,7 +1053,7 @@ Adoptive Parentage (Halfling)
 Adoptive Parentage (Drow)
 	CATEGORY:Special Ability
 	TYPE:AdoptiveParentageRace
-	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage
+	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage ~ Human
 	PRERACE:1,Human
 	DESC:You were adopted and raised by drow.
 	AUTO:LANG|Elven|Undercommon
@@ -1064,7 +1064,7 @@ Adoptive Parentage (Drow)
 Adoptive Parentage (Grippli)
 	CATEGORY:Special Ability
 	TYPE:AdoptiveParentageRace
-	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage
+	PREABILITY:1,CATEGORY=Special Ability,Adoptive Parentage ~ Human
 	PRERACE:1,Human
 	DESC:You were adopted and raised by gripplis.
 	AUTO:LANG|Grippli
@@ -1197,7 +1197,7 @@ Heart of the Wilderness
 Mixed Heritage
 	KEY:Mixed Heritage ~ Human
 	CATEGORY:Special Ability
-	TYPE:RacialTraits.SpecialQuality.HumanRacialTrait.HumanSkilled
+	TYPE:RacialTraits.SpecialQuality.HumanRacialTrait.HumanBonusFeat
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Mixed Heritage ~ Human],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.HumanSkilled]
 	DESC:Often human civilization is defined by more than one characteristic. A human with this trait may select a second "Heart of the" racial trait.
 	BONUS:ABILITYPOOL|Heart Ability|1

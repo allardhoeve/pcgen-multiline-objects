@@ -317,11 +317,8 @@ Beast Rider
 	PRELEVEL:MIN=7
 	DESC:You gain the service of a monstrous companion or mount.
 	BONUS:FOLLOWERS|Animal Companion|-1
-	DEFINE:PaladinLVL|0
-	DEFINE:AnimalCompanionLVL|0
-	DEFINE:CavalierMountLVL|0
 	DEFINE:SpecialMountLVL|0
-	BONUS:VAR|SpecialMountLVL|min(TL,max(PaladinLVL+2,AnimalCompanionLVL+2,CavalierMountLVL+2))
+	BONUS:VAR|SpecialMountLVL|min(TL,max(var("PaladinLVL")+2,var("AnimalCompanionLVL")+2,var("CavalierMountLVL")+2))
 	FOLLOWERS:Special Mount|1
 	COMPANIONLIST:Special Mount|Companion (Elephant),Companion (Dinosaur (Pteranodon)),Companion (Rhinoceros),Companion (Dinosaur (Stegosaurus)),Companion (Dinosaur (Triceratops))
 	SOURCEPAGE:p.56

@@ -403,7 +403,8 @@ Whip (Training)
 	SOURCEPAGE:p.76
 	BONUS:SKILL|Handle Animal (Push Animal),Intimidate (Demoralize Animal)|2|TYPE=Circumstance
 	SPROP:When using the whip to demoralize a trained animal, the wielder may choose to fascinate the animal rather than causing it to become shaken for the same duration as the shaken condition, but the fascinate effect ends if line of sight between the wielder and the animal is broken.
-	OUTPUTNAME:Whip, TrainingTYPE:Goods.Tools.Mount.Racial.Human
+	OUTPUTNAME:Whip, Training
+	TYPE:Goods.Tools.Mount.Racial.Human
 
 #TODO: implement  bonuses only when char has 1 or more ranks in Survival
 Belt of Foraging
@@ -996,7 +997,7 @@ Trapmaker's Sack
 Tail Attachment (Long Lash)
 	OUTPUTNAME:Tail Attachment, Long Lash
 	PROFICIENCY:WEAPON|Kobold Tail Attachment
-	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Slashing.Reach.Finessable
+	TYPE:Weapon.Melee.Light.Natural.KoboldTailAttachment.Slashing.Reach.Finessable
 	COST:15
 	WT:1
 	CRITMULT:x2
@@ -1008,7 +1009,7 @@ Tail Attachment (Long Lash)
 Tail Attachment (Pounder)
 	OUTPUTNAME:Tail Attachment, Pounder
 	PROFICIENCY:WEAPON|Kobold Tail Attachment
-	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Bludgeoning.Finessable
+	TYPE:Weapon.Melee.Light.Natural.KoboldTailAttachment.Bludgeoning.Finessable
 	COST:1
 	WT:4
 	CRITMULT:x2
@@ -1020,7 +1021,7 @@ Tail Attachment (Pounder)
 Tail Attachment (Razored)
 	OUTPUTNAME:Tail Attachment, Razored
 	PROFICIENCY:WEAPON|Kobold Tail Attachment
-	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Slashing.Finessable
+	TYPE:Weapon.Melee.Light.Natural.KoboldTailAttachment.Slashing.Finessable
 	COST:3
 	WT:2
 	CRITMULT:x2
@@ -1032,7 +1033,7 @@ Tail Attachment (Razored)
 Tail Attachment (Spiked)
 	OUTPUTNAME:Tail Attachment, Spiked
 	PROFICIENCY:WEAPON|Kobold Tail Attachment
-	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Piercing.Finessable
+	TYPE:Weapon.Melee.Light.Natural.KoboldTailAttachment.Piercing.Finessable
 	COST:3
 	WT:2
 	CRITMULT:x3
@@ -1044,7 +1045,7 @@ Tail Attachment (Spiked)
 Tail Attachment (Sweeper)
 	OUTPUTNAME:Tail Attachment, Sweeper
 	PROFICIENCY:WEAPON|Kobold Tail Attachment
-	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Bludgeoning.Trip.Finessable
+	TYPE:Weapon.Melee.Light.Natural.KoboldTailAttachment.Bludgeoning.Trip.Finessable
 	COST:7
 	WT:3
 	CRITMULT:x2
@@ -1370,7 +1371,7 @@ Chain Belt
 	SPROP:If worn properly, the belt can hold up to 30 pounds of small items. A swimming undine can unwrap the belt as swift action if she needs to remove it to decrease her weight load.
 
 Potion Sponge
-	TYPE:TYPE:Goods.Container.General.Flask.Racial.Undine
+	TYPE:Goods.Container.General.Flask.Racial.Undine
 	CONTAINS:1|Liquid=1|SpellComponent=1|Poison=1
 	COST:2
 	SOURCEPAGE:p.177

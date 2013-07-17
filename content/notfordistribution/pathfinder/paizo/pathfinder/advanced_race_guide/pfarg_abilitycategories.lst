@@ -84,7 +84,7 @@ ABILITYCATEGORY:Bond of the Land Terrain
 	FRACTIONALPOOL:NO
 	CATEGORY:Special Ability
 	TYPE:GnomeBondTerrain
-	PLURAL:Bond of the Land Terrains
+	PLURAL:Bond of the Land Terrain Choices
 	DISPLAYLOCATION:Racial Abilities
 
 ABILITYCATEGORY:Adoptive Parentage Race
@@ -452,6 +452,18 @@ ABILITYCATEGORY:Native Cunning Option
 	TYPE:NativeCunningOption
 	PLURAL:Native Cunning Options
 	DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Greater Brand
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:GreaterBrand
+	PLURAL:Greater Brands
+	DISPLAYLOCATION:Class Abilities
+
+
 
 #
 # End
