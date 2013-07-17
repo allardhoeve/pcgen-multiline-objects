@@ -169,9 +169,9 @@ Weapon and Armor Proficiency
 	KEY:Weapon and Armor Proficiency ~ Cleric
 	CATEGORY:Special Ability
 	TYPE:ClericClassAbility.SpecialQuality
-	DESC:Clerics are proficient with all simple weapons, with all types of armor (light, medium, and heavy), and with shields (except tower shields). A cleric who chooses the War domain receives the Weapon Focus feat related to his deity's weapon as a bonus feat. He also receives the appropriate Martial Weapon Proficiency feat as a bonus feat, if the weapon falls into that category.
+	DESC:Clerics are proficient with all simple weapons, light armor, medium armor, and shields (except tower shields). Clerics are also proficient with the favored weapon of their deity
 	ABILITY:Internal|AUTOMATIC|Weapon Prof ~ Auto|Weapon Prof ~ Simple
-	ABILITY:Internal|AUTOMATIC|TYPE=ArmorProfHeavy|Shield Prof|!PREABILITY:1,CATEGORY=Archetype,TYPE.ClericArmorProficiency
+	ABILITY:Internal|AUTOMATIC|TYPE=ArmorProfMedium|Shield Prof|!PREABILITY:1,CATEGORY=Archetype,TYPE.ClericArmorProficiency
 	AUTO:WEAPONPROF|DEITYWEAPONS|!PREABILITY:1,CATEGORY=Archetype,TYPE.ClericWeaponProficiency
 
 Weapon and Armor Proficiency
