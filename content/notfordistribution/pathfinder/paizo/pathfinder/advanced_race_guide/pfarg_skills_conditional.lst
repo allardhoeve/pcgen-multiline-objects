@@ -163,10 +163,6 @@ Knowledge (History).MOD
 	BONUS:SKILL|Knowledge (History, Dwarves)|var("SKILL.Knowledge (History).MISC")
 	BONUS:SKILLRANK|Knowledge (History, Dwarves)|skillinfo("TOTALRANK","Knowledge (History)")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Knowledge (History, Dwarves).MISC"),var("SKILL.Knowledge (History).MISC")
 
-Concentration.MOD
-	BONUS:SKILL|Concentration (Arcane)|var("SKILL.Concentration.MISC")
-	BONUS:SKILLRANK|Concentration (Arcane)|skillinfo("TOTALRANK","Concentration")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Concentration (Arcane).MISC"),var("SKILL.Concentration.MISC")
-
 Survival.MOD
 	BONUS:SKILL|Survival (Sea)|var("SKILL.Survival.MISC")
 	BONUS:SKILLRANK|Survival (Sea)|skillinfo("TOTALRANK","Survival")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Survival (Sea).MISC"),var("SKILL.Survival.MISC")

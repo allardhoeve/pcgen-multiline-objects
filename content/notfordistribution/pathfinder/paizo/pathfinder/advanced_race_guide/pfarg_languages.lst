@@ -12,7 +12,9 @@ SOURCELONG:Advanced Race Guide
 #Catfolk	TYPE:Spoken.Written.Read
 #D'ziriak	TYPE:Spoken
 #Grippli	TYPE:Spoken.Written.Read
-#Samsaran	TYPE:Spoken.Written.Read
+Samsaran
+	TYPE:Spoken.Written.Read
+
 Strix
 	TYPE:Spoken.Written.Read
 

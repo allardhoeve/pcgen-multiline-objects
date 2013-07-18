@@ -1091,9 +1091,7 @@ Fetish Mask
 	SOURCEPAGE:p.140
 	SPROP:A Scarred Witch Doctor forms a bond with a wooden mask.
 	BONUS:SKILL|Heal,Intimidate|2
-	ASPECT:SaveBonus|+2 vs Pain
 	PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Scarred Witch Doctor
-	VISIBLE:QUALIFY
 
 
 
@@ -1272,7 +1270,7 @@ Elixer of Forceful Exhalation
 	WT:1
 	SOURCEPAGE:p.160
 	SPROP:The drinker can exhale up to three 15-foot-long Gusts of Wind (as the spell), after which the skill bonuses end.
-	TEMPBONUS:ANYPC|SKILL|Acrobatics (Jump),Swim|4|TYPE=Competence
+	BONUS:SKILL|Acrobatics (Jump),Swim|4|TYPE=Competence|PREAPPLY:ANYPC
 
 
 
@@ -1393,7 +1391,6 @@ Slippers of the Triton
 	TYPE:Magic.Wondrous.Boot
 	COST:56000
 	WT:1
-	MOVE:Swim,30|!PREMOVE:1,Swim=1
 	SOURCEPAGE:p.178
 	BONUS:MOVEADD|TYPE.Swim|10|TYPE=Enhancement|PREMOVE:1,Swim=1
 	ABILITY:Special Ability|AUTOMATIC|Water Breathing
@@ -1436,13 +1433,12 @@ Sea-Knife
 
 
 ###Block: Grippli Equipment
-# Equipment Name			Type					Cost		Source Page		Special Property																																												Effect 1d4 Dex and confused for 1 rnd
+# Equipment Name			Type					Cost		Source Page		Special Property																																												
 Black Spider Marsh Poison
 	TYPE:Goods.Poison.Consumable
 	COST:800
 	SOURCEPAGE:p.191
-	SPROP:Injury; Fort DC 14; Freq 1 rnd (6); Cure 2 consecutive saves;
-	EFFECT:1d4 Dex and confused for 1 rnd:
+	SPROP:Injury; Fort DC 14; Freq 1 rnd (6); Effect 1d4 Dex and confused for 1 rnd; Cure 2 consecutive saves
 
 Bubble Vault
 	TYPE:Magic.Wondrous
@@ -1615,7 +1611,7 @@ Corset of the Vishkanya
 	WT:1
 	SOURCEPAGE:p.209
 	SPROP:The wearer can compress herself to fit through tight spaces as though affected by a Squeeze spell for up to 10 rounds per day. While using the corset's magic, she gains a +5 bonus on Escape Artist checks.
-	TEMPBONUS:PC|SKILL|Escape Artist|5
+	BONUS:SKILL|Escape Artist|5|PREAPPLY:PC
 
 
 

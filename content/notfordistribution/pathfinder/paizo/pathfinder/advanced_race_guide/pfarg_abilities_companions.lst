@@ -337,7 +337,7 @@ Charisma Bonus
 
 
 ###Block: Wild Caller Eidolon ability mods
-CATEGORY=Special Ability|Magic Attacks.MOD
+CATEGORY=Special Ability|Evolution_Magic_Attacks.MOD
 	!PRERACE:1,Wild Caller Eidolon (Biped),Wild Caller Eidolon (Quadruped),Wild Caller Eidolon (Serpentine)
 
 CATEGORY=Special Ability|Evolution_Skilled.MOD
@@ -374,7 +374,7 @@ CATEGORY=Special Ability|Evolution_Immune_Cold.MOD
 CATEGORY=Special Ability|Evolution_Immune_Fire.MOD
 	!PRERACE:1,Wild Caller Eidolon (Biped),Wild Caller Eidolon (Quadruped),Wild Caller Eidolon (Serpentine)
 
-CATEGORY=Special Ability|Evolution_Immune_Electricity.MOD
+CATEGORY=Special Ability|Evolution_Immune_Elect.MOD
 	!PRERACE:1,Wild Caller Eidolon (Biped),Wild Caller Eidolon (Quadruped),Wild Caller Eidolon (Serpentine)
 
 CATEGORY=Special Ability|Evolution_Immune_Sonic.MOD
@@ -410,10 +410,10 @@ CATEGORY=Special Ability|Evolution_Breath_Weap_Cone_Cold.MOD
 CATEGORY=Special Ability|Evolution_Breath_Weap_Cone_Electricity.MOD
 	!PRERACE:1,Wild Caller Eidolon (Biped),Wild Caller Eidolon (Quadruped),Wild Caller Eidolon (Serpentine)
 
-CATEGORY=Special Ability|volution_Breath_Weap_Cone_Fire.MOD
+CATEGORY=Special Ability|Evolution_Breath_Weap_Cone_Fire.MOD
 	!PRERACE:1,Wild Caller Eidolon (Biped),Wild Caller Eidolon (Quadruped),Wild Caller Eidolon (Serpentine)
 
-CATEGORY=Special Ability|volution_Breath_Weap_Line_Acid.MOD
+CATEGORY=Special Ability|Evolution_Breath_Weap_Line_Acid.MOD
 	!PRERACE:1,Wild Caller Eidolon (Biped),Wild Caller Eidolon (Quadruped),Wild Caller Eidolon (Serpentine)
 
 CATEGORY=Special Ability|Evolution_Breath_Weap_Line_Cold.MOD
@@ -527,8 +527,7 @@ CATEGORY=Special Ability|Evolution_Minor_Burning_Hands_3.MOD
 CATEGORY=Special Ability|Evolution_Minor_Comprehend_Languages_1.MOD
 	!PRERACE:1,Wild Caller Eidolon (Biped),Wild Caller Eidolon (Quadruped),Wild Caller Eidolon (Serpentine)
 
-CATEGORY=Special Ability|Evolution_Minor_Comprehend_Languages_3
-	.MOD
+CATEGORY=Special Ability|Evolution_Minor_Comprehend_Languages_3.MOD
 	!PRERACE:1,Wild Caller Eidolon (Biped),Wild Caller Eidolon (Quadruped),Wild Caller Eidolon (Serpentine)
 
 CATEGORY=Special Ability|Evolution_Minor_Cure_Light_Wounds_1.MOD

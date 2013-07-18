@@ -245,13 +245,46 @@ Elemental Resistance
 	TYPE:RacialTraits.SpecialQuality.Extraordinary.ElfRacialTrait.ElfImmunities
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Elemental Resistance ~ Elf],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.ElfImmunities]
 	DESC:Elves who dwell in the most extreme environments, from arctic wastelands to volcanic plains, develop natural resistance to the dangers of their homelands over the course of a few generations. Elves with this racial trait gain elemental resistance 5 to acid, cold, electricity, or fire. This choice is made at character creation, and once made it cannot be changed.
-	MULT:NO
-	CHOOSE:ABILITY|TYPE=Special Ability|Resistance to Acid,Resistance to Cold,Resistance to Electricity,Resistance to Fire
-	SELECT:1
-	ABILITY:Special Ability|AUTOMATIC|%LIST
-	BONUS:VAR|AcidResistanceBonus,ColdResistanceBonus,FireResistanceBonus,ElectricityResistanceBonus|5
+	BONUS:ABILITYPOOL|Elemental Resistance Choice|1
 	COST:0
 	SOURCEPAGE:p.22
+
+
+
+##Block: Elemental Resistance choices
+Acid
+	KEY:Elemental Resistance ~ Acid
+	CATEGORY:Special Ability
+	TYPE:RacialTraits.SpecialQuality.ElementalResistanceChoice
+	VISIBLE:DISPLAY
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Acid
+	BONUS:VAR|AcidResistanceBonus|5
+
+Cold
+	KEY:Elemental Resistance ~ Cold
+	CATEGORY:Special Ability
+	TYPE:RacialTraits.SpecialQuality.ElementalResistanceChoice
+	VISIBLE:DISPLAY
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Cold
+	BONUS:VAR|ColdResistanceBonus|5
+
+Electricity
+	KEY:Elemental Resistance ~ Electricity
+	CATEGORY:Special Ability
+	TYPE:RacialTraits.SpecialQuality.ElementalResistanceChoice
+	VISIBLE:DISPLAY
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Electricity
+	BONUS:VAR|ElectricityResistanceBonus|5
+
+Fire
+	KEY:Elemental Resistance ~ FIre
+	CATEGORY:Special Ability
+	TYPE:RacialTraits.SpecialQuality.ElementalResistanceChoice
+	VISIBLE:DISPLAY
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Fire
+	BONUS:VAR|FireResistanceBonus|5
+
+
 
 Envoy
 	KEY:Envoy ~ Elf
@@ -345,7 +378,6 @@ Academician
 	TYPE:RacialTraits.SpecialQuality.GnomeRacialTrait.GnomeObsessive
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Academician ~ Gnome],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.GnomeObsessive]
 	DESC:Some gnomes are more academically inclined than their kin. Gnomes with this racial trait gain a +2 bonus on any one Knowledge skill.
-	MULT:NO
 	CHOOSE:SKILL|TYPE=Knowledge
 	SELECT:1
 	BONUS:SKILL|%LIST|2
