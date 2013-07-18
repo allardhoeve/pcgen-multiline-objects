@@ -290,6 +290,7 @@ Strength Bonus
 	KEY:Strength Bonus ~ Shaitan Binder Eidolon
 	CATEGORY:Special Ability
 	TYPE:ShaitanBinderEidolonStatBonus
+	PRERACE:1,Shaitan Binder Eidolon (Biped)
 	BONUS:STAT|STR|2
 	DESC:Shaitan Binder Eidolons gain +2 to 1 ability score as long as they stay in biped form.
 	
@@ -298,6 +299,7 @@ Dexterity Bonus
 	KEY:Dexterity Bonus ~ Shaitan Binder Eidolon
 	CATEGORY:Special Ability
 	TYPE:ShaitanBinderEidolonStatBonus
+	PRERACE:1,Shaitan Binder Eidolon (Biped)
 	BONUS:STAT|DES|2
 	DESC:Shaitan Binder Eidolons gain +2 to 1 ability score as long as they stay in biped form.
 	
@@ -306,6 +308,7 @@ Constitution Bonus
 	KEY:Constitution Bonus ~ Shaitan Binder Eidolon
 	CATEGORY:Special Ability
 	TYPE:ShaitanBinderEidolonStatBonus
+	PRERACE:1,Shaitan Binder Eidolon (Biped)
 	BONUS:STAT|CON|2
 	DESC:Shaitan Binder Eidolons gain +2 to 1 ability score as long as they stay in biped form.
 	
@@ -314,6 +317,7 @@ Intelligence Bonus
 	KEY:Intelligence Bonus ~ Shaitan Binder Eidolon
 	CATEGORY:Special Ability
 	TYPE:ShaitanBinderEidolonStatBonus
+	PRERACE:1,Shaitan Binder Eidolon (Biped)
 	BONUS:STAT|INT|2
 	DESC:Shaitan Binder Eidolons gain +2 to 1 ability score as long as they stay in biped form.
 	
@@ -322,6 +326,7 @@ Wisdom Bonus
 	KEY:Wisdom Bonus ~ Shaitan Binder Eidolon
 	CATEGORY:Special Ability
 	TYPE:ShaitanBinderEidolonStatBonus
+	PRERACE:1,Shaitan Binder Eidolon (Biped)
 	BONUS:STAT|WIS|2
 	DESC:Shaitan Binder Eidolons gain +2 to 1 ability score as long as they stay in biped form.
 	
@@ -330,6 +335,7 @@ Charisma Bonus
 	KEY:Charisma Bonus ~ Shaitan Binder Eidolon
 	CATEGORY:Special Ability
 	TYPE:ShaitanBinderEidolonStatBonus
+	PRERACE:1,Shaitan Binder Eidolon (Biped)
 	BONUS:STAT|CHA|2
 	DESC:Shaitan Binder Eidolons gain +2 to 1 ability score as long as they stay in biped form.
 	

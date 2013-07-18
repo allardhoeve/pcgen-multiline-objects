@@ -365,5 +365,5 @@ MASTERBONUSRACE:Familiar (Weasel)
 ###Block: Modify Eidolon for Shaitan Binder
 FOLLOWER:EidolonLVL=1
 	TYPE:Eidolon
-	BONUS:ABILITYPOOL|Shaitan Binder Eidolon Stat Bonus|1|PREABILITY:1,Archetype,Summoner Archetype ~ Shaitan Binder
+	BONUS:ABILITYPOOL|Shaitan Binder Eidolon Stat Bonus|1|PRERACE:1,Shaitan Binder Eidolon (Biped)
 

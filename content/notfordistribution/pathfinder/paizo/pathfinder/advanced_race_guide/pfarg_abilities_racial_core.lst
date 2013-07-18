@@ -378,6 +378,8 @@ Academician
 	TYPE:RacialTraits.SpecialQuality.GnomeRacialTrait.GnomeObsessive
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Academician ~ Gnome],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.GnomeObsessive]
 	DESC:Some gnomes are more academically inclined than their kin. Gnomes with this racial trait gain a +2 bonus on any one Knowledge skill.
+	!PREABILITY:1,CATEGORY=Special Ability,Academician ~ Gnome
+	MULT:YES
 	CHOOSE:SKILL|TYPE=Knowledge
 	SELECT:1
 	BONUS:SKILL|%LIST|2
@@ -505,7 +507,7 @@ Explorer
 	TYPE:RacialTraits.SpecialQuality.GnomeRacialTrait.GnomeHatred.GnomeObsessive
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Explorer ~ Gnome],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.GnomeHatred,TYPE.GnomeObsessive]
 	DESC:Many gnomes are obsessed with seeing as much of the world as possible, rather than perfecting some specific talent or vocation. These gnomes gain a +2 racial bonus on Climb checks and checks for one Knowledge skill of their choice.
-	MULT:NO
+	MULT:YES
 	CHOOSE:SKILL|Knowledge%
 	SELECT:1
 	BONUS:SKILL|Climb,%LIST|2|TYPE=Racial
@@ -706,7 +708,7 @@ Bonus Skill Point
 	STACK:YES
 	MULT:YES
 	CHOOSE:SKILL|TYPE=Charisma|TYPE=Dexterity|TYPE=Intelligence|TYPE=Strength|TYPE=Wisdom
-	BONUS:SKILLRANK|LIST|1
+	BONUS:SKILLRANK|%LIST|1
 
 
 
@@ -903,7 +905,7 @@ Ingratiating
 	TYPE:RacialTraits.SpecialQuality.HalflingRacialTrait.HalflingKeenSenses.HalflingSureFooted
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Ingratiating ~ Halfling],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.HalflingKeenSenses,TYPE.HalflingSurefooted]
 	DESC:Halflings often survive at the whims of larger, more aggressive races. Because of this, they go out of their way to make themselves more useful, or at least entertaining, to larger folk. Halflings with this racial trait gain a +2 bonus on skill checks for a single Perform skill of their choice, and Perform is always a class skill for them. They also gain a +2 bonus on Craft and Profession checks.
-	MULT:NO
+	MULT:YES
 	CHOOSE:SKILL|Perform%
 	SELECT:1
 	BONUS:SKILL|%LIST,TYPE=Craft,TYPE=Profession|2
@@ -948,7 +950,7 @@ Practicality
 	TYPE:RacialTraits.SpecialQuality.HalflingRacialTrait.HalflingSureFooted.HalflingFearless
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Practicality ~ Halfling],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.HalflingSureFooted,TYPE.HalflingFearless]
 	DESC:Halflings are grounded in hard work and common sense. Halflings with this racial trait gain a +2 bonus on any one Craft or Profession skill, as well as on Sense Motive checks and saves against illusions.
-	MULT:NO
+	MULT:YES
 	CHOOSE:NUMCHOICES=1|SKILL|TYPE=Craft|TYPE=Profession
 	BONUS:SKILL|%LIST,Sense Motive|2
 	COST:0
@@ -1145,7 +1147,7 @@ Heart of the Fields
 	TYPE:RacialTraits.SpecialQuality.HumanRacialTrait.HumanSkilled.HeartAbility
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Heart of the Fields ~ Human],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.HumanSkilled]
 	DESC:Humans born in rural areas are used to hard labor. They gain a bonus equal to half their character level to any one Craft or Profession skill, and once per day they may ignore an effect that would cause them to become fatigued or exhausted.
-	MULT:NO
+	MULT:YES
 	CHOOSE:SKILL|Craft%|Profession%
 	SELECT:1
 	BONUS:SKILL|%LIST|TL/2

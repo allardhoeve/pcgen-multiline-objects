@@ -628,6 +628,7 @@ Huntmaster
 	PRERACE:1,Human
 	PRESKILL:1,Handle Animal=1
 	DESC:You are an expert trainer of horses, hounds, falcons, or hunting cats.
+	MULT:YES
 	CHOOSE:STRING|Bird|Dog|Small Cat|Horse
 	SELECT:1
 	BONUS:SKILL|Handle Animal (%LIST),Knowledge (%LIST)|2

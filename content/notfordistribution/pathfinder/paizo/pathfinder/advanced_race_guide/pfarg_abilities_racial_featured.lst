@@ -629,7 +629,7 @@ Dragon-Scaled
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dragon-Scaled ~ Kobold],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.KoboldArmor]
 	DEFINE:AcidResistanceBonus|5
 	DESC:Some kobolds are hatched with scales of such vivid color that their connection to a particular sort of chromatic dragon seems undeniable. Whether this coloration is just a quirk of a stray egg or a trait shared by all the members of a tribe, these kobolds gain a resistance that makes them especially suited to work alongside dragons matching the color of the kobold's scales.
-	BONUS:ABILITYPOOL|Kobold Dragon Scale Color|1
+	BONUS:ABILITYPOOL|Special Ability|Kobold Dragon Scale Color|1
 	COST:0
 	SOURCEPAGE:p.132
 
