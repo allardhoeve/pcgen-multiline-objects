@@ -1491,7 +1491,7 @@ Underfoot
 
 Verminheart
 	TYPE:General
-	PREABILITY:1,CATEGORY=Special Ability,Wild Empathy
+	PREABILITY:1,CATEGORY=Special Ability,Wild Empathy,TYPE.WildEmpathy
 	DESC:You have a special bond with things that creep, crawl, skitter, and sting.
 	SOURCEPAGE:p.173
 	BENEFIT:You may target vermin with spells and special abilities that only affect animals (although they are still affected by spells targeting vermin as well). You may use wild empathy to influence vermin as easily as you influence animals.

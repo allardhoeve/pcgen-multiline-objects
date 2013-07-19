@@ -50,7 +50,7 @@ CATEGORY=Archetype|Druid Archetype ~ Wolf Shaman.MOD
 #
 Shaman Wild Shape
 	CATEGORY:Special Ability
-	TYPE:SpecialQuality.Supernatural
+	TYPE:SpecialQuality.Supernatural.DruidWildshape
 	DEFINE:ShamanWildShapeTimes|0
 	DEFINE:ShamanWildShapeDuration|0
 	DEFINE:ShamanWildShapeProgression|0

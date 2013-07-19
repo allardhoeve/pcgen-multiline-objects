@@ -2268,7 +2268,7 @@ Wolf Shaman
 Wild Empathy
 	KEY:Wild Empathy ~ Aquatic Druid
 	CATEGORY:Special Ability
-	TYPE:ArchetypeAquaticDruid.SpecialQuality.Extraordinary
+	TYPE:ArchetypeAquaticDruid.SpecialQuality.Extraordinary.WildEmpathy
 	DESC:An aquatic druid's wild empathy functions only on creatures that have a swim speed or the aquatic or water subtype; however, she can improve the attitude of any such creature with Intelligence 2 or less regardless of type, including mindless creatures.
 	SOURCEPAGE:p.98
 
@@ -2453,7 +2453,7 @@ Nature Bond
 Wild Empathy
 	KEY:Wild Empathy ~ Cave Druid
 	CATEGORY:Special Ability
-	TYPE:ArchetypeCaveDruid.SpecialQuality.Extraordinary
+	TYPE:ArchetypeCaveDruid.SpecialQuality.Extraordinary.WildEmpathy
 	DESC:A cave druid can influence oozes, rather than magical beasts, with a -4 penalty on her wild empathy check.
 	SOURCEPAGE:p.99
 
@@ -2887,7 +2887,7 @@ Nature Bond
 Wild Empathy
 	KEY:Wild Empathy ~ Eagle Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary
+	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary.WildEmpathy
 	DESC:An eagle shaman can use wild empathy with birds as a full-round action with a +4 bonus.
 	SOURCEPAGE:p.102
 
@@ -2953,7 +2953,7 @@ Nature Bond
 Wild Empathy
 	KEY:Wild Empathy ~ Lion Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary
+	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary.WildEmpathy
 	DESC:A lion shaman can use wild empathy with felines as a full-round action with a +4 bonus.
 	SOURCEPAGE:p.103
 
@@ -3019,7 +3019,7 @@ Nature Bond
 Wild Empathy
 	KEY:Wild Empathy ~ Serpent Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary
+	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary.WildEmpathy
 	DESC:A serpent shaman can use wild empathy with reptiles as a full-round action with a +4 bonus.
 	SOURCEPAGE:p.103
 
@@ -3085,7 +3085,7 @@ Nature Bond
 Wild Empathy
 	KEY:Wild Empathy ~ Wolf Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary
+	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary.WildEmpathy
 	DESC:A wolf shaman can use wild empathy with canines as a full-round action with a +4 bonus.
 	SOURCEPAGE:p.103
 
