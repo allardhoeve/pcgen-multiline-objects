@@ -2186,7 +2186,7 @@ Urban Druid
 Bear Shaman
 	KEY:Druid Archetype ~ Bear Shaman
 	CATEGORY:Archetype
-	TYPE:Archetype.DruidArchetype.DruidThousandFaces.DruidVenomImmunity.DruidWildShape.DruidNatureBond
+	TYPE:Archetype.DruidArchetype.DruidThousandFaces.DruidVenomImmunity.DruidWildShape
 	PRECLASS:1,Druid=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Bear Shaman],[!PREABILITY:1,CATEGORY=Archetype,TYPE.DruidThousandFaces,TYPE.DruidVenomImmunity,TYPE.DruidWildShape,TYPE.DruidNatureBond]
 	DESC:A shaman with this focus calls upon the mighty bear, titan of the woodlands and mountains, a paragon of strength and ferocity, and yet also a quiet protector rich in wisdom.
@@ -2201,7 +2201,7 @@ Bear Shaman
 Eagle Shaman
 	KEY:Druid Archetype ~ Eagle Shaman
 	CATEGORY:Archetype
-	TYPE:Archetype.DruidArchetype.DruidThousandFaces.DruidVenomImmunity.DruidWildShape.DruidNatureBond
+	TYPE:Archetype.DruidArchetype.DruidThousandFaces.DruidVenomImmunity.DruidWildShape
 	PRECLASS:1,Druid=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Eagle Shaman],[!PREABILITY:1,CATEGORY=Archetype,TYPE.DruidThousandFaces,TYPE.DruidVenomImmunity,TYPE.DruidWildShape,TYPE.DruidNatureBond]
 	DESC:A shaman with this totem calls upon the noble eagle, stern and proud, soaring high above the world with keen and pitiless eyes that miss nothing.
@@ -2216,7 +2216,7 @@ Eagle Shaman
 Lion Shaman
 	KEY:Druid Archetype ~ Lion Shaman
 	CATEGORY:Archetype
-	TYPE:Archetype.DruidArchetype.DruidThousandFaces.DruidVenomImmunity.DruidWildShape.DruidNatureBond
+	TYPE:Archetype.DruidArchetype.DruidThousandFaces.DruidVenomImmunity.DruidWildShape
 	PRECLASS:1,Druid=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Lion Shaman],[!PREABILITY:1,CATEGORY=Archetype,TYPE.DruidThousandFaces,TYPE.DruidVenomImmunity,TYPE.DruidWildShape,TYPE.DruidNatureBond]
 	DESC:A shaman with this totem calls upon the proud lion, imposing and majestic, the mighty leader of deadly hunters.
@@ -2231,7 +2231,7 @@ Lion Shaman
 Serpent Shaman
 	KEY:Druid Archetype ~ Serpent Shaman
 	CATEGORY:Archetype
-	TYPE:Archetype.DruidArchetype.DruidThousandFaces.DruidVenomImmunity.DruidWildShape.DruidNatureBond
+	TYPE:Archetype.DruidArchetype.DruidThousandFaces.DruidVenomImmunity.DruidWildShape
 	PRECLASS:1,Druid=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Serpent Shaman],[!PREABILITY:1,CATEGORY=Archetype,TYPE.DruidThousandFaces,TYPE.DruidVenomImmunity,TYPE.DruidWildShape,TYPE.DruidNatureBond]
 	DESC:A shaman with this totem calls upon the cunning serpent, the stealthy deceiver who draws the weak minded in and strikes while they are unaware. Some hate its treacherous nature, while others praise its thoughtful pragmatism.
@@ -2246,7 +2246,7 @@ Serpent Shaman
 Wolf Shaman
 	KEY:Druid Archetype ~ Wolf Shaman
 	CATEGORY:Archetype
-	TYPE:Archetype.DruidArchetype.DruidThousandFaces.DruidVenomImmunity.DruidWildShape.DruidNatureBond
+	TYPE:Archetype.DruidArchetype.DruidThousandFaces.DruidVenomImmunity.DruidWildShape
 	PRECLASS:1,Druid=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Wolf Shaman],[!PREABILITY:1,CATEGORY=Archetype,TYPE.DruidThousandFaces,TYPE.DruidVenomImmunity,TYPE.DruidWildShape,TYPE.DruidNatureBond]
 	DESC:A shaman with this totem calls upon the clever wolf, capable of roaming alone yet wise enough to run with a pack when facing dangers too great for one alone.
