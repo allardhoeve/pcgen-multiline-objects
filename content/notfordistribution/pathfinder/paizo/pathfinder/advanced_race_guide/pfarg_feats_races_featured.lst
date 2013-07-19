@@ -546,7 +546,7 @@ Draconic Aspect
 	TYPE:General
 	PRERACE:1,Kobold
 	DESC:You possess some of the qualities of your dragon ancestors.
-	BONUS:ABILITYPOOL|KoboldDragonScaleColor|1|!PREABILITY:1,CATEGORY=Special Ability,Dragon-Scaled
+	BONUS:ABILITYPOOL|Special Ability|Kobold Dragon Scale Color|1|!PREABILITY:1,CATEGORY=Special Ability,Dragon-Scaled
 	BONUS:COMBAT|AC|1|TYPE=NaturalArmor|PREABILITY:1,CATEGORY=Special Ability,Dragon-Scaled
 	SOURCEPAGE:p.136
 	BENEFIT:Your scales take on the color and some of the resistances of one of the chromatic dragons. Choose one of the following chromatic dragon types: black (acid), blue (electricity), green (acid), red (fire), or white (cold). Your scales take on the color of that dragon, and you gain resistance 5 to the dragon color's corresponding energy type. If you have the dragon-scaled racial trait, your scale color does not change and you gain a +1 natural armor bonus instead.
@@ -707,7 +707,7 @@ Dwarf Blooded
 	TYPE:General
 	PRERACE:1,Oread
 	DESC:You have dwarven blood coursing through your veins.
-	ABILITY:Special Ability|AUTOMATIC|Steady ~ Dwarf,Stonecunning ~ Dwarf
+	ABILITY:Special Ability|AUTOMATIC|Steady ~ Dwarf|Stonecunning ~ Dwarf
 	SOURCEPAGE:p.147
 	BENEFIT:Your dwarven heritage manifests in two ways. First, your speed is never modified by armor or encumbrance, as the dwarf slow and steady racial trait. Second, you gain the stonecunning dwarf racial trait.
 

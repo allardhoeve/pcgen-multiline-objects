@@ -268,7 +268,7 @@ Human Spirit
 
 Multitalented Mastery
 	TYPE:General
-	PREABILITY:1,CATEGORY=Special Ability,Multitalented
+	PREABILITY:1,CATEGORY=Special Ability,Multitalented ~ Half-Elf
 	PRELEVEL:MIN=5
 	PRERACE:1,Half-elf
 	DEFINE:FavoredClassLevels|count("ABILITIES","TYPE=FavoredClassBonus")
@@ -569,8 +569,7 @@ Bestow Luck
 	BENEFIT:You gain an extra use per day of your Defiant Luck ability. You can also use your Inexplicable Luck ability to grant an ally that can see and hear its benefit as an immediate action.
 
 Critical Versatility
-	TYPE:Combat
-	PRECLASS:1,Fighter=11
+	TYPE:CombatPRECLASS:1,Fighter=11
 	PRERACE:1,Human
 	DESC:An open mind and combat training grant versatility to your critical hits.
 	SOURCEPAGE:p.76
@@ -627,6 +626,7 @@ Huntmaster
 	PREABILITY:1,CATEGORY=Special Ability,Nature's Bond ~ Animal Companion,Special Mount,Companion ~ Hunter's Bond
 	PRERACE:1,Human
 	PRESKILL:1,Handle Animal=1
+	!PREFEAT:1,Huntmaster
 	DESC:You are an expert trainer of horses, hounds, falcons, or hunting cats.
 	MULT:YES
 	CHOOSE:STRING|Bird|Dog|Small Cat|Horse

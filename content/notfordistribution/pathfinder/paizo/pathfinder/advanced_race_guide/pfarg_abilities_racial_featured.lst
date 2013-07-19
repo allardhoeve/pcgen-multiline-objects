@@ -1306,8 +1306,8 @@ Enhanced Senses
 	TYPE:CatfolkExemplarOption.Extraordinary
 	PRERACE:1,Catfolk
 	DESC:Your feline traits are more defined and prominent than those of other members of your race.
-	ABILITY:Special Ability|AUTOMATIC|Scent|[!PREABILITY:1,CATEGORY=Special Ability,Scent]
-	ABILITY:Special Ability|AUTOMATIC|Low-Light Vision|[!PREABILITY:1,CATEGORY=Special Ability,Low-Light Vision]
+	ABILITY:Special Ability|AUTOMATIC|Scent|!PREABILITY:1,CATEGORY=Special Ability,Scent
+	ABILITY:Special Ability|AUTOMATIC|Low-Light Vision|!PREABILITY:1,CATEGORY=Special Ability,Low-Light Vision
 	SOURCEPAGE:p.93
 	BENEFIT:If you have low-light vision, you gain the scent catfolk racial trait. If you have the scent racial trait, you gain low-light vision.
 
@@ -1326,7 +1326,7 @@ Sharp Claws
 	TYPE:CatfolkExemplarOption.Extraordinary
 	PRERACE:1,Catfolk
 	DESC:Your feline traits are more defined and prominent than those of other members of your race.
-	ABILITY:Special Ability|AUTOMATIC|Cat's Claws ~ Catfolk|[!PREABILITY:1,CATEGORY=Special Ability,Cat's Claws ~ Catfolk]|PREFEAT:1,[Aspect of the Beast(Claws of the Beast)]
+	ABILITY:Special Ability|AUTOMATIC|Cat's Claws ~ Catfolk|!PREABILITY:1,CATEGORY=Special Ability,Cat's Claws ~ Catfolk|PREFEAT:1,[Aspect of the Beast(Claws of the Beast)]
 	BONUS:WEAPONPROF=Claws|DAMAGESIZE|1|PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Cat's Claws ~ Catfolk],[PREFEAT:1,Aspect of the Beast(Claws of the Beast)]
 	SOURCEPAGE:p.93
 	BENEFIT:If you do not have the cat's claws racial trait or the claws of the beast manifestation from the Aspect of the Beast feat , you gain the cat's claws racial trait. If you have either the cat's claws racial trait or the claws of the beast manifestation, your claw damage increases to 1d6.
@@ -1455,6 +1455,8 @@ Black
 	DESC:You possess some of the qualities of your dragon ancestors.
 	SOURCEPAGE:p.136
 	BENEFIT:Your scales take on the color and some of the resistances of one of the chromatic dragons. Your scales turn black and you gain resistance 5 to acid.
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Acid
+	BONUS:VAR|AcidResistanceBonus|5
 
 Blue
 	KEY:Blue ~ Dragon Scaled
@@ -1464,6 +1466,8 @@ Blue
 	DESC:You possess some of the qualities of your dragon ancestors.
 	SOURCEPAGE:p.136
 	BENEFIT:Your scales take on the color and some of the resistances of one of the chromatic dragons. Your scales turn blue and you gain resistance 5 to electricity
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Electricity
+	BONUS:VAR|ElectricityResistanceBonus|5
 
 Green
 	KEY:Green ~ Dragon Scaled
@@ -1473,6 +1477,8 @@ Green
 	DESC:You possess some of the qualities of your dragon ancestors.
 	SOURCEPAGE:p.136
 	BENEFIT:Your scales take on the color and some of the resistances of one of the chromatic dragons. Your scales turn green and you gain resistance 5 to acid.
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Acid
+	BONUS:VAR|AcidResistanceBonus|5
 
 Red
 	KEY:Red ~ Dragon Scaled
@@ -1482,6 +1488,8 @@ Red
 	DESC:You possess some of the qualities of your dragon ancestors.
 	SOURCEPAGE:p.136
 	BENEFIT:Your scales take on the color and some of the resistances of one of the chromatic dragons. Your scales turn red and you gain resistance 5 to fire.
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Fire
+	BONUS:VAR|FireResistanceBonus|5
 
 White
 	KEY:White ~ Dragon Scaled
@@ -1491,6 +1499,8 @@ White
 	DESC:You possess some of the qualities of your dragon ancestors.
 	SOURCEPAGE:p.136
 	BENEFIT:Your scales take on the color and some of the resistances of one of the chromatic dragons. Your scales turn white and you gain resistance 5 to cold.
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Cold
+	BONUS:VAR|ColdResistanceBonus|5
 
 
 

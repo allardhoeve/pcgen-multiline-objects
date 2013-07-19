@@ -8,7 +8,7 @@ SOURCELONG:Advanced Race Guide
 # ORIGINAL ENTRY DATE: none
 # Spell Name	Classes of caster					School			Sub-School			Spell Descriptors			Type		Components	Casting Time			Range		Target Area or Effect	Duration			Save Info			Spell Resistance	Description																																																																																																Source Page
 Sow Thought
-	CLASSES:Bard,Sorceror,Wizard,Witch=1
+	CLASSES:Bard,Sorcerer,Wizard,Witch=1
 	SCHOOL:Enchantment
 	SUBSCHOOL:Compulsion
 	DESCRIPTOR:Mind-Affecting
@@ -79,7 +79,7 @@ Toilsome Chant
 ###Block: Elven Spells
 # Spell Name		Classes of caster									School		Sub-School		Type				Components	Casting Time			Range			Target Area or Effect	Duration					Save Info					Spell Resistance	Description																																																																																																																																																																																																																																																																																													Source Page		Temporary Bonus
 Blend
-	CLASSES:Alchemist,Druid,Magus,Ranger,Sorceror,Wizard,Witch=1
+	CLASSES:Alchemist,Druid,Magus,Ranger,Sorcerer,Wizard,Witch=1
 	SCHOOL:Illusion
 	SUBSCHOOL:Glamer
 	TYPE:Arcane.Divine
@@ -127,7 +127,7 @@ Whispering Lore
 ###Block: Gnome Spells
 # Spell Name		Classes of caster											School			Sub-School		Spell Descriptors			Type				Components	Casting Time			Range			Target Area or Effect				Duration					Save Info						Spell Resistance		Description																																																											Source Page
 Death From Below
-	CLASSES:Bard=3|Sorceror,Wizard=2
+	CLASSES:Bard=3|Sorcerer,Wizard=2
 	SCHOOL:Abjuration
 	TYPE:Arcane
 	COMPS:V, S
@@ -141,7 +141,7 @@ Death From Below
 	SOURCEPAGE:p.39
 
 Jitterbugs
-	CLASSES:Bard=1|Sorceror,Wizard=2
+	CLASSES:Bard=1|Sorcerer,Wizard=2
 	SCHOOL:Illusion
 	SUBSCHOOL:Figment
 	DESCRIPTOR:Mind-Affecting
@@ -157,7 +157,7 @@ Jitterbugs
 	SOURCEPAGE:p.39
 
 Major Phantom Object
-	CLASSES:Sorceror,Wizard=5
+	CLASSES:Sorcerer,Wizard=5
 	SCHOOL:Illusion
 	SUBSCHOOL:Figment
 	DESCRIPTOR:Mind-Affecting
@@ -173,7 +173,7 @@ Major Phantom Object
 	SOURCEPAGE:p.39
 
 Minor Dream
-	CLASSES:Alchemist,Witch=2|Bard,Sorceror,Wizard=3
+	CLASSES:Alchemist,Witch=2|Bard,Sorcerer,Wizard=3
 	SCHOOL:Illusion
 	SUBSCHOOL:Figment
 	DESCRIPTOR:Mind-Affecting
@@ -189,7 +189,7 @@ Minor Dream
 	SOURCEPAGE:p.39
 
 Minor Phantom Object
-	CLASSES:Sorceror,Wizard=4
+	CLASSES:Sorcerer,Wizard=4
 	SCHOOL:Illusion
 	SUBSCHOOL:Figment
 	DESCRIPTOR:Mind-Affecting
@@ -205,7 +205,7 @@ Minor Phantom Object
 	SOURCEPAGE:p.39
 
 Recharge Innate Magic
-	CLASSES:Alchemist,Bard,Cleric,Druid,Inquisitor,Magus,Sorceror,Wizard,Witch=1
+	CLASSES:Alchemist,Bard,Cleric,Druid,Inquisitor,Magus,Sorcerer,Wizard,Witch=1
 	SCHOOL:Transmutation
 	TYPE:Arcane.Divine
 	COMPS:V, S
@@ -223,7 +223,7 @@ Recharge Innate Magic
 ###Block: Half-Elven Spells
 # Spell Name		Classes of caster									School			Sub-School			Spell Descriptors			Type				Components		Casting Time			Range						Target Area or Effect		Duration					Save Info			Spell Resistance	Description																																																																																																																																																																																																																																													Source Page
 Forgetful Slumber
-	CLASSES:Bard,Sorceror,Wizard,Witch=4
+	CLASSES:Bard,Sorcerer,Wizard,Witch=4
 	SCHOOL:Enchantment
 	SUBSCHOOL:Compulsion
 	DESCRIPTOR:Mind-Affecting
@@ -239,7 +239,7 @@ Forgetful Slumber
 	SOURCEPAGE:p.48
 
 Paragon Surge
-	CLASSES:Alchemist,Cleric,Sorceror,Wizard,Witch=3|Magus,Paladin=4
+	CLASSES:Alchemist,Cleric,Sorcerer,Wizard,Witch=3|Magus,Paladin=4
 	SCHOOL:Transmutation
 	SUBSCHOOL:Polymorph
 	TYPE:Arcane.Divine
@@ -254,7 +254,7 @@ Paragon Surge
 	SOURCEPAGE:p.48
 
 Resilient Reservoir
-	CLASSES:Magus,Paladin=3|Sorceror,Wizard,Witch=4
+	CLASSES:Magus,Paladin=3|Sorcerer,Wizard,Witch=4
 	SCHOOL:Transmutation
 	TYPE:Arcane.Divine
 	COMPS:V, S
@@ -268,7 +268,7 @@ Resilient Reservoir
 	SOURCEPAGE:p.49
 
 Urban Grace
-	CLASSES:Alchemist,Bard,Ranger,Sorceror,Wizard,Witch=1
+	CLASSES:Alchemist,Bard,Ranger,Sorcerer,Wizard,Witch=1
 	SCHOOL:Transmutation
 	TYPE:Arcane.Divine
 	COMPS:V, S
@@ -302,7 +302,7 @@ Battle Trance
 	SOURCEPAGE:p.58
 
 Ghost Wolf
-	CLASSES:Sorceror,Wizard=4|Summoner=2
+	CLASSES:Sorcerer,Wizard=4|Summoner=2
 	SCHOOL:Conjuration
 	SUBSCHOOL:Creation
 	TYPE:Arcane
@@ -317,7 +317,7 @@ Ghost Wolf
 	SOURCEPAGE:p.59
 
 Half-Blood Extraction
-	CLASSES:Alchemist,Cleric,Druid,Sorceror,Wizard,Witch=5
+	CLASSES:Alchemist,Cleric,Druid,Sorcerer,Wizard,Witch=5
 	SCHOOL:Transmutation
 	SUBSCHOOL:Polymorph
 	TYPE:Arcane.Divine
@@ -399,7 +399,7 @@ Blessing of Luck and Resolve (Mass)
 	SOURCEPAGE:p.68
 
 Escaping Ward
-	CLASSES:Bard,Inquisitor,Magus,Ranger,Sorceror,Wizard=2
+	CLASSES:Bard,Inquisitor,Magus,Ranger,Sorcerer,Wizard=2
 	SCHOOL:Abjuration
 	TYPE:Arcane.Divine
 	COMPS:V, S
@@ -413,7 +413,7 @@ Escaping Ward
 	SOURCEPAGE:p.68
 
 Fearsome Duplicate
-	CLASSES:Bard,Inquisitor,Sorceror,Wizard,Witch=3
+	CLASSES:Bard,Inquisitor,Sorcerer,Wizard,Witch=3
 	SCHOOL:Illusion
 	SUBSCHOOL:Figment
 	TYPE:Arcane.Divine
@@ -428,7 +428,7 @@ Fearsome Duplicate
 	SOURCEPAGE:p.68
 
 Village Veil
-	CLASSES:Bard,Cleric,Sorceror,Wizard,Witch=5
+	CLASSES:Bard,Cleric,Sorcerer,Wizard,Witch=5
 	SCHOOL:Illusion
 	SUBSCHOOL:Figment
 	DESCRIPTOR:Mind-Affecting
@@ -448,7 +448,7 @@ Village Veil
 ###Block: Human Spells
 # Spell Name	Classes of caster								School			Sub-School			Spell Descriptors		Type				Components		Casting Time			Range		Target Area or Effect	Duration					Save Info			Spell Resistance	Description																																																																																																Source Page
 Bestow Insight
-	CLASSES:Bard,Inquisitor,Sorceror,Wizard,Witch=2|Cleric=3
+	CLASSES:Bard,Inquisitor,Sorcerer,Wizard,Witch=2|Cleric=3
 	SCHOOL:Enchantment
 	SUBSCHOOL:Compulsion
 	TYPE:Arcane.Divine
@@ -511,7 +511,7 @@ Sacred Space
 	SOURCEPAGE:p.89
 
 Truespeak
-	CLASSES:Bard=4|Cleric=6|Sorceror,Wizard,Witch=5
+	CLASSES:Bard=4|Cleric=6|Sorcerer,Wizard,Witch=5
 	SCHOOL:Divination
 	TYPE:Arcane.Divine
 	COMPS:V
@@ -558,7 +558,7 @@ Nine Lives
 	SOURCEPAGE:p.95
 
 Steal Breath
-	CLASSES:Bard,Druid,Sorceror,Wizard,Witch=2
+	CLASSES:Bard,Druid,Sorcerer,Wizard,Witch=2
 	SCHOOL:Transmutation
 	DESCRIPTOR:Air
 	TYPE:Arcane.Divine
@@ -624,7 +624,7 @@ Spawn Ward
 ###Block: Drow Spells
 # Spell Name		Classes of caster									School			Sub-School			Type				Components	Casting Time			Range			Target Area or Effect				Duration					Save Info					Spell Resistance		Description																																																																																																																																																																	Source Page
 Ancestral Regression
-	CLASSES:Alchemist,Cleric,Witch=2|Antipaladin,Sorceror,Wizard=3
+	CLASSES:Alchemist,Cleric,Witch=2|Antipaladin,Sorcerer,Wizard=3
 	SCHOOL:Transmutation
 	SUBSCHOOL:Polymorph
 	TYPE:Arcane.Divine
@@ -639,7 +639,7 @@ Ancestral Regression
 	SOURCEPAGE:p.107
 
 Web Bolt
-	CLASSES:Magus,Sorceror,Wizard,Witch=1
+	CLASSES:Magus,Sorcerer,Wizard,Witch=1
 	SCHOOL:Conjuration
 	SUBSCHOOL:Creation
 	TYPE:Arcane
@@ -654,7 +654,7 @@ Web Bolt
 	SOURCEPAGE:p.107
 
 Web Cloud
-	CLASSES:Sorceror,Wizard,Witch=4
+	CLASSES:Sorcerer,Wizard,Witch=4
 	SCHOOL:Conjuration
 	SUBSCHOOL:Creation
 	TYPE:Arcane
@@ -673,7 +673,7 @@ Web Cloud
 ###Block: Fetchling Spells
 # Spell Name	Classes of caster					School			Sub-School			Spell Descriptors	Type		Components		Casting Time			Range			Target Area or Effect				Duration					Save Info			Spell Resistance	Description																																																																																																																																																																																																																																																																																																																																										Source Page
 Gloomblind Bolts
-	CLASSES:Magus,Sorceror,Wizard,Witch=3
+	CLASSES:Magus,Sorcerer,Wizard,Witch=3
 	SCHOOL:Conjuration
 	SUBSCHOOL:Creation
 	DESCRIPTOR:Shadow
@@ -689,7 +689,7 @@ Gloomblind Bolts
 	SOURCEPAGE:p.113
 
 Shadowy Haven
-	CLASSES:Sorceror,Wizard=4
+	CLASSES:Sorcerer,Wizard=4
 	SCHOOL:Transmutation
 	TYPE:Arcane
 	COMPS:V, S, M
@@ -707,7 +707,7 @@ Shadowy Haven
 ###Block: Goblin Spells
 # Spell Name	Classes of caster							School			Sub-School			Spell Descriptors			Type				Components	Casting Time			Range			Target Area or Effect								Duration				Save Info			Spell Resistance	Description																																																																																																																																																																																																																					Source Page
 Fire Trail
-	CLASSES:Alchemist,Magus,Sorceror,Wizard=3
+	CLASSES:Alchemist,Magus,Sorcerer,Wizard=3
 	SCHOOL:Transmutation
 	DESCRIPTOR:Fire
 	TYPE:Arcane
@@ -722,7 +722,7 @@ Fire Trail
 	SOURCEPAGE:p.119
 
 Mudball
-	CLASSES:Druid,Magus,Sorceror,Wizard,Witch=1
+	CLASSES:Druid,Magus,Sorcerer,Wizard,Witch=1
 	SCHOOL:Conjuration
 	DESCRIPTOR:Earth
 	TYPE:Arcane.Divine
@@ -737,7 +737,7 @@ Mudball
 	SOURCEPAGE:p.119
 
 Vomit Twin
-	CLASSES:Alchemist,Magus,Summoner=3|Wizard,Sorceror=4
+	CLASSES:Alchemist,Magus,Summoner=3|Wizard,Sorcerer=4
 	SCHOOL:Conjuration
 	SUBSCHOOL:Creation
 	DESCRIPTOR:Teleportation
@@ -777,7 +777,7 @@ Agonizing Rebuke
 ###Block: Ifrit Spells
 # Spell Name		Classes of caster								School			Spell Descriptors			Type				Components		Casting Time			Range			Target Area or Effect									Duration								Save Info				Spell Resistance																																																																	Description																																																																																																					Source Page
 Chains of Fire
-	CLASSES:Magus,Sorceror,Wizard=6
+	CLASSES:Magus,Sorcerer,Wizard=6
 	SCHOOL:Evocation
 	DESCRIPTOR:Fire
 	TYPE:Arcane
@@ -807,7 +807,7 @@ Death Candle
 	SOURCEPAGE:p.131
 
 Firestream
-	CLASSES:Magus,Sorceror,Wizard=3
+	CLASSES:Magus,Sorcerer,Wizard=3
 	SCHOOL:Evocation
 	DESCRIPTOR:Fire
 	TYPE:Arcane
@@ -851,7 +851,7 @@ Healing Warmth
 	SOURCEPAGE:p.131
 
 Scorching Ash Form
-	CLASSES:Alchemist,Sorceror,Wizard=4
+	CLASSES:Alchemist,Sorcerer,Wizard=4
 	SCHOOL:Transmutation
 	DESCRIPTOR:Fire
 	TYPE:Arcane
@@ -866,7 +866,7 @@ Scorching Ash Form
 	SOURCEPAGE:p.131
 
 Touch of Combustion
-	CLASSES:Druid,Inquisitor,Magus,Sorceror,Wizard,Witch=1
+	CLASSES:Druid,Inquisitor,Magus,Sorcerer,Wizard,Witch=1
 	SCHOOL:Evocation
 	DESCRIPTOR:Fire
 	TYPE:Arcane.Divine
@@ -884,7 +884,7 @@ Touch of Combustion
 ###Block: Kobold Spells
 # Spell Name	Classes of caster										School			Type				Components	Casting Time	Range		Target Area or Effect	Duration			Save Info					Spell Resistance		Description																																																																																																													Source Page
 Improve Trap
-	CLASSES:Antipaladin,Ranger=2|Druid,Inquisitor,Sorceror,Wizard,Witch=3
+	CLASSES:Antipaladin,Ranger=2|Druid,Inquisitor,Sorcerer,Wizard,Witch=3
 	SCHOOL:Transmutation
 	TYPE:Arcane.Divine
 	COMPS:V, S
@@ -902,7 +902,7 @@ Improve Trap
 ###Block: Orc Spells
 # Spell Name	Classes of caster													School			Spell Descriptors		Type				Components		Casting Time			Range			Target Area or Effect				Duration								Save Info						Spell Resistance		Cost		Description																																																																																																																																																																																																																																																																																	Source Page
 Blood Blaze
-	CLASSES:Antipaladin=1|Alchemist,Cleric,Magus,Sorceror,Wizard,Witch=2
+	CLASSES:Antipaladin=1|Alchemist,Cleric,Magus,Sorcerer,Wizard,Witch=2
 	SCHOOL:Transmutation
 	DESCRIPTOR:Fire
 	TYPE:Arcane.Divine
@@ -917,7 +917,7 @@ Blood Blaze
 	SOURCEPAGE:p.143
 
 Blood Scent
-	CLASSES:Antipaladin,Ranger=2|Alchemist,Cleric,Druid,Inquisitor,Sorceror,Wizard,Witch=3
+	CLASSES:Antipaladin,Ranger=2|Alchemist,Cleric,Druid,Inquisitor,Sorcerer,Wizard,Witch=3
 	SCHOOL:Transmutation
 	TYPE:Arcane.Divine
 	COMPS:V, S
@@ -946,7 +946,7 @@ Enemy's Heart
 	SOURCEPAGE:p.143
 
 Sentry Skull
-	CLASSES:Antipaladin=1|Cleric,Sorceror,Wizard,Witch=2
+	CLASSES:Antipaladin=1|Cleric,Sorcerer,Wizard,Witch=2
 	SCHOOL:Necromancy
 	DESCRIPTOR:Evil
 	TYPE:Arcane.Divine
@@ -1013,7 +1013,7 @@ Mighty Fist of the Earth
 	SOURCEPAGE:p.149
 
 Raging Rubble
-	CLASSES:Bard,Cleric,Druid,Sorceror,Wizard,Witch=3
+	CLASSES:Bard,Cleric,Druid,Sorcerer,Wizard,Witch=3
 	SCHOOL:Transmutation
 	DESCRIPTOR:Earth
 	TYPE:Arcane.Divine
@@ -1028,7 +1028,7 @@ Raging Rubble
 	SOURCEPAGE:p.149
 
 Stone Shield
-	CLASSES:Cleric,Druid,Summoner,Sorceror,Wizard=1|Magus=2
+	CLASSES:Cleric,Druid,Summoner,Sorcerer,Wizard=1|Magus=2
 	SCHOOL:Conjuration
 	SUBSCHOOL:Creation
 	DESCRIPTOR:Earth
@@ -1048,7 +1048,7 @@ Stone Shield
 ###Block: Ratfolk Spells
 # Spell Name		Classes of caster										School			Sub-School		Spell Descriptors		Type				Components		Casting Time			Range			Target Area or Effect					Duration					Save Info						Spell Resistance		Description																																																																													Source Page
 Alchemical Tinkering
-	CLASSES:Cleric=2|Sorceror,Wizard,Witch=1
+	CLASSES:Cleric=2|Sorcerer,Wizard,Witch=1
 	SCHOOL:Transmutation
 	TYPE:Arcane.Divine
 	COMPS:V, S
@@ -1096,7 +1096,7 @@ Sickening Strikes
 ###Block: Sylph Spells
 # Spell Name		Classes of caster						School			Spell Descriptors		Type				Components		Casting Time			Range			Target Area or Effect					Duration					Save Info								Spell Resistance	Cost		Description																																																																																																																																																																																																																																																																							Source Page
 Absorbing Inhalation
-	CLASSES:Alchemist,Druid,Sorceror,Wizard=4
+	CLASSES:Alchemist,Druid,Sorcerer,Wizard=4
 	SCHOOL:Transmutation
 	DESCRIPTOR:Air
 	TYPE:Arcane.Divine
@@ -1111,7 +1111,7 @@ Absorbing Inhalation
 	SOURCEPAGE:p.160
 
 Cloud Shape
-	CLASSES:Druid,Ranger,Sorceror,Wizard=4
+	CLASSES:Druid,Ranger,Sorcerer,Wizard=4
 	SCHOOL:Transmutation
 	DESCRIPTOR:Air
 	TYPE:Arcane.Divine
@@ -1126,7 +1126,7 @@ Cloud Shape
 	SOURCEPAGE:p.160
 
 Gusting Sphere
-	CLASSES:Druid,Magus,Sorceror,Wizard=2
+	CLASSES:Druid,Magus,Sorcerer,Wizard=2
 	SCHOOL:Evocation
 	DESCRIPTOR:Air
 	TYPE:Arcane.Divine
@@ -1141,7 +1141,7 @@ Gusting Sphere
 	SOURCEPAGE:p.160
 
 Miasmatic Form
-	CLASSES:Alchemist,Sorceror,Wizard=4
+	CLASSES:Alchemist,Sorcerer,Wizard=4
 	SCHOOL:Transmutation
 	DESCRIPTOR:Air|Poison
 	TYPE:Arcane
@@ -1157,7 +1157,7 @@ Miasmatic Form
 	SOURCEPAGE:p.161
 
 Path of the Winds
-	CLASSES:Druid,Sorceror,Wizard=6
+	CLASSES:Druid,Sorcerer,Wizard=6
 	SCHOOL:Evocation
 	DESCRIPTOR:Air
 	TYPE:Arcane.Divine
@@ -1172,7 +1172,7 @@ Path of the Winds
 	SOURCEPAGE:p.161
 
 Wind Blades
-	CLASSES:Druid,Magus,Sorceror,Wizard,Witch=5
+	CLASSES:Druid,Magus,Sorcerer,Wizard,Witch=5
 	SCHOOL:Transmutation
 	DESCRIPTOR:Air
 	TYPE:Arcane.Divine
@@ -1187,7 +1187,7 @@ Wind Blades
 	SOURCEPAGE:p.161
 
 Windy Escape
-	CLASSES:Bard,Druid,Magus,Sorceror,Wizard=1
+	CLASSES:Bard,Druid,Magus,Sorcerer,Wizard=1
 	SCHOOL:Transmutation
 	DESCRIPTOR:Air
 	TYPE:Arcane
@@ -1206,7 +1206,7 @@ Windy Escape
 ###Block: Tengu Spells
 # Spell Name	Classes of caster								School		Type				Components	Casting Time			Range		Target Area or Effect			Duration		Save Info				Spell Resistance		Description																																																																																																																Source Page
 Theft Ward
-	CLASSES:Cleric,Inquisitor,Sorceror,Wizard,Witch=1
+	CLASSES:Cleric,Inquisitor,Sorcerer,Wizard,Witch=1
 	SCHOOL:Abjuration
 	TYPE:Arcane.Divine
 	COMPS:V, S
@@ -1220,7 +1220,7 @@ Theft Ward
 	SOURCEPAGE:p.167
 
 Winter Feathers
-	CLASSES:Cleric,Druid,Inquisitor,Ranger,Sorceror,Wizard=1
+	CLASSES:Cleric,Druid,Inquisitor,Ranger,Sorcerer,Wizard=1
 	SCHOOL:Abjuration
 	TYPE:Arcane.Divine
 	COMPS:V, S
@@ -1238,7 +1238,7 @@ Winter Feathers
 ###Block: Tiefling Spells
 # Spell Name	Classes of caster						School			Sub-School			Spell Descriptors				Type		Components	Casting Time			Range			Target Area or Effect					Duration					Save Info			Spell Resistance	Description																																																																																																																																					Source Page
 Damnation Stride
-	CLASSES:Summoner=4|Sorceror,Wizard,Witch=5
+	CLASSES:Summoner=4|Sorcerer,Wizard,Witch=5
 	SCHOOL:Conjuration
 	SUBSCHOOL:Teleportation
 	DESCRIPTOR:Fire
@@ -1254,7 +1254,7 @@ Damnation Stride
 	SOURCEPAGE:p.173
 
 Hellmouth Lash
-	CLASSES:Sorceror,Wizard,Witch=4
+	CLASSES:Sorcerer,Wizard,Witch=4
 	SCHOOL:Transmutation
 	DESCRIPTOR:Acid|Electricity|Fire
 	TYPE:Arcane
@@ -1273,7 +1273,7 @@ Hellmouth Lash
 ###Block: Undine Spells
 # Spell Name	Classes of caster							School			Sub-School		Spell Descriptors				Type				Components	Casting Time			Range			Target Area or Effect						Duration							Save Info					Spell Resistance		Description																																																																																																												Source Page
 Marid's Mastery
-	CLASSES:Cleric,Druid,Ranger,Sorceror,Wizard,Witch=1
+	CLASSES:Cleric,Druid,Ranger,Sorcerer,Wizard,Witch=1
 	SCHOOL:Transmutation
 	DESCRIPTOR:Water
 	TYPE:Arcane.Divine
@@ -1304,7 +1304,7 @@ Nereid's Grace
 	SOURCEPAGE:p.179
 
 Nixie's Lure
-	CLASSES:Bard,Summoner=4|Druid,Sorceror,Wizard,Witch=3
+	CLASSES:Bard,Summoner=4|Druid,Sorcerer,Wizard,Witch=3
 	SCHOOL:Enchantment
 	SUBSCHOOL:Charm
 	DESCRIPTOR:Mind-Affecting|Sonic
@@ -1320,7 +1320,7 @@ Nixie's Lure
 	SOURCEPAGE:p.179
 
 Undine's Curse
-	CLASSES:Sorceror,Wizard,Witch=1
+	CLASSES:Sorcerer,Wizard,Witch=1
 	SCHOOL:Necromancy
 	DESCRIPTOR:Evil
 	TYPE:Arcane
@@ -1340,7 +1340,7 @@ Undine's Curse
 # Spell Name	Classes of caster					School			Sub-School			Spell Descriptors			Type		Components	Casting Time			Range		Target Area or Effect	Duration			Save Info			Spell Resistance	Description																																																																																																Source Page
 Sow Thought
 	KEY:Sow Thought ~ Changeling
-	CLASSES:Bard,Sorceror,Wizard,Witch=1
+	CLASSES:Bard,Sorcerer,Wizard,Witch=1
 	SCHOOL:Enchantment
 	SUBSCHOOL:Compulsion
 	DESCRIPTOR:Mind-Affecting
@@ -1363,7 +1363,7 @@ Sow Thought
 ###Block: Gillmen Spells
 # Spell Name	Classes of caster						School			Type				Components		Casting Time			Range		Target Area or Effect		Duration				Save Info			Spell Resistance	Description																																					Source Page
 Aboleth's Lung
-	CLASSES:Cleric,Druid,Sorceror,Wizard,Witch=2
+	CLASSES:Cleric,Druid,Sorcerer,Wizard,Witch=2
 	SCHOOL:Transmutation
 	TYPE:Arcane.Divine
 	COMPS:V, S, M/DF
@@ -1387,7 +1387,7 @@ Aboleth's Lung
 ###Block: Merfolk Spells
 # Spell Name	Classes of caster					School			Sub-School			Type				Components	Casting Time			Range		Target Area or Effect	Duration				Save Info		Spell Resistance	Description																																																																																																																Source Page
 Fins to Feet
-	CLASSES:Druid,Sorceror,Wizard,Witch=3
+	CLASSES:Druid,Sorcerer,Wizard,Witch=3
 	SCHOOL:Transmutation
 	SUBSCHOOL:Polymorph
 	TYPE:Arcane.Divine
@@ -1428,7 +1428,7 @@ Karmic Blessing
 ###Block: Strix Spells
 # Spell Name	Classes of caster						School			Type				Components	Casting Time			Range		Target Area or Effect	Duration					Save Info						Spell Resistance		Description																																																	Add to base move					Modify VAR							Source Page
 Strong Wings
-	CLASSES:Druid,Ranger,Sorceror,Wizard,Witch=1
+	CLASSES:Druid,Ranger,Sorcerer,Wizard,Witch=1
 	SCHOOL:Transmutation
 	TYPE:Arcane.Divine
 	COMPS:V, S
@@ -1453,7 +1453,7 @@ Strong Wings.MOD
 ###Block: Suli Spells
 # Spell Name			Classes of caster					School		Type				Components	Casting Time		Range		Target Area or Effect	Duration						Save Info					Spell Resistance		Description																																																																												Source Page
 Imbue With Elemental Might
-	CLASSES:Cleric,Magus,Sorceror,Wizard=2
+	CLASSES:Cleric,Magus,Sorcerer,Wizard=2
 	SCHOOL:Evocation
 	TYPE:Arcane.Divine
 	COMPS:V, S
@@ -1471,7 +1471,7 @@ Imbue With Elemental Might
 ###Block: Svirfneblin Spells
 # Spell Name	Classes of caster					School			Spell Descriptors	Type				Components	Casting Time			Range		Target Area or Effect	Duration				Save Info			Spell Resistance		Description																																																																																																																											Source Page
 Earth Glide
-	CLASSES:Alchemist,Druid,Sorceror,Wizard=4
+	CLASSES:Alchemist,Druid,Sorcerer,Wizard=4
 	SCHOOL:Transmutation
 	DESCRIPTOR:Earth
 	TYPE:Arcane.Divine
@@ -1490,7 +1490,7 @@ Earth Glide
 ###Block: Vanara Spells
 # Spell Name	Classes of caster						School			Type		Components	Casting Time			Range		Target Area or Effect	Duration				Save Info						Spell Resistance		Description																																																																																													Source Page
 Prehensile Pilfer
-	CLASSES:Alchemist,Bard,Magus,Sorceror,Wizard=3
+	CLASSES:Alchemist,Bard,Magus,Sorcerer,Wizard=3
 	SCHOOL:Transmutation
 	TYPE:Arcane
 	COMPS:V, S
@@ -1508,7 +1508,7 @@ Prehensile Pilfer
 ###Block: Vishkanya Spells
 # Spell Name	Classes of caster					School			Sub-School			Type		Components	Casting Time			Range		Target Area or Effect	Duration					Save Info						Spell Resistance		Description																																															Source Page
 Squeeze
-	CLASSES:Alchemist,Sorceror,Wizard,Witch=2
+	CLASSES:Alchemist,Sorcerer,Wizard,Witch=2
 	SCHOOL:Transmutation
 	SUBSCHOOL:Polymorph
 	TYPE:Arcane
@@ -1527,7 +1527,7 @@ Squeeze
 ###Block: Wayang Spells
 # Spell Name	Classes of caster					School		Sub-School		Spell Descriptors	Type		Components	Casting Time			Range		Target Area or Effect	Duration				Save Info			Spell Resistance	Description																																																																																																																																																	Source Page
 Shadow Anchor
-	CLASSES:Bard,Sorceror,Wizard,Witch=2
+	CLASSES:Bard,Sorcerer,Wizard,Witch=2
 	SCHOOL:Illusion
 	SUBSCHOOL:Shadow
 	DESCRIPTOR:Shadow
