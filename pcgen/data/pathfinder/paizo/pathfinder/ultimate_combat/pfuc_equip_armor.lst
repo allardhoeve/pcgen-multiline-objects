@@ -69,7 +69,7 @@ Kikko Armor
 Lamellar (Horn)
 	PROFICIENCY:ARMOR|Lamellar (Horn)
 	TYPE:Armor.Medium.Suit.Standard
-	EQMOD:HORN
+	EQMOD:BONE
 	COST:100
 	WT:30
 	ACCHECK:-4
