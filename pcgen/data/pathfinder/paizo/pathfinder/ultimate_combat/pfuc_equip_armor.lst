@@ -58,6 +58,7 @@ Do-maru
 Kikko Armor
 	PROFICIENCY:ARMOR|Kikko Armor
 	TYPE:Armor.Medium.Suit.Standard
+	EQMOD:STEEL
 	COST:30
 	WT:25
 	ACCHECK:-3
@@ -68,6 +69,7 @@ Kikko Armor
 Lamellar (Horn)
 	PROFICIENCY:ARMOR|Lamellar (Horn)
 	TYPE:Armor.Medium.Suit.Standard
+	EQMOD:HORN
 	COST:100
 	WT:30
 	ACCHECK:-4
@@ -78,6 +80,7 @@ Lamellar (Horn)
 Four-mirror Armor
 	PROFICIENCY:ARMOR|Four-mirror Armor
 	TYPE:Armor.Medium.Suit.Standard
+	EQMOD:STEEL
 	COST:45
 	WT:45
 	ACCHECK:-5
@@ -99,6 +102,7 @@ Lamellar (Steel)
 Mountain Pattern Armor
 	PROFICIENCY:ARMOR|Mountain Pattern Armor
 	TYPE:Armor.Medium.Suit.Standard
+	EQMOD:STEEL
 	COST:250
 	WT:40
 	ACCHECK:-4
@@ -112,6 +116,7 @@ Mountain Pattern Armor
 Kasari Gusoku
 	PROFICIENCY:ARMOR|Kasari Gusoku
 	TYPE:Armor.Heavy.Suit.Standard
+	EQMOD:STEEL
 	COST:350
 	WT:45
 	ACCHECK:-7
@@ -133,6 +138,7 @@ Lamellar (Iron)
 Tatami-do
 	PROFICIENCY:ARMOR|Tatami-do
 	TYPE:Armor.Heavy.Suit.Standard
+	EQMOD:STEEL
 	COST:1000
 	WT:45
 	ACCHECK:-6
@@ -143,6 +149,7 @@ Tatami-do
 O-yoroi
 	PROFICIENCY:ARMOR|O-yoroi
 	TYPE:Armor.Heavy.Suit.Standard
+	EQMOD:STEEL
 	COST:1700
 	WT:45
 	ACCHECK:-6
@@ -153,6 +160,7 @@ O-yoroi
 Stone Coat
 	PROFICIENCY:ARMOR|Stone Coat
 	TYPE:Armor.Heavy.Suit.Standard
+	EQMOD:STONE
 	COST:500
 	WT:45
 	ACCHECK:-7
