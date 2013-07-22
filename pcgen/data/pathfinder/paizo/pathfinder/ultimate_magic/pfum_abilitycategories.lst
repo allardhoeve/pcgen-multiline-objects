@@ -181,34 +181,14 @@ ABILITYCATEGORY:Eidolon Ultimate Magic Choice
 	PLURAL:Eidolon Ultimate Magic Choices
 	DISPLAYLOCATION:Class Abilities
 
-ABILITYCATEGORY:Eidolon Basic Magic Upgrade
+ABILITYCATEGORY:Eidolon Magic Upgrade
 	VISIBLE:QUALIFY
 	EDITABLE:YES
 	EDITPOOL:NO
 	FRACTIONALPOOL:NO
 	CATEGORY:Special Ability
-	TYPE:EidBasicMagicUpgrade
-	PLURAL:Eidolon Basic Magic Upgrades
-	DISPLAYLOCATION:Class Abilities
-
-ABILITYCATEGORY:Eidolon Minor Magic Upgrade
-	VISIBLE:QUALIFY
-	EDITABLE:YES
-	EDITPOOL:NO
-	FRACTIONALPOOL:NO
-	CATEGORY:Special Ability
-	TYPE:EidMinorMagicUpgrade
-	PLURAL:Eidolon Minor Magic Upgrades
-	DISPLAYLOCATION:Class Abilities
-
-ABILITYCATEGORY:Eidolon Major Magic Upgrade
-	VISIBLE:QUALIFY
-	EDITABLE:YES
-	EDITPOOL:NO
-	FRACTIONALPOOL:NO
-	CATEGORY:Special Ability
-	TYPE:EidMajorMagicUpgrade
-	PLURAL:Eidolon Major Magic Upgrades
+	TYPE:EidMagicUpgrade
+	PLURAL:Eidolon Magic Upgrades
 	DISPLAYLOCATION:Class Abilities
 
 

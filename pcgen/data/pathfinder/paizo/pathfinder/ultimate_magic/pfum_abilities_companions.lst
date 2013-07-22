@@ -706,7 +706,7 @@ No Breath
 
 
 # Eidolon Magic
-Basic Magic
+Magic (Basic)
 	KEY:Evolution_Basic_Magic
 	CATEGORY:Special Ability
 	TYPE:EvolutionChoice.SpecialQuality.SpellLike
@@ -719,7 +719,7 @@ Basic Magic
 	COST:1
 	SOURCEPAGE:p.76
 
-Minor Magic
+Magic (Minor)
 	KEY:Evolution_Minor_Magic
 	CATEGORY:Special Ability
 	TYPE:EvolutionChoice.SpecialQuality.SpellLike
@@ -734,7 +734,7 @@ Minor Magic
 	COST:2
 	SOURCEPAGE:p.76
 
-Major Magic
+Magic (Major)
 	KEY:Evolution_Major_Magic
 	CATEGORY:Special Ability
 	TYPE:EvolutionChoice.SpecialQuality.SpellLike
@@ -749,7 +749,7 @@ Major Magic
 	COST:3
 	SOURCEPAGE:p.76
 
-Ultimate Magic
+Magic (Ultimate)
 	KEY:Evolution_Ultimate_Magic
 	CATEGORY:Special Ability
 	TYPE:EvolutionChoice.SpecialQuality.SpellLike
@@ -764,45 +764,15 @@ Ultimate Magic
 	COST:4
 	SOURCEPAGE:p.76
 
-Basic Magic Upgrade
-	KEY:Evolution_Basic_Magic_Upgrade
+Magic (Upgrade)
+	KEY:Evolution_Magic_Upgrade
 	CATEGORY:Special Ability
 	TYPE:EvolutionChoice.SpecialQuality.SpellLike
 	PRESTAT:1,CHA=10
 	PREVARGTEQ:MasterLevel,4
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Basic_Magic
-	DESC:The Eidolon learns to cast a basic spell as a spell-like ability. This spell can now be cast 3 times per day.
-	BONUS:ABILITYPOOL|Eidolon Basic Magic Upgrade|1
-	MULT:YES
-	CHOOSE:NOCHOICE
-	STACK:NO
-	COST:2
-	SOURCEPAGE:p.76
-
-Minor Magic Upgrade
-	KEY:Evolution_Minor_Magic_Upgrade
-	CATEGORY:Special Ability
-	TYPE:EvolutionChoice.SpecialQuality.SpellLike
-	PRESTAT:1,CHA=11
-	PREVARGTEQ:MasterLevel,7
-	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Magic
-	DESC:The Eidolon learns to cast a minor spell as a spell-like ability. This spell can now be cast 3 times per day.
-	BONUS:ABILITYPOOL|Eidolon Minor Magic Upgrade|1
-	MULT:YES
-	CHOOSE:NOCHOICE
-	STACK:NO
-	COST:2
-	SOURCEPAGE:p.76
-
-Major Magic Upgrade
-	KEY:Evolution_Major_Magic_Upgrade
-	CATEGORY:Special Ability
-	TYPE:EvolutionChoice.SpecialQuality.SpellLike
-	PRESTAT:1,CHA=12
-	PREVARGTEQ:MasterLevel,10
-	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_Magic
-	DESC:The Eidolon learns to cast a major spell as a spell-like ability. This spell can now be cast 3 times per day.
-	BONUS:ABILITYPOOL|Eidolon Major Magic Upgrade|1
+	DESC:Upgrades a Spell-like ability to be castable three times per day.
+	BONUS:ABILITYPOOL|Eidolon Magic Upgrade|1
 	MULT:YES
 	CHOOSE:NOCHOICE
 	STACK:NO
@@ -914,7 +884,7 @@ Basic Magic ~ Touch of Fatigue (1/day)
 Basic Magic ~ Acid Splash (3/day)
 	KEY:Evolution_BM_Acid_Splash_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidBasicMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_BM_Acid_Splash_1
 	PRESTAT:1,CHA=10
 	PREVARGTEQ:MasterLevel,4
@@ -924,7 +894,7 @@ Basic Magic ~ Acid Splash (3/day)
 Basic Magic ~ Dancing Lights (3/day)
 	KEY:Evolution_BM_Dancing_Lights_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidBasicMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_BM_Dancing_Lights_1
 	PRESTAT:1,CHA=10
 	PREVARGTEQ:MasterLevel,4
@@ -934,7 +904,7 @@ Basic Magic ~ Dancing Lights (3/day)
 Basic Magic ~ Daze (3/day)
 	KEY:Evolution_BM_Daze_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidBasicMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_BM_Daze_1
 	PRESTAT:1,CHA=10
 	PREVARGTEQ:MasterLevel,4
@@ -944,7 +914,7 @@ Basic Magic ~ Daze (3/day)
 Basic Magic ~ Detect Magic (3/day)
 	KEY:Evolution_BM_Detect_Magic_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidBasicMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_BM_Detect_Magic_1
 	PRESTAT:1,CHA=10
 	PREVARGTEQ:MasterLevel,4
@@ -954,7 +924,7 @@ Basic Magic ~ Detect Magic (3/day)
 Basic Magic ~ Flare (3/day)
 	KEY:Evolution_BM_Flare_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidBasicMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_BM_Flare_1
 	PRESTAT:1,CHA=10
 	PREVARGTEQ:MasterLevel,4
@@ -964,7 +934,7 @@ Basic Magic ~ Flare (3/day)
 Basic Magic ~ Ghost Sound (3/day)
 	KEY:Evolution_BM_Ghost_Sound_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidBasicMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_BM_Ghost_Sound_1
 	PRESTAT:1,CHA=10
 	PREVARGTEQ:MasterLevel,4
@@ -974,7 +944,7 @@ Basic Magic ~ Ghost Sound (3/day)
 Basic Magic ~ Light (3/day)
 	KEY:Evolution_BM_Light_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidBasicMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_BM_Light_1
 	PRESTAT:1,CHA=10
 	PREVARGTEQ:MasterLevel,4
@@ -984,7 +954,7 @@ Basic Magic ~ Light (3/day)
 Basic Magic ~ Mage Hand (3/day)
 	KEY:Evolution_BM_Mage Hand_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidBasicMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_BM_Mage Hand_1
 	PRESTAT:1,CHA=10
 	PREVARGTEQ:MasterLevel,4
@@ -994,7 +964,7 @@ Basic Magic ~ Mage Hand (3/day)
 Basic Magic ~ Ray of Frost (3/day)
 	KEY:Evolution_BM_Ray_of_Frost_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidBasicMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_BM_Ray_of_Frost_1
 	PRESTAT:1,CHA=10
 	PREVARGTEQ:MasterLevel,4
@@ -1004,7 +974,7 @@ Basic Magic ~ Ray of Frost (3/day)
 Basic Magic ~ Stabilize (3/day)
 	KEY:Evolution_BM_Stabilize_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidBasicMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_BM_Stabilize_1
 	PRESTAT:1,CHA=10
 	PREVARGTEQ:MasterLevel,4
@@ -1014,7 +984,7 @@ Basic Magic ~ Stabilize (3/day)
 Basic Magic ~ Touch of Fatigue (3/day)
 	KEY:Evolution_BM_Touch_of_Fatigue_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidBasicMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_BM_Touch_of_Fatigue_1
 	PRESTAT:1,CHA=10
 	PREVARGTEQ:MasterLevel,4
@@ -1036,7 +1006,7 @@ Minor Magic ~ Burning Hands (1/day)
 Minor Magic ~ Burning Hands (3/day)
 	KEY:Evolution_Minor_Burning_Hands_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMinorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Burning_Hands_1
 	PRESTAT:1,CHA=11
 	PREVARGTEQ:MasterLevel,7
@@ -1056,7 +1026,7 @@ Minor Magic ~ Comprehend Languages (1/day)
 Minor Magic ~ Comprehend Languages (3/day)
 	KEY:Evolution_Minor_Comprehend_Languages_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMinorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Comprehend_Languages_1
 	PRESTAT:1,CHA=11
 	PREVARGTEQ:MasterLevel,7
@@ -1076,7 +1046,7 @@ Minor Magic ~ Cure Light Wounds (1/day)
 Minor Magic ~ Cure Light Wounds (3/day)
 	KEY:Evolution_Minor_Cure_Light_Wounds_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMinorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Cure_Light_Wounds_1
 	PRESTAT:1,CHA=11
 	PREVARGTEQ:MasterLevel,7
@@ -1096,7 +1066,7 @@ Minor Magic ~ Detect Chaos (1/day)
 Minor Magic ~ Detect Chaos (3/day)
 	KEY:Evolution_Minor_Detect_Chaos_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMinorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Detect_Chaos_1
 	PRESTAT:1,CHA=11
 	PREVARGTEQ:MasterLevel,7
@@ -1116,7 +1086,7 @@ Minor Magic ~ Detect Evil (1/day)
 Minor Magic ~ Detect Evil (3/day)
 	KEY:Evolution_Minor_Detect_Evil_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMinorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Detect_Evil_1
 	PRESTAT:1,CHA=11
 	PREVARGTEQ:MasterLevel,7
@@ -1136,7 +1106,7 @@ Minor Magic ~ Detect Good (1/day)
 Minor Magic ~ Detect Good (3/day)
 	KEY:Evolution_Minor_Detect_Good_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMinorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Detect_Good_1
 	PRESTAT:1,CHA=11
 	PREVARGTEQ:MasterLevel,7
@@ -1156,7 +1126,7 @@ Minor Magic ~ Detect Law (1/day)
 Minor Magic ~ Detect Law (3/day)
 	KEY:Evolution_Minor_Detect_Law_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMinorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Detect_Law_1
 	PRESTAT:1,CHA=11
 	PREVARGTEQ:MasterLevel,7
@@ -1176,7 +1146,7 @@ Minor Magic ~ Magic Missile (1/day)
 Minor Magic ~ Magic Missile (3/day)
 	KEY:Evolution_Minor_Magic_Missile_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMinorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Magic_Missile_1
 	PRESTAT:1,CHA=11
 	PREVARGTEQ:MasterLevel,7
@@ -1196,7 +1166,7 @@ Minor Magic ~ Obscuring Mist (1/day)
 Minor Magic ~ Obscuring Mist (3/day)
 	KEY:Evolution_Minor_Obscuring_Mist_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMinorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Obscuring_Mist_1
 	PRESTAT:1,CHA=11
 	PREVARGTEQ:MasterLevel,7
@@ -1216,7 +1186,7 @@ Minor Magic ~ Silent Image (1/day)
 Minor Magic ~ Silent Image (3/day)
 	KEY:Evolution_Minor_Silent_Image_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMinorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Silent_Image_1
 	PRESTAT:1,CHA=11
 	PREVARGTEQ:MasterLevel,7
@@ -1236,7 +1206,7 @@ Minor Magic ~ Vanish (1/day)
 Minor Magic ~ Vanish (3/day)
 	KEY:Evolution_Minor_Vanish_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMinorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Vanish_1
 	PRESTAT:1,CHA=11
 	PREVARGTEQ:MasterLevel,7
@@ -1256,7 +1226,7 @@ Minor Magic ~ Ventriloquism (1/day)
 Minor Magic ~ Ventriloquism (3/day)
 	KEY:Evolution_Minor_Ventriloquism_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMinorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Minor_Ventriloquism_1
 	PRESTAT:1,CHA=11
 	PREVARGTEQ:MasterLevel,7
@@ -1278,7 +1248,7 @@ Major Magic ~ Acid Arrow (1/day)
 Major Magic ~ Acid Arrow (3/day)
 	KEY:Evolution_Major_Acid_Arrow_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMajorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_Acid_Arrow_1
 	PRESTAT:1,CHA=12
 	PREVARGTEQ:MasterLevel,10
@@ -1298,7 +1268,7 @@ Major Magic ~ Cure Moderate Wounds (1/day)
 Major Magic ~ Cure Moderate Wounds (3/day)
 	KEY:Evolution_Major_Cure_Moderate_Wounds_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMajorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_Cure_Moderate_Wounds_1
 	PRESTAT:1,CHA=12
 	PREVARGTEQ:MasterLevel,10
@@ -1318,7 +1288,7 @@ Major Magic ~ Darkness (1/day)
 Major Magic ~ Darkness (3/day)
 	KEY:Evolution_Major_Darkness_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMajorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_Darkness_1
 	PRESTAT:1,CHA=12
 	PREVARGTEQ:MasterLevel,10
@@ -1338,7 +1308,7 @@ Major Magic ~ Daze Monster (1/day)
 Major Magic ~ Daze Monster (3/day)
 	KEY:Evolution_Major_Daze_Monster_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMajorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_Daze_Monster_1
 	PRESTAT:1,CHA=12
 	PREVARGTEQ:MasterLevel,10
@@ -1358,7 +1328,7 @@ Major Magic ~ Glide (1/day)
 Major Magic ~ Glide (3/day)
 	KEY:Evolution_Major_Glide_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMajorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_Glide_1
 	PRESTAT:1,CHA=12
 	PREVARGTEQ:MasterLevel,10
@@ -1378,7 +1348,7 @@ Major Magic ~ Invisibility (1/day)
 Major Magic ~ Invisibility (3/day)
 	KEY:Evolution_Major_Invisibility_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMajorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_Invisibility_1
 	PRESTAT:1,CHA=12
 	PREVARGTEQ:MasterLevel,10
@@ -1398,7 +1368,7 @@ Major Magic ~ Lesser Restoration (1/day)
 Major Magic ~ Lesser Restoration (3/day)
 	KEY:Evolution_Major_Lesser_Restoration_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMajorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_Lesser_Restoration_1
 	PRESTAT:1,CHA=12
 	PREVARGTEQ:MasterLevel,10
@@ -1418,7 +1388,7 @@ Major Magic ~ Levitate (1/day)
 Major Magic ~ Levitate (3/day)
 	KEY:Evolution_Major_Levitate_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMajorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_Levitate_1
 	PRESTAT:1,CHA=12
 	PREVARGTEQ:MasterLevel,10
@@ -1438,7 +1408,7 @@ Major Magic ~ Minor Image (1/day)
 Major Magic ~ Minor Image (3/day)
 	KEY:Evolution_Major_Minor_Image_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMajorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_Minor_Image_1
 	PRESTAT:1,CHA=12
 	PREVARGTEQ:MasterLevel,10
@@ -1458,7 +1428,7 @@ Major Magic ~ Scorching Ray (1/day)
 Major Magic ~ Scorching Ray (3/day)
 	KEY:Evolution_Major_Scorching_Ray_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMajorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_Scorching_Ray_1
 	PRESTAT:1,CHA=12
 	PREVARGTEQ:MasterLevel,10
@@ -1478,7 +1448,7 @@ Major Magic ~ See Invisibility (1/day)
 Major Magic ~ See Invisibility (3/day)
 	KEY:Evolution_Major_See_Invisibility_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMajorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_See_Invisibility_1
 	PRESTAT:1,CHA=12
 	PREVARGTEQ:MasterLevel,10
@@ -1498,7 +1468,7 @@ Major Magic ~ Spider Climb (1/day)
 Major Magic ~ Spider Climb (3/day)
 	KEY:Evolution_Major_Spider_Climb_3
 	CATEGORY:Special Ability
-	TYPE:SpellLike.EidMajorMagicUpgrade
+	TYPE:SpellLike.EidMagicUpgrade
 	PREABILITY:1,CATEGORY=Special Ability,Evolution_Major_Spider_Climb_1
 	PRESTAT:1,CHA=12
 	PREVARGTEQ:MasterLevel,10
