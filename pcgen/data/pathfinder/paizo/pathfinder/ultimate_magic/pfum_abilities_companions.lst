@@ -836,7 +836,7 @@ Basic Magic ~ Daze (1/day)
 	TYPE:SpellLike.EidBasicMagic
 	PRESTAT:1,CHA=10
 	DEFINE:DazeEidSLAPerDay|1
-	SPELLS:Innate|TIMES=1|CASTERLEVEL=(max(HD,1))|Daze,10+CHA
+	SPELLS:Innate|TIMES=DazeEidSLAPerDay|CASTERLEVEL=(max(HD,1))|Daze,10+CHA
 	SOURCEPAGE:p.76
 
 Basic Magic ~ Detect Magic (1/day)
@@ -845,7 +845,7 @@ Basic Magic ~ Detect Magic (1/day)
 	TYPE:SpellLike.EidBasicMagic
 	PRESTAT:1,CHA=10
 	DEFINE:DetectMagicEidSLAPerDay|1
-	SPELLS:Innate|TIMES=DazeEidSLAPerDay|CASTERLEVEL=(max(HD,1))|Detect Magic,10+CHA
+	SPELLS:Innate|TIMES=DetectMagicEidSLAPerDay|CASTERLEVEL=(max(HD,1))|Detect Magic,10+CHA
 	SOURCEPAGE:p.76
 
 Basic Magic ~ Flare (1/day)
