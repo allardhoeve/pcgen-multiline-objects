@@ -6,6 +6,8 @@
 Tiefling
 	CATEGORY:Special Ability
 	TYPE:TieflingSubrace
+	BONUS:STAT|DEX,INT|2|TYPE=Racial
+	BONUS:STAT|CHA|-2|TYPE=Racial
 
 Tiefling (Asura-Spawn)
 	CATEGORY:Special Ability
