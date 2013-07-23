@@ -3,6 +3,10 @@
 
 
 ###Block: Subrace Selection
+Tiefling
+	CATEGORY:Special Ability
+	TYPE:TieflingSubrace
+
 Tiefling (Asura-Spawn)
 	CATEGORY:Special Ability
 	TYPE:TieflingSubrace
