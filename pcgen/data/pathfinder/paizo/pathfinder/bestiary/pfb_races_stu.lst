@@ -1093,13 +1093,15 @@ Tiefling
 	FACE:5
 	REACH:5
 	LANGBONUS:Abyssal,Draconic,Dwarven,Elven,Gnome,Goblin,Halfling,Infernal,Orc
-	BONUS:STAT|DEX,INT|2
-	BONUS:STAT|CHA|-2
+	BONUS:STAT|DEX,INT|2|PREVAREQ:RemoveTieflingDefaultStats,0
+	BONUS:STAT|CHA|-2|PREVAREQ:RemoveTieflingDefaultStats,0
 	AUTO:LANG|Common
 	LEGS:2
 	RACETYPE:Outsider
 	RACESUBTYPE:Native
 	SOURCEPAGE:p.264
+	DEFINE:RemoveTieflingDefaultStats|0
+	ABILITY:Internal|AUTOMATIC|Tiefling Racial Trait Default
 
 #SPELLS:Innate|TIMES=1|CASTERLEVEL=TL|Darkness	CHOOSE:LANGAUTO|Abyssal|Infernal
 Tiger

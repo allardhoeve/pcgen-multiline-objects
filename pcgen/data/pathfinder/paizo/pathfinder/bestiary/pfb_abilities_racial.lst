@@ -561,9 +561,6 @@ Natural Attack
 
 ###Block: Set up Tiefling default abilities
 # Ability Name							Category of Ability	Ability
-CATEGORY=Internal|Select Racial Traits.MOD
-	ABILITY:Internal|AUTOMATIC|Tiefling Racial Trait Default|PRERACE:1,Tiefling
-
 
 
 
@@ -571,16 +568,18 @@ CATEGORY=Internal|Select Racial Traits.MOD
 Tiefling Racial Trait Default
 	CATEGORY:Internal
 
+# This is altered in later sources
+CATEGORY=Internal|Tiefling Racial Trait Default.MOD
+	ABILITY:Tiefling Racial Trait|AUTOMATIC|Skilled ~ Tiefling|!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingSkilled,TYPE.TieflingSubrace
+
+CATEGORY=Internal|Tiefling Racial Trait Default.MOD
+	ABILITY:Tiefling Racial Trait|AUTOMATIC|Spell-Like Ability ~ Tiefling|!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingSLA,TYPE.TieflingSubrace
 
 
+
+# These are constant
 CATEGORY=Internal|Tiefling Racial Trait Default.MOD
 	ABILITY:Tiefling Racial Trait|AUTOMATIC|Darkvision ~ Tiefling|!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingDarkvision
-
-CATEGORY=Internal|Tiefling Racial Trait Default.MOD
-	ABILITY:Tiefling Racial Trait|AUTOMATIC|Skilled ~ Tiefling|!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingSkilled
-
-CATEGORY=Internal|Tiefling Racial Trait Default.MOD
-	ABILITY:Tiefling Racial Trait|AUTOMATIC|Spell-Like Ability ~ Tiefling|!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingSLA
 
 CATEGORY=Internal|Tiefling Racial Trait Default.MOD
 	ABILITY:Tiefling Racial Trait|AUTOMATIC|Fiendish Resistance ~ Tiefling|!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingFiendishResistance
@@ -601,25 +600,6 @@ Darkvision
 	TYPE:TieflingRacialTrait.TieflingRacialDefault
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Darkvision ~ Tiefling],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingDarkvision]
 	BONUS:VAR|DarkvisionRange|60|TYPE=Base
-	SOURCEPAGE:p.169
-
-Skilled
-	KEY:Skilled ~ Tiefling
-	CATEGORY:Special Ability
-	TYPE:RacialTraits.SpecialQuality.Extraordinary.TieflingRacialTrait.TieflingRacialDefault
-	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Skilled ~ Tiefling],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingSkilled]
-	DESC:Tieflings have a +2 racial bonus on Bluff and Stealth checks.
-	BONUS:SKILL|Bluff,Stealth|2|TYPE=Racial
-	SOURCEPAGE:p.169
-
-Spell-Like Ability
-	KEY:Spell-Like Ability ~ Tiefling
-	CATEGORY:Special Ability
-	TYPE:RacialTraits.SpecialQuality.SpellLike.TieflingRacialTrait.TieflingRacialDefault
-	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Spell-Like Ability ~ Tiefling],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingSLA]
-	DEFINE:TieflingDarknessTimes|1
-	SPELLS:Innate|TIMES=TieflingDarknessTimes|CASTERLEVEL=TL|Darkness
-	DESC:Tieflings can use darkness %1/day as a spell-like ability.|TieflingDarknessTimes
 	SOURCEPAGE:p.169
 
 Fiendish Resistance
@@ -666,6 +646,26 @@ Infernal
 	AUTO:LANG|Infernal
 
 
+
+###Block: Altered by each Subrace
+Skilled
+	KEY:Skilled ~ Tiefling
+	CATEGORY:Special Ability
+	TYPE:RacialTraits.SpecialQuality.Extraordinary.TieflingRacialTrait.TieflingRacialDefault
+	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Skilled ~ Tiefling],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingSkilled]
+	DESC:Tieflings have a +2 racial bonus on Bluff and Stealth checks.
+	BONUS:SKILL|Bluff,Stealth|2|TYPE=Racial
+	SOURCEPAGE:p.169
+
+Spell-Like Ability
+	KEY:Spell-Like Ability ~ Tiefling
+	CATEGORY:Special Ability
+	TYPE:RacialTraits.SpecialQuality.SpellLike.TieflingRacialTrait.TieflingRacialDefault
+	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Spell-Like Ability ~ Tiefling],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingSLA]
+	DEFINE:TieflingDarknessTimes|1
+	SPELLS:Innate|TIMES=TieflingDarknessTimes|CASTERLEVEL=TL|Darkness
+	DESC:Tieflings can use darkness %1/day as a spell-like ability.|TieflingDarknessTimes
+	SOURCEPAGE:p.169
 
 
 
