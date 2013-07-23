@@ -385,7 +385,8 @@ Ninja Weapon Proficiencies
 	TYPE:SpecialQuality.ClassAbility
 	VISIBLE:YES
 	DESC: Ninja are proficient with all simple weapons, plus the kama, katana, kusarigama, nunchaku, sai, shortbow, short sword, shuriken, siangham, and wakizashi. They are proficient with light armor but not with shields.
-	AUTO:WEAPONPROF|Shortbow|Sword (Short)|Kama|Katana|Kusarigama (Sickle and Chain)|Nunchaku|Sai|Shuriken|Siangham|Wakizashi
+	AUTO:FEAT|Exotic Weapon Proficiency (Katana)
+	AUTO:WEAPONPROF|Shortbow|Sword (Short)|Kama|Kusarigama (Sickle and Chain)|Nunchaku|Sai|Shuriken|Siangham|Wakizashi
 
 Poison Use
 	KEY:Poison Use ~ Ninja
@@ -788,6 +789,7 @@ Unbound Steps
 Samurai Proficiencies
 	KEY:Samurai Proficiencies
 	CATEGORY:Special Ability
+	AUTO:FEAT|Exotic Weapon Proficiency (Katana)
 	AUTO:WEAPONPROF|TYPE=Samurai
 	SOURCEPAGE:p.18
 
