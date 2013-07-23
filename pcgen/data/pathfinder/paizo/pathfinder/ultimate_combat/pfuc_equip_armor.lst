@@ -7,6 +7,7 @@
 Haramaki
 	PROFICIENCY:ARMOR|Haramaki
 	TYPE:Armor.Light.Suit.Standard
+	EQMOD:STEEL
 	COST:3
 	WT:1
 	SPELLFAILURE:0
@@ -48,6 +49,7 @@ Lamellar (Leather)
 Do-maru
 	PROFICIENCY:ARMOR|Do-maru
 	TYPE:Armor.Medium.Suit.Standard
+	EQMOD:LEATHER.STEEL
 	COST:200
 	WT:30
 	ACCHECK:-4

@@ -16,6 +16,7 @@ Buckler Gun
 	CRITMULT:x4
 	CRITRANGE:1
 	DAMAGE:1d6
+	EQMOD:STEEL
 	RANGE:10
 	SPROP:Misfire 1 (5 ft.)
 
@@ -28,6 +29,7 @@ Pepperbox
 	CRITMULT:x4
 	CRITRANGE:1
 	DAMAGE:1d8
+	EQMOD:STEEL
 	RANGE:20
 	SPROP:Misfire 1-2 (5 ft.)
 
@@ -56,6 +58,7 @@ Pistol (Coat)
 	CRITMULT:x3
 	CRITRANGE:1
 	DAMAGE:1d4
+	EQMOD:STEEL
 	RANGE:10
 	SPROP:Misfire 1 (5 ft.)
 
@@ -68,6 +71,7 @@ Pistol (Dagger)
 	CRITMULT:x3
 	CRITRANGE:1
 	DAMAGE:1d4
+	EQMOD:STEEL
 	RANGE:10
 	SPROP:Misfire 1 (5 ft.)
 
@@ -80,6 +84,7 @@ Pistol (Double-Barreled)
 	CRITMULT:x4
 	CRITRANGE:1
 	DAMAGE:1d8
+	EQMOD:STEEL
 	RANGE:20
 	SPROP:Misfire 1-2 (5 ft.)
 
@@ -92,6 +97,7 @@ Pistol (Dragon)
 	CRITMULT:x4
 	CRITRANGE:1
 	DAMAGE:1d6
+	EQMOD:STEEL
 	RANGE:20
 	SPROP:Misfire 1-2 (5 ft.)
 
@@ -104,6 +110,7 @@ Pistol (Sword Cane)
 	CRITMULT:x3
 	CRITRANGE:1
 	DAMAGE:1d4
+	EQMOD:STEEL
 	RANGE:10
 	SPROP:Misfire 1 (5 ft.)
 
@@ -119,13 +126,12 @@ Blunderbuss
 	CRITMULT:x2
 	CRITRANGE:1
 	DAMAGE:1d8
-	EQMOD:STEEL
+	EQMOD:FIREARM_SCATTER.STEEL
 	WIELD:TwoHanded
 	RANGE:10
 	SIZE:M
 	SOURCEPAGE:p.x
 	SPROP:Misfire on 1-2 (10 ft); Scatter 15' cone
-	EQMOD:FIREARM_SCATTER
 
 Culverin
 	PROFICIENCY:WEAPON|Culverin
@@ -138,7 +144,7 @@ Culverin
 	DAMAGE:2d8
 	RANGE:30
 	SPROP:Misfire 1 (10 ft.)
-	EQMOD:FIREARM_SCATTER
+	EQMOD:FIREARM_SCATTER.STEEL
 	SPROP:Firing a culverin without support (such as a wall, a window, or a stand) imparts a -4 penalty on the attack rolls, and the wielder is knocked prone. A culverin uses 4 doses of black powder and grapeshot.
 
 Double Hackbut
@@ -150,6 +156,7 @@ Double Hackbut
 	CRITMULT:x4
 	CRITRANGE:1
 	DAMAGE:2d12
+	EQMOD:STEEL
 	RANGE:50
 	SPROP:Misfire 1-2 (5 ft.)
 
@@ -162,6 +169,7 @@ Fire Lance
 	CRITMULT:x4
 	CRITRANGE:1
 	DAMAGE:1d6
+	EQMOD:STEEL
 	RANGE:10
 	SPROP:Misfire 1-4 (5 ft.)
 
@@ -190,6 +198,7 @@ Musket (Axe)
 	CRITMULT:x4
 	CRITRANGE:1
 	DAMAGE:1d8
+	EQMOD:STEEL
 	RANGE:30
 	SPROP:Misfire 1-2 (5 ft.)
 
@@ -202,7 +211,8 @@ Musket (Double-Barreled)
 	CRITMULT:x4
 	CRITRANGE:1
 	DAMAGE:1d12
-	RANGE:10
+	EQMOD:STEEL
+	RANGE:40
 	SPROP:Misfire 1-3 (5 ft.)
 
 Musket (Warhammer)
@@ -214,6 +224,7 @@ Musket (Warhammer)
 	CRITMULT:x4
 	CRITRANGE:1
 	DAMAGE:1d8
+	EQMOD:STEEL
 	RANGE:30
 	SPROP:Misfire 1-2 (5 ft.)
 
@@ -230,6 +241,7 @@ Revolver
 	CRITMULT:x4
 	CRITRANGE:1
 	DAMAGE:1d8
+	EQMOD:STEEL
 	RANGE:20
 	SPROP:Misfire 1
 
@@ -245,6 +257,7 @@ Rifle
 	CRITMULT:x4
 	CRITRANGE:1
 	DAMAGE:1d10
+	EQMOD:STEEL
 	RANGE:80
 	SPROP:Misfire 1
 
@@ -257,6 +270,7 @@ Rifle (Pepperbox)
 	CRITMULT:x4
 	CRITRANGE:1
 	DAMAGE:1d10
+	EQMOD:STEEL
 	RANGE:80
 	SPROP:Misfire 1-2
 
@@ -271,7 +285,7 @@ Shotgun
 	DAMAGE:1d8
 	RANGE:20
 	SPROP:Misfire 1-2
-	EQMOD:FIREARM_SCATTER
+	EQMOD:FIREARM_SCATTER.STEEL
 
 Shotgun (Double-Barreled)
 	PROFICIENCY:WEAPON|Shotgun
@@ -284,15 +298,17 @@ Shotgun (Double-Barreled)
 	DAMAGE:1d8
 	RANGE:20
 	SPROP:Misfire 1-2
-	EQMOD:FIREARM_SCATTER
+	EQMOD:FIREARM_SCATTER.STEEL
 
 
 
 
 
 #
-#Pistol (Dragon/FirearmPellet)	PROFICIENCY:WEAPON|Pistol (Dragon)			TYPE:Weapon.Exotic.Ranged.Standard.Piercing.Bludgeoning.Container.Projectile.Firearm.Pistol		CONTAINS:1|FirearmPellet=1|FirearmBullet=1	COST:1000	WT:3		CRITMULT:x4			CRITRANGE:1			DAMAGE:1d6						RANGE:20		EQMOD:FIREARM_SCATTER				SPROP:Misfire 1-2 (5 ft.)
-#Pistol (Dragon/FirearmBullet)	PROFICIENCY:WEAPON|Pistol (Dragon)			TYPE:Weapon.Exotic.Ranged.Standard.Piercing.Bludgeoning.Container.Projectile.Firearm.Pistol		CONTAINS:1|FirearmBullet=1	COST:1000	WT:3		CRITMULT:x4			CRITRANGE:1			DAMAGE:1d6						RANGE:20						SPROP:Misfire 1-2 (5 ft.)
+#Pistol (Dragon/FirearmPellet)	PROFICIENCY:WEAPON|Pistol (Dragon)			TYPE:Weapon.Exotic.Ranged.Standard.Piercing.Bludgeoning.Container.Projectile.Firearm.Pistol		CONTAINS:1|FirearmPellet=1|FirearmBullet=1	COST:1000	WT:3		CRITMULT:x4			CRITRANGE:1			DAMAGE:1d6						RANGE:20		EQMOD:FIREARM_SCATTER.STEEL				SPROP:Misfire 1-2 (5 ft.)
+#Pistol (Dragon/FirearmBullet)	PROFICIENCY:WEAPON|Pistol (Dragon)			TYPE:Weapon.Exotic.Ranged.Standard.Piercing.Bludgeoning.Container.Projectile.Firearm.Pistol		CONTAINS:1|FirearmBullet=1	COST:1000	WT:3		CRITMULT:x4			CRITRANGE:1			DAMAGE:1d6	EQMOD:STEEL						RANGE:20						SPROP:Misfire 1-2 (5 ft.)
 #
 #Blunderbuss (FirearmPellet)	PROFICIENCY:WEAPON|Blunderbuss			TYPE:Weapon.Exotic.Ranged.Standard.Piercing.Bludgeoning.Container.Projectile.Firearm.Blunderbuss	CONTAINS:1|FirearmPellet=1	COST:2000	WT:8		CRITMULT:x2			CRITRANGE:1			DAMAGE:1d8	EQMOD:STEEL	WIELD:TwoHanded	RANGE:1	SIZE:M	SOURCEPAGE:p.x	SPROP:Misfire on 1-2 (10 ft), Scatter - 15' cone
 #Blunderbuss (FirearmBullet)	PROFICIENCY:WEAPON|Blunderbuss			TYPE:Weapon.Exotic.Ranged.Standard.Piercing.Bludgeoning.Container.Projectile.Firearm.Blunderbuss	CONTAINS:1|FirearmBullet=1	COST:2000	WT:8		CRITMULT:x2			CRITRANGE:1			DAMAGE:1d8	EQMOD:STEEL	WIELD:TwoHanded	RANGE:10	SIZE:M	SOURCEPAGE:p.x	SPROP:Misfire on 1-2 (10 ft)
+
+
