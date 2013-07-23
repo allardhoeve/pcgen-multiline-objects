@@ -36,7 +36,7 @@ Imperious Bloodline Bonus Spells
 	SPELLKNOWN:CLASS|Sorcerer=3|Heroism|PREVARGTEQ:BloodlineCasterLVL,7
 	SPELLKNOWN:CLASS|Sorcerer=4|Threefold Aspect|PREVARGTEQ:BloodlineCasterLVL,9
 	SPELLKNOWN:CLASS|Sorcerer=5|Command (Greater)|PREVARGTEQ:BloodlineCasterLVL,11
-	SPELLKNOWN:CLASS|Sorcerer=6|Pure Strain|PREVARGTEQ:BloodlineCasterLVL,13
+	SPELLKNOWN:CLASS|Sorcerer=6|Repulsion|PREVARGTEQ:BloodlineCasterLVL,13
 	SPELLKNOWN:CLASS|Sorcerer=7|Age Resistance (Greater)|PREVARGTEQ:BloodlineCasterLVL,15
 	SPELLKNOWN:CLASS|Sorcerer=8|Prediction of Failure|PREVARGTEQ:BloodlineCasterLVL,17
 	SPELLKNOWN:CLASS|Sorcerer=9|Overwhelming Presence|PREVARGTEQ:BloodlineCasterLVL,19

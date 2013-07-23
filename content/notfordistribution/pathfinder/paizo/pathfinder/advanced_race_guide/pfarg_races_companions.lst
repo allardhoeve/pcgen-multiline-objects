@@ -154,7 +154,6 @@ Companion (Sapling Treant)
 
 ###Block: Shaitan Binder Eidolon
 Shaitan Binder Eidolon (Biped)
-	OUTPUTNAME:Biped
 	STARTFEATS:1
 	SIZE:M
 	MOVE:Walk,20
@@ -171,14 +170,12 @@ Shaitan Binder Eidolon (Biped)
 	LEGS:2
 	HANDS:7
 	DEFINE:EidHeads|1
-	MONSTERCLASS:Eidolon (Fort/Will):1
+	MONSTERCLASS:Shaitan Binder Eidolon (Fort/Will):1
 	RACETYPE:Shaitan Binder Eidolon
-	SOURCEPAGE:p.56
-	BONUS:ABILITYPOOL|Shaitan Binder Eidolon Stat Bonus|1
-	KIT:1|Eidolon (Biped)
+	SOURCEPAGE:p.146
+	KIT:1|Shaitan Binder Eidolon (Biped)
 
 Shaitan Binder Eidolon (Quadruped)
-	OUTPUTNAME:Quadruped
 	STARTFEATS:1
 	SIZE:M
 	MOVE:Walk,20
@@ -195,13 +192,12 @@ Shaitan Binder Eidolon (Quadruped)
 	LEGS:4
 	HANDS:7
 	DEFINE:EidHeads|1
-	MONSTERCLASS:Eidolon (Fort/Ref):1
+	MONSTERCLASS:Shaitan Binder Eidolon (Fort/Ref):1
 	RACETYPE:Shaitan Binder Eidolon
-	SOURCEPAGE:p.56
-	KIT:1|Eidolon (Quadruped)
+	SOURCEPAGE:p.146
+	KIT:1|Shaitan Binder Eidolon (Quadruped)
 
 Shaitan Binder Eidolon (Serpentine)
-	OUTPUTNAME:Serpentine
 	STARTFEATS:1
 	SIZE:M
 	MOVE:Walk,20
@@ -218,16 +214,15 @@ Shaitan Binder Eidolon (Serpentine)
 	LEGS:0
 	HANDS:7
 	DEFINE:EidHeads|1
-	MONSTERCLASS:Eidolon (Ref/Will):1
+	MONSTERCLASS:Shaitan Binder Eidolon (Ref/Will):1
 	RACETYPE:Shaitan Binder Eidolon
-	SOURCEPAGE:p.56
-	KIT:1|Eidolon (Serpentine)
+	SOURCEPAGE:p.146
+	KIT:1|Shaitan Binder Eidolon (Serpentine)
 
 
 
 ###Block: Wild Caller Eidolon
 Wild Caller Eidolon (Biped)
-	OUTPUTNAME:Biped
 	STARTFEATS:1
 	SIZE:M
 	MOVE:Walk,20
@@ -244,13 +239,12 @@ Wild Caller Eidolon (Biped)
 	LEGS:2
 	HANDS:7
 	DEFINE:EidHeads|1
-	MONSTERCLASS:Eidolon (Fort/Will):1
-	RACETYPE:Eidolon
+	MONSTERCLASS:Wild Caller Eidolon (Fort/Will):1
+	RACETYPE:Wild Caller Eidolon
 	SOURCEPAGE:p.56
-	KIT:1|Eidolon (Biped)
+	KIT:1|Wild Caller Eidolon (Biped)
 
 Wild Caller Eidolon (Quadruped)
-	OUTPUTNAME:Quadruped
 	STARTFEATS:1
 	SIZE:M
 	MOVE:Walk,20
@@ -267,13 +261,12 @@ Wild Caller Eidolon (Quadruped)
 	LEGS:4
 	HANDS:7
 	DEFINE:EidHeads|1
-	MONSTERCLASS:Eidolon (Fort/Ref):1
-	RACETYPE:Eidolon
+	MONSTERCLASS:Wild Caller Eidolon (Fort/Ref):1
+	RACETYPE:Wild Caller Eidolon
 	SOURCEPAGE:p.56
-	KIT:1|Eidolon (Quadruped)
+	KIT:1|Wild Caller Eidolon (Quadruped)
 
 Wild Caller Eidolon (Serpentine)
-	OUTPUTNAME:Serpentine
 	STARTFEATS:1
 	SIZE:M
 	MOVE:Walk,20
@@ -290,10 +283,10 @@ Wild Caller Eidolon (Serpentine)
 	LEGS:0
 	HANDS:7
 	DEFINE:EidHeads|1
-	MONSTERCLASS:Eidolon (Ref/Will):1
-	RACETYPE:Eidolon
+	MONSTERCLASS:Wild Caller Eidolon (Ref/Will):1
+	RACETYPE:Wild Caller Eidolon
 	SOURCEPAGE:p.56
-	KIT:1|Eidolon (Serpentine)
+	KIT:1|Wild Caller Eidolon (Serpentine)
 
 
 

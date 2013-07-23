@@ -997,7 +997,7 @@ Trapmaker's Sack
 Tail Attachment (Long Lash)
 	OUTPUTNAME:Tail Attachment, Long Lash
 	PROFICIENCY:WEAPON|Kobold Tail Attachment
-	TYPE:Weapon.Melee.Light.Natural.KoboldTailAttachment.Slashing.Reach.Finessable
+	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Slashing.Reach.Finessable
 	COST:15
 	WT:1
 	CRITMULT:x2
@@ -1009,7 +1009,7 @@ Tail Attachment (Long Lash)
 Tail Attachment (Pounder)
 	OUTPUTNAME:Tail Attachment, Pounder
 	PROFICIENCY:WEAPON|Kobold Tail Attachment
-	TYPE:Weapon.Melee.Light.Natural.KoboldTailAttachment.Bludgeoning.Finessable
+	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Bludgeoning.Finessable
 	COST:1
 	WT:4
 	CRITMULT:x2
@@ -1021,7 +1021,7 @@ Tail Attachment (Pounder)
 Tail Attachment (Razored)
 	OUTPUTNAME:Tail Attachment, Razored
 	PROFICIENCY:WEAPON|Kobold Tail Attachment
-	TYPE:Weapon.Melee.Light.Natural.KoboldTailAttachment.Slashing.Finessable
+	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Slashing.Finessable
 	COST:3
 	WT:2
 	CRITMULT:x2
@@ -1033,7 +1033,7 @@ Tail Attachment (Razored)
 Tail Attachment (Spiked)
 	OUTPUTNAME:Tail Attachment, Spiked
 	PROFICIENCY:WEAPON|Kobold Tail Attachment
-	TYPE:Weapon.Melee.Light.Natural.KoboldTailAttachment.Piercing.Finessable
+	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Piercing.Finessable
 	COST:3
 	WT:2
 	CRITMULT:x3
@@ -1045,7 +1045,7 @@ Tail Attachment (Spiked)
 Tail Attachment (Sweeper)
 	OUTPUTNAME:Tail Attachment, Sweeper
 	PROFICIENCY:WEAPON|Kobold Tail Attachment
-	TYPE:Weapon.Melee.Light.Natural.KoboldTailAttachment.Bludgeoning.Trip.Finessable
+	TYPE:Weapon.Melee.Light.KoboldTailAttachment.Bludgeoning.Trip.Finessable
 	COST:7
 	WT:3
 	CRITMULT:x2

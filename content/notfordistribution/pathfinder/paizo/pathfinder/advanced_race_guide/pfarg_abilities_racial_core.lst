@@ -1273,10 +1273,11 @@ Fast Learner Bonus
 	VISIBLE:DISPLAY
 	PREFEAT:1,Fast Learner
 	DESC:Gain both +1 hit point and +1 skill rank.  Only available if you've taken the Fast Learner feat.
-	STACK:NO
+	STACK:YES
 	MULT:YES
-	CHOOSE:NOCHOICE
-	ABILITY:Special Ability|AUTOMATIC|Bonus Hit Point|Bonus Skill Point
+	BONUS:HP|CURRENTMAX|1
+	CHOOSE:SKILL|TYPE=Charisma|TYPE=Dexterity|TYPE=Intelligence|TYPE=Strength|TYPE=Wisdom
+	BONUS:SKILLRANK|LIST|1
 
 CATEGORY=Special Ability|Bonus Hit Point.MOD
 	!PREFEAT:1,Fast Learner

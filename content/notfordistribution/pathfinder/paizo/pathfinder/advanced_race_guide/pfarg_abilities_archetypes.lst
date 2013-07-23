@@ -970,9 +970,9 @@ Bramble Brewer
 Wild Caller
 	KEY:Summoner Archetype ~ Wild Caller
 	CATEGORY:Archetype
-	TYPE:Archetype.SummonerArchetype.SummonerSummonMonster
+	TYPE:Archetype.SummonerArchetype.SummonerEidolon.SummonerSummonMonster
 	PRECLASS:1,Summoner=1
-	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Summoner Archetype ~ Wild Caller],[!PREABILITY:1,CATEGORY=Archetype,TYPE.SummonerSummonMonster]
+	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Summoner Archetype ~ Wild Caller],[!PREABILITY:1,CATEGORY=Archetype,TYPE.SummonerEidolon,TYPE.SummonerSummonMonster]
 	PRERACE:1,Half-Elf
 	DESC:Often a half-elf 's ties to nature and elven heritage are so strong that they can dramatically affect the nature of his summonings. The wild caller calls eidolons that take more natural and savage forms and summons from nature rather than the Great Beyond.
 	ABILITY:Special Ability|AUTOMATIC|Spells ~ Wild Caller|PRECLASS:1,Summoner=1
@@ -1096,8 +1096,10 @@ Eidolon
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:The eidolon of a wild caller tends to take more natural and more savage forms than other summoners' eidolons. A wild caller gains 1/4 his class level as bonus evolution points in his eidolon's evolution pool, but his eidolon cannot take the following evolutions: magic attacks, skilled (while the eidolon can select this evolution, it can only do so with the following skills: Acrobatics, Climb, Escape Artist, Fly, Intimidate, Perception, Survival, and Swim), energy attacks, immunity, weapon training, damage reduction, frightful presence, breath weapon, spell resistance, basic magic, unnatural aura, channel resistance, head, minor magic, undead appearance, major magic, dimension door, incorporeal form, lifesense, no breath, ultimate magic.
-	DEFINE:EidolonEP|0
-	BONUS:VAR|EidolonEP|SummonerLVL
+	DEFINE:EidolonLVL|0
+	BONUS:VAR|EidolonLVL|SummonerLVL
+	FOLLOWERS:Eidolon|1
+	COMPANIONLIST:Eidolon|RACETYPE=Wild Caller Eidolon
 	SOURCEPAGE:p.45
 
 Summon Nature's Ally I
@@ -3670,36 +3672,37 @@ Base Form
 	DESC:At 1st level, if a shaitan binder's eidolon has the biped base form, it gains a +2 bonus to one ability score. The shaitan binder must make this choice at 1st level. If at any time the shaitan binder's eidolon has another base form, it loses this bonus until it returns to biped form. A shaitan binder's eidolon does not gain the share spells ability.
 	DEFINE:EidolonLVL|0
 	BONUS:VAR|EidolonLVL|SummonerLvl
-	FOLLOWERS:Eidolon|1
-	COMPANIONLIST:Eidolon|RACETYPE=Shaitan Binder Eidolon
+	BONUS:FOLLOWERS|Eidolon|-1
+	FOLLOWERS:Shaitan Binder Eidolon|1
+	COMPANIONLIST:Shaitan Binder Eidolon|RACETYPE=Shaitan Binder Eidolon
 	SOURCEPAGE:p.146
 
 Shaitan Magic
 	KEY:Shaitan Magic ~ Shaitan Binder
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
-	DESC:At 4th level, a shaitan binder's eidolon gains the basic magic evolution (Ultimate Magic) as a free evolution. At 6th level, it gains the minor magic evolution (Ultimate Magic). At 8th level, it gains the major magic evolution (Ultimate Magic) as a free evolution, and adds the following to the list of available spells for that evolution: glitterdust and soften earth and stone. At 12th level, it gains the ultimate magic evolution (Ultimate Magic) as a free evolution, and adds the following to the list of available spells for that evolution: meld into stone and stone shape. Although the shaitan binder gains the standard versions of these evolutions for free, he must pay the normal cost to upgrade them to the improved versions. This ability replaces shield ally and greater shield ally.
+	DESC:The shaitan binder's eidolon gains the basic magic evolution (Ultimate Magic) as a free evolution. At 6th level, it gains the minor magic evolution (Ultimate Magic). At 8th level, it gains the major magic evolution (Ultimate Magic) as a free evolution, and adds the following to the list of available spells for that evolution: glitterdust and soften earth and stone. At 12th level, it gains the ultimate magic evolution (Ultimate Magic) as a free evolution, and adds the following to the list of available spells for that evolution: meld into stone and stone shape. Although the shaitan binder gains the standard versions of these evolutions for free, he must pay the normal cost to upgrade them to the improved versions. This ability replaces shield ally and greater shield ally.
 	SOURCEPAGE:p.146
 
 Earth Glide
 	KEY:Earth Glide ~ Shaitan Binder
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
-	DESC:At 10th level, if a shaitan binder's eidolon has the burrow evolution, it gains the earth glide universal monster ability and can use this ability to travel at its full base speed. This ability replaces aspect.
+	DESC:If a shaitan binder's eidolon has the burrow evolution, it gains the earth glide universal monster ability and can use this ability to travel at its full base speed. This ability replaces aspect.
 	SOURCEPAGE:p.146
 
 Stone Curse
 	KEY:Stone Curse ~ Shaitan Binder
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
-	DESC:At 18th level, a shaitan binder may select stone curse as a 4-point evolution. This allows the eidolon to trap creatures in stone like the shaitan stone curse ability (Bestiary 143). The DC to resist or break free of the stone curse is 10 + 1/2 the eidolon's Hit Dice + the eidolon's Strength score. This ability replaces greater aspect.
+	DESC:The shaitan binder may select stone curse as a 4-point evolution. This allows the eidolon to trap creatures in stone like the shaitan stone curse ability (Bestiary 143). The DC to resist or break free of the stone curse is 10 + 1/2 the eidolon's Hit Dice + the eidolon's Strength score.
 	SOURCEPAGE:p.146
 
 Noble Eidolon
 	KEY:Noble Eidolon ~ Shaitan Binder
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.SpellLike
-	DESC:At 20th level, a shaitan binder's eidolon gains the ability to grant its summoner's wishes. Once per day, the eidolon can cast limited wish as a spelllike ability. The eidolon's caster level is equal to its level. The wish must be spoken aloud by the shaitan binder, beginning with the words "I wish," and cannot duplicate a wish the eidolon has granted within the past 24 hours. If the eidolon uses this ability to duplicate a spell with a costly material component, the shaitan binder must provide that component. This ability replaces twin eidolon.
+	DESC:The shaitan binder's eidolon gains the ability to grant its summoner's wishes. Once per day, the eidolon can cast limited wish as a spelllike ability. The eidolon's caster level is equal to its level. The wish must be spoken aloud by the shaitan binder, beginning with the words "I wish," and cannot duplicate a wish the eidolon has granted within the past 24 hours. If the eidolon uses this ability to duplicate a spell with a costly material component, the shaitan binder must provide that component.
 	SOURCEPAGE:p.146
 
 
@@ -4498,7 +4501,7 @@ Augment Summoning
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
 	DESC:Any creature with the water subtype the undine adept summons with either summon monster or summon nature's ally gains the benefits of the Augment Summoning feat.
-	VFEAT:Augment Summoning|!PREFEAT1,Augment Summoning
+	VFEAT:Augment Summoning|!PREFEAT:1,Augment Summoning
 	SOURCEPAGE:p.176
 
 Resist Water's Call
@@ -5241,6 +5244,7 @@ Charming Gaze
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.SpellLike.AugmentedFormSelection
 	DESC:The druid gains a gaze attack that affects creatures within 30 feet as a charm person spell.
+	SPELLS:Innate|TIMES=ATWILL|Charm Person
 	SOURCEPAGE:p.197
 
 Darkvision
@@ -5248,6 +5252,7 @@ Darkvision
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural.AugmentedFormSelection
 	DESC:The druid gains darkvision with a range of 60 feet.
+	VISION:Darkvision (60')
 	SOURCEPAGE:p.197
 
 Detect Thoughts
@@ -5255,6 +5260,7 @@ Detect Thoughts
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural.AugmentedFormSelection
 	DESC:The druid can use detect thoughts at will.
+	SPELLS:Innate|TIMES=ATWILL|Detect Thoughts
 	SOURCEPAGE:p.197
 
 Guarded Thoughts
@@ -5262,27 +5268,31 @@ Guarded Thoughts
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.AugmentedFormSelection
 	DESC:The druid gains a +2 racial bonus on saves against charm effects and immunity to any form of mind reading (such as detect thoughts).
+	ASPECT:SaveBonus|+2 vs Charm
 	SOURCEPAGE:p.197
 
 Poison Immunity
 	KEY:Poison Immunity ~ Naga Aspirant
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.AugmentedFormSelection
-	DESC:The druid gains immunity to all poisons. The druid's naga form must have at least one poison-based natural attack in order to select this ability.
+	DESC:The druid gains immunity to all poisons.
+	PREABILITY:1,CATEGORY=Special Ability,Poisonous Sting ~ Naga Aspirant,Venomous Bite ~ Naga Aspirant
+	1
 	SOURCEPAGE:p.197
 
 Poisonous Sting
 	KEY:Poisonous Sting ~ Naga Aspirant
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.AugmentedFormSelection
-	DESC:The druid's stinger becomes venomous. The naga form must have a tail stinger to take this ability. Sting-injury; save Fort DC 10 + 1/2 the druid's class level + the druid's Constitution modifier; frequency 1 round; effect sleep for 2d4 minutes; cure 1 save.
+	DESC:The druid's stinger becomes venomous. The naga form must have a tail stinger to take this ability. Sting-injury; save Fort DC %1; frequency 1 round; effect sleep for 2d4 minutes; cure 1 save.|DruidLVL/2+CON+10
 	SOURCEPAGE:p.197
 
 Spit Venom
 	KEY:Spit Venom ~ Naga Aspirant
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.AugmentedFormSelection
-	DESC:The naga form can spit her venom up to 30 feet as a standard action. This is a ranged touch attack with no range increment. Any opponent hit by this attack must make a successful save (see above) to avoid the effect. The naga form must have a venomous bite to take this ability.
+	DESC:The naga form can spit her venom up to 30 feet as a standard action. This is a ranged touch attack with no range increment. Any opponent hit by this attack must make a successful save to avoid the effect.
+	PREABILITY:1,CATEGORY=Special Ability,Venomous Bite ~ Naga Aspirant
 	SOURCEPAGE:p.197
 
 Sting
@@ -5290,6 +5300,7 @@ Sting
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.AugmentedFormSelection
 	DESC:The naga form grows a stinger on the end of her tail, granting her a sting natural attack that deals 1d6 points of piercing damage.
+	NATURALATTACKS:Sting,Weapon.Natural.Melee.Piercing.Finesseable,*1,1d6
 	SOURCEPAGE:p.197
 
 Swim
@@ -5297,6 +5308,7 @@ Swim
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.AugmentedFormSelection
 	DESC:The naga form gains a swim speed equal to her base speed.
+	MOVECLONE:Walk,Swim,0
 	SOURCEPAGE:p.197
 
 Tough Scales
@@ -5304,13 +5316,17 @@ Tough Scales
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.AugmentedFormSelection
 	DESC:The druid's enhancement bonus to her natural armor increases by +2. The druid may select this ability more than once. Its effects stack.
+	MULT:YES
+	STACK:YES
+	CHOOSE:NOCHOICE
+	BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK
 	SOURCEPAGE:p.197
 
 Venomous Bite
 	KEY:Venomous Bite ~ Naga Aspirant
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.AugmentedFormSelection
-	DESC:The naga form's bite attack becomes poisonous. Bite-injury; save Fortitude DC 10 + 1/2 the druid's class level + the druid's Constitution modifier; frequency 1/ round for 6 rounds; effect 1 Constitution damage, cure 1 save.
+	DESC:The naga form's bite attack becomes poisonous. Bite-injury; save Fortitude DC %1; frequency 1/ round for 6 rounds; effect 1 Constitution damage, cure 1 save.|10+DruidLVL/2+CON
 	SOURCEPAGE:p.197
 
 
