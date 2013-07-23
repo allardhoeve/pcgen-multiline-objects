@@ -570,6 +570,9 @@ Tiefling Racial Trait Default
 
 # This is altered in later sources
 CATEGORY=Internal|Tiefling Racial Trait Default.MOD
+	ABILITY:Tiefling Racial Trait|AUTOMATIC|Stats ~ Tiefling|!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingSubrace
+
+CATEGORY=Internal|Tiefling Racial Trait Default.MOD
 	ABILITY:Tiefling Racial Trait|AUTOMATIC|Skilled ~ Tiefling|!PREABILITY:1,CATEGORY=Special Ability,TYPE.TieflingSkilled,TYPE.TieflingSubrace
 
 CATEGORY=Internal|Tiefling Racial Trait Default.MOD
@@ -594,6 +597,12 @@ CATEGORY=Internal|Tiefling Racial Trait Default.MOD
 
 ###Block: Default Tiefling Abilities (POOL=6)
 # Ability Name		Unique Key					Category of Ability		Type															Multiple Requirements																							Define															Innate Spells									Description																							Automatically Gained Language	Ability																Bonus to Ability Pool				Bonus to skill					Modify VAR						Source Page
+
+	BONUS:STAT|DEX,INT|2|PREVAREQ:RemoveTieflingDefaultStats,0
+	BONUS:STAT|CHA|-2|PREVAREQ:RemoveTieflingDefaultStats,0
+
+
+
 Darkvision
 	KEY:Darkvision ~ Tiefling
 	CATEGORY:Special Ability
