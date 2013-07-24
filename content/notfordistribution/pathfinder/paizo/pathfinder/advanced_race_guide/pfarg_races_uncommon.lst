@@ -89,7 +89,8 @@ Samsaran
 	REACH:5
 	LANGAUTO:Common,Samsaran
 	LANGBONUS:Abyssal,Aquan,Auran,Celestial,Draconic,Giant,Ignan,Infernal,Tengu,Terran
-	BONUS:STAT|WIS,CHA|2
+	BONUS:STAT|WIS,INT|2
+	BONUS:STAT|CON|-2
 	RACETYPE:Humanoid
 	RACESUBTYPE:Samsaran
 	TYPE:Base.PC.Uncommon
