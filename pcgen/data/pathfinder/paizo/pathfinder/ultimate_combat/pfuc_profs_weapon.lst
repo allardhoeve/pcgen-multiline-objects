@@ -249,9 +249,7 @@ Wakizashi.MOD
 ###Block: Gladiator
 # Martial
 # Weapon Name		Type
-Gladius
-	TYPE:GladiatorMelee.Martial.Piercing.Performance.Light
-
+#Gladius			TYPE:GladiatorMelee.Martial.Piercing.Performance.Light
 
 
 # One-Handed

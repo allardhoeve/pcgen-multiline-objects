@@ -8,7 +8,7 @@
 # Equipment Name	Required Weapon Proficiency			Type														Cost		Weight	Critical Hit Multiplier	Critical Hit Range	Damage	Range
 Gladius
 	PROFICIENCY:WEAPON|Sword (Short)
-	TYPE:Weapon.GladiatorWeapon.Melee.Martial.Piercing.Performance
+	TYPE:Weapon.GladiatorWeapon.Melee.Martial.Piercing.Performance.GladiatorMelee.Performance.Light
 	COST:15
 	WT:3
 	CRITMULT:x2
