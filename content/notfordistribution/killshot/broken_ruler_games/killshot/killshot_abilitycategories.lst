@@ -18,27 +18,32 @@ ABILITYCATEGORY:Training Point Choice
 
 
 
+
+
+ABILITYCATEGORY:Training Pool
+	CATEGORY:Training Pool
+
 ABILITYCATEGORY:Focus Pool
 	POOL:TrainingPool
-	CATEGORY:Special Ability
+	CATEGORY:Training Pool
 	TYPE:Focus
 	DISPLAYLOCATION:Training Pool
 
 ABILITYCATEGORY:Reaction Pool
 	POOL:TrainingPool
-	CATEGORY:Special Ability
+	CATEGORY:Training Pool
 	TYPE:Reaction
 	DISPLAYLOCATION:Training Pool
 
 ABILITYCATEGORY:Skill Pool
 	POOL:TrainingPool
-	CATEGORY:Special Ability
+	CATEGORY:Training Pool
 	TYPE:Skill
 	DISPLAYLOCATION:Training Pool
 
 ABILITYCATEGORY:Trait Pool
 	POOL:TrainingPool
-	CATEGORY:Special Ability
+	CATEGORY:Training Pool
 	TYPE:Trait
 	DISPLAYLOCATION:Training Pool
 
