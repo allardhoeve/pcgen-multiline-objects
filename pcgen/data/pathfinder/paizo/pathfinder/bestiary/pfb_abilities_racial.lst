@@ -599,6 +599,8 @@ CATEGORY=Internal|Tiefling Racial Trait Default.MOD
 # Ability Name		Unique Key					Category of Ability		Type															Multiple Requirements																							Define															Innate Spells									Description																							Automatically Gained Language	Ability																Bonus to Ability Pool				Bonus to skill					Modify VAR						Source Page
 Stats ~ Tiefling
 	CATEGORY:Special Ability
+	TYPE:TieflingRacialTrait
+	VISIBLE:NO
 	BONUS:STAT|DEX,INT|2|TYPE=Racial
 	BONUS:STAT|CHA|-2|TYPE=Racial
 
