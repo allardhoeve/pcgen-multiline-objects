@@ -85,6 +85,15 @@ Air Bubble
 
 Air Walk (Communal)
 	CLASSES:Alchemist=4|Cleric=5|Druid=5
+	SCHOOL:Transmutation
+	DESCRIPTOR:Air
+	TYPE:Divine
+	COMPS:V, S, DF
+	CASTTIME:1 standard action
+	RANGE:Touch
+	DURATION:(CASTERLEVEL*10) minutes
+	SAVEINFO:None
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like air walk, except divide the duration in 10-minute intervals among the creatures touched.
 	SOURCEPAGE:p.222
@@ -112,6 +121,14 @@ Animal Aspect (Greater)
 
 Ant Haul (Communal)
 	CLASSES:Alchemist=2|Cleric=2|Druid=2|Ranger=2|Sorcerer,Wizard=2|Summoner=2
+	SCHOOL:Transmutation
+	COMPS:V, S, M/DF (a small pulley)
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL*2) hours
+	SAVEINFO:Fortitude negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like ant haul (see page 202 of the Pathfinder RPG Advanced Player's Guide), except you may divide the duration in 2-hour intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.223
@@ -286,6 +303,15 @@ Damp Powder
 
 Darkvision (Communal)
 	CLASSES:Alchemist=3|Antipaladin=3|Ranger=4|Sorcerer,Wizard=3
+	SCHOOL:Transmutation
+	TYPE:Arcane.Divine
+	COMPS:V, S, M
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL) hours
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like darkvision, except you may divide the duration in 1-hour intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.226
@@ -343,6 +369,16 @@ Debilitating Portent
 
 Delay Poison (Communal)
 	CLASSES:Alchemist=3|Bard=3|Cleric=3|Druid=3|Inquisitor=3|Paladin=3|Ranger=3|Witch=3
+	SCHOOL:Conjuration
+	SUBSCHOOL:Healing
+	TYPE:Arcane.Divine
+	COMPS:V, S, DF
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL) hours
+	SAVEINFO:Fortitude negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like delay poison, except you divide the duration in 1-hour intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.227
@@ -413,6 +449,15 @@ Effortless Armor
 
 Endure Elements (Communal)
 	CLASSES:Alchemist=3|Cleric=2|Druid=2|Paladin=2|Ranger=2|Sorcerer,Wizard=2
+	SCHOOL:Abjuration
+	TYPE:Arcane.Divine
+	COMPS:V, S
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:24 hours
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like endure elements, except you divide the duration in 1-hour increments among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.228
@@ -972,12 +1017,29 @@ Magic Siege Engine (Greater)
 
 Mask Dweomer (Communal)
 	CLASSES:Witch=2
+	SCHOOL:Illusion
+	SUBSCHOOL:Glamer
+	COMPS:V, S, M (a piece of gauze)
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL) days (D)
+	SAVEINFO:None; see text
+	SPELLRES:No
 	TARGETAREA:creatures or objects touched
 	DESC:This spell functions like mask dweomer (Advanced Player's Guide 232), except you divide the duration in 1-day increments among the creatures or objects touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.236
 
 Mind Blank (Communal)
 	CLASSES:Sorcerer,Wizard=9|Witch=9
+	SCHOOL:Abjuration
+	TYPE:Arcane.Divine
+	COMPS:V, S
+	CASTTIME:1 standard action
+	RANGE:Close
+	DURATION:24 hours
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like mind blank, except you divide the duration in 1-hour increments among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.236
@@ -1010,6 +1072,15 @@ Moment of Greatness
 
 Mount (Communal)
 	CLASSES:Magus=2|Sorcerer,Wizard=2|Summoner=2|Witch=2
+	SCHOOL:Conjuration
+	SUBSCHOOL:Summoning
+	TYPE:Arcane
+	COMPS:V, S, M
+	CASTTIME:1 round
+	RANGE:Close
+	DURATION:(CASTERLEVEL*2) hours [D]
+	SAVEINFO:None
+	SPELLRES:No
 	TARGETAREA:up to six mounts
 	DESC:This spell functions like mount, except you can summon up to six light horses or ponies, and you divide the duration in 2-hour increments among the steeds summoned.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.237
@@ -1058,6 +1129,14 @@ Negative Reaction
 
 Nondetection (Communal)
 	CLASSES:Antipaladin=4|Sorcerer,Wizard=4
+	SCHOOL:Abjuration
+	TYPE:Arcane.Divine
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL) hours
+	SAVEINFO:Will negates (harmless, object)
+	SPELLRES:Yes (harmless, object)
 	COMPS:V, S, M (diamond dust worth 25 gp per target)
 	TARGETAREA:creatures or objects touched
 	DESC:This spell functions like nondetection, except you divide the duration in 1-hour increments among the creatures or objects touched.|PRERULE:1,DisplayFullSpell
@@ -1133,8 +1212,16 @@ Phantom Driver
 
 Phantom Steed (Communal)
 	CLASSES:Bard=4|Sorcerer,Wizard=4|Summoner=3
+	SCHOOL:Conjuration
+	SUBSCHOOL:Creation
+	TYPE:Arcane
+	COMPS:V, S
+	CASTTIME:10 minutes
 	RANGE:Close
 	TARGETAREA:up to six quasi-real, horselike creatures
+	DURATION:(CASTERLEVEL) hours [D]
+	SAVEINFO:None
+	SPELLRES:No
 	DESC:This spell functions like phantom steed, except you can summon up to six steeds, and you divide the duration in 1-hour intervals among the steeds summoned.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.239
 
@@ -1154,36 +1241,94 @@ Pilfering Hand
 
 Protection from Arrows (Communal)
 	CLASSES:Alchemist=3|Sorcerer,Wizard=3|Summoner=3
+	SCHOOL:Abjuration
+	TYPE:Arcane
+	COMPS:V, S, F
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL) hours or until discharged
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like protection from arrows, except you divide the duration in 1-hour intervals among the creatures touched. Once the spell absorbs 10 points of damage per caster level (maximum 100 points) for a subject, the spell's effects end for that subject.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.240
 
 Protection from Chaos (Communal)
 	CLASSES:Cleric=2|Inquisitor=2|Paladin=2|Sorcerer,Wizard=2|Summoner=2
+	SCHOOL:Abjuration
+	DESCRIPTOR:Lawful
+	TYPE:Arcane.Divine
+	COMPS:V, S, M/DF
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL) minutes [D]
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:No; see text
 	TARGETAREA:creatures touched
 	DESC:This spell functions like protection from chaos, except you divide the duration in 1-minute intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.240
 
 Protection from Energy (Communal)
 	CLASSES:Cleric=4|Druid=4|Inquisitor=4|Ranger=3|Sorcerer,Wizard=4|Summoner=4
+	SCHOOL:Abjuration
+	TYPE:Arcane.Divine
+	COMPS:V, S, DF
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL*10) minutes or until discharged
+	SAVEINFO:Fortitude negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like protection from energy, except you divide the duration in 10-minute intervals among the creatures touched. Once the spell absorbs 12 points of energy damage per caster level (maximum 120 points) for a subject, the spell's effects end for that subject.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.240
 
 Protection from Evil (Communal)
 	CLASSES:Cleric=2|Inquisitor=2|Paladin=2|Sorcerer,Wizard=2|Summoner=2
+	SCHOOL:Abjuration
+	DESCRIPTOR:Good
+	TYPE:Arcane.Divine
+	COMPS:V, S, M/DF
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL) minutes [D]
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:No; see text
 	TARGETAREA:creatures touched
 	DESC:This spell functions like protection from evil, except you divide the duration in 1-minute intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.240
 
 Protection from Good (Communal)
 	CLASSES:Antipaladin=2|Cleric=2|Inquisitor=2|Paladin=2|Sorcerer,Wizard=2|Summoner=2
+	SCHOOL:Abjuration
+	DESCRIPTOR:Evil
+	TYPE:Arcane.Divine
+	COMPS:V, S, M/DF
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL) minutes [D]
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:No; see text
 	TARGETAREA:creatures touched
 	DESC:This spell functions like protection from good, except you divide the duration in 1-minute intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.240
 
 Protection from Law (Communal)
 	CLASSES:Antipaladin=2|Cleric=2|Inquisitor=2|Paladin=2|Sorcerer,Wizard=2|Summoner=2
+	SCHOOL:Abjuration
+	DESCRIPTOR:Chaotic
+	TYPE:Arcane.Divine
+	COMPS:V, S, M/DF
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL) minutes [D]
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:No; see text
 	TARGETAREA:creatures touched
 	DESC:This spell functions like protection from law, except you divide the duration in 1-minute intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.240
@@ -1245,6 +1390,13 @@ Reinforce Armaments
 
 Reinforce Armaments (Communal)
 	CLASSES:Cleric=2|Magus=2|Sorcerer,Wizard=2|Witch=2
+	SCHOOL:Transmutation
+	COMPS:V, S, M/DF (a metal pin)
+	CASTTIME:1 standard action
+	RANGE:Touch
+	DURATION:(CASTERLEVEL*10) minutes
+	SAVEINFO:Will negates (harmless, object)
+	SPELLRES:Yes (harmless, object)
 	TARGETAREA:armor suits or weapons touched
 	DESC:This spell functions like reinforce armaments, except you divide the duration in 10-minute intervals among the objects touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.241
@@ -1278,6 +1430,16 @@ Resinous Skin
 
 Resist Energy (Communal)
 	CLASSES:Alchemist=3|Cleric=3|Druid=3|Inquisitor=3|Paladin=3|Ranger=3|Sorcerer,Wizard=3|Summoner=3
+	SCHOOL:Abjuration
+	VARIANTS:Acid|Cold|Electricity|Fire|Sonic
+	TYPE:Arcane.Divine
+	COMPS:V, S, DF
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL*10) minutes
+	SAVEINFO:Fortitude negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like resist energy, except you divide the duration in 10-minute intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.242
@@ -1298,7 +1460,15 @@ Returning Weapon
 
 Returning Weapon (Communal)
 	CLASSES:Bard=3|Cleric=3|Inquisitor=2|Magus=2|Ranger=2|Sorcerer,Wizard=3|Witch=3
-	TARGETAREA:creatures touched
+	SCHOOL:Conjuration
+	SUBSCHOOL:Teleportation
+	COMPS:V, S
+	CASTTIME:1 standard action
+	RANGE:Close
+	DURATION:(CASTERLEVEL) minutes
+	SAVEINFO:Will negates (harmless, object)
+	SPELLRES:Yes (harmless, object)
+	TARGETAREA:weapons that can be thrown
 	DESC:This spell functions like returning weapon, except you divide the duration in 1-minute intervals among the weapons touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.243
 
@@ -1342,6 +1512,14 @@ Shadow Bomb Admixture
 
 Share Language (Communal)
 	CLASSES:Bard=2|Cleric=3|Druid=3|Sorcerer,Wizard=3
+	SCHOOL:Divination
+	COMPS:V, S, M (a page from a dictionary)
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:24 hours
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like share language (Advanced Player's Guide 243), except you divide the duration in 1-hour increments among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.243
@@ -1397,6 +1575,14 @@ Siege of Trees (Greater)
 
 Spell Immunity (Communal)
 	CLASSES:Cleric=5|Inquisitor=5
+	SCHOOL:Abjuration
+	TYPE:Divine
+	COMPS:V, S, DF
+	CASTTIME:1 standard action
+	RANGE:Touch
+	DURATION:(CASTERLEVEL*10) minutes
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like spell immunity, except you divide the duration in 10-minute intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.244
@@ -1404,12 +1590,28 @@ Spell Immunity (Communal)
 Spell Immunity (Greater/Communal)
 	CLASSES:Cleric=9
 	SCHOOL:Abjuration
+	TYPE:Divine
+	COMPS:V, S, DF
+	CASTTIME:1 standard action
+	RANGE:Touch
+	DURATION:(CASTERLEVEL*10) minutes
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like greater spell immunity, except you divide the duration among the creatures in 10-minute intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.245
 
 Spider Climb (Communal)
 	CLASSES:Alchemist=3|Druid=3|Sorcerer,Wizard=3|Summoner=3
+	SCHOOL:Transmutation
+	TYPE:Arcane.Divine
+	COMPS:V, S, M
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL*10) minutes
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like spider climb, except you divide the duration in 10-minute intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.245
@@ -1443,6 +1645,13 @@ Stabilize Powder
 
 Stoneskin (Communal)
 	CLASSES:Alchemist=5|Druid=6|Inquisitor=5|Sorcerer,Wizard=5|Summoner=4
+	SCHOOL:Abjuration
+	TYPE:Arcane.Divine
+	CASTTIME:1 standard action
+	RANGE:Touch
+	DURATION:(CASTERLEVEL*10) minutes or until discharged
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:Yes (harmless)
 	COMPS:V, S, M (granite and diamond dust worth 100 gp per creature affected)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like stoneskin, except you divide the duration in 10 minute intervals among the creatures touched. Once the spell has prevented 10 points of damage per caster level (maximum 150 points) for a subject, the spell's effects end for that subject.|PRERULE:1,DisplayFullSpell
@@ -1577,6 +1786,15 @@ Thunder Fire
 
 Tongues (Communal)
 	CLASSES:Alchemist=4|Bard=3|Cleric=5|Sorcerer,Wizard=4|Summoner=4|Witch=4
+	SCHOOL:Divination
+	TYPE:Arcane.Divine
+	COMPS:V, M/DF
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL*10) minutes
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:No
 	TARGETAREA:creatures touched
 	DESC:This spell functions like tongues, except you divide the duration in 10-minute intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.247
@@ -1655,6 +1873,16 @@ Warding Weapon
 
 Water Walk (Communal)
 	CLASSES:Cleric=4|Ranger=4
+	SCHOOL:Transmutation
+	DESCRIPTOR:Water
+	TYPE:Divine
+	COMPS:V, S, DF
+	CASTTIME:1 standard action
+	RANGE:Touch
+	ITEM:Potion
+	DURATION:(CASTERLEVEL*10) minutes [D]
+	SAVEINFO:Will negates (harmless)
+	SPELLRES:Yes (harmless)
 	TARGETAREA:creatures touched
 	DESC:This spell functions like water walk, except you divide the duration in 10-minute intervals among the creatures touched.|PRERULE:1,DisplayFullSpell
 	SOURCEPAGE:p.249
