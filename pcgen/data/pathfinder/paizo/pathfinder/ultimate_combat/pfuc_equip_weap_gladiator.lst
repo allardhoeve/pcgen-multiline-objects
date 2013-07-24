@@ -27,6 +27,7 @@ Scizore
 	CRITRANGE:1
 	DAMAGE:1d10
 	EQMOD:PERFORMANCE.STEEL
+	SPROP:The Scizore offers a bonus to AC when not attacking with it, or a -1 to hit if using it to attack.
 
 
 
