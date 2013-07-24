@@ -2994,7 +2994,7 @@ Sidestep Secret
 	TYPE:OracleClassAbility.SpecialQuality.Supernatural.LoreRevelation.OracleRevelation
 	DESC:Your innate understanding of the universe has granted you preternatural reflexes and the uncanny ability to step out of danger at the very last second. Add your Charisma modifier (instead of your Dexterity modifier) to your Armor Class and all Reflex saving throws. Your armor's maximum Dexterity bonus applies to your Charisma instead of your Dexterity.
 	SOURCEPAGE:p.50
-	BONUS:COMBAT|AC|max(CHA,DEX)-DEX
+	BONUS:VAR|ACAbilityStat|max(CHA,DEX)-DEX
 	BONUS:CHECKS|Reflex|max(CHA,DEX)-DEX
 
 # TODO: Implement CHA bonus as replacement of DEX bonus for AC and Reflex Saves.
