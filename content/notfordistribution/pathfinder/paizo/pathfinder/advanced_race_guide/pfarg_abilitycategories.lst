@@ -107,6 +107,16 @@ ABILITYCATEGORY:Heart Ability
 	PLURAL:Heart Abilities
 	DISPLAYLOCATION:Racial Abilities
 
+ABILITYCATEGORY:Focused Study Feat
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:HumanFocusedStudyFeat
+	PLURAL:Focused Study Feats
+	DISPLAYLOCATION:Racial Abilities
+
 ABILITYCATEGORY:Multitalented Mastery Bonus
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -469,6 +479,36 @@ ABILITYCATEGORY:Greater Brand
 	CATEGORY:Special Ability
 	TYPE:GreaterBrand
 	PLURAL:Greater Brands
+	DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Sniper Training Choice
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:SniperTrainingChoice
+	PLURAL:Sniper Training Choices
+	DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Bonded Spell Choice
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:BondedSpellChoice
+	PLURAL:Bonded Spell Choices
+	DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Canine Ferocity Bonus Feat
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:OOTPBonusFeat
+	PLURAL:Canine Ferocity Bonus Feats
 	DISPLAYLOCATION:Class Abilities
 
 

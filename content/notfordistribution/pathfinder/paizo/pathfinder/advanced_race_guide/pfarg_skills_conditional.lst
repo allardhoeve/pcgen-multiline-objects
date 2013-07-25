@@ -13,7 +13,410 @@ SOURCELONG:Advanced Race Guide
 
 ###Block: Conditional skills (for output only)
 # Skill Name					Key Stat	Untrained?		Classes	Type			Visible		Req. Rule (in options)		Prohibited Var. Value
+Sense Motive (Sense Enchantment)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Sense Motive (Sense Enchantment).MISC"),var("SKILL.Sense Motive.MISC")
 
+Spellcraft (Identify Enchantment)
+	KEYSTAT:INT
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Spellcraft (Identify Enchantment).MISC"),var("SKILL.Spellcraft.MISC")
+
+Spellcraft (Identify Curse or Emotion)
+	KEYSTAT:INT
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Spellcraft (Identify Curse or Emotion).MISC"),var("SKILL.Spellcraft.MISC")
+
+Stealth (Load Crossbow)
+	KEYSTAT:DEX
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Stealth (Load Crossbow).MISC"),var("SKILL.Stealth.MISC")
+
+Stealth (Poison Ammo)
+	KEYSTAT:DEX
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Stealth (Poison Ammo).MISC"),var("SKILL.Stealth.MISC")
+
+Stealth (Sniping)
+	KEYSTAT:DEX
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Stealth (Sniping).MISC"),var("SKILL.Stealth.MISC")
+
+Intimidate (Mounted)
+	KEYSTAT:CHA
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Intimidate (Mounted).MISC"),var("SKILL.Intimidate.MISC")
+
+Perception (Notice Traps)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Perception (Notice Traps).MISC"),var("SKILL.Perception.MISC")
+
+Use Magic Device (Spell Trigger or Spell Completion)
+	KEYSTAT:CHA
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Use Magic Device (Spell Trigger or Spell Completion).MISC"),var("SKILL.Use Magic Device.MISC")
+
+Perception (Notice Creatures Underwater)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Perception (Notice Creatures Underwater).MISC"),var("SKILL.Perception.MISC")
+
+Diplomacy (Influence Monster)
+	KEYSTAT:CHA
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Diplomacy (Influence Monster).MISC"),var("SKILL.Diplomacy.MISC")
+
+Bluff (Feint)
+	KEYSTAT:CHA
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Bluff (Feint).MISC"),var("SKILL.Bluff.MISC")
+
+Acrobatics (Swing)
+	KEYSTAT:DEX
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Acrobatics (Swing).MISC"),var("SKILL.Acrobatics.MISC")
+
+Climb (Rope)
+	KEYSTAT:STR
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Climb (Rope).MISC"),var("SKILL.Climb.MISC")
+
+Survival (Avoid Becoming Lost in Caverns and Rocky Areas)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Survival (Avoid Becoming Lost in Caverns and Rocky Areas).MISC"),var("SKILL.Survival.MISC")
+
+Survival (Find Food)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Survival (Find Food).MISC"),var("SKILL.Survival.MISC")
+
+Sleight of Hand (Conceal Small Object)
+	KEYSTAT:DEX
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Sleight of Hand (Conceal Small Object).MISC"),var("SKILL.Sleight of Hand.MISC")
+
+Survival (Avoid Getting Lost)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Survival (Avoid Getting Lost).MISC"),var("SKILL.Survival.MISC")
+
+Disguise (Appear Human)
+	KEYSTAT:CHA
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Disguise (Appear Human).MISC"),var("SKILL.Disguise.MISC")
+
+Handle Animal (Push Animal)
+	KEYSTAT:CHA
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Handle Animal (Push Animal).MISC"),var("SKILL.Handle Animal.MISC")
+
+Intimidate (Demoralize Animal)
+	KEYSTAT:CHA
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Intimidate (Demoralize Animal).MISC"),var("SKILL.Intimidate.MISC")
+
+Spellcraft (Cast Defensively)
+	KEYSTAT:INT
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Spellcraft (Cast Defensively).MISC"),var("SKILL.Spellcraft.MISC")
+
+Bluff (Lie)
+	KEYSTAT:CHA
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Bluff (Lie).MISC"),var("SKILL.Bluff.MISC")
+
+Bluff (Pass Hidden Message)
+	KEYSTAT:CHA
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Bluff (Pass Hidden Message).MISC"),var("SKILL.Bluff.MISC")
+
+Handle Animal (Bird)
+	KEYSTAT:CHA
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Handle Animal (Bird).MISC"),var("SKILL.Handle Animal.MISC")
+
+Handle Animal (Small Cat)
+	KEYSTAT:CHA
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Handle Animal (Small Cat).MISC"),var("SKILL.Handle Animal.MISC")
+
+Handle Animal (Dog)
+	KEYSTAT:CHA
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Handle Animal (Dog).MISC"),var("SKILL.Handle Animal.MISC")
+
+Handle Animal (Horse)
+	KEYSTAT:CHA
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Handle Animal (Horse).MISC"),var("SKILL.Handle Animal.MISC")
+
+Knowledge (Nature/Bird)
+	KEYSTAT:INT
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Knowledge (Nature/Bird).MISC"),var("SKILL.Knowledge (Nature).MISC")
+
+Knowledge (Nature/Small Cat)
+	KEYSTAT:INT
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Knowledge (Nature/Small Cat).MISC"),var("SKILL.Knowledge (Nature).MISC")
+
+Knowledge (Nature/Dog)
+	KEYSTAT:INT
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Knowledge (Nature/Dog).MISC"),var("SKILL.Knowledge (Nature).MISC")
+
+Knowledge (Nature/Horse)
+	KEYSTAT:INT
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Knowledge (Nature/Horse).MISC"),var("SKILL.Knowledge (Nature).MISC")
+
+Survival (Track Giant)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Survival (Track Giant).MISC"),var("SKILL.Survival.MISC")
+
+Knowledge (History/Dwarves)
+	KEYSTAT:INT
+	USEUNTRAINED:NO
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Knowledge (History/Dwarves).MISC"),var("SKILL.Knowledge (History).MISC")
+
+Survival (Sea)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Survival (Sea).MISC"),var("SKILL.Survival.MISC")
+
+Perception (Notice Flying Creatures)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Perception (Notice Flying Creatures).MISC"),var("SKILL.Perception.MISC")
+
+Diplomacy (Gather Information)
+	KEYSTAT:CHA
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Diplomacy (Gather Information).MISC"),var("SKILL.Diplomacy.MISC")
+
+Sense Motive (Social Hunch)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Sense Motive (Social Hunch).MISC"),var("SKILL.Sense Motive.MISC")
+
+Survival (Underground)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Survival (Underground).MISC"),var("SKILL.Survival.MISC")
+
+Perception (Notice Hidden Object)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Perception (Notice Hidden Object).MISC"),var("SKILL.Perception.MISC")
+
+Perception (Determine Food Spoiled)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Perception (Determine Food Spoiled).MISC"),var("SKILL.Perception.MISC")
+
+Perception (Identify Potion)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Perception (Identify Potion).MISC"),var("SKILL.Perception.MISC")
+
+Acrobatics (Uneven Ground)
+	KEYSTAT:DEX
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Acrobatics (Uneven Ground).MISC"),var("SKILL.Acrobatics.MISC")
+
+Climb (Narrow Surfaces)
+	KEYSTAT:STR
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Climb (Narrow Surfaces).MISC"),var("SKILL.Climb.MISC")
+
+Survival (Urban)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Survival (Urban).MISC"),var("SKILL.Survival.MISC")
 
 
 
@@ -56,11 +459,11 @@ Use Magic Device.MOD
 	BONUS:SKILLRANK|Use Magic Device (Spell Trigger or Spell Completion)|skillinfo("TOTALRANK","Use Magic Device")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Use Magic Device (Spell Trigger or Spell Completion).MISC"),var("SKILL.Use Magic Device.MISC")
 
 Perception.MOD
-	BONUS:SKILL|Perception (Notice Creatures Underwater)|var("SKILL.Spellcraft.MISC")
+	BONUS:SKILL|Perception (Notice Creatures Underwater)|var("SKILL.Perception.MISC")
 	BONUS:SKILLRANK|Perception (Notice Creatures Underwater)|skillinfo("TOTALRANK","Perception")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Perception (Notice Creatures Underwater).MISC"),var("SKILL.Perception.MISC")
 
 Diplomacy.MOD
-	BONUS:SKILL|Diplomacy (Influence Monster)|var("SKILL.Perception.MISC")
+	BONUS:SKILL|Diplomacy (Influence Monster)|var("SKILL.Diplomacy.MISC")
 	BONUS:SKILLRANK|Diplomacy (Influence Monster)|skillinfo("TOTALRANK","Diplomacy")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Diplomacy (Influence Monster).MISC"),var("SKILL.Diplomacy.MISC")
 
 Bluff.MOD
@@ -74,10 +477,6 @@ Acrobatics.MOD
 Climb.MOD
 	BONUS:SKILL|Climb (Rope)|var("SKILL.Climb.MISC")
 	BONUS:SKILLRANK|Climb (Rope)|skillinfo("TOTALRANK","Climb")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Climb (Rope).MISC"),var("SKILL.Climb.MISC")
-
-Perception.MOD
-	BONUS:SKILL|Perception (Underground)|var("SKILL.Perception.MISC")
-	BONUS:SKILLRANK|Perception (Underground)|skillinfo("TOTALRANK","Perception")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Perception (Underground).MISC"),var("SKILL.Perception.MISC")
 
 Survival.MOD
 	BONUS:SKILL|Survival (Avoid Becoming Lost in Caverns and Rocky Areas)|var("SKILL.Survival.MISC")
@@ -119,10 +518,6 @@ Bluff.MOD
 	BONUS:SKILL|Bluff (Pass Hidden Message)|var("SKILL.Bluff.MISC")
 	BONUS:SKILLRANK|Bluff (Pass Hidden Message)|skillinfo("TOTALRANK","Bluff")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Bluff (Pass Hidden Message).MISC"),var("SKILL.Bluff.MISC")
 
-Acrobatics.MOD
-	BONUS:SKILL|Acrobatics (Jump)|var("SKILL.Acrobatics.MISC")
-	BONUS:SKILLRANK|Acrobatics (Jump)|skillinfo("TOTALRANK","Acrobatics")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Acrobatics (Jump).MISC"),var("SKILL.Acrobatics.MISC")
-
 Handle Animal.MOD
 	BONUS:SKILL|Handle Animal (Bird)|var("SKILL.Handle Animal.MISC")
 	BONUS:SKILLRANK|Handle Animal (Bird)|skillinfo("TOTALRANK","Handle Animal")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Handle Animal (Bird).MISC"),var("SKILL.Handle Animal.MISC")
@@ -140,28 +535,28 @@ Handle Animal.MOD
 	BONUS:SKILLRANK|Handle Animal (Horse)|skillinfo("TOTALRANK","Handle Animal")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Handle Animal (Horse).MISC"),var("SKILL.Handle Animal.MISC")
 
 Knowledge (Nature).MOD
-	BONUS:SKILL|Knowledge (Bird)|var("SKILL.Knowledge (Nature).MISC")
-	BONUS:SKILLRANK|Knowledge (Bird)|skillinfo("TOTALRANK","Knowledge (Nature)")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Knowledge (Bird).MISC"),var("SKILL.Knowledge (Nature).MISC")
+	BONUS:SKILL|Knowledge (Nature/Bird)|var("SKILL.Knowledge (Nature).MISC")
+	BONUS:SKILLRANK|Knowledge (Nature/Bird)|skillinfo("TOTALRANK","Knowledge (Nature)")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Knowledge (Nature/Bird).MISC"),var("SKILL.Knowledge (Nature).MISC")
 
 Knowledge (Nature).MOD
-	BONUS:SKILL|Knowledge (Small Cat)|var("SKILL.Knowledge (Nature).MISC")
-	BONUS:SKILLRANK|Knowledge (Small Cat)|skillinfo("TOTALRANK","Knowledge (Nature)")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Knowledge (Small Cat).MISC"),var("SKILL.Knowledge (Nature).MISC")
+	BONUS:SKILL|Knowledge (Nature/Small Cat)|var("SKILL.Knowledge (Nature).MISC")
+	BONUS:SKILLRANK|Knowledge (Nature/Small Cat)|skillinfo("TOTALRANK","Knowledge (Nature)")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Knowledge (Nature/Small Cat).MISC"),var("SKILL.Knowledge (Nature).MISC")
 
 Knowledge (Nature).MOD
-	BONUS:SKILL|Knowledge (Dog)|var("SKILL.Knowledge (Nature).MISC")
-	BONUS:SKILLRANK|Knowledge (Dog)|skillinfo("TOTALRANK","Knowledge (Nature)")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Knowledge (Dog).MISC"),var("SKILL.Knowledge (Nature).MISC")
+	BONUS:SKILL|Knowledge (Nature/Dog)|var("SKILL.Knowledge (Nature).MISC")
+	BONUS:SKILLRANK|Knowledge (Nature/Dog)|skillinfo("TOTALRANK","Knowledge (Nature)")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Knowledge (Nature/Dog).MISC"),var("SKILL.Knowledge (Nature).MISC")
 
 Knowledge (Nature).MOD
-	BONUS:SKILL|Knowledge (Horse)|var("SKILL.Knowledge (Nature).MISC")
-	BONUS:SKILLRANK|Knowledge (Horse)|skillinfo("TOTALRANK","Knowledge (Nature)")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Knowledge (Horse).MISC"),var("SKILL.Knowledge (Nature).MISC")
+	BONUS:SKILL|Knowledge (Nature/Horse)|var("SKILL.Knowledge (Nature).MISC")
+	BONUS:SKILLRANK|Knowledge (Nature/Horse)|skillinfo("TOTALRANK","Knowledge (Nature)")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Knowledge (Nature/Horse).MISC"),var("SKILL.Knowledge (Nature).MISC")
 
 Survival.MOD
 	BONUS:SKILL|Survival (Track Giant)|var("SKILL.Survival.MISC")
 	BONUS:SKILLRANK|Survival (Track Giant)|skillinfo("TOTALRANK","Survival")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Survival (Track Giant).MISC"),var("SKILL.Survival.MISC")
 
 Knowledge (History).MOD
-	BONUS:SKILL|Knowledge (History, Dwarves)|var("SKILL.Knowledge (History).MISC")
-	BONUS:SKILLRANK|Knowledge (History, Dwarves)|skillinfo("TOTALRANK","Knowledge (History)")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Knowledge (History, Dwarves).MISC"),var("SKILL.Knowledge (History).MISC")
+	BONUS:SKILL|Knowledge (History/Dwarves)|var("SKILL.Knowledge (History).MISC")
+	BONUS:SKILLRANK|Knowledge (History/Dwarves)|skillinfo("TOTALRANK","Knowledge (History)")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Knowledge (History/Dwarves).MISC"),var("SKILL.Knowledge (History).MISC")
 
 Survival.MOD
 	BONUS:SKILL|Survival (Sea)|var("SKILL.Survival.MISC")

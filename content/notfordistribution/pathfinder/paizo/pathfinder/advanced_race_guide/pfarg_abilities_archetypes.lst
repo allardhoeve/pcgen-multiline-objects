@@ -566,8 +566,7 @@ Elven Arcana
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:At 2nd level, an ancient lorekeeper's mastery of elven legends and philosophy has allowed her to master one spell used by elven wizards. She selects one spell from the sorcerer/wizard spell list that is at least one level lower than the highest-level oracle spell she can cast. The ancient lorekeeper gains this as a bonus spell known. The spell is treated as one level higher than its true level for all purposes. The ancient lorekeeper may choose an additional spell at 4th, 6th, 8th, 10th, 12th, 14th, 16th, and 18th levels. This ability replaces the bonus spells she would normally gain at these levels from her chosen mystery.
-	CHOOSE:SPELLS|SPELLTYPE=Arcane[LEVELMAX=MAXCASTABLE-1]
-	MULT:YES
+	BONUS:SPELLKNOWN|CLASS=Wizard|LEVEL=MAXCASTABLE-1|1
 	SOURCEPAGE:p.24
 
 Mysteries
@@ -656,11 +655,8 @@ Spell Bond
 	KEY:Spell Bond ~ Spellbinder
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
-	SPELLS:Bonded|TIMES=ATWILL|CASTERLEVEL=WizardLvl|%CHOICE
 	DESC:The spellbinder selects any one spell that he knows as a bonded spell. As a full-round action, the spellbinder may replace a spell of the same or higher level as his bonded spell with his bonded spell.
-	SELECT:1+(WizardLvl-1)/2
-	MULT:YES
-	CHOOSE:SPELLS|ALL[KNOWN=YES]
+	BONUS:ABILITYPOOL|Bonded Spell Choice|1+(WizardLvl-1)/2
 	SOURCEPAGE:p.25
 
 Discoveries
@@ -668,6 +664,19 @@ Discoveries
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:The following discoveries complement the spellbinder archetype: Fast Study, Split Slot (Ultimate Magic).
+	SOURCEPAGE:p.25
+
+
+
+###Block: Bonded Spell choice
+Bonded Spell
+	KEY:Bonded Spell ~ Spellbinder
+	CATEGORY:Special Ability
+	TYPE:SpecialQuality.BondedSpellChoice
+	VISIBLE:YES
+	SELECT:1
+	MULT:YES
+	CHOOSE:SPELLS|ALL[KNOWN=YES]
 	SOURCEPAGE:p.25
 
 
@@ -1358,7 +1367,7 @@ Weapon and Armor Proficiency
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:The skulking slayer gains proficiency with greatclubs and whips, but loses proficiency with rapiers and hand crossbows.
 	AUTO:FEAT|Martial Weapon Proficiency (Greatclub)|Martial Weapon Proficiency (Whip)
-	REMOVE:FEAT|2|Martial Weapon Proficiency (Rapier),Martial Weapon Proficiency (Hand Crossbow)
+	REMOVE:FEAT|2|Martial Weapon Proficiency (Rapier),Martial Weapon Proficiency (Crossbow (Hand))
 	SOURCEPAGE:p.55
 
 Class Skills
@@ -1671,6 +1680,73 @@ Giant Slayer
 	TYPE:SpecialQuality.Extraordinary
 	DESC:When the cavalier hits the target of his challenge with a melee attack, and that target is at least two size categories larger than the cavalier, he gains a bonus on damage rolls equal to %1. This damage is multiplied on a critical hit.|Cavalier/2
 	SOURCEPAGE:p.65
+
+
+
+###Block: Order of the Paw bonus feats
+Mounted Combat
+	KEY:Mounted Combat ~ OOTP Bonus Feat
+	CATEGORY:Special Ability
+	TYPE:OOTPBonusFeat
+	VISIBLE:DISPLAY
+	PREABILITY:1,CATEGORY=Special Ability,Canine Ferocity ~ Ironskin Monk
+	!PREFEAT:1,Mounted Combat
+	PRESKILL:1,Ride=1
+	VFEAT:Mounted Combat
+
+Ride-By Attack
+	KEY:Ride-By Attack ~ OOTP Bonus Feat
+	CATEGORY:Special Ability
+	TYPE:OOTPBonusFeat
+	VISIBLE:DISPLAY
+	PREABILITY:1,CATEGORY=Special Ability,Canine Ferocityt ~ Ironskin Monk
+	!PREFEAT:1,Ride-By Attack
+	PREFEAT:1,Mounted Combat
+	PRESKILL:1,Ride=1
+	VFEAT:Ride-By Attack
+
+Skill Focus (Ride)
+	KEY:Skill Focus (Ride) ~ OOTP Bonus Feat
+	CATEGORY:Special Ability
+	TYPE:OOTPBonusFeat
+	VISIBLE:DISPLAY
+	PREABILITY:1,CATEGORY=Special Ability,Canine Ferocity ~ Ironskin Monk
+	!PREFEAT:1,Skill Focus (Ride)
+	VFEAT:Skill Focus (Ride)
+
+Spirited Charge
+	KEY:Spirited Charge ~ OOTP Bonus Feat
+	CATEGORY:Special Ability
+	TYPE:OOTPBonusFeat
+	VISIBLE:DISPLAY
+	PREABILITY:1,CATEGORY=Special Ability,Canine Ferocity ~ Ironskin Monk
+	!PREFEAT:1,Spirited Charge
+	PREFEAT:2,Mounted Combat,Ride-By Attack
+	PRESKILL:1,Ride=1
+	VFEAT:Spirited Charge
+
+Trample
+	KEY:Trample ~ OOTP Bonus Feat
+	CATEGORY:Special Ability
+	TYPE:OOTPBonusFeat
+	VISIBLE:DISPLAY
+	PREABILITY:1,CATEGORY=Special Ability,Canine Ferocity ~ Ironskin Monk
+	!PREFEAT:1,Trample
+	PREFEAT:1,Mounted Combat
+	PRESKILL:1,Ride=1
+	VFEAT:Trample
+
+Unseat
+	KEY:Unseat ~ OOTP Bonus Feat
+	CATEGORY:Special Ability
+	TYPE:OOTPBonusFeat
+	VISIBLE:DISPLAY
+	PREABILITY:1,CATEGORY=Special Ability,Canine Ferocityt ~ Ironskin Monk
+	!PREFEAT:1,Unseat
+	PREATT:1
+	PREFEAT:3,Mounted Combat,Power Attack,Improved Bull Rush
+	PRESKILL:1,Ride=1
+	VFEAT:Unseat
 
 
 
@@ -2138,7 +2214,6 @@ Purifier
 	CATEGORY:Archetype
 	TYPE:Archetype.OracleArchetype
 	PRECLASS:1,Oracle=1
-	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Purifier],[!PREABILITY:1,CATEGORY=Archetype]
 	PRERACE:1,Aasimar
 	DESC:The purifier seeks out signs of possession or mind control that manifest from unwilling (and often unwitting) servants for fiendish corruptors and their mortal minions. A purifier seeks liberation of mind, body, and spirit from the bondage of sin and the taint of the unholy. A purifier gains the following class features.
 	ABILITY:Special Ability|AUTOMATIC|Recommended Mysteries ~ Purifier|PRECLASS:1,Oracle=1
@@ -2213,7 +2288,7 @@ See Sin
 	KEY:See Sin ~ Purifier
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.SpellLike
-	DESC:The purifier gains a bonus equal to 1/2 her oracle level on Sense Motive checks to sense enchantments, which she can make as a full-round action. She also gains a bonus equal to 1/2 her oracle level on Spellcraft checks to identify enchantment school spells and spells with the curse or emotion descriptor.
+	DESC:The purifier gains a bonus of %1 on Sense Motive checks to sense enchantments, which she can make as a full-round action. She also gains a bonus of %1 on Spellcraft checks to identify enchantment school spells and spells with the curse or emotion descriptor.|OracleLVL/2
 	BONUS:SKILL|Sense Motive (Sense Enchantment),Spellcraft (Identify Enchantment),Spellcraft (Identify Curse or Emotion)|OracleLvl/2
 	BONUS:VAR|OracleMysteryLevel|-1
 	SOURCEPAGE:p.86
@@ -2224,10 +2299,10 @@ Celestial Armor
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
 	DESC:The purifier's armor takes on a golden or silvery sheen and becomes light as a feather. Her armor weighs half as much as long as she wears it, and she also gains armor training as a fighter 4 levels lower than her oracle level. At 11th level, a purifier gains heavy armor proficiency.
-	AUTO:FEAT|Armor Proficiency (Heavy)|PRECLASS:1,OracleLvl=11
+	AUTO:ARMORPROF|ARMORTYPE=Heavy|PRECLASS:1,Oracle=11
 	ABILITY:Special Ability|AUTOMATIC|Armor Training
 	BONUS:VAR|OracleMysteryLevel|-1
-	BONUS:VAR|ArmorTrainingLVL|-4
+	BONUS:VAR|ArmorTrainingLVL|OracleLVL-4
 	SOURCEPAGE:p.86
 
 Sin Eater
@@ -2659,11 +2734,7 @@ Sniper Training
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
 	DESC:The cavern sniper chooses the bow or crossbow weapon group and gains a bonus on attack rolls and damage rolls.
-	STACK:NO
-	MULT:YES
-	CHOOSE:STRING|Bow|Crossbow
-	!PREABILITY:1,CATEGORY=Special Ability,Sniper Training ~ Cavern Sniper
-	BONUS:WEAPONPROF=TYPE.%LIST|DAMAGE,TOHIT|2+max(0,(FighterLvl-5))/4
+	BONUS:ABILITYPOOL|Sniper Training Choice|1
 	SOURCEPAGE:p.104
 
 Greater Imbued Shot
@@ -2677,13 +2748,26 @@ Weapon Mastery
 	KEY:Weapon Mastery ~ Cavern Sniper
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
-	DESC:Any attacks made by a %1 automatically confirm all critical threats and have their damage multiplier increased by 1 (x2 becomes x3, for example). In addition, you cannot be disarmed while wielding a weapon of this type.|%CHOICE
+	DESC:Any attacks made by a bow or crossbow automatically confirm all critical threats and have their damage multiplier increased by 1. In addition, you cannot be disarmed while wielding a weapon of this type.|%CHOICE
 	BONUS:WEAPONPROF=TYPE.%CHOICE|CRITMULTADD|1
-	!PREABILITY:1,CATEGORY=Special Ability,Weapon Mastery ~ Cavern Sniper
-	STACK:NO
-	MULT:YES
-	CHOOSE:STRING|Bow|Crossbow
 	SOURCEPAGE:p.104
+
+
+
+###Block: Sniper Training choices
+Bow
+	KEY:Sniper Training Bow ~ Cavern Sniper
+	CATEGORY:Special Ability
+	TYPE:SniperTrainingChoice
+	BONUS:WEAPONPROF=TYPE.Bow|DAMAGE,TOHIT|2+max(0,(FighterLvl-5))/4
+	BONUS:WEAPONPROF=TYPE.Bow|CRITMULTADD|1|PREABILITY:1,CATEGORY=Special Ability,Weapon Mastery ~ Cavern Sniper
+
+Crossbow
+	KEY:Sniper Training Crossbow ~ Cavern Sniper
+	CATEGORY:Special Ability
+	TYPE:SniperTrainingChoice
+	BONUS:WEAPONPROF=TYPE.Crossbow|DAMAGE,TOHIT|2+max(0,(FighterLvl-5))/4
+	BONUS:WEAPONPROF=TYPE.Crossbow|CRITMULTADD|1|PREABILITY:1,CATEGORY=Special Ability,Weapon Mastery ~ Cavern Sniper
 
 
 
@@ -2828,9 +2912,9 @@ Shadow Eidolon
 Feral Gnasher
 	KEY:Barbarian Archetype ~ Feral Gnasher
 	CATEGORY:Archetype
-	TYPE:Archetype.BarbarianArchetype.BarbarianFastMovement.BarbarianTrapSense1.BarbarianTrapSense2.BarbarianTrapSense3.BarbarianTrapSense4.BarbarianImprovedUncannyDodge
+	TYPE:Archetype.BarbarianArchetype.BarbarianWeaponProficiencies.BarbarianArmorProficiencies.BarbarianFastMovement.BarbarianTrapSense1.BarbarianTrapSense2.BarbarianTrapSense3.BarbarianTrapSense4.BarbarianImprovedUncannyDodge
 	PRECLASS:1,Barbarian=1
-	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Barbarian Archetype ~ Feral Gnasher],[!PREABILITY:1,CATEGORY=Archetype,TYPE.BarbarianFastMovement,TYPE.BarbarianTrapSense1,TYPE.BarbarianTrapSense2,TYPE.BarbarianTrapSense3,TYPE.BarbarianTrapSense4,TYPE.BarbarianImprovedUncannyDodge]
+	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Barbarian Archetype ~ Feral Gnasher],[!PREABILITY:1,CATEGORY=Archetype,TYPE.BarbarianWeaponProficiencies,TYPE.BarbarianArmorProficiencies,TYPE.BarbarianFastMovement,TYPE.BarbarianTrapSense1,TYPE.BarbarianTrapSense2,TYPE.BarbarianTrapSense3,TYPE.BarbarianTrapSense4,TYPE.BarbarianImprovedUncannyDodge]
 	PRERACE:1,Goblin
 	DESC:Feral gnashers grow up in the wild, either raised by animals or scraping by on their own, and soon learn to fend for themselves. These barbarians often utilize pieced-together armor and fight with their sharp teeth and whatever improvised weapons are within reach.
 	ABILITY:Special Ability|AUTOMATIC|Weapon and Armor Proficiency ~ Feral Gnasher|PRECLASS:1,Barbarian=1
@@ -2851,8 +2935,9 @@ Weapon and Armor Proficiency
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:A feral gnasher loses all martial weapon proficiencies except for greatclub and loses proficiency with medium armor.
+	AUTO:ARMORPROF|ARMORTYPE=Light
 	AUTO:WEAPONPROF|Greatclub
-	REMOVE:FEAT|2|Martial Weapon Proficiency,Armor Proficiency (Medium)
+	AUTO:SHIELDPROF|SHIELDTYPE=Buckler|SHIELDTYPE=Heavy|SHIELDTYPE=Light
 	SOURCEPAGE:p.116
 
 Savage Bite
@@ -3805,7 +3890,7 @@ Elemental Fist
 	PREABILITY:1,CATEGORY=Special Ability,Bonus Feat ~ Student of Stone
 	!PREFEAT:1,Elemental Fist
 	PREVARGTEQ:MonkBonusFeatLVL,6
-	VFEAT:Elemental Fist
+	VFEAT:Elemental Fist (Acid)
 
 Shaitan Style
 	CATEGORY:Special Ability
@@ -5097,15 +5182,32 @@ Precise Shot
 	DESC:You are adept at firing ranged attacks into melee.
 	VFEAT:Precise Shot|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
-Rapid Reload
+Rapid Reload (Crossbow (Hand))
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Archetype,Wave Warden
 	PRECLASS:1,Ranger,2
-	!PREFEAT:1,Rapid Reload
 	DESC:You can reload your chosen type of crossbow quickly.
-	VFEAT:Rapid Reload|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
+	VFEAT:Rapid Reload (Crossbow (Hand))|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
+
+Rapid Reload (Crossbow (Light))
+	CATEGORY:Special Ability
+	TYPE:WaveWardenBonusFeat
+	VISIBLE:DISPLAY
+	PREABILITY:1,CATEGORY=Archetype,Wave Warden
+	PRECLASS:1,Ranger,2
+	DESC:You can reload your chosen type of crossbow quickly.
+	VFEAT:Rapid Reload (Crossbow (Light))|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
+
+Rapid Reload (Crossbow (Heavy))
+	CATEGORY:Special Ability
+	TYPE:WaveWardenBonusFeat
+	VISIBLE:DISPLAY
+	PREABILITY:1,CATEGORY=Archetype,Wave Warden
+	PRECLASS:1,Ranger,2
+	DESC:You can reload your chosen type of crossbow quickly.
+	VFEAT:Rapid Reload (Crossbow (Heavy))|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Sea Hunter
 	CATEGORY:Special Ability

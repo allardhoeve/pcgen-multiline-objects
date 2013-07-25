@@ -333,7 +333,7 @@ Gloom Sight
 	TYPE:General
 	PRERACE:1,Fetchling
 	DESC:With a combination of strange shadow magic and chirurgery, your eyes are permanently modified to see farther in darkness.
-	ABILITY:Special Ability|AUTOMATIC|Light Sensitivity|PREFEAT:1,[Improved Dark Sight]
+	ABILITY:Special Ability|AUTOMATIC|Light Sensitivity
 	VISION:Darkvision (90')
 	SOURCEPAGE:p.111
 	BENEFIT:You gain darkvision 90 ft., but gain the light sensitivity weakness.
