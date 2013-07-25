@@ -41,6 +41,7 @@ Shieldbash (Light)
 	WIELD:Light
 	SIZE:M
 	SOURCEPAGE:p.142
+	BONUS:WEAPON|TOHIT|-4
 
 Shieldbash (Heavy)
 	PROFICIENCY:WEAPON|Shieldbash
@@ -53,6 +54,7 @@ Shieldbash (Heavy)
 	WIELD:OneHanded
 	SIZE:M
 	SOURCEPAGE:p.142
+	BONUS:WEAPON|TOHIT|-4
 
 
 
