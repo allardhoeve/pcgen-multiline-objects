@@ -11,8 +11,9 @@ SOURCELONG:Goblins of Golarion
 ###Block: Favored Class Bonuses
 # Ability Name	Category of Ability		Type				Visible		Stackable?	Multiple?	Choose														Bonus to HP			Bonus to skill rank
 # Goblin Alchemist
-# Ability Name			Category of Ability		Type											Visible		Required Ability																Required Class		Required Race	Define				Description																														Stackable?	Multiple?	Choose													Bonus to skill rank	Modify VAR				Source Page
+# Ability Name				Key										Category of Ability		Type											Visible		Required Ability																Required Class		Required Race	Define				Description																														Stackable?	Multiple?	Choose													Bonus to skill rank	Modify VAR				Source Page
 Bonus Fire Resistance
+	KEY:Bonus Fire Resistance ~ Goblin
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.FavoredClassBonus.FavoredClassAlchemist
 	VISIBLE:DISPLAY
@@ -29,6 +30,7 @@ Bonus Fire Resistance
 
 # Goblin Bard
 Bonus Performance Round
+	KEY:Bonus Performance Round ~ Goblin
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.FavoredClassBonus.FavoredClassBard
 	VISIBLE:YES
@@ -45,6 +47,7 @@ Bonus Performance Round
 
 # Goblin Cavalier
 Bonus Mount Hit Points
+	KEY:Bonus Mount Hit Points ~ Goblin
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.FavoredClassBonus.FavoredClassCavalier
 	VISIBLE:YES
@@ -63,6 +66,7 @@ Bonus Mount Hit Points
 
 # Goblin Druid
 Bonus Companion Hit Points
+	KEY:Bonus Companion Hit Points ~ Goblin
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.FavoredClassBonus.FavoredClassDruid
 	VISIBLE:YES
@@ -82,6 +86,7 @@ Bonus Companion Hit Points
 
 # Goblin Gunslinger
 Bonus Critical Confirm
+	KEY:Bonus Critical Confirm ~ Goblin
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.FavoredClassBonus.FavoredClassGunslinger
 	VISIBLE:YES
@@ -98,6 +103,7 @@ Bonus Critical Confirm
 
 # Goblin Oracle
 Bonus on Concentration Check
+	KEY:Bonus on Concentration Check ~ Goblin
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.FavoredClassBonus.FavoredClassOracle
 	VISIBLE:YES
@@ -114,6 +120,7 @@ Bonus on Concentration Check
 
 # Goblin Ranger
 Bonus Damage on Favored Enemy
+	KEY:Bonus Damage on Favored Enemy ~ Goblin
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.FavoredClassBonus.FavoredClassRanger
 	VISIBLE:YES
@@ -130,6 +137,7 @@ Bonus Damage on Favored Enemy
 
 # Goblin Rogue
 Bonus Skill Point
+	KEY:Bonus Skill Point ~ Goblin
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.FavoredClassBonus.FavoredClassRogue
 	VISIBLE:YES
@@ -147,6 +155,7 @@ Bonus Skill Point
 
 # Goblin Sorcerer
 Bonus Spell Known
+	KEY:Bonus Spell Known ~ Goblin
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.FavoredClassBonus.FavoredClassSorcerer
 	VISIBLE:YES
@@ -163,6 +172,7 @@ Bonus Spell Known
 
 # Goblin Witch
 Bonus Skill Point to Familiar
+	KEY:Bonus Skill Point to Familiar ~ Goblin
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.FavoredClassBonus.FavoredClassWitch
 	VISIBLE:YES
