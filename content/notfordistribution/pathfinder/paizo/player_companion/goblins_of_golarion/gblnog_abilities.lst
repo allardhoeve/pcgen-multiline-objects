@@ -74,7 +74,7 @@ Bonus Companion Hit Points
 	DESC:Add +2 hit points to the druid’s animal companion. If the goblin ever replaces her animal companion, the new animal companion gains these bonus hit points.
 	STACK:YES
 	MULT:YES
-	CHOOSE:NOCHOIC
+	CHOOSE:NOCHOICE
 	BONUS:VAR|DruidCompanionHP|2
 	SOURCEPAGE:pg.31
 
