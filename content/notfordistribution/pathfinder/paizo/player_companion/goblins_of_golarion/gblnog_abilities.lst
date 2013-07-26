@@ -168,6 +168,7 @@ Bonus Spell Known
 	CHOOSE:SPELLS|DESCRIPTOR=Fire,CLASSLIST=Sorcerer[LEVELMAX=MAXCASTABLE-1;KNOWN=NO]
 	SOURCEPAGE:pg.31
 
+# NEEDS CODE WORK: NEWTAG-220, SPELLKNOWN to take %LIST function
 
 
 # Goblin Witch
@@ -180,13 +181,24 @@ Bonus Skill Point to Familiar
 	PREABILITY:1,CATEGORY=Special Ability,Witch ~ Familiar
 	PRECLASS:1,Witch
 	PRERACE:1,Goblin%
+	DEFINE:FamiliarSP|0
 	DESC:Add 1 skill rank to the witch’s familiar. If the goblin ever replaces her familiar, the new familiar gains these bonus skill ranks.
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
 	SOURCEPAGE:pg.31
+	BONUS:VAR|FamiliarSP|1
 
-
+# 
+Familiar Bonus Skill
+	KEY:Familiar Bonus Skill ~ Goblin
+	CATEGORY:Special Ability
+	TYPE:SpecialQuality.FavoredClassSkillBonus
+	DESC:Add +1 skill rank.
+	STACK:YES
+	MULT:YES
+	CHOOSE:SKILL|TYPE=Charisma|TYPE=Dexterity|TYPE=Intelligence|TYPE=Strength|TYPE=Wisdom
+	BONUS:SKILLRANK|LIST|1
 
 
 

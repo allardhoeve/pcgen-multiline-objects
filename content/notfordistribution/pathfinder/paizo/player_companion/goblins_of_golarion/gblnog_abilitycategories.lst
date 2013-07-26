@@ -18,3 +18,15 @@ ABILITYCATEGORY:Goblin Race Trait
 	PLURAL:Goblin Race Traits
 	DISPLAYLOCATION:Traits
 
+
+
+ABILITYCATEGORY:Familiar Bonus Skill
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:YES
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:FavoredClassSkillBonus
+	PLURAL:Familiar Bonus Skills
+	DISPLAYLOCATION:Racial Abilities
+
