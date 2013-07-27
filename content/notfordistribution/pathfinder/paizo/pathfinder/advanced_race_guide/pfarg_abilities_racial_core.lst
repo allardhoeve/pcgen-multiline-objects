@@ -717,6 +717,14 @@ Bonus Skill Point
 ###Block: Half-Orc Racial Trait Abilities
 # Ability Name		Unique Key					Category of Ability		Type															Multiple Requirements																									Description																																																													Automatically Gained Feat	Automatically Gained Weapon Prof.	Save checks bonus			Bonus to skill																					Bonus to skill point/L		Modify VAR			Change Weapon Prof. Category				Vision					Cost		Source Page		Natural Attacks								Aspects
 Acute Darkvision
+	KEY:Acute Darkvision ~ Half-Orc
+	CATEGORY:Special Ability
+	TYPE:RacialTraits.SpecialQuality.HalfOrcRacialTrait.HalfOrcFerocity
+	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Acute Darkvision ~ Half-Orc],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.HalfOrcFerocity]
+	DESC:Some half-orcs have exceptionally sharp darkvision, gaining darkvision 90 feet.
+	BONUS:VISION|Darkvision|30
+	COST:0
+	SOURCEPAGE:p.19
 
 Beastmaster
 	KEY:Beastmaster ~ Half-Orc

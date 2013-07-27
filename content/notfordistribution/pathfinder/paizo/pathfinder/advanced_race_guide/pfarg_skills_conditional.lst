@@ -148,15 +148,6 @@ Survival (Avoid Becoming Lost in Caverns and Rocky Areas)
 	PRERULE:1,DISPLAYSKILLUSE
 	PREVARNEQ:var("SKILL.Survival (Avoid Becoming Lost in Caverns and Rocky Areas).MISC"),var("SKILL.Survival.MISC")
 
-Survival (Find Food)
-	KEYSTAT:WIS
-	USEUNTRAINED:YES
-	CLASSES:ALL
-	TYPE:SkillUse
-	VISIBLE:EXPORT
-	PRERULE:1,DISPLAYSKILLUSE
-	PREVARNEQ:var("SKILL.Survival (Find Food).MISC"),var("SKILL.Survival.MISC")
-
 Sleight of Hand (Conceal Small Object)
 	KEYSTAT:DEX
 	USEUNTRAINED:NO
@@ -355,15 +346,6 @@ Sense Motive (Social Hunch)
 	PRERULE:1,DISPLAYSKILLUSE
 	PREVARNEQ:var("SKILL.Sense Motive (Social Hunch).MISC"),var("SKILL.Sense Motive.MISC")
 
-Survival (Underground)
-	KEYSTAT:WIS
-	USEUNTRAINED:YES
-	CLASSES:ALL
-	TYPE:SkillUse
-	VISIBLE:EXPORT
-	PRERULE:1,DISPLAYSKILLUSE
-	PREVARNEQ:var("SKILL.Survival (Underground).MISC"),var("SKILL.Survival.MISC")
-
 Perception (Notice Hidden Object)
 	KEYSTAT:WIS
 	USEUNTRAINED:YES
@@ -482,10 +464,6 @@ Survival.MOD
 	BONUS:SKILL|Survival (Avoid Becoming Lost in Caverns and Rocky Areas)|var("SKILL.Survival.MISC")
 	BONUS:SKILLRANK|Survival (Avoid Becoming Lost in Caverns and Rocky Areas)|skillinfo("TOTALRANK","Survival")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Survival (Avoid Becoming Lost in Caverns and Rocky Areas).MISC"),var("SKILL.Survival.MISC")
 
-Survival.MOD
-	BONUS:SKILL|Survival (Find Food)|var("SKILL.Survival.MISC")
-	BONUS:SKILLRANK|Survival (Find Food)|skillinfo("TOTALRANK","Survival")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Survival (Find Food).MISC"),var("SKILL.Survival.MISC")
-
 Sleight of Hand.MOD
 	BONUS:SKILL|Sleight of Hand (Conceal Small Object)|var("SKILL.Sleight of Hand.MISC")
 	BONUS:SKILLRANK|Sleight of Hand (Conceal Small Object)|skillinfo("TOTALRANK","Sleight of Hand")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Sleight of Hand (Conceal Small Object).MISC"),var("SKILL.Sleight of Hand.MISC")
@@ -573,10 +551,6 @@ Diplomacy.MOD
 Sense Motive.MOD
 	BONUS:SKILL|Sense Motive (Social Hunch)|var("SKILL.Sense Motive.MISC")
 	BONUS:SKILLRANK|Sense Motive (Social Hunch)|skillinfo("TOTALRANK","Sense Motive")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Sense Motive (Social Hunch).MISC"),var("SKILL.Sense Motive.MISC")
-
-Survival.MOD
-	BONUS:SKILL|Survival (Underground)|var("SKILL.Survival.MISC")
-	BONUS:SKILLRANK|Survival (Underground)|skillinfo("TOTALRANK","Survival")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Survival (Underground).MISC"),var("SKILL.Survival.MISC")
 
 Perception.MOD
 	BONUS:SKILL|Perception (Notice Hidden Object)|var("SKILL.Perception.MISC")
