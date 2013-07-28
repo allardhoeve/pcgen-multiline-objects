@@ -1288,7 +1288,7 @@ Scribe (Map)
 	COST:10
 	SOURCEPAGE:p.99
 
-#Spellcasting		caster level x spell level × 10 gp		SOURCEPAGE:p.99
+#Spellcasting		caster level x spell level Ã— 10 gp		SOURCEPAGE:p.99
 Valet (Per Day)
 	TYPE:Service
 	COST:1
