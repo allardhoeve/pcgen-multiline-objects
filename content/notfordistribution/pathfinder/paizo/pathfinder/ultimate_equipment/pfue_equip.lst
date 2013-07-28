@@ -106,7 +106,7 @@ Bell Net
 	WT:2
 	SOURCEPAGE:p.59
 	BONUS:SKILL|Stealth|-2
-	SPROP:Creatures attempting to access gear protected by a bell net must succeed at a DC 25 Sleight of Hand check to avoid chiming the bells. Hearing the chiming bells of a bell net requires a DC 0 Perception check. Because the many bells chime when you move, traveling with a bell net gives you a –2 penalty on Stealth checks.
+	SPROP:Creatures attempting to access gear protected by a bell net must succeed at a DC 25 Sleight of Hand check to avoid chiming the bells. Hearing the chiming bells of a bell net requires a DC 0 Perception check. Because the many bells chime when you move, traveling with a bell net gives you a -2 penalty on Stealth checks.
 
 Pouch (Belt).MOD
 	OUTPUTNAME:Belt Pouch
@@ -314,7 +314,7 @@ Cypher Books
 	COST:150
 	WT:2
 	SOURCEPAGE:p.63
-	SPROP:A creature without access to the appropriate cypher book takes a –10 penalty on Linguistic checks made to decipher each page of a coded message.
+	SPROP:A creature without access to the appropriate cypher book takes a -10 penalty on Linguistic checks made to decipher each page of a coded message.
 
 Drill.MOD
 	TYPE:Goods.General
@@ -333,7 +333,7 @@ Earplugs.MOD
 	TYPE:Goods.General
 	COST:0.03
 	SOURCEPAGE:p.63
-	SPROP:Give you a +2 circumstance bonus on saves against effects that require hearing, but also cause a –5 penalty on hearing-based Perception checks.
+	SPROP:Give you a +2 circumstance bonus on saves against effects that require hearing, but also cause a -5 penalty on hearing-based Perception checks.
 
 Everburning Torch.MOD
 	SOURCEPAGE:p.63
@@ -382,7 +382,7 @@ Filter Hood
 	WT:4
 	SOURCEPAGE:p.64
 	BONUS:SKILL|Perception|-2
-	SPROP:This snug leather hood has built-in goggles and a filtration tube containing sponges. A filter hood uses your helm slot and imposes a –2 penalty on hearing- and sight-based Perception checks. While the sponges are moist, the hood grants you a +2 resistance bonus on saving throws against inhaled poisons and other airborne attacks that require you to breathe them. Moistening the sponges with water is a standard action. The sponges dry out after 1d4 × 10 minutes and should be thoroughly rinsed after each use.
+	SPROP:This snug leather hood has built-in goggles and a filtration tube containing sponges. A filter hood uses your helm slot and imposes a -2 penalty on hearing- and sight-based Perception checks. While the sponges are moist, the hood grants you a +2 resistance bonus on saving throws against inhaled poisons and other airborne attacks that require you to breathe them. Moistening the sponges with water is a standard action. The sponges dry out after 1d4 × 10 minutes and should be thoroughly rinsed after each use.
 
 Firewood (Per Day).MOD
 	SOURCEPAGE:p.64
@@ -1080,7 +1080,7 @@ Swarmsuit.MOD
 	WT:10
 	SOURCEPAGE:p.73
 
-#Tattoo 1 cp–20 gp —
+#Tattoo 1 cp-20 gp —
 Teapot
 	TYPE:Goods.General
 	COST:0.1

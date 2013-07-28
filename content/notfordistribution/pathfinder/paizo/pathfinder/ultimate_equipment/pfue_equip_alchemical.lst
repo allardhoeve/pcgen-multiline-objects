@@ -462,7 +462,7 @@ Itching Powder
 	WT:2
 	SIZE:M
 	TYPE:Alchemical.Consumable.Weapon.Ranged.Thrown.Poison.Splash
-	SPROP:Anyone standing on the square of impact must succeed at a DC 12 Fortitude save to resist the powder, while those in adjacent squares must make a DC 8 Fortitude save. Creatures that fail the save take a –2 penalty on attack rolls, saving throws, skill checks, and ability checks until they wash the powder off.
+	SPROP:Anyone standing on the square of impact must succeed at a DC 12 Fortitude save to resist the powder, while those in adjacent squares must make a DC 8 Fortitude save. Creatures that fail the save take a -2 penalty on attack rolls, saving throws, skill checks, and ability checks until they wash the powder off.
 	SOURCEPAGE:p.108
 
 Keros Oil (Flask)

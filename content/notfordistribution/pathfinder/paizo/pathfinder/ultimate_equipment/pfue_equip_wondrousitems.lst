@@ -386,7 +386,7 @@ Monkey Belt
 	SOURCEPAGE:p.212
 	WT:1
 	BONUS:STAT|DEX|2|TYPE=Enhancement
-	SPROP:The wearer does not lose his Dexterity bonus to AC while climbing, and does not take a 5 penalty on Climb checks when climbing at half his speed.
+	SPROP:The wearer does not lose his Dexterity bonus to AC while climbing, and does not take a -5 penalty on Climb checks when climbing at half his speed.
 	SPROP:As a swift action the wearer can command the belt to transform into a prehensile tail that can make unarmed attacks and hold or manipulate objects.
 
 Monkey Belt (Greater)
@@ -396,7 +396,7 @@ Monkey Belt (Greater)
 	SOURCEPAGE:p.212
 	WT:1
 	BONUS:STAT|STR,DEX|2|TYPE=Enhancement
-	SPROP:The wearer does not lose his Dexterity bonus to AC while climbing, and does not take a 5 penalty on Climb checks when climbing at half his speed.
+	SPROP:The wearer does not lose his Dexterity bonus to AC while climbing, and does not take a -5 penalty on Climb checks when climbing at half his speed.
 	SPROP:As a swift action the wearer can command the belt to transform into a prehensile tail that can make unarmed attacks and hold or manipulate objects.
 
 Plague Rat Belt

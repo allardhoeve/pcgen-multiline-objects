@@ -265,7 +265,7 @@ Shadowstaff
 	BONUS:COMBAT|AC|4
 	BONUS:CHECKS|Reflex|4
 	SOURCEPAGE:p.339
-	SPROP:Wielder takes a –2 penalty on all attack rolls, saves, and checks in bright light or absolute darkness.
+	SPROP:Wielder takes a -2 penalty on all attack rolls, saves, and checks in bright light or absolute darkness.
 
 Shield of the Sun.MOD
 	OUTPUTNAME:Shield of the Sun, The
