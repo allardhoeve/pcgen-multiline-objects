@@ -386,7 +386,7 @@ Monkey Belt
 	SOURCEPAGE:p.212
 	WT:1
 	BONUS:STAT|DEX|2|TYPE=Enhancement
-	SPROP:The wearer does not lose his Dexterity bonus to AC while climbing, and does not take a –5 penalty on Climb checks when climbing at half his speed.
+	SPROP:The wearer does not lose his Dexterity bonus to AC while climbing, and does not take a Â–5 penalty on Climb checks when climbing at half his speed.
 	SPROP:As a swift action the wearer can command the belt to transform into a prehensile tail that can make unarmed attacks and hold or manipulate objects.
 
 Monkey Belt (Greater)
@@ -396,7 +396,7 @@ Monkey Belt (Greater)
 	SOURCEPAGE:p.212
 	WT:1
 	BONUS:STAT|STR,DEX|2|TYPE=Enhancement
-	SPROP:The wearer does not lose his Dexterity bonus to AC while climbing, and does not take a –5 penalty on Climb checks when climbing at half his speed.
+	SPROP:The wearer does not lose his Dexterity bonus to AC while climbing, and does not take a Â–5 penalty on Climb checks when climbing at half his speed.
 	SPROP:As a swift action the wearer can command the belt to transform into a prehensile tail that can make unarmed attacks and hold or manipulate objects.
 
 Plague Rat Belt
@@ -3279,6 +3279,11 @@ Armbands of the Brawler
 	TYPE:Magic.Wondrous.Bracer.LesserMinor
 	SOURCEPAGE:p.270
 	WT:1
+	BONUS:VAR|CMB_Grapple|1|TYPE=Competence
+	DESC:These scarred and worn armbands have clearly seen rough use, and are constructed out of coarse leather and fastened 
+
+with thick leather straps.
+	BENEFIT:They grant their wearer a +1 competence bonus on grapple checks and checks to break a grapple. 
 
 Arrowmaster's Bracers
 	COST:13900

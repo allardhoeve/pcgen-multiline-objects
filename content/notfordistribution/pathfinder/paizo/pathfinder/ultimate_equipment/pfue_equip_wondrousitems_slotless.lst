@@ -2003,10 +2003,10 @@ Needles of Fleshgraving
 
 Nightdrops
 	COST:250
-	TYPE:Magic.Wondrous.Consumable.LeastMinor
+	TYPE:Magic.Wondrous.LeastMinor
 	SOURCEPAGE:p.312
 	WT:0
-	
+	EQMOD:CHARGED_ITEM_5|CHARGES[5]
 
 Noble's Vigilant Pillbox
 	COST:3600
