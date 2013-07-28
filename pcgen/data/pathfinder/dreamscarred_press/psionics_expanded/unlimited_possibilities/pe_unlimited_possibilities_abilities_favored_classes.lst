@@ -197,7 +197,7 @@ Bonus to Collective Level Auxiliary Ability
 	CATEGORY:Special Ability
 	VISIBLE:NO
 	DEFINE:CollectiveLVLBonus|0
-	BONUS:VAR|CollectiveLVLBonus|count("ABILITIES",CATEGORY=Special Ability","NAME=Bonus to Collective Level")/2
+	BONUS:VAR|CollectiveLVLBonus|count("ABILITIES","CATEGORY=Special Ability","NAME=Bonus to Collective Level")/2
 	BONUS:VAR|CollectiveLVL|CollectiveLVLBonus
 
 Bonus to Saves vs. Energy
