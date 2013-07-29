@@ -1653,7 +1653,7 @@ Pack Member Display 1
 	OUTPUTNAME:Pack Member 1
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember1LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 1")
+	DEFINE:PackMember1LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 1")
 	DESC:You have %1 levels in pack member 1.|PackMember1LVL
 	FOLLOWERS:Pack Member 1|1
 	COMPANIONLIST:Pack Member 1|RACETYPE=Companion
@@ -1676,7 +1676,7 @@ Pack Member Display 2
 	OUTPUTNAME:Pack Member 2
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember2LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 2")
+	DEFINE:PackMember2LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 2")
 	DESC:You have %1 levels in pack member 2.|PackMember2LVL
 	FOLLOWERS:Pack Member 2|1
 	COMPANIONLIST:Pack Member 2|RACETYPE=Companion
@@ -1699,7 +1699,7 @@ Pack Member Display 3
 	OUTPUTNAME:Pack Member 3
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember3LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 3")
+	DEFINE:PackMember3LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 3")
 	DESC:You have %1 levels in pack member 3.|PackMember3LVL
 	FOLLOWERS:Pack Member 3|1
 	COMPANIONLIST:Pack Member 3|RACETYPE=Companion
@@ -1722,7 +1722,7 @@ Pack Member Display 4
 	OUTPUTNAME:Pack Member 4
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember4LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 4")
+	DEFINE:PackMember4LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 4")
 	DESC:You have %1 levels in pack member 4.|PackMember4LVL
 	FOLLOWERS:Pack Member 4|1
 	COMPANIONLIST:Pack Member 4|RACETYPE=Companion
@@ -1745,7 +1745,7 @@ Pack Member Display 5
 	OUTPUTNAME:Pack Member 5
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember5LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 5")
+	DEFINE:PackMember5LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 5")
 	DESC:You have %1 levels in pack member 5.|PackMember5LVL
 	FOLLOWERS:Pack Member 5|1
 	COMPANIONLIST:Pack Member 5|RACETYPE=Companion
@@ -1768,7 +1768,7 @@ Pack Member Display 6
 	OUTPUTNAME:Pack Member 6
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember6LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 6")
+	DEFINE:PackMember6LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 6")
 	DESC:You have %1 levels in pack member 6.|PackMember6LVL
 	FOLLOWERS:Pack Member 6|1
 	COMPANIONLIST:Pack Member 6|RACETYPE=Companion
@@ -1791,7 +1791,7 @@ Pack Member Display 7
 	OUTPUTNAME:Pack Member 7
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember7LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 7")
+	DEFINE:PackMember7LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 7")
 	DESC:You have %1 levels in pack member 7.|PackMember7LVL
 	FOLLOWERS:Pack Member 7|1
 	COMPANIONLIST:Pack Member 7|RACETYPE=Companion
@@ -1814,7 +1814,7 @@ Pack Member Display 8
 	OUTPUTNAME:Pack Member 8
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember8LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 8")
+	DEFINE:PackMember8LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 8")
 	DESC:You have %1 levels in pack member 8.|PackMember8LVL
 	FOLLOWERS:Pack Member 8|1
 	COMPANIONLIST:Pack Member 8|RACETYPE=Companion
@@ -1837,7 +1837,7 @@ Pack Member Display 9
 	OUTPUTNAME:Pack Member 9
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember9LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 9")
+	DEFINE:PackMember9LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 9")
 	DESC:You have %1 levels in pack member 9.|PackMember9LVL
 	FOLLOWERS:Pack Member 9|1
 	COMPANIONLIST:Pack Member 9|RACETYPE=Companion
@@ -1860,7 +1860,7 @@ Pack Member Display 10
 	OUTPUTNAME:Pack Member 10
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember10LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 10")
+	DEFINE:PackMember10LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 10")
 	DESC:You have %1 levels in pack member 10.|PackMember10LVL
 	FOLLOWERS:Pack Member 10|1
 	COMPANIONLIST:Pack Member 10|RACETYPE=Companion
@@ -1883,7 +1883,7 @@ Pack Member Display 11
 	OUTPUTNAME:Pack Member 11
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember11LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 11")
+	DEFINE:PackMember11LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 11")
 	DESC:You have %1 levels in pack member 11.|PackMember11LVL
 	FOLLOWERS:Pack Member 11|1
 	COMPANIONLIST:Pack Member 11|RACETYPE=Companion
@@ -1906,7 +1906,7 @@ Pack Member Display 12
 	OUTPUTNAME:Pack Member 12
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember12LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 12")
+	DEFINE:PackMember12LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 12")
 	DESC:You have %1 levels in pack member 12.|PackMember12LVL
 	FOLLOWERS:Pack Member 12|1
 	COMPANIONLIST:Pack Member 12|RACETYPE=Companion
@@ -1929,7 +1929,7 @@ Pack Member Display 13
 	OUTPUTNAME:Pack Member 13
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember13LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 13")
+	DEFINE:PackMember13LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 13")
 	DESC:You have %1 levels in pack member 13.|PackMember13LVL
 	FOLLOWERS:Pack Member 13|1
 	COMPANIONLIST:Pack Member 13|RACETYPE=Companion
@@ -1952,7 +1952,7 @@ Pack Member Display 14
 	OUTPUTNAME:Pack Member 14
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember14LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 14")
+	DEFINE:PackMember14LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 14")
 	DESC:You have %1 levels in pack member 14.|PackMember14LVL
 	FOLLOWERS:Pack Member 14|1
 	COMPANIONLIST:Pack Member 14|RACETYPE=Companion
@@ -1975,7 +1975,7 @@ Pack Member Display 15
 	OUTPUTNAME:Pack Member 15
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember15LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 15")
+	DEFINE:PackMember15LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 15")
 	DESC:You have %1 levels in pack member 15.|PackMember15LVL
 	FOLLOWERS:Pack Member 15|1
 	COMPANIONLIST:Pack Member 15|RACETYPE=Companion
@@ -1998,7 +1998,7 @@ Pack Member Display 16
 	OUTPUTNAME:Pack Member 16
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember16LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 16")
+	DEFINE:PackMember16LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 16")
 	DESC:You have %1 levels in pack member 16.|PackMember16LVL
 	FOLLOWERS:Pack Member 16|1
 	COMPANIONLIST:Pack Member 16|RACETYPE=Companion
@@ -2021,7 +2021,7 @@ Pack Member Display 17
 	OUTPUTNAME:Pack Member 17
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember17LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 17")
+	DEFINE:PackMember17LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 17")
 	DESC:You have %1 levels in pack member 17.|PackMember17LVL
 	FOLLOWERS:Pack Member 17|1
 	COMPANIONLIST:Pack Member 17|RACETYPE=Companion
@@ -2044,7 +2044,7 @@ Pack Member Display 18
 	OUTPUTNAME:Pack Member 18
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember18LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 18")
+	DEFINE:PackMember18LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 18")
 	DESC:You have %1 levels in pack member 18.|PackMember18LVL
 	FOLLOWERS:Pack Member 18|1
 	COMPANIONLIST:Pack Member 18|RACETYPE=Companion
@@ -2067,7 +2067,7 @@ Pack Member Display 19
 	OUTPUTNAME:Pack Member 19
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember19LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 19")
+	DEFINE:PackMember19LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 19")
 	DESC:You have %1 levels in pack member 19.|PackMember19LVL
 	FOLLOWERS:Pack Member 19|1
 	COMPANIONLIST:Pack Member 19|RACETYPE=Companion
@@ -2090,7 +2090,7 @@ Pack Member Display 20
 	OUTPUTNAME:Pack Member 20
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
-	DEFINE:PackMember20LVL|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 20")
+	DEFINE:PackMember20LVL|count("ABILITIES","CATEGORY=Special Ability","NAME=Pack Member 20")
 	DESC:You have %1 levels in pack member 20.|PackMember20LVL
 	FOLLOWERS:Pack Member 20|1
 	COMPANIONLIST:Pack Member 20|RACETYPE=Companion

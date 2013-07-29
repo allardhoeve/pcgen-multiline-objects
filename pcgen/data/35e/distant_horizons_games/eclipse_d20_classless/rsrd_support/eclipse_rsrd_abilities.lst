@@ -686,7 +686,7 @@ Bard Magic Level
 	COST:6
 	SOURCEPAGE:p.11
 
-#Bard Magic Level Counter			BONUS:VAR|BardMagicLvls|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Bard Magic Level")+countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Bard Magic Level")
+#Bard Magic Level Counter			BONUS:VAR|BardMagicLvls|count("ABILITIES","CATEGORY=Special Ability","NAME=Bard Magic Level")+count("ABILITIES","CATEGORY=Special Ability","NAME=Bard Magic Level")
 Cleric No Package Magic Level
 	SORTKEY:Magic_Level_02_ClericA
 	CATEGORY:Special Ability

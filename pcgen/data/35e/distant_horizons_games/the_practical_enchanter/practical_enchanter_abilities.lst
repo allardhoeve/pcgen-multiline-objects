@@ -764,7 +764,7 @@ Arcanum Minimus Feat Choice
 	DEFINE:ArcanumMinimusFeatCounter|0
 	BONUS:ABILITYPOOL|Arcanum Minimus Feat Choice|ArcanumMinimusFeatCounter
 	BONUS:VAR|ArcanumMinimusFeatCounter|-2
-	BONUS:VAR|ArcanumMinimusFeatCounter|countdistinct("ABILITIES","CATEGORY=FEAT","NAME=Arcanum Minimus")*2
+	BONUS:VAR|ArcanumMinimusFeatCounter|count("ABILITIES","CATEGORY=FEAT","NAME=Arcanum Minimus")*2
 
 #
 Arcanum Minimus / Ambient Magic
@@ -844,7 +844,7 @@ Enchantment Feat Choice Counter
 	DEFINE:EnchantmentFeatCounter|0
 	BONUS:ABILITYPOOL|Enchantment Feat Choice|EnchantmentFeatCounter
 	BONUS:VAR|EnchantmentFeatCounter|-2
-	BONUS:VAR|EnchantmentFeatCounter|countdistinct("ABILITIES","CATEGORY=FEAT","NAME=Enchantment")*2
+	BONUS:VAR|EnchantmentFeatCounter|count("ABILITIES","CATEGORY=FEAT","NAME=Enchantment")*2
 
 #
 Enchantment / Artificer
@@ -903,7 +903,7 @@ Harvest of Artifice Feat Counter
 	DEFINE:HarvestOfArtificeFeatCounter|0
 	BONUS:ABILITYPOOL|Harvest Of Artifice Feat Choice|HarvestOfArtificeFeatCounter
 	BONUS:VAR|HarvestOfArtificeFeatCounter|-2
-	BONUS:VAR|HarvestOfArtificeFeatCounter|countdistinct("ABILITIES","CATEGORY=FEAT","NAME=Harvest Of Artifice")*2
+	BONUS:VAR|HarvestOfArtificeFeatCounter|count("ABILITIES","CATEGORY=FEAT","NAME=Harvest Of Artifice")*2
 
 #
 Harvest of Artifice / Alchemic Mastery
@@ -941,7 +941,7 @@ Imbuement Feat Choice Counter
 	DEFINE:ImbuementFeatCounter|0
 	BONUS:ABILITYPOOL|Imbuement Feat Choice|ImbuementFeatCounter
 	BONUS:VAR|ImbuementFeatCounter|-2
-	BONUS:VAR|ImbuementFeatCounter|countdistinct("ABILITIES","CATEGORY=FEAT","NAME=Imbuement")*2
+	BONUS:VAR|ImbuementFeatCounter|count("ABILITIES","CATEGORY=FEAT","NAME=Imbuement")*2
 
 #
 Imbuement / Advanced
@@ -1007,7 +1007,7 @@ Scribing Feat Choice Counter
 	DEFINE:ScribingCounter|0
 	BONUS:ABILITYPOOL|Scribing Feat Choice|ScribingCounter
 	BONUS:VAR|ScribingCounter|-2
-	BONUS:VAR|ScribingCounter|countdistinct("ABILITIES","CATEGORY=FEAT","NAME=Scribing")*2
+	BONUS:VAR|ScribingCounter|count("ABILITIES","CATEGORY=FEAT","NAME=Scribing")*2
 
 #
 Scribing / Bonded
@@ -1049,7 +1049,7 @@ Scribing / Master Scribe
 
 Siddhisyoga Feat Choice Counter
 	CATEGORY:Special Ability
-	BONUS:ABILITYPOOL|Siddhisyoga Feat Choice|countdistinct("ABILITIES","CATEGORY=FEAT","NAME=Siddhisyoga")-1
+	BONUS:ABILITYPOOL|Siddhisyoga Feat Choice|count("ABILITIES","CATEGORY=FEAT","NAME=Siddhisyoga")-1
 
 #
 Siddhisyoga / Kamayoga
@@ -1080,7 +1080,7 @@ Spell Expertise Feat Choice Counter
 	DEFINE:SpellExpertiseCounter|0
 	BONUS:ABILITYPOOL|Spell Expertise Feat Choice|SpellExpertiseCounter
 	BONUS:VAR|SpellExpertiseCounter|-2
-	BONUS:VAR|SpellExpertiseCounter|countdistinct("ABILITIES","CATEGORY=FEAT","NAME=Spell Expertise")*2
+	BONUS:VAR|SpellExpertiseCounter|count("ABILITIES","CATEGORY=FEAT","NAME=Spell Expertise")*2
 
 #
 Spell Expertise / Increased Caster Level +2
@@ -1153,7 +1153,7 @@ Spell Shorthand Feat Choice Counter
 	DEFINE:SpellShortHandCounter|0
 	BONUS:ABILITYPOOL|Spell Shorthand Feat Choice|SpellShortHandCounter
 	BONUS:VAR|SpellShortHandCounter|-2
-	BONUS:VAR|SpellShortHandCounter|countdistinct("ABILITIES","CATEGORY=FEAT","NAME=Spell Shorthand")*2
+	BONUS:VAR|SpellShortHandCounter|count("ABILITIES","CATEGORY=FEAT","NAME=Spell Shorthand")*2
 
 #
 Spell Shorthand / Cryptoglypics

@@ -22,7 +22,7 @@ Warcraft
 	DEFINE:WarcraftBonus|0
 	DESC:+%1 BAB|WarcraftBonus
 	BONUS:COMBAT|BAB|var("WarcraftBonus")|TYPE=Base.REPLACE
-	BONUS:VAR|WarcraftBonus|countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=Warcraft ~ Normal Progression")
+	BONUS:VAR|WarcraftBonus|count("ABILITIES","CATEGORY=Special Ability","KEY=Warcraft ~ Normal Progression")
 	SOURCEPAGE:p.10
 
 #
@@ -219,7 +219,7 @@ Skill Specialty
 
 
 
-#BONUS:SKILLPOINTS|NUMBER|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Buy Skill Point")
+#BONUS:SKILLPOINTS|NUMBER|count("ABILITIES","CATEGORY=Special Ability","NAME=Buy Skill Point")
 # Adept Skills - You are only allowed to use CP based Skills, not Intelligence Skills. Requires two Skill Pools. Intelligence / CP
 
 
@@ -312,7 +312,7 @@ Save / Fortitude
 	BONUS:CHECKS|BASE.Fortitude|1
 	COST:3
 	SOURCEPAGE:p.10
-	BENEFIT:Increases the Fortitude Save by +1. [+%1 Total].|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Save / Fortitude")
+	BENEFIT:Increases the Fortitude Save by +1. [+%1 Total].|count("ABILITIES","CATEGORY=Special Ability","NAME=Save / Fortitude")
 
 Save / Reflex
 	KEY:Save ~ Reflex
@@ -325,7 +325,7 @@ Save / Reflex
 	BONUS:CHECKS|BASE.Reflex|1
 	COST:3
 	SOURCEPAGE:p.10
-	BENEFIT:Increases the Reflex Save by +1. [+%1 Total].|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Save / Reflex")
+	BENEFIT:Increases the Reflex Save by +1. [+%1 Total].|count("ABILITIES","CATEGORY=Special Ability","NAME=Save / Reflex")
 
 Save / Will
 	KEY:Save ~ Will
@@ -338,7 +338,7 @@ Save / Will
 	BONUS:CHECKS|BASE.Will|1
 	COST:3
 	SOURCEPAGE:p.10
-	BENEFIT:Increases the Will Save by +1. [+%1 Total].|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Save / Will")
+	BENEFIT:Increases the Will Save by +1. [+%1 Total].|count("ABILITIES","CATEGORY=Special Ability","NAME=Save / Will")
 
 
 
@@ -2673,10 +2673,10 @@ Innate Enchantment Counter
 	DEFINE:InnateEnchantmentPoolCount|0
 	BONUS:ABILITYPOOL|Innate Enchantment Choice|InnateEnchantmentPoolCount
 	BONUS:VAR|InnateEnchantmentPoolCount|5000
-	BONUS:VAR|InnateEnchantmentPoolCount|1000*countdistinct("ABILITIES","NAME=Innate Enchantment / Additional","CATEGORY=Special Ability")
-	BONUS:VAR|InnateEnchantmentAdditional|1000*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Innate Enchantment / Additional")
+	BONUS:VAR|InnateEnchantmentPoolCount|1000*count("ABILITIES","NAME=Innate Enchantment / Additional","CATEGORY=Special Ability")
+	BONUS:VAR|InnateEnchantmentAdditional|1000*count("ABILITIES","CATEGORY=Special Ability","NAME=Innate Enchantment / Additional")
 
-# We really need KEY= vs. NAME= in the countdistinct()
+# We really need KEY= vs. NAME= in the count()
 Innate Magic
 	CATEGORY:Special Ability
 	TYPE:General.EclipseAbilityOutput.Abilities.Corruptable
@@ -3079,7 +3079,7 @@ Mana / Mana
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
-	BONUS:VAR|ManaDice|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Mana / Mana")|TYPE=NoStack
+	BONUS:VAR|ManaDice|count("ABILITIES","CATEGORY=Special Ability","NAME=Mana / Mana")|TYPE=NoStack
 	SOURCEPAGE:p.36
 
 Mana / Spell Levels
@@ -3092,7 +3092,7 @@ Mana / Spell Levels
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
-	BONUS:VAR|SpellLevelDice|2*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Mana / Spell Levels")|TYPE=NoStack
+	BONUS:VAR|SpellLevelDice|2*count("ABILITIES","CATEGORY=Special Ability","NAME=Mana / Spell Levels")|TYPE=NoStack
 	SOURCEPAGE:p.36
 
 Mana / Power
@@ -3106,7 +3106,7 @@ Mana / Power
 	MULT:YES
 	CHOOSE:NOCHOICE
 	BONUS:ABILITYPOOL|Power Selection|PowerDice
-	BONUS:VAR|PowerDice|3*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Mana / Power")|TYPE=NoStack
+	BONUS:VAR|PowerDice|3*count("ABILITIES","CATEGORY=Special Ability","NAME=Mana / Power")|TYPE=NoStack
 	SOURCEPAGE:p.36
 
 Mana / Additional Natual Magic Form
@@ -5265,7 +5265,7 @@ Thaumaturgy and Dweomer / GM Option / Automatic Mana
 	SORTKEY:Thaumaturgy_1h
 	CATEGORY:Special Ability
 	TYPE:General.EclipseAbilityOutput.Abilities.Dweomer
-	DESC:Each time a character takes a Thaumaturgy or Dweomer feat, they gain 1d3 Mana. [%1d3 granted]|countdistinct("ABILITIES","CATEGORY=Special Ability","TYPE=ThaumaturgyField")
+	DESC:Each time a character takes a Thaumaturgy or Dweomer feat, they gain 1d3 Mana. [%1d3 granted]|count("ABILITIES","CATEGORY=Special Ability","TYPE=ThaumaturgyField")
 	COST:0
 	SOURCEPAGE:p.102
 
