@@ -164,8 +164,8 @@ Warcraft
 	TYPE:SpecialAttack
 	DEFINE:Warcraft Bonus|0
 	DESC:+%1 BAB|Warcraft Bonus
-	BONUS:VAR|Warcraft Bonus|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Warcraft ~ Normal Progression")
-	BONUS:VAR|Warcraft Bonus|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Warcraft ~ Half Progression")/2
+	BONUS:VAR|Warcraft Bonus|count("ABILITIES","CATEGORY=Special Ability","NAME=Warcraft ~ Normal Progression")
+	BONUS:VAR|Warcraft Bonus|count("ABILITIES","CATEGORY=Special Ability","NAME=Warcraft ~ Half Progression")/2
 
 #
 Warcraft ~ Normal Progression

@@ -271,7 +271,7 @@ Multitalented Mastery
 	PREABILITY:1,CATEGORY=Special Ability,Multitalented ~ Half-Elf
 	PRELEVEL:MIN=5
 	PRERACE:1,Half-elf
-	DEFINE:FavoredClassLevels|countdistinct("ABILITIES","TYPE=FavoredClassBonus")
+	DEFINE:FavoredClassLevels|count("ABILITIES","TYPE=FavoredClassBonus")
 	DESC:You are adept at numerous disciplines.
 	BONUS:ABILITYPOOL|Multitalented Mastery Bonus|TL-FavoredClassLevels
 	SOURCEPAGE:p.47

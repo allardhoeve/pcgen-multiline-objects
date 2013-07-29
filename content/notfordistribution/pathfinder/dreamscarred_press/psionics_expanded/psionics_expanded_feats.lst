@@ -367,7 +367,7 @@ Extra Blade Skill
 Extra Customization
 	TYPE:Psionic
 	PREABILITY:1,CATEGORY=Special Ability,Form Astral Suit ~ Aegis
-	PREVARGT:floor(AstralSuitLVL/5),countdistinct("ABILITIES","CATEGORY=FEAT","NAME=Extra Customization")
+	PREVARGT:floor(AstralSuitLVL/5),count("ABILITIES","CATEGORY=FEAT","NAME=Extra Customization")
 	PREVARGT:IsPsionic,0
 	DESC:Gain an additional customization.
 	STACK:YES
