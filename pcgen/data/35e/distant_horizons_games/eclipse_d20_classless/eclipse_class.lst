@@ -11,31 +11,34 @@ SOURCELONG:Eclipse - The Codex Persona
 ###BLOCK: Eclipse Point Buy HD variation for individual HD acquisition. Should delevop BONUS:HD using a Class Level Line specific Var - See "Point Buy" class for usage
 
 
-# Class Name				Output Name				Type				Abbreviation	Max Level	Define			Combat bonus
+# Class Name	Output Name	Type	Abbreviation	Max Level	Define	Combat bonus
 CLASS:Eclipse Point Buy (Template)
 	OUTPUTNAME:Eclipse Template
 	TYPE:Base.PC.Eclipse
 	ABB:EdT
 	MAXLEVEL:20
 	DEFINE:EclipseClass|1
-	BONUS:COMBAT|BAB|var("Warcraft Bonus")|TYPE=Base
+	
 
-# Class Name				Skill Pts/Lvl
+# Class Name	Skill Pts/Lvl
 CLASS:Eclipse Point Buy (Template)
 	STARTSKILLPTS:0
 
 ###Block:
 1
 	TEMPLATE:01 Point Buy Master Template for All Levels
-	DONOTADD:HITDIE|SKILLPOINTS
 
+###Block:
 1:REPEATLEVEL:1|SKIP=0|MAX=20
 	CAST:9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9
 	BONUS:HP|CURRENTMAX|-1
+	DONOTADD:HITDIE|SKILLPOINTS
 
+###Block:
 1
 	ABILITY:Special Ability|AUTOMATIC|All Automatic Abilities|All Automatic Proficiencies
 
+###Block:
 1
 	BONUS:VAR|CharacterPointsLevelOffSet|8*CL
 	BONUS:VAR|EclipseClassLvl|CL
@@ -44,7 +47,7 @@ CLASS:Eclipse Point Buy (Template)
 
 
 
-# Class Name			Output Name		Hit Dice	Type				Abbreviation	Max Level	Define			Combat bonus
+# Class Name	Output Name	Hit Dice	Type	Abbreviation	Max Level	Define	Combat bonus
 CLASS:Eclipse Point Buy (d0)
 	OUTPUTNAME:d0E
 	HD:1
@@ -52,9 +55,9 @@ CLASS:Eclipse Point Buy (d0)
 	ABB:d0E
 	MAXLEVEL:20
 	DEFINE:EclipseClass|1
-	BONUS:COMBAT|BAB|var("Warcraft Bonus")|TYPE=Base
+	
 
-# Class Name			Skill Pts/Lvl
+# Class Name	Skill Pts/Lvl
 CLASS:Eclipse Point Buy (d0)
 	STARTSKILLPTS:0
 
@@ -62,21 +65,24 @@ CLASS:Eclipse Point Buy (d0)
 1
 	TEMPLATE:01 Point Buy Master Template for All Levels
 
+###Block:
 1:REPEATLEVEL:1|SKIP=0|MAX=20
 	CAST:9,9,9,9,9,9,9,9,9,9
 	BONUS:HP|CURRENTMAX|-1
 	ABILITY:Internal|AUTOMATIC|HD Taken d0
 
+###Block:
 1
 	ABILITY:Special Ability|AUTOMATIC|All Automatic Abilities|All Automatic Proficiencies
 
+###Block:
 1
 	BONUS:VAR|CharacterPointsLevelOffSet|4*CL
 	BONUS:VAR|EclipseClassLvl|CL
 
 
 
-# Class Name			Output Name		Hit Dice	Type				Abbreviation	Max Level	Define			Combat bonus
+# Class Name	Output Name	Hit Dice	Type	Abbreviation	Max Level	Define	Combat bonus
 CLASS:Eclipse Point Buy (d02)
 	OUTPUTNAME:d2E
 	HD:2
@@ -84,9 +90,9 @@ CLASS:Eclipse Point Buy (d02)
 	ABB:d2E
 	MAXLEVEL:20
 	DEFINE:EclipseClass|1
-	BONUS:COMBAT|BAB|var("Warcraft Bonus")|TYPE=Base
+	
 
-# Class Name			Skill Pts/Lvl
+# Class Name	Skill Pts/Lvl
 CLASS:Eclipse Point Buy (d02)
 	STARTSKILLPTS:0
 
@@ -94,14 +100,17 @@ CLASS:Eclipse Point Buy (d02)
 1
 	TEMPLATE:01 Point Buy Master Template for All Levels
 
+###Block:
 1:REPEATLEVEL:1|SKIP=0|MAX=20
 	CAST:9,9,9,9,9,9,9,9,9,9
 	ABILITY:Internal|AUTOMATIC|HD Taken d2
 	DONOTADD:SKILLPOINTS
 
+###Block:
 1
 	ABILITY:Special Ability|AUTOMATIC|All Automatic Abilities|All Automatic Proficiencies
 
+###Block:
 1
 	BONUS:VAR|CharacterPointsLevelOffSet|2*CL
 	BONUS:VAR|EclipseClassLvl|CL
@@ -110,7 +119,7 @@ CLASS:Eclipse Point Buy (d02)
 
 
 
-# Class Name			Output Name		Hit Dice	Type				Abbreviation	Max Level	Define			Combat bonus
+# Class Name	Output Name	Hit Dice	Type	Abbreviation	Max Level	Define	Combat bonus
 CLASS:Eclipse Point Buy (d04)
 	OUTPUTNAME:d4E
 	HD:4
@@ -118,32 +127,34 @@ CLASS:Eclipse Point Buy (d04)
 	ABB:d4E
 	MAXLEVEL:20
 	DEFINE:EclipseClass|1
-	BONUS:COMBAT|BAB|var("Warcraft Bonus")|TYPE=Base
+	
 
-# Class Name			Skill Pts/Lvl
+# Class Name	Skill Pts/Lvl
 CLASS:Eclipse Point Buy (d04)
 	STARTSKILLPTS:0
 
 ###Block:
 # No Skill Points Added During Level Progression
 #
-1
-	TEMPLATE:01 Point Buy Master Template for All Levels
+1TEMPLATE:01 Point Buy Master Template for All Levels
 
+###Block:
 1:REPEATLEVEL:1|SKIP=0|MAX=20
 	CAST:9,9,9,9,9,9,9,9,9,9
 	ABILITY:Internal|AUTOMATIC|HD Taken d4
 	DONOTADD:SKILLPOINTS
 
+###Block:
 1
 	ABILITY:Special Ability|AUTOMATIC|All Automatic Abilities|All Automatic Proficiencies
 
+###Block:
 1
 	BONUS:VAR|EclipseClassLvl|CL
 
 
 
-# Class Name			Output Name		Hit Dice	Type				Abbreviation	Max Level	Define			Combat bonus
+# Class Name	Output Name	Hit Dice	Type	Abbreviation	Max Level	Define	Combat bonus
 CLASS:Eclipse Point Buy (d06)
 	OUTPUTNAME:d6E
 	HD:6
@@ -151,9 +162,9 @@ CLASS:Eclipse Point Buy (d06)
 	ABB:d6E
 	MAXLEVEL:20
 	DEFINE:EclipseClass|1
-	BONUS:COMBAT|BAB|var("Warcraft Bonus")|TYPE=Base
+	
 
-# Class Name			Skill Pts/Lvl
+# Class Name	Skill Pts/Lvl
 CLASS:Eclipse Point Buy (d06)
 	STARTSKILLPTS:0
 
@@ -161,14 +172,17 @@ CLASS:Eclipse Point Buy (d06)
 1
 	TEMPLATE:01 Point Buy Master Template for All Levels
 
+###Block:
 1:REPEATLEVEL:1|SKIP=0|MAX=20
 	CAST:9,9,9,9,9,9,9,9,9,9
 	ABILITY:Internal|AUTOMATIC|HD Taken d6
 	DONOTADD:SKILLPOINTS
 
+###Block:
 1
 	ABILITY:Special Ability|AUTOMATIC|All Automatic Abilities|All Automatic Proficiencies
 
+###Block:
 1
 	BONUS:VAR|CharacterPointsLevelOffSet|-2*CL
 	BONUS:VAR|EclipseClassLvl|CL
@@ -176,7 +190,7 @@ CLASS:Eclipse Point Buy (d06)
 #
 
 
-# Class Name			Output Name		Hit Dice	Type				Abbreviation	Max Level	Define			Combat bonus
+# Class Name	Output Name	Hit Dice	Type	Abbreviation	Max Level	Define	Combat bonus
 CLASS:Eclipse Point Buy (d08)
 	OUTPUTNAME:d8E
 	HD:8
@@ -184,9 +198,9 @@ CLASS:Eclipse Point Buy (d08)
 	ABB:d8E
 	MAXLEVEL:20
 	DEFINE:EclipseClass|1
-	BONUS:COMBAT|BAB|var("Warcraft Bonus")|TYPE=Base
+	
 
-# Class Name			Skill Pts/Lvl
+# Class Name	Skill Pts/Lvl
 CLASS:Eclipse Point Buy (d08)
 	STARTSKILLPTS:0
 
@@ -194,14 +208,17 @@ CLASS:Eclipse Point Buy (d08)
 1
 	TEMPLATE:01 Point Buy Master Template for All Levels
 
+###Block:
 1:REPEATLEVEL:1|SKIP=0|MAX=20
 	CAST:9,9,9,9,9,9,9,9,9,9
 	ABILITY:Internal|AUTOMATIC|HD Taken d8
 	DONOTADD:SKILLPOINTS
 
+###Block:
 1
 	ABILITY:Special Ability|AUTOMATIC|All Automatic Abilities|All Automatic Proficiencies
 
+###Block:
 1
 	BONUS:VAR|CharacterPointsLevelOffSet|-4*CL
 	BONUS:VAR|EclipseClassLvl|CL
@@ -211,7 +228,7 @@ CLASS:Eclipse Point Buy (d08)
 
 
 
-# Class Name			Output Name		Hit Dice	Type				Abbreviation	Max Level	Define			Combat bonus
+# Class Name	Output Name	Hit Dice	Type	Abbreviation	Max Level	Define	Combat bonus
 CLASS:Eclipse Point Buy (d10)
 	OUTPUTNAME:d10E
 	HD:10
@@ -219,9 +236,9 @@ CLASS:Eclipse Point Buy (d10)
 	ABB:d10E
 	MAXLEVEL:20
 	DEFINE:EclipseClass|1
-	BONUS:COMBAT|BAB|var("Warcraft Bonus")|TYPE=Base
+	
 
-# Class Name			Skill Pts/Lvl
+# Class Name	Skill Pts/Lvl
 CLASS:Eclipse Point Buy (d10)
 	STARTSKILLPTS:0
 
@@ -229,14 +246,17 @@ CLASS:Eclipse Point Buy (d10)
 1
 	TEMPLATE:01 Point Buy Master Template for All Levels
 
+###Block:
 1:REPEATLEVEL:1|SKIP=0|MAX=20
 	CAST:9,9,9,9,9,9,9,9,9,9
 	ABILITY:Internal|AUTOMATIC|HD Taken d10
 	DONOTADD:SKILLPOINTS
 
+###Block:
 1
 	ABILITY:Special Ability|AUTOMATIC|All Automatic Abilities|All Automatic Proficiencies
 
+###Block:
 1
 	BONUS:VAR|CharacterPointsLevelOffSet|-6*CL
 	BONUS:VAR|EclipseClassLvl|CL
@@ -244,7 +264,7 @@ CLASS:Eclipse Point Buy (d10)
 #
 
 
-# Class Name			Output Name		Hit Dice	Type				Abbreviation	Max Level	Define			Combat bonus
+# Class Name	Output Name	Hit Dice	Type	Abbreviation	Max Level	Define	Combat bonus
 CLASS:Eclipse Point Buy (d12)
 	OUTPUTNAME:d12E
 	HD:12
@@ -252,9 +272,9 @@ CLASS:Eclipse Point Buy (d12)
 	ABB:d12E
 	MAXLEVEL:20
 	DEFINE:EclipseClass|1
-	BONUS:COMBAT|BAB|var("Warcraft Bonus")|TYPE=Base
+	
 
-# Class Name			Skill Pts/Lvl
+# Class Name	Skill Pts/Lvl
 CLASS:Eclipse Point Buy (d12)
 	STARTSKILLPTS:0
 
@@ -262,14 +282,17 @@ CLASS:Eclipse Point Buy (d12)
 1
 	TEMPLATE:01 Point Buy Master Template for All Levels
 
+###Block:
 1:REPEATLEVEL:1|SKIP=0|MAX=20
 	CAST:9,9,9,9,9,9,9,9,9,9
 	ABILITY:Internal|AUTOMATIC|HD Taken d12
 	DONOTADD:SKILLPOINTS
 
+###Block:
 1
 	ABILITY:Special Ability|AUTOMATIC|All Automatic Abilities|All Automatic Proficiencies
 
+###Block:
 1
 	BONUS:VAR|CharacterPointsLevelOffSet|-8*CL
 	BONUS:VAR|EclipseClassLvl|CL
@@ -277,7 +300,7 @@ CLASS:Eclipse Point Buy (d12)
 #
 
 
-# Class Name			Output Name		Hit Dice	Type				Abbreviation	Max Level	Define			Combat bonus
+# Class Name	Output Name	Hit Dice	Type	Abbreviation	Max Level	Define	Combat bonus
 CLASS:Eclipse Point Buy (d20)
 	OUTPUTNAME:d20E
 	HD:20
@@ -285,9 +308,9 @@ CLASS:Eclipse Point Buy (d20)
 	ABB:d20E
 	MAXLEVEL:20
 	DEFINE:EclipseClass|1
-	BONUS:COMBAT|BAB|var("Warcraft Bonus")|TYPE=Base
+	
 
-# Class Name			Skill Pts/Lvl
+# Class Name	Skill Pts/Lvl
 CLASS:Eclipse Point Buy (d20)
 	STARTSKILLPTS:0
 
@@ -295,14 +318,17 @@ CLASS:Eclipse Point Buy (d20)
 1
 	TEMPLATE:01 Point Buy Master Template for All Levels
 
+###Block:
 1:REPEATLEVEL:1|SKIP=0|MAX=20
 	CAST:9,9,9,9,9,9,9,9,9,9
 	ABILITY:Internal|AUTOMATIC|HD Taken d20
 	DONOTADD:SKILLPOINTS
 
+###Block:
 1
 	ABILITY:Special Ability|AUTOMATIC|All Automatic Abilities|All Automatic Proficiencies
 
+###Block:
 1
 	BONUS:VAR|CharacterPointsLevelOffSet|-16*CL
 	BONUS:VAR|EclipseClassLvl|CL
@@ -315,7 +341,7 @@ CLASS:Eclipse Point Buy (d20)
 ###Block: Workaround - Allows Eclipse only Classes to have a Spell Casting Class
 
 
-# Class Name	Hit Dice	Type				Abbreviation	Max Level	Visible	Define			Combat bonus
+# Class Name	Hit Dice	Type	Abbreviation	Max Level	Visible	Define	Combat bonus
 CLASS:Eclipse
 	HD:1
 	TYPE:Base.PC.Eclipse
@@ -323,14 +349,14 @@ CLASS:Eclipse
 	MAXLEVEL:20
 	VISIBLE:NO
 	DEFINE:EclipseClass|1
-	BONUS:COMBAT|BAB|var("Warcraft Bonus")|TYPE=Base
+	
 
-# Class Name	Spell Type		Caster level
+# Class Name	Spell Type	Caster level
 CLASS:Eclipse
 	SPELLTYPE:Arcane
 	BONUS:CASTERLEVEL|Eclipse|CL
 
-# Class Name			Multiple Requirements
+# Class Name	Multiple Requirements
 ##Block:
 1:REPEATLEVEL:1|SKIP=0|MAX=20
 	CAST:9,9,9,9,9,9,9,9,9,9
@@ -341,22 +367,21 @@ CLASS:Eclipse
 
 
 
-# Class Name		Hit Dice	Type				Abbreviation	Max Level	Define			Combat bonus							Modify VAR
+# Class Name	Hit Dice	Type	Abbreviation	Max Level	Define	Combat bonus	Modify VAR
 CLASS:Eclipse SubTest
 	HD:1
 	TYPE:Base.PC.Eclipse
 	ABB:EPB
 	MAXLEVEL:20
 	DEFINE:EclipseClass|1
-	BONUS:COMBAT|BAB|var("Warcraft Bonus")|TYPE=Base
 	BONUS:VAR|EclipseClassLvl|CL
 
-# Class Name		Spell Type		Caster level
+# Class Name	Spell Type	Caster level
 CLASS:Eclipse SubTest
 	SPELLTYPE:Arcane
 	BONUS:CASTERLEVEL|Eclipse|CL
 
-# Class Name			Multiple Requirements
+# Class Name	Multiple Requirements
 # No Skill Points Added During Level Progression
 SUBSTITUTIONCLASS:d04
 	HD:4
@@ -689,7 +714,7 @@ SUBSTITUTIONCLASS:d20
 ###Block: Original Demo Class
 
 
-# Class Name	Hit Dice	Type				Abbreviation	Max Level	Define
+# Class Name	Hit Dice	Type	Abbreviation	Max Level	Define
 CLASS:Point Buy
 	HD:4
 	TYPE:Base.PC.Eclipse
@@ -719,40 +744,40 @@ CLASS:Point Buy
 
 #
 ###Block: Hit Die Purchasing Scheme - Need HITDIE to accept variable.
-#1		BONUS:HD|MAX|var("HDBonus Lv 1")
-#2		BONUS:HD|MAX|var("HDBonus Lv 2")
-#3		BONUS:HD|MAX|var("HDBonus Lv 3")
-#4		BONUS:HD|MAX|var("HDBonus Lv 4")
-#5		BONUS:HD|MAX|var("HDBonus Lv 5")
-#6		BONUS:HD|MAX|var("HDBonus Lv 6")
-#7		BONUS:HD|MAX|var("HDBonus Lv 7")
-#8		BONUS:HD|MAX|var("HDBonus Lv 8")
-#9		BONUS:HD|MAX|var("HDBonus Lv 9")
-#10		BONUS:HD|MAX|var("HDBonus Lv 10")
-#11		BONUS:HD|MAX|var("HDBonus Lv 11")
-#12		BONUS:HD|MAX|var("HDBonus Lv 12")
-#13		BONUS:HD|MAX|var("HDBonus Lv 13")
-#14		BONUS:HD|MAX|var("HDBonus Lv 14")
-#15		BONUS:HD|MAX|var("HDBonus Lv 15")
-#16		BONUS:HD|MAX|var("HDBonus Lv 16")
-#17		BONUS:HD|MAX|var("HDBonus Lv 17")
-#18		BONUS:HD|MAX|var("HDBonus Lv 18")
-#19		BONUS:HD|MAX|var("HDBonus Lv 19")
-#20		BONUS:HD|MAX|var("HDBonus Lv 20")
+#1	BONUS:HD|MAX|var("HDBonus Lv 1")
+#2	BONUS:HD|MAX|var("HDBonus Lv 2")
+#3	BONUS:HD|MAX|var("HDBonus Lv 3")
+#4	BONUS:HD|MAX|var("HDBonus Lv 4")
+#5	BONUS:HD|MAX|var("HDBonus Lv 5")
+#6	BONUS:HD|MAX|var("HDBonus Lv 6")
+#7	BONUS:HD|MAX|var("HDBonus Lv 7")
+#8	BONUS:HD|MAX|var("HDBonus Lv 8")
+#9	BONUS:HD|MAX|var("HDBonus Lv 9")
+#10	BONUS:HD|MAX|var("HDBonus Lv 10")
+#11	BONUS:HD|MAX|var("HDBonus Lv 11")
+#12	BONUS:HD|MAX|var("HDBonus Lv 12")
+#13	BONUS:HD|MAX|var("HDBonus Lv 13")
+#14	BONUS:HD|MAX|var("HDBonus Lv 14")
+#15	BONUS:HD|MAX|var("HDBonus Lv 15")
+#16	BONUS:HD|MAX|var("HDBonus Lv 16")
+#17	BONUS:HD|MAX|var("HDBonus Lv 17")
+#18	BONUS:HD|MAX|var("HDBonus Lv 18")
+#19	BONUS:HD|MAX|var("HDBonus Lv 19")
+#20	BONUS:HD|MAX|var("HDBonus Lv 20")
 
 
 
 
-# Class Name			Hit Dice	Type				Abbreviation	Max Level	Define			Combat bonus
+# Class Name	Hit Dice	Type	Abbreviation	Max Level	Define	Combat bonus
 CLASS:Classless Point Buy
 	HD:4
 	TYPE:Base.PC.Eclipse
 	ABB:Point
 	MAXLEVEL:20
 	DEFINE:EclipseClass|1
-	BONUS:COMBAT|BAB|var("Warcraft Bonus")|TYPE=Base.REPLACE
+	.REPLACE
 
-# Class Name			Skill Pts/Lvl
+# Class Name	Skill Pts/Lvl
 CLASS:Classless Point Buy
 	STARTSKILLPTS:0
 
@@ -775,26 +800,26 @@ CLASS:Classless Point Buy
 
 #
 ###Block: Hit Die Purchasing Scheme - Need HITDIE to accept variable.
-#1		BONUS:HD|MAX|var("HDBonus Lv 1")
-#2		BONUS:HD|MAX|var("HDBonus Lv 2")
-#3		BONUS:HD|MAX|var("HDBonus Lv 3")
-#4		BONUS:HD|MAX|var("HDBonus Lv 4")
-#5		BONUS:HD|MAX|var("HDBonus Lv 5")
-#6		BONUS:HD|MAX|var("HDBonus Lv 6")
-#7		BONUS:HD|MAX|var("HDBonus Lv 7")
-#8		BONUS:HD|MAX|var("HDBonus Lv 8")
-#9		BONUS:HD|MAX|var("HDBonus Lv 9")
-#10		BONUS:HD|MAX|var("HDBonus Lv 10")
-#11		BONUS:HD|MAX|var("HDBonus Lv 11")
-#12		BONUS:HD|MAX|var("HDBonus Lv 12")
-#13		BONUS:HD|MAX|var("HDBonus Lv 13")
-#14		BONUS:HD|MAX|var("HDBonus Lv 14")
-#15		BONUS:HD|MAX|var("HDBonus Lv 15")
-#16		BONUS:HD|MAX|var("HDBonus Lv 16")
-#17		BONUS:HD|MAX|var("HDBonus Lv 17")
-#18		BONUS:HD|MAX|var("HDBonus Lv 18")
-#19		BONUS:HD|MAX|var("HDBonus Lv 19")
-#20		BONUS:HD|MAX|var("HDBonus Lv 20")
+#1	BONUS:HD|MAX|var("HDBonus Lv 1")
+#2	BONUS:HD|MAX|var("HDBonus Lv 2")
+#3	BONUS:HD|MAX|var("HDBonus Lv 3")
+#4	BONUS:HD|MAX|var("HDBonus Lv 4")
+#5	BONUS:HD|MAX|var("HDBonus Lv 5")
+#6	BONUS:HD|MAX|var("HDBonus Lv 6")
+#7	BONUS:HD|MAX|var("HDBonus Lv 7")
+#8	BONUS:HD|MAX|var("HDBonus Lv 8")
+#9	BONUS:HD|MAX|var("HDBonus Lv 9")
+#10	BONUS:HD|MAX|var("HDBonus Lv 10")
+#11	BONUS:HD|MAX|var("HDBonus Lv 11")
+#12	BONUS:HD|MAX|var("HDBonus Lv 12")
+#13	BONUS:HD|MAX|var("HDBonus Lv 13")
+#14	BONUS:HD|MAX|var("HDBonus Lv 14")
+#15	BONUS:HD|MAX|var("HDBonus Lv 15")
+#16	BONUS:HD|MAX|var("HDBonus Lv 16")
+#17	BONUS:HD|MAX|var("HDBonus Lv 17")
+#18	BONUS:HD|MAX|var("HDBonus Lv 18")
+#19	BONUS:HD|MAX|var("HDBonus Lv 19")
+#20	BONUS:HD|MAX|var("HDBonus Lv 20")
 
 
 
@@ -804,7 +829,7 @@ CLASS:Classless Point Buy
 ###Block: For Martial Arts Work Around
 
 
-# Class Name	Type		Abbreviation	Visible
+# Class Name	Type	Abbreviation	Visible
 CLASS:Fake Monk
 	TYPE:PC
 	ABB:Buy
@@ -814,14 +839,14 @@ CLASS:Fake Monk
 	BONUS:ABILITYPOOL|FEAT|-1
 	DONOTADD:HITDIE|SKILLPOINTS
 
-#2						UDAM:1d4
-#3						UDAM:1d6
-#4						UDAM:1d8
-#5						UDAM:1d10
-#6						UDAM:1d12
+#2	UDAM:1d4
+#3	UDAM:1d6
+#4	UDAM:1d8
+#5	UDAM:1d10
+#6	UDAM:1d12
 ###Block: Special Choose 7 OR 8 using the Bonus UDAM as this is a Split in choice
-#7						UDAM:2d10
-#8						UDAM:1d20
+#7	UDAM:2d10
+#8	UDAM:1d20
 1
 	UDAM:1d3,1d3,1d3,1d3,1d3,1d3,1d3,1d3,1d3
 
@@ -854,7 +879,7 @@ CLASS:Fake Monk
 ###Block: Extra HD workaround.
 
 
-# Class Name	Hit Dice	Type		Abbreviation	Max Level	Visible
+# Class Name	Hit Dice	Type	Abbreviation	Max Level	Visible
 CLASS:Extra HD 4
 	HD:4
 	TYPE:PC
@@ -888,7 +913,7 @@ CLASS:Extra HD 4
 
 
 
-# Class Name	Hit Dice	Type		Abbreviation	Max Level	Visible
+# Class Name	Hit Dice	Type	Abbreviation	Max Level	Visible
 CLASS:Extra HD 6
 	HD:6
 	TYPE:PC
@@ -924,7 +949,7 @@ CLASS:Extra HD 6
 
 
 
-# Class Name	Hit Dice	Type		Abbreviation	Visible
+# Class Name	Hit Dice	Type	Abbreviation	Visible
 CLASS:Extra HD 8
 	HD:8
 	TYPE:PC
@@ -937,7 +962,7 @@ CLASS:Extra HD 8
 
 
 
-# Class Name	Hit Dice	Type		Abbreviation	Visible
+# Class Name	Hit Dice	Type	Abbreviation	Visible
 CLASS:Extra HD 10
 	HD:10
 	TYPE:PC
@@ -950,7 +975,7 @@ CLASS:Extra HD 10
 
 
 
-# Class Name	Hit Dice	Type		Abbreviation	Visible
+# Class Name	Hit Dice	Type	Abbreviation	Visible
 CLASS:Extra HD 12
 	HD:12
 	TYPE:PC
@@ -963,7 +988,7 @@ CLASS:Extra HD 12
 
 
 
-# Class Name	Hit Dice	Type		Abbreviation	Visible
+# Class Name	Hit Dice	Type	Abbreviation	Visible
 CLASS:Extra HD 20
 	HD:20
 	TYPE:PC
@@ -978,7 +1003,7 @@ CLASS:Extra HD 20
 
 
 
-# Class Name	Unique Key			Hit Dice	Type
+# Class Name	Unique Key	Hit Dice	Type
 CLASS:Companion
 	KEY:Companion ~ Eclipse
 	HD:8
@@ -986,7 +1011,7 @@ CLASS:Companion
 
 
 
-# Class Name			Skill Pts/Lvl
+# Class Name	Skill Pts/Lvl
 CLASS:Companion ~ Eclipse
 	STARTSKILLPTS:0
 

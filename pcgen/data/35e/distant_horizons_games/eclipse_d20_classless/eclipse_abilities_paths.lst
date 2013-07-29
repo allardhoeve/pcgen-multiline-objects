@@ -75,10 +75,10 @@ Channeling Base
 	BONUS:VAR|ChannelingIntensity|1|PREABILITY:2,CATEGORY=Special Ability,Channeling ~ Intensity Increase
 	BONUS:VAR|ChannelingNegativeIntensity|1|PREABILITY:1,CATEGORY=Special Ability,Channeling ~ Negative Intensity Increase
 	BONUS:VAR|ChannelingNegativeIntensity|1|PREABILITY:2,CATEGORY=Special Ability,Channeling ~ Negative Intensity Increase
-	BONUS:VAR|ChannelingMagnitudeDice|count("ABILITIES","NAME=Channeling / Positive / Magnitude Increase","CATEGORY=Special Ability")
-	BONUS:VAR|ChannelingIntensity|count("ABILITIES","NAME=Channeling / Positive / Intensity Increase","CATEGORY=Special Ability")
-	BONUS:VAR|ChannelingNegativeMagnitudeDice|count("ABILITIES","NAME=Channeling / Negative / Magnitude Increase","CATEGORY=Special Ability")
-	BONUS:VAR|ChannelingNegativeIntensity|count("ABILITIES","NAME=Channeling / Negative / Intensity Increase","CATEGORY=Special Ability")
+	BONUS:VAR|ChannelingMagnitudeDice|countdistinct("ABILITIES","NAME=Channeling / Positive / Magnitude Increase","CATEGORY=Special Ability")
+	BONUS:VAR|ChannelingIntensity|countdistinct("ABILITIES","NAME=Channeling / Positive / Intensity Increase","CATEGORY=Special Ability")
+	BONUS:VAR|ChannelingNegativeMagnitudeDice|countdistinct("ABILITIES","NAME=Channeling / Negative / Magnitude Increase","CATEGORY=Special Ability")
+	BONUS:VAR|ChannelingNegativeIntensity|countdistinct("ABILITIES","NAME=Channeling / Negative / Intensity Increase","CATEGORY=Special Ability")
 	SOURCEPAGE:p.66
 
 
@@ -2161,7 +2161,7 @@ Hexcrafting / Fixed Slot
 #-------------------------#
 CATEGORY=Internal|Default.MOD
 	DEFINE:MartialArtsBasicTaken|0
-	BONUS:VAR|MartialArtsBasicTaken|count("ABILITIES","TYPE=MartialArtsBasicTechnique")
+	BONUS:VAR|MartialArtsBasicTaken|countdistinct("ABILITIES","TYPE=MartialArtsBasicTechnique")
 
 ###Block: Martial Arts Skill Abilities -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Basic Techniques
@@ -5050,7 +5050,7 @@ Path of Spirits / Ridden by the Loa
 	STACK:YES
 	MULT:YES
 	CHOOSE:NUMCHOICES=3|NOCHOICE
-	BONUS:VAR|RiddenByLoaCount|count("ABILITIES","CATEGORY=Special Ability","NAME=Path of Spirits / Ridden by the Loa")|TYPE=NoStack
+	BONUS:VAR|RiddenByLoaCount|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Path of Spirits / Ridden by the Loa")|TYPE=NoStack
 	COST:6
 	SOURCEPAGE:p.117
 	BENEFIT:The character is possessed. The character's basic goals remain intact, but the spirit ~ of a type related to the Template is mostly in control and does as it pleases.|PREVAREQ:RidenByLoaCount,1

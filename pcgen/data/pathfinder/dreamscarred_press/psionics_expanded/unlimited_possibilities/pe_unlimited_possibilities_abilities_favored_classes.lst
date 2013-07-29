@@ -117,7 +117,7 @@ Bonus Astral Suit AC Auxiliary Ability
 	VISIBLE:NO
 	DEFINE:BonusAstralSuitAC|0
 	BONUS:COMBAT|AC|BonusAstralSuitAC|TYPE=Armor.STACK|PREEQUIP:1,TYPE=AstralSuit
-	BONUS:VAR|BonusAstralSuitAC|count("ABILITIES","CATEGORY=Special Ability","NAME=Bonus Astral Suit AC")/4|TYPE=FavoredClassAegisACBonus
+	BONUS:VAR|BonusAstralSuitAC|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Bonus Astral Suit AC")/4|TYPE=FavoredClassAegisACBonus
 
 Bonus Energy Resistance (Cold)
 	CATEGORY:Special Ability
@@ -197,7 +197,7 @@ Bonus to Collective Level Auxiliary Ability
 	CATEGORY:Special Ability
 	VISIBLE:NO
 	DEFINE:CollectiveLVLBonus|0
-	BONUS:VAR|CollectiveLVLBonus|count("ABILITIES","CATEGORY=Special Ability","NAME=Bonus to Collective Level")/2
+	BONUS:VAR|CollectiveLVLBonus|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Bonus to Collective Level")/2
 	BONUS:VAR|CollectiveLVL|CollectiveLVLBonus
 
 Bonus to Saves vs. Energy
@@ -235,7 +235,7 @@ Bonus Astral Suit DR Auxiliary Ability
 	VISIBLE:NO
 	DEFINE:BonusAstralSuitDR|0
 	BONUS:VAR|AegisDR|BonusAstralSuitDR
-	BONUS:VAR|BonusAstralSuitDR|count("ABILITIES","CATEGORY=Special Ability","NAME=Bonus Astral Suit DR")/4|TYPE=FavoredClassAegisACBonus
+	BONUS:VAR|BonusAstralSuitDR|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Bonus Astral Suit DR")/4|TYPE=FavoredClassAegisACBonus
 
 Bonus to Confirm Critical
 	CATEGORY:Special Ability

@@ -209,7 +209,7 @@ Familiar (Bat)
 	MONCSKILL:Hide|Listen|Move Silently|Spot
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability
 	LEGS:2
-	MONSTERCLASS:Companion:1
+	MONSTERCLASS:Companion ~ Eclipse:1
 	RACETYPE:Animal
 	TYPE:Animal
 	TEMPLATE:Quarter Hitdie
@@ -238,7 +238,7 @@ Familiar (Cat)
 	LEGS:4
 	HANDS:3
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d2|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d3
-	MONSTERCLASS:Companion:1
+	MONSTERCLASS:Companion ~ Eclipse:1
 	RACETYPE:Animal
 	TYPE:Animal
 	TEMPLATE:Half Hitdie
@@ -267,7 +267,7 @@ Familiar (Hawk)
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability
 	LEGS:2
 	NATURALATTACKS:Talons,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,1d4
-	MONSTERCLASS:Companion:1
+	MONSTERCLASS:Companion ~ Eclipse:1
 	RACETYPE:Animal
 	TYPE:Animal
 	CR:1/3
@@ -293,7 +293,7 @@ Familiar (Lizard)
 	VFEAT:Weapon Finesse
 	LEGS:4
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d4
-	MONSTERCLASS:Companion:1
+	MONSTERCLASS:Companion ~ Eclipse:1
 	RACETYPE:Animal
 	TYPE:Animal
 	TEMPLATE:Half Hitdie
@@ -323,7 +323,7 @@ Familiar (Owl)
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability
 	LEGS:2
 	NATURALATTACKS:Talons,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,1d4
-	MONSTERCLASS:Companion:1
+	MONSTERCLASS:Companion ~ Eclipse:1
 	RACETYPE:Animal
 	TYPE:Animal
 	HITDICEADVANCEMENT:1,2
@@ -352,7 +352,7 @@ Familiar (Rat)
 	ABILITY:Special Ability|AUTOMATIC|Scent
 	LEGS:4
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d3
-	MONSTERCLASS:Companion:1
+	MONSTERCLASS:Companion ~ Eclipse:1
 	RACETYPE:Animal
 	TYPE:Animal
 	TEMPLATE:Quarter Hitdie
@@ -379,7 +379,7 @@ Familiar (Raven)
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability
 	LEGS:2
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,1d2
-	MONSTERCLASS:Companion:1
+	MONSTERCLASS:Companion ~ Eclipse:1
 	RACETYPE:Animal
 	TYPE:Animal
 	TEMPLATE:Quarter Hitdie
@@ -411,7 +411,7 @@ Familiar (Snake (Viper/Tiny))
 	ABILITY:Special Ability|AUTOMATIC|Poison|Scent
 	LEGS:0
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing.Poison,*1,1
-	MONSTERCLASS:Companion:1
+	MONSTERCLASS:Companion ~ Eclipse:1
 	RACETYPE:Animal
 	TYPE:Animal
 	TEMPLATE:Quarter Hitdie
@@ -435,7 +435,7 @@ Familiar (Toad)
 	MONCSKILL:Hide|Listen|Spot
 	ABILITY:Special Ability|AUTOMATIC|Amphibious
 	LEGS:4
-	MONSTERCLASS:Companion:1
+	MONSTERCLASS:Companion ~ Eclipse:1
 	RACETYPE:Animal
 	TYPE:Animal
 	TEMPLATE:Quarter Hitdie
@@ -464,7 +464,7 @@ Familiar (Weasel)
 	ABILITY:Special Ability|AUTOMATIC|Attach|Scent
 	LEGS:4
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d3
-	MONSTERCLASS:Companion:1
+	MONSTERCLASS:Companion ~ Eclipse:1
 	RACETYPE:Animal
 	TYPE:Animal
 	TEMPLATE:Half Hitdie

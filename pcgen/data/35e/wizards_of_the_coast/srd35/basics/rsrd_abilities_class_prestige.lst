@@ -152,7 +152,7 @@ Arcane Reach
 	MULT:YES
 	CHOOSE:NUMCHOICES=2|NOCHOICE
 	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=7|-1
-	BONUS:VAR|ArcaneReach|30*count("ABILITIES","CATEGORY=Special Ability","NAME=Arcane Reach")|TYPE=ArcaneReach
+	BONUS:VAR|ArcaneReach|30*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Arcane Reach")|TYPE=ArcaneReach
 	SOURCEPAGE:PrestigeClasses.rtf
 	BENEFIT:The archmage can use spells with a range of touch on a target up to 30 feet away. The archmage must make a ranged touch attack. Arcane reach can be selected a second time as a special ability, in which case the range increases to 60 feet. This ability costs one 7th-level spell slot.
 

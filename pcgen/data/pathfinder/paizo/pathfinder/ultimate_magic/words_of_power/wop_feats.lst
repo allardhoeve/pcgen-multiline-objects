@@ -20,7 +20,7 @@ Experimental Spellcaster
 	MULT:YES
 	CHOOSE:CLASS|SPELLCASTER
 	AUTO:FEAT|Experimental Spellcaster First
-	AUTO:FEAT|Experimental Spellcaster Rest|PREVARGT:count("ABILITIES","CATEGORY=FEAT",NAME="Experimental Spellcaster"),1
+	AUTO:FEAT|Experimental Spellcaster Rest|PREVARGT:countdistinct("ABILITIES","CATEGORY=FEAT",NAME="Experimental Spellcaster"),1
 	SOURCEPAGE:p.166
 
 # NEEDS DATA WORK: Not yet implemented.  Need to know which class to add the known words to.

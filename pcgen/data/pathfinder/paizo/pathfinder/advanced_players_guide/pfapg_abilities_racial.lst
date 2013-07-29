@@ -1150,7 +1150,7 @@ Bonus CMD (Grapple) & Stunning
 Monk Attack Favored Class Tracker
 	CATEGORY:Internal
 	VISIBLE:NO
-	BONUS:VAR|StunningFistAttack|count("ABILITIES","CATEGORY=Special Ability","KEY=APGRT ~ CMD-G-S")/2
+	BONUS:VAR|StunningFistAttack|countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=APGRT ~ CMD-G-S")/2
 
 Bonus Ki
 	CATEGORY:Special Ability

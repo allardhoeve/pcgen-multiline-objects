@@ -299,7 +299,7 @@ Harness Shard
 	KEY:Harness Shard ~ Aegis
 	CATEGORY:Special Ability
 	TYPE:AstralSuitCustomization.SpecialQuality
-	DESC:You can spend a power point to activate a stored shard without destroying it.  You can have %1 stored shards.|count("ABILITIES","CATEGORY=Special Ability","NAME=Harness Shard")
+	DESC:You can spend a power point to activate a stored shard without destroying it.  You can have %1 stored shards.|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Harness Shard")
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -638,7 +638,7 @@ Flight
 	MOVECLONE:Walk,Fly,*1
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability
 	BONUS:MOVEADD|TYPE.Fly|AegisSpeed
-	BONUS:MOVEADD|TYPE.Fly|20*count("ABILITIES","CATEGORY=Special Ability","NAME=Flight Increased Speed")
+	BONUS:MOVEADD|TYPE.Fly|20*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Flight Increased Speed")
 	BONUS:VAR|Maneuverability|2
 	BONUS:VAR|Maneuverability|1|PRESIZELT:H
 	BONUS:VAR|Maneuverability|1|PRESIZELT:L
@@ -1254,7 +1254,7 @@ Mental Power
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
-	BONUS:VAR|BonusPowerPoints|2*count("ABILITIES","CATEGORY=Special Ability","NAME=Mental Power")|TYPE=MentalPowerBonusPP
+	BONUS:VAR|BonusPowerPoints|2*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Mental Power")|TYPE=MentalPowerBonusPP
 	SOURCEPAGE:p.12
 
 

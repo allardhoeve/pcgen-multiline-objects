@@ -153,9 +153,9 @@ Channeling Tracker II
 	DEFINE:ChannelingMagnitudeFactor|0
 	DEFINE:ChannelingMagnitudeFactorNegative|0
 	BONUS:VAR|ChannelingMagnitudeFactor|CHA
-	BONUS:VAR|ChannelingMagnitudeFactor|(CHA-1)*(count("ABILITIES","CATEGORY=Special Ability","KEY=The Boundless Realms ~ Lord of Light")-1)
+	BONUS:VAR|ChannelingMagnitudeFactor|(CHA-1)*(countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=The Boundless Realms ~ Lord of Light")-1)
 	BONUS:VAR|ChannelingMagnitudeFactorNegative|CHA
-	BONUS:VAR|ChannelingMagnitudeFactorNegative|(CHA-1)*(count("ABILITIES","CATEGORY=Special Ability","KEY=The Boundless Realms ~ Lord of Darkness")-1)
+	BONUS:VAR|ChannelingMagnitudeFactorNegative|(CHA-1)*(countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=The Boundless Realms ~ Lord of Darkness")-1)
 
 Rune Casting Activated
 	CATEGORY:FEAT
@@ -221,7 +221,7 @@ CATEGORY=Special Ability|Character Points Total.MOD
 	BENEFIT:Fast Learner adds %1 CP,|2*(2+var("EclipseClassLvl"))|PREABILITY:1,CATEGORY=Special Ability,Fast Learner Level Zero
 
 CATEGORY=Special Ability|Character Points Total.MOD
-	BENEFIT:Restrictions adds %1 CP,|var("EclipseClassLvl")*count("ABILITIES","CATEGORY=Special Ability","KEY=Eclipse Restrictions")|PREABILITY:1,CATEGORY=Special Ability,Eclipse Restrictions
+	BENEFIT:Restrictions adds %1 CP,|var("EclipseClassLvl")*countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=Eclipse Restrictions")|PREABILITY:1,CATEGORY=Special Ability,Eclipse Restrictions
 
 
 
@@ -237,28 +237,28 @@ CATEGORY=Special Ability|Character Points Total.MOD
 
 
 CATEGORY=Special Ability|Character Points Total.MOD
-	BENEFIT:&pipe; HD 0 adds %1 CP|4*count("ABILITIES","CATEGORY=Internal","NAME=HD Taken d0")|PREABILITY:1,CATEGORY=Internal,HD Taken d0
+	BENEFIT:&pipe; HD 0 adds %1 CP|4*countdistinct("ABILITIES","CATEGORY=Internal","NAME=HD Taken d0")|PREABILITY:1,CATEGORY=Internal,HD Taken d0
 
 CATEGORY=Special Ability|Character Points Total.MOD
-	BENEFIT:&pipe; HD 2 adds %1 CP|2*count("ABILITIES","CATEGORY=Internal","NAME=HD Taken d2")|PREABILITY:1,CATEGORY=Internal,HD Taken d2
+	BENEFIT:&pipe; HD 2 adds %1 CP|2*countdistinct("ABILITIES","CATEGORY=Internal","NAME=HD Taken d2")|PREABILITY:1,CATEGORY=Internal,HD Taken d2
 
 CATEGORY=Special Ability|Character Points Total.MOD
 	BENEFIT:&pipe; HD 4 is 0 CP|PREABILITY:1,CATEGORY=Internal,HD Taken d4
 
 CATEGORY=Special Ability|Character Points Total.MOD
-	BENEFIT:&pipe; HD 6 deducts %1 CP|2*count("ABILITIES","CATEGORY=Internal","NAME=HD Taken d6")|PREABILITY:1,CATEGORY=Internal,HD Taken d6
+	BENEFIT:&pipe; HD 6 deducts %1 CP|2*countdistinct("ABILITIES","CATEGORY=Internal","NAME=HD Taken d6")|PREABILITY:1,CATEGORY=Internal,HD Taken d6
 
 CATEGORY=Special Ability|Character Points Total.MOD
-	BENEFIT:&pipe; HD 8 deducts %1 CP|4*count("ABILITIES","CATEGORY=Internal","NAME=HD Taken d8")|PREABILITY:1,CATEGORY=Internal,HD Taken d8
+	BENEFIT:&pipe; HD 8 deducts %1 CP|4*countdistinct("ABILITIES","CATEGORY=Internal","NAME=HD Taken d8")|PREABILITY:1,CATEGORY=Internal,HD Taken d8
 
 CATEGORY=Special Ability|Character Points Total.MOD
-	BENEFIT:&pipe; HD 10 deducts %1 CP|6*count("ABILITIES","CATEGORY=Internal","NAME=HD Taken d10")|PREABILITY:1,CATEGORY=Internal,HD Taken d10
+	BENEFIT:&pipe; HD 10 deducts %1 CP|6*countdistinct("ABILITIES","CATEGORY=Internal","NAME=HD Taken d10")|PREABILITY:1,CATEGORY=Internal,HD Taken d10
 
 CATEGORY=Special Ability|Character Points Total.MOD
-	BENEFIT:&pipe; HD 12 deducts %1 CP|8*count("ABILITIES","CATEGORY=Internal","NAME=HD Taken d12")|PREABILITY:1,CATEGORY=Internal,HD Taken d12
+	BENEFIT:&pipe; HD 12 deducts %1 CP|8*countdistinct("ABILITIES","CATEGORY=Internal","NAME=HD Taken d12")|PREABILITY:1,CATEGORY=Internal,HD Taken d12
 
 CATEGORY=Special Ability|Character Points Total.MOD
-	BENEFIT:&pipe; HD 20 deducts %1 CP|16*count("ABILITIES","CATEGORY=Internal","NAME=HD Taken d20")|PREABILITY:1,CATEGORY=Internal,HD Taken d20
+	BENEFIT:&pipe; HD 20 deducts %1 CP|16*countdistinct("ABILITIES","CATEGORY=Internal","NAME=HD Taken d20")|PREABILITY:1,CATEGORY=Internal,HD Taken d20
 
 
 
@@ -330,8 +330,8 @@ Shapeshift Tracker
 	CATEGORY:Internal
 	DEFINE:ShapeshiftGrowth|0
 	DEFINE:ShapeshiftShrink|0
-	BONUS:VAR|ShapeshiftGrowth|1*count("ABILITIES","CATEGORY=Special Ability","NAME=Shapeshift / Growth")
-	BONUS:VAR|ShapeshiftShrink|1*count("ABILITIES","CATEGORY=Special Ability","NAME=Shapeshift / Shrink")
+	BONUS:VAR|ShapeshiftGrowth|1*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Shapeshift / Growth")
+	BONUS:VAR|ShapeshiftShrink|1*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Shapeshift / Shrink")
 
 Mana Tracker
 	CATEGORY:Internal
@@ -341,14 +341,14 @@ Mana Tracker
 	DEFINE:SpellLevelDice|0
 	DEFINE:PowerDice|0
 	DEFINE:PowerSize|6
-	BONUS:ABILITYPOOL|Mana Choice|count("ABILITIES","CATEGORY=Special Ability","NAME=Mana")|TYPE=NoStack
+	BONUS:ABILITYPOOL|Mana Choice|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Mana")|TYPE=NoStack
 	BONUS:ABILITYPOOL|Natural Magic Choice|1|PREABILITY:1,CATEGORY=Special Ability,Mana ~ Mana Points,TYPE.ManaPoints
 	SOURCEPAGE:p.36
 
 Spirit Weapon Tracker Output
 	CATEGORY:Internal
-	BONUS:VAR|SpiritWeaponMeleeDieSize|2*count("ABILITIES","CATEGORY=Special Ability","NAME=Spirit Weapon / Damage Upgrade / Melee")|TYPE=SpiritDamage
-	BONUS:VAR|SpiritWeaponRangedDieSize|2*count("ABILITIES","CATEGORY=Special Ability","NAME=Spirit Weapon / Damage Upgrade / Ranged")|TYPE=SpiritDamage
+	BONUS:VAR|SpiritWeaponMeleeDieSize|2*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Spirit Weapon / Damage Upgrade / Melee")|TYPE=SpiritDamage
+	BONUS:VAR|SpiritWeaponRangedDieSize|2*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Spirit Weapon / Damage Upgrade / Ranged")|TYPE=SpiritDamage
 
 Witchcraft Tracker
 	CATEGORY:Internal
@@ -356,7 +356,7 @@ Witchcraft Tracker
 	DEFINE:WitchcraftWillDC|CHA+13
 	BONUS:ABILITYPOOL|Witchcraft Abilities|3|PREABILITY:2,CATEGORY=Special Ability,Witchcraft
 	BONUS:ABILITYPOOL|Witchcraft Abilities|4|PREABILITY:3,CATEGORY=Special Ability,Witchcraft
-	BONUS:ABILITYPOOL|Advanced Witchcraft Ability|6*count("ABILITIES","NAME=Witchcraft / Advanced","CATEGORY=Special Ability")
+	BONUS:ABILITYPOOL|Advanced Witchcraft Ability|6*countdistinct("ABILITIES","NAME=Witchcraft / Advanced","CATEGORY=Special Ability")
 
 # This tracker is added only when the Witchcraft Ability is first taken, it then allows the character to
 # Select Pacts based upon level, it also tracks 'Witchcraft / Advanced' taken and bonuses the Advanced Abilities Section.

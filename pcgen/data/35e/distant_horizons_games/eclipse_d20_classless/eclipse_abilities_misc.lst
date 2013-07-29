@@ -22,7 +22,7 @@ Rune Caster
 	DEFINE:PointBuyRuneCasterCasterLvl|0
 	DESC:Rune Caster Level is listed in each entry, Bonus Caster levels add to all Rune Magic is +%1|PointBuyRuneCasterCasterLvl+CasterLevelAll
 	BONUS:DC|ALLSPELLS|INT
-	BONUS:VAR|PointBuyRuneCasterCasterLvl|count("ABILITIES","CATEGORY=Special Ability","NAME=Base Caster Level ~ Specialized ~ Rune Caster")
+	BONUS:VAR|PointBuyRuneCasterCasterLvl|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Base Caster Level ~ Specialized ~ Rune Caster")
 	SOURCEPAGE:p.97
 
 Hexcrafter
@@ -34,7 +34,7 @@ Hexcrafter
 	DEFINE:PointBuyHexcrafterCasterLvl|0
 	DESC:Hexcrafter Caster level is %2|HexcrafterMagicLvls|PointBuyHexcrafterCasterLvl+CasterLevelAll
 	BONUS:DC|ALLSPELLS|INT
-	BONUS:VAR|PointBuyHexcrafterCasterLvl|count("ABILITIES","CATEGORY=Special Ability","NAME=Base Caster Level ~ Specialized ~ Hexcrafter")
+	BONUS:VAR|PointBuyHexcrafterCasterLvl|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Base Caster Level ~ Specialized ~ Hexcrafter")
 	SOURCEPAGE:p.11
 
 Thaumaturgist
@@ -46,7 +46,7 @@ Thaumaturgist
 	DEFINE:PointBuyThaumaturgistCasterLvl|0
 	DESC:Thaumaturgist Caster level is %2|ThaumaturgistMagicLvls|PointBuyThaumaturgistCasterLvl+CasterLevelAll
 	BONUS:DC|ALLSPELLS|INT
-	BONUS:VAR|PointBuyThaumaturgistCasterLvl|count("ABILITIES","CATEGORY=Special Ability","KEY=Base Caster Level ~ Specialized ~ Thaumaturgist and Dweomer")
+	BONUS:VAR|PointBuyThaumaturgistCasterLvl|countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=Base Caster Level ~ Specialized ~ Thaumaturgist and Dweomer")
 	SOURCEPAGE:p.11
 
 Theurgist
@@ -58,7 +58,7 @@ Theurgist
 	DEFINE:PointBuyTheurgistCasterLvl|0
 	DESC:Theurgist Caster level is %2|TheurgistMagicLvls|PointBuyTheurgistCasterLvl+CasterLevelAll
 	BONUS:DC|ALLSPELLS|INT
-	BONUS:VAR|PointBuyTheurgistCasterLvl|count("ABILITIES","CATEGORY=Special Ability","NAME=Base Caster Level ~ Specialized ~ Theurgist")
+	BONUS:VAR|PointBuyTheurgistCasterLvl|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Base Caster Level ~ Specialized ~ Theurgist")
 	SOURCEPAGE:p.11
 
 

@@ -20,7 +20,7 @@ Aberrant EndoSkeletal Casing
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
 	SAB:DR %/- vs. Piercing/Ballistic|min(drBonus,10)
-	DEFINE:drBonus|(2*count("ABILITIES","CATEGORY=Mutation","NAME=Aberrant EndoSkeletal Casing"))
+	DEFINE:drBonus|(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Aberrant EndoSkeletal Casing"))
 	DESC:You are resistant to Piercing and Ballistic damage.
 	STACK:YES
 	MULT:YES
@@ -45,7 +45,7 @@ Abnormal Joint Flexibility
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:flexBonus|(2*count("ABILITIES","CATEGORY=Mutation","NAME=Abnormal Joint Flexibility"))
+	DEFINE:flexBonus|(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Abnormal Joint Flexibility"))
 	DESC:+%1 to Grappling attempts; also Climb,Escape Artist,Sleight of Hand, and Tumble checks|flexBonus
 	STACK:YES
 	MULT:YES
@@ -58,7 +58,7 @@ Accelerated White Blood Cell Activity
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
 	DEFINE:AccelWhiteBloodCellAct|0
-	DEFINE:healBonus|(1+count("ABILITIES","CATEGORY=Mutation","NAME=Accelerated White Blood Cell Activity"))
+	DEFINE:healBonus|(1+countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Accelerated White Blood Cell Activity"))
 	DESC:heal %1 hit points/10 minutes (from bludgeoning,ballistic,piercing and slashing)|(1+healBonus)
 	STACK:YES
 	MULT:YES
@@ -69,7 +69,7 @@ Accumulated Resistance
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:accResist|(2*count("ABILITIES","CATEGORY=Mutation","NAME=Accumulated Resistance"))
+	DEFINE:accResist|(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Accumulated Resistance"))
 	DESC:+%1 to Fortitude saves (not radiation)|accResist
 	STACK:YES
 	MULT:YES
@@ -81,9 +81,9 @@ Acid Excretion Glands
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
 	DEFINE:AcidExcretionGlands|0
-	DEFINE:acidDmg|min(5,count("ABILITIES","CATEGORY=Mutation","NAME=Acid Excretion Glands"))
+	DEFINE:acidDmg|min(5,countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Acid Excretion Glands"))
 	DEFINE:acidPlus|min(TL,10)
-	DEFINE:acidRng|min(30,(5+(5*count("ABILITIES","CATEGORY=Mutation","NAME=Acid Excretion Glands"))))
+	DEFINE:acidRng|min(30,(5+(5*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Acid Excretion Glands"))))
 	DEFINE:acidTimes|max(CON,1)
 	DESC:can make a ranged touch Acid attack (%1d6+%2 damage, %3' range) %4x/day|acidDmg|acidPlus|acidRng|acidTimes
 	STACK:YES
@@ -96,7 +96,7 @@ Adrenaline Control
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:rushTimes|count("ABILITIES","CATEGORY=Mutation","NAME=Adrenaline Control")
+	DEFINE:rushTimes|countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Adrenaline Control")
 	DEFINE:rushRnds|max(1,(CON+2))
 	DESC:'Rush' surge (%1x/day) for %2 rounds; +4 Strength, +4 Constitution, +25%% increase to base speed|rushTimes|rushRnds
 	STACK:YES
@@ -118,7 +118,7 @@ Autism
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:autRoll|6-count("ABILITIES","CATEGORY=Mutation","NAME=Autism")
+	DEFINE:autRoll|6-countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Autism")
 	DESC:Roll 1d6 when making INT-based skill check; No bonus on a (1-%1), otherwise one time +20 to check|autRoll
 	STACK:YES
 	MULT:YES
@@ -141,7 +141,7 @@ Chameleon Epidermis
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:chamUses|(max(CON,1)*count("ABILITIES","CATEGORY=Mutation","NAME=Chameleon Epidermis"))
+	DEFINE:chamUses|(max(CON,1)*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Chameleon Epidermis"))
 	DESC:Chameleon Skin (Hide Bonus (See text) %1x/day)|chamUses
 	STACK:YES
 	MULT:YES
@@ -169,7 +169,7 @@ Complete Wing Development
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:wingSpd|40+(10*count("ABILITIES","CATEGORY=Mutation","NAME=Chameleon Epidermis"))
+	DEFINE:wingSpd|40+(10*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Chameleon Epidermis"))
 	DEFINE:wingTime|(30*STRSCORE)
 	DESC:You can fly with your wings for %1 minutes at a time.|wingTime
 	STACK:YES
@@ -183,7 +183,7 @@ Dermal Suction
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:sucTimes|count("ABILITIES","CATEGORY=Mutation","NAME=Dermal Suction")
+	DEFINE:sucTimes|countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Dermal Suction")
 	DESC:With your hands free, you may climb at half your base speed with full DEX bonus;also, no climb check for vertical/horizontal surfaces.|PREVAREQ:sucTimes,1
 	DESC:With your hands free, you may climb at your full base speed with full DEX bonus;also, no climb check for vertical/horizontal surfaces.|PREVARGT:sucTimes,1
 	STACK:YES
@@ -195,8 +195,8 @@ Dermal Poison Sap
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:poiDC|12+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Dermal Poison Sap"))
-	DEFINE:poiStr|2+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Dermal Poison Sap"))
+	DEFINE:poiDC|12+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Dermal Poison Sap"))
+	DEFINE:poiStr|2+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Dermal Poison Sap"))
 	DESC:Your skin produces a (Fort DC:%1, Init/Sec Dmg: 1d%2/1d%3 STR) contact poison|poiDC|poiStr|poiStr
 	STACK:YES
 	MULT:YES
@@ -207,7 +207,7 @@ Dermal Spike Growth
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:spikeAC|(2*count("ABILITIES","CATEGORY=Mutation","NAME=Dermal Spike Growth"))
+	DEFINE:spikeAC|(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Dermal Spike Growth"))
 	DEFINE:spikeDmg|4+spikeAC
 	DESC:You cause a 1d%1 Piercing (crit x2) attack when grappling; also +%2 Natural Armor Bonus|spikeDmg|spikeAC
 	STACK:YES
@@ -263,8 +263,8 @@ Elongation
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:elongRch|(5*count("ABILITIES","CATEGORY=Mutation","NAME=Elongation"))
-	DEFINE:elongDur|(max(CON,1)*5)*count("ABILITIES","CATEGORY=Mutation","NAME=Elongation")
+	DEFINE:elongRch|(5*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Elongation"))
+	DEFINE:elongDur|(max(CON,1)*5)*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Elongation")
 	DESC:You are able to stretch your arms, legs, neck and torso for either +%1' reach or base speed for %2 rounds|elongRch|elongDur
 	STACK:YES
 	MULT:YES
@@ -278,7 +278,7 @@ Energy-Retaining Cell Structure
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:resDC|12-(2*count("ABILITIES","CATEGORY=Mutation","NAME=Energy-Retaining Cell Structure"))
+	DEFINE:resDC|12-(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Energy-Retaining Cell Structure"))
 	DESC:With a save (Fort DC:%1+damage), you can take no damage from electrical or energy and store it for later use (%2 uses max)|resDC|1+CON
 	STACK:YES
 	MULT:YES
@@ -296,8 +296,8 @@ Epidermal Acid Enzymes
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:dmgMet|10+(10*count("ABILITIES","CATEGORY=Mutation","NAME=Epidermal Acid Enzymes"))
-	DEFINE:dmgFle|count("ABILITIES","CATEGORY=Mutation","NAME=Epidermal Acid Enzymes")
+	DEFINE:dmgMet|10+(10*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Epidermal Acid Enzymes"))
+	DEFINE:dmgFle|countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Epidermal Acid Enzymes")
 	DESC:Your touch deals %1 pts of damage to metallic (or just %2 pts to flesh)|dmgMet|dmgFle
 	STACK:YES
 	MULT:YES
@@ -315,7 +315,7 @@ Extreme Resilience
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:critImm|min(100,50*count("ABILITIES","CATEGORY=Mutation","NAME=Extreme Resilience"))
+	DEFINE:critImm|min(100,50*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Extreme Resilience"))
 	DESC:You are %1%% resistant to Critical Hits|critImm
 	STACK:YES
 	MULT:YES
@@ -326,9 +326,9 @@ Fragrance Development
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:scentDice|1+count("ABILITIES","CATEGORY=Mutation","NAME=Fragrance Development")
-	DEFINE:scentRng|10+(5*count("ABILITIES","CATEGORY=Mutation","NAME=Fragrance Development"))
-	DEFINE:scentDC|13+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Fragrance Development"))
+	DEFINE:scentDice|1+countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Fragrance Development")
+	DEFINE:scentRng|10+(5*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Fragrance Development"))
+	DEFINE:scentDC|13+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Fragrance Development"))
 	DESC:Once per day, you can produce a hypnotizing scent that effects %1d4 creatures for %2d4 rounds within %3' (Will save DC:%4)|scentDice|scentDice|scentRng|scentDC
 	STACK:YES
 	MULT:YES
@@ -361,9 +361,9 @@ Hemotoxin Sting
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:hemoDmg|count("ABILITIES","CATEGORY=Mutation","NAME=Hemotoxin Sting")
-	DEFINE:hemoDays|2+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Hemotoxin Sting"))
-	DEFINE:hemoDC|18+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Hemotoxin Sting"))
+	DEFINE:hemoDmg|countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Hemotoxin Sting")
+	DEFINE:hemoDays|2+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Hemotoxin Sting"))
+	DEFINE:hemoDC|18+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Hemotoxin Sting"))
 	DESC:Your touch deals %1d4 pts of acid damage to flesh which cannot heal naturally for 1d4+%2 days (Fort DC:%3 to resist)|hemoDmg|hemoDays|hemoDC
 	STACK:YES
 	MULT:YES
@@ -375,7 +375,7 @@ Hyper Olfactory
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
 	SAB:Scent Ability (%')|holfactRng
-	DEFINE:holfactRng|10+(10*count("ABILITIES","CATEGORY=Mutation","NAME=Hyper Olfactory"))
+	DEFINE:holfactRng|10+(10*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Hyper Olfactory"))
 	DESC:Scent Ability (see text) (%1')|holfactRng
 	STACK:YES
 	MULT:YES
@@ -387,7 +387,7 @@ Increased Body Density
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
 	SAB:DR %/- vs. Bludgeoning/Concussion/Slashing|ddrBonus
-	DEFINE:ddrBonus|5*count("ABILITIES","CATEGORY=Mutation","NAME=Increased Body Density")
+	DEFINE:ddrBonus|5*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Increased Body Density")
 	DESC:You are resistant to Bludgeoning, Concussion and Slashing damage.
 	STACK:YES
 	MULT:YES
@@ -398,7 +398,7 @@ Increased Movement
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:imovBonus|10*count("ABILITIES","CATEGORY=Mutation","NAME=Increased Movement")
+	DEFINE:imovBonus|10*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Increased Movement")
 	DESC:Your base speed is increased %1'|imovBonus
 	STACK:YES
 	MULT:YES
@@ -418,7 +418,7 @@ Interior Moisture Reservoir
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:survDur|count("ABILITIES","CATEGORY=Mutation","NAME=Interior Moisture Reservoir")
+	DEFINE:survDur|countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Interior Moisture Reservoir")
 	DESC:You can survive for up to %1 week(s) without food or water|survDur
 	STACK:YES
 	MULT:YES
@@ -429,7 +429,7 @@ Light Distortion Field
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:invisDur|(max(CON,1)*count("ABILITIES","CATEGORY=Mutation","NAME=Light Distortion Field"))
+	DEFINE:invisDur|(max(CON,1)*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Light Distortion Field"))
 	DESC:You can become invisible for up to %1 rounds|invisDur
 	STACK:YES
 	MULT:YES
@@ -444,7 +444,7 @@ Multi-Faceted Eyes
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
-	BONUS:SKILL|Spot,Search,Repair,Craft (Mechanic)|(2*count("ABILITIES","CATEGORY=Mutation","NAME=Multi-Faceted Eyes"))
+	BONUS:SKILL|Spot,Search,Repair,Craft (Mechanic)|(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Multi-Faceted Eyes"))
 	SOURCEPAGE:p. 82
 
 Multiple Stomachs
@@ -459,7 +459,7 @@ Multiple Eyes
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
 	SAB:Cannot be Flanked
-	DEFINE:eyesBonus|1+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Multiple Eyes"))
+	DEFINE:eyesBonus|1+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Multiple Eyes"))
 	DESC:You gain a +%1 bonus to Spot and cannot be flanked|eyesBonus
 	STACK:YES
 	MULT:YES
@@ -471,8 +471,8 @@ Neurotoxin Sting
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:neuroDmg|count("ABILITIES","CATEGORY=Mutation","NAME=Neurotoxin Sting")
-	DEFINE:neuroDC|13+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Neurotoxin Sting"))
+	DEFINE:neuroDmg|countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Neurotoxin Sting")
+	DEFINE:neuroDC|13+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Neurotoxin Sting"))
 	DESC:Your touch deals %1d4 pts of acid damage and must save (Fort DC:%2 ) or lose 2d6 Dexterity for %3d4 hours|neuroDmg|neuroDC|neuroDmg
 	STACK:YES
 	MULT:YES
@@ -483,8 +483,8 @@ Neural Mutation - Precognition
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:precogUses|WIS+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Precognition"))
-	DEFINE:precogDC|22-(2*count("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Precognition"))
+	DEFINE:precogUses|WIS+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Precognition"))
+	DEFINE:precogDC|22-(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Precognition"))
 	DESC:You have %1 uses available for 'Precognition' feats; Will save (DC:%2) at will to avoid being surprised|precogUses|precogDC
 	STACK:YES
 	MULT:YES
@@ -495,9 +495,9 @@ Neural Mutation - Telekinesis
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:tkUses|CON+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Precognition"))
-	DEFINE:tkWeight|10+((10*CON)*count("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Telekinesis"))
-	DEFINE:tkRange|50+((10*CON)*count("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Telekinesis"))
+	DEFINE:tkUses|CON+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Precognition"))
+	DEFINE:tkWeight|10+((10*CON)*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Telekinesis"))
+	DEFINE:tkRange|50+((10*CON)*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Telekinesis"))
 	DESC:You have %1 uses available for 'Telekinesis' feats (range: %2'); move %3 lbs. at 10' per round|tkUses|tkRange|tkWeight
 	STACK:YES
 	MULT:YES
@@ -508,9 +508,9 @@ Neural Mutation - Telepathy
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:teepUses|CHA+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Telepathy"))
-	DEFINE:teepRange|100+((10*CHA)*count("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Telepathy"))
-	DEFINE:teepBonus|(2+count("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Telepathy"))
+	DEFINE:teepUses|CHA+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Telepathy"))
+	DEFINE:teepRange|100+((10*CHA)*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Telepathy"))
+	DEFINE:teepBonus|(2+countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Neural Mutation - Telepathy"))
 	DESC:You have %1 uses available for 'Telepathy' feats (range: %2'); +%3 to Bluff, Diplomacy, and other interaction skills|teepUses|teepRange|teepBonus
 	STACK:YES
 	MULT:YES
@@ -522,7 +522,7 @@ Optic Emissions
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:optDie|count("ABILITIES","CATEGORY=Mutation","NAME=Optic Emissions")
+	DEFINE:optDie|countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Optic Emissions")
 	DEFINE:optBonDmg|min(TL,10)
 	DESC:You can emit beams of energy from your eyes (base range: 100';Damage: %1d4+%2); Also with a Reflex save (DC:20) can 1x/rnd deflect other light-based attack.|optDie|optBonDmg
 	STACK:YES
@@ -534,7 +534,7 @@ Protective Dermal Development
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:dermAC|2+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Protective Dermal Development"))
+	DEFINE:dermAC|2+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Protective Dermal Development"))
 	DESC:You have thick leathery skin providing a natural armor bonus.
 	STACK:YES
 	MULT:YES
@@ -546,9 +546,9 @@ Pyrokinetic Pulse Generation
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:pyroRng|(10*count("ABILITIES","CATEGORY=Mutation","NAME=Pyrokinetic Pulse Generation"))
+	DEFINE:pyroRng|(10*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Pyrokinetic Pulse Generation"))
 	DEFINE:pyroDmg|ceil((TL/2))
-	DEFINE:pyroDC|(14+count("ABILITIES","CATEGORY=Mutation","NAME=Pyrokinetic Pulse Generation"))
+	DEFINE:pyroDC|(14+countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Pyrokinetic Pulse Generation"))
 	DESC:You can generate a 5' wide heat blast that reaches up to %1' doing %2d6 damage (Reflex DC:%3 for half) (%4 x/day)|pyroRng|pyroDmg|pyroDC|(3+CON)
 	STACK:YES
 	MULT:YES
@@ -562,7 +562,7 @@ Radiation Immunity
 	SAB:Immunity (Moderate radiation)|PREVAREQ:immLvl,1
 	SAB:Immunity (High radiation)|PREVAREQ:immLvl,2
 	SAB:Immunity (Severe radiation)|PREVARGTEQ:immLvl,3
-	DEFINE:immLvl|count("ABILITIES","CATEGORY=Mutation","NAME=Radiation Immunity")
+	DEFINE:immLvl|countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Radiation Immunity")
 	DESC:You are immune to Moderate Level radiation exposure.|PREVAREQ:immLvl,1
 	DESC:You are immune to High Level radiation exposure.|PREVAREQ:immLvl,2
 	DESC:You are immune to Severe Level radiation exposure.|PREVARGTEQ:immLvl,3
@@ -575,7 +575,7 @@ Regenerative Capability
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:healLvl|1+count("ABILITIES","CATEGORY=Mutation","NAME=Regenerative Capability")
+	DEFINE:healLvl|1+countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Regenerative Capability")
 	DESC:Your healing is at %1x the normal rate (also regrow limbs in 1d4+%2 weeks).|healLvl|(4-healLvl)
 	STACK:YES
 	MULT:YES
@@ -594,7 +594,7 @@ Sensitive Sight
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:visionCnt|count("ABILITIES","CATEGORY=Mutation","NAME=Sensitive Sight")
+	DEFINE:visionCnt|countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Sensitive Sight")
 	DESC:You can see better in low light conditions.
 	STACK:YES
 	MULT:YES
@@ -622,9 +622,9 @@ Shriek
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:shrRad|5+(5*count("ABILITIES","CATEGORY=Mutation","NAME=Shriek"))
-	DEFINE:shrDmg|count("ABILITIES","CATEGORY=Mutation","NAME=Shriek")
-	DEFINE:shrDC|(13+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Shriek")))
+	DEFINE:shrRad|5+(5*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Shriek"))
+	DEFINE:shrDmg|countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Shriek")
+	DEFINE:shrDC|(13+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Shriek")))
 	DESC:You can generate a %1' radius shriek once per day doing %2d4 damage and deafness for %2d4+4 rounds (Fort DC:%3 to avoid)|shrRad|shrDmg|shrDC
 	STACK:YES
 	MULT:YES
@@ -645,20 +645,20 @@ Skeletal Fortification
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
 	SAB:DR %1/- vs. Bludgeoning|skeleDR
-	DEFINE:skeleDR|count("ABILITIES","CATEGORY=Mutation","NAME=Skeletal Fortification")
+	DEFINE:skeleDR|countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Skeletal Fortification")
 	DESC:You are resistant to Bludgeoning damage; Your fists also do increased damage
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
-	BONUS:WEAPONPROF=Unarmed|DAMAGESIZE|count("ABILITIES","CATEGORY=Mutation","NAME=Skeletal Fortification")
+	BONUS:WEAPONPROF=Unarmed|DAMAGESIZE|countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Skeletal Fortification")
 	SOURCEPAGE:p. 85
 
 Spontaneous Electric Charge Generation
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:secDmg|1+count("ABILITIES","CATEGORY=Mutation","NAME=Spontaneous Electric Charge Generation")
-	DEFINE:secTimes|CON+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Spontaneous Electric Charge Generation"))
+	DEFINE:secDmg|1+countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Spontaneous Electric Charge Generation")
+	DEFINE:secTimes|CON+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Spontaneous Electric Charge Generation"))
 	DESC:Your touch can generate an electrical pulse that deals %1d6+%2 damage (%3 x/day)|secDmg|min(TL,10)|secTimes
 	STACK:YES
 	MULT:YES
@@ -669,8 +669,8 @@ Stench
 	CATEGORY:Mutation
 	TYPE:MutantAbility.Mutation
 	VISIBLE:YES
-	DEFINE:steRad|5+(5*count("ABILITIES","CATEGORY=Mutation","NAME=Stench"))
-	DEFINE:steDC|(13+(2*count("ABILITIES","CATEGORY=Mutation","NAME=Stench")))
+	DEFINE:steRad|5+(5*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Stench"))
+	DEFINE:steDC|(13+(2*countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Stench")))
 	DESC:All with a sense of smell within a %1' radius must make a (Fort DC:%2) save or take a -2 morale penalty to all actions for 10 rounds.|steRad|steDC
 	STACK:YES
 	MULT:YES
@@ -703,7 +703,7 @@ Energy Immunity (Acid)
 	TYPE:MutantAbility.Mutation.EnergyResist
 	VISIBLE:YES
 	SAB:Immunity (Acid) %|acidResist
-	DEFINE:acidResist|5+count("ABILITIES","CATEGORY=Mutation","NAME=Energy Immunity (Acid)")
+	DEFINE:acidResist|5+countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Energy Immunity (Acid)")
 	DESC:Ignore %1 points of Acid damage each time exposed to it.|acidResist
 	STACK:YES
 	MULT:YES
@@ -715,7 +715,7 @@ Energy Immunity (Cold)
 	TYPE:MutantAbility.Mutation.EnergyResist
 	VISIBLE:YES
 	SAB:Immunity (Cold) %|coldResist
-	DEFINE:coldResist|5+count("ABILITIES","CATEGORY=Mutation","NAME=Energy Immunity (Cold)")
+	DEFINE:coldResist|5+countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Energy Immunity (Cold)")
 	DESC:Ignore %1 points of Cold damage each time exposed to it.|coldResist
 	STACK:YES
 	MULT:YES
@@ -727,7 +727,7 @@ Energy Immunity (Electricity)
 	TYPE:MutantAbility.Mutation.EnergyResist
 	VISIBLE:YES
 	SAB:Immunity (Electricity) %|elecResist
-	DEFINE:elecResist|5+count("ABILITIES","CATEGORY=Mutation","NAME=Energy Immunity (Electricity)")
+	DEFINE:elecResist|5+countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Energy Immunity (Electricity)")
 	DESC:Ignore %1 points of Electricity damage each time exposed to it.|elecResist
 	STACK:YES
 	MULT:YES
@@ -739,7 +739,7 @@ Energy Immunity (Energy)
 	TYPE:MutantAbility.Mutation.EnergyResist
 	VISIBLE:YES
 	SAB:Immunity (Energy Weapon) %|enerResist
-	DEFINE:enerResist|5+count("ABILITIES","CATEGORY=Mutation","NAME=Energy Immunity (Energy)")
+	DEFINE:enerResist|5+countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Energy Immunity (Energy)")
 	DESC:Ignore %1 points of Energy Weapon damage each time exposed to it.|enerResist
 	STACK:YES
 	MULT:YES
@@ -751,7 +751,7 @@ Energy Immunity (Fire)
 	TYPE:MutantAbility.Mutation.EnergyResist
 	VISIBLE:YES
 	SAB:Immunity (Fire) %|fireResist
-	DEFINE:fireResist|5+count("ABILITIES","CATEGORY=Mutation","NAME=Energy Immunity (Fire)")
+	DEFINE:fireResist|5+countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Energy Immunity (Fire)")
 	DESC:Ignore %1 points of Fire damage each time exposed to it.|fireResist
 	STACK:YES
 	MULT:YES
@@ -763,7 +763,7 @@ Energy Immunity (Sonic)
 	TYPE:MutantAbility.Mutation.EnergyResist
 	VISIBLE:YES
 	SAB:Immunity (Sonic) %|sonicResist
-	DEFINE:sonicResist|5+count("ABILITIES","CATEGORY=Mutation","NAME=Energy Immunity (Sonic)")
+	DEFINE:sonicResist|5+countdistinct("ABILITIES","CATEGORY=Mutation","NAME=Energy Immunity (Sonic)")
 	DESC:Ignore %1 points of Sonic damage each time exposed to it.|sonicResist
 	STACK:YES
 	MULT:YES

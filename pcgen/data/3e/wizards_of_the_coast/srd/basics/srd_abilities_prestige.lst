@@ -117,7 +117,7 @@ Arcane Reach
 	MULT:YES
 	CHOOSE:NUMCHOICES=2|NOCHOICE
 	BONUS:SPELLCAST|TYPE=Arcane;LEVEL=7|-1
-	BONUS:VAR|ArcaneReach|30*count("ABILITIES","CATEGORY=Special Ability","NAME=Arcane Reach")|TYPE=ArcaneReach
+	BONUS:VAR|ArcaneReach|30*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Arcane Reach")|TYPE=ArcaneReach
 	SOURCEPAGE:PrestigeClasses.rtf
 
 Mastery of Counterspelling

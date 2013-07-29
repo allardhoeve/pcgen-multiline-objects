@@ -710,7 +710,7 @@ Defender / Improved / Specialized vs Melee
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
-	BONUS:VAR|DefenderACvMelee|count("ABILITIES","CATEGORY=Special Ability","NAME=Defender ~ Improved ~ Specialized vs Melee")|TYPE=NoStack
+	BONUS:VAR|DefenderACvMelee|countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Defender ~ Improved ~ Specialized vs Melee")|TYPE=NoStack
 	COST:3
 	SOURCEPAGE:p.51
 
@@ -1565,14 +1565,14 @@ Improved Critical / Lethal
 Improved Initiative
 	CATEGORY:Special Ability
 	TYPE:EclipseAbilityOutput.CombatEnhancements.Corruptable
-	DESC:The character gains +2 to Initiative per 3 CP invested, up to a maximum +8 bonus. [Current Bonus is +%1]|2*count("ABILITIES","CATEGORY=Special Ability","NAME=Improved Initiative")
+	DESC:The character gains +2 to Initiative per 3 CP invested, up to a maximum +8 bonus. [Current Bonus is +%1]|2*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Improved Initiative")
 	STACK:YES
 	MULT:YES
 	CHOOSE:NUMCHOICES=4|NOCHOICE
 	BONUS:COMBAT|INITIATIVE|2
 	COST:3
 	SOURCEPAGE:p.53
-	BENEFIT:+2 to initiative each time taken [+%1 Bonus]|2*count("ABILITIES","CATEGORY=Special Ability","NAME=Improved Initiative")
+	BENEFIT:+2 to initiative each time taken [+%1 Bonus]|2*countdistinct("ABILITIES","CATEGORY=Special Ability","NAME=Improved Initiative")
 
 Improvise Weapon
 	CATEGORY:Special Ability
