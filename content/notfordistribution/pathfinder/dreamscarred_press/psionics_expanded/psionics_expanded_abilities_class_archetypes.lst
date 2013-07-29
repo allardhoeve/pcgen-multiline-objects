@@ -160,7 +160,7 @@ Psionic Form
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
 	DESC:You gain 1 hit point for each psionic feat you have.
-	BONUS:HP|CURRENTMAX|count("ABILITIES","CATEGORY=FEAT","TYPE=Psionic")
+	BONUS:HP|CURRENTMAX|countdistinct("ABILITIES","CATEGORY=FEAT","TYPE=Psionic")
 	SOURCEPAGE:p.64
 
 

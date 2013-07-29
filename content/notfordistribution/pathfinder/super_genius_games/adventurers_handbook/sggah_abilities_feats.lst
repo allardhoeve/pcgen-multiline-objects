@@ -49,7 +49,7 @@ Battle Mage Level 1 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BattleMage
 	PRESPELLTYPE:1,ANY=1
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell0"),count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell1")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell0"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell1")
 	DESC:You may spend a battle mark to cast one of your known selected spells by spending a spell slot of 1st-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Command|Expeditious Retreat|Shield|True Strike
@@ -59,7 +59,7 @@ Battle Mage Level 2 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BattleMage
 	PRESPELLTYPE:1,ANY=2
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell1"),count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell2")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell1"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell2")
 	DESC:You may spend a battle mark to cast one of your known selected spells by spending a spell slot of 2nd-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Align Weapon|Divine Favor|Magic Weapon|Shield Other
@@ -69,7 +69,7 @@ Battle Mage Level 3 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BattleMage
 	PRESPELLTYPE:1,ANY=3
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell2"),count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell3")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell2"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell3")
 	DESC:You may spend a battle mark to cast one of your known selected spells by spending a spell slot of 3rd-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Haste|Heroism|Magic Vestment|Rage|See Invisibility
@@ -79,7 +79,7 @@ Battle Mage Level 4 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BattleMage
 	PRESPELLTYPE:1,ANY=4
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell3"),count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell4")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell3"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell4")
 	DESC:You may spend a battle mark to cast one of your known selected spells by spending a spell slot of 4th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Bless Weapon|Freedom of Movement|Phantom Steed
@@ -89,7 +89,7 @@ Battle Mage Level 5 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BattleMage
 	PRESPELLTYPE:1,ANY=5
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell4"),count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell5")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell4"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell5")
 	DESC:You may spend a battle mark to cast one of your known selected spells by spending a spell slot of 5th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Divine Power|Magic Weapon (Greater)|Sending
@@ -99,7 +99,7 @@ Battle Mage Level 6 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BattleMage
 	PRESPELLTYPE:1,ANY=6
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell5"),count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell6")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell5"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell6")
 	DESC:You may spend a battle mark to cast one of your known selected spells by spending a spell slot of 6th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Command (Greater)|Righteous Might|Wall of Stone
@@ -109,7 +109,7 @@ Battle Mage Level 7 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BattleMage
 	PRESPELLTYPE:1,ANY=7
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell6"),count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell7")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell6"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell7")
 	DESC:You may spend a battle mark to cast one of your known selected spells by spending a spell slot of 7th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Antilife Shell|Blade Barrier|Giant Form I
@@ -119,7 +119,7 @@ Battle Mage Level 8 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BattleMage
 	PRESPELLTYPE:1,ANY=8
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell7"),count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell8")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell7"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell8")
 	DESC:You may spend a battle mark to cast one of your known selected spells by spending a spell slot of 8th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Demand|Giant Form II|Moment of Prescience
@@ -129,7 +129,7 @@ Battle Mage Level 9 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BattleMage
 	PRESPELLTYPE:1,ANY=9
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell8"),count("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell9")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell8"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BaMSpell9")
 	DESC:You may spend a battle mark to cast one of your known selected spells by spending a spell slot of 9th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Iron Body|Foresight
@@ -150,7 +150,7 @@ Blood Mage Level 1 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BloodMage
 	PRESPELLTYPE:1,ANY=1
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell0"),count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell1")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell0"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell1")
 	DESC:You may spend a blood mark to cast one of your known selected spells by spending a spell slot of 1st-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Enlarge Person|Hideous Laughter|Confusion (Lesser)|True Strike
@@ -160,7 +160,7 @@ Blood Mage Level 2 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BloodMage
 	PRESPELLTYPE:1,ANY=2
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell1"),count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell2")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell1"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell2")
 	DESC:You may spend a blood mark to cast one of your known selected spells by spending a spell slot of 2nd-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Aid|Bull's Strength|Shatter|Touch of Idiocy
@@ -170,7 +170,7 @@ Blood Mage Level 3 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BloodMage
 	PRESPELLTYPE:1,ANY=3
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell2"),count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell3")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell2"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell3")
 	DESC:You may spend a blood mark to cast one of your known selected spells by spending a spell slot of 3rd-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Glyph of Warding|Heroism|Rage|Scare
@@ -180,7 +180,7 @@ Blood Mage Level 4 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BloodMage
 	PRESPELLTYPE:1,ANY=4
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell3"),count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell4")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell3"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell4")
 	DESC:You may spend a blood mark to cast one of your known selected spells by spending a spell slot of 4th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Crushing Despair|Confusion|Explosive Runes
@@ -190,7 +190,7 @@ Blood Mage Level 5 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BloodMage
 	PRESPELLTYPE:1,ANY=5
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell4"),count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell5")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell4"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell5")
 	DESC:You may spend a blood mark to cast one of your known selected spells by spending a spell slot of 5th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Planar Binding (Lesser)|Nightmare|Shout
@@ -200,7 +200,7 @@ Blood Mage Level 6 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BloodMage
 	PRESPELLTYPE:1,ANY=6
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell5"),count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell6")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell5"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell6")
 	DESC:You may spend a blood mark to cast one of your known selected spells by spending a spell slot of 6th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Glyph of Warding (Greater)|Phantasmal Killer|Song of Discord
@@ -210,7 +210,7 @@ Blood Mage Level 7 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BloodMage
 	PRESPELLTYPE:1,ANY=7
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell6"),count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell7")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell6"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell7")
 	DESC:You may spend a blood mark to cast one of your known selected spells by spending a spell slot of 7th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Blasphemy|Insanity|Instant Summons
@@ -220,7 +220,7 @@ Blood Mage Level 8 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BloodMage
 	PRESPELLTYPE:1,ANY=8
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell7"),count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell8")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell7"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell8")
 	DESC:You may spend a blood mark to cast one of your known selected spells by spending a spell slot of 8th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Shout (Greater)|Regenerate|Symbol of Insanity
@@ -230,7 +230,7 @@ Blood Mage Level 9 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.BloodMage
 	PRESPELLTYPE:1,ANY=9
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell8"),count("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell9")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell8"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=BlMSpell9")
 	DESC:You may spend a blood mark to cast one of your known selected spells by spending a spell slot of 9th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Unholy Aura|Weird
@@ -251,7 +251,7 @@ Necrothurge Level 1 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Necrothurge
 	PRESPELLTYPE:1,ANY=1
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell0"),count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell1")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell0"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell1")
 	DESC:You may spend a death mark to cast one of your known selected spells by spending a spell slot of 1st-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Cause Fear|Deathwatch|Scare|Ray of Enfeeblement
@@ -261,7 +261,7 @@ Necrothurge Level 2 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Necrothurge
 	PRESPELLTYPE:1,ANY=2
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell1"),count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell2")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell1"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell2")
 	DESC:You may spend a death mark to cast one of your known selected spells by spending a spell slot of 2nd-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Blindness/Deafness|Command Undead|Death Knell|Gentle Repose
@@ -271,7 +271,7 @@ Necrothurge Level 3 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Necrothurge
 	PRESPELLTYPE:1,ANY=3
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell2"),count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell3")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell2"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell3")
 	DESC:You may spend a death mark to cast one of your known selected spells by spending a spell slot of 3rd-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Animate Dead|Halt Undead|Speak with Dead|Ray of Exhaustion
@@ -281,7 +281,7 @@ Necrothurge Level 4 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Necrothurge
 	PRESPELLTYPE:1,ANY=4
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell3"),count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell4")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell3"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell4")
 	DESC:You may spend a death mark to cast one of your known selected spells by spending a spell slot of 4th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Contagion|Death Ward|Fear
@@ -291,7 +291,7 @@ Necrothurge Level 5 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Necrothurge
 	PRESPELLTYPE:1,ANY=5
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell4"),count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell5")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell4"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell5")
 	DESC:You may spend a death mark to cast one of your known selected spells by spending a spell slot of 5th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Blight|Slay Living|Symbol of Pain
@@ -301,7 +301,7 @@ Necrothurge Level 6 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Necrothurge
 	PRESPELLTYPE:1,ANY=6
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell5"),count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell6")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell5"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell6")
 	DESC:You may spend a death mark to cast one of your known selected spells by spending a spell slot of 6th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Circle of Death|Create Undead|Undeath to Death
@@ -311,7 +311,7 @@ Necrothurge Level 7 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Necrothurge
 	PRESPELLTYPE:1,ANY=7
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell6"),count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell7")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell6"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell7")
 	DESC:You may spend a death mark to cast one of your known selected spells by spending a spell slot of 7th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Control Undead|Destruction|Finger of Death
@@ -321,7 +321,7 @@ Necrothurge Level 8 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Necrothurge
 	PRESPELLTYPE:1,ANY=8
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell7"),count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell8")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell7"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell8")
 	DESC:You may spend a death mark to cast one of your known selected spells by spending a spell slot of 8th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Create Greater Undead|Horrid Wilting|Waves of Exhaustion
@@ -331,7 +331,7 @@ Necrothurge Level 9 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Necrothurge
 	PRESPELLTYPE:1,ANY=9
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell8"),count("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell9")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell8"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=NecroSpell9")
 	DESC:You may spend a death mark to cast one of your known selected spells by spending a spell slot of 9th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Soul Bind|Wail of the Banshee
@@ -352,7 +352,7 @@ Trickster Mage Level 1 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.TricksterMage
 	PRESPELLTYPE:1,ANY=1
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell0"),count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell1")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell0"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell1")
 	DESC:You may spend a duplicity mark to cast one of your known selected spells by spending a spell slot of 1st-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Disguise Self|Confusion (Lesser)|Silent Image|Undetectable Alignment
@@ -362,7 +362,7 @@ Trickster Mage Level 2 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.TricksterMage
 	PRESPELLTYPE:1,ANY=2
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell1"),count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell2")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell1"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell2")
 	DESC:You may spend a duplicity mark to cast one of your known selected spells by spending a spell slot of 2nd-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Alter Self|Detect Thoughts|Hypnotic Pattern|Minor Image
@@ -372,7 +372,7 @@ Trickster Mage Level 3 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.TricksterMage
 	PRESPELLTYPE:1,ANY=3
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell2"),count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell3")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell2"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell3")
 	DESC:You may spend a duplicity mark to cast one of your known selected spells by spending a spell slot of 3rd-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Phantom Trap|Soften Earth and Stone|Wood Shape
@@ -382,7 +382,7 @@ Trickster Mage Level 4 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.TricksterMage
 	PRESPELLTYPE:1,ANY=4
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell3"),count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell4")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell3"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell4")
 	DESC:You may spend a duplicity mark to cast one of your known selected spells by spending a spell slot of 4th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Major Image|Meld Into Stone|Stone Shape
@@ -392,7 +392,7 @@ Trickster Mage Level 5 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.TricksterMage
 	PRESPELLTYPE:1,ANY=5
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell4"),count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell5")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell4"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell5")
 	DESC:You may spend a duplicity mark to cast one of your known selected spells by spending a spell slot of 5th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Glibness|Seeming|Transmute Rock To Mud
@@ -402,7 +402,7 @@ Trickster Mage Level 6 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.TricksterMage
 	PRESPELLTYPE:1,ANY=6
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell5"),count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell6")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell5"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell6")
 	DESC:You may spend a duplicity mark to cast one of your known selected spells by spending a spell slot of 6th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Mislead|Modify Memory|Programmed Image
@@ -412,7 +412,7 @@ Trickster Mage Level 7 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.TricksterMage
 	PRESPELLTYPE:1,ANY=7
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell6"),count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell7")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell6"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell7")
 	DESC:You may spend a duplicity mark to cast one of your known selected spells by spending a spell slot of 7th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Insanity|Project Image|Reverse Gravity
@@ -422,7 +422,7 @@ Trickster Mage Level 8 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.TricksterMage
 	PRESPELLTYPE:1,ANY=8
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell7"),count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell8")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell7"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell8")
 	DESC:You may spend a duplicity mark to cast one of your known selected spells by spending a spell slot of 8th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Demand|Polymorph Any Object|Sympathy
@@ -432,7 +432,7 @@ Trickster Mage Level 9 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.TricksterMage
 	PRESPELLTYPE:1,ANY=9
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell8"),count("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell9")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell8"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=TMSpell9")
 	DESC:You may spend a duplicity mark to cast one of your known selected spells by spending a spell slot of 9th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Summon Nature's Ally IX (Pixie Only)|Time Stop
@@ -453,7 +453,7 @@ Woodwose Level 1 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Woodwose
 	PRESPELLTYPE:1,ANY=1
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell0"),count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell1")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell0"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell1")
 	DESC:When in suitable terrain, you may cast one of your known selected spells by spending a spell slot of 1st-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Calm Animals|Entangle|Obscuring Mist|Wind Wall
@@ -463,7 +463,7 @@ Woodwose Level 2 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Woodwose
 	PRESPELLTYPE:1,ANY=2
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell1"),count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell2")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell1"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell2")
 	DESC:When in suitable terrain, you may cast one of your known selected spells by spending a spell slot of 2nd-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Barkskin|Fog Cloud|Hold Animal|Soften Earth and Stone
@@ -473,7 +473,7 @@ Woodwose Level 3 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Woodwose
 	PRESPELLTYPE:1,ANY=3
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell2"),count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell3")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell2"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell3")
 	DESC:When in suitable terrain, you may cast one of your known selected spells by spending a spell slot of 3rd-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Dominate Animal|Plant Growth|Quench|Stone Shape
@@ -483,7 +483,7 @@ Woodwose Level 4 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Woodwose
 	PRESPELLTYPE:1,ANY=4
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell3"),count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell4")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell3"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell4")
 	DESC:When in suitable terrain, you may cast one of your known selected spells by spending a spell slot of 4th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Command Plants|Sleet Storm|Spike Stones
@@ -493,7 +493,7 @@ Woodwose Level 5 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Woodwose
 	PRESPELLTYPE:1,ANY=5
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell4"),count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell5")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell4"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell5")
 	DESC:When in suitable terrain, you may cast one of your known selected spells by spending a spell slot of 5th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Awaken|Tree Stride|Wall of Thorns
@@ -503,7 +503,7 @@ Woodwose Level 6 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Woodwose
 	PRESPELLTYPE:1,ANY=6
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell5"),count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell6")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell5"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell6")
 	DESC:When in suitable terrain, you may cast one of your known selected spells by spending a spell slot of 6th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Antilife Shell|Control Winds|Repel Wood
@@ -513,7 +513,7 @@ Woodwose Level 7 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Woodwose
 	PRESPELLTYPE:1,ANY=7
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell6"),count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell7")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell6"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell7")
 	DESC:When in suitable terrain, you may cast one of your known selected spells by spending a spell slot of 7th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Animal Shapes|Animate Plants|Wind Walk
@@ -523,7 +523,7 @@ Woodwose Level 8 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Woodwose
 	PRESPELLTYPE:1,ANY=8
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell7"),count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell8")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell7"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell8")
 	DESC:When in suitable terrain, you may cast one of your known selected spells by spending a spell slot of 8th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Control Plants|Earthquake|Whirlwind
@@ -533,7 +533,7 @@ Woodwose Level 9 Spell
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.SpellLike.Woodwose
 	PRESPELLTYPE:1,ANY=9
-	PREVARGT:count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell8"),count("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell9")
+	PREVARGT:countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell8"),countdistinct("ABILITIES","CATEGORY=Special Ability","KEY=WoodSpell9")
 	DESC:When in suitable terrain, you may cast one of your known selected spells by spending a spell slot of 9th-level or higher.
 	MULT:YES
 	CHOOSE:SPELLS|Shambler|Shapechange
