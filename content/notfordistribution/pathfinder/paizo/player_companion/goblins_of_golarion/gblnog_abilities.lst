@@ -127,16 +127,21 @@ Bonus Damage on Favored Enemy
 	PREABILITY:1,CATEGORY=Special Ability,Ranger
 	PRECLASS:1,Ranger=1
 	PRERACE:1,Goblin%
+	DEFINE:GoblinRangerFavoredEnemyBonus|0
 	DESC:Gain a +1 bonus to damage inflicted on dogs (and dog-like creatures), horses (and horse-like creatures) and on creature types the same as your highest favored enemy bonus.
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
 	SOURCEPAGE:pg.31
+	BONUS:VAR|GoblinRangerFavoredEnemyBonus|1
+
+#
+Goblin Ranger Favored Enemy
 
 
 
 # Goblin Rogue
-Bonus Skill Point
+Bonus Skill Rank (Ride or Stealth)
 	KEY:Bonus Skill Point ~ Goblin
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.FavoredClassBonus.FavoredClassRogue
