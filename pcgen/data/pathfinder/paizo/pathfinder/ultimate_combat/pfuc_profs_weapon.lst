@@ -485,9 +485,7 @@ Terbutje.MOD
 Butterfly Sword.MOD
 	TYPE:Bladelight.Monk
 
-Gladius.MOD
-	TYPE:Bladelight
-
+#Gladius.MOD	TYPE:Bladelight
 Kerambit.MOD
 	TYPE:Bladelight
 
