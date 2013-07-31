@@ -2373,7 +2373,7 @@ Path of Trees
 Armor Master
 	KEY:Fighter Archetype ~ ARMOR MASTER
 	CATEGORY:Archetype
-	TYPE:Archetype.FighterArchetype.FighterBravery.FighterWeaponTraining1.FighterWeaponTraining3.FighterArmorMastery.FighterWeaponTraining2.FighterWeaponTraining4.FighterWeaponMastery
+	TYPE:Archetype.FighterArchetype.FighterBravery.FighterWeaponTraining_ALL.FighterArmorTraining_ALL.FighterWeaponTraining1.FighterWeaponTraining2.FighterWeaponTraining3.FighterWeaponTraining4.FighterArmorMastery.FighterWeaponMastery
 	PRECLASS:1,Fighter=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ ARMOR MASTER],[!PREABILITY:1,CATEGORY=Archetype,TYPE.FighterBravery,TYPE.FighterWeaponTraining1,TYPE.FighterWeaponTraining3,TYPE.FighterArmorMastery,TYPE.FighterWeaponTraining2,TYPE.FighterWeaponTraining4,TYPE.FighterWeaponMastery]
 	DESC:All fighters have two main tools of their trade-weapons and armor. While many fighters hone their weapon skills to a point of inescapable grace and lethality, there are those who live under the maxim that a good offense can be accomplished though an impenetrable defense. To these fighters, proper use of armor and shields ensures that they can fight another day, and that the frustration of enemies who can't seem to crack an armor master's superior defenses is just the first symptom of his foes' eventual defeat.
