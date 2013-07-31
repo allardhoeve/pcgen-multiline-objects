@@ -390,6 +390,7 @@ Urumi
 Kyoketsu Shoge
 	PROFICIENCY:WEAPON|Kyoketsu Shoge
 	TYPE:Weapon.EasternWeapon.Eastern.Melee.Exotic.Slashing.Piercing.Disarm.Grapple.Monk.Reach.Ranged.Thrown
+	REACHMULT:2
 	COST:6
 	WT:1
 	CRITMULT:x2
@@ -403,6 +404,7 @@ Kyoketsu Shoge
 Meteor Hammer
 	PROFICIENCY:WEAPON|Meteor Hammer
 	TYPE:Weapon.EasternWeapon.Eastern.Melee.Exotic.Bludgeoning.Reach.Trip
+	REACHMULT:2
 	COST:10
 	WT:10
 	CRITMULT:x2
@@ -452,6 +454,7 @@ Bo Staff
 Kama (Double-Chained)
 	PROFICIENCY:WEAPON|Kama (Double-Chained)
 	TYPE:Weapon.EasternWeapon.Eastern.Melee.Exotic.Slashing.Double.Monk.Reach.Trip
+	REACHMULT:2
 	COST:8
 	WT:4
 	CRITMULT:x2
@@ -478,6 +481,7 @@ Katana (Double Walking Stick)
 Kusarigama (Sickle and Chain)
 	PROFICIENCY:WEAPON|Kusarigama (Sickle and Chain)
 	TYPE:Weapon.EasternWeapon.Eastern.Melee.Exotic.Slashing.Bludgeoning.Double.Monk.Reach.Trip.Grapple
+	REACHMULT:2
 	COST:12
 	WT:3
 	CRITMULT:x2
