@@ -2712,7 +2712,7 @@ Black Blade Weapon
 	CATEGORY:Internal
 	TYPE:BlackBladeChoice
 	MULT:YES
-	CHOOSE:WEAPONPROFICIENCY|EQUIPMENT[TYPE=Slashing,WIELD=1 Handed,TYPE=Melee]|Rapier|Sword Cane
+	CHOOSE:WEAPONPROFICIENCY|TYPE=Melee,TYPE=Slashing|Rapier|Sword Cane
 	BONUS:WEAPONPROF=%LIST|TOHIT,DAMAGE|BladeboundBlackBladeBonus|TYPE=Enhancement
 	DEFINE:BladeboundBlackBladeBonus|0
 	BONUS:VAR|BladeboundBlackBladeBonus|1|PREVARGTEQ:MagusLVL,3
