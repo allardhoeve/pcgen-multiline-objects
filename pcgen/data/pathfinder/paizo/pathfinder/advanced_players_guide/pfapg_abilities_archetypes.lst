@@ -6977,6 +6977,7 @@ Shifter's Blessing
 	DESC:At 3rd level, the shapeshifter can take on the aspects of a wild creature once per day as a swift action. He can remain in this form for a number of rounds equal to his ranger level + his Wisdom modifier. While in one of his shifter's blessing forms, the ranger gains the shapeshifter subtype. The shapeshifter must choose one of the following forms. Once this choice is made, it cannot be changed.
 	BONUS:ABILITYPOOL|Shifter's Blessing Selection|1+var("ShifterAdditional")
 	BONUS:VAR|ShifterAdditional|RangerLvl-3/5
+	DEFINE:ShifterAdditional|0
 	SOURCEPAGE:p.126
 
 # Appears to be implemented - At 8th level and again every five levels thereafter, the ranger may select an additional form for his shifter's blessing and may use this ability one additional time per day. This is not a polymorph ability; a ranger with shifter's blessing in one of his shifted forms can be affected by a polymorph ability and retain his bonus and traits gained by the class feature. This ability replaces favored terrain.
