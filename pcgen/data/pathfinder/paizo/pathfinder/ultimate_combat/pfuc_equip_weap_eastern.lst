@@ -150,6 +150,7 @@ Sibat
 Hooked Lance
 	PROFICIENCY:WEAPON|Hooked Lance
 	TYPE:Weapon.EasternWeapon.Eastern.Melee.Martial.Reach.Trip
+	REACHMULT:2
 	COST:3
 	WT:10
 	CRITMULT:x4
@@ -162,6 +163,7 @@ Hooked Lance
 Naginata
 	PROFICIENCY:WEAPON|Naginata
 	TYPE:Weapon.EasternWeapon.Eastern.Melee.Martial.Reach
+	REACHMULT:2
 	COST:35
 	WT:9
 	CRITMULT:x4
@@ -198,6 +200,7 @@ Sansetsukon
 Sword (Tri-Point Double-Edged)
 	PROFICIENCY:WEAPON|Sword (Tri-Point Double-Edged)
 	TYPE:Weapon.EasternWeapon.Eastern.Melee.Martial.Reach.Tengu
+	REACHMULT:2
 	COST:12
 	WT:14
 	CRITMULT:x3
