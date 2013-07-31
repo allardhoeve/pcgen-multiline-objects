@@ -102,6 +102,15 @@ Survival (Find Food)
 	PRERULE:1,DISPLAYSKILLUSE
 	PREVARNEQ:var("SKILL.Survival (Find Food).MISC"),SKILL.Survival.MISC
 
+Survival (Avoid becoming lost)
+	KEYSTAT:WIS
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Survival (Avoid becoming lost).MISC"),SKILL.Survival.MISC
+
 
 
 ###Block: Skill .MODs
@@ -145,4 +154,8 @@ Stealth.MOD
 Survival.MOD
 	BONUS:SKILL|Survival (Find Food)|var("SKILL.Survival.MISC")
 	BONUS:SKILLRANK|Survival (Find Food)|skillinfo("TOTALRANK","Survival")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Survival (Find Food).MISC"),var("SKILL.Survival.MISC")
+
+Survival.MOD
+	BONUS:SKILL|Survival (Avoid becoming lost)|var("SKILL.Survival.MISC")
+	BONUS:SKILLRANK|Survival (Avoid becoming lost)|skillinfo("TOTALRANK","Survival")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Survival (Avoid becoming lost).MISC"),var("SKILL.Survival.MISC")
 
