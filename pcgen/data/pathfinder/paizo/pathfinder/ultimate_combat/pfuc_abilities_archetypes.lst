@@ -4112,8 +4112,9 @@ Canny Defense
 	CATEGORY:Special Ability
 	TYPE:Extraordinary.ArchetypeAbility.SpecialQuality
 	DESC:At 1st level, when a kensai is wielding his chosen weapon, he gains the canny defense ability. This is identical to the duelist prestige class ability of the same name (Core Rulebook 382), save that his chosen weapon may be of any type.
-	BONUS:COMBAT|AC|max(0,min(INT,CannyDefenseLVL))|TYPE=Ability.STACK|PREMULT:2,[!PREEQUIP:1,ARMORTYPE=Medium,ARMORTYPE=Heavy,TYPE=Shield],[PREEQUIP:1,TYPE=Melee,TYPE=Ranged]
+	BONUS:COMBAT|AC|max(0,min(INT,CannyDefenseLVL))|TYPE=Dodge|PREMULT:2,[!PREEQUIP:1,ARMORTYPE=Medium,ARMORTYPE=Heavy,TYPE=Shield],[PREEQUIP:1,TYPE=Melee,TYPE=Ranged]
 	BONUS:VAR|CannyDefenseLVL|MagusLVL
+	DEFINE:CannyDefenseLVL|0
 	SOURCEPAGE:p.55
 
 Weapon Focus
