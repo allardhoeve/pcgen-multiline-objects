@@ -4208,11 +4208,10 @@ Kensai Weapon Proficiency
 Weapon Focus
 	KEY:Weapon Focus Display ~ Kensai
 	CATEGORY:Special Ability
-	TYPE:ArchetypeAbility.SpecialQuality
-	SERVESAS:ABILITY=FEAT|Weapon Focus
+	TYPE:ArchetypeAbility.Internal
 	MULT:YES
 	CHOOSE:WEAPONPROFICIENCY|PC
-	BONUS:WEAPONPROF=%LIST|TOHIT|1
+	AUTO:FEAT|Weapon Focus (%LIST)
 
 
 
