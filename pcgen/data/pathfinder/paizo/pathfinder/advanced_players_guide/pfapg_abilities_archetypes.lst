@@ -3211,7 +3211,7 @@ Archer
 Crossbowman
 	KEY:Fighter Archetype ~ Crossbowman
 	CATEGORY:Archetype
-	TYPE:Archetype.FighterArchetype.FighterArmorTraining_ALL.FighterWeaponTraining_ALL.FighterArmorMastery.
+	TYPE:Archetype.FighterArchetype.FighterArmorTraining_ALL.FighterWeaponTraining_ALL.FighterArmorMastery
 	PRECLASS:1,Fighter=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ Crossbowman],[!PREABILITY:1,CATEGORY=Archetype,TYPE.FighterArmorTraining1,TYPE.FighterWeaponTraining1,TYPE.FighterArmorTraining2,TYPE.FighterWeaponTraining2,TYPE.FighterArmorTraining3,TYPE.FighterWeaponTraining3,TYPE.FighterArmorTraining4,TYPE.FighterWeaponTraining4,TYPE.FighterArmorMastery]
 	DESC:The crossbowman has perfected the deadly use of the crossbow, a simple but cruelly efficient weapon, as a craftsman mastering a lethal tool.
