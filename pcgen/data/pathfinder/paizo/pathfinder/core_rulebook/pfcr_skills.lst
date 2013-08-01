@@ -378,7 +378,7 @@ Linguistics
 	TYPE:Intelligence.Base
 	SOURCEPAGE:p.101
 	CHOOSE:LANG|TYPE=Spoken
-	SELECT:LinguisticsLanguageChoice
+	SELECT:1
 	BONUS:SKILL|Linguistics|3|TYPE=ClassSkill|PRECSKILL:1,Linguistics|PRESKILL:1,Linguistics=1
 	AUTO:LANG|%LIST
 
