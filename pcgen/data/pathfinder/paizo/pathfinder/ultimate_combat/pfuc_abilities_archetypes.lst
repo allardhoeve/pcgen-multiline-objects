@@ -4096,7 +4096,7 @@ Weapon and Armor Proficiency
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:A kensai is proficient in simple weapons and in a single martial or exotic melee weapon of his choice. A kensai is not proficient with armor or shields and suffers normal arcane spell failure chance when casting magus spells while armored.
-	BONUS:ABILITYPOOL|KENSAI Weapon Choice|1
+	BONUS:ABILITYPOOL|Kensai Weapon Choice|1
 	SOURCEPAGE:p.55
 
 Diminished Spellcasting

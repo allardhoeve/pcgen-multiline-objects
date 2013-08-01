@@ -99,7 +99,7 @@ Shotgun
 # Light
 # Weapon Name				Type
 Butterfly Sword
-	TYPE:Eastern.Melee.Martial.Light.Monk
+	TYPE:Eastern.Melee.Martial.Light.Monk.Tengu.Sword
 
 Iron Brush
 	TYPE:Eastern.Melee.Martial.Light
@@ -126,10 +126,10 @@ Wushu Dart
 
 # One-Handed Melee
 Broadsword (Nine Ring)
-	TYPE:Eastern.Melee.Martial.OneHanded.Monk
+	TYPE:Eastern.Melee.Martial.OneHanded.Monk.Tengu.Sword
 
 Double Chicken Saber
-	TYPE:Eastern.Melee.Martial.OneHanded.Disarm.Monk
+	TYPE:Eastern.Melee.Martial.OneHanded.Disarm.Monk.Tengu.Sword
 
 Sibat
 	TYPE:Eastern.Melee.Martial.OneHanded.Spear
@@ -153,7 +153,7 @@ Sansetsukon
 	TYPE:Eastern.Melee.Martial.TwoHanded.Blocking.Disarm.Monk
 
 Sword (Tri-Point Double-Edged)
-	TYPE:Eastern.Melee.Martial.TwoHanded.Reach
+	TYPE:Eastern.Melee.Martial.TwoHanded.Reach.Tengu.Sword
 
 Tiger Fork
 	TYPE:Eastern.Melee.Martial.TwoHanded.Brace.Monk.Polearm.Spear
@@ -187,11 +187,11 @@ Tekko-Kagi (Iron Claw)
 	TYPE:Eastern.Melee.Exotic.Light.Piercing.Disarm
 
 Wakizashi
-	TYPE:Eastern.Melee.Exotic.Light.Piercing.Slashing.Deadly
+	TYPE:Eastern.Melee.Exotic.Light.Piercing.Slashing.Deadly.Tengu.Sword
 
 # One-Handed
 Katana
-	TYPE:Eastern.Melee.Martial.OneHanded.Exotic.Slashing.Deadly
+	TYPE:Eastern.Melee.Martial.OneHanded.Exotic.Slashing.Deadly.Tengu.Sword
 
 Nine-Section Whip
 	TYPE:Eastern.Melee.Exotic.OneHanded.Bludgeoning.Blocking.Distracting.Monk.Trip
@@ -209,7 +209,7 @@ Kama (Double-Chained)
 	TYPE:Eastern.Melee.Exotic.TwoHanded.Slashing.Double.Monk.Reach.Trip
 
 Katana (Double Walking Stick)
-	TYPE:Eastern.Melee.Exotic.TwoHanded.Bludgeoning.Double
+	TYPE:Eastern.Melee.Exotic.TwoHanded.Bludgeoning.Double.Tengu.Sword
 
 Kusarigama (Sickle and Chain)
 	TYPE:Eastern.Melee.Exotic.TwoHanded.Slashing.Bludgeoning.Double.Monk.Reach.Trip.Grapple
@@ -221,7 +221,7 @@ Meteor Hammer
 	TYPE:Eastern.Melee.Exotic.TwoHanded.Bludgeoning.Reach.Trip
 
 Sword (Seven-Branched)
-	TYPE:Eastern.Melee.Exotic.TwoHanded.Slashing.Disarm.Monk
+	TYPE:Eastern.Melee.Exotic.TwoHanded.Slashing.Disarm.Monk.Tengu.Sword
 
 Tetsubo
 	TYPE:Eastern.Melee.Exotic.TwoHanded.Bludgeoning
@@ -299,7 +299,7 @@ Shotel
 
 # Two-Handed
 Flying Blade
-	TYPE:GladiatorMelee.Exotic.Slashing.Performance.Reach.TwoHanded
+	TYPE:GladiatorMelee.Exotic.Slashing.Performance.Reach.TwoHanded.Tengu.Sword
 
 # RANGED
 Throwing Shield
