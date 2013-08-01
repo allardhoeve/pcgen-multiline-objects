@@ -490,9 +490,9 @@ Stone Body
 Ancient Lorekeeper
 	KEY:Oracle Archetype ~ Ancient Lorekeeper
 	CATEGORY:Archetype
-	TYPE:Archetype.OracleArchetype
+	TYPE:Archetype.OracleArchetype.OracleMysterySkills.OracleMysterySpell4.OracleMysterySpell6.OracleMysterySpell8.OracleMysterySpell10.OracleMysterySpell12.OracleMysterySpell14.OracleMysterySpell16.OracleMysterySpell18
 	PRECLASS:1,Oracle=1
-	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Ancient Lorekeeper],[!PREABILITY:1,CATEGORY=Archetype,TYPE.x]
+	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Ancient Lorekeeper],[!PREABILITY:1,CATEGORY=Archetype,TYPE.OracleMysterySkills,TYPE.OracleMysterySpell4,TYPE.OracleMysterySpell6,TYPE.OracleMysterySpell8,TYPE.OracleMysterySpell10,TYPE.OracleMysterySpell12,TYPE.OracleMysterySpell14,TYPE.OracleMysterySpell16,TYPE.OracleMysterySpell18]
 	PRERACE:1,Elf%
 	DESC:The ancient lorekeeper is a repository for all the beliefs and vast knowledge of an elven people. She shows a strong interest in and understanding of histories and creation legends at a young age, and as she matures her calling to serve as the memory of her long-lived people becomes clear to all who know her.
 	ABILITY:Special Ability|AUTOMATIC|Class Skills ~ Ancient Lorekeeper|PRECLASS:1,Oracle=1
@@ -560,12 +560,12 @@ Class Skills
 	CSKILL:TYPE.Craft|Diplomacy|Heal|Knowledge (History)|Knowledge (Planes)|Knowledge (Religion)|Knowledge (Arcana)|Knowledge (Local)
 	SOURCEPAGE:p.24
 
-# Implement: need to grant bonus spells from Sorcerer/wizard list and remove spells from Oracle list
+# Implement: need to grant bonus spells from Sorcerer/wizard list
 Elven Arcana
 	KEY:Elven Arcana ~ Ancient Lorekeeper
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary
-	DESC:The ancient lorekeeper's mastery of elven legends and philosophy has allowed her to master spells used by elven wizards. These spells are treated as one level higher than their true level for all purposes.|%LIST
+	DESC:The ancient lorekeeper's mastery of elven legends and philosophy has allowed her to master spells used by elven wizards. These spells are treated as one level higher than their true level for all purposes.
 	BONUS:ABILITYPOOL|Elven Arcana Spell Choice|OracleLVL/2
 	SOURCEPAGE:p.24
 
@@ -582,7 +582,7 @@ Elven Arcana Spell Choice
 	KEY:Spell Choice ~ Elven Arcana
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.ElvenArcanaSpellChoice
-	DESC:You gain bonus spells from the Sorceror/Wizard spell list.|%CHOICE
+	DESC:You gain bonus spells from the Sorceror/Wizard spell list.
 	MULT:YES
 	SELECT:1
 	CHOOSE:SPELLS|CLASSLIST=Wizard[LEVELMIN=0;LEVELMAX=OracleLVL/2-1]
@@ -1483,9 +1483,10 @@ Improved Surprise Follow-Through
 Community Guardian
 	KEY:Oracle Archetype ~ Community Guardian
 	CATEGORY:Archetype
-	TYPE:Archetype.OracleArchetype
+	TYPE:Archetype.OracleArchetype.OracleMysterySkills.OracleMysterySpell2.OracleMysterySpell4.OracleMysterySpell6.OracleMysterySpell10.OracleMysterySpell12
 	PREALIGN:LG,NG,CG
 	PRECLASS:1,Oracle=1
+	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Community Guardian],[!PREABILITY:1,CATEGORY=Archetype,TYPE.OracleMysterySkills,TYPE.OracleMysterySpell2,TYPE.OracleMysterySpell4,TYPE.OracleMysterySpell6,TYPE.OracleMysterySpell10,TYPE.OracleMysterySpell12]
 	PRERACE:1,Halfling%
 	DESC:The community guardian is chosen to protect and succor the weak and innocent within her community. Her calling also allows her to draw upon and focus the collective will in order to achieve those goals. A community guardian has the following class features.
 	ABILITY:Special Ability|AUTOMATIC|Recommended Mysteries ~ Community Guardian|PRECLASS:1,Oracle=1
@@ -2223,7 +2224,7 @@ Free Step
 Purifier
 	KEY:Oracle Archetype ~ Purifier
 	CATEGORY:Archetype
-	TYPE:Archetype.OracleArchetype
+	TYPE:Archetype.OracleArchetype.OracleRevelation3.OracleRevelation7.OracleRevelation11
 	PRECLASS:1,Oracle=1
 	PRERACE:1,Aasimar
 	DESC:The purifier seeks out signs of possession or mind control that manifest from unwilling (and often unwitting) servants for fiendish corruptors and their mortal minions. A purifier seeks liberation of mind, body, and spirit from the bondage of sin and the taint of the unholy. A purifier gains the following class features.
@@ -2301,7 +2302,6 @@ See Sin
 	TYPE:ArchetypeAbility.SpecialQuality.SpellLike
 	DESC:The purifier gains a bonus of %1 on Sense Motive checks to sense enchantments, which she can make as a full-round action. She also gains a bonus of %1 on Spellcraft checks to identify enchantment school spells and spells with the curse or emotion descriptor.|OracleLVL/2
 	BONUS:SKILL|Sense Motive (Sense Enchantment),Spellcraft (Identify Enchantment),Spellcraft (Identify Curse or Emotion)|OracleLvl/2
-	BONUS:VAR|OracleMysteryLevel|-1
 	SOURCEPAGE:p.86
 
 # Implemented by creating equipmod. Armor worn by the Purifier must be modified to be Celestial in order for this to work.
@@ -2312,7 +2312,6 @@ Celestial Armor
 	DESC:The purifier's armor takes on a golden or silvery sheen and becomes light as a feather. Her armor weighs half as much as long as she wears it, and she also gains armor training as a fighter 4 levels lower than her oracle level. At 11th level, a purifier gains heavy armor proficiency.
 	AUTO:ARMORPROF|ARMORTYPE=Heavy|PRECLASS:1,Oracle=11
 	ABILITY:Special Ability|AUTOMATIC|Armor Training
-	BONUS:VAR|OracleMysteryLevel|-1
 	BONUS:VAR|ArmorTrainingLVL|OracleLVL-4
 	SOURCEPAGE:p.86
 
@@ -2321,7 +2320,6 @@ Sin Eater
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
 	DESC:The purifier can consume a curse, enchantment, or emotion effect by touch as a fullround action. She can do this %1 times per day, and must make a Charisma check with a bonus equal of %2 against a DC of 11 + the caster level of the effect (or the Hit Dice of the creator for a supernatural effect). If the check succeeds, the effect is negated; however, the purifier is sickened for 1d4 rounds. If the target is possessed (such as by a magic jar effect or a ghost's malevolence ability), the possessor is forced out on a successful check. Whether the check succeeds or fails, the possessor is sickened for 2d4 rounds.|CHA|OracleLvl
-	BONUS:VAR|OracleMysteryLevel|-1
 	SOURCEPAGE:p.86
 
 
@@ -4226,10 +4224,10 @@ Listening to the Wind
 Shigenjo
 	KEY:Oracle Archetype ~ Shigenjo
 	CATEGORY:Archetype
-	TYPE:Archetype.OracleArchetype.OracleRevelation7.OracleRevelation15.OracleRevelation20
+	TYPE:Archetype.OracleArchetype.OracleMysterySpell2.OracleMysterySpell4.OracleMysterySpell8.OracleMysterySpell12.OracleMysterySpell14.OracleRevelation7.OracleRevelation15.OracleRevelation20
 	PREALIGN:NG,TN,NE
 	PRECLASS:1,Oracle=1
-	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Shigenjo],[!PREABILITY:1,CATEGORY=Archetype,TYPE.OracleRevelation7,TYPE.OracleRevelation15,TYPE.OracleRevelation20]
+	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Shigenjo],[!PREABILITY:1,CATEGORY=Archetype,TYPE.OracleMysterySpell2,TYPE.OracleMysterySpell4,TYPE.OracleMysterySpell8,TYPE.OracleMysterySpell12,TYPE.OracleMysterySpell14,TYPE.OracleRevelation7,TYPE.OracleRevelation15,TYPE.OracleRevelation20]
 	PRERACE:1,Tengu
 	DESC:The shigenjo walks the path of enlightenment and transcendence by seeking oneness with the celestial spirits. In doing so, she unlocks the martial potential of her own spiritual power.
 	ABILITY:Special Ability|AUTOMATIC|Class Skills ~ Shigenjo|PRECLASS:1,Oracle=1
@@ -4269,7 +4267,6 @@ Recommended Mysteries
 	DESC:ancestor, battle, fire, heavens, lore, metal, nature, stone, time, waves, wood.
 	SOURCEPAGE:p.164
 
-# Implement: must remove mystery bonus spells
 Bonus Spells
 	KEY:Bonus Spells ~ Shigenjo
 	CATEGORY:Special Ability
@@ -5445,10 +5442,10 @@ Venomous Bite
 Reincarnated Oracle
 	KEY:Oracle Archetype ~ Reincarnated Oracle
 	CATEGORY:Archetype
-	TYPE:Archetype.OracleArchetype
-	PREABILITY:1,CATEGORY=Special Ability,Haunted,Tongues
+	TYPE:Archetype.OracleArchetype.OracleMysterySpell2.OracleMysterySpell4.OracleMysterySpell10.OracleMysterySpell16.OracleMysterySpell18.OracleMysteryRevelation1.OracleMysteryRevelation3.OracleMysteryRevelation7
+	PREABILITY:1,CATEGORY=Special Ability,Haunted ~ Oracle,Tongues ~ Oracle
 	PRECLASS:1,Oracle=1
-	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Reincarnated Oracle],[!PREABILITY:1,CATEGORY=Archetype]
+	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Reincarnated Oracle],[!PREABILITY:1,CATEGORY=Archetype,TYPE.OracleMysterySpell2,TYPE.OracleMysterySpell4,TYPE.OracleMysterySpell10,TYPE.OracleMysterySpell16,TYPE.OracleMysterySpell18,TYPE.OracleRevelation1,TYPE.OracleRevelation3,TYPE.OracleRevelation7]
 	PRERACE:1,Samsaran
 	DESC:A reincarnated oracle draws her knowledge and power from the experiences of her previous lives. Her memories guide her through a spiritual ascension leading the way to her ultimate incarnation.
 	ABILITY:Special Ability|AUTOMATIC|Recommended Mysteries ~ Reincarnated Oracle|PRECLASS:1,Oracle=1
@@ -5473,7 +5470,6 @@ Oracle's Curse
 	DESC:A reincarnated oracle must choose the haunted or tongues curse at 1st level.
 	SOURCEPAGE:p.199
 
-# Implement need to remove bonus spells from chosen mystery
 Bonus Spells
 	KEY:Bonus Spells ~ Reincarnated Oracle
 	CATEGORY:Special Ability
@@ -5491,21 +5487,35 @@ Revelations
 	CATEGORY:Special Ability
 	TYPE:ArchetypeAbility.SpecialQuality
 	DESC:A reincarnated oracle must take the following revelations at one of the listed levels.
+	BONUS:ABILITYPOOL|Reincarnated Oracle Revelation|1|PRECLASS:1,Oracle=1
+	BONUS:ABILITYPOOL|Reincarnated Oracle Revelation|1|PRECLASS:1,Oracle=3
+	BONUS:ABILITYPOOL|Reincarnated Oracle Revelation|1|PRECLASS:1,Oracle=7
 	SOURCEPAGE:p.199
 
 # Revelation Replacements
 Location Memories
 	KEY:Location Memories ~ Reincarnated Oracle
 	CATEGORY:Special Ability
-	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
+	TYPE:ArchetypeAbility.SpecialQuality.Supernatural.ReincarnatedOracleRevelation
 	DESC:As a swift action, you may search your past lives for memories of or insight about your current location. This grants you the scent ability, low-light vision, and a +2 insight bonus on Perception and Survival checks for 1 minute. You can use this ability %1 times per day. You must take this revelation at 1st level or 3rd level.|3+CHA
+	BONUS:VAR|OracleMysteryLevel|-1
 	SOURCEPAGE:p.199
 
 Spirit Memories
 	KEY:Spirit Memories ~ Reincarnated Oracle
 	CATEGORY:Special Ability
-	TYPE:ArchetypeAbility.SpecialQuality.Supernatural
+	TYPE:ArchetypeAbility.SpecialQuality.Supernatural.ReincarnatedOracleRevelation
+	PREMULT:1,[!PRECLASS:1,Oracle=3],[PREABILITY:1,CATEGORY=Special Ability,Location Memories ~ Reincarnated Oracle]
 	DESC:Once per day, you call upon the unfulfilled desires and goals of your past lives and project their frustration and despair through your eyes at a target. This is a gaze attack affecting one creature. The target must make a Will save (DC %1) or be sickened and staggered for 1 round. This is a mind-affecting compulsion effect. You can use this ability %2 times per day. You must take this revelation at 1st, 3rd, or 7th level.|10+OracleLvl/2+CHA|3+CHA
+	BONUS:VAR|OracleMysteryLevel|-1
+	SOURCEPAGE:p.199
+
+Oracle Revelation
+	KEY:Oracle Revelation ~ Reincarnated Oracle
+	CATEGORY:Special Ability
+	TYPE:ArchetypeAbility.SpecialQuality.Supernatural.ReincarnatedOracleRevelation
+	PREMULT:1,[!PRECLASS:1,Oracle=3],[PREABILITY:1,CATEGORY=Special Ability,Location Memories ~ Reincarnated Oracle]
+	DESC:You gain a standard Oracle Revelation of your chosen mystery.
 	SOURCEPAGE:p.199
 
 

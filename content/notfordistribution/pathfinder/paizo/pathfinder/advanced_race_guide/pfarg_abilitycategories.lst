@@ -521,6 +521,17 @@ ABILITYCATEGORY:Elven Arcana Spell Choice
 	PLURAL:Elven Arcana Spell Choices
 	DISPLAYLOCATION:Class Abilities
 
-#
+ABILITYCATEGORY:Reincarnated Oracle Revelation
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:ReincarnatedOracleRevelation
+	PLURAL:Reincarnated Oracle Revelations
+	DISPLAYLOCATION:Class Abilities
+
+
+
 # End
 #
