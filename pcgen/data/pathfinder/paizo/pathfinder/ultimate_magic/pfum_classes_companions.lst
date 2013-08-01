@@ -39,7 +39,8 @@ CLASS:Vermin Companion
 # Class Name	Output Name			Hit Dice	Type				Abbreviation		Max Level	Source Page		Visible
 CLASS:Black Blade
 	OUTPUTNAME:Black Blade
-	HD:1
+	HD:0
+	MAXLEVEL:1
 	TYPE:Monster.Companion
 	CLASSTYPE:Companion
 	ABB:BB
@@ -51,5 +52,5 @@ CLASS:Black Blade
 CLASS:Black Blade
 	STARTSKILLPTS:0
 	MODTOSKILLS:NO
-	BONUS:HP|CURRENTMAX|4
+	BONUS:HP|CURRENTMAX|5
 
