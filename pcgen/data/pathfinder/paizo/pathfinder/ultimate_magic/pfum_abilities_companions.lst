@@ -297,6 +297,7 @@ Enhancement Bonus
 	TYPE:SpecialQuality
 	DEFINE:BBEnhancement|0
 	DESC:+%1|BBEnhancement
+	BONUS:HP|CURRENTMAX|10*BBEnhancement
 	SOURCEPAGE:p.47
 	ASPECT:ChildAbility|Blackblade
 
