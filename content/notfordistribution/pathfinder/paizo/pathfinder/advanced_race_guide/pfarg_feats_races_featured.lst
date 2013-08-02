@@ -952,20 +952,20 @@ Fiend Sight
 	TYPE:General
 	PRERACE:1,Tiefling
 	PREVISION:1,Darkvision=60
+	PREVARLT:FiendSightTier,2
 	DESC:Your eyes develop keener sight in dim light and darkness.
+	MULT:YES
+	STACK:YES
+	CHOOSE:NOCHOICE
+	DEFINE:FiendSightTier|0
+	BONUS:VAR|FiendSightTier|1
 	VISION:Low-Light
+	VISION:.CLEAR.Darkvision
 	VISION:Darkvision (120')
-	SOURCEPAGE:p.173
+	ABILITY:Special Ability|AUTOMATIC|See in Darkness|PREVAREQ:FiendSightTier,2
 	BENEFIT:You gain low-light vision and your darkvision improves to 120 ft.
-
-Advanced Fiend Sight
-	TYPE:General
-	PREFEAT:1,Fiend Sight
-	PRERACE:1,Tiefling
-	DESC:Your eyes develop keener sight in dim light and darkness.
-	ABILITY:Special Ability|AUTOMATIC|See In Darkness
+	BENEFIT:You gain the see in darkness universal monster ability.|PREVAREQ:FiendSightTier,2
 	SOURCEPAGE:p.173
-	BENEFIT:You gain the see in darkness universal monster ability.
 
 Grasping Tail
 	TYPE:General

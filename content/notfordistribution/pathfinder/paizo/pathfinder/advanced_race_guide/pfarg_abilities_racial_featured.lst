@@ -1609,6 +1609,10 @@ Trickster
 
 
 
+###Block: Ability Mods
+CATEGORY=Special Ability|See in Darkness
+	TYPE:SpecialQuality
+
 
 
 #
