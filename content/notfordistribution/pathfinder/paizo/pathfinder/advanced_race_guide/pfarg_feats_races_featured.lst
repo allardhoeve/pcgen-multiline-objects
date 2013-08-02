@@ -953,7 +953,8 @@ Fiend Sight
 	PRERACE:1,Tiefling
 	PREVISION:1,Darkvision=60
 	DESC:Your eyes develop keener sight in dim light and darkness.
-	VISION:Low-Light|.SET.Darkvision (120')
+	VISION:Low-Light
+	VISION:Darkvision (120')
 	SOURCEPAGE:p.173
 	BENEFIT:You gain low-light vision and your darkvision improves to 120 ft.
 
