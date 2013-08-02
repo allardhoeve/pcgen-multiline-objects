@@ -1094,7 +1094,7 @@ Formian (Queen)
 	DEFINE:LOCK.STR|10
 	DEFINE:LOCK.DEX|10
 	SR:30
-	MONSTERCLASS:Formian Queen:20
+	MONSTERCLASS:Outsider:20
 	RACETYPE:Outsider
 	RACESUBTYPE:Lawful|Extraplanar
 	TYPE:Outsider
@@ -1103,6 +1103,8 @@ Formian (Queen)
 	SOURCEPAGE:MonstersE-F.rtf
 	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=17|Calm Emotions,12+CHA|Charm Monster,14+CHA|Clairaudience/Clairvoyance,13+CHA|Detect Chaos,11+CHA|Detect Thoughts,12+CHA|Dictum,17+CHA|Divination,14+CHA|Hold Monster,15+CHA|Magic Circle against Chaos,13+CHA|Order's Wrath,14+CHA|Shield of Law,18+CHA|True Seeing,16+CHA
 	KIT:1|LN
+	ADD:SPELLCASTER|Sorcerer
+	BONUS:PCLEVEL|Sorcerer|16
 
 Frost Worm
 	STARTFEATS:1

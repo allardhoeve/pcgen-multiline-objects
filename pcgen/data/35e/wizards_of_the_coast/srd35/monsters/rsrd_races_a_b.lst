@@ -167,7 +167,7 @@ Angel (Planetar)
 	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,2d8
 	SR:30
 	DR:10/Evil
-	MONSTERCLASS:Planetar:14
+	MONSTERCLASS:Outsider:14
 	RACETYPE:Outsider
 	RACESUBTYPE:Angel|Extraplanar|Good
 	TYPE:Outsider
@@ -178,6 +178,8 @@ Angel (Planetar)
 	SPELLS:Innate|TIMES=1|CASTERLEVEL=17|Charm Monster (Mass),18+CHA|Earthquake,18+CHA|Restoration (Greater),17+CHA|Waves of Exhaustion,17+CHA
 	SPELLS:Innate|TIMES=3|CASTERLEVEL=17|Blade Barrier,16+CHA|Flame Strike,15+CHA|Polymorph (Self Only),14+CHA|Power Word Stun,18+CHA|Raise Dead,15+CHA|Waves of Fatigue,15+CHA
 	KIT:1|CG|LG|NG
+	BONUS:PCLEVEL|Cleric|16
+	ADD:SPELLCASTER|Cleric
 
 Angel (Solar)
 	OUTPUTNAME:Angel, [NAME]
@@ -206,7 +208,7 @@ Angel (Solar)
 	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,2d8
 	SR:32
 	DR:15/Epic and Evil
-	MONSTERCLASS:Solar:22
+	MONSTERCLASS:Outsider:22
 	RACETYPE:Outsider
 	RACESUBTYPE:Angel|Extraplanar|Good
 	TYPE:Outsider
@@ -217,6 +219,8 @@ Angel (Solar)
 	SPELLS:Innate|TIMES=1|CASTERLEVEL=20|Power Word Blind,17+CHA|Power Word Kill,19+CHA|Power Word Stun,18+CHA|Prismatic Spray,17+CHA|Restoration (Greater),17+CHA|Wish,19+CHA
 	SPELLS:Innate|TIMES=3|CASTERLEVEL=20|Blade Barrier,16+CHA|Charm Monster (Mass),18+CHA|Earthquake,18+CHA|Heal,16+CHA|Permanency,15+CHA|Resurrection,17+CHA|Waves of Exhaustion,17+CHA
 	KIT:1|CG|LG|NG
+	ADD:SPELLCASTER|Cleric
+	BONUS:PCLEVEL|Cleric|19
 
 
 
@@ -441,13 +445,15 @@ Aranea
 	ABILITY:Special Ability|AUTOMATIC|Change Shape ~ Aranea|Poison ~ Aranea|Web ~ Aranea|Spells ~ Aranea|Skills ~ Aranea
 	LEGS:8
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing.Poison,*1,1d6|Web,Weapon.Natural.Ranged.Touch.Entangle,*1,1d0
-	MONSTERCLASS:Aranea:3
+	MONSTERCLASS:Magical Beast:3
 	RACETYPE:Magical Beast
 	RACESUBTYPE:Shapechanger
 	TYPE:Magical Beast
 	LEVELADJUSTMENT:4
 	CR:4
 	SOURCEPAGE:MonstersIntro-A.rtf
+	ADD:SPELLCASTER|Sorcerer
+	BONUS:PCLEVEL|Sorcerer|2
 
 Archon (Lantern)
 	OUTPUTNAME:[NAME] Archon
@@ -534,7 +540,7 @@ Archon (Trumpet)
 	LEGS:2
 	SR:29
 	DR:10/Evil
-	MONSTERCLASS:Trumpet Archon:12
+	MONSTERCLASS:Outsider:12
 	RACETYPE:Outsider
 	RACESUBTYPE:Archon|Extraplanar|Good|Lawful
 	TYPE:Outsider
@@ -544,8 +550,8 @@ Archon (Trumpet)
 	SOURCEPAGE:MonstersIntro-A.rtf
 	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=12|Continual Flame,12+CHA|Detect Evil,11+CHA|Message,10+CHA
 	KIT:1|LG
-
-
+	ADD:SPELLCASTER|Cleric
+	BONUS:PCLEVEL|Cleric|13
 
 Arrowhawk (Adult)
 	OUTPUTNAME:[NAME] Arrowhawk

@@ -228,7 +228,7 @@ Couatl
 	ABILITY:Special Ability|AUTOMATIC|Spells ~ Couatl|Psionics ~ Couatl|Constrict ~ Couatl|Ethereal Jaunt ~ Couatl|Flight Maneuverability|Improved Grab ~ Couatl|Poison ~ Couatl|Telepathy ~ Couatl
 	LEGS:0
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing.Poison,*1,1d3
-	MONSTERCLASS:Couatl:9
+	MONSTERCLASS:Outsider:9
 	RACETYPE:Outsider
 	RACESUBTYPE:Native
 	TYPE:Outsider
@@ -237,6 +237,8 @@ Couatl
 	CR:10
 	SOURCEPAGE:MonstersB-C.rtf
 	KIT:1|LG
+	ADD:SPELLCASTER|Sorcerer/Cleric (Arcane)
+	BONUS:PCLEVEL|Sorcerer/Cleric (Arcane)|9
 
 
 
@@ -1743,8 +1745,7 @@ Dragonne
 	CR:7
 	SOURCEPAGE:MonstersDr-Dw.rtf
 
-Drider (Cleric)
-	OUTPUTNAME:Drider
+Drider
 	STARTFEATS:1
 	SIZE:L
 	DEFINE:RaceSizeIsLong|1
@@ -1773,66 +1774,9 @@ Drider (Cleric)
 	SPELLS:Innate|TIMES=1|CASTERLEVEL=6|Clairaudience/Clairvoyance,13+CHA|Dancing Lights,10+CHA|Darkness,12+CHA|Detect Good,11+CHA|Detect Law,11+CHA|Detect Magic,10+CHA|Dispel Magic,13+CHA|Faerie Fire,11+CHA|Levitate,12+CHA|Suggestion,13+CHA
 	KIT:1|CE
 
-Drider (Sorcerer)
-	OUTPUTNAME:Drider
-	STARTFEATS:1
-	SIZE:L
-	DEFINE:RaceSizeIsLong|1
-	MOVE:Walk,30,Climb,15
-	FACE:10
-	REACH:5
-	BONUS:COMBAT|AC|6|TYPE=NaturalArmor
-	BONUS:SKILL|Hide,Move Silently|4|TYPE=Racial
-	BONUS:STAT|STR,DEX,INT|4
-	BONUS:STAT|CON,WIS,CHA|6
-	BONUS:VAR|DarkvisionRange|60|TYPE=Base
-	MONCSKILL:Climb|Concentration|Hide|Listen|Move Silently|Spot
-	AUTO:LANG|Common|Elven|Undercommon
-	AUTO:WEAPONPROF|TYPE=Simple
-	ABILITY:Special Ability|AUTOMATIC|Poison ~ Drider|Spell-Like Abilities ~ Drider|Spells ~ Drider|Skills ~ Drider
-	LEGS:8
-	HANDS:3
-	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing.Poison,*1,1d4
-	SR:17
-	MONSTERCLASS:Drider Sorcerer:6
-	RACETYPE:Aberration
-	TYPE:Aberration
-	LEVELADJUSTMENT:4
-	CR:7
-	SOURCEPAGE:MonstersDr-Dw.rtf
-	SPELLS:Innate|TIMES=1|CASTERLEVEL=6|Clairaudience/Clairvoyance,13+CHA|Dancing Lights,10+CHA|Darkness,12+CHA|Detect Good,11+CHA|Detect Law,11+CHA|Detect Magic,10+CHA|Dispel Magic,13+CHA|Faerie Fire,11+CHA|Levitate,12+CHA|Suggestion,13+CHA
-	KIT:1|CE
-
-Drider (Wizard)
-	OUTPUTNAME:Drider
-	STARTFEATS:1
-	SIZE:L
-	DEFINE:RaceSizeIsLong|1
-	MOVE:Walk,30,Climb,15
-	FACE:10
-	REACH:5
-	BONUS:COMBAT|AC|6|TYPE=NaturalArmor
-	BONUS:SKILL|Hide,Move Silently|4|TYPE=Racial
-	BONUS:STAT|STR,DEX,INT|4
-	BONUS:STAT|CON,WIS,CHA|6
-	BONUS:VAR|DarkvisionRange|60|TYPE=Base
-	MONCSKILL:Climb|Concentration|Hide|Listen|Move Silently|Spot
-	AUTO:LANG|Common|Elven|Undercommon
-	AUTO:WEAPONPROF|TYPE=Simple
-	ABILITY:Special Ability|AUTOMATIC|Poison ~ Drider|Spell-Like Abilities ~ Drider|Spells ~ Drider|Skills ~ Drider
-	LEGS:8
-	HANDS:3
-	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing.Poison,*1,1d4
-	SR:17
-	MONSTERCLASS:Drider Wizard:6
-	RACETYPE:Aberration
-	TYPE:Aberration
-	LEVELADJUSTMENT:4
-	CR:7
-	SOURCEPAGE:MonstersDr-Dw.rtf
-	SPELLS:Innate|TIMES=1|CASTERLEVEL=6|Clairaudience/Clairvoyance,13+CHA|Dancing Lights,10+CHA|Darkness,12+CHA|Detect Good,11+CHA|Detect Law,11+CHA|Detect Magic,10+CHA|Dispel Magic,13+CHA|Faerie Fire,11+CHA|Levitate,12+CHA|Suggestion,13+CHA
-	KIT:1|CE
-
+#Drider (Cleric)			OUTPUTNAME:Drider							STARTFEATS:1	SIZE:L	DEFINE:RaceSizeIsLong|1	MOVE:Walk,30,Climb,15	FACE:10	REACH:5											BONUS:COMBAT|AC|6|TYPE=NaturalArmor		BONUS:SKILL|Hide,Move Silently|4|TYPE=Racial																											BONUS:STAT|STR,DEX,INT|4	BONUS:STAT|CON,WIS,CHA|6									BONUS:VAR|DarkvisionRange|60|TYPE=Base																																					MONCSKILL:Climb|Concentration|Hide|Listen|Move Silently|Spot																																							AUTO:LANG|Common|Elven|Undercommon														AUTO:WEAPONPROF|TYPE=Simple								ABILITY:Special Ability|AUTOMATIC|Poison ~ Drider|Spell-Like Abilities ~ Drider|Spells ~ Drider|Skills ~ Drider																										LEGS:8	HANDS:3	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing.Poison,*1,1d4																																SR:17							MONSTERCLASS:Drider Cleric:6			RACETYPE:Aberration													TYPE:Aberration							LEVELADJUSTMENT:4	CR:7			SOURCEPAGE:MonstersDr-Dw.rtf	SPELLS:Innate|TIMES=1|CASTERLEVEL=6|Clairaudience/Clairvoyance,13+CHA|Dancing Lights,10+CHA|Darkness,12+CHA|Detect Good,11+CHA|Detect Law,11+CHA|Detect Magic,10+CHA|Dispel Magic,13+CHA|Faerie Fire,11+CHA|Levitate,12+CHA|Suggestion,13+CHA																							KIT:1|CE
+#Drider (Sorcerer)			OUTPUTNAME:Drider							STARTFEATS:1	SIZE:L	DEFINE:RaceSizeIsLong|1	MOVE:Walk,30,Climb,15	FACE:10	REACH:5											BONUS:COMBAT|AC|6|TYPE=NaturalArmor		BONUS:SKILL|Hide,Move Silently|4|TYPE=Racial																											BONUS:STAT|STR,DEX,INT|4	BONUS:STAT|CON,WIS,CHA|6									BONUS:VAR|DarkvisionRange|60|TYPE=Base																																					MONCSKILL:Climb|Concentration|Hide|Listen|Move Silently|Spot																																							AUTO:LANG|Common|Elven|Undercommon														AUTO:WEAPONPROF|TYPE=Simple								ABILITY:Special Ability|AUTOMATIC|Poison ~ Drider|Spell-Like Abilities ~ Drider|Spells ~ Drider|Skills ~ Drider																										LEGS:8	HANDS:3	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing.Poison,*1,1d4																																SR:17							MONSTERCLASS:Drider Sorcerer:6		RACETYPE:Aberration													TYPE:Aberration							LEVELADJUSTMENT:4	CR:7			SOURCEPAGE:MonstersDr-Dw.rtf	SPELLS:Innate|TIMES=1|CASTERLEVEL=6|Clairaudience/Clairvoyance,13+CHA|Dancing Lights,10+CHA|Darkness,12+CHA|Detect Good,11+CHA|Detect Law,11+CHA|Detect Magic,10+CHA|Dispel Magic,13+CHA|Faerie Fire,11+CHA|Levitate,12+CHA|Suggestion,13+CHA																							KIT:1|CE
+#Drider (Wizard)			OUTPUTNAME:Drider							STARTFEATS:1	SIZE:L	DEFINE:RaceSizeIsLong|1	MOVE:Walk,30,Climb,15	FACE:10	REACH:5											BONUS:COMBAT|AC|6|TYPE=NaturalArmor		BONUS:SKILL|Hide,Move Silently|4|TYPE=Racial																											BONUS:STAT|STR,DEX,INT|4	BONUS:STAT|CON,WIS,CHA|6									BONUS:VAR|DarkvisionRange|60|TYPE=Base																																					MONCSKILL:Climb|Concentration|Hide|Listen|Move Silently|Spot																																							AUTO:LANG|Common|Elven|Undercommon														AUTO:WEAPONPROF|TYPE=Simple								ABILITY:Special Ability|AUTOMATIC|Poison ~ Drider|Spell-Like Abilities ~ Drider|Spells ~ Drider|Skills ~ Drider																										LEGS:8	HANDS:3	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing.Poison,*1,1d4																																SR:17							MONSTERCLASS:Drider Wizard:6			RACETYPE:Aberration													TYPE:Aberration							LEVELADJUSTMENT:4	CR:7			SOURCEPAGE:MonstersDr-Dw.rtf	SPELLS:Innate|TIMES=1|CASTERLEVEL=6|Clairaudience/Clairvoyance,13+CHA|Dancing Lights,10+CHA|Darkness,12+CHA|Detect Good,11+CHA|Detect Law,11+CHA|Detect Magic,10+CHA|Dispel Magic,13+CHA|Faerie Fire,11+CHA|Levitate,12+CHA|Suggestion,13+CHA																							KIT:1|CE
 Dryad
 	STARTFEATS:1
 	SIZE:M

@@ -561,12 +561,14 @@ Naga (Dark)
 	ABILITY:Special Ability|AUTOMATIC|Detect Thoughts ~ Dark Naga|Guarded Thoughts ~ Dark Naga|Immunity To Poison|Poison ~ Dark Naga|Resistance To Charm|Spells ~ Dark Naga
 	LEGS:0
 	NATURALATTACKS:Sting,Weapon.Natural.Melee.Finesseable.Piercing.Poison,*1,2d4|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d4
-	MONSTERCLASS:Dark Naga:9
+	MONSTERCLASS:Aberration:9
 	RACETYPE:Aberration
 	TYPE:Aberration
 	HITDICEADVANCEMENT:13,27
 	CR:8
 	SOURCEPAGE:MonstersM-N.rtf
+	ADD:SPELLCASTER|Sorcerer
+	BONUS:PCLEVEL|Sorcerer|6
 
 Naga (Guardian)
 	OUTPUTNAME:[NAME] Naga
@@ -591,12 +593,14 @@ Naga (Guardian)
 	LEGS:0
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing.Poison,*1,2d6
 	NATURALATTACKS:Spit,Weapon.Natural.Ranged.Touch.Poison,*1,1d0
-	MONSTERCLASS:Guardian Naga:11
+	MONSTERCLASS:Aberration:11
 	RACETYPE:Aberration
 	TYPE:Aberration
 	HITDICEADVANCEMENT:16,33
 	CR:10
 	SOURCEPAGE:MonstersM-N.rtf
+	ADD:SPELLCASTER|Sorcerer/Cleric (Arcane)
+	BONUS:PCLEVEL|Sorcerer/Cleric (Arcane)|10
 
 Naga (Spirit)
 	OUTPUTNAME:[NAME] Naga
@@ -620,12 +624,14 @@ Naga (Spirit)
 	ABILITY:Special Ability|AUTOMATIC|Charming Gaze ~ Spirit Naga|Poison ~ Spirit Naga|Spells ~ Spirit Naga
 	LEGS:0
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing.Poison,*1,2d6
-	MONSTERCLASS:Spirit Naga:9
+	MONSTERCLASS:Aberration:9
 	RACETYPE:Aberration
 	TYPE:Aberration
 	HITDICEADVANCEMENT:13,27
 	CR:9
 	SOURCEPAGE:MonstersM-N.rtf
+	ADD:SPELLCASTER|Sorcerer/Cleric (Arcane)
+	BONUS:PCLEVEL|Sorcerer/Cleric (Arcane)|8
 
 Naga (Water)
 	OUTPUTNAME:[NAME] Naga
@@ -649,13 +655,15 @@ Naga (Water)
 	ABILITY:Special Ability|AUTOMATIC|Poison ~ Water Naga|Spells ~ Water Naga|Skills ~ Water Naga
 	LEGS:0
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing.Poison,*1,2d6
-	MONSTERCLASS:Water Naga:7
+	MONSTERCLASS:Aberration:7
 	RACETYPE:Aberration
 	RACESUBTYPE:Aquatic
 	TYPE:Aberration
 	HITDICEADVANCEMENT:10,21
 	CR:7
 	SOURCEPAGE:MonstersM-N.rtf
+	ADD:SPELLCASTER|Sorcerer
+	BONUS:PCLEVEL|Sorcerer|6
 
 Night Hag
 	STARTFEATS:1
@@ -837,7 +845,7 @@ Nymph
 	ABILITY:Special Ability|AUTOMATIC|Wild Empathy ~ Nymph|Blinding Beauty ~ Nymph|Stunning Glance ~ Nymph|Unearthly Grace ~ Nymph|Spell-Like Abilities ~ Nymph|Spells ~ Nymph|Skills ~ Nymph
 	LEGS:2
 	DR:10/Cold Iron
-	MONSTERCLASS:Nymph:6
+	MONSTERCLASS:Fey:6
 	RACETYPE:Fey
 	TYPE:Fey
 	HITDICEADVANCEMENT:12
@@ -845,4 +853,6 @@ Nymph
 	CR:7
 	SOURCEPAGE:MonstersM-N.rtf
 	SPELLS:Innate|TIMES=1|CASTERLEVEL=7|Dimension Door,14+WIS
+	BONUS:PCLEVEL|Druid|6
+	ADD:SPELLCASTER|Druid
 

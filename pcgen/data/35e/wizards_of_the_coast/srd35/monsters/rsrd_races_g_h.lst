@@ -169,7 +169,7 @@ Ghaele
 	NATURALATTACKS:Light Ray,Weapon.Natural.Ranged.Touch.Piercing,*2,2d12
 	SR:28
 	DR:10/Evil and Cold Iron
-	MONSTERCLASS:Ghaele:10
+	MONSTERCLASS:Outsider:10
 	RACETYPE:Outsider
 	RACESUBTYPE:Chaotic|Extraplanar|Good
 	TYPE:Outsider
@@ -179,6 +179,8 @@ Ghaele
 	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=12|Aid,12+CHA|Charm Monster,14+CHA|Color Spray,11+CHA|Comprehend Languages,11+CHA|Continual Flame,13+CHA|Cure Light Wounds,11+CHA|Dancing Lights,10+CHA|Detect Evil,11+CHA|Detect Thoughts,12+CHA|Disguise Self,11+CHA|Dispel Magic,13+CHA|Hold Monster,15+CHA|Invisibility (Greater/Self Only),14+CHA|Major Image,13+CHA|See Invisibility,13+CHA|Teleport (Greater/Self Only),17+CHA
 	SPELLS:Innate|TIMES=1|CASTERLEVEL=12|Chain Lightning,16+CHA|Prismatic Spray,17+CHA|Wall of Force,15+CHA
 	KIT:1|CG
+	BONUS:PCLEVEL|Cleric|13
+	ADD:SPELLCASTER|Cleric
 
 Ghoul
 	STARTFEATS:1

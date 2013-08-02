@@ -729,6 +729,8 @@ Sphinx (Androsphinx)
 	LEVELADJUSTMENT:5
 	CR:9
 	SOURCEPAGE:MonstersS.rtf
+	ADD:SPELLCASTER|Cleric
+	BONUS:PCLEVEL|Cleric|6
 
 Sphinx (Criosphinx)
 	OUTPUTNAME:[NAME]

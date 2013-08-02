@@ -141,7 +141,7 @@ Lammasu
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability|Magic Circle against Evil ~ Lammasu|Pounce ~ Lammasu|Rake|Spells ~ Lammasu|Spell-Like Abilities ~ Lammasu|Skills ~ Lammasu
 	LEGS:2
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d6
-	MONSTERCLASS:Lammasu:7
+	MONSTERCLASS:Magical Beast:7
 	RACETYPE:Magical Beast
 	TYPE:Magical Beast
 	HITDICEADVANCEMENT:10,21
@@ -151,6 +151,8 @@ Lammasu
 	SPELLS:Innate|TIMES=1|CASTERLEVEL=7|Dimension Door,14+CHA
 	SPELLS:Innate|TIMES=2|CASTERLEVEL=7|Invisibility (Greater/Self Only),14+CHA
 	KIT:1|LG
+	ADD:SPELLCASTER|Cleric
+	BONUS:PCLEVEL|Cleric|7
 
 Leonal
 	STARTFEATS:1
@@ -209,7 +211,7 @@ Lillend
 	LEGS:0
 	HANDS:3
 	NATURALATTACKS:Tail,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,2d6
-	MONSTERCLASS:Lillend:7
+	MONSTERCLASS:Outsider:7
 	RACETYPE:Outsider
 	RACESUBTYPE:Chaotic|Extraplanar|Good
 	TYPE:Outsider
@@ -220,6 +222,8 @@ Lillend
 	SPELLS:Innate|TIMES=1|CASTERLEVEL=10|Charm Person,11+CHA|Speak with Animals,13+CHA|Speak with Plants,14+CHA
 	SPELLS:Innate|TIMES=3|CASTERLEVEL=10|Darkness,12+CHA|Hallucinatory Terrain,14+CHA|Knock,12+CHA|Light,10+CHA
 	KIT:1|CG
+	ADD:SPELLCASTER|Bard
+	BONUS:PCLEVEL|Bard|5
 
 Lizardfolk
 	FAVCLASS:Druid

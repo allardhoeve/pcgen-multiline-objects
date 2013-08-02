@@ -35,7 +35,7 @@ Rakshasa
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d4|Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing,*1,1d6
 	SR:27
 	DR:15/Good and Piercing
-	MONSTERCLASS:Rakshasa:7
+	MONSTERCLASS:Outsider:7
 	RACETYPE:Outsider
 	RACESUBTYPE:Native
 	TYPE:Outsider
@@ -43,6 +43,8 @@ Rakshasa
 	CR:10
 	SOURCEPAGE:MonstersO-R.rtf
 	KIT:1|LE
+	ADD:SPELLCASTER|Sorcerer
+	BONUS:PCLEVEL|Sorcerer|6
 
 Rast
 	STARTFEATS:1

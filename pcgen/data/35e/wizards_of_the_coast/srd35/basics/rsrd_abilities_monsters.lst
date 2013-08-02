@@ -11,6 +11,143 @@ SOURCELONG:Revised (v.3.5) System Reference Document
 # COMMENT: Due to the various overlap and the fact that the Descriptions Are not identical (Example Blind is listed as a Weakness, but it's also a special attack of a creature) It becomes imperative to give each monster entry individual entries.
 
 
+###Block: Support for Monster Casting Classes
+Bard Class
+	CATEGORY:Internal
+	TYPE:CastingClassSupport
+	ADD:SPELLCASTER|Bard
+
+Cleric Class
+	CATEGORY:Internal
+	TYPE:CastingClassSupport
+	ADD:SPELLCASTER|Cleric
+
+Sorcerer Class
+	CATEGORY:Internal
+	TYPE:CastingClassSupport
+	ADD:SPELLCASTER|Sorcerer
+
+Wizard Class
+	CATEGORY:Internal
+	TYPE:CastingClassSupport
+	ADD:SPELLCASTER|Wizard
+
+
+
+###Block: Monster Domain Support
+Air Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:AirDomainAllowed|1
+
+Animal Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:AnimalDomainAllowed|1
+
+Chaos Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:ChaosDomainAllowed|1
+
+Death Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:DeathDomainAllowed|1
+
+Destruction Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:DestructionDomainAllowed|1
+
+Earth Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:EarthDomainAllowed|1
+
+Evil Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:EvilDomainAllowed|1
+
+Fire Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:FireDomainAllowed|1
+
+Good Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:GoodDomainAllowed|1
+
+Healing Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:HealingDomainAllowed|1
+
+Law Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:LawDomainAllowed|1
+
+Luck Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:LuckDomainAllowed|1
+
+Knowledge Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:KnowledgeDomainAllowed|1
+
+Magic Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:MagicDomainAllowed|1
+
+Plant Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:PlantDomainAllowed|1
+
+Protection Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:ProtectionDomainAllowed|1
+
+Strength Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:StrengthDomainAllowed|1
+
+Sun Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:SunDomainAllowed|1
+
+Travel Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:TravelDomainAllowed|1
+
+Trickery Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:TrickeryDomainAllowed|1
+
+War Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:WarDomainAllowed|1
+
+Water Domain
+	CATEGORY:Internal
+	TYPE:MonsterDomainGranter
+	DEFINE:WaterDomainAllowed|1
+
+
+
+###Block:
 # Aboleth
 # Ability Name			Unique Key						Category of Ability		Type									Visible	Description
 Enslave
@@ -158,6 +295,7 @@ Spells
 	TYPE:SpecialAttack
 	VISIBLE:YES
 	DESC:Planetars can cast divine spells as 17th-level clerics. A planetar has access to two of the following domains: Air, Destruction, Good, Law, or War (plus any others from its deity). The save DCs are Wisdom-based. Typical Cleric Spells Prepared (6/8/8/7/7/6/6/4/3/2; save DC 16 + spell level): 0-create water, detect magic, guidance, resistance (2), virtue; 1st-bless (2), cause fear, divine favor (2), entropic shield, inflict light wounds*, shield of faith; 2nd-aid*, align weapon, bear 's endurance, bull's strength (2), consecrate, eagle's splendor, hold person; 3rd-contagion*, daylight, invisibility purge, prayer (2), summon monster III, wind wall; 4th- death ward, dismissal, inflict critical wounds*, neutralize poison (2), summon monster IV; 5th- break enchantment, circle of doom*, dispel evil, mark of justice, plane shift, righteous might; 6th-banishment, greater dispel magic, harm*, heal, heroes' feast, mass cure moderate wounds; 7th- dictum, disintegrate*, holy word, regenerate; 8th-holy aura*, mass cure critical wounds, shield of law; 9th-implosion, summon monster IX (good)*. *Domain spell. Domains: Destruction and Good.
+	BONUS:ABILITYPOOL|All Monster Domains|2
 
 
 
@@ -189,6 +327,7 @@ Spells
 	TYPE:SpecialAttack
 	VISIBLE:YES
 	DESC:Solars can cast divine spells as 20th-level clerics. A solar has access to two of the following domains: Air, Destruction, Good, Law, or War (plus any others from its deity). The save DCs are Wisdom-based. Typical Cleric Spells Prepared (6/8/8/8/7/7/6/6/5/5; save DC 17 + spell level): 0-create water, detect magic, guidance (2), resistance  (2); 1st-bless (2), cause fear, divine favor (2), entropic shield, obscuring mist*, shield of faith; 2nd-align weapon, bear's endurance (2), bull's strength (2), consecrate, eagle's splendor, spiritual weapon*; 3rd-daylight, invisibility purge, magic circle against evil, magic vestment*, prayer (2), protection from energy, wind wall; 4th-death ward (2), dismissal (2), divine power*, neutralize poison (2); 5th-break enchantment, control winds*, dispel evil, plane shift, righteous might (2), symbol of pain; 6th-banishment, chain lightning*, heroes' feast, mass cure moderate wounds, undeath to death, word of recall; 7th-control weather*, destruction, dictum, ethereal jaunt, holy word, regenerate; 8th-fire storm, holy aura, mass cure critical wounds (2), whirlwind*; 9th- etherealness, elemental swarm (air)*, mass heal, miracle, storm of vengeance. *Domain spell. Domains: Air and War.
+	BONUS:ABILITYPOOL|All Monster Domains|2
 
 
 
@@ -956,6 +1095,9 @@ Spells
 	TYPE:SpecialAttack
 	VISIBLE:YES
 	DESC:A couatl casts spells as a 9th-level sorcerer. It can choose its spells known from the sorcerer list, the cleric list, and from the lists for the Air, Good, and Law domains. The cleric spells and domain spells are considered arcane spells for a couatl, meaning that the creature does not need a divine focus to cast them. Typical Spells Known (6/7/7/7/4; save DC 13 + spell level) :0-cure minor wounds, daze, disrupt undead, light, obscuring mist, ray of frost, read magic, resistance; 1st-endure elements, mage armor, protection from chaos, true strike, wind wall; 2nd-cure moderate wounds, eagle's splendor, scorching ray, silence; 3rd-gaseous form, magic circle against evil, summon monster III; 4th- charm monster, freedom of movement.
+	DEFINE:AirDomainAllowed|1
+	DEFINE:GoodDomainAllowed|1
+	DEFINE:LawDomainAllowed|1
 
 Ethereal Jaunt
 	KEY:Ethereal Jaunt ~ Couatl
@@ -2630,6 +2772,11 @@ Spells
 	VISIBLE:YES
 	DESC:Driders cast spells as 6th-level clerics, wizards, or sorcerers. Drider clerics can choose from the following domains: Chaos, Destruction, Evil, and Trickery. The typical spells prepared shown here are for a drider sorcerer.
 	DESC:&nl; Typical Sorcerer Spells Known (6/7/6/4, base save DC 13 + spell level): 0-daze, detect magic, ghost sound, mage hand, ray of frost, read magic, resistance; 1st-mage armor, magic missile, ray of enfeeblement, silent image; 2nd- invisibility, web; 3rd-lightning bolt.
+	BONUS:ABILITYPOOL|Drider Caster Choice|1
+	BONUS:ABILITYPOOL|Drider Domain|2|PREABILITY:1,CATEGORY=Internal,Cleric Class
+	BONUS:PCLEVEL|Cleric|5|PREABILITY:1,CATEGORY=Internal,Cleric Class
+	BONUS:PCLEVEL|Sorcerer|5|PREABILITY:1,CATEGORY=Internal,Sorcerer Class
+	BONUS:PCLEVEL|Wizard|5|PREABILITY:1,CATEGORY=Internal,Wizard Class
 
 Skills
 	KEY:Skills ~ Drider
@@ -4315,6 +4462,7 @@ Spells
 	VISIBLE:YES
 	DESC:A lammasu casts spells as a 7th-level cleric, and can choose spells from the cleric spell list, plus any two of the following domains: Good, Healing, Knowledge, or Law.
 	DESC:&nl; Typical Cleric Spells Prepared (6/6/5/4/2; save DC 13 + spell level): 0-detect magic, guidance (2), light, read magic, resistance; 1st-bless (2), detect evil, divine favor, entropic shield, protection from evil*; 2nd- aid*, bear's endurance, bull's strength, lesser restoration, resist energy; 3rd-daylight, dispel magic, magic circle against evil*, remove curse; 4th-holy smite*, neutralize poison. *Domain spell. Domains: Good and Healing.
+	BONUS:ABILITYPOOL|Lammasu Domain|2
 
 Magic Circle against Evil
 	KEY:Magic Circle against Evil ~ Lammasu
@@ -5118,6 +5266,8 @@ Spells
 	VISIBLE:YES
 	DESC:Guardian nagas cast spells as 9th-level sorcerers, and can also cast spells from the cleric list and from the Good and Law domains. The cleric spells and domain spells are considered arcane spells for a guardian naga, meaning that the creature does not need a divine focus to cast them.
 	DESC:&nl; Typical Spells Known (6/7/7/7/5; save DC 14 + spell level): 0- cure minor wounds, daze, detect magic, light, mage hand, open/close, ray of frost, read magic; 1st-cure light wounds, divine favor, expeditious retreat, mage armor, magic missile; 2nd-detect thoughts, lesser restoration, see invisibility, scorching ray; 3rd-cure serious wounds, dispel magic, lightning bolt; 4th-divine power, greater invisibility.
+	DEFINE:GoodDomainAllowed|1
+	DEFINE:LawDomainAllowed|1
 
 
 
@@ -5143,6 +5293,8 @@ Spells
 	VISIBLE:YES
 	DESC:Spirit nagas cast spells as 7th-level sorcerers, and can also cast spells from the cleric spell list and from the Chaos and Evil domains as arcane spells. The cleric spells and domain spells are considered arcane spells for a spirit naga, meaning that the creature does not need a divine focus to cast them.
 	DESC:&nl; Typical Spells Known (6/7/7/5; save DC 13 + spell level): 0-cure minor wounds, daze, detect magic, mage hand, open/close, ray of frost, read magic; 1st-charm person, cure light wounds, divine favor, magic missile, shield of faith; 2nd-cat's grace, invisibility, summon swarm; 3rd-displacement, fireball.
+	DEFINE:ChaosDomainAllowed|1
+	DEFINE:EvilDomainAllowed|1
 
 
 
@@ -6464,6 +6616,9 @@ Spells
 	VISIBLE:YES
 	DESC:An androsphinx casts divine spells as a 6th-level cleric from the cleric spell list and from the Good, Healing, and Protection domains.
 	DESC:&nl; Typical Cleric Spells Prepared (5/5/5/4; save DC 13 + spell level): 0-cure minor wounds, detect magic, guidance, light, resistance; 1st-divine favor, protection from evil*, shield of faith, remove fear, summon monster I; 2nd-bull's strength, remove paralysis, resist energy, shield other*, summon monster II; 3rd-cure serious wounds*, daylight, invisibility purge, searing light.
+	DEFINE:GoodDomainAllowed|1
+	DEFINE:HealingDomainAllowed|1
+	DEFINE:ProtectionDomainAllowed|1
 
 
 
