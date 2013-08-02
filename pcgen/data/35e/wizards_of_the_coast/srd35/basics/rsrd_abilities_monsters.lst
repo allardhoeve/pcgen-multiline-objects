@@ -3408,6 +3408,7 @@ Spells
 	VISIBLE:YES
 	DESC:Ghaeles in humanoid form can cast divine spells as 14th-level clerics. A ghaele has access to two of the following domains: Air, Animal, Chaos, Good, or Plant (plus any others from its deity). The save DCs are Wisdom-based.
 	DESC:&nl; Typical Cleric Spells Prepared (6/7/7/6/5/4/4/3; save DC 13 + spell level): 0-cure minor wounds, detect magic, guidance, light, resistance, virtue; 1st-bless, calm animals*, command, divine favor, obscuring mist, sanctuary, shield of faith; 2nd-aid, align weapon, bear 's endurance, hold animal*, lesser restoration, remove paralysis, zone of truth; 3rd-daylight, gaseous form*, prayer, remove curse, searing light, water breathing; 4th-death ward, dismissal, divine power, restoration, summon nature's ally IV (animal)*; 5th-control winds*, flame strike, raise dead, true seeing; 6th-banishment, blade barrier, chain lightning*, heal; 7th-animal shapes*, holy word, summon monster VII. *Domain spell. Domains: Air and Animal.
+	BONUS:ABILITYPOOL|All Monster Domains|2
 
 Gaze
 	KEY:Gaze ~ Ghaele
