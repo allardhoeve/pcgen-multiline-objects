@@ -528,7 +528,9 @@ Gifted Linguist
 	DESC:+4 racial bonus on Linguistics checks, and learn one additional language each time you take a rank in Linguistics.
 	BONUS:SKILL|Linguistics|4|TYPE=Racial
 	SOURCEPAGE:p.163
-	BONUS:ABILITYPOOL|Tengu Linguistic Additional Languages|skillinfo("TOTALRANK","Linguistics")
+	BONUS:ABILITYPOOL|Tengu Linguistic Additional Languages|TenguLanguageCount
+	DEFINE:TenguLanguageCount|0
+	BONUS:VAR|TenguLanguageCount|skillinfo("TOTALRANK","Linguistics")
 
 #BONUS:LANGUAGES|NUMBER|
 Swordtrained
