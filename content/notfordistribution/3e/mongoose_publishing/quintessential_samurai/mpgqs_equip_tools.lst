@@ -145,47 +145,44 @@ Yumi (Mighty +5)
 
 
 Arrow (Ya)
+	TYPE:Ammo.Arrow
 
 Arrow (Karimata)
+	TYPE:Ammo.Arrow
 
 Arrow (Togari-Ya)
+	TYPE:Ammo.Arrow
 
 Arrow (Yanagi-Ba)
+	TYPE:Ammo.Arrow
 
 Arrow (Watakusi)
+	TYPE:Ammo.Arrow
 
 Arrow (Demonslayer)
+	TYPE:Ammo.Arrow
 
 
 
 ###Block: Accessories
 Tsuru
+	TYPE:Accessories
 
 Tsurumaki
+	TYPE:Accessories
 
 Yazutsu
+	TYPE:Accessories
 
 Yumibukuro
+	TYPE:Accessories
 
 Fudeko
+	TYPE:Accessories
 
 
 
 
-
-###Block: EQMODs Armor
-Honorable
-	PLUS:2
-
-Kata Memory
-	PLUS:2
-
-Ki Funnel
-	PLUS:2
-
-Ki Light
-	PLUS:1
-	SPROP:Cherry Blossom Flare 2 Ki; Sun Streamer 5 Ki; Lunar Radiance 5 Ki
 
 
 
