@@ -396,7 +396,14 @@ ABILITYCATEGORY:Lammasu Domain
 	ABILITYLIST:Good Domain|Healing Domain|Knowledge Domain|Law Domain
 	DISPLAYLOCATION:Racial Abilities
 
-
+ABILITYCATEGORY:Titan Elder Casting Class
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:YES
+	FRACTIONALPOOL:NO
+	CATEGORY:Internal
+	ABILITYLIST:Cleric Class|Wizard Class
+	DISPLAYLOCATION:Racial Abilities
 
 #
 # End

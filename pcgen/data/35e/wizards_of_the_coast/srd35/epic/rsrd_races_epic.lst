@@ -1096,6 +1096,10 @@ Ha Naga
 	HITDICEADVANCEMENT:40
 	CR:22
 	SOURCEPAGE: EpicMonsters(G-W).rtf
+	ADD:SPELLCASTER|Sorcerer/Cleric (Arcane)
+	BONUS:PCLEVEL|Sorcerer/Cleric (Arcane)|20
+	DEFINE:ChaosDomainAllowed|1
+	DEFINE:EvilDomainAllowed|1
 
 Hagunemnon
 	STARTFEATS:1
@@ -1495,6 +1499,8 @@ Neh Thalggu
 	HITDICEADVANCEMENT:32,66,112
 	CR:26
 	SOURCEPAGE: EpicMonsters(G-W).rtf
+	ADD:SPELLCASTER|Sorcerer
+	BONUS:PCLEVEL|Sorcerer|12
 
 
 
@@ -1840,6 +1846,7 @@ Titan (Elder)
 	BONUS:STAT|CHA|16
 	MONCSKILL:Concentration|Decipher Script|Diplomacy|Gather Information|Intimidate|Jump|Listen|Sense Motive|Speak Language|Spellcraft|Spot|TYPE=Craft|TYPE=Knowledge
 	AUTO:WEAPONPROF|Javelin|Warhammer|TYPE=Martial|TYPE=Simple
+	ABILITY:Special Ability|AUTOMATIC|Spells ~ Titan Elder
 	LEGS:2
 	SR:40
 	DR:20/Epic
@@ -1854,6 +1861,7 @@ Titan (Elder)
 	SOURCEPAGE: EpicMonsters(G-W).rtf
 	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=29|Alter Self,12+CHA|Analyze Dweomer,16+CHA|Commune,15+CHA|Cure Critical Wounds,14+CHA|Eyebite,16+CHA|Fly,13+CHA|Fog Cloud,12+CHA|Freedom of Movement,14+CHA|Produce Flame,11+CHA|Protection from Energy,13+CHA|Read Magic,10+CHA|Remove Curse,14+CHA|Sanctuary,11+CHA|Sending,15+CHA|Soften Earth and Stone,12+CHA|Speak with Animals,11+CHA|Speak with Plants,13+CHA|Teleport (Greater),17+CHA|Wind Wall,13+CHA
 	SPELLS:Innate|TIMES=3|CASTERLEVEL=29|Antilife Shell,16+CHA|Astral Projection,19+CHA|Contact Other Plane,15+CHA|Dispel Magic (Greater),16+CHA|Invisibility Purge,13+CHA|Plane Shift,17+CHA|Scrying (Greater),17+CHA
+	
 
 Treant (Elder)
 	OUTPUTNAME:Treant, [NAME]
