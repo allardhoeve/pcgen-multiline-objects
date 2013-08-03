@@ -29,7 +29,7 @@ CLASS:Assassin
 
 1
 	ABILITY:Special Ability|AUTOMATIC|Backstab|Assassination|Disguise|Poison|Thief Abilities
-	BONUS:VAR|Backstab|2
+	DEFINE:BackstabMultBonus|2
 
 9
 	ABILITY:Special Ability|AUTOMATIC|Languages
@@ -40,15 +40,15 @@ CLASS:Assassin
 ### Combat
 5
 	BONUS:COMBAT|BAB|1
-	BONUS:VAR|Backstab|1
+	BONUS:VAR|BackstabMultBonus|1
 
 9
 	BONUS:COMBAT|BAB|3
-	BONUS:VAR|Backstab|1
+	BONUS:VAR|BackstabMultBonus|1
 
 13
 	BONUS:COMBAT|BAB|2
-	BONUS:VAR|Backstab|1
+	BONUS:VAR|BackstabMultBonus|1
 
 
 
