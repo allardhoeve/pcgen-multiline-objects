@@ -6,7 +6,7 @@ STARTPACK:Pathfinder Society Starting Gold
 	APPLY:INSTANT
 	EQUIPBUY:0
 
-GEAR:Coin (Gold)
+GEAR:Coin (Gold Piece)
 	QTY:150
 
 

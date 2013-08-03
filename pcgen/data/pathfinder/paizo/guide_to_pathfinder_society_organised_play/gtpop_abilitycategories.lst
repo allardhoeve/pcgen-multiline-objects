@@ -32,3 +32,15 @@ ABILITYCATEGORY:Society Faction
 	PLURAL:Society Factions
 	DISPLAYLOCATION:Background
 
+
+
+ABILITYCATEGORY:Prestige Awards
+	VISIBLE:YES
+	EDITABLE:YES
+	EDITPOOL:NO
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:FactionPrestigeAward.GeneralPrestigeAward.VanityPrestigeAward.PrestigeAwardDisplay
+	PLURAL:Prestige Awards
+	DISPLAYLOCATION:Background
+

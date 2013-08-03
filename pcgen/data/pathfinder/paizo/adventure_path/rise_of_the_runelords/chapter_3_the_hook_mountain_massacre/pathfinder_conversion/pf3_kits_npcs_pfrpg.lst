@@ -164,7 +164,7 @@ GEAR:Arrow
 	SIZE:M
 	LOCATION:Carried
 
-GEAR:Coin (Gold)
+GEAR:Coin (Gold Piece)
 	QTY:125
 	LOCATION:Carried
 
