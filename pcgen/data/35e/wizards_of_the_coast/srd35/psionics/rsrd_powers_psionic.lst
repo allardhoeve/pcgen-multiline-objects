@@ -7,8 +7,6 @@ SOURCELONG:Revised (v.3.5) System Reference Document
 # Original Entry: Arknight
 # Continued entry by Martin Fagerstrom  2004-06-06
 # K-W entered by syndaryl ( reformated by prettylst.pl v1.31 (build 327))
-
-
 ###Block:A-C
 # Spell Name			Output Name						Classes of caster					School			Sub-School			Spell Descriptors				Spell Variations				Type			Components			Casting Time			Range			Target Area or Effect													Duration										Save Info								Spell Resistance		XP Cost	Description																													Bonus to HP									Add to base move								Bonus to skill							Stat bonus										Choose								Source Page					Temporary effect description
 Adapt Body
@@ -5167,4 +5165,21 @@ Wall Walker.MOD
 
 Weapon of Energy.MOD
 	DESC:As claw of energy, except this power can be manifested on a touched weapon. This power's subtype is the same as the type of energy infused in the touched weapon.|PRERULE:1,DisplayFullSpell
+
+
+
+
+
+###Block: Psionic Monster Support
+Anchored Navigation.MOD
+	CLASSES:Psion=4[PREVAREQ:PsionSeer,1]
+
+
+
+Aversion.MOD
+	CLASSES:Psion=2[PREVAREQ:PsionTelepath,1]
+
+
+
+
 

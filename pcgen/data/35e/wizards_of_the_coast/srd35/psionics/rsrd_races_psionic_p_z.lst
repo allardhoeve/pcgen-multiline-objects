@@ -571,7 +571,7 @@ Unbodied
 	LEGS:0
 	NATURALATTACKS:Incorporeal Touch,Weapon.Natural.Melee.Finesseable.Piercing,*1,1d6
 	DEFINE:LOCK.STR|10
-	MONSTERCLASS:Unbodied:4
+	MONSTERCLASS:Monstrous Humanoid:4
 	RACETYPE:Monstrous Humanoid
 	RACESUBTYPE:Incorporeal|Psionic
 	TYPE:Monstrous Humanoid
@@ -579,4 +579,15 @@ Unbodied
 	LEVELADJUSTMENT:4
 	CR:5
 	SOURCEPAGE:PsionicMonsters.rtf
+	ADD:SPELLCASTER|Psion
+	BONUS:PCLEVEL|Psion|3
+	BONUS:VAR|PsionML|TL
+	DEFINE:PsionML|0
+	TEMPLATE:Psionic
+	BONUS:VAR|BasePowerPoints|2
+	BONUS:VAR|BasePowerPoints|4|PREVARGTEQ:PsionML,2
+	BONUS:VAR|BasePowerPoints|5|PREVARGTEQ:PsionML,3
+	BONUS:VAR|BasePowerPoints|6|PREVARGTEQ:PsionML,4
+	BONUS:VAR|BonusPowerPoints|(INT*PsionML)/2|TYPE=PsionBonusPP
+	ABILITY:Internal|AUTOMATIC|Psion Telepath Class
 
