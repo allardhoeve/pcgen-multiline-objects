@@ -70,6 +70,7 @@ STATNAME:Charisma
 	DEFINE:NormalFollower|1
 	DEFINE:DisplayFullSpell|0
 	BONUS:VAR|DisplayFullSpell|1|PRERULE:1,DisplayFullSpell
+	DEFINE:BypassSizeMods|0
 
 
 
