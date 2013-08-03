@@ -40,7 +40,7 @@ ABILITYCATEGORY:Prestige Awards
 	EDITPOOL:NO
 	FRACTIONALPOOL:NO
 	CATEGORY:Special Ability
-	TYPE:FactionPrestigeAward.GeneralPrestigeAward.VanityPrestigeAward.PrestigeAwardDisplay
+	TYPE:FactionPrestigeAward.GenericPrestigeAwards.VanityPrestigeAward.PrestigeAwardDisplay
 	PLURAL:Prestige Awards
 	DISPLAYLOCATION:Background
 
