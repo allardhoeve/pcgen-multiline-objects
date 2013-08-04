@@ -114,6 +114,20 @@ Climb (Underground)
 
 
 
+Stealth (Stationary for at least one round)
+	KEYSTAT:DEX
+	USEUNTRAINED:YES
+	CLASSES:ALL
+	TYPE:SkillUse
+	VISIBLE:EXPORT
+	PRERULE:1,DISPLAYSKILLUSE
+	PREVARNEQ:var("SKILL.Stealth (Stationary for at least one round).MISC"),var("SKILL.Stealth.MISC")
+	SOURCEPAGE:unk
+
+
+
+
+
 ###Block: Skill .MODs
 # Skill Name					Bonus to skill																		Bonus to skill rank
 Knowledge (Dungeoneering).MOD
@@ -169,4 +183,10 @@ Ride (Samurai Mount)
 	PRERULE:1,DISPLAYSKILLUSE
 	PREABILITY:1,CATEGORY=Special Ability,Mount ~ Samurai
 	
+
+
+
+Stealth.MOD
+	BONUS:SKILL|Stealth (Stationary for at least one round)|var("SKILL.Stealth.MISC")
+	BONUS:SKILLRANK|Stealth (Stationary for at least one round)|skillinfo("TOTALRANK", "Stealth")|TYPE=SkillGranted|PREVARNEQ:var("SKILL.Stealth (Stationary for at least one round).MISC"),var("SKILL.Stealth.MISC")
 

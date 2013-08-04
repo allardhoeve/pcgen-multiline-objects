@@ -424,6 +424,7 @@ No Trace
 	BENEFIT:The ninja learnt to cover her tracks, remain hidden, and conceal her presence. The DC to track a ninja using the Survival skill increases by +%1. In addition, her training gives her a +%1 insight bonus on Disguise skill checks and on opposed Stealth checks whenever she is stationary and does not take any action for at least 1 round.|NoTraceBonus
 	BONUS:VAR|NoTraceBonus|NinjaNoTraceLVL/3
 	BONUS:SKILL|Disguise|NoTraceBonus|TYPE=Insight
+	BONUS:SKILL|Stealth (Stationary for at least one round)|NoTraceBonus|TYPE=Insight
 	SOURCEPAGE:p.16
 
 Light Steps
