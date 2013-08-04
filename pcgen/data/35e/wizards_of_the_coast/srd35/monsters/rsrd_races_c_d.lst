@@ -1765,7 +1765,7 @@ Drider
 	HANDS:3
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Bludgeoning.Piercing.Slashing.Poison,*1,1d4
 	SR:17
-	MONSTERCLASS:Drider Cleric:6
+	MONSTERCLASS:Aberration:6
 	RACETYPE:Aberration
 	TYPE:Aberration
 	LEVELADJUSTMENT:4

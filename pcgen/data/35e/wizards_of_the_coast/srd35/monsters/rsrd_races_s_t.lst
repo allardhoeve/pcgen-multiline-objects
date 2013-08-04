@@ -722,7 +722,7 @@ Sphinx (Androsphinx)
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability|Pounce ~ Sphinx|Rake ~ Sphinx|Roar ~ Androsphinx|Spells ~ Androsphinx|Rake ~ Androsphinx
 	LEGS:4
 	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,2d4
-	MONSTERCLASS:Androsphinx:12
+	MONSTERCLASS:Magical Beast:12
 	RACETYPE:Magical Beast
 	TYPE:Magical Beast
 	HITDICEADVANCEMENT:18,36
