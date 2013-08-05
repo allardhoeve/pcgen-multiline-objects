@@ -60,12 +60,14 @@ Craft (Alchemy)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsI.rtf
 
 Craft (Armorsmithing)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsI.rtf
 	BONUS:SKILL|Craft (Armorsmithing)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=ArmorsmithingTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -74,6 +76,7 @@ Craft (Bowmaking)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsI.rtf
 	BONUS:SKILL|Craft (Bowmaking)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=BowmakingTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -82,6 +85,7 @@ Craft (Blacksmithing)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:MonstersS.rtf
 	BONUS:SKILL|Craft (Blacksmithing)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=BlacksmithingTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -90,6 +94,7 @@ Craft (Carpentry)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:MonstersS.rtf
 	BONUS:SKILL|Craft (Carpentry)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=CarpentryTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -98,6 +103,7 @@ Craft (Leatherworking)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:MonstersG.rtf
 	BONUS:SKILL|Craft (Leatherworking)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=LeatherworkingTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -106,6 +112,7 @@ Craft (Painting)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:MagicItemsV.rtf
 	BONUS:SKILL|Craft (Painting)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=PaintingTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -114,6 +121,7 @@ Craft (Pottery)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:MonstersG.rtf
 	BONUS:SKILL|Craft (Pottery)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=PotteryTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -122,6 +130,7 @@ Craft (Sculpting)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:MonstersG.rtf
 	BONUS:SKILL|Craft (Sculpting)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=SculptingTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -130,6 +139,7 @@ Craft (Shipmaking)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:MagicItemsV.rtf
 	BONUS:SKILL|Craft (Shipmaking)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=ShipmakingTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -138,6 +148,7 @@ Craft (Stonemasonry)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:MonstersDr-Dw.rtf
 	BONUS:SKILL|Craft (Stonemasonry)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=StonemasonryTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -146,6 +157,7 @@ Craft (Trapmaking)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsI.rtf
 	BONUS:SKILL|Craft (Trapmaking)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=TrapmakingTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -154,6 +166,7 @@ Craft (Weaponsmithing)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsI.rtf
 	BONUS:SKILL|Craft (Weaponsmithing)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=WeaponsmithingTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -162,6 +175,7 @@ Craft (Woodworking)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
 	TYPE:Intelligence.Craft.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsI.rtf
 	BONUS:SKILL|Craft (Woodworking)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=WoodworkingTools|PREAPPLY:PC
 	TEMPDESC:Craft skill checks are made with a -2 circumstance penalty If improvised tools are used
@@ -336,60 +350,78 @@ Open Lock
 	BONUS:SKILL|Open Lock|-2|TYPE=Circumstance|!PREITEM:1,TYPE=ThiefTools|PREAPPLY:PC
 	TEMPDESC:Attempting an Open Lock check without a set of thieves' tools imposes a -2 circumstance penalty on the check
 
+#
+Perform (Untrained)
+	KEYSTAT:CHA
+	USEUNTRAINED:YES
+	TYPE:Charisma.Perform
+	VISIBLE:EXPORT
+	SOURCEPAGE:SkillsII.rtf
+
 Perform (Act)
 	KEYSTAT:CHA
 	USEUNTRAINED:NO
 	TYPE:Charisma.Perform.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsII.rtf
 
 Perform (Comedy)
 	KEYSTAT:CHA
 	USEUNTRAINED:NO
 	TYPE:Charisma.Perform.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsII.rtf
 
 Perform (Dance)
 	KEYSTAT:CHA
 	USEUNTRAINED:NO
 	TYPE:Charisma.Perform.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsII.rtf
 
 Perform (Keyboard Instruments)
 	KEYSTAT:CHA
 	USEUNTRAINED:NO
 	TYPE:Charisma.Perform.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsII.rtf
 
 Perform (Oratory)
 	KEYSTAT:CHA
 	USEUNTRAINED:NO
 	TYPE:Charisma.Perform.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsII.rtf
 
 Perform (Percussion Instruments)
 	KEYSTAT:CHA
 	USEUNTRAINED:NO
 	TYPE:Charisma.Perform.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsII.rtf
 
 Perform (String Instruments)
 	KEYSTAT:CHA
 	USEUNTRAINED:NO
 	TYPE:Charisma.Perform.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsII.rtf
 
 Perform (Wind Instruments)
 	KEYSTAT:CHA
 	USEUNTRAINED:NO
 	TYPE:Charisma.Perform.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsII.rtf
 
 Perform (Sing)
 	KEYSTAT:CHA
 	USEUNTRAINED:NO
 	TYPE:Charisma.Perform.Standard
+	VISIBLE:DISPLAY
 	SOURCEPAGE:SkillsII.rtf
 
+#
 Profession (Hunter)
 	KEYSTAT:WIS
 	USEUNTRAINED:NO
@@ -486,10 +518,11 @@ Use Rope
 
 
 ###Block: From Epic - Prevent situational Conflicts
-# Skill Name		Key Stat	Untrained?		Type				Source Page					Bonus to skill															Temporary effect description
+# Skill Name		Key Stat	Untrained?					Type				Source Page					Bonus to skill															Temporary effect description
 Craft (Dreamweaving)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
+	VISIBLE:DISPLAY
 	TYPE:Intelligence.Craft
 	SOURCEPAGE:EpicMonsters(A-E).rtf
 	BONUS:SKILL|Craft (Dreamweaving)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=MetalworkingTools|PREAPPLY:PC
@@ -498,6 +531,7 @@ Craft (Dreamweaving)
 Craft (Gemcutting)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
+	VISIBLE:DISPLAY
 	TYPE:Intelligence.Craft
 	SOURCEPAGE:EpicMagicItems2.rtf
 	BONUS:SKILL|Craft (Gemcutting)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=MetalworkingTools|PREAPPLY:PC
@@ -506,6 +540,7 @@ Craft (Gemcutting)
 Craft (Metalworking)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
+	VISIBLE:DISPLAY
 	TYPE:Intelligence.Craft
 	SOURCEPAGE:EpicMonsters(A-E).rtf
 	BONUS:SKILL|Craft (Metalworking)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=MetalworkingTools|PREAPPLY:PC
@@ -514,6 +549,7 @@ Craft (Metalworking)
 Craft (Stoneworking)
 	KEYSTAT:INT
 	USEUNTRAINED:NO
+	VISIBLE:DISPLAY
 	TYPE:Intelligence.Craft
 	SOURCEPAGE:EpicMonsters(A-E).rtf
 	BONUS:SKILL|Craft (Stoneworking)|-2|TYPE=Circumstance|!PREITEM:1,TYPE=MetalworkingTools|PREAPPLY:PC
@@ -522,6 +558,7 @@ Craft (Stoneworking)
 Profession (Bookkeeper)
 	KEYSTAT:WIS
 	USEUNTRAINED:NO
+	VISIBLE:DISPLAY
 	TYPE:Wisdom.Profession
 	SOURCEPAGE:EpicMonsters(G-W).rtf
 

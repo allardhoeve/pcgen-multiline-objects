@@ -6098,3 +6098,18 @@ Resistance To Sonic Output
 	ASPECT:Resistance|Sonic
 	ASPECT:Ability Benefit|%1|SonicResistanceBonus
 
+
+
+
+
+MyVarTest
+	CATEGORY:Special Ability
+	TYPE:SpecialQuality
+	MULT:YES
+	STACK:YES
+	CHOOSE:NOCHOICE
+	DEFINE:MyVarTest|0
+	DEFINE:MyVarTestTwo|0
+	BONUS:VAR|MyVarTest,MyVarTestTwo|1
+	DESC:My Var Test =%1, My Var Test Twp =%2|MyVarTest|MyVarTestTwo
+

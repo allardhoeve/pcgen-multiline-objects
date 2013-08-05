@@ -50,6 +50,9 @@ Black Dragon
 
 	LEGS:4
 
+
+	MOVE:Walk,5
+
 #	MONCSKILL:Hide|Move Silently|Swim|Listen|Search|Spot|Concentration|Diplomacy|Escape Artist|Intimidate|TYPE=Knowledge|Sense Motive|Use Magic Device
 
 
@@ -112,6 +115,9 @@ Blue Dragon
 
 	LEGS:4
 
+
+	MOVE:Walk,5
+
 #	MONCSKILL:Bluff|Hide|Spellcraft|Listen|Search|Spot|Concentration|Diplomacy|Escape Artist|Intimidate|TYPE=Knowledge|Sense Motive|Use Magic Device
 
 
@@ -164,6 +170,9 @@ Green Dragon
 
 
 	LEGS:4
+
+
+	MOVE:Walk,5
 
 #	MONCSKILL:Bluff|Hide|Move Silently|Listen|Search|Spot|Concentration|Diplomacy|Escape Artist|Intimidate|TYPE=Knowledge|Sense Motive|Use Magic Device
 
@@ -227,6 +236,9 @@ Red Dragon
 
 	LEGS:4
 
+
+	MOVE:Walk,5
+
 #	MONCSKILL:Appraise|Bluff|Jump|Listen|Search|Spot|Concentration|Diplomacy|Escape Artist|Intimidate|TYPE=Knowledge|Sense Motive|Use Magic Device
 
 
@@ -279,6 +291,9 @@ White Dragon
 
 
 	LEGS:4
+
+
+	MOVE:Walk,5
 
 #	MONCSKILL:Hide|Move Silently|Swim|Listen|Search|Spot|Concentration|Diplomacy|Escape Artist|Intimidate|TYPE=Knowledge|Sense Motive|Use Magic Device
 
@@ -338,6 +353,9 @@ Brass Dragon
 
 
 	LEGS:4
+
+
+	MOVE:Walk,5
 
 #	MONCSKILL:Bluff|Gather Information|Survival|Listen|Search|Spot|Concentration|Diplomacy|Escape Artist|Intimidate|TYPE=Knowledge|Sense Motive|Use Magic Device
 
@@ -401,6 +419,9 @@ Bronze Dragon
 
 	LEGS:4
 
+
+	MOVE:Walk,5
+
 #	MONCSKILL:Disguise|Swim|Survival|Listen|Search|Spot|Concentration|Diplomacy|Escape Artist|Intimidate|TYPE=Knowledge|Sense Motive|Use Magic Device
 
 
@@ -463,6 +484,9 @@ Copper Dragon
 
 	LEGS:4
 
+
+	MOVE:Walk,5
+
 #	MONCSKILL:Bluff|Hide|Jump|Listen|Search|Spot|Concentration|Diplomacy|Escape Artist|Intimidate|TYPE=Knowledge|Sense Motive|Use Magic Device
 
 
@@ -524,6 +548,9 @@ Gold Dragon
 
 
 	LEGS:4
+
+
+	MOVE:Walk,5
 
 #	MONCSKILL:Disguise|Heal|Swim|Listen|Search|Spot|Concentration|Diplomacy|Escape Artist|Intimidate|TYPE=Knowledge|Sense Motive|Use Magic Device
 
@@ -589,6 +616,9 @@ Silver Dragon
 
 
 	LEGS:4
+
+
+	MOVE:Walk,5
 
 #	MONCSKILL:Bluff|Disguise|Jump|Listen|Search|Spot|Concentration|Diplomacy|Escape Artist|Intimidate|TYPE=Knowledge|Sense Motive|Use Magic Device
 
