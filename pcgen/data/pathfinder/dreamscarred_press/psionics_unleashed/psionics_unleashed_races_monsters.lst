@@ -295,6 +295,7 @@ Cerebrilith
 	SPELLS:Innate|TIMES=3|CASTERLEVEL=9|Ectoplasmic Form,15+CHA|Mind Control,15+CHA|Mind Probe,15+CHA
 
 Crysmal
+	KEY:Crysmal ~ Psionic
 	STARTFEATS:1
 	SIZE:S
 	MOVE:Walk,30,Burrow,20

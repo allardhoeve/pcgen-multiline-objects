@@ -301,13 +301,13 @@ STAT:DEX=11|CON=11|INT=11|CHA=11|STR=10|WIS=10
 
 
 
-STARTPACK:Crysmal Default
+STARTPACK:Crysmal Default ~ Psionic
 	TYPE:DefaultMonster.Elemental
 	VISIBLE:QUALIFY
 	EQUIPBUY:0
-	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Crysmal]
+	PREMULT:1,[!PRERACE:1,%],[PRERACE:1,Crysmal ~ Psionic]
 
-RACE:Crysmal
+RACE:Crysmal ~ Psionic
 	!PRERACE:1,%
 
 NAME:Crysmal
