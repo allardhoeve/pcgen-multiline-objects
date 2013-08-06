@@ -3942,7 +3942,7 @@ Advanced Talent
 	VISIBLE:DISPLAY
 	PREABILITY:1,CATEGORY=Special Ability,Covert Training ~ Cutthroat
 	PRECLASS:1,Soulknife=10
-	QUALIFY:ABILITY=Special Ability|Confounding Blades ~ Advanced Rogue Talent|Crippling Strike|Stealthy Sniper ~ Rogue Talent
+	QUALIFY:ABILITY=Special Ability|Crippling Strike
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
@@ -4327,6 +4327,24 @@ Whiplash
 
 
 
+###Block: Rogue talents for soulknife Rogue Talent blade skill
+CATEGORY=Special Ability|Fast Stealth.MOD
+	TYPE:SoulknifeRogueTalent
+
+CATEGORY=Special Ability|Slow Reactions.MOD
+	TYPE:SoulknifeRogueTalent
+
+CATEGORY=Special Ability|Surprise Attack.MOD
+	TYPE:SoulknifeRogueTalent
+
+
+
+###Block: Advanced talents for soulknife Advanced Talent blade skill
+CATEGORY=Special Ability|Crippling Strike.MOD
+	TYPE:SoulknifeAdvancedTalent
+
+
+
 
 
 # ======================== WILDER ====================== #
@@ -4466,7 +4484,6 @@ Pain Surge Bond Bonus Feats
 	CATEGORY:Internal
 	ABILITY:FEAT|AUTOMATIC|Diehard|PREMULT:2,[PREABILITY:1,CATEGORY=Special Ability,Pain Surge],[PREVARGTEQ:SurgeLVL,5]
 	ABILITY:FEAT|AUTOMATIC|Body Fuel|PREMULT:2,[PREABILITY:1,CATEGORY=Special Ability,Pain Surge],[PREVARGTEQ:SurgeLVL,9]
-	ABILITY:FEAT|AUTOMATIC|Fight On|PREMULT:2,[PREABILITY:1,CATEGORY=Special Ability,Pain Surge],[PREVARGTEQ:SurgeLVL,13]
 	ABILITY:FEAT|AUTOMATIC|Mind Over Body|PREMULT:2,[PREABILITY:1,CATEGORY=Special Ability,Pain Surge],[PREVARGTEQ:SurgeLVL,17]
 
 

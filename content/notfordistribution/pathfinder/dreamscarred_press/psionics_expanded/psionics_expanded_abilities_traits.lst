@@ -160,20 +160,6 @@ Lucid Dreaming
 
 
 
-###Block: Adopted Traits Mod
-# Ability Name						Bonus to Ability Pool
-CATEGORY=Special Ability|Adopted ~ Trait.MOD
-	BONUS:ABILITYPOOL|Blue Race Trait|1|PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Blue
-	BONUS:ABILITYPOOL|Dromite Race Trait|1|PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Dromite
-	BONUS:ABILITYPOOL|Duergar Race Trait|1|PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Druegar
-	BONUS:ABILITYPOOL|Elan Race Trait|1|PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Elan
-	BONUS:ABILITYPOOL|Half Giant Race Trait|1|PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Half-Giant
-	BONUS:ABILITYPOOL|Maenad Race Trait|1|PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Maenad
-	BONUS:ABILITYPOOL|Ophiduan Race Trait|1|PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Ophiduan
-	BONUS:ABILITYPOOL|Xeph Race Trait|1|PREABILITY:1,CATEGORY=Special Ability,Adoptive Race ~ Xeph
-
-
-
 ###Block: Adopted Trait Race Selection
 # Ability Name	Unique Key					Category of Ability		Type				Multiple Requirements																			Required Race			Description																							Source Page
 Blue
