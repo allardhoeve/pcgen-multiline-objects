@@ -2415,10 +2415,10 @@ Plaguebearer
 #
 
 
-CATEGORY:Special Ability|Nature's Bond ~ Animal Companion.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
 	ABILITY:Special Ability|AUTOMATIC|Familiar ~ Blight Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Blight Druid
 
-CATEGORY:Special Ability|Nature's Bond ~ Druid Domain.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
 	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Blight Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Blight Druid
 
 
@@ -2502,7 +2502,7 @@ Wild Shape
 
 
 
-CATEGORY:Special Ability|Nature's Bond ~ Druid Domain.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
 	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Cave Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Cave Druid
 
 Druid Domain
@@ -2815,7 +2815,7 @@ Mental Strength
 
 
 
-CATEGORY:Special Ability|Nature's Bond ~ Druid Domain.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
 	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Urban Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Urban Druid
 
 
@@ -2883,10 +2883,10 @@ Bonus Feat
 	SOURCEPAGE:p.102
 
 #
-CATEGORY:Special Ability|Nature's Bond ~ Animal Companion.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
 	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Bear Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Bear Druid
 
-CATEGORY:Special Ability|Nature's Bond ~ Druid Domain.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
 	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Bear Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Bear Druid
 
 
@@ -2960,10 +2960,10 @@ Bonus Feat
 	SOURCEPAGE:p.102
 
 #
-CATEGORY:Special Ability|Nature's Bond ~ Animal Companion.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
 	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Eagle Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Eagle Druid
 
-CATEGORY:Special Ability|Nature's Bond ~ Druid Domain.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
 	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Eagle Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Eagle Druid
 
 
@@ -3036,10 +3036,10 @@ Bonus Feat
 	SOURCEPAGE:p.103
 
 #
-CATEGORY:Special Ability|Nature's Bond ~ Animal Companion.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
 	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Lion Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Lion Druid
 
-CATEGORY:Special Ability|Nature's Bond ~ Druid Domain.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
 	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Lion Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Lion Druid
 
 
@@ -3112,10 +3112,10 @@ Bonus Feat
 	SOURCEPAGE:p.103
 
 #
-CATEGORY:Special Ability|Nature's Bond ~ Animal Companion.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
 	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Serpent Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Serpent Druid
 
-CATEGORY:Special Ability|Nature's Bond ~ Druid Domain.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
 	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Serpent Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Serpent Druid
 
 Animal Companion
@@ -3186,10 +3186,10 @@ Bonus Feat
 	SOURCEPAGE:p.103
 
 # missing desc
-CATEGORY:Special Ability|Nature's Bond ~ Animal Companion.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
 	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Wolf Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Wolf Druid
 
-CATEGORY:Special Ability|Nature's Bond ~ Druid Domain.MOD
+CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
 	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Wolf Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Wolf Druid
 
 Animal Companion
