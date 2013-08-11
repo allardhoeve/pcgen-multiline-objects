@@ -2426,18 +2426,19 @@ CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
 Familiar
 	KEY:Familiar ~ Blight Druid
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary.NatureBond
+	TYPE:ArchetypeDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Blight Druid
 	DESC:A blight druid may not bond with an animal companion, but may either call a familiar as a wizard of her druid level or select from the Darkness, Death, and Destruction domains in addition to those normally available.
 	SOURCEPAGE:p.98
 	DEFINE:FamiliarLVL|DruidLVL
 	FOLLOWERS:Familiar|1
 	COMPANIONLIST:Familiar|RACESUBTYPE=FamiliarBase
+	BONUS:FOLLOWERS|Animal Companion|-1
 
 Druid Domain
 	KEY:Druid Domain ~ Blight Druid
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary.NatureBond
+	TYPE:ArchetypeDruid
 	DESC:Blight Druid may select from the Darkness, Death, and Destruction domains in addition to those normally available.
 	BONUS:VAR|DruidDarknessAllowed,DruidDeathAllowed,DruidDestructionAllowed,DruidAirAllowed,DruidAnimalAllowed,DruidEarthAllowed,DruidFireAllowed,DruidPlantAllowed,DruidWaterAllowed,DruidWeatherAllowed|1|TYPE=DruidDomain
 	SOURCEPAGE:p.98
@@ -2457,7 +2458,7 @@ Cavesense
 Nature Bond
 	KEY:Nature Bond ~ Cave Druid
 	CATEGORY:Special Ability
-	TYPE:ArchetypeCaveDruid.SpecialQuality.NaturesBondDruidDomain.DruidDomain.NatureBond
+	TYPE:ArchetypeCaveDruid.SpecialQuality.NaturesBondDruidDomain.DruidDomain
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Cave Druid
 	DESC:A cave druid may select the Darkness domain in addition to the choices normally allowed, but may not select the Air or Weather domains.
 	SOURCEPAGE:p.99
@@ -2508,7 +2509,7 @@ CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
 Druid Domain
 	KEY:Druid Domain ~ Cave Druid
 	CATEGORY:Special Ability
-	TYPE:ArchetypeCaveDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeCaveDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Cave Druid
 	DESC:A cave druid may select the Darkness domain in addition to the choices normally allowed, but may not select the Air or Weather domains.
 	BONUS:VAR|DruidDarknessAllowed,DruidAnimalAllowed,DruidEarthAllowed,DruidFireAllowed,DruidPlantAllowed,DruidWaterAllowed|1
@@ -2823,7 +2824,7 @@ CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
 Druid Domain
 	KEY:Druid Domain ~ Urban Druid
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Urban Druid
 	DESC:An urban druid may not select an animal companion. Instead, she must choose from the following domains, rather than those usually available to druids: Charm, Community, Knowledge, Nobility, Protection, Repose, Rune, or Weather.
 	BONUS:VAR|DruidCharmAllowed,DruidCommunityAllowed,DruidKnowledgeAllowed,DruidNobilityAllowed,DruidProtectionAllowed,DruidReposeAllowed,DruidRuneAllowed,DruidWeatherAllowed|1|TYPE=DruidDomain
@@ -2884,17 +2885,19 @@ Bonus Feat
 
 #
 CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
-	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Bear Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Bear Druid
+	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Bear Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Bear Druid
+	DESC:A bear shaman who chooses an animal companion must select a bear.|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Bear Druid
 
 CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
-	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Bear Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Bear Druid
+	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Bear Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Bear Druid
+	DESC:If choosing a domain, the bear shaman must choose from the Animal, Earth, Protection, and Strength domains.|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Bear Druid
 
 
 
 Animal Companion
 	KEY:Animal Companion ~ Bear Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Bear Shaman
 	DESC:A bear shaman who chooses an animal companion must select a bear. If choosing a domain, the bear shaman must choose from the Animal, Earth, Protection, and Strength domains.
 	SOURCEPAGE:p.102
@@ -2905,7 +2908,7 @@ Animal Companion
 Druid Domain
 	KEY:Druid Domain ~ Bear Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Bear Shaman
 	DESC:A bear shaman who chooses an animal companion must select a bear. If choosing a domain, the bear shaman must choose from the Animal, Earth, Protection, and Strength domains.
 	BONUS:VAR|DruidAnimalAllowed,DruidEarthAllowed,DruidProtectionAllowed,DruidStrengthAllowed|1|TYPE=DruidDomain
@@ -2961,17 +2964,19 @@ Bonus Feat
 
 #
 CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
-	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Eagle Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Eagle Druid
+	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Eagle Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Eagle Druid
+	DESC:An eagle shaman who chooses an animal companion must select a bird (eagle).|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Eagle Druid
 
 CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
-	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Eagle Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Eagle Druid
+	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Eagle Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Eagle Druid
+	DESC:If choosing a domain, the eagle shaman must choose from the Air, Animal, Nobility, and Weather domains.|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Eagle Druid
 
 
 
 Animal Companion
 	KEY:Animal Companion ~ Eagle Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Eagle Shaman
 	DESC:An eagle shaman who chooses an animal companion must select a bird (eagle). If choosing a domain, the eagle shaman must choose from the Air, Animal, Nobility, and Weather domains.
 	DEFINE:AnimalCompanionLVL|0
@@ -2982,7 +2987,7 @@ Animal Companion
 Druid Domain
 	KEY:Druid Domain ~ Eagle Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Eagle Shaman
 	DESC:An eagle shaman who chooses an animal companion must select a bird (eagle). If choosing a domain, the eagle shaman must choose from the Air, Animal, Nobility, and Weather domains.
 	BONUS:VAR|DruidAirAllowed,DruidAnimalAllowed,DruidNobilityAllowed,DruidWeatherAllowed|1|TYPE=DruidDomain
@@ -3037,17 +3042,19 @@ Bonus Feat
 
 #
 CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
-	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Lion Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Lion Druid
+	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Lion Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Lion Druid
+	DESC:A lion shaman who chooses an animal companion must select a lion.|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Lion Druid
 
 CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
-	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Lion Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Lion Druid
+	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Lion Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Lion Druid
+	DESC:If choosing a domain, the lion shaman must choose from the Animal, Glory, Nobility, and Sun domains.|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Lion Druid
 
 
 
 Animal Companion
 	KEY:Animal Companion ~ Lion Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Lion Shaman
 	DESC:A lion shaman who chooses an animal companion must select a lion. If choosing a domain, the lion shaman must choose from the Animal, Glory, Nobility, and Sun domains.
 	DEFINE:AnimalCompanionLVL|0
@@ -3058,7 +3065,7 @@ Animal Companion
 Druid Domain
 	KEY:Druid Domain ~ Lion Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Lion Shaman
 	DESC:A lion shaman who chooses an animal companion must select a lion. If choosing a domain, the lion shaman must choose from the Animal, Glory, Nobility, and Sun domains.
 	BONUS:VAR|DruidAnimalAllowed,DruidGloryAllowed,DruidNobilityAllowed,DruidSunAllowed|1|TYPE=DruidDomain
@@ -3113,15 +3120,17 @@ Bonus Feat
 
 #
 CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
-	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Serpent Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Serpent Druid
+	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Serpent Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Serpent Druid
+	DESC:A serpent shaman who chooses an animal companion must select a snake.|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Serpent Druid
 
 CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
-	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Serpent Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Serpent Druid
+	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Serpent Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Serpent Druid
+	DESC:If choosing a domain, the serpent shaman must choose from the Animal, Charm, Trickery, and Water domains.|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Serpent Druid
 
 Animal Companion
 	KEY:Animal Companion ~ Serpent Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Serpent Shaman
 	DESC:A serpent shaman who chooses an animal companion must select a snake. If choosing a domain, the serpent shaman must choose from the Animal, Charm, Trickery, and Water domains.
 	DEFINE:AnimalCompanionLVL|0
@@ -3132,7 +3141,7 @@ Animal Companion
 Druid Domain
 	KEY:Druid Domain ~ Serpent Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Serpent Shaman
 	DESC:A serpent shaman who chooses an animal companion must select a snake. If choosing a domain, the serpent shaman must choose from the Animal, Charm, Trickery, and Water domains.
 	BONUS:VAR|DruidAnimalAllowed,DruidCharmAllowed,DruidTrickeryAllowed,DruidWaterAllowed|1|TYPE=DruidDomain
@@ -3187,15 +3196,17 @@ Bonus Feat
 
 # missing desc
 CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
-	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Wolf Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Wolf Druid
+	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Wolf Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Wolf Druid
+	DESC:A wolf shaman who chooses an animal companion must select a wolf.|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Wolf Druid
 
 CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
-	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Wolf Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Wolf Druid
+	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Wolf Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Wolf Druid
+	DESC:If choosing a domain, the wolf shaman must choose from the Animal, Community, Liberation, and Travel domains.|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Wolf Druid
 
 Animal Companion
 	KEY:Animal Companion ~ Wolf Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Wolf Shaman
 	DESC:A wolf shaman who chooses an animal companion must select a wolf. If choosing a domain, the wolf shaman must choose from the Animal, Community, Liberation, and Travel domains.
 	DEFINE:AnimalCompanionLVL|0
@@ -3206,7 +3217,7 @@ Animal Companion
 Druid Domain
 	KEY:Druid Domain ~ Wolf Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid
 	PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Wolf Shaman
 	DESC:A wolf shaman who chooses an animal companion must select a wolf. If choosing a domain, the wolf shaman must choose from the Animal, Community, Liberation, and Travel domains.
 	BONUS:VAR|DruidAnimalAllowed,DruidCommunityAllowed,DruidLiberationAllowed,DruidTravelAllowed|1|TYPE=DruidDomain
