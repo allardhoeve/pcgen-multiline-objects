@@ -917,6 +917,9 @@ Teleportation Circle.MOD
 
 
 #Witch Spells
+Arcane Mark.MOD
+	CLASSES:Witch=0
+
 Bleed.MOD
 	CLASSES:Witch=0
 
