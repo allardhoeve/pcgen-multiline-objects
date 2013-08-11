@@ -1495,10 +1495,18 @@ Dragon Shaman Bonus Feats
 	BONUS:ABILITYPOOL|Dragon Shaman Bonus Feat|DragonShamanBonusFeats
 
 #
+CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
+	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Dragon Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Dragon Shaman
+
+CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
+	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Dragon Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Dragon Shaman
+
+
+
 Animal Companion
 	KEY:Animal Companion ~ Dragon Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid.SpecialQuality
 	DEFINE:DruidAnimalTerrainDomainNotAllowed|1
 	DESC:If you choose an animal companion, you must select a crocodile (see page 54 of the Core Rulebook) or monitor lizard (see page 194 of the Bestiary). If you choose a domain, you must choose from the Air, Animal, Destruction, Earth, Fire, War, and Water domains.
 	DEFINE:AnimalCompanionLVL|0
@@ -1509,7 +1517,7 @@ Animal Companion
 Druid Domain
 	KEY:Druid Domain ~ Dragon Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond.DruidDomain
+	TYPE:ArchetypeDruid.SpecialQuality.DruidDomain
 	DEFINE:DruidAnimalTerrainDomainNotAllowed|1
 	DESC:If you choose an animal companion, you must select a crocodile (see page 54 of the Core Rulebook) or monitor lizard (see page 194 of the Bestiary). If you choose a domain, you must choose from the Air, Animal, Destruction, Earth, Fire, War, and Water domains.
 	BONUS:VAR|DruidAirAllowed,DruidAnimalAllowed,DruidDestructionAllowed,DruidEarthAllowed,DruidFireAllowed,DruidWarAllowed|1
@@ -2185,10 +2193,18 @@ Saurian Shaman Bonus Feats
 	BONUS:ABILITYPOOL|Saurian Shaman Bonus Feat|SaurianShamanBonusFeats
 
 #
+CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
+	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Saurian Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Saurian Shaman
+
+CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
+	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Saurian Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Saurian Shaman
+
+
+
 Animal Companion
 	KEY:Animal Companion ~ Saurian Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid.SpecialQuality
 	DEFINE:DruidAnimalTerrainDomainNotAllowed|1
 	DESC:If you choose an animal companion, you must select a dinosaur. If you choose a domain, you must choose from the Animal, Destruction, Fire, and War domains.
 	DEFINE:AnimalCompanionLVL|0
@@ -2199,7 +2215,7 @@ Animal Companion
 Druid Domain
 	KEY:Druid Domain ~ Saurian Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond.DruidDomain
+	TYPE:ArchetypeDruid.SpecialQuality.DruidDomain
 	DEFINE:DruidAnimalTerrainDomainNotAllowed|1
 	DESC:If you choose an animal companion, you must select a dinosaur. If you choose a domain, you must choose from the Animal, Destruction, Fire, and War domains.
 	BONUS:VAR|DruidAnimalAllowed,DruidDestructionAllowed,DruidFireAllowed,DruidWarAllowed|1|TYPE=DruidDomain
@@ -2255,10 +2271,18 @@ Shark Shaman Bonus Feats
 	BONUS:ABILITYPOOL|Shark Shaman Bonus Feat|SharkShamanBonusFeats
 
 #
+CATEGORY=Special Ability|Nature's Bond ~ Animal Companion.MOD
+	ABILITY:Special Ability|AUTOMATIC|Animal Companion ~ Shark Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Shark Shaman
+
+CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
+	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Shark Shaman|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Shark Shaman
+
+
+
 Animal Companion
 	KEY:Animal Companion ~ Shark Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond
+	TYPE:ArchetypeDruid.SpecialQuality
 	DEFINE:DruidAnimalTerrainDomainNotAllowed|1
 	DESC:If you choose an animal companion, you must select a shark. If you choose a domain, you must choose from the Animal, Death, War, and Water domains.
 	DEFINE:AnimalCompanionLVL|0
@@ -2270,7 +2294,7 @@ Animal Companion
 Druid Domain
 	KEY:Druid Domain ~ Shark Shaman
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.NatureBond.DruidDomain
+	TYPE:ArchetypeDruid.SpecialQuality.DruidDomain
 	DEFINE:DruidAnimalTerrainDomainNotAllowed|1
 	DESC:If you choose an animal companion, you must select a shark. If you choose a domain, you must choose from the Animal, Death, War, and Water domains.
 	BONUS:VAR|DruidAnimalAllowed,DruidDeathAllowed,DruidWarAllowed,DruidWaterAllowed|1|TYPE=DruidDomain
@@ -2336,10 +2360,15 @@ Storm Lord
 	SOURCEPAGE:p.40
 
 #
+CATEGORY=Special Ability|Nature's Bond ~ Druid Domain.MOD
+	ABILITY:Special Ability|AUTOMATIC|Druid Domain ~ Storm Druid|PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Storm Druid
+
+
+
 Druid Domain
 	KEY:Druid Domain ~ Storm Druid
 	CATEGORY:Special Ability
-	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary.NatureBond.DruidDomain
+	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary
 	DEFINE:DruidAnimalTerrainDomainNotAllowed|1
 	DEFINE:AnimalCompanionNotAllowed|1
 	DESC:You may not choose an animal companion. You must choose the Air or Weather domain, or the Cloud, Storm, or Wind subdomain.
