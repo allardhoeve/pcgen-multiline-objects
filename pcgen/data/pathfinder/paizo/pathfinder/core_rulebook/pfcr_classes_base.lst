@@ -526,7 +526,7 @@ CLASS:Druid
 
 ###Block: Nature Bond Choice
 1
-	BONUS:ABILITYPOOL|Nature Bond|1|!PREABILITY:1,CATEGORY=Archetype,TYPE.DruidNatureBond
+	BONUS:ABILITYPOOL|Nature Bond|1|PREABILITY:1,CATEGORY=Archetype,TYPE.DruidNatureBond
 
 ###Block: Domains
 1
