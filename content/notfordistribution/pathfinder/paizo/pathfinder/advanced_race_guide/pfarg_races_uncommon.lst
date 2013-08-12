@@ -34,7 +34,7 @@ Gillman
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
-	AUTO:LANG|Common,Aboleth
+	AUTO:LANG|Common|Aboleth
 	LANGBONUS:Aklo,Aquan,Draconic,Elven
 	BONUS:STAT|CON,CHA|2
 	BONUS:STAT|WIS|-2
@@ -51,7 +51,7 @@ Kitsune
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
-	AUTO:LANG|Common,Sylvan
+	AUTO:LANG|Common|Sylvan
 	LANGBONUS:Aklo,Celestial,Elven,Gnome,Tengu
 	BONUS:STAT|DEX,CHA|2
 	BONUS:STAT|STR|-2
@@ -68,7 +68,7 @@ Nagaji
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
-	AUTO:LANG|Common,Draconic
+	AUTO:LANG|Common|Draconic
 	LANGBONUS:Abyssal,Aklo,Celestial,Draconic,Giant,Infernal,Sylvan
 	BONUS:STAT|STR,CHA|2
 	BONUS:STAT|INT|-2
@@ -87,7 +87,7 @@ Samsaran
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
-	AUTO:LANG|Common,Samsaran
+	AUTO:LANG|Common|Samsaran
 	LANGBONUS:Abyssal,Aquan,Auran,Celestial,Draconic,Giant,Ignan,Infernal,Tengu,Terran
 	BONUS:STAT|WIS,INT|2
 	BONUS:STAT|CON|-2
@@ -140,7 +140,7 @@ Vanara
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
-	AUTO:LANG|Common,Vanaran
+	AUTO:LANG|Common|Vanaran
 	LANGBONUS:Aklo,Celestial,Elven,Gnome,Goblin,Sylvan
 	BONUS:STAT|DEX,WIS|2
 	BONUS:STAT|CHA|-2
@@ -157,7 +157,7 @@ Vishkanya
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
-	AUTO:LANG|Common,Vishkanya
+	AUTO:LANG|Common|Vishkanya
 	LANGBONUS:Aklo,Draconic,Elven,Goblin,Sylvan,Undercommon
 	BONUS:STAT|DEX,CHA|2
 	BONUS:STAT|WIS|-2
@@ -175,7 +175,7 @@ Wayang
 	MOVE:Walk,20
 	FACE:5
 	REACH:5
-	AUTO:LANG|Common,Wayang
+	AUTO:LANG|Common|Wayang
 	LANGBONUS:Abyssal,Aklo,Draconic,Goblin,Infernal,Samsaran,Tengu
 	BONUS:STAT|DEX,INT|2
 	BONUS:STAT|WIS|-2
@@ -190,7 +190,7 @@ Wayang
 
 # Bestiary I Creatures
 #Duergar	STARTFEATS:1	SIZE:M	MOVE:Walk,20		FACE:5	REACH:5	AUTO:LANG|Common,Dwarven,Undercommon		LANGBONUS:Aklo,Draconic,Giant,Goblin,Orc,Terran							BONUS:STAT|CON,WIS|2	BONUS:STAT|CHA|-4					RACETYPE:Humanoid	TYPE:Base.PC.Uncommon	RACESUBTYPE:Dwarf				CR:1/2		SOURCEPAGE:p.186
-#Merfolk	STARTFEATS:1	SIZE:M	MOVE:Walk,5,Swim,50	FACE:5	REACH:5	AUTO:LANG|Common,Aquan				LANGBONUS:Aboleth,Aklo,Draconic,Elven,Sylvan							BONUS:STAT|DEX,CON,CHA|2	LEGS:0					RACETYPE:Humanoid	TYPE:Base.PC.Uncommon	RACESUBTYPE:Aquatic			CR:1/2		SOURCEPAGE:p.194
+#Merfolk	STARTFEATS:1	SIZE:M	MOVE:Walk,5,Swim,50	FACE:5	REACH:5	AUTO:LANG|Common,Aquan				LANGBONUS:Aboleth,Aklo,Draconic,Elven,Sylvan								BONUS:STAT|DEX,CON,CHA|2	LEGS:0					RACETYPE:Humanoid	TYPE:Base.PC.Uncommon	RACESUBTYPE:Aquatic			CR:1/2		SOURCEPAGE:p.194
 #Svirfneblin	STARTFEATS:1	SIZE:S	MOVE:Walk,20		FACE:5	REACH:5	AUTO:LANG|Gnome,Undercommon			LANGBONUS:Aklo,Common,Draconic,Dwarven,Elven,Giant,Goblin,Orc,Terran			BONUS:STAT|DEX,WIS|2	BONUS:STAT|STR|-2	BONUS:STAT|CHA|-4		RACETYPE:Humanoid	TYPE:Base.PC.Uncommon	RACESUBTYPE:Gnome				CR:1/2		SOURCEPAGE:p.204
 # COMMENT: No movement rate given for svirfneblin.  Bestiary 1 gives 20 feet.
 #Grippli	STARTFEATS:1	SIZE:S	MOVE:Walk,30,Climb,20	FACE:5	REACH:5	AUTO:LANG|Common,Grippli				LANGBONUS:Boggard,Draconic,Elven,Gnome,Goblin,Sylvan						BONUS:STAT|DEX,WIS|2	BONUS:STAT|STR|-2					RACETYPE:Humanoid	TYPE:Base.PC.Uncommon	RACESUBTYPE:Grippli			CR:1/2		SOURCEPAGE:p.190
