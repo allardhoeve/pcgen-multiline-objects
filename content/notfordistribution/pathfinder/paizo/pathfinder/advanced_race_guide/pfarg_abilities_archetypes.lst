@@ -3286,6 +3286,7 @@ Unbreakable
 ###Block: Ironskin Monk Bonus Feats
 # Ability Name		Unique Key				Category of Ability	Type																	Visible	Required Ability				Required Class	Required Deitys Domain	Required Domain	Prohibited Feat		Multiple Requirements																										Required Race	Var. Min. Value		Define			Innate Spells			Description																																																																																																										Multiple?	Choose						Template	Move		Automatically Added to Inventory	Virtual Feat	Ability																																																																																																	Bonus to Ability Pool				Save checks bonus		Damage reduction	Bonus Number of Followers	Bonus to skill			Modify VAR					Allow Follower		Allowed Companions					Class Skill		Vision		Source Page	List of Known Class Spells by Level
 Power Attack
+	KEY:Ironskin Monk ~ Power Attack
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
@@ -3295,6 +3296,7 @@ Power Attack
 	VFEAT:Power Attack
 
 Improved Sunder
+	KEY:Ironskin Monk ~ Improved Sunder
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
@@ -3304,6 +3306,7 @@ Improved Sunder
 	VFEAT:Improved Sunder
 
 Greater Sunder
+	KEY:Ironskin Monk ~ Greater Sunder
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
@@ -3870,6 +3873,7 @@ Stone Self
 ###Block: Student of Stone Bonus Feats
 # Ability Name		Unique Key				Category of Ability	Type																					Visible	Required Ability									Restricted Ability							Required AL			Required Class	Required Domain		Prohibited Feat		Multiple Requirements																														Required Race	Required Stat	Var. Min. Value		Serves As				Define				Innate Spells						Description																																																																																																																																																																														Choose				Template	Virtual Feat				Ability																																																																			Remove Object			Bonus to Ability Pool				Bonus to skill						Bonus to skill point/L	Modify VAR									Allow Follower		Allowed Companions										Remove Class Skill	Class Skill													Cross-Class Skill			Source Page	List of Known Class Spells by Level
 Elemental Fist
+	KEY:Student of Stone ~ Elemental Fist
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
@@ -3879,6 +3883,7 @@ Elemental Fist
 	VFEAT:Elemental Fist (Acid)
 
 Shaitan Style
+	KEY:Student of Stone ~ Shaitan Style
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
@@ -3888,6 +3893,7 @@ Shaitan Style
 	VFEAT:Shaitan Style
 
 Shaitan Skin
+	KEY:Student of Stone ~ Shaitan Skin
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
@@ -3897,6 +3903,7 @@ Shaitan Skin
 	VFEAT:Shaitan Skin
 
 Shaitan Earthblast
+	KEY:Student of Stone ~ Shaitan Earthblast
 	CATEGORY:Special Ability
 	TYPE:MonkBonusFeat
 	VISIBLE:DISPLAY
@@ -5106,6 +5113,7 @@ Watery Summons
 ###Block: Wave Warden Bonus Feats
 # Ability Name		Unique Key				Category of Ability	Type																					Visible	Required Ability						Required Class	Prohibited Feat			Multiple Requirements																															Required Race	Description																																																																											Virtual Feat							Ability																																															Remove Object					Bonus to Ability Pool				Add to base move				Class Skill				Cross-Class Skill		Source Page	List of Known Class Spells by Level																										List of Class Spells by Level																																						VFEAT:Incremental Elemental Assault
 Dodge
+	KEY:Wave Warden Feat ~ Dodge
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5116,6 +5124,7 @@ Dodge
 	VFEAT:Dodge|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Mobility
+	KEY:Wave Warden Feat ~ Mobility
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5126,6 +5135,7 @@ Mobility
 	VFEAT:Mobility|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Net Adept
+	KEY:Wave Warden Feat ~ Net Adept
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5136,6 +5146,7 @@ Net Adept
 	VFEAT:Net Adept |PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Net and Trident
+	KEY:Wave Warden Feat ~ Net and Trident
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5146,6 +5157,7 @@ Net and Trident
 	VFEAT:Net and Trident|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Net Maneuvering
+	KEY:Wave Warden Feat ~ Net Maneuvering
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5156,6 +5168,7 @@ Net Maneuvering
 	VFEAT:Net Maneuvering|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Precise Shot
+	KEY:Wave Warden Feat ~ Precise Shot
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5166,6 +5179,7 @@ Precise Shot
 	VFEAT:Precise Shot|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Rapid Reload (Crossbow (Hand))
+	KEY:Wave Warden Feat ~ Rapid Reload (Crossbow (Hand))
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5175,6 +5189,7 @@ Rapid Reload (Crossbow (Hand))
 	VFEAT:Rapid Reload (Crossbow (Hand))|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Rapid Reload (Crossbow (Light))
+	KEY:Wave Warden Feat ~ Rapid Reload (Crossbow (Light))
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5184,6 +5199,7 @@ Rapid Reload (Crossbow (Light))
 	VFEAT:Rapid Reload (Crossbow (Light))|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Rapid Reload (Crossbow (Heavy))
+	KEY:Wave Warden Feat ~ Rapid Reload (Crossbow (Heavy))
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5193,6 +5209,7 @@ Rapid Reload (Crossbow (Heavy))
 	VFEAT:Rapid Reload (Crossbow (Heavy))|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Sea Hunter
+	KEY:Wave Warden Feat ~ Sea Hunter
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5203,6 +5220,7 @@ Sea Hunter
 	VFEAT:Sea Hunter|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Two-Weapon Fighting
+	KEY:Wave Warden Feat ~ Two-Weapon Fighting
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5213,6 +5231,7 @@ Two-Weapon Fighting
 	VFEAT:Two-Weapon Fighting|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Improved Two-Weapon Fighting
+	KEY:Wave Warden Feat ~ Improved Two-Weapon Fighting
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5223,6 +5242,7 @@ Improved Two-Weapon Fighting
 	VFEAT:Improved Two-Weapon Fighting|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Net Trickery
+	KEY:Wave Warden Feat ~ Net Trickery
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5233,6 +5253,7 @@ Net Trickery
 	VFEAT:Net Trickery|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Spring Attack
+	KEY:Wave Warden Feat ~ Spring Attack
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5243,6 +5264,7 @@ Spring Attack
 	VFEAT:Spring Attack|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Greater Two-Weapon Fighting
+	KEY:Wave Warden Feat ~ Greater Two-Weapon Fighting
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5253,6 +5275,7 @@ Greater Two-Weapon Fighting
 	VFEAT:Greater Two-Weapon Fighting|PREVARLT:var("COUNT[EQTYPE.ARMOR.EQUIPPED.IS.HEAVY]"),1
 
 Improved Precise Shot
+	KEY:Wave Warden Feat ~ Improved Precise Shot
 	CATEGORY:Special Ability
 	TYPE:WaveWardenBonusFeat
 	VISIBLE:DISPLAY
@@ -5362,7 +5385,6 @@ Poison Immunity
 	TYPE:ArchetypeAbility.SpecialQuality.Extraordinary.AugmentedFormSelection
 	DESC:The druid gains immunity to all poisons.
 	PREABILITY:1,CATEGORY=Special Ability,Poisonous Sting ~ Naga Aspirant,Venomous Bite ~ Naga Aspirant
-	1
 	SOURCEPAGE:p.197
 
 Poisonous Sting
