@@ -1,4 +1,4 @@
-AGESET:0|Adulthood
+AGESET:0|Adult
 
 RACENAME:Aasimar%
 	CLASS:Barbarian,Rogue,Sorcerer,TYPE=Intuitive[BASEAGEADD:4d6]|Bard,Fighter,Paladin,Ranger,TYPE=Self-Taught[BASEAGEADD:6d6]|Cleric,Druid,Monk,Wizard,TYPE=Trained[BASEAGEADD:8d6]
@@ -98,7 +98,7 @@ RACENAME:Tengu%
 
 
 
-AGESET:1|Middle Age
+AGESET:1|Middle-Aged
 
 #BONUS:STAT|STR,CON,DEX|-1	BONUS:STAT|INT,WIS,CHA|1
 RACENAME:Aasimar%
