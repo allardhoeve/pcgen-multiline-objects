@@ -114,6 +114,7 @@ True Dragon Defaults
 	ABILITY:Special Ability|AUTOMATIC|Spell Resistance ~ Dragon|PREVARGTEQ:DragonAge,5
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,STR/2)
 	BONUS:WEAPONPROF=Tail Slap|DAMAGE|STR
+	ABILITY:Internal|AUTOMATIC|Size_Master
 
 
 
