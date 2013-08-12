@@ -2,6 +2,16 @@
 
 Imperial Dragon Defaults
 	CATEGORY:Internal
+	DEFINE:DragonFlight|1
+	ABILITY:Internal|AUTOMATIC|True Dragon Defaults
+
+
+
+
+
+
+
+
 
 
 
@@ -11,6 +21,7 @@ Imperial Dragon Defaults
 Default Traits ~ Forest Dragon
 	CATEGORY:Internal
 	ABILITY:Internal|AUTOMATIC|Imperial Dragon Defaults
+	
 
 
 
