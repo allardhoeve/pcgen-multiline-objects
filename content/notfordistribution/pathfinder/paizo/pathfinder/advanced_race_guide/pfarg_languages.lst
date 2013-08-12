@@ -9,9 +9,9 @@ SOURCELONG:Advanced Race Guide
 
 
 # Language	Type
-#Catfolk	TYPE:Spoken.Written.Read
-#D'ziriak	TYPE:Spoken
-#Grippli	TYPE:Spoken.Written.Read
+Catfolk
+	TYPE:Spoken.Written.Read
+
 # Language	Type
 Samsaran
 	TYPE:Spoken.Written.Read
@@ -32,6 +32,8 @@ Wayang
 
 
 
+#D'ziriak	TYPE:Spoken
+#Grippli	TYPE:Spoken.Written.Read
 #Dwarven - PFCR
 #Elven - PFCR
 #Gnome - PFCR
