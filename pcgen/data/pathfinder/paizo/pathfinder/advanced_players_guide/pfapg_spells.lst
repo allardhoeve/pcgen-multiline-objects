@@ -1007,7 +1007,7 @@ Detonate
 	DURATION:1 round, then instantaneous
 	SAVEINFO:Reflex half
 	SPELLRES:Yes
-	DESC:Inflicts (CASTERLEVEL)d8 energy damage to all creatures within 15 ft.
+	DESC:Inflicts (min(CASTERLEVEL,10))d8 energy damage to all creatures within 15 feet, and half that amount to targets past 15 feet but within 30 feet. 
 	SOURCEPAGE:p.215
 
 Devolution
