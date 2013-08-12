@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:21:14 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -9,7 +9,7 @@ SOURCELONG:Advanced Race Guide
 
 
 ###Block: Plant Companion Abilities
-# Ability Name						Unique Key							Category of Ability		Type												Required Ability								Restricted Ability											Required Race				Required Stat	Var. Min. Value			Define					Innate Spells											Description																																																																																			Cost		Source Page		Key
+# Ability Name			Unique Key					Category of Ability		Type								Visible	Define					Description																Ability
 Poison
 	KEY:Poison ~ Puffball
 	CATEGORY:Special Ability
@@ -24,10 +24,10 @@ Double Damage
 	DESC:Sapling treant attacks do double damage against objects
 
 Constrict
+	KEY:Constrict ~ Crawling Vine
 	CATEGORY:Special Ability
 	TYPE:RaceAbility.SpecialAttack.SpecialAbility
 	DESC:1d6 bludgeoning with a successful grapple check
-	KEY:Constrict ~ Crawling Vine
 
 Plant Companion Advancement
 	CATEGORY:Special Ability
@@ -43,6 +43,7 @@ Plant Companion Advancement
 
 
 ###Block: Shaitan Binder Eidolon Abilities
+# Ability Name						Unique Key							Category of Ability		Type									Required Ability												Required Race					Required Stat	Var. Min. Value			Define						Innate Spells																Description																																																																																								Modify VAR							Cost		Source, Long Desc.	Source, Short Desc.	Source Page
 Major Magic ~ Glitterdust (1/day)
 	KEY:Evolution_Major_Glitterdust_1
 	CATEGORY:Special Ability
@@ -131,66 +132,61 @@ Earth Glide
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.ModifyMovement.Extraordinary
 	DESC:A burrowing Shaitan Binder Eidolon can pass through dirt, gravel, or other loose or porous solid matter as easily as a fish swims through water.  It cannot use this ability to pass through a solid barrier such as a stone or brick wall.  Its burrowing leaves behind no tunnel or hole, nor does it create any ripple or other sign of its presence.  A move earth spell cast on an area containing a burrowing Eidolon flings the Eidolon back 30 feet, stunning the creature for 1 round unless it succeeds on a DC 15 Fortitude save.
-	SOURCEPAGE:p.120
 	SOURCELONG:Bestiary
 	SOURCESHORT:B1
+	SOURCEPAGE:p.120
 
 
 
 ###Block: Shaitan Binder Eidolon Stat Bonuses
+# Ability Name		Unique Key							Category of Ability		Type						Required Race					Description															Stat bonus
 Strength Bonus
 	KEY:Strength Bonus ~ Shaitan Binder Eidolon
 	CATEGORY:Special Ability
 	TYPE:ShaitanBinderEidolonStatBonus
 	PRERACE:1,Shaitan Binder Eidolon (Biped)
-	BONUS:STAT|STR|2
 	DESC:Shaitan Binder Eidolons gain +2 to 1 ability score as long as they stay in biped form.
-	
+	BONUS:STAT|STR|2
 
 Dexterity Bonus
 	KEY:Dexterity Bonus ~ Shaitan Binder Eidolon
 	CATEGORY:Special Ability
 	TYPE:ShaitanBinderEidolonStatBonus
 	PRERACE:1,Shaitan Binder Eidolon (Biped)
-	BONUS:STAT|DES|2
 	DESC:Shaitan Binder Eidolons gain +2 to 1 ability score as long as they stay in biped form.
-	
+	BONUS:STAT|DES|2
 
 Constitution Bonus
 	KEY:Constitution Bonus ~ Shaitan Binder Eidolon
 	CATEGORY:Special Ability
 	TYPE:ShaitanBinderEidolonStatBonus
 	PRERACE:1,Shaitan Binder Eidolon (Biped)
-	BONUS:STAT|CON|2
 	DESC:Shaitan Binder Eidolons gain +2 to 1 ability score as long as they stay in biped form.
-	
+	BONUS:STAT|CON|2
 
 Intelligence Bonus
 	KEY:Intelligence Bonus ~ Shaitan Binder Eidolon
 	CATEGORY:Special Ability
 	TYPE:ShaitanBinderEidolonStatBonus
 	PRERACE:1,Shaitan Binder Eidolon (Biped)
-	BONUS:STAT|INT|2
 	DESC:Shaitan Binder Eidolons gain +2 to 1 ability score as long as they stay in biped form.
-	
+	BONUS:STAT|INT|2
 
 Wisdom Bonus
 	KEY:Wisdom Bonus ~ Shaitan Binder Eidolon
 	CATEGORY:Special Ability
 	TYPE:ShaitanBinderEidolonStatBonus
 	PRERACE:1,Shaitan Binder Eidolon (Biped)
-	BONUS:STAT|WIS|2
 	DESC:Shaitan Binder Eidolons gain +2 to 1 ability score as long as they stay in biped form.
-	
+	BONUS:STAT|WIS|2
 
 Charisma Bonus
 	KEY:Charisma Bonus ~ Shaitan Binder Eidolon
 	CATEGORY:Special Ability
 	TYPE:ShaitanBinderEidolonStatBonus
 	PRERACE:1,Shaitan Binder Eidolon (Biped)
-	BONUS:STAT|CHA|2
 	DESC:Shaitan Binder Eidolons gain +2 to 1 ability score as long as they stay in biped form.
-	
+	BONUS:STAT|CHA|2
 
 
 
@@ -209,30 +205,31 @@ Charisma Bonus
 #Companion Advancement (Dinosaur (Pteranodon))		CATEGORY:Special Ability		TYPE:CompChoice		VISIBLE:DISPLAY		PRERACE:1,Companion (Dinosaur (Pteranodon))																					BONUS:SIZEMOD|NUMBER|1
 #Companion Advancement (Dinosaur (Stegosaurus))		CATEGORY:Special Ability		TYPE:CompChoice		VISIBLE:DISPLAY		PRERACE:1,Companion (Dinosaur (Stegosaurus))	ABILITY:Special Ability|AUTOMATIC|Trip						BONUS:COMBAT|AC|1|TYPE=NaturalArmor.REPLACE	BONUS:SIZEMOD|NUMBER|1
 #Companion Advancement (Dinosaur (Triceratops))		CATEGORY:Special Ability		TYPE:CompChoice		VISIBLE:DISPLAY		PRERACE:1,Companion (Dinosaur (Triceratops))	ABILITY:Special Ability|AUTOMATIC|Powerful Charge				BONUS:COMBAT|AC|1|TYPE=NaturalArmor.REPLACE	BONUS:SIZEMOD|NUMBER|1						BONUS:VAR|PowerfulChargeDamageDice|4	BONUS:VAR|PowerfulChargeDamageDieSize|6	BONUS:VAR|PowerfulChargeBonusDamage|STR*2
+# Ability Name						Category of Ability		Type			Visible		Required Race					Ability											Combat bonus										Adjust PC Size						Stat bonus																					Modify VAR										Weapon prof. bonus
 Companion Advancement (Carnivorous Flower)
 	CATEGORY:Special Ability
 	TYPE:CompChoice
 	VISIBLE:DISPLAY
 	PRERACE:1,Companion (Carnivorous Flower)
+	ABILITY:Special Ability|AUTOMATIC|Rage|PREVARGTEQ:MasterLevel,4
 	BONUS:SIZEMOD|NUMBER|1|PREVARGTEQ:MasterLevel,4
-	BONUS:WEAPONPROF=Bite|DAMAGESIZE|1|PREVARGTEQ:MasterLevel,4
 	BONUS:STAT|STR|4|PREVARGTEQ:MasterLevel,4
 	BONUS:STAT|DEX|-2|PREVARGTEQ:MasterLevel,4
 	BONUS:STAT|CON|2|PREVARGTEQ:MasterLevel,4
-	ABILITY:Special Ability|AUTOMATIC|Rage|PREVARGTEQ:MasterLevel,4
 	BONUS:VAR|RageLVL|2
+	BONUS:WEAPONPROF=Bite|DAMAGESIZE|1|PREVARGTEQ:MasterLevel,4
 
 Companion Advancement (Crawling Vine)
 	CATEGORY:Special Ability
 	TYPE:CompChoice
 	VISIBLE:DISPLAY
 	PRERACE:1,Companion (Crawling Vine)
-	BONUS:SIZEMOD|NUMBER|1|PREVARGTEQ:MasterLevel,4
+	ABILITY:Special Ability|AUTOMATIC|Constrict|PREVARGTEQ:MasterLevel,4
 	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.STACK|PREVARGTEQ:MasterLevel,4
+	BONUS:SIZEMOD|NUMBER|1|PREVARGTEQ:MasterLevel,4
 	BONUS:STAT|STR|8|PREVARGTEQ:MasterLevel,4
 	BONUS:STAT|DEX|-2|PREVARGTEQ:MasterLevel,4
 	BONUS:STAT|CON|4|PREVARGTEQ:MasterLevel,4
-	ABILITY:Special Ability|AUTOMATIC|Constrict|PREVARGTEQ:MasterLevel,4
 	BONUS:VAR|ConstrictDieSize|6
 	BONUS:VAR|ConstrictBonusDamage|STR
 
@@ -249,16 +246,17 @@ Companion Advancement (Sapling Treant)
 	TYPE:CompChoice
 	VISIBLE:DISPLAY
 	PRERACE:1,Companion (Sapling Treant)
-	BONUS:SIZEMOD|NUMBER|1|PREVARGTEQ:MasterLevel,4
+	ABILITY:Special Ability|AUTOMATIC|Double Damage ~ Sapling Treant
 	BONUS:COMBAT|AC|2|TYPE=NaturalArmor.STACK|PREVARGTEQ:MasterLevel,4
+	BONUS:SIZEMOD|NUMBER|1|PREVARGTEQ:MasterLevel,4
 	BONUS:STAT|STR|8|PREVARGTEQ:MasterLevel,4
 	BONUS:STAT|CON|4|PREVARGTEQ:MasterLevel,4
 	BONUS:STAT|DEX|-2|PREVARGTEQ:MasterLevel,4
-	ABILITY:Special Ability|AUTOMATIC|Double Damage ~ Sapling Treant
 
 
 
 ###Block: Wild Caller Eidolon ability mods
+# Ability Name										Unique Key			Category of Ability		Type									Required Race					Prohibited Race																Stackable?	Multiple?	Choose													Bonus to skill
 CATEGORY=Special Ability|Evolution_Magic_Attacks.MOD
 	!PRERACE:1,Wild Caller Eidolon (Biped),Wild Caller Eidolon (Quadruped),Wild Caller Eidolon (Serpentine)
 
@@ -385,6 +383,4 @@ CATEGORY=Special Ability|Evolution_Major_Magic.MOD
 
 CATEGORY=Special Ability|Evolution_Ultimate_Magic.MOD
 	!PRERACE:1,Wild Caller Eidolon (Biped),Wild Caller Eidolon (Quadruped),Wild Caller Eidolon (Serpentine)
-
-
 

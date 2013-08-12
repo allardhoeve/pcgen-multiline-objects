@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:00:42 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -18,6 +18,7 @@ SOURCELONG:Advanced Race Guide
 #Ancient Enmity		KEY:Ancient Enmity ~ Dwarf		CATEGORY:Special Ability	TYPE:RacialTraits.SpecialAttack.Extraordinary.DwarfRacialTrait.DwarfHatred								PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Ancient Enmity ~ Dwarf],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.DwarfHatred]									DESC:Dwarves have long been in conflict with elves, especially the hated drow. Dwarves with this racial trait receive a +1 bonus on attack rolls against humanoid creatures of the elf subtype.																																																																																																																																													COST:0	SOURCEPAGE:p.11
 #Craftsman			KEY:Craftsman ~ Dwarf			CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.Extraordinary.DwarfRacialTrait.DwarfGreed								PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Craftsman ~ Dwarf],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.DwarfGreed]										DESC:Dwarves are known for their superior craftsmanship when it comes to metal and stone works. Dwarves with this racial trait receive a +2 racial bonus on all Craft or Profession checks that create objects from metal or stone.																																																																																																																																							COST:0	SOURCEPAGE:p.11
 #Deep Warrior		KEY:Deep Warrior ~ Dwarf		CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.Extraordinary.DwarfRacialTrait.DwarfDefensiveTraining						PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Deep Warrior ~ Dwarf],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.DwarfDefensiveTraining]							DESC:Dwarves with this racial trait grew up facing the abominations that live deep beneath the surface. They receive a +2 dodge bonus to AC against monsters of the aberration type and a +2 racial bonus to their CMB on attempts made to grapple such creatures (or to continue a grapple).																																																																																																																													COST:0	SOURCEPAGE:p.11
+# Ability Name		Unique Key					Category of Ability		Type																				Multiple Requirements																											Description																																																																													Automatically Gained Language	Bonus to skill									Modify VAR									Add to vision			Cost		Source Page		Aspects									More language
 Giant Hunter
 	KEY:Giant Hunter ~ Dwarf
 	CATEGORY:Special Ability
@@ -123,7 +124,7 @@ Wyrmscourged
 
 
 ###Block: Elf Racial Trait Abilities
-# Ability Name		Unique Key					Category of Ability		Type																Multiple Requirements																								Innate Spells																Description																																																																															Multiple?	Choose																		Selections	Template				Automatically Gained Weapon Prof.		Ability						Combat bonus					Bonus to DC				Bonus to skill													Modify VAR																Vision						Cost		Source Page		Aspects
+# Ability Name		Unique Key						Category of Ability		Type														Visible		Multiple Requirements																				Innate Spells																Description																																																																															Ability									Bonus to Ability Pool					Combat bonus					Bonus to skill													Modify VAR						Vision						Cost		Source Page		Aspects
 Arcane Focus
 	KEY:Arcane Focus ~ Elf
 	CATEGORY:Special Ability
@@ -235,6 +236,7 @@ Urbanite
 ###Block: Gnome Racial Trait abilities	POOL:5
 # Ability Name					Unique Key				Category of Ability		Type															Multiple Requirements																									Innate Spells																			Description																																																																																																																																				Multiple?	Choose				Selections	Bonus to Ability Pool					Caster level				Bonus to DC				Bonus to skill							Modify VAR										Vision						Cost		Source Page		Aspects
 #Academician						KEY:Academician ~ Gnome		CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.GnomeRacialTrait.GnomeObsessive					PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Academician ~ Gnome],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.GnomeObsessive]																												DESC:Some gnomes are more academically inclined than their kin. Gnomes with this racial trait gain a +2 bonus on any one Knowledge skill.																																																																																																									!PREABILITY:1,CATEGORY=Special Ability,Academician ~ Gnome					MULT:YES			CHOOSE:SKILL|TYPE=Knowledge		SELECT:1																				BONUS:SKILL|%LIST|2																								COST:0	SOURCEPAGE:p.15
+# Ability Name					Unique Key				Category of Ability		Type															Multiple Requirements																									Innate Spells																			Description																																																																				Multiple?	Choose			Selections	Bonus to Ability Pool					Bonus to DC				Bonus to skill					Vision						Cost		Source Page		Aspects
 Bond of the Land
 	KEY:Bond of the Land ~ Gnome
 	CATEGORY:Special Ability
@@ -389,6 +391,7 @@ Knack With Poison
 # Ability Name	Unique Key					Category of Ability		Type																Required Ability													Multiple Requirements																									Define						Innate Spells									Description																																																												Template				Ability								Bonus to Ability Pool				Save checks bonus		Bonus to skill						Modify VAR													Vision						Cost		Source Page
 #Ancestral Arms	KEY:Ancestral Arms ~ Half-Elf		CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.HalfElfRacialTrait.HalfElfAdaptability																				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Ancestral Arms ~ Half-Elf],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.HalfElfAdaptability]					DEFINE:BypassExoticWeaponBABRequirement|0												DESC:Some half-elves receive training in an unusual weapon. Half-elves with this racial trait receive Exotic Weapon Proficiency or Martial Weapon Proficiency with one weapon as a bonus feat at 1st level. This racial trait replaces the adaptability racial trait.																																BONUS:ABILITYPOOL|Half-Elf Bonus Weapon|1													BONUS:VAR|BypassExoticWeaponBABRequirement|1|!PREFEAT:1,Exotic Weapon Proficiency								COST:0	SOURCEPAGE:p.17
 #Arcane Training	KEY:Arcane Training ~ Half-Elf	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.HalfElfRacialTrait.HalfElfMultitalented				PREABILITY:1,CATEGORY=Special Ability,Bard,Sorceror,Wizard,Alchemist,Summoner,Witch,Magus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Arcane Training ~ Half-Elf],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.HalfElfMultitalented]																							DESC:Half-elves occasionally seek tutoring to help them master the magic in their blood. Half-elves with this racial trait have only one favored class and it must be an arcane spellcasting class. They can use spell trigger and spell completion items for their favored class as if 1 level higher (or as a 1st-level character if they have no levels in that class).																																																							COST:0	SOURCEPAGE:p.17
+# Ability Name	Unique Key				Category of Ability		Type																Multiple Requirements																								Innate Spells									Description																																																				Ability								Bonus to skill						Vision						Cost		Source Page
 Drow Blooded
 	KEY:Drow Blooded ~ Half-Elf
 	CATEGORY:Special Ability
@@ -453,7 +456,7 @@ Bonus Skill Point
 
 
 ###Block: Half-Orc Racial Trait Abilities
-# Ability Name		Unique Key					Category of Ability		Type															Multiple Requirements																									Description																																																													Automatically Gained Feat	Automatically Gained Weapon Prof.	Save checks bonus			Bonus to skill																					Bonus to skill point/L		Modify VAR			Change Weapon Prof. Category				Vision					Cost		Source Page		Natural Attacks								Aspects
+# Ability Name		Unique Key					Category of Ability		Type													Multiple Requirements																						Description																																										Automatically Gained Feat	Automatically Gained Weapon Prof.	Bonus to skill						Bonus to skill point/L		Add to vision			Vision					Cost		Source Page
 Acute Darkvision
 	KEY:Acute Darkvision ~ Half-Orc
 	CATEGORY:Special Ability
@@ -521,7 +524,7 @@ Skilled
 
 
 ###Block: Halfling Racial Trait Abilities
-# Ability Name	Unique Key					Category of Ability		Type																Multiple Requirements																									Define									Description																																																																																									Multiple?	Choose								Selections	Combat bonus			Add to base move			Bonus to skill						Class Skill			Cost		Source Page		Aspects										More language
+# Ability Name	Unique Key				Category of Ability		Type																Multiple Requirements																									Define									Description																																																																																									Multiple?	Choose			Selections	Add to base move			Bonus to skill						Class Skill			Cost		Source Page		More language
 Adaptable Luck
 	KEY:Adaptable Luck ~ Halfling
 	CATEGORY:Special Ability
@@ -592,7 +595,7 @@ Shiftless
 
 
 ###Block: Human Racial Trait Abilities
-# Ability Name		Unique Key					Category of Ability		Type											Multiple Requirements																				Description																																																													Bonus to Ability Pool					Cost		Source Page
+# Ability Name		Unique Key					Category of Ability		Type													Multiple Requirements																						Description																																																													Bonus to Ability Pool					Bonus to skill			Cost		Source Page
 Adoptive Parentage
 	KEY:Adoptive Parentage ~ Human
 	CATEGORY:Special Ability
@@ -647,16 +650,17 @@ Silver Tongued
 
 
 ###Block: Human Focused Study bonus feat
+# Ability Name		Unique Key					Category of Ability		Type					Visible		Required Ability								Stackable?	Multiple?	Choose														Selections	Virtual Feat			Cost
 Focused Study Feat
 	KEY:Feat ~ Human Focused Study
 	CATEGORY:Special Ability
 	TYPE:HumanFocusedStudyFeat
-	PREABILITY:1,CATEGORY=Special Ability,Focused Study ~ Human
 	VISIBLE:DISPLAY
-	MULT:YES
+	PREABILITY:1,CATEGORY=Special Ability,Focused Study ~ Human
 	STACK:NO
-	SELECT:1
+	MULT:YES
 	CHOOSE:SKILL|TYPE=Charisma|TYPE=Dexterity|TYPE=Intelligence|TYPE=Strength|TYPE=Wisdom
+	SELECT:1
 	VFEAT:Skill Focus (%LIST)
 	COST:1
 
@@ -664,6 +668,7 @@ Focused Study Feat
 
 ###Block: Heart of the... abilities
 #Heart of the Fields		KEY:Heart of the Fields ~ Human	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.HumanRacialTrait.HumanSkilled.HeartAbility											PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Heart of the Fields ~ Human],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.HumanSkilled]						DESC:Humans born in rural areas are used to hard labor. They gain a bonus equal to half their character level to any one Craft or Profession skill, and once per day they may ignore an effect that would cause them to become fatigued or exhausted.																													MULT:YES		CHOOSE:SKILL|Craft%|Profession%	SELECT:1																																							BONUS:SKILL|%LIST|TL/2																																															COST:0	SOURCEPAGE:p.23
+# Ability Name		Unique Key					Category of Ability		Type													Multiple Requirements																					Description																																																											Bonus to skill																											Modify VAR					Cost		Source Page		Aspects
 Heart of the Mountains
 	KEY:Heart of the Mountain ~ Human
 	CATEGORY:Special Ability
@@ -723,7 +728,7 @@ Heart of the Sun
 
 ###Block: Adoptive Parentage Options (a few)
 # This is by no means an exhaustive list.  Abilities granted are subject to DM approval so feel free to add your own.
-# Ability Name			Unique Key					Category of Ability		Type													Required Ability								Multiple Requirements																						Required Race	Description																																																																				Multiple?	Choose					Selections	Automatically Gained Feat														Automatically Gained Language	Automatically Gained Weapon Prof.				Bonus to Ability Pool			Bonus to skill																											Modify VAR					Weapon prof. bonus						Change Weapon Prof. Category		Cost		Source Page		Aspects
+# Ability Name			Category of Ability		Type					Required Ability									Required Race	Description							Automatically Gained Language	Automatically Gained Weapon Prof.				Weapon prof. bonus						Change Weapon Prof. Category		Cost		Source Page
 Adoptive Parentage (Dwarf)
 	CATEGORY:Special Ability
 	TYPE:AdoptiveParentageRace
@@ -821,7 +826,7 @@ Heroic
 
 
 ###Block: Fast Learner feat favored class bonus
-# Ability Name						Category of Ability		Type				Visible		Required Feat		Prohibited Feat		Description																Stackable?	Multiple?	Choose		Ability
+# Ability Name						Category of Ability		Type				Visible		Required Feat		Prohibited Feat		Description																Stackable?	Multiple?	Choose														Bonus to HP			Bonus to skill rank
 Fast Learner Bonus
 	CATEGORY:Special Ability
 	TYPE:FavoredClassBonus
@@ -830,8 +835,8 @@ Fast Learner Bonus
 	DESC:Gain both +1 hit point and +1 skill rank.  Only available if you've taken the Fast Learner feat.
 	STACK:YES
 	MULT:YES
-	BONUS:HP|CURRENTMAX|1
 	CHOOSE:SKILL|TYPE=Charisma|TYPE=Dexterity|TYPE=Intelligence|TYPE=Strength|TYPE=Wisdom
+	BONUS:HP|CURRENTMAX|1
 	BONUS:SKILLRANK|LIST|1
 
 CATEGORY=Special Ability|Bonus Hit Point.MOD
@@ -843,11 +848,12 @@ CATEGORY=Special Ability|Bonus Skill Point.MOD
 
 
 ###Block: Human Focused Study bonus feat
+# Ability Name		Category of Ability		Type				Stackable?	Multiple?	Choose														Automatically Gained Feat
 Focused Study Feat
 	CATEGORY:Special Ability
 	TYPE:FocusedStudyFeat
-	MULT:YES
 	STACK:NO
+	MULT:YES
 	CHOOSE:SKILL|TYPE=Charisma|TYPE=Dexterity|TYPE=Intelligence|TYPE=Strength|TYPE=Wisdom
 	AUTO:FEAT|Skill Focus(%CHOICE)
 

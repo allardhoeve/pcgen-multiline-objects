@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:00:42 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -10,16 +10,17 @@ SOURCELONG:Advanced Race Guide
 
 # Race Name	Starting Feats	Size		Move			Face/Space	Reach		Automatic Languages	Bonus Languages											Stat bonus						Main Race Type	Race Subtype		Type				Challenge Rating	Source Page
 #Catfolk	STARTFEATS:1	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5	AUTO:LANG|Common,Catfolk	LANGBONUS:Elven,Gnoll,Gnome,Goblin,Halfling,Orc,Sylvan				BONUS:STAT|DEX,CHA|2	BONUS:STAT|WIS|-2	RACETYPE:Humanoid	RACESUBTYPE:Catfolk	TYPE:Base.PC.Featured	CR:1/2		SOURCEPAGE:p.91
+# Race Name	Starting Feats	Size		Move			Face/Space	Reach		Bonus Languages											Stat bonus						Automatically Gained Language	Main Race Type	Race Subtype		Type				Challenge Rating	Source Page		SORTKEY
 Ratfolk
 	STARTFEATS:1
 	SIZE:S
 	MOVE:Walk,20
 	FACE:5
 	REACH:5
-	AUTO:LANG|Common
 	LANGBONUS:Aklo,Draconic,Dwarven,Gnoll,Gnome,Goblin,Halfling,Orc,Undercommon
 	BONUS:STAT|DEX,INT|2
 	BONUS:STAT|STR|-2
+	AUTO:LANG|Common
 	RACETYPE:Humanoid
 	RACESUBTYPE:Ratfolk
 	TYPE:Base.PC.Featured
@@ -49,6 +50,7 @@ Ratfolk
 #Tiefling	STARTFEATS:1	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5	AUTO:LANG|Common			LANGBONUS:Abyssal,Draconic,Dwarven,Elven,Gnome,Goblin,Halfling,Infernal,Orc	BONUS:STAT|DEX,INT|2	BONUS:STAT|CHA|-2			RACETYPE:Outsider	TYPE:Base.PC.Featured	RACESUBTYPE:Native		CR:1/2		SOURCEPAGE:p.169
 #
 ###Block: Mods to change the sort order
+# Race Name		SORTKEY
 Aasimar.MOD
 	SORTKEY:a_base_pc
 

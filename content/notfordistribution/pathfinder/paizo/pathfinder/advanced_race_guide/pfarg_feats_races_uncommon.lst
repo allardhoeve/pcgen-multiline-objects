@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author:tripleduck $ -- Sat Jun 29 23:06:31 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author:tripleduck $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -52,7 +52,7 @@ Lingering Invisibility
 
 
 ##Block: Gripplis Feats
-# Feat Name				Type			Required Ability							Required Feat			Required Race		Required Skill		Required Stat	Description																	Stackable?	Multiple?	Choose		Bonus to Ability Pool				Add to base move		Modify VAR						Source Page		Description of the Benefits																																																																																																							BENEFITS
+# Feat Name				Type			Required Ability							Required Feat			Required Race			Required Skill		Required Stat	Var. Must Be Lower	Define			Description																	Stackable?	Multiple?	Choose		Ability									Add to base move		Modify VAR						Source Page		Description of the Benefits
 Agile Tongue
 	TYPE:Genaral
 	PRERACE:1,Grippli
@@ -63,21 +63,20 @@ Agile Tongue
 
 
 ##Block: Kitsune Feats
-# Feat Name				Type			Required Ability							Required Feat			Required Race		Required Skill		Required Stat	Description																	Stackable?	Multiple?	Choose		Bonus to Ability Pool				Add to base move		Modify VAR						Source Page		Description of the Benefits																																																																																																							BENEFITS
+# Feat Name				Type			Required Ability							Required Feat			Required Race			Required Skill		Required Stat	Var. Must Be Lower	Define			Description																	Stackable?	Multiple?	Choose		Ability									Add to base move		Modify VAR						Source Page		Description of the Benefits
 Magical Tail
 	TYPE:General
-	SOURCEPAGE:p.193
 	PRERACE:1,RACESUBTYPE=Kitsune
 	PREVARLT:KitsuneTails,8
+	DEFINE:KitsuneTails|0
 	DESC:You grow an extra tail that represents your growing magical powers.
 	STACK:YES
 	MULT:YES
 	CHOOSE:NOCHOICE
 	ABILITY:Special Ability|AUTOMATIC|Magical Tail ~ Kitsune
 	BONUS:VAR|KitsuneTails|1
+	SOURCEPAGE:p.193
 	BENEFIT:You gain a new spell-like ability, each usable twice per day, from the following list, in order: Disguise Self, Charm Person, Misdirection, Invisibility, Suggestion, Displacement, Confusion, Dominate Person. For example, the first time you select this feat, you gain disguise self 2/day; the second time you select this feat, you gain charm person 2/day. Your caster level for these spells is equal to your Hit Dice. The DCs for these abilities are Charisma-based. Special: You may select this feat up to eight times. Each time you take it, you gain an additional ability as described above.
-	DEFINE:KitsuneTails|0
-	
 
 Realistic Likeness
 	TYPE:General
@@ -89,7 +88,7 @@ Realistic Likeness
 
 
 ##Block: Merfolk Feats
-# Feat Name				Type			Required Ability							Required Feat			Required Race		Required Skill		Required Stat	Description																	Stackable?	Multiple?	Choose		Bonus to Ability Pool				Add to base move		Modify VAR						Source Page		Description of the Benefits																																																																																																							BENEFITS
+# Feat Name				Type			Required Ability							Required Feat			Required Race			Required Skill		Required Stat	Var. Must Be Lower	Define			Description																	Stackable?	Multiple?	Choose		Ability									Add to base move		Modify VAR						Source Page		Description of the Benefits
 Sea Hunter
 	TYPE:Combat
 	PREFEAT:1,Combat Expertise
@@ -101,7 +100,7 @@ Sea Hunter
 
 
 ##Block: Nagaji Feats
-# Feat Name				Type			Required Ability							Required Feat			Required Race		Required Skill		Required Stat	Description																	Stackable?	Multiple?	Choose		Bonus to Ability Pool				Add to base move		Modify VAR						Source Page		Description of the Benefits																																																																																																							BENEFITS
+# Feat Name				Type			Required Ability							Required Feat			Required Race			Required Skill		Required Stat	Var. Must Be Lower	Define			Description																	Stackable?	Multiple?	Choose		Ability									Add to base move		Modify VAR						Source Page		Description of the Benefits
 Spit Venom
 	TYPE:Combat
 	PRERACE:1,Nagaji
@@ -112,7 +111,7 @@ Spit Venom
 
 
 ##Block: Samsaran Feats
-# Feat Name				Type			Required Ability							Required Feat			Required Race		Required Skill		Required Stat	Description																	Stackable?	Multiple?	Choose		Bonus to Ability Pool				Add to base move		Modify VAR						Source Page		Description of the Benefits																																																																																																							BENEFITS
+# Feat Name				Type			Required Ability							Required Feat			Required Race			Required Skill		Required Stat	Var. Must Be Lower	Define			Description																	Stackable?	Multiple?	Choose		Ability									Add to base move		Modify VAR						Source Page		Description of the Benefits
 Life's Blood
 	TYPE:General
 	PRERACE:1,Samsaran.
@@ -123,7 +122,7 @@ Life's Blood
 
 
 ##Block: Strix Feats
-# Feat Name				Type			Required Ability							Required Feat			Required Race		Required Skill		Required Stat	Description																	Stackable?	Multiple?	Choose		Bonus to Ability Pool				Add to base move		Modify VAR						Source Page		Description of the Benefits																																																																																																							BENEFITS
+# Feat Name				Type			Required Ability							Required Feat			Required Race			Required Skill		Required Stat	Var. Must Be Lower	Define			Description																	Stackable?	Multiple?	Choose		Ability									Add to base move		Modify VAR						Source Page		Description of the Benefits
 Stretched Wings
 	TYPE:General
 	PREABILITY:1,CATEGORY=Special Ability,Wingclipped
@@ -139,7 +138,7 @@ Stretched Wings
 
 
 ##Block: Sulis Feats
-# Feat Name				Type			Required Ability							Required Feat			Required Race		Required Skill		Required Stat	Description																	Stackable?	Multiple?	Choose		Bonus to Ability Pool				Add to base move		Modify VAR						Source Page		Description of the Benefits																																																																																																							BENEFITS
+# Feat Name				Type			Required Ability							Required Feat			Required Race			Required Skill		Required Stat	Var. Must Be Lower	Define			Description																	Stackable?	Multiple?	Choose		Ability									Add to base move		Modify VAR						Source Page		Description of the Benefits
 Extra Elemental Assault
 	TYPE:General
 	PRERACE:1,Suli
@@ -161,7 +160,7 @@ Incremental Elemental Assault
 
 
 ##Block: Svirfneblin Feats
-# Feat Name				Type			Required Ability							Required Feat			Required Race		Required Skill		Required Stat	Description																	Stackable?	Multiple?	Choose		Bonus to Ability Pool				Add to base move		Modify VAR						Source Page		Description of the Benefits																																																																																																							BENEFITS
+# Feat Name				Type			Required Ability							Required Feat			Required Race			Required Skill		Required Stat	Var. Must Be Lower	Define			Description																	Stackable?	Multiple?	Choose		Ability									Add to base move		Modify VAR						Source Page		Description of the Benefits
 Stoic Pose
 	TYPE:General
 	PRERACE:1,Svirfneblin
@@ -172,7 +171,7 @@ Stoic Pose
 
 
 ##Block: Vanaras Feats
-# Feat Name				Type			Required Ability							Required Feat			Required Race		Required Skill		Required Stat	Description																	Stackable?	Multiple?	Choose		Bonus to Ability Pool				Add to base move		Modify VAR						Source Page		Description of the Benefits																																																																																																							BENEFITS
+# Feat Name				Type			Required Ability							Required Feat			Required Race			Required Skill		Required Stat	Var. Must Be Lower	Define			Description																	Stackable?	Multiple?	Choose		Ability									Add to base move		Modify VAR						Source Page		Description of the Benefits
 Tree Hanger
 	TYPE:Combat
 	PRERACE:1,Vanara
@@ -185,7 +184,7 @@ Tree Hanger
 
 
 ##Block: Vishkanyas Feats
-# Feat Name				Type			Required Ability							Required Feat			Required Race		Required Skill		Required Stat	Description																	Stackable?	Multiple?	Choose		Bonus to Ability Pool				Add to base move		Modify VAR						Source Page		Description of the Benefits																																																																																																							BENEFITS
+# Feat Name				Type			Required Ability							Required Feat			Required Race			Required Skill		Required Stat	Var. Must Be Lower	Define			Description																	Stackable?	Multiple?	Choose		Ability									Add to base move		Modify VAR						Source Page		Description of the Benefits
 Sleep Venom
 	TYPE:General
 	PRERACE:1,Vishkanya
@@ -196,7 +195,7 @@ Sleep Venom
 
 
 ##Block: Wayang Feats
-# Feat Name				Type			Required Ability							Required Feat			Required Race		Required Skill		Required Stat	Description																	Stackable?	Multiple?	Choose		Bonus to Ability Pool				Add to base move		Modify VAR						Source Page		Description of the Benefits																																																																																																							BENEFITS
+# Feat Name				Type			Required Ability							Required Feat			Required Race			Required Skill		Required Stat	Var. Must Be Lower	Define			Description																	Stackable?	Multiple?	Choose		Ability									Add to base move		Modify VAR						Source Page		Description of the Benefits
 Shadowy Dash
 	TYPE:General
 	PRERACE:1,Wayang

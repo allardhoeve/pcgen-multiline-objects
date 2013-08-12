@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:21:14 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -12,7 +12,7 @@ SOURCELONG:Advanced Race Guide
 
 
 ###Block: Conditional skills (for output only)
-# Skill Name					Key Stat	Untrained?		Classes	Type			Visible		Req. Rule (in options)		Prohibited Var. Value
+# Skill Name								Key Stat	Untrained?		Classes	Type			Visible		Req. Rule (in options)		Prohibited Var. Value
 Sense Motive (Sense Enchantment)
 	KEYSTAT:WIS
 	USEUNTRAINED:YES

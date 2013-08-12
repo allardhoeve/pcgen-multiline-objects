@@ -1,4 +1,4 @@
-# CVS $Revision: 20122 $ $Author: zaister $ -- Sat Jun 29 23:21:14 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: 20122 $ $Author: zaister $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -8,7 +8,7 @@ SOURCELONG:Advanced Race Guide
 
 
 ###Block:Exotic Pet
-# Class of the Master		Type			Spell Res.	Ability										Copy Masters BAB		Copy Masters Checks	HP formula based on Master	Use Masters skills?	Combat bonus					Main Race Type			DEFINESTAT
+# Class of the Master	Type			Ability										Copy Masters BAB		Copy Masters Checks	HP formula based on Master	Use Masters skills?	Combat bonus					Main Race Type			DEFINESTAT
 FOLLOWER:ExoticPetLVL=1
 	TYPE:Exotic Pet
 	ABILITY:Special Ability|AUTOMATIC|Empathic Link
@@ -49,6 +49,7 @@ FOLLOWER:ExoticPetLVL=9
 # Locking INT to 10 makes it a non-ability.
 
 
+# Race of familiar			Type			Bonus to skill			Virtual Feat
 MASTERBONUSRACE:Familiar (Monkey)
 	TYPE:Exotic Pet
 	BONUS:SKILL|Acrobatics|3
@@ -61,6 +62,7 @@ MASTERBONUSRACE:Familiar (Parrot)
 
 
 
+# Class of the Master	Type			Required Race			Apply Kit
 FOLLOWER:ExoticPetLVL=1
 	TYPE:Exotic Pet
 	PRERACE:1,Familiar (Parrot)
@@ -201,7 +203,7 @@ FOLLOWER:PlantCompanionLVL=20
 
 
 ###Block:Demonic Familiar (Demonic Apostle)
-# Class of the Master			Type				Spell Res.	Ability										Copy Masters BAB		Copy Masters Checks	HP formula based on Master	Use Masters skills?	Combat bonus					Main Race Type			Template				DEFINESTAT
+# Class of the Master			Type				Spell Res.	Ability										Copy Masters BAB		Copy Masters Checks	HP formula based on Master	Use Masters skills?	Required Race			Apply Kit				Combat bonus					Main Race Type			Template				DEFINESTAT
 FOLLOWER:DemonicFamiliarLVL=1
 	TYPE:Demonic Familiar
 	ABILITY:Special Ability|AUTOMATIC|Empathic Link
@@ -303,7 +305,7 @@ FOLLOWER:DemonicFamiliarLVL=1
 
 
 ###Block:Familiar Bonuses to Master
-# Race of familiar			Type			Save checks bonus			Bonus to HP			Bonus to skill			Virtual Feat
+# Race of familiar			Type				Save checks bonus			Bonus to HP			Bonus to skill			Virtual Feat
 MASTERBONUSRACE:Familiar (Bat)
 	TYPE:Demonic Familiar
 	BONUS:SKILL|Fly|3
@@ -364,6 +366,7 @@ MASTERBONUSRACE:Familiar (Weasel)
 
 ###Block Base Eidolon modded for Shaitan Binder
 # Base Eidolon
+# Class of the Master	Type					Hit Dice	Ability																				Automatically Gained Feat	Define											Bonus to Ability Pool													Combat bonus					Stat bonus			Modify VAR
 FOLLOWER:EidolonLVL=1
 	TYPE:Shaitan Binder Eidolon
 	ABILITY:Special Ability|AUTOMATIC|Link~Eidolon
@@ -542,6 +545,7 @@ FOLLOWER:EidolonLVL=20
 
 
 ###Block Base Eidolon mods for Wild Caller
+# Class of the Master	Type			Bonus to Ability Pool
 FOLLOWER:EidolonLVL=4
 	TYPE:Eidolon
 	BONUS:ABILITYPOOL|Eidolon Evolution|1|PRERACE:1,RACETYPE=Wild Caller Eidolon

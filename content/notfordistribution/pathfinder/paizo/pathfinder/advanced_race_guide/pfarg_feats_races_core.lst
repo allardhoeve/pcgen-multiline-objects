@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:06:31 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -14,7 +14,7 @@ SOURCELONG:Advanced Race Guide
 ###Block: Core Race Feats
 ###
 ##Block: Dwarven Feats
-# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability								Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR																		Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits
 Brewmaster
 	TYPE:General
 	PRERACE:1,Dwarf%
@@ -118,7 +118,7 @@ Toxic Recovery
 
 ###
 ##Block: Elven Feats
-# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																									
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability								Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR																		Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits
 Attuned to the Wild
 	TYPE:General
 	PRERACE:1,Elf
@@ -165,7 +165,7 @@ Spirit of the Wild
 
 ###
 ##Block: Gnome Feats
-# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability								Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR																		Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits
 Casual Illusionist
 	TYPE:General
 	PREABILITY:1,CATEGORY=Special Ability,Gnome Magic
@@ -184,8 +184,8 @@ Expanded Resistance
 	STACK:NO
 	MULT:YES
 	CHOOSE:SCHOOLS|Abjuration|Conjuration|Divination|Enchantment|Evocation|Necromancy|Transmutation
-	BENEFIT:Select one school of magic other than illusion. You gain a +2 racial bonus on saving throws against spells or effects from the school of %1.|%CHOICE
 	SOURCEPAGE:p.37
+	BENEFIT:Select one school of magic other than illusion. You gain a +2 racial bonus on saving throws against spells or effects from the school of %1.|%CHOICE
 
 Gnome Weapon Focus
 	TYPE:Combat
@@ -222,14 +222,14 @@ Vast Hatred
 
 ###
 ##Block: Half-Elven Feats
-# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability								Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR																		Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits
 Discerning Eye
 	TYPE:General
 	PREABILITY:1,CATEGORY=Special Ability,Keen Senses
+	PRERACE:1,Elf,Half-Elf
 	DESC:You are not easily fooled by illusions and forgeries.
 	SOURCEPAGE:p.46
 	BENEFIT:You receive a +2 racial bonus on saving throws against illusion spells and effects and a +2 bonus on Linguistic checks to detect forgeries. You can use the Linguistic skill to detect forgeries untrained.
-	PRERACE:1,Elf,Half-Elf
 
 #  Implement: will adding the Elven Magic elf racial ability also make available those abilities that can be exchanged for it?
 Elven Spirit
@@ -310,36 +310,36 @@ Shared Manipulation
 
 ###
 ##Block: Half-Orc Feats
-# Feat Name				Unique Key						Type				Visible		Required Ability																						Req. Att.		Required Check Base		Required Class				Required Feat										Multiple Requirements																										Required Race										Maximum Size		Required Skill				Required Casting Type		Req. Spell Type				Required Stat		Required Text								Var. Min. Value				Required Vision				Req. Weapond Prof.		Define																						Innate Spells								Description																										Stackable?		Multiple?		Choose														Selections		Automatically Gained Feat																								Add Spell Lvl		Bonus to Ability Pool																																																																																																																																						Combat bonus						Bonus to DC								Bonus to skill						Modify VAR																						Add to vision				Class Skill		Vision				Source Page		Description of the Benefits																																																																																																																																																										More language
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability								Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR																		Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits
 Beast Rider
 	TYPE:General
 	PREABILITY:1,CATEGORY=Special Ability,Nature's Bond ~ Animal Companion,Special Mount,Companion ~ Hunter's Bond
 	PRELEVEL:MIN=7
+	PRERACE:1,Orc,Half-Orc
+	DEFINE:SpecialMountLVL|0
 	DESC:You gain the service of a monstrous companion or mount.
 	BONUS:FOLLOWERS|Animal Companion|-1
-	DEFINE:SpecialMountLVL|0
 	BONUS:VAR|SpecialMountLVL|min(TL,max(var("PaladinLVL")+2,var("AnimalCompanionLVL")+2,var("CavalierMountLVL")+2))
 	FOLLOWERS:Special Mount|1
 	COMPANIONLIST:Special Mount|Companion (Elephant),Companion (Dinosaur (Pteranodon)),Companion (Rhinoceros),Companion (Dinosaur (Stegosaurus)),Companion (Dinosaur (Triceratops))
 	SOURCEPAGE:p.56
 	BENEFIT:Select one of the following creature types: elephant, pteranodon, rhinoceros, stegosaurus, or triceratops. Add this creature type to your list of possible animal companions or mounts. When summoning a creature of the selected type to serve as a mount or companion, treat your effective druid level as if it were two levels higher (to a maximum of your character level). If the creature is large enough for you to ride, it gains the combat training general purpose at no cost.
-	PRERACE:1,Orc,Half-Orc
 
 Blood Vengeance
 	TYPE:General
 	!PREALIGN:LG,LN,LE
+	PRERACE:1,Orc,Half-Orc
 	DESC:Seeing an ally fall in combat fills you with a raging and murderous fury.
 	SOURCEPAGE:p.56
 	BENEFIT:Whenever one of your allies is reduced to negative hit points or killed, you may enter a state similar to but less powerful than a barbarian's rage as a free action on your next turn. If you have the rage class feature and are already raging, your morale bonuses to Strength and Constitution increase by +2 for the duration of your rage. If you do not have the rage class feature, or you have no more rage rounds left, this weaker rage gives you all the benefits and penalties of a barbarian's rage, except your morale bonus to Strength and Constitution is only +2. In either case, this state lasts for 4 rounds.
-	PRERACE:1,Orc,Half-Orc
 
 Destroyer's Blessing
 	TYPE:Combat
 	PREABILITY:1,CATEGORY=Special Ability,Rage
+	PRERACE:1,Orc,Half-Orc
 	DESC:Breaking things adds to your power.
 	SOURCEPAGE:p.56
 	BENEFIT:When you are raging and you succeed at a sunder combat maneuver, you regain 1 round of rage. If the sunder attempt causes the object to gain the broken condition, you heal 1 hit point. You can only gain these benefits once per round.
-	PRERACE:1,Orc,Half-Orc
 
 Ferocious Resolve
 	TYPE:General
@@ -354,34 +354,34 @@ Ferocious Resolve
 Ferocious Summons
 	TYPE:General
 	PREFEAT:2,Augment Summoning,Spell Focus(Conjuration)
+	PRERACE:1,Orc,Half-Orc
 	DESC:Your summoned creatures gain your ferocity.
 	SOURCEPAGE:p.57
 	BENEFIT:Creatures you summon gain the ferocity universal monster ability.
-	PRERACE:1,Orc,Half-Orc
 
 Ferocious Tenacity
 	TYPE:Combat
 	PREABILITY:2,CATEGORY=Special Ability,Ferocity,Rage
+	PRERACE:1,Orc,Half-Orc
 	DESC:You spit in the face of death.
 	SOURCEPAGE:p.57
 	BENEFIT:Once per day when raging, if you are hit by an attack that would deal enough hit points of damage to kill you (negative hit points equal to your Constitution score), as an immediate action you may expend 1 or more rounds of rage to negate some of this damage and keep yourself alive. Each round of rage you spend reduces the attack's damage by 1 point, but cannot reduce the damage taken below 1 hit point.
-	PRERACE:1,Orc,Half-Orc
 
 Gore Fiend
 	TYPE:General
 	PREABILITY:1,CATEGORY=Special Ability,Rage
+	PRERACE:1,Orc,Half-Orc
 	DESC:Horrible wounds, whether on yourself or your enemies, make your blood sing.
 	SOURCEPAGE:p.57
 	BENEFIT:When you are raging and you confirm a critical hit with a melee weapon or a critical hit is confirmed on you (whether by a melee weapon, spell, or ranged weapon), you regain 1 round of rage (up to your maximum for the day). You can only gain this benefit once per round.
-	PRERACE:1,Orc,Half-Orc
 
 Horde Charge
 	TYPE:Teamwork
 	PREATT:1
+	PRERACE:1,Orc,Half-Orc
 	DESC:When you charge with an ally, you are more deadly.
 	SOURCEPAGE:p.57
 	BENEFIT:When charging during the same round as an ally with this feat, you gain a +2 bonus on attack and damage rolls in addition to the normal bonus for charging. If you can make multiple attacks on a charge, this bonus only applies to the first attack.
-	PRERACE:1,Orc,Half-Orc
 
 Improved Surprise Follow-Through
 	TYPE:Combat
@@ -394,10 +394,10 @@ Improved Surprise Follow-Through
 
 Resilient Brute
 	TYPE:General
+	PRERACE:1,Orc,Half-Orc
 	DESC:You absorb punishment others find deadly.
 	SOURCEPAGE:p.57
 	BENEFIT:%1/day, when a creature confirms a critical hit against you, you may treat half the damage as nonlethal damage. You cannot use this ability if you are immune to nonlethal damage.|1+if(BAB>=10,1,0)
-	PRERACE:1,Orc,Half-Orc
 
 Surprise Follow-Through
 	TYPE:Combat
@@ -411,33 +411,33 @@ Surprise Follow-Through
 Sympathetic Rage
 	TYPE:Combat
 	!PREALIGN:LG,LN,LE
+	PRERACE:1,Orc,Half-Orc
 	DESC:Seeing an ally rage fills you with your own fury.
 	SOURCEPAGE:p.57
 	BENEFIT:Whenever you are adjacent to an ally who is raging, you may choose to enter a similar but less powerful rage as a free action on your turn. This weaker rage gives you all the benefits and penalties of a barbarian's rage, except your morale bonus to Strength and Constitution is only +2. There is no limit to how long you can rage, as long as you remain adjacent to a raging ally (for example, you could take a 5-foot step away from one raging ally toward another raging ally and maintain your rage). As with a barbarian's rage, when this weaker rage ends, you are fatigued. You cannot use this feat if you are fatigued.
-	PRERACE:1,Orc,Half-Orc
 
 Tenacious Survivor
 	TYPE:General
 	PREFEAT:2,Diehard,Endurance
+	PRERACE:1,Orc,Half-Orc
 	PRESTAT:1,CON=13
 	DESC:Your spirit lingers long after any other's would have passed on.
 	SOURCEPAGE:p.58
 	BENEFIT:When you are killed by hit point damage, your soul lingers in your body for a number of rounds equal to your Constitution bonus. You are still dead, but a creature can make a DC 10 Heal check as a standard action to realize that you can still be saved. You can be healed by magic as if you were alive. If you are healed enough hit points that you would no longer be dead, you are alive again, but you gain one permanent negative level.
-	PRERACE:1,Orc,Half-Orc
 
 Thrill of the Kill
 	TYPE:General
 	PREABILITY:1,CATEGORY=Special Ability,Rage
+	PRERACE:1,Orc,Half-Orc
 	DESC:Killing fuels your rage.
 	SOURCEPAGE:p.58
 	BENEFIT:When you are raging and your attack reduces an enemy to negative hit points or kills it, you regain 1 round of rage. You may only use this feat if the fallen enemy had at least as many Hit Dice as you. You can only gain this benefit once per round.
-	PRERACE:1,Orc,Half-Orc
 
 
 
 ###
 ##Block: Halfling Feats
-# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability								Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR																		Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits
 Adaptive Fortune
 	TYPE:General
 	PREABILITY:1,CATEGORY=Special Ability,Adaptable Luck
@@ -558,7 +558,7 @@ Uncanny Defense
 
 ###
 ##Block: Human Feats
-# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability							Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR											Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits																																																																																																																										
+# Feat Name					Type						Required Ability																	Restricted AL		Req. Att.	Required Check Base	Required Class		Required Feat										Prohibited Feat		Required Lvl	Required Non-Monster Lvl	Required Race		Required Skill							Required Stat	Req. Weapond Prof.		Serves As					Define											Description																																																			Stackable?	Multiple?	Choose																																																																					Selections	Ability								Bonus to Ability Pool									Bonus Number of Followers		Bonus to skill							Bonus to skill point/L				Modify VAR																		Weapon prof. bonus			Allow Follower			Allowed Companions																																															Source Page		Description of the Benefits
 Bestow Luck
 	TYPE:General
 	PREFEAT:2,Defiant Luck,Inexplicable Luck
@@ -624,9 +624,9 @@ Heroic Will
 Huntmaster
 	TYPE:General
 	PREABILITY:1,CATEGORY=Special Ability,Nature's Bond ~ Animal Companion,Special Mount,Companion ~ Hunter's Bond
+	!PREFEAT:1,Huntmaster
 	PRERACE:1,Human
 	PRESKILL:1,Handle Animal=1
-	!PREFEAT:1,Huntmaster
 	DESC:You are an expert trainer of horses, hounds, falcons, or hunting cats.
 	MULT:YES
 	CHOOSE:STRING|Bird|Dog|Small Cat|Horse

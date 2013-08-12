@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author:tripleduck $ -- Sat Jun 29 23:06:31 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author:tripleduck $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -206,7 +206,7 @@ Natural Charmer
 
 
 ###Block: wrapper feat for Kinslayer's Greater Brand ability
-# Feat Name			Type							Required Ability									Required Feat												Required Lvl	Required Race	Req. Known Spell																																																																Required Stat		Define									Innate Spells													Description																				Stackable?	Multiple?	Choose		Bonus to Ability Pool						Spell Res.	Source Page		Description of the Benefits
+# Feat Name			Unique Key			Type			Required Ability									Required Class			Required Feat												Required Lvl	Required Race	Req. Known Spell																																																																Required Stat		Define									Innate Spells													Description																				Stackable?	Multiple?	Choose		Bonus to Ability Pool			Spell Res.	Source Page		Description of the Benefits
 Greater Brand
 	TYPE:Teamwork
 	PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Kinslayer
@@ -319,7 +319,7 @@ Umbral Scion
 ###Block:  Fetchling Abilities
 
 
-# Feat Name			Type			Required Ability										Required Feat				Required Non-Monster Lvl	Required Race		Define				Description																					Stackable?	Multiple?	Ability													Modify VAR				Vision			Source Page		Description of the Benefits
+# Feat Name			Type			Required Ability										Required Feat				Required Non-Monster Lvl	Required Race		Define				Description																					Stackable?	Multiple?	Choose		Ability								Modify VAR				Vision			Source Page		Description of the Benefits
 Dark Sight
 	TYPE:General
 	PREFEAT:1,Gloom Sight
@@ -487,7 +487,7 @@ Taskmaster
 ###Block: Ifrit Feats
 
 
-# Feat Name		Type			Required Feat					Required Lvl	Required Race	Description																	Source Page		Description of the Benefits																																																																										PRERACE=1,Ifrit,Oread,Sylph,Undine
+# Feat Name		Type			Required Feat					Required Lvl	Required Race				Description																	Source Page		Description of the Benefits
 Blazing Aura
 	TYPE:Combat
 	PREFEAT:2,Inner Flame,Scorching Weapons
@@ -508,10 +508,10 @@ Blistering Feint
 Elemental Jaunt
 	TYPE:General
 	PRELEVEL:MIN=15
+	PRERACE:1,Ifrit,Oread,Sylph,Undine
 	DESC:The spirits of your ancestral home call to you, beckoning you to return.
 	SOURCEPAGE:p.130
 	BENEFIT:Once per day, you can cast plane shift as a spell-like ability with a caster level equal to your level to transport yourself and willing targets to an elemental plane that is appropriate to your race (ifrits to the Plane of Fire, oreads to the Plane of Earth, sylphs to the Plane of Air, and undines to the Plane of Water). While on that plane, you (but not anyone transported with you) are treated as though under the effect of the spell planar adaptation.
-	PRERACE:1,Ifrit,Oread,Sylph,Undine
 
 Firesight
 	TYPE:General
@@ -541,7 +541,7 @@ Scorching Weapons
 ###Block: Kobold Feats
 
 
-# Feat Name		Type			Req. Att.	Required Feat										Required Lvl	Required Race	Required Skill		Define					Description																		Move		Automatically Gained Weapon Prof.		Ability																																																																																																													Bonus to Ability Pool													Combat bonus													Modify VAR																																										Class Skill	Source Page		Natural Attacks											Description of the Benefits
+# Feat Name		Type			Req. Att.	Required Feat										Required Lvl	Required Race	Required Skill		Define					Description																		Move		Automatically Gained Weapon Prof.		Ability																																																																																																													Bonus to Ability Pool																	Combat bonus													Bonus to nb of slots							Modify VAR																																										Class Skill	Source Page		Natural Attacks											Description of the Benefits
 Draconic Aspect
 	TYPE:General
 	PRERACE:1,Kobold
@@ -621,7 +621,7 @@ Tail Terror
 ###Block: Orc Feats
 
 
-# Feat Name			Type			Required Ability							Req. Att.	Required Feat		Required Race	Required Skill			Description																			Stackable?	Multiple?	Bonus to Ability Pool				Source Page		Description of the Benefits
+# Feat Name			Type			Required Ability							Req. Att.	Required Feat		Required Race	Required Skill			Description																			Stackable?	Multiple?	Choose		Bonus to Ability Pool				Source Page		Description of the Benefits
 Born Alone
 	TYPE:General
 	PRERACE:1,Orc
@@ -703,7 +703,7 @@ Trap Wrecker
 ###Block: Oread Feats
 
 
-# Feat Name			Type			Required Feat				Required Lvl	Required Race	Description															Clone Movement			Ability									Bonus to skill															Vision				Source Page		Description of the Benefits
+# Feat Name			Type			Required Feat				Required Lvl	Required Race	Description															Clone Movement			Ability											Bonus to skill															Vision				Source Page		Description of the Benefits
 Dwarf Blooded
 	TYPE:General
 	PRERACE:1,Oread
@@ -832,16 +832,16 @@ Wings of Air
 ###Block: Tengu Feats
 
 
-# Feat Name		Type			Required Ability							Req. Att.	Required Feat		Required Lvl	Required Race	Description														Bonus to skill				Source Page		Description of the Benefits																																																																																												Temporary Bonus															WBONUS
+# Feat Name		Type			Required Ability							Req. Att.	Required Feat		Required Lvl	Required Race	Description														Bonus to skill				Weapon prof. bonus			Source Page		Description of the Benefits																																																																																												Temporary Bonus
 Blood Beak
 	TYPE:Combat
 	PREABILITY:1,CATEGORY=Special Ability,Natural Weapon
 	PREATT:5
 	PRERACE:1,Tengu
 	DESC:Your bleed attack is bloody and dangerous.
+	BONUS:WEAPONPROF=Beak|DAMAGESIZE|1
 	SOURCEPAGE:p.165
 	BENEFIT:Increase the damage of your beak attack to 1d6. Furthermore, when you confirm a critical hit with your beak attack, you also deal 1 point of bleed damage. The bleed effect from this feat stacks with that of the Bleeding Critical feat and similar effects, adding 1 point to your bleed damage.
-	BONUS:WEAPONPROF=Beak|DAMAGESIZE|1
 
 Carrion Feeder
 	TYPE:General
@@ -893,7 +893,7 @@ Tengu Wings
 ###Block: Tiefling Feats
 
 
-# Feat Name							Type			Restricted Ability								Required Feat		Required Race		Required Vision			Define															Description											Ability																																																												Combat bonus																							Vision						Source Page		Description of the Benefits
+# Feat Name							Type			Restricted Ability								Required Race		Var. Must Be Lower		Required Vision			Define															Description											Stackable?	Multiple?	Choose		Ability																																																												Combat bonus																							Modify VAR				Vision												Source Page		Description of the Benefits
 Armor of the Pit
 	TYPE:General
 	PRERACE:1,Tiefling
@@ -951,21 +951,21 @@ Expanded Fiendish Resistance (Fire)
 Fiend Sight
 	TYPE:General
 	PRERACE:1,Tiefling
-	PREVISION:1,Darkvision=60
 	PREVARLT:FiendSightTier,2
-	DESC:Your eyes develop keener sight in dim light and darkness.
-	MULT:YES
-	STACK:YES
-	CHOOSE:NOCHOICE
+	PREVISION:1,Darkvision=60
 	DEFINE:FiendSightTier|0
+	DESC:Your eyes develop keener sight in dim light and darkness.
+	STACK:YES
+	MULT:YES
+	CHOOSE:NOCHOICE
+	ABILITY:Special Ability|AUTOMATIC|See in Darkness|PREVAREQ:FiendSightTier,2
 	BONUS:VAR|FiendSightTier|1
 	VISION:Low-Light
 	VISION:.CLEAR.Darkvision
 	VISION:Darkvision (120')
-	ABILITY:Special Ability|AUTOMATIC|See in Darkness|PREVAREQ:FiendSightTier,2
+	SOURCEPAGE:p.173
 	BENEFIT:You gain low-light vision and your darkvision improves to 120 ft.
 	BENEFIT:You gain the see in darkness universal monster ability.|PREVAREQ:FiendSightTier,2
-	SOURCEPAGE:p.173
 
 Grasping Tail
 	TYPE:General
@@ -979,7 +979,7 @@ Grasping Tail
 ###Block: Undine Feats
 
 
-# Feat Name			Type			Required Ability									Required Lvl	Required Race	Description																Ability					Add to base move			Source Page		Description of the Benefits
+# Feat Name			Type			Required Ability									Required Lvl	Required Race	Description																Ability							Add to base move			Source Page		Description of the Benefits
 Aquatic Ancestry
 	TYPE:General
 	PRERACE:1,Undine

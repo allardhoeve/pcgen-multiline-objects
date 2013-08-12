@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:21:14 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -9,7 +9,7 @@ SOURCELONG:Advanced Race Guide
 
 
 ###Block: New familiar types
-# Race Name					Output Name							Starting Feats	Size		Move				Face/Space	Reach		Vision			Var. Min. Value		Bonus to Ability Pool								Combat bonus				Bonus to skill				Stat bonus																	Modify VAR			Weapon prof. bonus					Racial HD Class Skills										Ability									Nb Legs	Nb Hands	Natural Attacks										Special Ability							Define				Monster Class Name and Starting Level		Main Race Type			Race Subtype								Type			Challenge Rating	Source Page		Choose		Apply Kit							BONUS|STAT|DEX|-2		SORTKEY
+# Race Name		Output Name				Starting Feats	Size		Move				Face/Space	Reach		Var. Min. Value		Bonus to skill				Stat bonus																	Weapon prof. bonus					Ability									Nb Legs	Natural Attacks										Define				Monster Class Name and Starting Level	Main Race Type	Race Subtype								Type				Challenge Rating	Source Page		Apply Kit			SORTKEY
 Familiar (Parrot)
 	OUTPUTNAME:Familiar [NAME]
 	STARTFEATS:1
@@ -43,6 +43,7 @@ Familiar (Parrot)
 
 
 ###Block: Plant Companions
+# Race Name					Output Name							Starting Feats	Size		Move				Face/Space	Reach		Vision		Var. Min. Value		Combat bonus				Ability												Natural Attacks										Define				Monster Class Name and Starting Level	Main Race Type	Type					Source Page		Apply Kit							SORTKEY
 Companion (Carnivorous Flower)
 	OUTPUTNAME:Plant Companion - Carnivorous Flower
 	STARTFEATS:1
@@ -53,8 +54,8 @@ Companion (Carnivorous Flower)
 	VISION:Low-Light
 	PREVARGTEQ:NotAllowed,1
 	BONUS:COMBAT|AC|2|TYPE=NaturalArmor
-	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Piercing,*1,1d6
 	ABILITY:Special Ability|AUTOMATIC|Scent
+	NATURALATTACKS:Bite,Weapon.Natural.Melee.Finesseable.Piercing,*1,1d6
 	MONSTERCLASS:Plant:2
 	RACETYPE:Plant
 	TYPE:Companion.PlantCompanion
@@ -72,8 +73,8 @@ Companion (Crawling Vine)
 	VISION:Low-Light
 	PREVARGTEQ:NotAllowed,1
 	BONUS:COMBAT|AC|2|TYPE=NaturalArmor
-	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d4
 	ABILITY:Special Ability|AUTOMATIC|Grab|Scent
+	NATURALATTACKS:Slam,Weapon.Natural.Melee.Finesseable.Bludgeoning,*1,1d4
 	MONSTERCLASS:Plant:2
 	RACETYPE:Plant
 	TYPE:Companion
@@ -91,8 +92,8 @@ Companion (Puffball)
 	VISION:Low-Light
 	PREVARGTEQ:NotAllowed,1
 	BONUS:COMBAT|AC|1|TYPE=NaturalArmor
-	NATURALATTACKS:Thorn,Weapon.Natural.Melee.Finesseable.Piercing,*1,1d4
 	ABILITY:Special Ability|AUTOMATIC|Poison ~ Puffball|Flight Maneuverability
+	NATURALATTACKS:Thorn,Weapon.Natural.Melee.Finesseable.Piercing,*1,1d4
 	DEFINE:Maneuverability|3
 	MONSTERCLASS:Plant:2
 	RACETYPE:Plant
@@ -122,6 +123,7 @@ Companion (Sapling Treant)
 
 
 ###Block: Shaitan Binder Eidolon
+# Race Name					Starting Feats	Size		Move			Face/Space	Reach		Vision			Bonus to Ability Pool						Combat bonus				Stat bonus											Racial HD Class Skills										Nb Legs	Nb Hands	Define		Monster Class Name and Starting Level			Main Race Type				Source Page		Apply Kit
 Shaitan Binder Eidolon (Biped)
 	STARTFEATS:1
 	SIZE:M
@@ -191,6 +193,7 @@ Shaitan Binder Eidolon (Serpentine)
 
 
 ###Block: Wild Caller Eidolon
+# Race Name					Starting Feats	Size		Move			Face/Space	Reach		Vision			Bonus to Ability Pool						Combat bonus				Stat bonus											Racial HD Class Skills										Nb Legs	Nb Hands	Define		Monster Class Name and Starting Level		Main Race Type			Source Page		Apply Kit
 Wild Caller Eidolon (Biped)
 	STARTFEATS:1
 	SIZE:M
@@ -270,6 +273,7 @@ Wild Caller Eidolon (Serpentine)
 
 
 ###Block: Brute Steed
+# Race Name			Output Name				Starting Feats	Size		Move			Face/Space	Reach		Var. Min. Value		Bonus to Ability Pool										Combat bonus				Stat bonus														Ability								Nb Legs	Nb Hands	Natural Attacks																				Monster Class Name and Starting Level	Main Race Type		Type						Source Page		Apply Kit			SORTKEY
 Brute Steed (Camel)
 	OUTPUTNAME:Brute Steed [NAME]
 	STARTFEATS:1

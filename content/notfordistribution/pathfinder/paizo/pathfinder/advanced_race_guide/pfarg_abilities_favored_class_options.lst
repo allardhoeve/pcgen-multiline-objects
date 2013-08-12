@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:21:14 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:38:24 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -8,7 +8,7 @@ SOURCELONG:Advanced Race Guide
 # ORIGINAL ENTRY DATE: none
 
 
-# Ability Name				Category of Ability		Type										Visible	Required Ability						Required Class		Required Race	Define					Description							Stackable?	Multiple?	Choose		Ability									Modify VAR
+# Ability Name				Category of Ability		Type										Visible	Required Ability						Required Class		Required Race	Define					Description							Stackable?	Multiple?	Choose		Ability									Bonus to Ability Pool							Modify VAR
 Bonus Magus Arcane Pool
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality.FavoredClassBonus.FavoredClassMagus
@@ -27,6 +27,7 @@ Bonus Magus Arcane Pool
 Magus Arcane Pool Bonus Tracker
 	CATEGORY:Internal
 	DEFINE:BonusMagusArcanePool|0
+	BONUS:ABILITYPOOL|Magus Arcane Pool|BonusMagusArcanePool
 	BONUS:VAR|MagusArcanePool|var("MagusBonusArcanePoolCount")/4
 
 #
