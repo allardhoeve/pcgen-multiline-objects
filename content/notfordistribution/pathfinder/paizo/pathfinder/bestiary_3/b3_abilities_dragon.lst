@@ -30,22 +30,22 @@ Default Traits ~ Forest Dragon
 	ABILITY:Special Ability|AUTOMATIC|Sound Imitation ~ Forest Dragon|PREVARGTEQ:DragonAge,2
 
 
-	SPELLS:Pass Without Trace|PREVARGTEQ:DragonAge,3
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|Pass Without Trace|PREVARGTEQ:DragonAge,3
 
 
-	SPELLS:Entangle|PREVARGTEQ:DragonAge,4
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|Entangle|PREVARGTEQ:DragonAge,4
 
 
-	SPELLS:Blight|PREVARGTEQ:DragonAge,6
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|Blight|PREVARGTEQ:DragonAge,6
 
 
-	SPELLS:Tree Stride|PREVARGTEQ:DragonAge,8
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|Tree Stride|PREVARGTEQ:DragonAge,8
 
 
-	SPELLS:Animate Plants|PREVARGTEQ:DragonAge,10
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|Animate Plants|PREVARGTEQ:DragonAge,10
 
 
-	SPELLS:Earthquake|PREVARGTEQ:DragonAge,12
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|Earthquake|PREVARGTEQ:DragonAge,12
 
 
 	BONUS:DR|Adamantine|2|PREVARGTEQ:DragonAge,5
@@ -75,7 +75,7 @@ Default Traits ~ Forest Dragon
 	BONUS:PCLEVEL|Sorcerer|-1|PREVARLTEQ:DragonAge,2
 
 
-	BONUS:PCLEVEL|Sorcerer|(DragonAge-3)*2|PREVARGTEQ:DragonAge,3
+	BONUS:PCLEVEL|Sorcerer|(DragonAge-3)*2|PREVARGTEQ:DragonAge,4
 
 
 
@@ -130,22 +130,48 @@ Default Traits ~ Sea Dragon
 	ABILITY:Internal|AUTOMATIC|Imperial Dragon Defaults
 
 
-	ABILITY:Special Ability|AUTOMATIC|Breath Weapon ~ Cone of Fire
+	ABILITY:Special Ability|AUTOMATIC|Breath Weapon ~ Cone of Fire|Immunity to Electricity|Water Breathing
 
 
-	ABILITY:Special Ability|AUTOMATIC|Change Shape ~ Sea Dragon|PREVARGTEQ:DragonAge,
+	ABILITY:Special Ability|AUTOMATIC|Change Shape ~ Sea Dragon|PREVARGTEQ:DragonAge,3
 
 
-	ABILITY:Special Ability|AUTOMATIC|Sea Strider ~ Sea Dragon|PREVARGTEQ:DragonAge,
+	ABILITY:Special Ability|AUTOMATIC|Sea Strider ~ Sea Dragon|PREVARGTEQ:DragonAge,6
 
 
-	ABILITY:Special Ability|AUTOMATIC|Tidal Wave ~ Sea Dragon|PREVARGTEQ:DragonAge,
+	ABILITY:Special Ability|AUTOMATIC|Tidal Wave ~ Sea Dragon|PREVARGTEQ:DragonAge,12
 
 
-	ABILITY:Special Ability|AUTOMATIC|Torrent Breath ~ Sea Dragon|PREVARGTEQ:DragonAge,
+	ABILITY:Special Ability|AUTOMATIC|Torrent Breath ~ Sea Dragon|PREVARGTEQ:DragonAge,2
 
 
-	ABILITY:Special Ability|AUTOMATIC|Unfettered Swimmer ~ Sea Dragon|PREVARGTEQ:DragonAge,
+	ABILITY:Special Ability|AUTOMATIC|Unfettered Swimmer ~ Sea Dragon|PREVARGTEQ:DragonAge,4
+
+
+	BONUS:PCLEVEL|Sorcerer|-1|PREVARLTEQ:DragonAge,2
+
+
+	BONUS:PCLEVEL|Sorcerer|(DragonAge-3)*2|PREVARGTEQ:DragonAge,4
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|Create Water|PREVARGTEQ:DragonAge,3
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|Hydraulic Push|PREVARGTEQ:DragonAge,4
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|Call Lightning|PREVARGTEQ:DragonAge,6
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|Control Water|PREVARGTEQ:DragonAge,8
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|Water Walk|PREVARGTEQ:DragonAge,10
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|Vortex|PREVARGTEQ:DragonAge,12
+
+
 
 
 
@@ -212,6 +238,24 @@ Default Traits ~ Sky Dragon
 
 
 	ABILITY:Special Ability|AUTOMATIC|Primal Lightning ~ Sky Dragon|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
 
 
 
@@ -284,6 +328,24 @@ Default Traits ~ Sovereign Dragon
 	ABILITY:Special Ability|AUTOMATIC|Violent Retort ~ Sovereign Dragon|PREVARGTEQ:DragonAge,
 
 
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
 
 Change Shape (Su)
 	KEY:Change Shape ~ Sovereign Dragon
@@ -346,6 +408,24 @@ Default Traits ~ Underworld Dragon
 
 
 	ABILITY:Special Ability|AUTOMATIC|Underworld Burrower ~ Underworld Dragon|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
+
+
+	SPELLS:Innate|TIMES=ATWILL|CASTERLEVEL=(max(TL,1))|XXX|PREVARGTEQ:DragonAge,
 
 
 
