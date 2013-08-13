@@ -111,6 +111,15 @@ Forest Dragon
 	BONUS:STAT|STR,DEX,CON|4
 
 
+	ADD:SPELLCASTER|Sorcerer
+
+
+	LEGS:4
+
+
+	BONUS:VAR|BreathWeaponDamageDie|6
+
+
 
 Sea Dragon
 	KEY:Dragon (Imperial/Sea)
@@ -135,7 +144,16 @@ Sea Dragon
 	BONUS:STAT|STR,CON|2
 
 
+	ADD:SPELLCASTER|Sorcerer
+
+
 	BONUS:STAT|DEX,INT,WIS,CHA|4
+
+
+	BONUS:VAR|BreathWeaponDamageDie|6
+
+
+	LEGS:4
 
 
 
@@ -165,6 +183,15 @@ Sky Dragon
 	BONUS:STAT|DEX,INT,WIS,CHA|4
 
 
+	ADD:SPELLCASTER|Sorcerer
+
+
+	LEGS:4
+
+
+	BONUS:VAR|BreathWeaponDamageDie|8
+
+
 
 Sovereign Dragon
 	KEY:Dragon (Imperial/Sovereign)
@@ -189,6 +216,15 @@ Sovereign Dragon
 
 
 	BONUS:STAT|DEX,CON,INT,WIS,CHA|4
+
+
+	ADD:SPELLCASTER|Sorcerer
+
+
+	LEGS:4
+
+
+	BONUS:VAR|BreathWeaponDamageDie|6
 
 
 
@@ -218,4 +254,11 @@ Underworld Dragon
 	BONUS:STAT|DEX|4
 
 
+	ADD:SPELLCASTER|Sorcerer
+
+
+	LEGS:4
+
+
+	BONUS:VAR|BreathWeaponDamageDie|6
 
