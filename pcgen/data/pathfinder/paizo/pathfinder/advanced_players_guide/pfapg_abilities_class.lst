@@ -5027,8 +5027,8 @@ Lightning Breath
 	DEFINE:OracleLightningBreathTimes|0
 	DEFINE:OracleLightningBreathDice|0
 	DESC:As a standard action, you can breathe a 30-foot line of electricity. This line deals %1d4 points of electricity damage. A Reflex save (DC %2) halves this damage. You can use this ability %3 time(s) per day.|OracleLightningBreathDice|OracleRevelationDC|OracleLightningBreathTimes
-	BONUS:VAR|OracleLightningDice|CL
-	BONUS:VAR|OracleLightningTimes|1+classlevel("Oracle")/5
+	BONUS:VAR|OracleLightningBreathDice|classlevel("Oracle")
+	BONUS:VAR|OracleLightningBreathTimes|1+(classlevel("Oracle")/5)
 	SOURCEPAGE:p.53
 
 Spark Skin
