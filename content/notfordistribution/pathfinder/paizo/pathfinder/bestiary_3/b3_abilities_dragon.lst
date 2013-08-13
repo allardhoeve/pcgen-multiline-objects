@@ -2,7 +2,7 @@
 
 Imperial Dragon Defaults
 	CATEGORY:Internal
-	DEFINE:DragonFlight|1
+	DEFINE:DragonFlightSupernatural|1
 	ABILITY:Internal|AUTOMATIC|True Dragon Defaults
 
 
@@ -22,6 +22,60 @@ Default Traits ~ Forest Dragon
 	CATEGORY:Internal
 	ABILITY:Internal|AUTOMATIC|Imperial Dragon Defaults
 	
+
+
+	ABILITY:Special Ability|AUTOMATIC|Breath Weapon ~ Cone of Piercing|Woodland Stride ~ Forest Dragon|Immunity to Poison
+
+
+	ABILITY:Special Ability|AUTOMATIC|Sound Imitation ~ Forest Dragon|PREVARGTEQ:DragonAge,2
+
+
+	SPELLS:Pass Without Trace|PREVARGTEQ:DragonAge,3
+
+
+	SPELLS:Entangle|PREVARGTEQ:DragonAge,4
+
+
+	SPELLS:Blight|PREVARGTEQ:DragonAge,6
+
+
+	SPELLS:Tree Stride|PREVARGTEQ:DragonAge,8
+
+
+	SPELLS:Animate Plants|PREVARGTEQ:DragonAge,10
+
+
+	SPELLS:Earthquake|PREVARGTEQ:DragonAge,12
+
+
+	BONUS:DR|Adamantine|2|PREVARGTEQ:DragonAge,5
+
+
+	BONUS:DR|Adamantine|3|PREVARGTEQ:DragonAge,7
+
+
+	BONUS:DR|Adamantine|5|PREVARGTEQ:DragonAge,9
+
+
+	BONUS:DR|Adamantine|5|PREVARGTEQ:DragonAge,11
+
+
+	ABILITY:Special Ability|AUTOMATIC|Change Shape ~ Forest Dragon|PREVARGTEQ:DragonAge,6
+
+
+	ABILITY:Special Ability|AUTOMATIC|Destructive Crush ~ Forest Dragon|PREVARGTEQ:DragonAge,8
+
+
+	ABILITY:Special Ability|AUTOMATIC|Elemental Breath ~ Forest Dragon|PREVARGTEQ:DragonAge,10
+
+
+	ABILITY:Special Ability|AUTOMATIC|Stony Death ~ Forest Dragon|PREVARGTEQ:DragonAge,12
+
+
+	BONUS:PCLEVEL|Sorcerer|-1|PREVARLTEQ:DragonAge,2
+
+
+	BONUS:PCLEVEL|Sorcerer|(DragonAge-3)*2|PREVARGTEQ:DragonAge,3
 
 
 
@@ -75,6 +129,26 @@ Default Traits ~ Sea Dragon
 	CATEGORY:Internal
 	ABILITY:Internal|AUTOMATIC|Imperial Dragon Defaults
 
+
+	ABILITY:Special Ability|AUTOMATIC|Breath Weapon ~ Cone of Fire
+
+
+	ABILITY:Special Ability|AUTOMATIC|Change Shape ~ Sea Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Sea Strider ~ Sea Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Tidal Wave ~ Sea Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Torrent Breath ~ Sea Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Unfettered Swimmer ~ Sea Dragon|PREVARGTEQ:DragonAge,
+
+
+
 Change Shape (Su)
 	KEY:Change Shape ~ Sea Dragon
 	SOURCEPAGE:p.96
@@ -117,6 +191,29 @@ Unfettered Swimmer (Su)
 Default Traits ~ Sky Dragon
 	CATEGORY:Internal
 	ABILITY:Internal|AUTOMATIC|Imperial Dragon Defaults
+
+
+	ABILITY:Special Ability|AUTOMATIC|Breath Weapon ~ Cone of Lightning
+
+
+	ABILITY:Special Ability|AUTOMATIC|Borne Aloft ~ Sky Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Celestial Emissary ~ Sky Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Change Shape ~ Sky Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Cloud Sight ~ Sky Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Grounding Breath ~ Sky Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Primal Lightning ~ Sky Dragon|PREVARGTEQ:DragonAge,
+
+
 
 Borne Aloft (Su)
 	KEY:Borne Aloft ~ Sky Dragon
@@ -168,6 +265,26 @@ Default Traits ~ Sovereign Dragon
 	CATEGORY:Internal
 	ABILITY:Internal|AUTOMATIC|Imperial Dragon Defaults
 
+
+	ABILITY:Special Ability|AUTOMATIC|Breath Weapon ~ Cone of Sonic
+
+
+	ABILITY:Special Ability|AUTOMATIC|Change Shape ~ Sovereign Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Dogmatic Discordance ~ Sovereign Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Golden Armor ~ Sovereign Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Master Counterspelling ~ Sovereign Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Violent Retort ~ Sovereign Dragon|PREVARGTEQ:DragonAge,
+
+
+
 Change Shape (Su)
 	KEY:Change Shape ~ Sovereign Dragon
 	SOURCEPAGE:p.100
@@ -210,6 +327,27 @@ Violent Retort (Ex)
 Default Traits ~ Underworld Dragon
 	CATEGORY:Internal
 	ABILITY:Internal|AUTOMATIC|Imperial Dragon Defaults
+	
+
+
+	ABILITY:Special Ability|AUTOMATIC|Breath Weapon ~ Line of Fire
+
+
+	ABILITY:Special Ability|AUTOMATIC|Adamantine Claws ~ Underworld Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Change Shape ~ Underworld Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Lava Eruption ~ Underworld Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Smoke Vision ~ Underworld Dragon|PREVARGTEQ:DragonAge,
+
+
+	ABILITY:Special Ability|AUTOMATIC|Underworld Burrower ~ Underworld Dragon|PREVARGTEQ:DragonAge,
+
+
 
 Adamantine Claws (Ex)
 	KEY:Adamantine Claws ~ Underworld Dragon
