@@ -6068,21 +6068,21 @@ Holy Tactician
 	COST:0
 	SOURCEPAGE:p.64
 
-Knight Of The Sepulcher
+Knight of the Sepulcher
 	KEY:Paladin Archetype ~ KNIGHT OF THE SEPULCHER
 	CATEGORY:Archetype
 	TYPE:Archetype.PaladinArchetype.PaladinCruelty.PaladinSmiteGoodUse10.PaladinAuraOfDespair.PaladinFiendishBoonAbility.PaladinAuraOfVengeance.PaladinAuraOfSin.PaladinUnholyChampion
-	PRECLASS:1,Paladin=1,Anti-Paladin=1
+	PRECLASS:1,Anti-Paladin=1
 	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ KNIGHT OF THE SEPULCHER],[!PREABILITY:1,CATEGORY=Archetype,TYPE.PaladinCruelty,TYPE.PaladinSmiteGoodUse10,TYPE.PaladinAuraOfDespair,TYPE.PaladinFiendishBoonAbility,TYPE.PaladinAuraOfVengeance,TYPE.PaladinAuraOfSin,TYPE.PaladinUnholyChampion]
 	DESC:Not content with the antipaladin's mere corruption of the soul, the knight of the sepulcher sacrifices mortality along with morality. The knight of the sepulcher archetype is available only to the antipaladin alternate class.
-	ABILITY:Special Ability|AUTOMATIC|Touch of the Crypt ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Paladin=5
-	ABILITY:Special Ability|AUTOMATIC|Fortitude of the Crypt ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Paladin=8
-	ABILITY:Special Ability|AUTOMATIC|Cloak of the Crypt ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Paladin=10
-	ABILITY:Special Ability|AUTOMATIC|Will of the Crypt ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Paladin=11
-	ABILITY:Special Ability|AUTOMATIC|Weapons of Sin ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Paladin=14
-	ABILITY:Special Ability|AUTOMATIC|Crypt Lord ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Paladin=15
-	ABILITY:Special Ability|AUTOMATIC|Soul of the Crypt ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Paladin=17
-	ABILITY:Special Ability|AUTOMATIC|Undying Champion ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Paladin=20
+	ABILITY:Special Ability|AUTOMATIC|Touch of the Crypt ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Anti-Paladin=5
+	ABILITY:Special Ability|AUTOMATIC|Fortitude of the Crypt ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Anti-Paladin=8
+	ABILITY:Special Ability|AUTOMATIC|Cloak of the Crypt ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Anti-Paladin=10
+	ABILITY:Special Ability|AUTOMATIC|Will of the Crypt ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Anti-Paladin=11
+	ABILITY:Special Ability|AUTOMATIC|Weapons of Sin ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Anti-Paladin=14
+	ABILITY:Special Ability|AUTOMATIC|Crypt Lord ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Anti-Paladin=15
+	ABILITY:Special Ability|AUTOMATIC|Soul of the Crypt ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Anti-Paladin=17
+	ABILITY:Special Ability|AUTOMATIC|Undying Champion ~ KNIGHT OF THE SEPULCHER|PRECLASS:1,Anti-Paladin=20
 	COST:0
 	SOURCEPAGE:p.63
 
