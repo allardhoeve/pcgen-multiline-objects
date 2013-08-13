@@ -9560,14 +9560,13 @@ Eagle's Splendor.MOD
 	TEMPDESC:Grants +4 enhancement bonus to Charisma
 
 Enlarge Person.MOD
-	BONUS:COMBAT|DAMAGESIZE|1|PREAPPLY:ANYPC
-	BONUS:COMBAT|TOHIT,AC|-1|TYPE=Size|PREAPPLY:ANYPC
-	BONUS:COMBAT|TOHIT.GRAPPLE|5|TYPE=Size|PREAPPLY:ANYPC
 	BONUS:STAT|STR|2|TYPE=Size|PREAPPLY:ANYPC
 	BONUS:STAT|DEX|-2|TYPE=Size|PREAPPLY:ANYPC
-	BONUS:WIELDCATEGORY|ALL|1|PREAPPLY:ANYPC
 	TEMPDESC:Causes instant growth of a humanoid creature, doubling its height and multiplying its weight by 8
+	BONUS:SIZEMOD|NUMBER|1|PREAPPLY:ANYPC
+	BONUS:VAR|BypassSizeMods,ActivateSizeMaster|1|PREAPPLY:ANYPC
 
+#BONUS:WIELDCATEGORY|ALL|1|PREAPPLY:ANYPC	BONUS:COMBAT|DAMAGESIZE|1|PREAPPLY:ANYPC	BONUS:COMBAT|TOHIT,AC|-1|TYPE=Size|PREAPPLY:ANYPC	BONUS:COMBAT|TOHIT.GRAPPLE|5|TYPE=Size|PREAPPLY:ANYPC
 Expeditious Retreat.MOD
 	BONUS:POSTMOVEADD|TYPE.Walk|30|TYPE=Enhancement|PREAPPLY:PC
 	TEMPDESC:Grants +30 to Walk speed
@@ -9711,11 +9710,13 @@ Rage.MOD
 	TEMPDESC:Grants a +2 morale bonus to Strength and Constitution, a +1 morale bonus on Will saves, and a ???2 penalty to AC
 
 Reduce Person.MOD
-	BONUS:COMBAT|TOHIT,AC|1|TYPE=Size|PREAPPLY:ANYPC
 	BONUS:STAT|STR|-2|TYPE=Size|PREAPPLY:ANYPC
 	BONUS:STAT|DEX|2|TYPE=Size|PREAPPLY:ANYPC
+	BONUS:SIZEMOD|NUMBER|-1|PREAPPLY:ANYPC
 	TEMPDESC:Grants a +2 size bonus to Dexterity, a ???2 size penalty to Strength (to a minimum of 1), and a +1 bonus on attack rolls and AC due to your reduced size
+	BONUS:VAR|BypassSizeMods,ActivateSizeMaster|1|PREAPPLY:ANYPC
 
+# BONUS:COMBAT|TOHIT,AC|1|TYPE=Size|PREAPPLY:ANYPC
 Shield.MOD
 	BONUS:COMBAT|AC|4|TYPE=Shield|PREAPPLY:PC
 	TEMPDESC:Grants a +4 shield bonus to AC
