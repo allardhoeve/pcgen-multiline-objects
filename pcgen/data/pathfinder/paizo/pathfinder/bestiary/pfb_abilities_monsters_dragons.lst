@@ -115,6 +115,10 @@ True Dragon Defaults
 	BONUS:WEAPONPROF=Bite|DAMAGE|max(0,STR/2)
 	BONUS:WEAPONPROF=Tail Slap|DAMAGE|STR
 	ABILITY:Internal|AUTOMATIC|Size_Master
+	BONUS:VAR|BreathWeaponDice|DragonAge*2
+	
+
+
 
 
 
@@ -180,9 +184,7 @@ Damage Reduction
 	CATEGORY:Special Ability
 	TYPE:RaceAbility.SpecialQuality
 	DESC:Dragons gain damage reduction as they age, as indicated on each dragon's specific entry. Their natural weapons are treated as magic weapons for the purpose of overcoming damage reduction.
-	DR:DragonDR/Magic
-	DEFINE:DragonDR|0
-	BONUS:VAR|DragonDR|5*(floor((DragonAge-3)/2))|PREVARGTEQ:DragonAge,5
+	ABILITY:Internal|AUTOMATIC|Damage Reduction / Magic|PREVAREQ:DisableDragonBaseDR,0
 
 Immunities (Ex)
 	KEY:Immunities ~ Dragon
@@ -196,6 +198,15 @@ Spell Resistance (Ex)
 	TYPE:RaceAbility.SpecialQuality
 	DESC:As dragons grow older, they become more resistant to spells and spell-like abilities, as indicated in the dragon descriptions. A dragon's SR is equal to 11 + its CR.
 	SR:CR+11
+
+# Dragons can have different Types instead of just Magic, breaking this out to handle that.
+Damage Reduction / Magic
+	CATEGORY:Internal
+	DR:DragonDR/Magic
+	DEFINE:DragonDR|0
+	BONUS:VAR|DragonDR|5*(floor((DragonAge-3)/2))|PREVARGTEQ:DragonAge,5
+
+
 
 
 
