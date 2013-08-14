@@ -11,33 +11,14 @@ Forest Dragon
 	RACESUBTYPE:Earth
 	MONSTERCLASS:Dragon:7
 	CR:6
-	
-
-
 	MOVE:Walk,40,Burrow 20,Climb,30
-
-
 	BONUS:COMBAT|AC|6|TYPE=NaturalArmor
-
-
 	ABILITY:Internal|AUTOMATIC|Default Traits ~ Forest Dragon
-
-
 	BONUS:STAT|STR,DEX,CON|4
-
-
 	ADD:SPELLCASTER|Sorcerer
-
-
 	STARTFEATS:1
-
-
 	LEGS:4
-
-
 	BONUS:VAR|BreathWeaponDamageDie|6
-
-
 
 Sea Dragon
 	KEY:Dragon (Imperial/Sea)
@@ -48,35 +29,15 @@ Sea Dragon
 	RACESUBTYPE:Water
 	MONSTERCLASS:Dragon:5
 	CR:4
-
-
 	MOVE:Walk,40,Swim,60
-
-
 	BONUS:COMBAT|AC|5|TYPE=NaturalArmor
-
-
 	ABILITY:Internal|AUTOMATIC|Default Traits ~ Sea Dragon
-
-
 	BONUS:STAT|STR,CON|2
-
-
 	BONUS:STAT|DEX,INT,WIS,CHA|4
-
-
 	ADD:SPELLCASTER|Sorcerer
-
-
 	STARTFEATS:1
-
-
 	LEGS:4
-
-
 	BONUS:VAR|BreathWeaponDamageDie|6
-
-
 
 Sky Dragon
 	KEY:Dragon (Imperial/Sky)
@@ -87,35 +48,15 @@ Sky Dragon
 	RACESUBTYPE:Air
 	MONSTERCLASS:Dragon:6
 	CR:5
-
-
 	MOVE:Walk,40
-
-
 	BONUS:COMBAT|AC|6|TYPE=NaturalArmor
-
-
 	ABILITY:Internal|AUTOMATIC|Default Traits ~ Sky Dragon
-
-
 	BONUS:STAT|STR,CON|2
-
-
 	BONUS:STAT|DEX,INT,WIS,CHA|4
-
-
 	ADD:SPELLCASTER|Sorcerer
-
-
 	STARTFEATS:1
-
-
 	LEGS:4
-
-
 	BONUS:VAR|BreathWeaponDamageDie|8
-
-
 
 Sovereign Dragon
 	KEY:Dragon (Imperial/Sovereign)
@@ -125,35 +66,15 @@ Sovereign Dragon
 	RACETYPE:Dragon
 	MONSTERCLASS:Dragon:8
 	CR:7
-
-
 	MOVE:Walk,50
-
-
 	BONUS:COMBAT|AC|7|TYPE=NaturalArmor
-
-
 	ABILITY:Internal|AUTOMATIC|Default Traits ~ Sovereign Dragon
-
-
 	BONUS:STAT|STR|6
-
-
 	BONUS:STAT|DEX,CON,INT,WIS,CHA|4
-
-
 	ADD:SPELLCASTER|Sorcerer
-
-
 	STARTFEATS:1
-
-
 	LEGS:4
-
-
 	BONUS:VAR|BreathWeaponDamageDie|6
-
-
 
 Underworld Dragon
 	KEY:Dragon (Imperial/Underworld)
@@ -164,31 +85,13 @@ Underworld Dragon
 	RACESUBTYPE:Fire
 	MONSTERCLASS:Dragon:4
 	CR:3
-
-
 	MOVE:Walk,40,Burrow,30
-
-
 	BONUS:COMBAT|AC|4|TYPE=NaturalArmor
-
-
 	ABILITY:Internal|AUTOMATIC|Default Traits ~ Underworld Dragon
-
-
 	BONUS:STAT|STR,CON|2
-
-
 	BONUS:STAT|DEX|4
-
-
 	ADD:SPELLCASTER|Sorcerer
-
-
 	STARTFEATS:1
-
-
 	LEGS:4
-
-
 	BONUS:VAR|BreathWeaponDamageDie|6
 
