@@ -95,7 +95,7 @@ Spell-Like Abilities
 #Ahuizotl 10
 Default Traits ~ Ahuizotl
 	CATEGORY:Internal
-	ABILITY:Special Ability|AUTOMATIC|Tenacious Grapple ~ Ahuizotl|Voice Mimicry ~ Ahuizotl
+	ABILITY:Special Ability|AUTOMATIC|Tenacious Grapple ~ Ahuizotl|Voice Mimicry ~ Ahuizotl|Amphibious|Rake
 
 Tenacious Grapple
 	KEY:Tenacious Grapple ~ Ahuizotl
@@ -111,13 +111,12 @@ Voice Mimicry
 	DESC:An ahuizotl can perfectly mimic the sound of humanoid sobbing and can even attempt to mimic voices it has heard. When mimicking a voice, an ahuizotl must make a Bluff check opposed by its listener's Sense Motive check. If the listener has never heard the voice the ahuizotl is attempting to mimic, the listener takes a -8 penalty on the Sense Motive check.
 	SOURCEPAGE:p.10
 
-#	Special Attacks:rake (2 claws +5, 1d4+5) SQ amphibious, tenacious grapple, voice mimicry
 
 
 #Akhlut 11
 Default Traits ~ Akhlut
 	CATEGORY:Internal
-	ABILITY:Special Ability|AUTOMATIC|Scent|Swallow Whole|Savage Bite ~ Akhlut|Shore Storming ~ Akhlut|Snow Vision ~ Akhlut|Snow Walking ~ Akhlut|Spell-Like Abilities ~ Akhlut
+	ABILITY:Special Ability|AUTOMATIC|Scent|Swallow Whole ~ Akhlut|Savage Bite ~ Akhlut|Shore Storming ~ Akhlut|Snow Vision ~ Akhlut|Snow Walking ~ Akhlut|Spell-Like Abilities ~ Akhlut|Hold Breath|Change Shape ~ Akhlut
 
 Savage Bite
 	KEY:Savage Bite ~ Akhlut
@@ -150,16 +149,28 @@ Snow Walking
 Spell-Like Abilities
 	KEY:Spell-Like Abilities ~ Akhlut
 	CATEGORY:Special Ability
-	TYPE:SpellLike
+	TYPE:SpecialQuality.SpellLike
 	DESC:(CL 18th; concentration +16); 1/day-control weather (windy or cold weather only)
 	SOURCEPAGE:p.11
 
-# 	Special Attacks:savage bite, shore storming, swallow whole(2d8+15 bludgeoning damage plus 4d6 cold, AC 19, 18 hp)
-# SQ change shape (orca; beast shape III), hold breath, snow walking
+Swallow Whole
+	KEY:Swallow Whole ~ Akhlut
+	CATEGORY:Special Ability
+	TYPE:SpecialAttack
+	DESC:2d8+15 bludgeoning damage plus 4d6 cold, AC 19, 18 hp
+
+Change Shape
+	KEY:Change Shape ~ Akhlut
+	CATEGORY:Special Ability
+	TYPE:SpecialQuality.SpellLike
+	DESC:(orca; beast shape III)
+
+
+
 #Allip 12
 Default Traits ~ Allip
 	CATEGORY:Internal
-	ABILITY:Special Ability|AUTOMATIC|Babble ~ Allip|Madness ~ Allip|Touch of Insanity ~ Allip
+	ABILITY:Special Ability|AUTOMATIC|Babble ~ Allip|Madness ~ Allip|Touch of Insanity ~ Allip|Channel Resistance
 
 Babble
 	KEY:Babble ~ Allip
@@ -187,7 +198,7 @@ Touch of Insanity
 #Alraune 13
 Default Traits ~ Alraune
 	CATEGORY:Internal
-	ABILITY:Special Ability|AUTOMATIC|Calming Fragrance ~ Alraune|Feed ~ Alraune
+	ABILITY:Special Ability|AUTOMATIC|Calming Fragrance ~ Alraune|Feed ~ Alraune|Bleed|Constrict
 
 Calming Fragrance
 	KEY:Calming Fragrance ~ Alraune
@@ -205,8 +216,21 @@ Feed
 
 
 
-#Animal lord 14-15
-#scent	leap	evasion
+#Animal lord (TEMPLATE) 14-15
+Change Shape (Su)
+	KEY:Change Shape ~ Animal Lord
+	SOURCEPAGE:p.15
+	CATEGORY:Special Ability
+	TYPE:RaceTrait.AnimalLordRaceTrait.SpecialQuality
+	DESC:An animal lord has two forms-a humanoid and an animal form. When an animal lord in humanoid form uses the base animal's defensive abilities, movement types, attacks, and other features, the animal lord's body instantaneously changes as appropriate to allow the use of that ability, growing wings or claws or fangs as necessary. The animal lord can use this ability to take the shape of the base animal (as shapechange) as a move action.
+
+Dominion (Su)
+	KEY:Dominion ~ Animal Lord
+	SOURCEPAGE:p.15
+	CATEGORY:Special Ability
+	TYPE:RaceTrait.AnimalLordRaceTrait.SpecialQuality
+	DESC:In both forms, an animal lord is treated as if constantly under the effects of a speak with animals spell, but this only applies to creatures of the animal lord's species affinity (see below). In addition, an animal lord can cast charm animal on any animal of its affinity as a spell-like ability at will (CL equals the animal lord's HD).
+
 
 
 #Annis hag 16
@@ -221,8 +245,6 @@ Sand Trap
 	TYPE:SpecialQuality.Extraordinary
 	DESC:A giant ant lion can create a 60-foot-diameter, 20-foot-deep pit in any sand or soft earth surface. Creating a sand trap takes 1 hour. A DC 15 Perception check allows a creature to realize such a depression in the sand is in fact a trap. Any creature that steps into the trap slides to the center if it fails a DC 14 Reflex save-such victims take no damage, but they do fall prone. A giant ant lion can make an attack of opportunity against any creature that falls to the bottom of its sand trap. These creatures can move across sand traps at their normal speed and are immune to the trap's effects. Other creatures can navigate the trap's walls with a DC 20 Climb check.
 	SOURCEPAGE:p.16
-
-
 
 
 
