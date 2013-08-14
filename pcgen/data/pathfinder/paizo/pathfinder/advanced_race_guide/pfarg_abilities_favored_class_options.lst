@@ -15,7 +15,7 @@ Bonus Magus Arcane Pool
 	VISIBLE:YES
 	PREABILITY:1,CATEGORY=Special Ability,Magus
 	PRECLASS:1,Magus=1
-	PRERACE:1,Human%
+	PRERACE:1,Human%,Tiefling%,Suli%
 	DEFINE:MagusBonusArcanePoolCount|0
 	DESC:Add +1/4 point to the magus' arcane pool.
 	STACK:YES
