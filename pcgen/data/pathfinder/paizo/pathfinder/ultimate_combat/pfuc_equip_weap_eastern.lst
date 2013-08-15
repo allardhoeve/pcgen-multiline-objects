@@ -358,7 +358,7 @@ Katana
 	EQMOD:STEEL
 	WIELD:TwoHanded
 	SIZE:M
-	BONUS:WEAPON|WIELDCATEGORY|-1|PREFEAT:1,Exotic Weapon Proficiency (Katana)
+	BONUS:WEAPON|WIELDCATEGORY|-1|PREMULT:1,[PREFEAT:1,Exotic Weapon Proficiency (Katana)],[PREVAREQ:UseKatanaOneHanded,1]
 
 Nine-Section Whip
 	PROFICIENCY:WEAPON|Nine-Section Whip

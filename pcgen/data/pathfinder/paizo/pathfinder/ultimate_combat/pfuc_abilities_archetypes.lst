@@ -4228,6 +4228,8 @@ Kensai Weapon Proficiency
 	MULT:YES
 	CHOOSE:WEAPONPROFICIENCY|!PC[TYPE=Exotic]|!PC[TYPE=Martial]
 	AUTO:WEAPONPROF|%LIST
+	AUTO:FEAT|Exotic Weapon Proficiency (Katana)|PREABILITY:1,CATEGORY=Special Ability,Weapon Proficiency ~ Kensai (Katana)
+	AUTO:FEAT|Exotic Weapon Proficiency (Sword (Bastard))|PREABILITY:1,CATEGORY=Special Ability,Weapon Proficiency ~ Kensai (Sword (Bastard))
 
 
 
