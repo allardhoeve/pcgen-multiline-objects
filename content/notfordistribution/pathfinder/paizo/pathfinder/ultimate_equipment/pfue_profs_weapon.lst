@@ -24,9 +24,6 @@ Brass Knuckles
 Cestus
 	TYPE:Simple.Melee.Light.Bludgeoning.Piercing
 
-Wooden Stake
-	TYPE:Simple.Melee.Light.Ranged.Thrown.Piercing
-
 
 
 #-----one handed -------

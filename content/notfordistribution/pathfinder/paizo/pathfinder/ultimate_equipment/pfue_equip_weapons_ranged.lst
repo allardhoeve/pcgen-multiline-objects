@@ -36,18 +36,6 @@ Underwater Light Crossbow
 	TYPE:Weapon.Ranged.Simple.Piercing.Crossbow
 	SOURCEPAGE:p.40
 
-Wooden Stake
-	PROFICIENCY:WEAPON|Wooden Stake
-	COST:0
-	DAMAGE:1d4
-	CRITMULT:x2
-	CRITRANGE:1
-	RANGE:10
-	WT:1
-	EQMOD:WOOD
-	TYPE:Weapon.Melee.Light.Ranged.Thrown.Simple.Piercing
-	SOURCEPAGE:p.40
-
 
 
 

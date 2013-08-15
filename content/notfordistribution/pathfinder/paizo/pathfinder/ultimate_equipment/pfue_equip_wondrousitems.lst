@@ -3280,8 +3280,7 @@ Armbands of the Brawler
 	SOURCEPAGE:p.270
 	WT:1
 	BONUS:VAR|CMB_Grapple|1|TYPE=Competence
-	DESC:These scarred and worn armbands have clearly seen rough use, and are constructed out of coarse leather and fastened with thick leather straps.
-	BENEFIT:They grant their wearer a +1 competence bonus on grapple checks and checks to break a grapple. 
+	DESC:These scarred and worn armbands have clearly seen rough use, and are constructed out of coarse leather and fastened with thick leather straps. They grant their wearer a +1 competence bonus on grapple checks and checks to break a grapple. 
 
 Arrowmaster's Bracers
 	COST:13900
