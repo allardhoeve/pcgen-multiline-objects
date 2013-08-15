@@ -44,7 +44,7 @@ Quilted Cloth
 	BONUS:COMBAT|AC|1|TYPE=Armor
 
 Silken Ceremonial Armor
-	PROFICIENCY:ARMOR|Silken Ceremonial Armor
+	PROFICIENCY:ARMOR|Silken Ceremonial
 	TYPE:Armor.Suit.Standard.Light
 	COST:30
 	WT:4
