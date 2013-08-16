@@ -60,6 +60,7 @@ Agile Breastplate
 	SOURCEPAGE:p.180
 	SPELLFAILURE:25
 	BONUS:COMBAT|AC|6|TYPE=Armor.REPLACE
+	BONUS:SKILL|Acrobatics (Jump),Climb|3
 
 
 
@@ -75,6 +76,7 @@ Agile Half-Plate
 	SOURCEPAGE:p.180
 	SPELLFAILURE:40
 	BONUS:COMBAT|AC|8|TYPE=Armor.REPLACE
+	BONUS:SKILL|Acrobatics (Jump),Climb|3
 
 
 
