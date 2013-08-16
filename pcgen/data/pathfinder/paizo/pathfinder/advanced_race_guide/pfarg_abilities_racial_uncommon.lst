@@ -360,8 +360,6 @@ Natural Weapons
 	CATEGORY:Special Ability
 	TYPE:RacialTraits.SpecialQuality.Extraordinary.KitsuneRacialTrait.KitsuneRacialDefault
 	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Natural Weapons ~ Kitsune],[!PREABILITY:1,CATEGORY=Special Ability,TYPE.KitsuneNaturalWeapons]
-	DEFINE:KitsuneSLATimes|3
-	SPELLS:Innate|TIMES=KitsuneSLATimes|CASTERLEVEL=TL|Dancing Lights|PRESTAT:1,CHA=11
 	DESC:Kitsune have a bite attack in their natural form.
 	SOURCEPAGE:p.192
 	NATURALATTACKS:Bite,Weapon.Natural.Melee.Piercing,*1,1d4
