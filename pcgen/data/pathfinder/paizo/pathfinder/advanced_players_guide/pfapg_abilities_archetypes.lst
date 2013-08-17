@@ -2782,6 +2782,9 @@ Lorekeeper
 	TYPE:ArchetypeDruid.SpecialQuality.Extraordinary.DruidWoodlandStride.DruidTracklessStep
 	DESC:At 2nd level, an urban druid adds Diplomacy, Knowledge (history), Knowledge (local), and Knowledge (nobility) skills. She also receives a +2 bonus on these skill checks. This ability replaces a druid's woodland stride and trackless step abilities.
 	SOURCEPAGE:p.102
+	CSKILL:Diplomacy|Knowledge (Local)|Knowledge (History)|Knowledge (Religion)
+	BONUS:SKILL|Diplomacy,Knowledge (Local),Knowledge (History),Knowledge (Religion)|2
+	
 
 Resist Temptation
 	KEY:Resist Temptation ~ Urban Druid
