@@ -435,27 +435,6 @@ ABILITYCATEGORY:Sighted Seeker Metafaculty
 	PLURAL:Sighted Seeker Metafaculty
 	DISPLAYLOCATION:Class Abilities
 
-#Block: Soulknife
-ABILITYCATEGORY:Soulknife Rogue Talent
-	VISIBLE:QUALIFY
-	EDITABLE:YES
-	EDITPOOL:YES
-	FRACTIONALPOOL:NO
-	CATEGORY:Special Ability
-	TYPE:SoulknifeRogueTalent
-	PLURAL:Soulknife Rogue Talents
-	DISPLAYLOCATION:Class Abilities
-
-ABILITYCATEGORY:Soulknife Advanced Talent
-	VISIBLE:QUALIFY
-	EDITABLE:YES
-	EDITPOOL:YES
-	FRACTIONALPOOL:NO
-	CATEGORY:Special Ability
-	TYPE:SoulknifeAdvancedTalent
-	PLURAL:Soulknife Advanced Talents
-	DISPLAYLOCATION:Class Abilities
-
 
 
 ###Block: Enhancement choice ability pools
@@ -528,7 +507,7 @@ ABILITYCATEGORY:Telekinetic Weaponmaster Enhancement Choice
 
 
 ###Block: Archetype Ability ability pools
-# Ability Category					Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object				Plural description for UI			Display Location
+# Ability Category					Visible		Editable or Static?	Change Pool?	Fractional values?	Category of Object		Type of Object				Specific choices list																	Plural description for UI			Display Location
 ABILITYCATEGORY:Transformed Body Customization
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -569,6 +548,26 @@ ABILITYCATEGORY:Meditant Fighting Style
 	PLURAL:Meditant Fighting Styles
 	DISPLAYLOCATION:Class Abilities
 
+ABILITYCATEGORY:Soulknife Rogue Talent
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:YES
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	ABILITYLIST:Befuddling Strike ~ Rogue Talent|Fast Stealth|Slow Reactions|Sniper's Eye ~ Rogue Talent|Surprise Attack
+	PLURAL:Soulknife Rogue Talents
+	DISPLAYLOCATION:Class Abilities
+
+ABILITYCATEGORY:Soulknife Advanced Talent
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:YES
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	ABILITYLIST:Confounding Blades ~ Advanced Rogue Talent|Crippling Strike|Stealthy Sniper ~ Rogue Talent
+	PLURAL:Soulknife Advanced Talents
+	DISPLAYLOCATION:Class Abilities
+
 ABILITYCATEGORY:Medic Tricks
 	VISIBLE:QUALIFY
 	EDITABLE:YES
@@ -578,8 +577,6 @@ ABILITYCATEGORY:Medic Tricks
 	TYPE:BattleMedicMedicTrick
 	PLURAL:Medic Tricks
 	DISPLAYLOCATION:Class Abilities
-
-
 
 
 

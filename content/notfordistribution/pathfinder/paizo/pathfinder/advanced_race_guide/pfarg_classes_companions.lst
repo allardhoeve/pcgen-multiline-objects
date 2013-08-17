@@ -1,4 +1,4 @@
-# CVS $Revision: 20122 $ $Author: zaister $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: 20122 $ $Author: zaister $ -- Sat Jun 29 23:21:14 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -18,7 +18,7 @@ SOURCELONG:Advanced Race Guide
 ###Block: Shaitan Binder Eidolon
 
 
-# Class Name					Output Name			Hit Dice	Type				Class Type			Max Level		Source Page		Ability					Save checks bonus											Combat bonus
+# Class Name			Output Name			Hit Dice	Type				Class Type			Max Level		Source Page		Ability					Save checks bonus											Combat bonus
 CLASS:Shaitan Binder Eidolon (Fort/Ref)
 	OUTPUTNAME:Eidolon
 	HD:10
@@ -31,11 +31,11 @@ CLASS:Shaitan Binder Eidolon (Fort/Ref)
 	BONUS:CHECKS|BASE.Will|CL/3
 	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
 
-# Class Name					Reg. Race Type
+# Class Name			Reg. Race Type
 CLASS:Shaitan Binder Eidolon (Fort/Ref)
 	PRERACETYPE:Shaitan Binder Eidolon
 
-# Class Name					Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
+# Class Name			Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
 CLASS:Shaitan Binder Eidolon (Fort/Ref)
 	STARTSKILLPTS:6
 	MODTOSKILLS:YES
@@ -43,7 +43,7 @@ CLASS:Shaitan Binder Eidolon (Fort/Ref)
 
 
 
-# Class Name					Output Name			Hit Dice	Type				Class Type			Max Level		Source Page		Ability					Save checks bonus											Combat bonus
+# Class Name			Output Name			Hit Dice	Type				Class Type			Max Level		Source Page		Ability					Save checks bonus											Combat bonus
 CLASS:Shaitan Binder Eidolon (Fort/Will)
 	OUTPUTNAME:Eidolon
 	HD:10
@@ -56,11 +56,11 @@ CLASS:Shaitan Binder Eidolon (Fort/Will)
 	BONUS:CHECKS|BASE.Reflex|CL/3
 	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
 
-# Class Name					Reg. Race Type
+# Class Name			Reg. Race Type
 CLASS:Shaitan Binder Eidolon (Fort/Will)
 	PRERACETYPE:Shaitan Binder Eidolon
 
-# Class Name					Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
+# Class Name			Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
 CLASS:Shaitan Binder Eidolon (Fort/Will)
 	STARTSKILLPTS:6
 	MODTOSKILLS:YES
@@ -68,7 +68,7 @@ CLASS:Shaitan Binder Eidolon (Fort/Will)
 
 
 
-# Class Name					Output Name			Hit Dice	Type				Class Type			Max Level		Source Page		Ability					Save checks bonus											Combat bonus
+# Class Name			Output Name			Hit Dice	Type				Class Type			Max Level		Source Page		Ability					Save checks bonus											Combat bonus
 CLASS:Shaitan Binder Eidolon (Ref/Will)
 	OUTPUTNAME:Eidolon
 	HD:10
@@ -81,11 +81,11 @@ CLASS:Shaitan Binder Eidolon (Ref/Will)
 	BONUS:CHECKS|BASE.Fortitude|CL/3
 	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
 
-# Class Name					Reg. Race Type
+# Class Name			Reg. Race Type
 CLASS:Shaitan Binder Eidolon (Ref/Will)
 	PRERACETYPE:Shaitan Binder Eidolon
 
-# Class Name					Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
+# Class Name			Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
 CLASS:Shaitan Binder Eidolon (Ref/Will)
 	STARTSKILLPTS:6
 	MODTOSKILLS:YES
@@ -96,7 +96,7 @@ CLASS:Shaitan Binder Eidolon (Ref/Will)
 ###Block: Wild Caller Eidolon
 
 
-# Class Name					Output Name			Hit Dice	Type				Class Type			Max Level		Source Page		Ability					Save checks bonus											Combat bonus
+# Class Name			Output Name			Hit Dice	Type				Class Type			Max Level		Source Page		Ability					Save checks bonus											Combat bonus
 CLASS:Wild Caller Eidolon (Fort/Ref)
 	OUTPUTNAME:Eidolon
 	HD:10
@@ -109,11 +109,11 @@ CLASS:Wild Caller Eidolon (Fort/Ref)
 	BONUS:CHECKS|BASE.Will|CL/3
 	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
 
-# Class Name					Reg. Race Type
+# Class Name			Reg. Race Type
 CLASS:Wild Caller Eidolon (Fort/Ref)
 	PRERACETYPE:Wild Caller Eidolon
 
-# Class Name					Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
+# Class Name			Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
 CLASS:Wild Caller Eidolon (Fort/Ref)
 	STARTSKILLPTS:6
 	MODTOSKILLS:YES
@@ -121,7 +121,7 @@ CLASS:Wild Caller Eidolon (Fort/Ref)
 
 
 
-# Class Name					Output Name			Hit Dice	Type				Class Type			Max Level		Source Page		Ability					Save checks bonus											Combat bonus
+# Class Name			Output Name			Hit Dice	Type				Class Type			Max Level		Source Page		Ability					Save checks bonus											Combat bonus
 CLASS:Wild Caller Eidolon (Fort/Will)
 	OUTPUTNAME:Eidolon
 	HD:10
@@ -134,11 +134,11 @@ CLASS:Wild Caller Eidolon (Fort/Will)
 	BONUS:CHECKS|BASE.Reflex|CL/3
 	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
 
-# Class Name					Reg. Race Type
+# Class Name			Reg. Race Type
 CLASS:Wild Caller Eidolon (Fort/Will)
 	PRERACETYPE:Wild Caller Eidolon
 
-# Class Name					Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
+# Class Name			Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
 CLASS:Wild Caller Eidolon (Fort/Will)
 	STARTSKILLPTS:6
 	MODTOSKILLS:YES
@@ -146,7 +146,7 @@ CLASS:Wild Caller Eidolon (Fort/Will)
 
 
 
-# Class Name					Output Name			Hit Dice	Type				Class Type			Max Level		Source Page		Ability					Save checks bonus											Combat bonus
+# Class Name			Output Name			Hit Dice	Type				Class Type			Max Level		Source Page		Ability					Save checks bonus											Combat bonus
 CLASS:Wild Caller Eidolon (Ref/Will)
 	OUTPUTNAME:Eidolon
 	HD:10
@@ -159,11 +159,11 @@ CLASS:Wild Caller Eidolon (Ref/Will)
 	BONUS:CHECKS|BASE.Fortitude|CL/3
 	BONUS:COMBAT|BAB|CL|TYPE=Base.REPLACE
 
-# Class Name					Reg. Race Type
+# Class Name			Reg. Race Type
 CLASS:Wild Caller Eidolon (Ref/Will)
 	PRERACETYPE:Wild Caller Eidolon
 
-# Class Name					Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
+# Class Name			Skill Pts/Lvl	Add INT to Skill Points?	Class Skill
 CLASS:Wild Caller Eidolon (Ref/Will)
 	STARTSKILLPTS:6
 	MODTOSKILLS:YES

@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:21:14 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -364,7 +364,7 @@ Savage Maw
 
 
 ###Block: Halfling Spells
-# Spell Name				Output Name							Classes of caster								School			Sub-School			Spell Descriptors			Type				Components	Casting Time			Range			Target Area or Effect											Duration					Save Info			Spell Resistance	Description																																																																																																																																																																																																																																																																																						Source Page
+# Spell Name				Classes of caster								School			Sub-School			Spell Descriptors			Type				Components	Casting Time			Range			Target Area or Effect											Duration					Save Info			Spell Resistance	Description																																																																																																																																																																																																																																																																																						Source Page
 Blessing of Luck and Resolve
 	CLASSES:Cleric,Inquisitor,Paladin=2
 	SCHOOL:Enchantment
@@ -964,7 +964,7 @@ Sentry Skull
 
 
 ###Block: Oread Spells
-# Spell Name			Output Name					Classes of caster								School			Sub-School			Spell Descriptors	Type				Components		Casting Time			Range		Target Area or Effect					Duration					Save Info				Spell Resistance	Description																																																																																																																										Source Page
+# Spell Name			Classes of caster								School			Sub-School			Spell Descriptors	Type				Components		Casting Time			Range		Target Area or Effect					Duration					Save Info				Spell Resistance	Description																																																																																																																										Source Page
 Binding Earth
 	CLASSES:Druid,Witch=2
 	SCHOOL:Transmutation
@@ -1337,7 +1337,7 @@ Undine's Curse
 
 
 ###Block: Changeling Spells
-# Spell Name	Unique Key				Classes of caster					School			Sub-School			Spell Descriptors			Type		Components	Casting Time			Range		Target Area or Effect	Duration			Save Info			Spell Resistance	Description																																																																																																Source Page
+# Spell Name	Classes of caster					School			Sub-School			Spell Descriptors			Type		Components	Casting Time			Range		Target Area or Effect	Duration			Save Info			Spell Resistance	Description																																																																																																Source Page
 Sow Thought
 	KEY:Sow Thought ~ Changeling
 	CLASSES:Bard,Sorcerer,Wizard,Witch=1
@@ -1426,7 +1426,7 @@ Karmic Blessing
 
 
 ###Block: Strix Spells
-# Spell Name	Classes of caster						School			Type				Components	Casting Time			Range		Target Area or Effect	Duration					Save Info						Spell Resistance		Description																																																	Source Page		Temporary Bonus
+# Spell Name	Classes of caster						School			Type				Components	Casting Time			Range		Target Area or Effect	Duration					Save Info						Spell Resistance		Description																																																	Add to base move					Modify VAR							Source Page
 Strong Wings
 	CLASSES:Druid,Ranger,Sorcerer,Wizard,Witch=1
 	SCHOOL:Transmutation

@@ -35,6 +35,9 @@ Fell Shot.MOD
 Greater Psionic Shot.MOD
 	TYPE:MarksmanBonus
 
+Parting Shot.MOD
+	TYPE:MarksmanBonus
+
 Precise Shot.MOD
 	TYPE:MarksmanBonus
 
@@ -74,6 +77,9 @@ Weapon Specialization.MOD
 Greater Weapon Specialization.MOD
 	TYPE:MarksmanBonus
 
+Disrupting Shot.MOD
+	TYPE:FinesseMarksmanBonus
+
 Shot on the Run.MOD
 	TYPE:FinesseMarksmanBonus
 
@@ -94,6 +100,9 @@ Pinpoint Targeting.MOD
 
 Vital Strike.MOD
 	TYPE:SniperMarksmanBonus
+
+Crossbow Mastery.MOD
+	TYPE:VolleyMarksmanBonus
 
 Manyshot.MOD
 	TYPE:VolleyMarksmanBonus

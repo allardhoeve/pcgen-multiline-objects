@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Thu Aug  2 19:19:21 2012 -- reformated by prettylst.pl v1.39 (build )
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -9,10 +9,9 @@ SOURCELONG:Advanced Race Guide
 
 
 # Language	Type
-Catfolk
-	TYPE:Spoken.Written.Read
-
-# Language	Type
+#Catfolk	TYPE:Spoken.Written.Read
+#D'ziriak	TYPE:Spoken
+#Grippli	TYPE:Spoken.Written.Read
 Samsaran
 	TYPE:Spoken.Written.Read
 
@@ -32,8 +31,6 @@ Wayang
 
 
 
-#D'ziriak	TYPE:Spoken
-#Grippli	TYPE:Spoken.Written.Read
 #Dwarven - PFCR
 #Elven - PFCR
 #Gnome - PFCR

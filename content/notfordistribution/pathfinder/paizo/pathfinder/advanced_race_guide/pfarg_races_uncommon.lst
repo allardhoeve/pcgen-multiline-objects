@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:00:42 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -8,7 +8,7 @@ SOURCELONG:Advanced Race Guide
 # ORIGINAL ENTRY DATE: 2012/09/03
 
 
-# Race Name	Starting Feats	Size		Move				Face/Space	Reach		Required Gender	Bonus Languages												Stat bonus						Automatically Gained Language	Ability									Define				Main Race Type	Race Subtype				Type				Challenge Rating	Source Page		More language			SORTKEY
+# Race Name	Starting Feats	Size		Move				Face/Space	Reach		Required Gender	Automatic Languages		Bonus Languages												Stat bonus						Ability									Define				Main Race Type	Race Subtype				Type				Challenge Rating	Source Page		More language
 Changeling
 	STARTFEATS:1
 	SIZE:M
@@ -16,10 +16,10 @@ Changeling
 	FACE:5
 	REACH:5
 	PREGENDER:F
+	AUTO:LANG|Common
 	LANGBONUS:Aklo,Draconic,Dwarven,Elven,Giant,Gnoll,Goblin,Orc
 	BONUS:STAT|WIS,CHA|2
 	BONUS:STAT|CON|-2
-	AUTO:LANG|Common
 	RACETYPE:Humanoid
 	RACESUBTYPE:Changeling
 	TYPE:Base.PC.Uncommon
@@ -34,10 +34,10 @@ Gillman
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
+	AUTO:LANG|Common,Aboleth
 	LANGBONUS:Aklo,Aquan,Draconic,Elven
 	BONUS:STAT|CON,CHA|2
 	BONUS:STAT|WIS|-2
-	AUTO:LANG|Common|Aboleth
 	RACETYPE:Humanoid
 	TYPE:Base.PC.Uncommon
 	CR:1/2
@@ -51,10 +51,10 @@ Kitsune
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
+	AUTO:LANG|Common,Sylvan
 	LANGBONUS:Aklo,Celestial,Elven,Gnome,Tengu
 	BONUS:STAT|DEX,CHA|2
 	BONUS:STAT|STR|-2
-	AUTO:LANG|Common|Sylvan
 	RACETYPE:Humanoid
 	RACESUBTYPE:Kitsune|Shapechanger
 	TYPE:Base.PC.Uncommon
@@ -68,10 +68,10 @@ Nagaji
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
+	AUTO:LANG|Common,Draconic
 	LANGBONUS:Abyssal,Aklo,Celestial,Draconic,Giant,Infernal,Sylvan
 	BONUS:STAT|STR,CHA|2
 	BONUS:STAT|INT|-2
-	AUTO:LANG|Common|Draconic
 	RACETYPE:Humanoid
 	RACESUBTYPE:Reptilian
 	TYPE:Base.PC.Uncommon
@@ -87,10 +87,10 @@ Samsaran
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
+	AUTO:LANG|Common,Samsaran
 	LANGBONUS:Abyssal,Aquan,Auran,Celestial,Draconic,Giant,Ignan,Infernal,Tengu,Terran
 	BONUS:STAT|WIS,INT|2
 	BONUS:STAT|CON|-2
-	AUTO:LANG|Common|Samsaran
 	RACETYPE:Humanoid
 	RACESUBTYPE:Samsaran
 	TYPE:Base.PC.Uncommon
@@ -104,10 +104,10 @@ Strix
 	MOVE:Walk,30,Fly,60
 	FACE:5
 	REACH:5
+	AUTO:LANG|Strix
 	LANGBONUS:Auran,Common,Draconic,Giant,Gnome,Goblin,Infernal
 	BONUS:STAT|DEX|2
 	BONUS:STAT|CHA|-2
-	AUTO:LANG|Strix
 	ABILITY:Special Ability|AUTOMATIC|Flight Maneuverability
 	DEFINE:Maneuverability|3
 	RACETYPE:Humanoid
@@ -123,10 +123,10 @@ Suli
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
+	AUTO:LANG|Common
 	LANGBONUS:Aquan,Auran,Draconic,Ignan,Terran
 	BONUS:STAT|STR,CHA|2
 	BONUS:STAT|INT|-2
-	AUTO:LANG|Common
 	RACETYPE:Outsider
 	RACESUBTYPE:Native
 	TYPE:Base.PC.Uncommon
@@ -140,10 +140,10 @@ Vanara
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
+	AUTO:LANG|Common,Vanaran
 	LANGBONUS:Aklo,Celestial,Elven,Gnome,Goblin,Sylvan
 	BONUS:STAT|DEX,WIS|2
 	BONUS:STAT|CHA|-2
-	AUTO:LANG|Common|Vanaran
 	RACETYPE:Humanoid
 	RACESUBTYPE:Vanara
 	TYPE:Base.PC.Uncommon
@@ -157,10 +157,10 @@ Vishkanya
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
+	AUTO:LANG|Common,Vishkanya
 	LANGBONUS:Aklo,Draconic,Elven,Goblin,Sylvan,Undercommon
 	BONUS:STAT|DEX,CHA|2
 	BONUS:STAT|WIS|-2
-	AUTO:LANG|Common|Vishkanya
 	RACETYPE:Humanoid
 	RACESUBTYPE:Vishkanya
 	TYPE:Base.PC.Uncommon
@@ -175,10 +175,10 @@ Wayang
 	MOVE:Walk,20
 	FACE:5
 	REACH:5
+	AUTO:LANG|Common,Wayang
 	LANGBONUS:Abyssal,Aklo,Draconic,Goblin,Infernal,Samsaran,Tengu
 	BONUS:STAT|DEX,INT|2
 	BONUS:STAT|WIS|-2
-	AUTO:LANG|Common|Wayang
 	RACETYPE:Humanoid
 	RACESUBTYPE:Wayang
 	TYPE:Base.PC.Uncommon
@@ -190,7 +190,7 @@ Wayang
 
 # Bestiary I Creatures
 #Duergar	STARTFEATS:1	SIZE:M	MOVE:Walk,20		FACE:5	REACH:5	AUTO:LANG|Common,Dwarven,Undercommon		LANGBONUS:Aklo,Draconic,Giant,Goblin,Orc,Terran							BONUS:STAT|CON,WIS|2	BONUS:STAT|CHA|-4					RACETYPE:Humanoid	TYPE:Base.PC.Uncommon	RACESUBTYPE:Dwarf				CR:1/2		SOURCEPAGE:p.186
-#Merfolk	STARTFEATS:1	SIZE:M	MOVE:Walk,5,Swim,50	FACE:5	REACH:5	AUTO:LANG|Common,Aquan				LANGBONUS:Aboleth,Aklo,Draconic,Elven,Sylvan								BONUS:STAT|DEX,CON,CHA|2	LEGS:0					RACETYPE:Humanoid	TYPE:Base.PC.Uncommon	RACESUBTYPE:Aquatic			CR:1/2		SOURCEPAGE:p.194
+#Merfolk	STARTFEATS:1	SIZE:M	MOVE:Walk,5,Swim,50	FACE:5	REACH:5	AUTO:LANG|Common,Aquan				LANGBONUS:Aboleth,Aklo,Draconic,Elven,Sylvan							BONUS:STAT|DEX,CON,CHA|2	LEGS:0					RACETYPE:Humanoid	TYPE:Base.PC.Uncommon	RACESUBTYPE:Aquatic			CR:1/2		SOURCEPAGE:p.194
 #Svirfneblin	STARTFEATS:1	SIZE:S	MOVE:Walk,20		FACE:5	REACH:5	AUTO:LANG|Gnome,Undercommon			LANGBONUS:Aklo,Common,Draconic,Dwarven,Elven,Giant,Goblin,Orc,Terran			BONUS:STAT|DEX,WIS|2	BONUS:STAT|STR|-2	BONUS:STAT|CHA|-4		RACETYPE:Humanoid	TYPE:Base.PC.Uncommon	RACESUBTYPE:Gnome				CR:1/2		SOURCEPAGE:p.204
 # COMMENT: No movement rate given for svirfneblin.  Bestiary 1 gives 20 feet.
 #Grippli	STARTFEATS:1	SIZE:S	MOVE:Walk,30,Climb,20	FACE:5	REACH:5	AUTO:LANG|Common,Grippli				LANGBONUS:Boggard,Draconic,Elven,Gnome,Goblin,Sylvan						BONUS:STAT|DEX,WIS|2	BONUS:STAT|STR|-2					RACETYPE:Humanoid	TYPE:Base.PC.Uncommon	RACESUBTYPE:Grippli			CR:1/2		SOURCEPAGE:p.190
@@ -198,7 +198,6 @@ Wayang
 
 
 ###Block: Mods to change the sort order
-# Race Name		SORTKEY
 Duergar.MOD
 	SORTKEY:a_base_pc
 

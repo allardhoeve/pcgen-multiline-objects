@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:00:42 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -79,7 +79,7 @@ Rod of Dwarven Might
 
 
 ###Block: Elven Equipment
-# Equipment Name			Output Name						Type							Contains			Number of Pages	Cost		Weight	Source Page		Bonus to skill														Special Property																																																													Automatically Gained Weapon Prof.
+# Equipment Name			Output Name						Type							Contains			Number of Pages	Cost		Weight	Source Page		Bonus to skill														Special Property																																																													Automatically Gained Weapon Prof.						DISPLAYNAME
 Arcane Family Workbook
 	TYPE:Goods.Tools.Racial.Elven
 	COST:300
@@ -105,20 +105,20 @@ Bag (Bear)
 	SPROP:Includes a 20-ft long rope for suspending from a tree limb.
 
 Spellbook (Compact)
-	OUTPUTNAME:Spellbook, Compact
 	TYPE:Goods.Tools.Spellbook.Racial.Elven
 	NUMPAGES:70
 	COST:50
 	WT:1
 	SOURCEPAGE:p.27
+	OUTPUTNAME:Spellbook, Compact
 
 Tent (Hanging)
-	OUTPUTNAME:Tent, Hanging
 	TYPE:Goods.General.Resizable.Racial.Elven
 	COST:20
 	WT:15
 	SOURCEPAGE:p.27
 	SPROP:A small tent with a teardrop shape which hangs from a sturdy anchor rope.  Climbing in or out of a hanging tent is a full-round action that requires a DC 10 Climb check. Failure by 5 or more indicates the camper has fallen from the tent.
+	OUTPUTNAME:Tent, Hanging
 
 Bracers of Sworn Vengeance
 	TYPE:Magic.Wondrous.Bracer
@@ -388,7 +388,7 @@ Symbol of Luck
 
 
 ###Block: Human Equipment
-# Equipment Name			Output Name				Required Weapon Proficiency		Type															Cost		Weight	Base Item for EQMOD	Critical Hit Multiplier	Critical Hit Range	Damage	Modifier			Wield Category	Size		Source Page		Bonus to skill														Modify VAR								Special Property
+# Equipment Name			Required Weapon Proficiency		Type															Cost		Weight	Base Item for EQMOD	Critical Hit Multiplier	Critical Hit Range	Damage	Modifier			Wield Category	Size		Source Page		Bonus to skill														Modify VAR								Special Property																																																																																																			DISPLAYNAME
 Training Harness
 	TYPE:Goods.Tools.Mount.Racial.Human
 	COST:10
@@ -398,13 +398,13 @@ Training Harness
 	SPROP:A training harness provides a +2 bonus on Handle Animal checks made with an animal wearing it.
 
 Whip (Training)
-	OUTPUTNAME:Whip, Training
-	TYPE:Goods.Tools.Mount.Racial.Human
 	COST:5
 	WT:2
 	SOURCEPAGE:p.76
 	BONUS:SKILL|Handle Animal (Push Animal),Intimidate (Demoralize Animal)|2|TYPE=Circumstance
 	SPROP:When using the whip to demoralize a trained animal, the wielder may choose to fascinate the animal rather than causing it to become shaken for the same duration as the shaken condition, but the fascinate effect ends if line of sight between the wielder and the animal is broken.
+	OUTPUTNAME:Whip, Training
+	TYPE:Goods.Tools.Mount.Racial.Human
 
 #TODO: implement  bonuses only when char has 1 or more ranks in Survival
 Belt of Foraging
@@ -519,7 +519,7 @@ Halo of Menace
 
 
 ###Block: Catfolk Equipment
-# Equipment Name		Output Name					Required Weapon Proficiency			Type									Cost		Weight	Base Item for EQMOD			Critical Hit Multiplier	Critical Hit Range	Damage	Modifier		Wield Category	Requires Modification?	Size		Source Page		Weapon prop. bonus				Special Property
+# Equipment Name		Output Name					Required Weapon Proficiency	Type									Cost		Weight	Base Item for EQMOD		Critical Hit Multiplier	Critical Hit Range	Damage	Modifier		Wield Category	Requires Modification?	Size		Source Page		Weapon prop. bonus				Special Property
 Claw Blades (Catfolk)
 	OUTPUTNAME:Claw Blades, Catfolk
 	PROFICIENCY:WEAPON|Claw Blades (Catfolk)
@@ -625,7 +625,7 @@ Symbol of Unholy Command
 
 
 ###Block: Drow Equipment
-# Equipment Name				Output Name							Required Weapon Proficiency		Type															Cost		Weight	Base Item for EQMOD	Critical Hit Multiplier	Critical Hit Range	Damage	Modifier			Wield Category	Size		Source Page		Bonus to skill					Special Property
+# Equipment Name				Required Weapon Proficiency		Type															Cost		Weight	Base Item for EQMOD	Critical Hit Multiplier	Critical Hit Range	Damage	Modifier			Wield Category	Size		Source Page		Bonus to skill					Special Property																																																																	DISPLAYNAME
 Spider Sac
 	TYPE:Goods.Alchemical.Consumable.Racial.Drow
 	COST:30
@@ -634,32 +634,32 @@ Spider Sac
 	SPROP:When squeezed, a spider sac's adhesive shoots out to a maximum range of 10 feet and sticks to whatever it strikes, whereupon the strand dries instantly into a durable fibrous rope. For the purposes of climbing, treat a spider sac as a grappling hook except that all surfaces are AC 5. A spider sac can also be used as a lasso except with AC 10, 4 hit points, and a DC 24 Strength check to burst.
 
 Bat (Dire/Riding)
-	OUTPUTNAME:Bat, Dire, Riding
 	TYPE:Mount.Goods.Transportation.Container.Racial.Drow
 	COST:300
 	SOURCEPAGE:p.105
 	SPROP:These creatures require exotic saddles to ride.
+	OUTPUTNAME:Bat, Dire, Riding
 
 Bat (Dire/Riding/Combat Trained)
-	OUTPUTNAME:Bat, Dire, Riding (Combat Trained)
 	TYPE:Mount.Goods.Transportation.Container.Racial.Drow
 	COST:450
 	SOURCEPAGE:p.105
 	SPROP:These creatures require exotic saddles to ride.
+	OUTPUTNAME:Bat, Dire, Riding (Combat Trained)
 
 Gecko (Riding)
-	OUTPUTNAME:Gecko, Riding
 	TYPE:Mount.Goods.Transportation.Container.Racial.Drow
 	COST:300
 	SOURCEPAGE:p.105
 	SPROP:These creatures require exotic saddles to ride.
+	OUTPUTNAME:Gecko, Riding
 
 Gecko (Riding/Combat Trained)
-	OUTPUTNAME:Gecko, Riding (Combat Trained)
 	TYPE:Mount.Goods.Transportation.Container.Racial.Drow
 	COST:400
 	SOURCEPAGE:p.105
 	SPROP:These creatures require exotic saddles to ride.
+	OUTPUTNAME:Gecko, Riding (Combat Trained)
 
 Gloom Blade
 	PROFICIENCY:WEAPON|Sword (Short)
@@ -697,7 +697,7 @@ Rod of Shadows
 
 
 ###Block: Fetchling Equipment
-# Equipment Name			Output Name					Type										Cost		Weight	Source Page		Ability																				Add to vision															Special Property
+# Equipment Name			Type										Cost		Weight	Source Page		Ability																		Add to vision															Special Property																																																														DISPLAYNAME
 Darklight Lantern
 	TYPE:Goods.General.Racial.Fetchling
 	COST:20
@@ -706,13 +706,13 @@ Darklight Lantern
 	SPROP:When shadowcloy is used as its fuel, this lantern creates a strange, hazy darkness that decreases the light level for 30 feet around it by one step. Unlike when shadowcloy is thrown at a single target, this haze does not decrease natural darkness to supernatural darkness. One flask of shadowcloy fuels a darklight lantern for 1 minute.
 
 Goggles (Gloom Sight)
-	OUTPUTNAME:Goggles, Gloom Sight
 	TYPE:Goods.Alchemical.Eyegear.Racial.Fetchling
 	COST:200
 	SOURCEPAGE:p.111
 	ABILITY:Special Ability|AUTOMATIC|Light Sensitivity|PRERACE:1,Fetchling|!PREABILITY:1,CATEGORY=Special Ability,Gloom Sight
 	BONUS:VISION|Darkvision|30|PRERACE:1,Fetchling|!PREABILITY:1,CATEGORY=Special Ability,Gloom Sight
 	SPROP:Gloom sight goggles interact with the unique eyes of fetchlings in such a way that when the goggles are worn over both eyes, they expand the range of a fetchling's darkvision to 90 feet, but the fetchling also gains the light sensitivity weakness.
+	OUTPUTNAME:Goggles, Gloom Sight
 
 Shadowcloy
 	TYPE:Goods.Alchemical.Consumable.Flask.Racial.Fetchling
@@ -1057,7 +1057,7 @@ Tail Attachment (Sweeper)
 
 
 ###Block: Orc Equipment
-# Equipment Name		Type								Cost		Weight	Required Ability										Source Page		Bonus to skill			Special Property
+# Equipment Name		Type								Cost		Weight	Source Page		Special Property
 Battle Mask
 	TYPE:Goods.General.Clothing.Headgear.Racial.Orc
 	COST:50
@@ -1088,10 +1088,10 @@ Bonebreaker Gauntlets
 Fetish Mask
 	TYPE:Magic.Wondrous.Headgear
 	COST:0
-	PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Scarred Witch Doctor
 	SOURCEPAGE:p.140
-	BONUS:SKILL|Heal,Intimidate|2
 	SPROP:A Scarred Witch Doctor forms a bond with a wooden mask.
+	BONUS:SKILL|Heal,Intimidate|2
+	PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Scarred Witch Doctor
 
 
 
@@ -1167,7 +1167,7 @@ Mask of Stony Demeanor
 
 
 ###Block: Ratfolk Equipment
-# Equipment Name			Output Name				Type										Cost		Weight	Source Page		Special Property																																																																												Natural Attacks
+# Equipment Name			Type										Cost		Weight	Source Page		Special Property																																																																												DISPLAYNAME				Natural Attacks
 Blight Tonic
 	TYPE:Goods.Alchemical.Consumable.Racial.Ratfolk
 	COST:150
@@ -1190,12 +1190,12 @@ Stink Ink
 	SPROP:Only creatures with the keen senses trait or scent ability can read stink ink without aid of some form of magic. Reading or writing something with stink ink takes twice as long as going through the same amount of information written in normal ink.
 
 Stink Ink (Arcane)
-	OUTPUTNAME:Stink Ink, Arcane
 	TYPE:Goods.Alchemical.Writing.Liquid.Vial.Racial.Ratfolk
 	COST:5
 	WT:1
 	SOURCEPAGE:p.154
 	SPROP:Like normal stink ink, the arcane version can only be read by creatures with the scent ability (although read magic works normally on spells and arcane formulae inscribed with stink ink). Using arcane stink ink to inscribe a spell or formula into a book costs +10% of the normal amount
+	OUTPUTNAME:Stink Ink, Arcane
 
 Cap of Human Guise
 	TYPE:Magic.Wondrous.Headgear
@@ -1249,7 +1249,7 @@ Tailblade (Ratfolk)
 
 
 ###Block: Sylph Equipment
-# Equipment Name			Type									Cost		Weight	Source Page		Bonus to skill										Special Property
+# Equipment Name			Type									Cost		Weight	Source Page		Special Property																																																Temporary Bonus
 Elemental Breath
 	TYPE:Goods.Alchemical.Consumable.Vial.Racial.Sylph
 	COST:80
@@ -1269,8 +1269,8 @@ Elixer of Forceful Exhalation
 	COST:900
 	WT:1
 	SOURCEPAGE:p.160
-	BONUS:SKILL|Acrobatics (Jump),Swim|4|TYPE=Competence|PREAPPLY:ANYPC
 	SPROP:The drinker can exhale up to three 15-foot-long Gusts of Wind (as the spell), after which the skill bonuses end.
+	BONUS:SKILL|Acrobatics (Jump),Swim|4|TYPE=Competence|PREAPPLY:ANYPC
 
 
 
@@ -1360,7 +1360,7 @@ Halo of Inner Calm
 
 
 ###Block: Undine Equipment
-# Equipment Name		Type									Contains							Cost		Weight	Source Page		Ability								Add to base move									Special Property
+# Equipment Name		Type									Contains							Cost		Weight	Move						Source Page		Add to base move									Special Property
 Chain Belt
 	TYPE:Goods.Clothing.Belt.Racial.Undine
 	COST:15
@@ -1392,8 +1392,8 @@ Slippers of the Triton
 	COST:56000
 	WT:1
 	SOURCEPAGE:p.178
-	ABILITY:Special Ability|AUTOMATIC|Water Breathing
 	BONUS:MOVEADD|TYPE.Swim|10|TYPE=Enhancement|PREMOVE:1,Swim=1
+	ABILITY:Special Ability|AUTOMATIC|Water Breathing
 	SPROP:Grant water breathing, swim speed of 30 ft or +10 foot enhancement if wearer already has a swim speed.
 
 
@@ -1433,7 +1433,7 @@ Sea-Knife
 
 
 ###Block: Grippli Equipment
-# Equipment Name			Type					Cost		Source Page		Special Property
+# Equipment Name			Type					Cost		Source Page		Special Property																																												
 Black Spider Marsh Poison
 	TYPE:Goods.Poison.Consumable
 	COST:800
@@ -1520,7 +1520,7 @@ Nagaji Scale Polish
 
 
 ###Block: Samsaran Equipment
-# Equipment Name		Type								Cost		Weight	Source Page		Special Property
+# Equipment Name		Type							Cost		Weight	Source Page		Special Property																																		TYPE.Magic.Wondrous.Consumable.Racial.Samsaran
 Samsaran Life Wheel
 	TYPE:Goods.General.Tools.Racial.Samsaran
 	COST:25
@@ -1529,11 +1529,11 @@ Samsaran Life Wheel
 	SPROP:If a samsaran meditates with her wheel for at least 10 minutes about a Knowledge (history) question relating to her own history or the histories of her past lives, she gains a +1 insight bonus on the check.
 
 Incense of Many Fates
-	TYPE:Magic.Wondrous.Consumable.Racial.Samsaran:
 	COST:3300
 	WT:1
 	SOURCEPAGE:p.199
 	SPROP:Functions like Legend Lore, but only works if the subject is at hand. Takes 1 hour or 24 hours for non-Samsarans
+	TYPE:Magic.Wondrous.Consumable.Racial.Samsaran:
 
 
 
@@ -1571,7 +1571,7 @@ Elemental Flux
 
 
 ###Block: Svirfneblin Equipment
-# Equipment Name	Required Weapon Proficiency	Type												Cost		Weight	Critical Hit Multiplier	Critical Hit Range	Damage	Size		Source Page		Special Property
+# Equipment Name	Required Weapon Proficiency	Type												Cost		Weight	Critical Hit Multiplier	Critical Hit Range	Damage				Size		Source Page		Special Property
 Jolting Dart
 	PROFICIENCY:WEAPON|Dart
 	TYPE:Weapon.Simple.Ranged.Standard.Piercing.Electricity.Thrown.Dart
@@ -1598,7 +1598,7 @@ Meridian Belt
 
 
 ###Block: Vishkanya Equipment
-# Equipment Name		Type									Cost		Weight	Source Page		Bonus to skill					Special Property
+# Equipment Name		Type									Cost		Weight	Source Page		Special Property																																								Temporary Bonus
 Poison Tattoo
 	TYPE:Goods.Alchemical.Consumable.Racial.Vishkanya
 	COST:50
@@ -1610,8 +1610,8 @@ Corset of the Vishkanya
 	COST:3000
 	WT:1
 	SOURCEPAGE:p.209
-	BONUS:SKILL|Escape Artist|5|PREAPPLY:PC
 	SPROP:The wearer can compress herself to fit through tight spaces as though affected by a Squeeze spell for up to 10 rounds per day. While using the corset's magic, she gains a +5 bonus on Escape Artist checks.
+	BONUS:SKILL|Escape Artist|5|PREAPPLY:PC
 
 
 

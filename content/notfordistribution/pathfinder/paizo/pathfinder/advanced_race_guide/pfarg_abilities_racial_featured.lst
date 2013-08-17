@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:00:42 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -156,7 +156,7 @@ CATEGORY=Internal|Catfolk Racial Trait Default.MOD
 
 
 ###Block: Alternate Catfolk Abilities
-# Ability Name	Unique Key				Category of Ability		Type															Multiple Requirements																					Description												Automatically Gained Weapon Prof.		Bonus to skill								Cost		Source Page		Natural Attacks
+# Ability Name	Unique Key				Category of Ability		Type															Multiple Requirements																					Description												Automatically Gained Weapon Prof.	Bonus to skill								Cost		Source Page		Natural Attacks
 Cat's Claws
 	KEY:Cat's Claws ~ Catfolk
 	CATEGORY:Special Ability
@@ -610,7 +610,7 @@ Wildfire Heart
 
 
 ###Block: Alternate Kobold Abilities
-# Ability Name	Unique Key				Category of Ability		Type													Multiple Requirements																			Define				Description																																																															Bonus to Ability Pool								Bonus to skill							Class Skill				Cost		Source Page
+# Ability Name	Unique Key				Category of Ability		Type													Multiple Requirements																			Define				Description																																																															Bonus to Ability Pool				Bonus to skill							Class Skill				Cost		Source Page
 Beast Bond
 	KEY:Beast Bond ~ Kobold
 	CATEGORY:Special Ability
@@ -1299,7 +1299,7 @@ Sunbeam
 
 
 ###Block: Catfolk Exemplar Options
-# Ability Name	Unique Key						Category of Ability		Type							Required Race	Description																Ability																																Weapon prof. bonus																								Source Page		Description of the Benefits
+# Ability Name	Unique Key						Category of Ability		Type							Required Race	Description																Ability																													Weapon prof. bonus																							Source Page		Description of the Benefits
 Enhanced Senses
 	KEY:Enhanced Senses ~ Catfolk Exemplar
 	CATEGORY:Special Ability
@@ -1446,17 +1446,17 @@ CATEGORY=Special Ability|Spell-Like Abilities ~ Drow.MOD
 
 
 ###Block: Kobold Dragon Scaled Colors
-# Ability Name	Unique Key				Category of Ability		Type					Required Race	Description										Ability									Modify VAR						Source Page		Description of the Benefits
+# Ability Name	Unique Key				Category of Ability		Type					Required Race	Description										Source Page		Description of the Benefits
 Black
 	KEY:Black ~ Dragon Scaled
 	CATEGORY:Special Ability
 	TYPE:KoboldDragonScaleColor
 	PRERACE:1,Kobold
 	DESC:You possess some of the qualities of your dragon ancestors.
-	ABILITY:Special Ability|AUTOMATIC|Resistance to Acid
-	BONUS:VAR|AcidResistanceBonus|5
 	SOURCEPAGE:p.136
 	BENEFIT:Your scales take on the color and some of the resistances of one of the chromatic dragons. Your scales turn black and you gain resistance 5 to acid.
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Acid
+	BONUS:VAR|AcidResistanceBonus|5
 
 Blue
 	KEY:Blue ~ Dragon Scaled
@@ -1464,10 +1464,10 @@ Blue
 	TYPE:KoboldDragonScaleColor
 	PRERACE:1,Kobold
 	DESC:You possess some of the qualities of your dragon ancestors.
-	ABILITY:Special Ability|AUTOMATIC|Resistance to Electricity
-	BONUS:VAR|ElectricityResistanceBonus|5
 	SOURCEPAGE:p.136
 	BENEFIT:Your scales take on the color and some of the resistances of one of the chromatic dragons. Your scales turn blue and you gain resistance 5 to electricity
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Electricity
+	BONUS:VAR|ElectricityResistanceBonus|5
 
 Green
 	KEY:Green ~ Dragon Scaled
@@ -1475,10 +1475,10 @@ Green
 	TYPE:KoboldDragonScaleColor
 	PRERACE:1,Kobold
 	DESC:You possess some of the qualities of your dragon ancestors.
-	ABILITY:Special Ability|AUTOMATIC|Resistance to Acid
-	BONUS:VAR|AcidResistanceBonus|5
 	SOURCEPAGE:p.136
 	BENEFIT:Your scales take on the color and some of the resistances of one of the chromatic dragons. Your scales turn green and you gain resistance 5 to acid.
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Acid
+	BONUS:VAR|AcidResistanceBonus|5
 
 Red
 	KEY:Red ~ Dragon Scaled
@@ -1486,10 +1486,10 @@ Red
 	TYPE:KoboldDragonScaleColor
 	PRERACE:1,Kobold
 	DESC:You possess some of the qualities of your dragon ancestors.
-	ABILITY:Special Ability|AUTOMATIC|Resistance to Fire
-	BONUS:VAR|FireResistanceBonus|5
 	SOURCEPAGE:p.136
 	BENEFIT:Your scales take on the color and some of the resistances of one of the chromatic dragons. Your scales turn red and you gain resistance 5 to fire.
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Fire
+	BONUS:VAR|FireResistanceBonus|5
 
 White
 	KEY:White ~ Dragon Scaled
@@ -1497,10 +1497,10 @@ White
 	TYPE:KoboldDragonScaleColor
 	PRERACE:1,Kobold
 	DESC:You possess some of the qualities of your dragon ancestors.
-	ABILITY:Special Ability|AUTOMATIC|Resistance to Cold
-	BONUS:VAR|ColdResistanceBonus|5
 	SOURCEPAGE:p.136
 	BENEFIT:Your scales take on the color and some of the resistances of one of the chromatic dragons. Your scales turn white and you gain resistance 5 to cold.
+	ABILITY:Special Ability|AUTOMATIC|Resistance to Cold
+	BONUS:VAR|ColdResistanceBonus|5
 
 
 
@@ -1549,7 +1549,7 @@ Cold Cone
 
 
 ###Block: Orc Weapon Expertise Options
-# Ability Name	Unique Key						Category of Ability		Type				Required Feat				Description																								Stackable?	Multiple?	Choose												Source Page		Description of the Benefits
+# Ability Name	Unique Key						Category of Ability		Type				Required Feat				Description																								Stackable?	Multiple?	Source Page		Description of the Benefits
 Bully
 	KEY:Bully ~ Orc Weapon Expertise
 	CATEGORY:Special Ability
@@ -1610,7 +1610,6 @@ Trickster
 
 
 ###Block: Ability Mods
-# Ability Name						Type
 CATEGORY=Special Ability|See in Darkness.MOD
 	TYPE:SpecialQuality
 

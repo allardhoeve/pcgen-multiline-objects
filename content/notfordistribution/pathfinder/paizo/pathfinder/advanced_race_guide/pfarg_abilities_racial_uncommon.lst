@@ -1,4 +1,4 @@
-# CVS $Revision: $ $Author: $ -- Sun Aug 11 19:56:59 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+# CVS $Revision: $ $Author: $ -- Sat Jun 29 23:00:42 2013 -- reformated by prettylst.pl v1.50 (build 20400)
 SOURCELONG:Advanced Race Guide
 	SOURCESHORT:ARG
 	SOURCEWEB:http://paizo.com/products/btpy8rv2?Pathfinder-Roleplaying-Game-Advanced-Race-Guide
@@ -1304,7 +1304,7 @@ Dissolution's Child
 
 
 ###Block: Changeling Mother's Gift Options
-# Ability Name		Unique Key						Category of Ability		Type							Description								Combat bonus					Weapon prof. bonus			Spell Res.	Source Page		Description of the Benefits
+# Ability Name		Unique Key						Category of Ability		Type							Description								Combat bonus					Weapon prof. bonus			Spell Res.	Source Page		Description of the Benefits								Mother's Gift
 Hag Claws
 	KEY:Hag Claws ~ Mother's Gift
 	CATEGORY:Special Ability
@@ -1335,7 +1335,7 @@ Uncanny Resistance
 
 
 ###Block: Kitsune Tail
-# Ability Name	Unique Key					Category of Ability		Type						Required Ability										Required Feat		Innate Spells																																																																																																															Description												Source Page		Description of the Benefits
+# Ability Name	Unique Key					Category of Ability		Type						Required Ability										Required Feat		Innate Spells											Description												Source Page		Description of the Benefits
 Magical Tail
 	KEY:Magical Tail ~ Kitsune
 	CATEGORY:Special Ability
