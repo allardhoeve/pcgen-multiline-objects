@@ -233,6 +233,80 @@ Dominion (Su)
 
 
 
+Bear Hug
+	TYPE:Extraordinary
+	KEY:Bear Hug ~ Bear Lord
+	SOURCEPAGE:p.15
+	CATEGORY:Special Ability
+	TYPE:RaceTrait.BearLordRaceTrait.SpecialQuality
+	DESC:A bear lord deals +1d6 extra points of damage when it makes a grapple check to damage a creature.
+
+Savage
+	TYPE:Extraordinary
+	KEY:Savage ~ Canine Lord
+	SOURCEPAGE:p.15
+	CATEGORY:Special Ability
+	TYPE:RaceTrait.CanineLordRaceTrait.SpecialQuality
+	DESC:A canine lord deals +1d6 extra points of damage on its first attack in a round against a prone opponent.
+
+Leap
+	TYPE:Extraordinary
+	KEY:Leap ~ Cat Lord
+	SOURCEPAGE:p.15
+	CATEGORY:Special Ability
+	TYPE:RaceTrait.CatLordRaceTrait.SpecialQuality
+	DESC:A cat lord adds half its Hit Dice to all Acrobatics checks made to jump, and is always treated as if it had a running start when jumping.
+
+Thick Skin
+	TYPE:Extraordinary
+	KEY:Thick Skin ~ Crocodile Lord
+	SOURCEPAGE:p.15
+	CATEGORY:Special Ability
+	TYPE:RaceTrait.CrocodileLordRaceTrait.SpecialQuality
+	DESC:A crocodile lord's base natural armor bonus improves by an additional +2 in both of its forms.
+
+Primeval Mind
+	TYPE:Extraordinary
+	KEY:Primeval Mind ~ Dinosaur Lord
+	SOURCEPAGE:p.15
+	CATEGORY:Special Ability
+	TYPE:RaceTrait.DinosaurLordRaceTrait.SpecialQuality
+	DESC:A dinosaur lord is immune to charm effects and gains a +2 bonus on all Will saves.
+
+Raptor's Dive
+	TYPE:Extraordinary
+	KEY:Raptor's Dive ~ Raptor Lord
+	SOURCEPAGE:p.15
+	CATEGORY:Special Ability
+	TYPE:RaceTrait.RaptorLordRaceTrait.SpecialQuality
+	DESC:A raptor lord deals double damage with any charge that starts 10 or more feet above its target.
+
+Hearty
+	TYPE:Extraordinary
+	KEY:Hearty ~ Rat Lord
+	SOURCEPAGE:p.15
+	CATEGORY:Special Ability
+	TYPE:RaceTrait.RatLordRaceTrait.SpecialQuality
+	DESC:Rat lords are immune to disease and gain a +2 bonus on all Fortitude saves.
+
+Brutal Jaws
+	TYPE:Extraordinary
+	KEY:Brutal Jaws ~ Shark Lord
+	SOURCEPAGE:p.15
+	CATEGORY:Special Ability
+	TYPE:RaceTrait.SharkLordRaceTrait.SpecialQuality
+	DESC:A shark lord's bite attack causes bleed (1d6).
+
+Poison Immunity
+	TYPE:Extraordinary
+	KEY:Poison Immunity ~ Serpent Lord
+	SOURCEPAGE:p.15
+	CATEGORY:Special Ability
+	TYPE:RaceTrait.SerpentLordRaceTrait.SpecialQuality
+	DESC:Serpent lords are immune to poison.
+
+
+
 #Annis hag 16
 # Giant Ant Lion, Giant
 Default Traits ~ Giant Ant Lion
